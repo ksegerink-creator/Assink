@@ -1,0 +1,13 @@
+---
+import { t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
+interface Props { slug: string; title: string; desc?: string; idx?: string }
+const { slug, title, desc, idx } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+---
+<a class="card" href={localizePath(slug, "nl")}>
+  <span class="idx">{idx ?? "→"}</span>
+  <h3>{title}</h3>
+  {desc && <p>{desc}</p>}
+  <span class="go">{t(locale, "readmore")} →</span>
+</a>

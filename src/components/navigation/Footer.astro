@@ -1,0 +1,67 @@
+---
+import { SITE, CONTACT, CERTS } from "@data/site";
+import { FOOTER_SERVICES } from "@data/nav";
+import { t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
+import Logo from "./Logo.astro";
+
+const locale = toLocale(Astro.currentLocale);
+const nav = (slug: string) => localizePath(slug, "nl");
+const year = 2026;
+---
+<footer class="ft">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <Logo variant="footer" />
+        <p>{t(locale, "footerIntro") || ""}</p>
+        <div class="badges">
+          {CERTS.slice(0, 3).map((c) => <span class="badge">{c}</span>)}
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>{t(locale, "footerServices")}</h4>
+        {FOOTER_SERVICES.map((it) => <a href={nav(it.slug)}>{it.label}</a>)}
+        <a href={nav("plaatwerk")}>{t(locale, "possibilities")} →</a>
+      </div>
+
+      <div class="col">
+        <h4>{t(locale, "footerCompany")}</h4>
+        <a href={nav("over-ons")}>{t(locale, "about")}</a>
+        <a href={nav("machinepark")}>{t(locale, "machinepark")}</a>
+        <a href={nav("kwaliteit")}>{t(locale, "quality")}</a>
+        <a href={nav("vacatures")}>{t(locale, "careers")}</a>
+        <a href={nav("privacy")}>{t(locale, "privacy")}</a>
+      </div>
+
+      <div class="col">
+        <h4>{t(locale, "footerContact")}</h4>
+        <a href={CONTACT.telHref}>{CONTACT.tel}</a>
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        <span class="addr">{CONTACT.addr}</span>
+        <a href={nav("offerte")}>{t(locale, "quoteShort")} →</a>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <span>© {SITE.founded}–{year} {SITE.legalName} · Onderdeel van HARMAX Groep</span>
+      <span>Hengelo (Ov.) · NL / EN / DE</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .ft { background: var(--navy); color: #c3d2e4; border-top: 1px solid rgba(255,255,255,.08); }
+  .top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 30px; padding-block: clamp(40px, 5vw, 64px); }
+  .top h4 { color: #fff; font-size: 13px; letter-spacing: .09em; margin-bottom: 14px; }
+  .col a { color: #c3d2e4; display: block; padding: 4px 0; font-size: 14.5px; }
+  .col a:hover { color: var(--sky); }
+  .brand p { color: #9fb2c9; font-size: 14px; margin-top: 16px; max-width: 26em; }
+  .brand .badges { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .brand .badge { background: transparent; border: 1px solid rgba(255,255,255,.15); color: #c3d2e4; padding: 8px 13px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; }
+  .addr { display: block; padding: 4px 0; color: #9fb2c9; font-size: 14.5px; }
+  .bottom { border-top: 1px solid rgba(255,255,255,.08); padding-block: 18px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #7f93ac; }
+  @media (max-width: 860px) { .top { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .top { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,26 @@
+---
+import { SITE } from "@data/site";
+import { localizePath, toLocale } from "@utils/paths";
+
+/**
+ * Officieel Assink & Schipholt-logo (uit 01_Brand\Logo's).
+ * Header: horizontale variant met payoff · Footer: gestapelde witte variant.
+ */
+interface Props { variant?: "default" | "footer" }
+const { variant = "default" } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+const home = localizePath("", locale);
+---
+<a class={`logo logo--${variant}`} href={home} aria-label={`${SITE.name} — home`}>
+  {variant === "footer" ? (
+    <img src="/logos/as-logo-footer-wit.png" alt="Assink & Schipholt — Constructief sinds 1919" width="150" height="126" loading="lazy" />
+  ) : (
+    <img src="/logos/as-logo-header.png" alt="Assink & Schipholt — Constructief sinds 1919" width="320" height="100" />
+  )}
+</a>
+<style>
+  .logo { display: inline-flex; align-items: center; }
+  .logo--default img { height: 44px; width: auto; }
+  .logo--footer img { height: 96px; width: auto; }
+  @media (max-width: 680px) { .logo--default img { height: 38px; } }
+</style>

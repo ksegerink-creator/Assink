@@ -1,0 +1,41 @@
+---
+/**
+ * Subtle technical-drawing overlay used behind/around the hero photograph.
+ * Decorative; hidden from assistive tech.
+ */
+interface Props { class?: string }
+const { class: cls = "" } = Astro.props;
+---
+<svg class={`techdraw ${cls}`} viewBox="0 0 460 300" aria-hidden="true" focusable="false">
+  <g class="steel" fill="none">
+    <rect x="70" y="46" width="230" height="168" />
+    <line x1="128" y1="46" x2="128" y2="214" stroke-dasharray="9 4 1.5 4" />
+    <line x1="242" y1="46" x2="242" y2="214" stroke-dasharray="9 4 1.5 4" />
+    <circle cx="98" cy="80" r="7" /><circle cx="98" cy="180" r="7" />
+    <circle cx="272" cy="80" r="7" /><circle cx="272" cy="180" r="7" />
+    <line x1="86" y1="80" x2="110" y2="80" stroke-dasharray="6 3 1.5 3" />
+    <line x1="98" y1="68" x2="98" y2="92" stroke-dasharray="6 3 1.5 3" />
+  </g>
+  <g class="accent" fill="none">
+    <polyline points="346,214 346,146 366,146 366,214" />
+    <polyline points="338,214 374,214" />
+  </g>
+  <g class="steel" fill="none">
+    <line x1="70" y1="234" x2="300" y2="234" />
+    <line x1="70" y1="228" x2="70" y2="240" /><line x1="300" y1="228" x2="300" y2="240" />
+    <line x1="320" y1="46" x2="320" y2="214" />
+    <line x1="314" y1="46" x2="326" y2="46" /><line x1="314" y1="214" x2="326" y2="214" />
+  </g>
+  <g class="lbl">
+    <text x="168" y="250">230,0</text>
+    <text x="330" y="134" transform="rotate(90 330 134)">168,0</text>
+    <text x="116" y="40">buiglijn r1,5</text>
+    <text x="70" y="270">RVS 304 — 2,0 mm</text>
+  </g>
+</svg>
+<style>
+  .techdraw { width: 100%; height: auto; display: block; }
+  .techdraw .steel { stroke: var(--steel); stroke-width: 1; }
+  .techdraw .accent { stroke: var(--blue); stroke-width: 1.6; }
+  .techdraw .lbl { fill: var(--steel); font-family: "Consolas", monospace; font-size: 11px; }
+</style>

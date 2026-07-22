@@ -1,0 +1,87 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionHead from "@components/sections/SectionHead.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+
+const certs = (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order);
+
+const steps = [
+  { step: "Ingangscontrole", desc: "Materiaalcertificaten en afmetingen bij binnenkomst gecontroleerd." },
+  { step: "Proces­beheersing", desc: "Gekwalificeerde lasprocessen en gecontroleerde productieparameters." },
+  { step: "Maatcontrole", desc: "Meetgereedschap en visuele keuring tijdens en na productie." },
+  { step: "Eindkeuring & vrijgave", desc: "Documentatie en vrijgave vóór just-in-time levering." },
+];
+---
+<PageLayout
+  title="Kwaliteit & certificering"
+  description="ISO 9001, ISO 3834-2 en ISO 1090-1 gecertificeerd. Beheerste lasprocessen, maatcontrole en documentatie — Assink & Schipholt, Hengelo."
+  canonicalSlug="kwaliteit"
+  trail={[{ label: "Kwaliteit", slug: "kwaliteit" }]}
+>
+  <section class="sec ov-hero">
+    <div class="wrap grid2">
+      <div class="rv">
+        <span class="eyebrow mono"><b>Geborgde kwaliteit</b></span>
+        <h1>Kwaliteit &amp; certificering</h1>
+        <p class="lead">
+          Kwaliteit borgen we in het proces, niet achteraf. Van gekwalificeerde
+          lasprocessen tot maatcontrole en documentatie — aantoonbaar en herleidbaar.
+        </p>
+      </div>
+      <div class="rv">
+        <IndustrialImage
+          imageKey="kwaliteit.hero"
+          placeholder="Foto benodigd — kwaliteitscontrole van RVS onderdeel"
+          ratio="16/10"
+          annotation="Maatcontrole"
+          number="QA-00"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <SectionHead title="Certificeringen" index="Aantoonbaar" />
+      <div class="g-3 rv">
+        {certs.map((c) => (
+          <article class="card">
+            <span class="idx">◆ Certificering</span>
+            <h3>{c.data.name}</h3>
+            <p>{c.data.scope}</p>
+            {c.data.document && (
+              <a class="go" href={`/documents/${c.data.document}`}>Certificaat (PDF) →</a>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <SectionHead title="Kwaliteitsproces" index="Van ingang tot vrijgave" />
+      <ul class="rows">
+        {steps.map((p, i) => (
+          <li class="row rv">
+            <span class="idx">{String(i + 1).padStart(2, "0")}</span>
+            <h3>{p.step}</h3>
+            <p>{p.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  .ov-hero { padding-block: clamp(30px, 4vw, 52px) clamp(40px, 6vw, 72px); }
+  .ov-hero .grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+  .ov-hero h1 { font-size: clamp(38px, 5.4vw, 74px); }
+  .ov-hero .lead { max-width: 34em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); margin-top: 20px; }
+  @media (max-width: 820px) { .ov-hero .grid2 { grid-template-columns: 1fr; } }
+</style>

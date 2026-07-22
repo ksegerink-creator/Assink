@@ -1,0 +1,28 @@
+title: "RVS-behuizingen & machinebeplating"
+slug: "plaatwerk/rvs-behuizingen-machinebeplating"
+template: "service"
+group: "sector"
+order: 63
+kicker: "Sector"
+h1: "RVS-behuizingen & machinebeplating"
+intro: "Omkastingen, panelen en beplating in RVS: strak zichtwerk, corrosiebestendig en montageklaar geleverd."
+heroPhoto:
+  subject: "Gemonteerde RVS-machinebeplating op machineframe"
+  orient: "Liggend 16:10"
+  crop: "Beplating op machine"
+  comp: "Panelen rondom frame"
+body:
+  - "Machinebeplating en behuizingen bepalen de uitstraling én bescherming van een machine. Wij leveren RVS-beplating en -behuizingen op maat, met strak zichtwerk en montageklare bevestiging."
+materials: ["RVS 304 / 316"]
+process:
+  - { step: "Engineering", desc: "Detaillering en bevestiging." }
+  - { step: "Plaatwerk", desc: "Snijden, zetten, ontbramen." }
+  - { step: "Laswerk & afwerking", desc: "Laserlassen en passiveren." }
+applications: ["Machinebouw", "Machinebeplating", "Behuizingen"]
+related:
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen op maat." }
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
+seo:
+  title: "RVS-behuizingen & machinebeplating op maat"
+  description: "RVS-behuizingen, omkastingen en machinebeplating op maat: strak zichtwerk, corrosiebestendig en montageklaar."
+translated: ["nl"]

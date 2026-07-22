@@ -1,0 +1,48 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import { SITE, CONTACT } from "@data/site";
+---
+<PageLayout
+  title="Privacyverklaring"
+  description="Privacyverklaring van Assink & Schipholt B.V. — hoe wij omgaan met persoonsgegevens."
+  canonicalSlug="privacy"
+  trail={[{ label: "Privacyverklaring", slug: "privacy" }]}
+  noindex={true}
+>
+  <section class="sec ov-hero">
+    <div class="wrap">
+      <span class="eyebrow mono"><b>Juridisch</b></span>
+      <h1>Privacyverklaring</h1>
+      <p class="lead">Hoe {SITE.legalName} omgaat met persoonsgegevens die via deze website worden verwerkt.</p>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap-narrow">
+      <div class="prose rv">
+        <p class="notice">
+          <span class="tag">Concept</span>
+          <span>Dit is een werkversie. De definitieve privacyverklaring moet juridisch worden gecontroleerd en bevestigd vóór livegang.</span>
+        </p>
+        <h3>1. Verwerkingsverantwoordelijke</h3>
+        <p>{SITE.legalName}, {CONTACT.addr}. Contact: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> · <a href={CONTACT.telHref}>{CONTACT.tel}</a>.</p>
+        <h3>2. Welke gegevens</h3>
+        <p>Wij verwerken uitsluitend de gegevens die u zelf aan ons verstrekt via het contact- of offerteformulier (naam, bedrijf, e-mail, telefoon, projectinformatie en eventueel meegestuurde bestanden).</p>
+        <h3>3. Doel en grondslag</h3>
+        <p>Wij gebruiken uw gegevens om uw aanvraag te beantwoorden, een offerte op te stellen en de opdracht uit te voeren. De grondslag is uw verzoek en/of de uitvoering van een overeenkomst.</p>
+        <h3>4. Bewaartermijn</h3>
+        <p>Wij bewaren gegevens niet langer dan noodzakelijk voor deze doeleinden of dan wettelijk vereist.</p>
+        <h3>5. Delen met derden</h3>
+        <p>Wij delen uw gegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van de opdracht of wettelijk verplicht.</p>
+        <h3>6. Uw rechten</h3>
+        <p>U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op via <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</p>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .ov-hero { padding-block: clamp(30px, 4vw, 52px) clamp(20px, 3vw, 36px); }
+  .ov-hero h1 { font-size: clamp(36px, 5vw, 66px); }
+  .ov-hero .lead { max-width: 34em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); margin-top: 18px; }
+</style>

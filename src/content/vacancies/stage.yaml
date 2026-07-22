@@ -1,0 +1,18 @@
+title: "Stage"
+slug: "stage"
+order: 50
+employmentType: "Stage"
+hours: "In overleg"
+intro: "Voor gemotiveerde stagiaires bieden wij een dynamische productieomgeving waarin je het echte metaalwerk leert kennen."
+responsibilities:
+  - "Meewerken en meekijken op de werkvloer"
+  - "Opdrachten binnen plaatwerk, lassen of werkvoorbereiding"
+requirements:
+  - "Gemotiveerd en leergierig"
+  - "Technische opleiding (in overleg)"
+open: true
+photo:
+  subject: "Stagiair kijkt mee met vakman op de werkvloer"
+  orient: "Liggend 4:3"
+  crop: "Twee personen"
+  comp: "Begeleider en stagiair bij machine"

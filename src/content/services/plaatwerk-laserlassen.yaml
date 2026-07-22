@@ -1,0 +1,31 @@
+title: "Laserlassen"
+slug: "plaatwerk/laserlassen"
+template: "service"
+group: "lastechniek"
+order: 42
+kicker: "Lastechniek 4.2"
+h1: "Perfectie in laserlassen"
+intro: "Precisielaswerk voor OEM's en industriële klanten die extreme nauwkeurigheid en korte doorlooptijden nodig hebben. Gespecialiseerd in laserlassen van RVS en aluminium."
+heroPhoto:
+  subject: "Close-up van laser-gelast RVS-product met strakke naad"
+  orient: "Liggend 16:10"
+  crop: "Macro op lasnaad"
+  comp: "Fijne, egale naad in RVS"
+body:
+  - "Laserlassen met minimale warmte-inbreng resulteert in strakke, vervormingsarme lasverbindingen die direct geschikt zijn voor montage. Juist bij zichtwerk en dun materiaal is dat een groot voordeel."
+  - "Nabewerking, kantwerk en integratie in complete bouwgroepen gebeuren in-house. Met eigen voorraad, just-in-time levering, korte communicatielijnen en één aanspreekpunt."
+materials: ["RVS 304 / 316", "Aluminium", "Messing"]
+process:
+  - { step: "Voorbereiding", desc: "Passend maken en fixeren." }
+  - { step: "Laserlassen", desc: "Geconcentreerde, vervormingsarme naad." }
+  - { step: "Nabewerking", desc: "Waar nodig slijpen en passiveren." }
+  - { step: "Integratie", desc: "Opbouw tot complete bouwgroep." }
+applications: ["Voedingsmiddelenindustrie", "Machinebouw", "Zichtwerk"]
+related:
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast zichtwerk." }
+  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd serielassen." }
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen met strak zichtwerk." }
+seo:
+  title: "Laserlassen — strakke, vervormingsarme naden"
+  description: "Precisielaswerk in RVS en aluminium met minimale warmte-inbreng: strakke, vervormingsarme naden, montageklaar voor OEM en industrie."
+translated: ["nl"]

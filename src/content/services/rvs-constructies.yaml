@@ -1,0 +1,30 @@
+title: "RVS-constructies"
+slug: "rvs-constructies"
+template: "service"
+group: "samenstellen"
+order: 51
+kicker: "Samenstellen 5.2"
+h1: "RVS-constructies"
+intro: "Corrosiebestendige constructies in roestvast staal — van frames tot volledig gelaste samenstellingen, hygiënisch en representatief afgewerkt."
+heroPhoto:
+  subject: "Gelaste RVS-constructie tijdens eindcontrole"
+  orient: "Liggend 16:10"
+  crop: "Constructie centraal"
+  comp: "RVS-frame, controlemoment"
+body:
+  - "RVS-constructies combineren sterkte met corrosiebestendigheid. Wij lassen en stellen samen in RVS 304 en 316, met afwerking (beitsen, passiveren) afgestemd op de toepassing — bijvoorbeeld in de voedingsmiddelenindustrie."
+materials: ["RVS 304", "RVS 316"]
+process:
+  - { step: "Buislasersnijden", desc: "Passklare buis en profiel." }
+  - { step: "Lassen", desc: "TIG-, robot- of laserlassen." }
+  - { step: "Afwerking", desc: "Beitsen en passiveren." }
+  - { step: "Controle", desc: "Maat- en naadcontrole." }
+applications: ["Machinebouw", "Voedingsmiddelenindustrie", "Apparatenbouw", "Offshore & maritiem"]
+related:
+  - { slug: "constructies", label: "Constructies", desc: "Alle constructiewerk." }
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
+  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsmiddelenindustrie", desc: "Hygiënische toepassingen." }
+seo:
+  title: "RVS-constructies — corrosiebestendig en gelast"
+  description: "Corrosiebestendige gelaste RVS-constructies en samenstellingen voor machinebouw, voeding en veeleisende omgevingen."
+translated: ["nl"]

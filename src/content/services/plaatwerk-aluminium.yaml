@@ -1,0 +1,31 @@
+title: "Aluminium plaatwerk"
+slug: "plaatwerk/aluminium"
+template: "service"
+group: "plaatwerk"
+order: 22
+kicker: "Plaatwerk 2.2"
+h1: "Aluminium plaatwerk"
+intro: "Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor machinebouw en behuizingen."
+heroPhoto:
+  subject: "Aluminium plaatwerkdeel met TIG-lasnaad, detail"
+  orient: "Liggend 16:10"
+  crop: "Detail op lasnaad"
+  comp: "Mat aluminium, gelijkmatige rups"
+body:
+  - "Aluminium combineert een laag gewicht met goede sterkte en corrosiebestendigheid. Dat maakt het ideaal voor bewegende delen, behuizingen en constructies waar gewicht telt."
+  - "Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing."
+materials: ["Aluminium (diverse legeringen)"]
+process:
+  - { step: "Lasersnijden", desc: "Snijden van aluminium plaat." }
+  - { step: "Zetten", desc: "Kanten met aandacht voor terugvering." }
+  - { step: "Aluminium lassen", desc: "TIG/MIG-lassen, vervormingsarm." }
+  - { step: "Afwerking", desc: "Stralen, anodiseren of poedercoaten." }
+applications: ["Machinebouw", "Behuizingen", "Transport & lichtgewicht constructies"]
+related:
+  - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "Specialistisch TIG/MIG-laswerk." }
+  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Nauwkeurige buighoeken." }
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Aluminium behuizingen." }
+seo:
+  title: "Aluminium plaatwerk — lichtgewicht en sterk"
+  description: "Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht, sterk en corrosiebestendig."
+translated: ["nl"]

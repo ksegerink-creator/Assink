@@ -1,0 +1,29 @@
+title: "RVS-constructies voor machinebouw"
+slug: "plaatwerk/rvs-constructies-voor-machinebouw"
+template: "service"
+group: "sector"
+order: 62
+kicker: "Sector"
+h1: "RVS-constructies voor machinebouw"
+intro: "Gelaste RVS-frames en samenstellingen voor de machinebouw — sterk, corrosiebestendig en maatvast."
+heroPhoto:
+  subject: "RVS-frame voor machine tijdens samenstelling"
+  orient: "Liggend 16:10"
+  crop: "Frame centraal"
+  comp: "Gelast RVS-frame op bok"
+body:
+  - "Wij bouwen RVS-constructies en frames die passen in de machinebouw: maatvast, netjes gelast en afgewerkt. Buislasersnijden zorgt voor passklare verbindingen en efficiënt lassen."
+materials: ["RVS 304 / 316"]
+process:
+  - { step: "Buislasersnijden", desc: "Passklare profielen." }
+  - { step: "Lassen", desc: "Robot-/laserlassen." }
+  - { step: "Afwerking", desc: "Beitsen en passiveren." }
+applications: ["OEM-machinebouw", "Apparatenbouw"]
+related:
+  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Alle RVS-constructiewerk." }
+  - { slug: "constructies", label: "Constructies", desc: "Constructiewerk." }
+  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd lassen." }
+seo:
+  title: "RVS-constructies voor machinebouw"
+  description: "Gelaste RVS-constructies en frames voor de machinebouw: corrosiebestendig, maatvast en montageklaar."
+translated: ["nl"]

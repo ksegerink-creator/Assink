@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionHead from "@components/sections/SectionHead.astro";
+import { machineImageFor } from "@data/images";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+
+const machines = (await getCollection("machines")).sort((a, b) => a.data.order - b.data.order);
+---
+<PageLayout
+  title="Machinepark"
+  description="Modern machinepark voor plaatwerk, lasersnijden, buislasersnijden, zetten en lassen. Geautomatiseerde productie met traditioneel vakmanschap — Assink & Schipholt, Hengelo."
+  canonicalSlug="machinepark"
+  trail={[{ label: "Machinepark", slug: "machinepark" }]}
+>
+  <section class="sec ov-hero">
+    <div class="wrap grid2">
+      <div class="rv">
+        <span class="eyebrow mono"><b>Productiecapaciteit</b></span>
+        <h1>Machinepark</h1>
+        <p class="lead">
+          Geautomatiseerde productie met traditioneel vakmanschap. Van vlakbedlaser en
+          buislaser tot servo-elektrische kantpers, robotlascel en eigen straal- en
+          afwerkfaciliteiten.
+        </p>
+      </div>
+      <div class="rv">
+        <IndustrialImage
+          imageKey="machinepark.hero"
+          placeholder="Foto benodigd — overzicht productiehal met machinepark"
+          ratio="16/10"
+          annotation="Productiehal Hengelo"
+          number="MP-00"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <SectionHead title="Machines" index={`${machines.length} in bedrijf`} />
+      <div class="mp rv">
+        {machines.map((m, i) => (
+          <article class="mp__row">
+            <div class="mp__media">
+              <IndustrialImage src={machineImageFor(m.id)} alt={m.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${m.data.photo.subject}`} />
+            </div>
+            <div class="mp__body">
+              <span class="mp__cat mono">{String(i + 1).padStart(2, "0")} · {m.data.category}</span>
+              <h3>{m.data.name}</h3>
+              <p>{m.data.description}</p>
+              {m.data.specs.length > 0 && (
+                <div class="tbl-wrap">
+                  <table class="tbl">
+                    <tbody>
+                      {m.data.specs.map((r) => (
+                        <tr><th scope="row">{r.label}</th><td class="spec">{r.value}</td></tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+      <div class="notice rv" style="margin-top:24px">
+        <span class="tag">Nog aanleveren</span>
+        <span>Exacte capaciteiten, merken en bouwjaren worden bevestigd op basis van officiële specificaties.</span>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  .ov-hero { padding-block: clamp(30px, 4vw, 52px) clamp(40px, 6vw, 72px); }
+  .ov-hero .grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+  .ov-hero h1 { font-size: clamp(40px, 6vw, 82px); }
+  .ov-hero .lead { max-width: 34em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); margin-top: 20px; }
+  .mp { display: grid; gap: clamp(28px, 4vw, 52px); }
+  .mp__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(20px, 3vw, 44px); align-items: start; padding-bottom: clamp(28px, 4vw, 52px); border-bottom: 1px solid var(--line); }
+  .mp__row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .mp__cat { color: var(--blue); }
+  .mp__body h3 { font-size: clamp(22px, 2.6vw, 34px); margin: 8px 0 12px; }
+  .mp__body p { color: var(--ink-2); max-width: 40em; margin-bottom: 18px; }
+  @media (max-width: 820px) { .ov-hero .grid2, .mp__row { grid-template-columns: 1fr; } }
+</style>

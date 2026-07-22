@@ -1,0 +1,220 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+import { SITE, CERTS } from "@data/site";
+import { localizePath } from "@utils/paths";
+import { projectImageFor } from "@data/images";
+
+const nav = (slug: string) => localizePath(slug, "nl");
+const sectors = (await getCollection("sectors")).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection("projects")).sort((a, b) => a.data.order - b.data.order);
+const years = new Date().getFullYear() - SITE.founded;
+
+const timeline = [
+  { y: "1919", t: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." },
+  { y: "20e eeuw", t: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." },
+  { y: "Vandaag", t: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, robotlassen en eigen afwerking." },
+  { y: "Nu", t: "Onderdeel van HARMAX Groep — één productiepartner van engineering tot afgewerkte samenstelling." },
+];
+---
+<PageLayout
+  title="Over ons"
+  description="Assink & Schipholt: metaalbewerking in Hengelo sinds 1919. Traditioneel vakmanschap met moderne, geautomatiseerde productie — onderdeel van HARMAX Groep."
+  canonicalSlug="over-ons"
+  trail={[{ label: "Over ons", slug: "over-ons" }]}
+>
+  <!-- Hero: pagina opent met de productie -->
+  <section class="ahero">
+    <div class="ahero__media">
+      <IndustrialImage imageKey="overons.hero" alt="Productiehal van Assink & Schipholt met vacuümheffer" ratio="21/9" priority={true} position="center 40%" />
+      <div class="ahero__scrim" aria-hidden="true"></div>
+    </div>
+    <div class="wrap ahero__inner">
+      <span class="mono ahero__kicker">Over ons · Hengelo (Ov.)</span>
+      <h1>Meer dan een eeuw<br />metaalbewerking</h1>
+    </div>
+  </section>
+
+  <!-- Kernverhaal + feiten -->
+  <section class="sec tight">
+    <div class="wrap astory">
+      <div class="rv">
+        <p class="astory__lead">
+          Assink &amp; Schipholt bewerkt al sinds 1919 metaal in Hengelo. De combinatie
+          van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een
+          betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling.
+        </p>
+        <ul class="afacts mono">
+          <li><b>{years}</b> jaar ervaring</li>
+          <li><b>5 t</b> max. stukgewicht</li>
+          <li><b>±50 m²</b> constructieoppervlak</li>
+          <li><b>1</b> aanspreekpunt</li>
+        </ul>
+      </div>
+      <div class="prose rv">
+        <p>
+          Wij werken voor machinebouwers, apparatenbouwers en industrie in heel
+          Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling —
+          doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar.
+        </p>
+        <p>
+          Sinds enkele jaren zijn we onderdeel van de <strong>HARMAX Groep</strong>,
+          samen met andere technische maakbedrijven in de regio. Daardoor kunnen we ook
+          voor grotere en bredere uitvragen één partij zijn.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Geschiedenis: donker fotoblok met tijdlijn -->
+  <section class="ahist">
+    <div class="ahist__bg">
+      <IndustrialImage imageKey="overons.historie" alt="Historisch beeld van de productiehal van Assink & Schipholt" ratio="21/9" position="center 45%" />
+    </div>
+    <div class="wrap ahist__inner">
+      <h2>Van smederij<br />tot moderne productie</h2>
+      <div class="tl">
+        {timeline.map((e) => (
+          <div class="tl-item">
+            <div class="y">{e.y}</div>
+            <p>{e.t}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Vakmanschap + certificering -->
+  <section class="sec">
+    <div class="wrap acraft">
+      <figure class="acraft__photo rv">
+        <IndustrialImage imageKey="overons.vakmanschap" alt="Lasser aan de lastafel bij Assink & Schipholt" ratio="4/5" position="55% center" />
+      </figure>
+      <div class="rv">
+        <span class="eyebrow mono">Kwaliteit &amp; vakmanschap</span>
+        <h2>Aantoonbaar goed werk</h2>
+        <p class="prose">
+          Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole
+          en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze
+          eigen vakmensen op.
+        </p>
+        <p class="acraft__certs mono">{CERTS.join("  ·  ")}</p>
+        <a class="btn ghost" href={nav("kwaliteit")} style="margin-top:22px">Meer over kwaliteit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectoren: eenvoudige linkregels -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="rule-head rv">
+        <h2>Voor wie wij werken</h2>
+        <span class="mono">{sectors.length} sectoren</span>
+      </div>
+      <ul class="alist rv">
+        {sectors.map((s) => (
+          <li>
+            <a href={nav(s.data.link)}>
+              <span class="alist__label">{s.data.title}</span>
+              <span class="alist__desc">{s.data.summary}</span>
+              <span class="mono alist__arr">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Referentiewerk: foto-drieluik -->
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="rule-head rv">
+        <h2>Recent werk</h2>
+        <span class="mono">Referenties</span>
+      </div>
+      <div class="aproj">
+        {projects.map((p) => (
+          <figure class="rv">
+            <IndustrialImage src={projectImageFor(p.id)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
+            <figcaption>
+              <span class="mono">{p.data.sector}</span>
+              <h3>{p.data.title}</h3>
+              <p>{p.data.summary}</p>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pand -->
+  <section class="sec tight">
+    <div class="wrap apand rv">
+      <figure>
+        <IndustrialImage imageKey="overons.pand" alt="Bedrijfspand van Assink & Schipholt" ratio="21/9" />
+        <figcaption class="mono">Oosterveldsingel 18 · 7558 PK Hengelo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  .ahero { position: relative; background: var(--navy); overflow: clip; }
+  .ahero__media :global(.ii) { border: 0; }
+  .ahero__scrim { position: absolute; inset: 0; background: linear-gradient(rgba(4,26,53,.12) 30%, rgba(4,26,53,.8) 100%); }
+  .ahero__inner { position: absolute; inset: auto 0 0 0; z-index: 2; padding-bottom: clamp(20px, 3.4vw, 44px); left: 50%; transform: translateX(-50%); }
+  .ahero__kicker { color: #9CC3DF; letter-spacing: .14em; }
+  .ahero h1 { color: #fff; font-size: clamp(32px, 5vw, 68px); margin-top: 8px; text-shadow: 0 1px 22px rgba(4,26,53,.4); }
+  @media (max-width: 640px) { .ahero__media :global(.ii) { aspect-ratio: 4/3 !important; } }
+
+  .astory { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  .astory__lead { font-size: clamp(18px, 1.9vw, 24px); color: var(--ink); font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; line-height: 1.3; letter-spacing: .01em; }
+  .afacts { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 30px; margin: 24px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); }
+  .afacts li { color: var(--steel); letter-spacing: .08em; }
+  .afacts b { color: var(--ink); font-family: var(--f-disp); font-size: 19px; margin-right: 7px; }
+  @media (max-width: 780px) { .astory { grid-template-columns: 1fr; } }
+
+  .ahist { position: relative; overflow: clip; background: var(--navy); }
+  .ahist__bg { position: absolute; inset: 0; opacity: .38; }
+  .ahist__bg :global(.ii) { height: 100%; border: 0; }
+  .ahist__bg :global(.ii img) { height: 100%; }
+  .ahist__inner { position: relative; z-index: 2; padding-block: clamp(48px, 7vw, 96px); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); }
+  .ahist h2 { color: #fff; font-size: clamp(28px, 3.6vw, 48px); }
+  .ahist :global(.tl) { border-left-color: rgba(255,255,255,.25); }
+  .ahist :global(.tl-item .y) { color: var(--sky); }
+  .ahist :global(.tl-item p) { color: #C9D9E8; }
+  .ahist :global(.tl-item::before) { border-color: var(--navy); }
+  @media (max-width: 780px) { .ahist__inner { grid-template-columns: 1fr; } }
+
+  .acraft { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(24px, 4.5vw, 72px); align-items: center; }
+  .acraft__photo { margin: 0; max-width: 420px; }
+  .acraft h2 { font-size: clamp(26px, 3.2vw, 44px); margin-top: 12px; }
+  .acraft .prose { margin-top: 16px; }
+  .acraft__certs { margin-top: 20px; color: var(--steel); letter-spacing: .08em; line-height: 2; }
+  @media (max-width: 780px) { .acraft { grid-template-columns: 1fr; } .acraft__photo { max-width: none; } }
+
+  .alist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .alist li { border-bottom: 1px solid var(--line); }
+  .alist a { display: grid; grid-template-columns: minmax(0, .6fr) minmax(0, 1.4fr) auto; gap: clamp(12px, 2vw, 28px); align-items: baseline; padding: 15px 2px; transition: background .15s var(--ease); }
+  .alist a:hover { background: var(--sky-bg); }
+  .alist__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; font-size: clamp(15px, 1.7vw, 19px); color: var(--ink); }
+  .alist a:hover .alist__label { color: var(--blue); }
+  .alist__desc { color: var(--steel); font-size: 14.5px; }
+  .alist__arr { color: var(--blue); }
+  @media (max-width: 680px) { .alist a { grid-template-columns: 1fr auto; } .alist__desc { display: none; } }
+
+  .aproj { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 30px); }
+  .aproj figure { margin: 0; }
+  .aproj figcaption { padding-top: 12px; }
+  .aproj figcaption .mono { color: var(--blue); }
+  .aproj h3 { font-size: clamp(17px, 1.9vw, 22px); margin: 6px 0 6px; }
+  .aproj p { color: var(--ink-2); font-size: 14.5px; }
+  @media (max-width: 780px) { .aproj { grid-template-columns: 1fr; } }
+
+  .apand figure { margin: 0; }
+  .apand figcaption { margin-top: 10px; color: var(--steel); letter-spacing: .1em; font-size: 10.5px; }
+</style>

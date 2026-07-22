@@ -1,0 +1,21 @@
+title: "Werkvoorbereider / tekenaar"
+slug: "werkvoorbereider-tekenaar"
+order: 30
+employmentType: "Fulltime"
+hours: "38 uur per week"
+education: "Minimaal MBO-4 technisch"
+intro: "Als werkvoorbereider/tekenaar ben je de spil tussen klant en productie: van order tot maakbaar product."
+responsibilities:
+  - "Orders verwerken en werkvoorbereiding maken"
+  - "Werken met ERP-systeem en inkoop"
+  - "Tekenen en engineeren in SolidWorks"
+requirements:
+  - "Minimaal MBO-4 technisch"
+  - "Ervaring met SolidWorks"
+  - "Affiniteit met plaatwerk en constructies"
+open: true
+photo:
+  subject: "Werkvoorbereider aan CAD-werkplek met tekening"
+  orient: "Liggend 4:3"
+  crop: "Persoon + scherm"
+  comp: "Tekenaar bij monitor met SolidWorks"

@@ -1,0 +1,28 @@
+title: "Aluminium lassen"
+slug: "aluminium-lassen"
+template: "service"
+group: "lastechniek"
+order: 44
+kicker: "Lastechniek 4.4"
+h1: "Aluminium lassen"
+intro: "Aluminium vraagt om vakmanschap: de juiste warmte-inbreng, voorbewerking en techniek. Wij lassen aluminium met TIG en MIG, vervormingsarm en netjes."
+heroPhoto:
+  subject: "Aluminium lasnaad in detail met gelijkmatige rups"
+  orient: "Liggend 16:10"
+  crop: "Macro op naad"
+  comp: "Egale aluminium lasrups"
+body:
+  - "Aluminium geleidt warmte snel en oxideert makkelijk. Met de juiste voorbereiding en techniek (TIG/MIG) leggen wij sterke, nette naden — geschikt voor machinebouw, behuizingen en lichtgewicht constructies."
+materials: ["Aluminium (diverse legeringen)"]
+process:
+  - { step: "Voorbereiding", desc: "Reinigen en oxidelaag verwijderen." }
+  - { step: "Lassen", desc: "TIG/MIG met beheerste warmte-inbreng." }
+  - { step: "Nabewerking", desc: "Slijpen en afwerken." }
+applications: ["Machinebouw", "Behuizingen", "Lichtgewicht constructies"]
+related:
+  - { slug: "plaatwerk/aluminium", label: "Aluminium plaatwerk", desc: "Aluminium verwerking." }
+  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "Alle lasmethoden." }
+seo:
+  title: "Aluminium lassen — TIG en MIG, vervormingsarm"
+  description: "Specialistisch TIG- en MIG-laswerk in aluminium voor machinebouw, behuizingen en lichtgewicht constructies."
+translated: ["nl"]

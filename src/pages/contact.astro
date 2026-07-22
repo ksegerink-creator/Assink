@@ -1,0 +1,93 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import { CONTACT } from "@data/site";
+---
+<PageLayout
+  title="Contact"
+  description="Neem contact op met Assink & Schipholt in Hengelo. Bespreek uw tekening, onderdeel of samenstelling met onze specialisten."
+  canonicalSlug="contact"
+  trail={[{ label: "Contact", slug: "contact" }]}
+>
+  <!-- Kop + gegevens + pand in één compacte compositie -->
+  <section class="sec chead">
+    <div class="wrap chead__grid">
+      <div class="rv">
+        <span class="mono chead__kicker">Contact · Hengelo (Ov.)</span>
+        <h1>Bespreek uw project</h1>
+        <p class="chead__lead">
+          Bel, mail of loop binnen. We denken graag mee — van eerste tekening tot
+          afgewerkte samenstelling.
+        </p>
+
+        <div class="info">
+          <div><span class="k">Adres</span><span>{CONTACT.addr}</span></div>
+          <div><span class="k">Telefoon</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
+          <div><span class="k">E-mail</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
+          <div><span class="k">HRM</span><a href={`mailto:${CONTACT.hrm}`}>{CONTACT.hrm}</a></div>
+          <div><span class="k">Onderdeel van</span><span>HARMAX Groep</span></div>
+        </div>
+        <a class="btn" href="/offerte/" style="margin-top:24px">Vraag een offerte aan</a>
+      </div>
+
+      <figure class="chead__photo rv">
+        <IndustrialImage imageKey="contact.pand" alt="Bedrijfspand van Assink & Schipholt" ratio="4/5" />
+        <figcaption class="mono">Oosterveldsingel 18 · 7558 PK Hengelo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Bericht sturen -->
+  <section class="sec tight cform">
+    <div class="wrap cform__grid">
+      <div class="rv">
+        <h2>Stuur een bericht</h2>
+        <p class="cform__note">Reactie binnen één werkdag. Tekening erbij? Gebruik dan het <a href="/offerte/">offerteformulier</a> — daar kunt u bestanden meesturen.</p>
+        <figure class="cform__photo">
+          <IndustrialImage imageKey="contact.werk" alt="Kantpersgereedschap met plaatdeel" ratio="4/3" />
+        </figure>
+      </div>
+      <form class="form rv" method="post" action="#" aria-describedby="form-note">
+        <div class="form__grid">
+          <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
+          <label>Bedrijf<input type="text" name="bedrijf" autocomplete="organization" /></label>
+          <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
+        </div>
+        <label>Bericht<textarea name="bericht" rows="6" required></textarea></label>
+        <button class="btn" type="submit">Verstuur bericht <span class="arr">→</span></button>
+        <p id="form-note" class="form__hint mono">Formulier wordt vóór livegang gekoppeld aan het e-mailsysteem — bel of mail tot die tijd rechtstreeks.</p>
+      </form>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .chead { padding-block: clamp(28px, 4vw, 56px) clamp(36px, 5vw, 64px); }
+  .chead__grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
+  .chead__kicker { color: var(--steel); letter-spacing: .14em; }
+  .chead h1 { font-size: clamp(36px, 5vw, 68px); margin-top: 12px; }
+  .chead__lead { margin: 18px 0 26px; color: var(--ink-2); max-width: 30em; font-size: clamp(15.5px, 1.4vw, 18px); }
+  .chead__photo { margin: 0; max-width: 460px; justify-self: end; }
+  .chead__photo figcaption { margin-top: 10px; color: var(--steel); letter-spacing: .1em; font-size: 10.5px; }
+  @media (max-width: 780px) { .chead__grid { grid-template-columns: 1fr; } .chead__photo { justify-self: stretch; max-width: none; } }
+
+  .cform { background: var(--surface-2); padding-block: clamp(40px, 6vw, 80px); }
+  .cform__grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 4.5vw, 72px); align-items: start; }
+  .cform h2 { font-size: clamp(24px, 2.8vw, 36px); }
+  .cform__note { margin-top: 12px; color: var(--ink-2); font-size: 15px; max-width: 28em; }
+  .cform__note a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+  .cform__photo { margin: 26px 0 0; max-width: 380px; }
+  .form { display: grid; gap: 18px; }
+  .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .form label { display: grid; gap: 7px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel); }
+  .form input, .form textarea {
+    font-family: var(--f-body); font-size: 16px; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--line); padding: 12px 14px; width: 100%;
+  }
+  .form input:focus, .form textarea:focus { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
+  .form textarea { resize: vertical; }
+  .form .btn { justify-self: start; }
+  .form__hint { color: var(--steel); font-size: 10.5px; letter-spacing: .08em; }
+  @media (max-width: 780px) { .cform__grid, .form__grid { grid-template-columns: 1fr; } .cform__photo { display: none; } }
+</style>

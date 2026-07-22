@@ -1,0 +1,8 @@
+---
+interface Props { title: string; index?: string; class?: string }
+const { title, index, class: cls = "" } = Astro.props;
+---
+<div class={`rule-head rv ${cls}`}>
+  <h2>{title}</h2>
+  {index && <span class="mono">{index}</span>}
+</div>

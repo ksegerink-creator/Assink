@@ -1,0 +1,60 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Header from "@components/navigation/Header.astro";
+import Footer from "@components/navigation/Footer.astro";
+import Breadcrumbs from "@components/navigation/Breadcrumbs.astro";
+import type { Crumb } from "@components/navigation/Breadcrumbs.astro";
+import { t } from "@data/i18n";
+import { breadcrumbJsonLd } from "@utils/seo";
+import { toLocale } from "@utils/paths";
+import { SITE } from "@data/site";
+import type { Locale } from "@data/site";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalSlug: string;
+  altLocales?: Locale[];
+  trail?: Crumb[];
+  jsonld?: unknown[];
+  image?: string;
+  noindex?: boolean;
+}
+const {
+  title,
+  description,
+  canonicalSlug,
+  altLocales = ["nl"],
+  trail = [],
+  jsonld = [],
+  image,
+  noindex,
+} = Astro.props;
+
+const locale: Locale = toLocale(Astro.currentLocale);
+const site = Astro.site ?? new URL(SITE.url);
+const fullTitle = `${title} — ${SITE.name}`;
+
+// Breadcrumb structured data (home + trail).
+const bc =
+  trail.length > 0
+    ? [breadcrumbJsonLd(site, [{ label: t(locale, "home"), slug: "" }, ...trail], locale)]
+    : [];
+---
+<BaseLayout
+  title={fullTitle}
+  description={description}
+  canonicalSlug={canonicalSlug}
+  altLocales={altLocales}
+  image={image}
+  noindex={noindex}
+  jsonld={[...bc, ...jsonld]}
+>
+  <a href="#main" class="skip">{t(locale, "toContent")}</a>
+  <Header canonicalSlug={canonicalSlug} available={altLocales} />
+  {trail.length > 0 && <Breadcrumbs trail={trail} />}
+  <main id="main">
+    <slot />
+  </main>
+  <Footer />
+</BaseLayout>

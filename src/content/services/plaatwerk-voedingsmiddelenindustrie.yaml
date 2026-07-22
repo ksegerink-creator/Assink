@@ -1,0 +1,30 @@
+title: "Voedingsmiddelenindustrie"
+slug: "plaatwerk/voedingsmiddelenindustrie"
+template: "service"
+group: "sector"
+order: 60
+kicker: "Sector"
+h1: "Voedingsmiddelenindustrie"
+intro: "Hygiënisch, corrosiebestendig en reinigbaar plaatwerk in RVS voor de voedingsmiddelenindustrie — waar nauwkeurigheid en afwerking essentieel zijn."
+heroPhoto:
+  subject: "RVS-onderdeel voor voedingsmiddelenmachine, hygiënisch afgewerkt"
+  orient: "Liggend 16:10"
+  crop: "Product centraal"
+  comp: "Glad, gepassiveerd RVS"
+body:
+  - "Voor de voedingsmiddelenindustrie leveren wij RVS-plaatwerk en constructies met gladde, reinigbare oppervlakken en zorgvuldig afgewerkte lasnaden. Laserlassen en passiveren dragen bij aan de hygiëne en levensduur."
+materials: ["RVS 304", "RVS 316"]
+process:
+  - { step: "Ontwerp", desc: "Hygiënisch, reinigbaar detailleren." }
+  - { step: "Lasersnijden & zetten", desc: "Maatvaste delen." }
+  - { step: "Laserlassen", desc: "Strakke, gladde naden." }
+  - { step: "Passiveren", desc: "Corrosiebescherming." }
+applications: ["Voedingsmiddelenmachines", "Procesapparatuur", "Behuizingen"]
+related:
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Hygiënische naden." }
+  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
+seo:
+  title: "Voedingsmiddelenindustrie — hygiënisch RVS-plaatwerk"
+  description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsmiddelenindustrie: corrosiebestendig en representatief afgewerkt."
+translated: ["nl"]

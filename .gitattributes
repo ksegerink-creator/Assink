@@ -1,0 +1,9 @@
+# Consistente regeleindes (LF) in de repo, ongeacht besturingssysteem.
+* text=auto eol=lf
+# Binaire assets ongemoeid laten.
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.pdf binary
+*.ico binary

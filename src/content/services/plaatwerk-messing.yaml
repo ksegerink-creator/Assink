@@ -1,0 +1,28 @@
+title: "Messing plaatwerk"
+slug: "plaatwerk/messing"
+template: "service"
+group: "plaatwerk"
+order: 23
+kicker: "Plaatwerk 2.3"
+h1: "Messing plaatwerk"
+intro: "Messing is een koperzink-legering met een warme kleur. Wij verwerken het met behoud van de natuurlijke glans voor techniek én zichttoepassingen."
+heroPhoto:
+  subject: "Messing plaatwerkonderdeel met warme glans, detail"
+  orient: "Liggend 16:10"
+  crop: "Detailcrop"
+  comp: "Strijklicht over messing oppervlak"
+body:
+  - "Messing wordt gewaardeerd om zijn warme kleur en bewerkbaarheid. Wij verwerken messing voor interieurbouw, kunstobjecten en decoratieve technische componenten, met aandacht voor het behoud van de natuurlijke glans."
+materials: ["Messing (koperzink-legering)"]
+process:
+  - { step: "Snijden", desc: "Nauwkeurig uitsnijden van messing plaat." }
+  - { step: "Zetten", desc: "Kanten zonder beschadiging van het oppervlak." }
+  - { step: "Afwerking", desc: "Ontbramen en beschermen van de glans." }
+applications: ["Interieurbouw", "Kunstobjecten", "Decoratieve technische componenten"]
+related:
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast zichtwerk." }
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast enkelstuks- en seriewerk." }
+seo:
+  title: "Messing plaatwerk — warme glans behouden"
+  description: "Messing plaatwerk met behoud van de natuurlijke glans voor interieurbouw, kunstobjecten en decoratieve technische componenten."
+translated: ["nl"]

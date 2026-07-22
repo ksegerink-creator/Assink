@@ -1,0 +1,34 @@
+title: "Buislasersnijden"
+slug: "buizenlaser"
+template: "service"
+group: "snijden"
+order: 32
+kicker: "Snijden 3.2"
+h1: "Buislasersnijden"
+intro: "Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en hoge nauwkeurigheid."
+heroPhoto:
+  subject: "Buislasersnijmachine in productie met roterend profiel"
+  orient: "Liggend 16:10"
+  crop: "Machine + buis"
+  comp: "Roterende buis onder snijkop"
+body:
+  - "Wij werken met een Trumpf buislaser voor staal, RVS, aluminium, messing en koper — geschikt voor complexe contouren, gaten en verbindingen in één bewerking."
+  - "Dankzij contactloos lasersnijden ontstaat een zeer hoge maatvastheid en reproduceerbaarheid, minder nabewerking en kortere doorlooptijden. Ideaal voor zowel enkelstuks als seriewerk. Complexe verbindingen komen uit één bewerking — minder passen, sneller lassen."
+materials: ["Staal", "RVS", "Aluminium", "Messing", "Koper"]
+process:
+  - { step: "Programmeren", desc: "Contouren en verbindingen uit de tekening." }
+  - { step: "Buislasersnijden", desc: "Snijden van buis en profiel." }
+  - { step: "Samenstellen", desc: "Passklare delen voor lassen." }
+specs:
+  - { label: "Machine", value: "Trumpf TruLaser Tube 3000" }
+  - { label: "Type", value: "buislasersnijsysteem" }
+  - { label: "Materialen", value: "staal, RVS, aluminium, messing, koper" }
+applications: ["Machinebouw", "Constructies", "Interieurbouw", "Industriële toepassingen"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-plaatsnijden." }
+  - { slug: "constructies", label: "Constructies", desc: "Gelaste framebouw." }
+  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
+seo:
+  title: "Buislasersnijden — Trumpf buislaser"
+  description: "Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel in één bewerking, in staal, RVS, aluminium, messing en koper."
+translated: ["nl"]

@@ -1,0 +1,35 @@
+---
+import { t } from "@data/i18n";
+import { CONTACT } from "@data/site";
+import { localizePath, toLocale } from "@utils/paths";
+const locale = toLocale(Astro.currentLocale);
+const nav = (slug: string) => localizePath(slug, "nl");
+
+const HEAD: Record<string, { l1: string; l2: string }> = {
+  nl: { l1: "Bespreek uw tekening,", l2: "onderdeel of samenstelling." },
+  en: { l1: "Discuss your drawing,", l2: "part or assembly." },
+  de: { l1: "Besprechen Sie Ihre Zeichnung,", l2: "Ihr Teil oder Ihre Baugruppe." },
+};
+const h = HEAD[locale] ?? HEAD.nl;
+---
+<section class="sec band">
+  <div class="wrap cta rv">
+    <div>
+      <h2>{h.l1}<br /><span class="alt">{h.l2}</span></h2>
+      <p class="cta__sub">Reactie binnen één werkdag · <a href={CONTACT.telHref}>{CONTACT.tel}</a> · <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>
+    </div>
+    <div class="cta__acts">
+      <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
+      <a class="btn ghost" href={nav("contact")}>{t(locale, "contact")}</a>
+    </div>
+  </div>
+</section>
+<style>
+  .cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px; }
+  .cta h2 { font-size: clamp(26px, 3.6vw, 46px); color: #fff; }
+  .cta .alt { color: var(--sky); }
+  .cta__sub { margin-top: 14px; font-size: 14.5px; color: #A9BFD6; }
+  .cta__sub a { color: #DCE8F3; text-decoration: underline; text-underline-offset: 3px; }
+  .cta__sub a:hover { color: #fff; }
+  .cta__acts { display: flex; gap: 12px; flex-wrap: wrap; }
+</style>

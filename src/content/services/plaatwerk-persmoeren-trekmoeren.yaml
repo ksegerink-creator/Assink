@@ -1,0 +1,28 @@
+title: "Pers- en trekmoeren"
+slug: "plaatwerk/persmoeren-trekmoeren"
+template: "service"
+group: "plaatwerk"
+order: 27
+kicker: "Plaatwerk 2.7"
+h1: "Pers- en trekmoeren"
+intro: "Met pers- en trekmoeren maken we plaatwerk montageklaar: betrouwbare schroefdraad, ook in dun materiaal."
+heroPhoto:
+  subject: "Close-up van ingeperste moer in plaatwerk"
+  orient: "Liggend 16:10"
+  crop: "Macro op moer"
+  comp: "Persmoer in plaat, bovenaanzicht"
+body:
+  - "Persmoeren en trekmoeren geven plaatwerk een sterke schroefdraadverbinding zonder los bevestigingsmateriaal. Zo leveren wij montageklare delen die op uw lijn direct verder kunnen."
+materials: ["RVS", "Aluminium", "Staal"]
+process:
+  - { step: "Voorbereiden", desc: "Gaten op maat snijden." }
+  - { step: "Inpersen", desc: "Pers- of trekmoer plaatsen." }
+  - { step: "Controle", desc: "Controle op vlakheid en sterkte." }
+applications: ["Behuizingen", "Panelen", "Montageklaar plaatwerk"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast plaatwerk." }
+  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Kantwerk." }
+seo:
+  title: "Pers- en trekmoeren — montageklaar plaatwerk"
+  description: "Inpers- en trekmoeren voor betrouwbare schroefdraadverbindingen in dunne plaat: montageklaar plaatwerk."
+translated: ["nl"]

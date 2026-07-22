@@ -1,0 +1,200 @@
+---
+import { MEGA, SECTORS } from "@data/nav";
+import { t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
+import LangSwitcher from "./LangSwitcher.astro";
+import Logo from "./Logo.astro";
+import type { Locale } from "@data/site";
+
+interface Props {
+  canonicalSlug: string;
+  available?: Locale[];
+}
+const { canonicalSlug, available = ["nl"] } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+
+/* Content pages currently exist in Dutch; link nav items to the Dutch canonical
+   route so there are never dead links. The language switcher toggles the locale. */
+const nav = (slug: string) => localizePath(slug, "nl");
+const home = localizePath("", locale);
+---
+<header class="hdr">
+  <div class="wrap bar">
+    <Logo />
+    <nav class="main" aria-label={t(locale, "navAria")}>
+      <div class="item" data-mega>
+        <button type="button" class="link" aria-expanded="false" aria-haspopup="true">
+          {t(locale, "possibilities")} <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <div class="mega" role="menu">
+          {
+            MEGA.map((col) => (
+              <div class="col">
+                <h4>{col.heading[locale]}</h4>
+                {col.items.map((it) => (
+                  <a role="menuitem" href={nav(it.slug)}>
+                    {it.idx && <span class="m">{it.idx}</span>}
+                    {it.label}
+                  </a>
+                ))}
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="item" data-mega>
+        <button type="button" class="link" aria-expanded="false" aria-haspopup="true">
+          {t(locale, "sectors")} <span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <div class="mega drop" role="menu">
+          {
+            SECTORS.map((it) => (
+              <a role="menuitem" href={nav(it.slug)}>
+                {it.idx && <span class="m">{it.idx}</span>}
+                {it.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <a class="link" href={nav("machinepark")}>{t(locale, "machinepark")}</a>
+      <a class="link" href={nav("kwaliteit")}>{t(locale, "quality")}</a>
+      <a class="link" href={nav("over-ons")}>{t(locale, "about")}</a>
+      <a class="link" href={nav("vacatures")}>{t(locale, "careers")}</a>
+      <a class="link" href={nav("contact")}>{t(locale, "contact")}</a>
+    </nav>
+
+    <div class="tools">
+      <LangSwitcher canonicalSlug={canonicalSlug} available={available} />
+      <a class="btn sm" href={nav("offerte")}>{t(locale, "quoteShort")}</a>
+      <button type="button" class="burger" aria-label={t(locale, "menu")} aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="wrap">
+      <details class="macc">
+        <summary>{t(locale, "possibilities")}</summary>
+        <div class="sub">
+          {MEGA.flatMap((c) => c.items).map((it) => (
+            <a href={nav(it.slug)}><span class="m">{it.idx}</span>{it.label}</a>
+          ))}
+        </div>
+      </details>
+      <details class="macc">
+        <summary>{t(locale, "sectors")}</summary>
+        <div class="sub">
+          {SECTORS.map((it) => <a href={nav(it.slug)}><span class="m">{it.idx}</span>{it.label}</a>)}
+        </div>
+      </details>
+      <a class="macc-link" href={nav("machinepark")}>{t(locale, "machinepark")}</a>
+      <a class="macc-link" href={nav("kwaliteit")}>{t(locale, "quality")}</a>
+      <a class="macc-link" href={nav("over-ons")}>{t(locale, "about")}</a>
+      <a class="macc-link" href={nav("vacatures")}>{t(locale, "careers")}</a>
+      <a class="macc-link" href={nav("contact")}>{t(locale, "contact")}</a>
+      <a class="macc-link" href={nav("offerte")}>{t(locale, "quoteShort")}</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .hdr {
+    position: sticky; top: 0; z-index: 120;
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 14px; height: var(--head-h); }
+  .main { display: flex; align-items: center; gap: 0; margin-left: auto; }
+  .item { position: relative; }
+  .link {
+    display: flex; align-items: center; gap: 5px; white-space: nowrap;
+    font-family: var(--f-disp); font-weight: 600; font-size: 13.5px; text-transform: uppercase;
+    letter-spacing: .04em; color: var(--ink-2); padding: 10px 10px; background: none; border: 0; cursor: pointer;
+  }
+  .link:hover, .link[aria-expanded="true"] { color: var(--blue); }
+  .chev { font-size: 9px; transition: transform .2s var(--ease); }
+  .link[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .tools { display: flex; align-items: center; gap: 10px; margin-left: 6px; }
+
+  .mega {
+    position: absolute; top: calc(100% + 1px); left: 0; background: var(--surface);
+    border: 1px solid var(--line); min-width: 720px; padding: 22px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 26px;
+    box-shadow: 0 24px 48px -28px rgba(12, 31, 58, .4); z-index: 130;
+    opacity: 0; visibility: hidden; transform: translateY(-6px);
+    transition: opacity .18s var(--ease), transform .18s var(--ease), visibility .18s;
+  }
+  .mega.drop { min-width: 280px; display: block; }
+  .item:hover .mega, .mega.open { opacity: 1; visibility: visible; transform: none; }
+  .mega h4 { font-size: 12px; color: var(--steel); letter-spacing: .1em; margin-bottom: 8px; padding-bottom: 7px; border-bottom: 1px solid var(--line-2); }
+  .mega a { display: block; padding: 6px 8px; font-size: 14.5px; color: var(--ink); margin-inline: -8px; }
+  .mega a:hover { background: var(--sky-bg); color: var(--blue); }
+  .mega .m { font-family: var(--f-mono); font-size: 10px; color: var(--steel); margin-right: 8px; }
+
+  .burger { display: none; flex-direction: column; gap: 4px; width: 40px; height: 36px; align-items: center; justify-content: center; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+  .burger span { width: 18px; height: 1.8px; background: var(--ink); display: block; }
+
+  .drawer { border-top: 1px solid var(--line); background: var(--bg); }
+  .drawer[hidden] { display: none; }
+  .macc { border-bottom: 1px solid var(--line); }
+  .macc summary, .macc-link {
+    display: flex; justify-content: space-between; align-items: center; cursor: pointer;
+    font-family: var(--f-disp); font-weight: 600; font-size: 18px; text-transform: uppercase;
+    letter-spacing: .03em; padding: 16px 2px; color: var(--ink); list-style: none;
+  }
+  .macc summary::-webkit-details-marker { display: none; }
+  .macc summary::after { content: "+"; font-family: var(--f-mono); color: var(--blue); }
+  .macc[open] summary::after { content: "–"; }
+  .macc-link { border-bottom: 1px solid var(--line); }
+  .sub { display: flex; flex-direction: column; gap: 2px; padding: 0 0 12px 12px; }
+  .sub a { padding: 8px 2px; color: var(--ink-2); font-size: 15.5px; }
+  .sub .m { font-family: var(--f-mono); font-size: 10px; color: var(--steel); margin-right: 8px; }
+
+  @media (max-width: 1040px) {
+    .main { display: none; }
+    .burger { display: flex; }
+  }
+  @media (max-width: 680px) {
+    .tools :global(.lang) { display: none; }
+    .tools :global(.btn.sm) { padding: 9px 12px; font-size: 12px; }
+  }
+  @media (min-width: 1041px) { .drawer { display: none !important; } }
+</style>
+
+<script>
+  // Minimal, scoped enhancement: mega click/keyboard + mobile drawer.
+  const root = document.querySelector<HTMLElement>("header.hdr");
+  if (root) {
+    const items = root.querySelectorAll<HTMLElement>(".item[data-mega]");
+    const closeAll = () => items.forEach((it) => {
+      it.querySelector(".mega")?.classList.remove("open");
+      it.querySelector(".link")?.setAttribute("aria-expanded", "false");
+    });
+    items.forEach((it) => {
+      const btn = it.querySelector<HTMLButtonElement>(".link");
+      const mega = it.querySelector<HTMLElement>(".mega");
+      btn?.addEventListener("click", (e) => {
+        e.preventDefault();
+        const open = btn.getAttribute("aria-expanded") === "true";
+        closeAll();
+        if (!open) { mega?.classList.add("open"); btn.setAttribute("aria-expanded", "true"); }
+      });
+    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAll(); });
+    document.addEventListener("click", (e) => {
+      if (!(e.target as HTMLElement).closest(".item[data-mega]")) closeAll();
+    });
+
+    const burger = root.querySelector<HTMLButtonElement>(".burger");
+    const drawer = root.querySelector<HTMLElement>("#drawer");
+    burger?.addEventListener("click", () => {
+      const open = drawer?.hasAttribute("hidden");
+      if (open) { drawer?.removeAttribute("hidden"); burger.setAttribute("aria-expanded", "true"); }
+      else { drawer?.setAttribute("hidden", ""); burger.setAttribute("aria-expanded", "false"); }
+    });
+  }
+</script>

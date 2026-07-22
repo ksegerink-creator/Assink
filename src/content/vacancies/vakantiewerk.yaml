@@ -1,0 +1,19 @@
+title: "Vakantiewerk"
+slug: "vakantiewerk"
+order: 40
+employmentType: "Oproepkracht"
+hours: "In overleg"
+intro: "In de vakantieperiode zoeken wij oproepkrachten voor uiteenlopende fabriekswerkzaamheden."
+responsibilities:
+  - "Boren, tappen en verzinken"
+  - "Eenvoudig kantwerk"
+  - "Ondersteunende werkzaamheden op de werkvloer"
+requirements:
+  - "Praktisch ingesteld en leergierig"
+  - "Beschikbaar in de vakantieperiode"
+open: true
+photo:
+  subject: "Vakantiekracht bij eenvoudige bewerking op de werkvloer"
+  orient: "Staand 3:4"
+  crop: "Persoon aan werkbank"
+  comp: "Jonge medewerker, praktisch werk"

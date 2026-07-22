@@ -1,0 +1,99 @@
+---
+import "@styles/global.css";
+import { SITE } from "@data/site";
+import { HTML_LANG } from "@data/i18n";
+import { hreflangAlternates, absUrl, toLocale } from "@utils/paths";
+import { organizationJsonLd } from "@utils/seo";
+import type { Locale } from "@data/site";
+
+interface Props {
+  title: string;
+  description: string;
+  /** Canonical Dutch slug for this page (without slashes), "" for home. */
+  canonicalSlug: string;
+  /** Locales in which this page exists (for hreflang). Defaults to NL only. */
+  altLocales?: Locale[];
+  image?: string;
+  noindex?: boolean;
+  /** Extra JSON-LD graphs to embed (breadcrumb, service, jobposting…). */
+  jsonld?: unknown[];
+}
+
+const {
+  title,
+  description,
+  canonicalSlug,
+  altLocales = ["nl"],
+  image = "/logos/og-default.png",
+  noindex = false,
+  jsonld = [],
+} = Astro.props;
+
+const locale: Locale = toLocale(Astro.currentLocale);
+const site = Astro.site ?? new URL(SITE.url);
+const canonical = absUrl(site, canonicalSlug, locale);
+const alternates = altLocales.length > 1 ? hreflangAlternates(site, canonicalSlug, altLocales) : [];
+const ogImage = new URL(image, site).href;
+const graphs = [organizationJsonLd(site), ...jsonld];
+---
+
+<!doctype html>
+<html lang={HTML_LANG[locale]}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={HTML_LANG[locale].replace("-", "_")} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <meta name="theme-color" content="#0C1F3A" />
+    <meta name="generator" content={Astro.generator} />
+
+    {graphs.map((g) => <script type="application/ld+json" set:html={JSON.stringify(g)} />)}
+
+    <!-- Progressive enhancement flag for reveal animations. -->
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <slot />
+
+    <script>
+      // Reveal-on-scroll — the only client-side JS on content pages.
+      const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const els = Array.from(document.querySelectorAll<HTMLElement>(".rv"));
+      if (reduce || !("IntersectionObserver" in window)) {
+        els.forEach((el) => el.classList.add("in"));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: "0px 0px -6% 0px" },
+        );
+        els.forEach((el) => io.observe(el));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionHead from "@components/sections/SectionHead.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import { CONTACT } from "@data/site";
+
+const services = [
+  "Plaatwerk", "Lasersnijden", "Buislasersnijden", "Zetten", "Lassen (hand/robot/laser)",
+  "Constructies", "Machinebouw", "Industriële behuizing", "Assemblage", "Anders / weet ik nog niet",
+];
+const steps = [
+  { t: "Deel uw tekening", d: "Stuur een STEP, DWG, PDF of schets — met of zonder materiaalkeuze." },
+  { t: "Maakbaarheidscheck", d: "Wij beoordelen maakbaarheid, materiaal en bewerkingen." },
+  { t: "Offerte", d: "U ontvangt een heldere offerte met levertijdindicatie." },
+];
+---
+<PageLayout
+  title="Vraag een offerte aan"
+  description="Vraag een offerte aan voor plaatwerk, constructies of samenstellingen. Deel uw tekening of onderdeel met de specialisten van Assink & Schipholt in Hengelo."
+  canonicalSlug="offerte"
+  trail={[{ label: "Offerte aanvragen", slug: "offerte" }]}
+>
+  <section class="sec ov-hero">
+    <div class="wrap ov-grid">
+      <div>
+        <span class="eyebrow mono"><b>Offerte aanvragen</b></span>
+        <h1>Tekening klaar? Wij ook.</h1>
+        <p class="lead">
+          Bespreek uw tekening, onderdeel of samenstelling met onze specialisten. Van
+          enkelstuks tot serie — u krijgt een concrete offerte met levertijdindicatie.
+        </p>
+      </div>
+      <figure class="ov-photo">
+        <IndustrialImage imageKey="offerte.werk" alt="Werkvoorbereiding aan de machinebesturing" ratio="4/3" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="steps">
+        {steps.map((s, i) => (
+          <div class="step">
+            <span class="step__n mono">{String(i + 1).padStart(2, "0")}</span>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <SectionHead title="Aanvraagformulier" index="Reactie binnen 1 werkdag" />
+      <form class="form rv" method="post" action="#" enctype="multipart/form-data" aria-describedby="q-note">
+        <div class="form__grid">
+          <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
+          <label>Bedrijf<input type="text" name="bedrijf" autocomplete="organization" required /></label>
+          <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
+        </div>
+        <div class="form__grid">
+          <label>Bewerking
+            <select name="bewerking">
+              {services.map((s) => <option value={s}>{s}</option>)}
+            </select>
+          </label>
+          <label>Aantal / serie<input type="text" name="aantal" placeholder="bijv. 1 stuk, 25 stuks, jaarserie" /></label>
+        </div>
+        <label>Toelichting / specificaties
+          <textarea name="toelichting" rows="5" placeholder="Materiaal, afmetingen, bewerkingen, gewenste levertijd…" required></textarea>
+        </label>
+        <label class="file">Tekening / bestand
+          <input type="file" name="tekening" accept=".pdf,.dwg,.dxf,.step,.stp,.png,.jpg,.jpeg" />
+          <span class="file__hint mono">STEP, DWG, DXF, PDF of afbeelding</span>
+        </label>
+        <div class="form__foot">
+          <button class="btn" type="submit">Verstuur aanvraag <span class="arr">→</span></button>
+          <a class="btn ghost" href={CONTACT.telHref}>Of bel {CONTACT.tel}</a>
+        </div>
+        <p id="q-note" class="notice">
+          <span class="tag">Nog koppelen</span>
+          <span>Dit formulier (inclusief bestandsupload) moet vóór livegang aan een backend of e-maildienst worden gekoppeld. Mail uw tekening tot die tijd naar <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</span>
+        </p>
+      </form>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .ov-hero { padding-block: clamp(30px, 4vw, 52px) clamp(20px, 3vw, 36px); }
+  .ov-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
+  .ov-photo { margin: 0; max-width: 440px; justify-self: end; }
+  @media (max-width: 780px) { .ov-grid { grid-template-columns: 1fr; } .ov-photo { display: none; } }
+  .ov-hero h1 { font-size: clamp(38px, 5.4vw, 74px); }
+  .ov-hero .lead { max-width: 36em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); margin-top: 18px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2vw, 28px); }
+  .step { border-top: 1px solid var(--ink); padding-top: 16px; }
+  .step__n { color: var(--blue); }
+  .step h3 { font-size: clamp(18px, 2vw, 24px); margin: 10px 0 8px; }
+  .step p { color: var(--ink-2); font-size: 15px; }
+  .form { display: grid; gap: 18px; max-width: 820px; }
+  .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .form label { display: grid; gap: 7px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel); }
+  .form input, .form textarea, .form select {
+    font-family: var(--f-body); font-size: 16px; color: var(--ink); background: var(--surface);
+    border: 1px solid var(--line); padding: 12px 14px; width: 100%;
+  }
+  .form input:focus, .form textarea:focus, .form select:focus { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
+  .form textarea { resize: vertical; }
+  .file__hint { margin-top: 2px; }
+  .form__foot { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  @media (max-width: 720px) { .steps, .form__grid { grid-template-columns: 1fr; } }
+</style>

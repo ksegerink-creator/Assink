@@ -1,0 +1,13 @@
+name: "Straalcabine 8×4×3 m"
+category: "Glasparelstralen"
+order: 50
+description: "Oppervlaktebehandeling met glasparels voor aluminium en RVS — egaal, mat oppervlak."
+specs:
+  - { label: "Druk", value: "3,0 bar" }
+  - { label: "Glasparels", value: "100–200 μm" }
+  - { label: "Cabine", value: "8 × 4 × 3 m" }
+photo:
+  subject: "Straalcabine — operator straalt RVS-onderdeel"
+  orient: "Liggend 4:3"
+  crop: "Cabine-interieur"
+  comp: "Straalpistool op werkstuk"

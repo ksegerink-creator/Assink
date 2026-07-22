@@ -1,0 +1,29 @@
+title: "Verspaning"
+slug: "verspaning"
+template: "service"
+group: "snijden"
+order: 33
+kicker: "Snijden 3.3"
+h1: "Specialist in verspaning"
+intro: "Betrouwbare partner voor verspaning in Hengelo. Wij combineren geavanceerde CNC-machines met ervaren vakmensen voor fijnmechanische onderdelen en lassamenstellen."
+heroPhoto:
+  subject: "CNC-freesmachine bewerkt metalen onderdeel met koelvloeistof"
+  orient: "Liggend 16:10"
+  crop: "Machine-detail"
+  comp: "Frees, spanen, koeling"
+body:
+  - "Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Ons machinepark is CNC-gestuurd, wat herhaalbare kwaliteit en hoge nauwkeurigheid garandeert."
+  - "Wij zijn gespecialiseerd in staal, RVS, aluminium, messing en gietaluminium — van prototypes tot serieproductie, geïntegreerd met eigen plaatwerk en constructiewerk voor complete producten."
+materials: ["Staal", "RVS", "Aluminium", "Messing", "Gietaluminium"]
+process:
+  - { step: "Frezen", desc: "Vlakken, contouren en kamers." }
+  - { step: "Draaien", desc: "Rotatiesymmetrische delen." }
+  - { step: "Boren & kotteren", desc: "Nauwkeurige gaten en passingen." }
+applications: ["Fijnmechanica", "Machinebouw", "Assen & bevestigingsdelen"]
+related:
+  - { slug: "machinebouw", label: "Machinebouw", desc: "Complete samenstellingen." }
+  - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk." }
+seo:
+  title: "Verspaning — CNC frezen, draaien en boren"
+  description: "CNC-verspaning van fijnmechanische onderdelen in staal, RVS, aluminium, messing en gietaluminium: van prototype tot serie."
+translated: ["nl"]

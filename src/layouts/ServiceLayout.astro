@@ -1,0 +1,205 @@
+---
+import PageLayout from "./PageLayout.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+import { t } from "@data/i18n";
+import { serviceJsonLd } from "@utils/seo";
+import { toLocale, localizePath } from "@utils/paths";
+import { serviceImageFor, serviceMidImageFor } from "@data/images";
+import { SITE } from "@data/site";
+import type { CollectionEntry } from "astro:content";
+
+interface Props { service: CollectionEntry<"services">["data"] }
+const { service: s } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+const site = Astro.site ?? new URL(SITE.url);
+const nav = (slug: string) => localizePath(slug, "nl");
+
+const heroImg = serviceImageFor(s.slug);
+const midImg = serviceMidImageFor(s.group);
+// Toon het middenbeeld alleen als het niet hetzelfde beeld is als de hero.
+const showMid = midImg && midImg !== heroImg && s.process.length > 0;
+
+const parts = s.slug.split("/");
+const trail =
+  parts.length > 1 && parts[0] === "plaatwerk"
+    ? [{ label: "Plaatwerk", slug: "plaatwerk" }, { label: s.title, slug: s.slug }]
+    : [{ label: s.title, slug: s.slug }];
+
+const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug: s.slug, locale })];
+---
+<PageLayout
+  title={s.seo?.title ?? s.title}
+  description={s.seo?.description ?? s.intro}
+  canonicalSlug={s.slug}
+  trail={trail}
+  jsonld={jsonld}
+>
+  <!-- Foto-hero: beeld draagt de pagina, titel op het beeld -->
+  <section class="shero">
+    <div class="shero__media">
+      <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="21/9" priority={true} placeholder={`Foto benodigd — ${s.heroPhoto.subject}`} />
+      <div class="shero__scrim" aria-hidden="true"></div>
+    </div>
+    <div class="wrap shero__inner">
+      <span class="mono shero__kicker">{s.kicker}</span>
+      <h1>{s.h1}</h1>
+    </div>
+  </section>
+
+  <!-- Intro + acties naast elkaar -->
+  <section class="sec tight">
+    <div class="wrap sintro">
+      <p class="sintro__lead rv">{s.intro}</p>
+      <div class="sintro__acts rv">
+        <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
+        <a class="btn ghost" href={nav("contact")}>{t(locale, "talk")}</a>
+      </div>
+    </div>
+  </section>
+
+  {s.body.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap sbody">
+        <h2 class="sbody__h rv">{s.bodyHeading ?? "Over deze bewerking"}</h2>
+        <div class="prose rv">
+          {s.body.map((p) => <p set:html={p} />)}
+          {s.materials.length > 0 && (
+            <p class="smat mono">Materialen: <b>{s.materials.join(" · ")}</b></p>
+          )}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {s.process.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap sproc">
+        <div class="sproc__side rv">
+          <h2>Van tekening<br />tot levering</h2>
+          {showMid && (
+            <figure class="sproc__img">
+              <IndustrialImage src={midImg} alt={`${s.title} — productie in de werkplaats`} ratio="4/5" />
+            </figure>
+          )}
+        </div>
+        <ol class="sproc__list">
+          {s.process.map((p, i) => (
+            <li class="rv">
+              <span class="mono">{String(i + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{p.step}</h3>
+                <p>{p.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  {s.specs.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap sspec">
+        <h2 class="rv">Specificaties</h2>
+        <div class="tbl-wrap rv">
+          <table class="tbl">
+            <caption>Richtwaarden — te bevestigen per project</caption>
+            <tbody>
+              {s.specs.map((r) => (
+                <tr><th scope="row">{r.label}</th><td class="spec">{r.value}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {s.applications.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap sapp rv">
+        <h2>Toepassingen</h2>
+        <p>{s.applications.join(" · ")}</p>
+      </div>
+    </section>
+  )}
+
+  {s.related.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap srel">
+        <h2 class="rv">{t(locale, "related")}</h2>
+        <ul class="srel__list rv">
+          {s.related.map((r) => (
+            <li>
+              <a href={nav(r.slug)}>
+                <span class="srel__label">{r.label}</span>
+                {r.desc && <span class="srel__desc">{r.desc}</span>}
+                <span class="mono srel__arr">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  /* hero */
+  .shero { position: relative; background: var(--navy); overflow: clip; }
+  .shero__media :global(.ii) { border: 0; }
+  .shero__scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(rgba(4,26,53,.10) 30%, rgba(4,26,53,.78) 100%);
+  }
+  .shero__inner { position: absolute; inset: auto 0 0 0; z-index: 2; padding-bottom: clamp(20px, 3.4vw, 44px); left: 50%; transform: translateX(-50%); }
+  .shero__kicker { color: #9CC3DF; letter-spacing: .14em; }
+  .shero h1 { color: #fff; font-size: clamp(34px, 5.6vw, 76px); margin-top: 8px; max-width: 14em; text-shadow: 0 1px 22px rgba(4,26,53,.4); }
+  @media (max-width: 640px) {
+    .shero__media :global(.ii) { aspect-ratio: 4/3 !important; }
+  }
+
+  /* intro */
+  .sintro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); gap: clamp(20px, 3vw, 48px); align-items: center; }
+  .sintro__lead { font-size: clamp(17px, 1.7vw, 21px); color: var(--ink-2); max-width: 34em; }
+  .sintro__acts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
+  @media (max-width: 780px) { .sintro { grid-template-columns: 1fr; } .sintro__acts { justify-content: flex-start; } }
+
+  /* body */
+  .sbody { display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: clamp(20px, 3vw, 48px); }
+  .sbody__h { font-size: clamp(22px, 2.4vw, 32px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .smat { margin-top: 8px; color: var(--steel); }
+  .smat b { color: var(--ink); font-weight: 600; }
+  @media (max-width: 780px) { .sbody { grid-template-columns: 1fr; } }
+
+  /* proces */
+  .sproc { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  .sproc__side h2 { font-size: clamp(24px, 2.8vw, 38px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .sproc__img { margin: 22px 0 0; max-width: 380px; }
+  .sproc__list { list-style: none; margin: 0; padding: 0; }
+  .sproc__list li {
+    display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: baseline;
+    padding-block: 18px; border-bottom: 1px solid var(--line);
+  }
+  .sproc__list li:first-child { padding-top: 4px; }
+  .sproc__list .mono { color: var(--blue); }
+  .sproc__list h3 { font-size: clamp(17px, 1.8vw, 22px); }
+  .sproc__list p { color: var(--ink-2); font-size: 15px; margin-top: 6px; max-width: 44em; }
+  @media (max-width: 780px) { .sproc { grid-template-columns: 1fr; } .sproc__img { display: none; } }
+
+  /* specificaties / toepassingen / gerelateerd */
+  .sspec h2, .sapp h2, .srel h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
+  .sspec .tbl { max-width: 720px; }
+  .sapp p { color: var(--ink-2); max-width: 52em; font-size: 16px; line-height: 1.9; }
+  .srel__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: 760px; }
+  .srel__list li { border-bottom: 1px solid var(--line); }
+  .srel__list a { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr) auto; gap: 16px; align-items: baseline; padding: 15px 2px; }
+  .srel__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; font-size: 16px; color: var(--ink); }
+  .srel__desc { color: var(--steel); font-size: 14px; }
+  .srel__arr { color: var(--blue); }
+  .srel__list a:hover .srel__label { color: var(--blue); }
+  @media (max-width: 640px) { .srel__list a { grid-template-columns: 1fr auto; } .srel__desc { display: none; } }
+</style>

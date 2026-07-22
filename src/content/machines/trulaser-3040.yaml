@@ -1,0 +1,12 @@
+name: "Trumpf TruLaser 3040"
+category: "2D-lasersnijden"
+order: 10
+description: "Geschikt voor staal, RVS en aluminium. Hoge precisie, minimale toleranties en constante maatvoering."
+specs:
+  - { label: "Type", value: "2D-lasermachine" }
+  - { label: "Materialen", value: "staal · RVS · aluminium" }
+photo:
+  subject: "Trumpf TruLaser 3040 lasersnijmachine in bedrijf"
+  orient: "Liggend 4:3"
+  crop: "Machine"
+  comp: "Snijkop boven plaatveld"

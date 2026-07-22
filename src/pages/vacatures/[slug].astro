@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionHead from "@components/sections/SectionHead.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import { imageFor } from "@data/images";
+import { CONTACT, SITE } from "@data/site";
+import { jobPostingJsonLd } from "@utils/seo";
+
+export async function getStaticPaths() {
+  const vacancies = await getCollection("vacancies");
+  return vacancies.map((entry: CollectionEntry<"vacancies">) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+interface Props { entry: CollectionEntry<"vacancies"> }
+const { entry } = Astro.props;
+const v = entry.data;
+const site = Astro.site ?? new URL(SITE.url);
+const jsonld = [
+  jobPostingJsonLd(site, { title: v.title, description: v.intro, employmentType: v.employmentType }),
+];
+
+// Tijdelijk sfeerbeeld per vacature (officiële fotografie volgt).
+const VAC_IMG: Record<string, string> = {
+  "bankwerker-lasser": "vacatures.detail",
+  "kanter-lasser": "home.plaatwerk",
+  "werkvoorbereider-tekenaar": "contact.werk",
+  "stage": "vacatures.sfeer.1",
+  "vakantiewerk": "vacatures.sfeer.2",
+};
+const vacImage = imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
+---
+<PageLayout
+  title={v.title}
+  description={v.intro}
+  canonicalSlug={`vacatures/${v.slug}`}
+  trail={[{ label: "Werken bij", slug: "vacatures" }, { label: v.title, slug: `vacatures/${v.slug}` }]}
+  jsonld={jsonld}
+>
+  <section class="sec vd-hero">
+    <div class="wrap grid2">
+      <div class="rv">
+        <span class="eyebrow mono"><b>Vacature</b></span>
+        <h1>{v.title}</h1>
+        <div class="badges" style="margin:18px 0">
+          <span class="badge"><b>◆</b> {v.employmentType}</span>
+          {v.hours && <span class="badge">{v.hours}</span>}
+          {v.education && <span class="badge">{v.education}</span>}
+          {!v.open && <span class="badge">Gesloten</span>}
+        </div>
+        <p class="lead">{v.intro}</p>
+        <div class="acts">
+          <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
+          <a class="btn ghost" href={CONTACT.telHref}>Bel {CONTACT.tel}</a>
+        </div>
+      </div>
+      <div class="rv">
+        <IndustrialImage src={vacImage} alt={v.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${v.photo.subject}`} />
+      </div>
+    </div>
+  </section>
+
+  {v.responsibilities.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap">
+        <SectionHead title="Wat je doet" index="01 / Taken" />
+        <ul class="ticklist prose rv">
+          {v.responsibilities.map((r) => <li>{r}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {v.requirements.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap">
+        <SectionHead title="Wat je meebrengt" index="02 / Profiel" />
+        <ul class="ticklist prose rv">
+          {v.requirements.map((r) => <li>{r}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="sec band">
+    <div class="wrap cta-band rv">
+      <div>
+        <span class="eyebrow mono">Interesse?</span>
+        <h2>Solliciteer<br /><span class="alt">bij Assink &amp; Schipholt</span></h2>
+      </div>
+      <div class="acts">
+        <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail HRM</a>
+        <a class="btn ghost" href="/contact/">Contact</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .vd-hero { padding-block: clamp(20px, 3vw, 40px) clamp(36px, 5vw, 64px); }
+  .vd-hero .grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
+  .vd-hero h1 { font-size: clamp(34px, 5vw, 64px); }
+  .vd-hero .lead { max-width: 36em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); }
+  .vd-hero .acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .ticklist { list-style: none; padding: 0; }
+  .ticklist li { position: relative; padding-left: 28px; }
+  .ticklist li::before { content: ""; position: absolute; left: 0; top: .6em; width: 14px; height: 1px; background: var(--blue); }
+  .acts { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 820px) { .vd-hero .grid2 { grid-template-columns: 1fr; } }
+</style>

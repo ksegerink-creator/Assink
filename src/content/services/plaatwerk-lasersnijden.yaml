@@ -1,0 +1,33 @@
+title: "Lasersnijden"
+slug: "plaatwerk/lasersnijden"
+template: "service"
+group: "snijden"
+order: 31
+kicker: "Snijden 3.1"
+h1: "Lasersnijden"
+intro: "2D-lasersnijden van staal, RVS en aluminium met hoge precisie en minimale toleranties op onze Trumpf TruLaser 3040."
+heroPhoto:
+  subject: "Lasersnijmachine in bedrijf — snijkop boven plaat"
+  orient: "Liggend 16:10"
+  crop: "Machine-detail"
+  comp: "Snijkop, vonken, plaatveld"
+body:
+  - "Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering. Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en zetten."
+materials: ["Staal", "RVS", "Aluminium"]
+process:
+  - { step: "Nesten", desc: "Efficiënte plaatindeling." }
+  - { step: "Snijden", desc: "Contactloos lasersnijden." }
+  - { step: "Ontbramen", desc: "Braamvrije randen." }
+specs:
+  - { label: "Machine", value: "Trumpf TruLaser 3040" }
+  - { label: "Type", value: "2D-lasermachine" }
+  - { label: "Materialen", value: "staal, RVS, aluminium" }
+applications: ["Plaatwerk", "Constructies", "Precisieonderdelen"]
+related:
+  - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Snijden van buis en profiel." }
+  - { slug: "plaatwerk/ontbramen", label: "Ontbramen", desc: "Randafwerking." }
+  - { slug: "machinepark", label: "Machinepark", desc: "Bekijk de machine." }
+seo:
+  title: "Lasersnijden — 2D snijden op de Trumpf TruLaser 3040"
+  description: "2D-lasersnijden van staal, RVS en aluminium op de Trumpf TruLaser 3040 met hoge precisie en constante maatvoering."
+translated: ["nl"]

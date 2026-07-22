@@ -1,0 +1,156 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import { CONTACT } from "@data/site";
+import { localizePath } from "@utils/paths";
+
+const nav = (slug: string) => localizePath(slug, "nl");
+const vacancies = (await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order);
+const open = vacancies.filter((v) => v.data.open);
+
+const WHY = [
+  { t: "Echt werk", d: "Je maakt producten die je terugziet: frames, behuizingen en machines voor echte klanten — geen anoniem lopende-bandwerk." },
+  { t: "Modern machinepark", d: "Lasersnijden, buislaser, robotlassen en servo-elektrische kantpersen. Je werkt met goed en actueel gereedschap." },
+  { t: "Ruimte om te groeien", d: "SBB-erkend leerbedrijf. Wij leiden zelf op — van leerling tot allround vakman of -vrouw, in je eigen tempo." },
+];
+---
+<PageLayout
+  title="Werken bij Assink & Schipholt"
+  description="Vacatures bij Assink & Schipholt in Hengelo: lassers, kanters, werkvoorbereiders, stages en vakantiewerk. Vakmanschap in de metaal sinds 1919."
+  canonicalSlug="vacatures"
+  trail={[{ label: "Werken bij", slug: "vacatures" }]}
+>
+  <!-- Hero: portret + tekst naast elkaar, geen kaart-layout -->
+  <section class="vhero">
+    <div class="wrap vhero__grid">
+      <div class="vhero__text">
+        <span class="mono vhero__kicker">Werken bij · Hengelo (Ov.)</span>
+        <h1>Vakwerk is<br />mensenwerk</h1>
+        <p>
+          Bij Assink &amp; Schipholt maak je met je handen én je hoofd. Van enkelstuks
+          tot serie, van plaat tot compleet gelast frame — met korte lijnen en collega's
+          die hun vak verstaan.
+        </p>
+        <div class="vhero__acts">
+          <a class="btn" href="#vacatures">Bekijk vacatures ({open.length})</a>
+          <a class="btn ghost" href={`mailto:${CONTACT.hrm}`}>Open sollicitatie</a>
+        </div>
+      </div>
+      <figure class="vhero__photo">
+        <IndustrialImage imageKey="vacatures.hero" alt="Medewerker van Assink & Schipholt in de lasafdeling" ratio="4/5" priority={true} position="center 30%" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Waarom hier: drie redenen als editorial kolommen -->
+  <section class="sec tight vwhy">
+    <div class="wrap">
+      <div class="vwhy__grid">
+        {WHY.map((w, i) => (
+          <div class="vwhy__item rv">
+            <span class="mono">{String(i + 1).padStart(2, "0")}</span>
+            <h2>{w.t}</h2>
+            <p>{w.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Fotostrip: de werkvloer -->
+  <section class="vstrip">
+    <div class="wrap vstrip__grid rv">
+      <figure><IndustrialImage imageKey="vacatures.sfeer.1" alt="De lasafdeling van Assink & Schipholt" ratio="16/10" /></figure>
+      <figure><IndustrialImage imageKey="vacatures.detail" alt="TIG-lassen close-up" ratio="1/1" /></figure>
+      <figure><IndustrialImage imageKey="vacatures.sfeer.3" alt="Stralen van een frame in de straalcabine" ratio="1/1" /></figure>
+    </div>
+  </section>
+
+  <!-- Vacatures -->
+  <section class="sec" id="vacatures">
+    <div class="wrap">
+      <div class="rule-head rv">
+        <h2>Openstaande vacatures</h2>
+        <span class="mono">{open.length} open</span>
+      </div>
+      {open.length > 0 ? (
+        <ul class="vlist">
+          {open.map((v) => (
+            <li class="rv">
+              <a href={nav(`vacatures/${v.data.slug}`)}>
+                <div>
+                  <h3>{v.data.title}</h3>
+                  <span class="mono vlist__meta">
+                    {v.data.employmentType}{v.data.hours ? ` · ${v.data.hours}` : ""}{v.data.education ? ` · ${v.data.education}` : ""}
+                  </span>
+                </div>
+                <p>{v.data.intro}</p>
+                <span class="mono vlist__arr">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="prose rv">
+          Er zijn op dit moment geen openstaande vacatures. Een open sollicitatie is
+          altijd welkom via <a href={`mailto:${CONTACT.hrm}`}>{CONTACT.hrm}</a>.
+        </p>
+      )}
+    </div>
+  </section>
+
+  <!-- Nuchtere afsluiting -->
+  <section class="sec band">
+    <div class="wrap vcta rv">
+      <div>
+        <h2>Gewoon eens komen kijken?</h2>
+        <p>Loop een dag mee op de werkvloer. Bel {CONTACT.tel} of mail HRM — dan plannen we wat in.</p>
+      </div>
+      <div class="vcta__acts">
+        <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Meeloopdag`}>Plan een meeloopdag</a>
+        <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .vhero { padding-block: clamp(28px, 4.5vw, 64px) 0; }
+  .vhero__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(24px, 4.5vw, 72px); align-items: center; }
+  .vhero__kicker { color: var(--steel); letter-spacing: .14em; }
+  .vhero h1 { font-size: clamp(40px, 6vw, 84px); margin-top: 14px; }
+  .vhero p { margin-top: 20px; color: var(--ink-2); max-width: 32em; font-size: clamp(15.5px, 1.4vw, 18px); }
+  .vhero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .vhero__photo { margin: 0; max-width: 500px; justify-self: end; }
+  @media (max-width: 780px) { .vhero__grid { grid-template-columns: 1fr; } .vhero__photo { justify-self: stretch; max-width: none; } }
+
+  .vwhy { margin-top: clamp(24px, 4vw, 48px); }
+  .vwhy__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 44px); }
+  .vwhy__item { border-top: 1px solid var(--ink); padding-top: 14px; }
+  .vwhy__item .mono { color: var(--blue); }
+  .vwhy__item h2 { font-size: clamp(19px, 2vw, 25px); margin-top: 8px; }
+  .vwhy__item p { color: var(--ink-2); font-size: 15px; margin-top: 10px; }
+  @media (max-width: 680px) { .vwhy__grid { grid-template-columns: 1fr; } }
+
+  .vstrip { padding-block: clamp(20px, 3vw, 40px); }
+  .vstrip__grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, .7fr) minmax(0, .7fr); gap: clamp(14px, 2vw, 24px); align-items: end; }
+  .vstrip figure { margin: 0; }
+  @media (max-width: 680px) { .vstrip__grid { grid-template-columns: 1fr 1fr; } .vstrip figure:first-child { grid-column: 1 / -1; } }
+
+  .vlist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .vlist li { border-bottom: 1px solid var(--line); }
+  .vlist a { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr) auto; gap: clamp(14px, 2.4vw, 40px); align-items: baseline; padding: clamp(18px, 2.4vw, 26px) 2px; transition: background .15s var(--ease); }
+  .vlist a:hover { background: var(--sky-bg); }
+  .vlist h3 { font-size: clamp(19px, 2.1vw, 27px); }
+  .vlist a:hover h3 { color: var(--blue); }
+  .vlist__meta { display: block; margin-top: 7px; color: var(--blue); }
+  .vlist p { color: var(--ink-2); font-size: 15px; max-width: 44em; }
+  .vlist__arr { color: var(--blue); }
+  @media (max-width: 680px) { .vlist a { grid-template-columns: 1fr; gap: 8px; } .vlist__arr { display: none; } }
+
+  .vcta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+  .vcta h2 { color: #fff; font-size: clamp(24px, 3.2vw, 42px); }
+  .vcta p { color: #A9BFD6; margin-top: 10px; max-width: 34em; font-size: 15.5px; }
+  .vcta__acts { display: flex; flex-wrap: wrap; gap: 12px; }
+</style>

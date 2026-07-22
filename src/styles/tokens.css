@@ -1,0 +1,111 @@
+/* ============================================================
+   ASSINK & SCHIPHOLT — design tokens
+   Swiss / International industrial system.
+   Officieel palet: diep navy #062E5F · middenblauw #1F70B9 ·
+   lichtblauw #37AAD4 · bleekblauw #C2E3EB · wit · staalgrijs.
+   ============================================================ */
+:root {
+  /* grounds — wit en zeer licht blauwgrijs */
+  --bg: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-2: #F2F7FA;
+  --paper: #F7FAFC;
+  --plate: #DFEEF4;      /* fotoplaceholder-vlak (bleekblauw-bias) */
+
+  /* ink + tekst — diep navy voor typografie */
+  --ink: #062E5F;
+  --ink-2: #35577F;
+  --steel: #6C7A8C;
+
+  /* lijnen */
+  --line: #C4D4E0;
+  --line-2: #DFE9F0;
+
+  /* merkblauw */
+  --navy: #062E5F;
+  --blue: #1F70B9;       /* middenblauw — primair accent / CTA */
+  --blue-2: #37AAD4;     /* lichtblauw — annotaties, states, details */
+  --sky: #37AAD4;
+  --pale: #C2E3EB;       /* bleekblauw — vlakken, overlays */
+  --sky-bg: #EAF4F8;
+
+  /* semantisch (los van accent) */
+  --ok: #2C7A4B;
+  --warn: #B26A00;
+  --err: #B23A3A;
+
+  --btn-ink: #FFFFFF;
+
+  /* typografie */
+  --f-disp: "Bahnschrift", "Avenir Next Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "Cascadia Mono", "Consolas", "SF Mono", ui-monospace, monospace;
+
+  /* layout */
+  --w: min(1320px, calc(100vw - 56px));
+  --w-narrow: min(920px, calc(100vw - 56px));
+  --ease: cubic-bezier(.22, .9, .24, 1);
+  --head-h: 68px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #061627;
+    --surface: #0A2440;
+    --surface-2: #0E2C4C;
+    --paper: #081D33;
+    --plate: #0F3050;
+    --ink: #EAF3F9;
+    --ink-2: #AFC6DB;
+    --steel: #7F93A8;
+    --line: #1F4266;
+    --line-2: #16324E;
+    --navy: #051F3D;
+    --blue: #37AAD4;
+    --blue-2: #5FBEE0;
+    --sky: #5FBEE0;
+    --pale: #16436B;
+    --sky-bg: #0D2A47;
+    --btn-ink: #051F3D;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #061627;
+  --surface: #0A2440;
+  --surface-2: #0E2C4C;
+  --paper: #081D33;
+  --plate: #0F3050;
+  --ink: #EAF3F9;
+  --ink-2: #AFC6DB;
+  --steel: #7F93A8;
+  --line: #1F4266;
+  --line-2: #16324E;
+  --navy: #051F3D;
+  --blue: #37AAD4;
+  --blue-2: #5FBEE0;
+  --sky: #5FBEE0;
+  --pale: #16436B;
+  --sky-bg: #0D2A47;
+  --btn-ink: #051F3D;
+}
+
+:root[data-theme="light"] {
+  --bg: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-2: #F2F7FA;
+  --paper: #F7FAFC;
+  --plate: #DFEEF4;
+  --ink: #062E5F;
+  --ink-2: #35577F;
+  --steel: #6C7A8C;
+  --line: #C4D4E0;
+  --line-2: #DFE9F0;
+  --navy: #062E5F;
+  --blue: #1F70B9;
+  --blue-2: #37AAD4;
+  --sky: #37AAD4;
+  --pale: #C2E3EB;
+  --sky-bg: #EAF4F8;
+  --btn-ink: #FFFFFF;
+}

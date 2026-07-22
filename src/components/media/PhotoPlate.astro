@@ -1,0 +1,82 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+/**
+ * Photography block. Two modes:
+ *  - `image` given  → optimised <Image> (Astro image optimisation).
+ *  - no image       → clearly-labelled development placeholder describing the
+ *                     required photograph. Easy to replace with a real image.
+ */
+interface Props {
+  subject: string;
+  orient?: string;
+  crop?: string;
+  comp?: string;
+  size?: "hero" | "wide" | "med" | "detail" | "portrait";
+  image?: ImageMetadata;
+  alt?: string;
+  class?: string;
+}
+const { subject, orient, crop, comp, size = "med", image, alt, class: cls = "" } = Astro.props;
+const meta = [orient, crop, comp].filter(Boolean) as string[];
+---
+
+{
+  image ? (
+    <figure class={`plate plate--${size} plate--photo ${cls}`}>
+      <Image src={image} alt={alt ?? subject} widths={[480, 800, 1200, 1600]} sizes="(max-width: 860px) 100vw, 50vw" />
+    </figure>
+  ) : (
+    <figure class={`plate plate--${size} ${cls}`} role="img" aria-label={`Fotopositie: ${subject}`}>
+      <span class="plate__grid" aria-hidden="true" />
+      <span class="plate__tick t1" /><span class="plate__tick t2" />
+      <span class="plate__tick t3" /><span class="plate__tick t4" />
+      <div class="plate__body">
+        <span class="plate__cam">◉ Foto benodigd</span>
+        <figcaption class="plate__subj">{subject}</figcaption>
+        {meta.length > 0 && (
+          <div class="plate__meta">{meta.map((m) => <span>{m}</span>)}</div>
+        )}
+      </div>
+    </figure>
+  )
+}
+
+<style>
+  .plate { position: relative; border: 1px solid var(--line); background: var(--surface-2); overflow: hidden; }
+  .plate--photo { background: var(--surface); }
+  .plate--photo :global(img) { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .plate__grid {
+    position: absolute; inset: 0; opacity: .7;
+    background:
+      linear-gradient(var(--line-2) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-2) 1px, transparent 1px);
+    background-size: 34px 34px; background-position: center;
+  }
+  .plate__tick { position: absolute; background: var(--sky); }
+  .t1 { top: 14px; left: 14px; width: 22px; height: 1.5px; }
+  .t2 { top: 14px; left: 14px; width: 1.5px; height: 22px; }
+  .t3 { bottom: 14px; right: 14px; width: 22px; height: 1.5px; }
+  .t4 { bottom: 14px; right: 14px; width: 1.5px; height: 22px; }
+  .plate__body { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; padding: 20px; }
+  .plate__cam {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--blue); border: 1px solid var(--blue); padding: 5px 9px; background: var(--surface);
+  }
+  .plate__subj {
+    font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .02em;
+    font-size: clamp(15px, 1.5vw, 19px); color: var(--ink); max-width: 22em; line-height: 1.1;
+  }
+  .plate__meta {
+    display: flex; flex-wrap: wrap; gap: 6px 16px;
+    font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel);
+  }
+  .plate--hero { aspect-ratio: 16 / 11; }
+  .plate--wide { aspect-ratio: 16 / 7; }
+  .plate--med { aspect-ratio: 4 / 3; }
+  .plate--detail { aspect-ratio: 1 / 1; }
+  .plate--portrait { aspect-ratio: 3 / 4; }
+  @media (max-width: 860px) { .plate--hero { aspect-ratio: 4 / 3; } }
+</style>

@@ -1,0 +1,32 @@
+title: "Industriële behuizing"
+slug: "industriele-behuizing"
+template: "service"
+group: "samenstellen"
+order: 40
+kicker: "Sector 5.4"
+h1: "Innovatief in industriële RVS-behuizing"
+intro: "Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium behuizingen? Dan wordt u bij Assink & Schipholt van ontwerp en engineering tot eindproduct ontzorgd."
+heroPhoto:
+  subject: "Afgewerkte RVS machineomkasting, montageklaar"
+  orient: "Liggend 16:10"
+  crop: "Product centraal"
+  comp: "Behuizing op neutrale ondergrond"
+bodyHeading: "Over RVS-behuizingen"
+body:
+  - "Wij specialiseren ons in hoogwaardige roestvrijstalen behuizingen voor besturingssystemen, machines en veeleisende omgevingen — zowel individuele stukken als serieproductie, met begeleiding van ontwerp en engineering tot assemblage en afwerking."
+  - "Ook adviseren wij over materiaalkeuze, bevestigingstechnieken en componentintegratie."
+process:
+  - { step: "RVS besturingskasten op maat", desc: "Bestand tegen vocht, stof en chemicaliën." }
+  - { step: "ATEX-gecertificeerde behuizingen", desc: "Voor de procesindustrie en chemie." }
+  - { step: "Maatwerk & integratie", desc: "Voor besturingssystemen, machinebouw, offshore en maritiem." }
+  - { step: "Advies", desc: "Materiaalkeuze, bevestiging en componentintegratie." }
+materials: ["RVS 304 / 316", "Aluminium"]
+applications: ["Industriële besturingssystemen", "Machinebouw", "Voedingsmiddelenindustrie", "Offshore & maritiem", "Procesindustrie & chemie (ATEX)"]
+related:
+  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "RVS-behuizingen & machinebeplating", desc: "Omkastingen en beplating." }
+  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk en zichtwerk." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Strakke naden voor zichtwerk." }
+seo:
+  title: "Industriële behuizing — RVS-behuizingen op maat"
+  description: "Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende omgevingen. Maatwerk en serie, inclusief ATEX."
+translated: ["nl"]

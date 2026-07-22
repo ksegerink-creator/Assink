@@ -1,0 +1,31 @@
+title: "Ontbramen"
+slug: "plaatwerk/ontbramen"
+template: "service"
+group: "plaatwerk"
+order: 26
+kicker: "Plaatwerk 2.6"
+h1: "Ontbramen"
+intro: "Na het lasersnijden worden randen ontbraamd: veilig in gebruik, klaar voor de volgende bewerking en netjes afgewerkt."
+heroPhoto:
+  subject: "Plaatdeel gaat door de ontbraam-/borstelmachine"
+  orient: "Liggend 16:10"
+  crop: "Machine-invoer"
+  comp: "Plaat op transportband in machine"
+body:
+  - "Bramen ontstaan bij het snijden en kunnen scherp of hinderlijk zijn bij montage en afwerking. Op onze Timesavers 42 Series RB ontbramen en borstelen we platte werkstukken na het lasersnijden."
+materials: ["Staal", "RVS", "Aluminium"]
+process:
+  - { step: "Snijden", desc: "Lasersnijden van het deel." }
+  - { step: "Ontbramen", desc: "Braamverwijdering en randafronding." }
+  - { step: "Borstelen", desc: "Egaliseren van het oppervlak." }
+specs:
+  - { label: "Machine", value: "Timesavers 42 Series RB" }
+  - { label: "Type", value: "borstel- en afbraammachine" }
+applications: ["Plaatwerk", "Zichtwerk", "Montageklare delen"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "Bewerking vóór het ontbramen." }
+  - { slug: "machinepark", label: "Machinepark", desc: "Bekijk de machine." }
+seo:
+  title: "Ontbramen — braamvrije, veilige randen"
+  description: "Ontbramen en borstelen na het lasersnijden op de Timesavers 42 Series RB: veilige, montageklare randen."
+translated: ["nl"]

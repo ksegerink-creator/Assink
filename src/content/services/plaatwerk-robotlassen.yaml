@@ -1,0 +1,31 @@
+title: "Robotlassen"
+slug: "plaatwerk/robotlassen"
+template: "service"
+group: "lastechniek"
+order: 43
+kicker: "Lastechniek 4.3"
+h1: "Robotlassen — geautomatiseerd lassen met maximale precisie"
+intro: "Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Wij integreren robotlassen volledig in het productieproces — van plaatbewerking tot samenstellen en nabewerking."
+heroPhoto:
+  subject: "Robotlascel in bedrijf met gefixeerde samenstelling"
+  orient: "Liggend 16:10"
+  crop: "Cel + robotarm"
+  comp: "Robotarm, lasboog, mal"
+body:
+  - "Robotlassen legt lasnaden onder vooraf ingestelde parameters, met continu monitoren van stroom, spanning, voortloopsnelheid en warmte-inbreng. Dat geeft een gelijkmatige lasrupsvorm en constante inbranding, ideaal voor repeterende productie in staal, RVS en aluminium."
+  - "Voordelen: minder variatie, lagere uitval, minder nabewerking en betrouwbare levertijden. Engineering vormt de basis — opspanning, lasvolgorde, toegankelijkheid en materiaalgedrag bepalen de procesefficiëntie."
+materials: ["Staal", "RVS", "Aluminium"]
+process:
+  - { step: "Engineering", desc: "Opspanning, lasvolgorde en toegankelijkheid bepalen." }
+  - { step: "Programmeren", desc: "Parameters en baan instellen." }
+  - { step: "Robotlassen", desc: "Geautomatiseerd lassen met monitoring." }
+  - { step: "Controle", desc: "Naadcontrole en maatvastheid." }
+applications: ["Middelgrote tot grote series", "Producten met terugkerende lasnaden", "Constructies met strikte maatvastheid"]
+related:
+  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "Alle lasmethoden." }
+  - { slug: "constructies", label: "Constructies", desc: "Gelaste samenstellingen." }
+  - { slug: "machinepark", label: "Machinepark", desc: "Ons machinepark." }
+seo:
+  title: "Robotlassen — constante kwaliteit in serie"
+  description: "Geautomatiseerd robotlassen met constante lasnaadkwaliteit voor middelgrote tot grote series: minder uitval, betrouwbare levertijden."
+translated: ["nl"]

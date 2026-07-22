@@ -1,0 +1,59 @@
+---
+import { SITE } from "@data/site";
+import { LOCALE_LABEL, t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
+import type { Locale } from "@data/site";
+
+/**
+ * Language switcher. `slugByLocale` maps each locale to the canonical slug of
+ * the equivalent page in that language; when a translation does not yet exist
+ * the locale links to its localized homepage (never a dead link).
+ */
+interface Props {
+  canonicalSlug: string;
+  available?: Locale[];
+}
+const { canonicalSlug, available = ["nl"] } = Astro.props;
+const current = toLocale(Astro.currentLocale);
+const locales = SITE.locales;
+---
+<div class="lang" role="group" aria-label={t(current, "langLabel")}>
+  {
+    locales.map((loc) => {
+      const isCurrent = loc === current;
+      const hasPage = available.includes(loc);
+      // Only render a link when a translated page actually exists — never a dead link.
+      // Content is currently Dutch-only; EN/DE are shown but disabled until translated.
+      if (!hasPage && !isCurrent) {
+        return (
+          <span class="lang__btn" aria-disabled="true" lang={loc} title="Nog niet beschikbaar in deze taal">
+            {LOCALE_LABEL[loc]}
+          </span>
+        );
+      }
+      return (
+        <a
+          class="lang__btn"
+          href={localizePath(canonicalSlug, loc)}
+          hreflang={loc}
+          aria-current={isCurrent ? "true" : undefined}
+          lang={loc}
+        >
+          {LOCALE_LABEL[loc]}
+        </a>
+      );
+    })
+  }
+</div>
+<style>
+  .lang { display: flex; border: 1px solid var(--line); }
+  .lang__btn {
+    font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; padding: 7px 9px;
+    color: var(--steel); text-transform: uppercase; line-height: 1.4;
+  }
+  .lang__btn + .lang__btn { border-left: 1px solid var(--line); }
+  .lang__btn:hover { color: var(--blue); }
+  .lang__btn[aria-current="true"] { background: var(--blue); color: var(--btn-ink); }
+  .lang__btn[aria-disabled="true"] { color: var(--line); cursor: not-allowed; }
+  .lang__btn[aria-disabled="true"]:hover { color: var(--line); }
+</style>

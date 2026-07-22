@@ -1,0 +1,33 @@
+title: "Machinebouw"
+slug: "machinebouw"
+template: "service"
+group: "samenstellen"
+order: 30
+kicker: "Sector 5.3"
+h1: "Maatwerk in machinebouw"
+intro: "Of u nu een complete machineoplossing zoekt of maatwerk bouwgroepen nodig heeft — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise."
+heroPhoto:
+  subject: "Gemonteerde bouwgroep / mechanische samenstelling gereed voor uitlevering"
+  orient: "Liggend 16:10"
+  crop: "Product centraal"
+  comp: "Samenstelling op montagetafel"
+bodyHeading: "Betrouwbare partner"
+body:
+  - "Assink & Schipholt is een langdurig partner voor complete machinebouw en assemblage. Wij leveren plaatwerk op maat, verspanende onderdelen en mechanische samenstellingen, met nadruk op just-in-time levering."
+  - "Wij werken voor bedrijven met een uitbestedingsbehoefte, OEM'ers en technische partners die waarde hechten aan een flexibele aanpak en korte communicatielijnen."
+process:
+  - { step: "Volledige machines", desc: "Traject van ontwerp tot oplevering — plaatwerk, constructie en assemblage." }
+  - { step: "Losse bouwgroepen", desc: "Functionele modules zoals draagconstructies en frames." }
+  - { step: "Plaatwerkdelen", desc: "Omkastingen, panelen en behuizingen in RVS, aluminium of messing." }
+  - { step: "Verspaande onderdelen", desc: "CNC-bewerking van assen, bevestigingsdelen en componenten." }
+  - { step: "Mechanische assemblages", desc: "Samenstellen van onderdelen tot functionerende systemen." }
+materials: ["RVS", "Aluminium", "Messing", "Staal"]
+applications: ["OEM-machinebouw", "Elektronica", "Voedingsmiddelenindustrie", "Apparatenbouw"]
+related:
+  - { slug: "verspaning", label: "Verspaning", desc: "CNC frezen, draaien en boren." }
+  - { slug: "constructies", label: "Constructies", desc: "Gelaste frames en samenstellingen." }
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "RVS-behuizingen op maat." }
+seo:
+  title: "Machinebouw — complete machines en bouwgroepen"
+  description: "Complete machinebouw en assemblage: plaatwerk, verspaande onderdelen en mechanische samenstellingen met just-in-time levering voor OEM'ers en industrie."
+translated: ["nl"]

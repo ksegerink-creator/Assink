@@ -1,0 +1,30 @@
+title: "Precisieplaatwerk"
+slug: "plaatwerk/precisieplaatwerk"
+template: "service"
+group: "plaatwerk"
+order: 24
+kicker: "Plaatwerk 2.4"
+h1: "Precisieplaatwerk"
+intro: "Nauwkeurigheid tot op de millimeter. Van enkelstuks tot series en herhaalorders — maatvast en reproduceerbaar."
+heroPhoto:
+  subject: "Precisieplaatwerkdeel op meettafel tijdens maatcontrole"
+  orient: "Liggend 16:10"
+  crop: "Product met meetgereedschap"
+  comp: "Onderdeel, schuifmaat in beeld"
+body:
+  - "Precisieplaatwerk vraagt om beheerste processen: van lasersnijden en zetten tot afwerken. Door vaste werkinstructies en maatcontrole is stuk duizend even goed als stuk één."
+materials: ["RVS", "Aluminium", "Messing", "Staal"]
+process:
+  - { step: "Werkvoorbereiding", desc: "Uitslag, buiglijnen en toleranties bepalen." }
+  - { step: "Lasersnijden", desc: "Maatvast snijden." }
+  - { step: "Zetten", desc: "Herhaalbare buighoeken." }
+  - { step: "Maatcontrole", desc: "Controle tijdens en na productie." }
+applications: ["Machinebouw", "Elektronica", "Apparatenbouw"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-lasersnijden." }
+  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Kantwerk." }
+  - { slug: "kwaliteit", label: "Kwaliteit", desc: "Onze kwaliteitsborging." }
+seo:
+  title: "Precisieplaatwerk — maatvast tot op de millimeter"
+  description: "Maatvast precisieplaatwerk: enkelstuks, series en herhaalorders, reproduceerbaar geleverd door vaste werkinstructies en maatcontrole."
+translated: ["nl"]

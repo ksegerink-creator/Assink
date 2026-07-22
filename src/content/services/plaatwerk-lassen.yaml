@@ -1,0 +1,30 @@
+title: "Lassen"
+slug: "plaatwerk/lassen"
+template: "service"
+group: "lastechniek"
+order: 41
+kicker: "Lastechniek 4.1"
+h1: "Lassen"
+intro: "Van handmatig TIG- en MIG-lassen tot gerobotiseerd en laserlassen. Wij kiezen de lasmethode die past bij materiaal, serie en kwaliteitseis."
+heroPhoto:
+  subject: "Lasser aan het werk aan RVS-samenstelling"
+  orient: "Liggend 16:10"
+  crop: "Persoon centraal"
+  comp: "Lasvlam, vonken, beschermkleding"
+body:
+  - "Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand-, robot- of laserlassen in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit."
+materials: ["RVS", "Aluminium", "Staal"]
+process:
+  - { step: "Voorbereiding", desc: "Passend maken en opspannen." }
+  - { step: "Lassen", desc: "TIG / MIG, robot of laser." }
+  - { step: "Nabewerking", desc: "Slijpen, beitsen en passiveren waar nodig." }
+  - { step: "Controle", desc: "Visuele controle van de lasnaden." }
+applications: ["Constructies", "Behuizingen", "Machinedelen"]
+related:
+  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
+  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Constante seriekwaliteit." }
+  - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "TIG/MIG in aluminium." }
+seo:
+  title: "Lassen — hand-, robot- en laserlassen"
+  description: "Hand-, robot- en laserlassen in RVS, aluminium en staal: van enkelstuks tot series, met constante lasnaadkwaliteit."
+translated: ["nl"]

@@ -1,0 +1,79 @@
+hero:
+  kicker: "Metaalbewerking · Hengelo (Ov.)"
+  titelRegel1: Constructief
+  titelRegel2: sinds 1919
+  copy: >-
+    Plaatwerk, constructies en samenstellingen voor machinebouw en industrie.
+    Van enkel onderdeel tot compleet eindproduct — uit één hand.
+  foto: /src/assets/uploads/hero/foto.jpg
+  formulierTitel: Vraag direct een offerte aan
+intro:
+  kop: Eén productiepartner voor het complete traject
+  tekst: >-
+    Assink & Schipholt bewerkt al meer dan een eeuw metaal in Hengelo. Ervaren
+    vakmensen, een modern en deels geautomatiseerd machinepark en korte lijnen:
+    wij beoordelen uw tekening op maakbaarheid, produceren maatvast en leveren
+    just-in-time.
+  tekstAccent: Van engineering tot afgewerkte samenstelling.
+  feiten:
+    - waarde: '{jaren}'
+      label: jaar vakmanschap
+    - waarde: 5 t
+      label: max. stukgewicht
+    - waarde: 3×
+      label: ISO-gecertificeerd
+    - waarde: '1'
+      label: aanspreekpunt
+  pandFoto: /src/assets/uploads/intro/pandFoto.jpg
+capabilitiesKop: Wat wij maken
+capabilities:
+  - nummer: '01'
+    titel: Plaatwerk
+    omschrijving: >-
+      Precisieplaatwerk in staal, RVS, aluminium en messing. Lasersnijden,
+      zetten en afwerken — enkelstuks en serie, maatvast tot op de millimeter.
+    annotatie: Kantbank · ± 0,1 mm
+    link: plaatwerk
+    foto: /src/assets/uploads/capabilities/0/foto.jpg
+  - nummer: '02'
+    titel: Constructies & lassen
+    omschrijving: >-
+      Gelaste samenstellingen tot 5 ton. TIG, MIG, robot- en laserlassen — van
+      los onderdeel tot compleet gelast frame, inclusief oppervlaktebehandeling.
+    annotatie: TIG · MIG · robot
+    link: constructies
+    foto: /src/assets/uploads/capabilities/1/foto.jpg
+  - nummer: '03'
+    titel: Machinebouw & assemblage
+    omschrijving: >-
+      Complete machines, bouwgroepen en industriële behuizingen. Wij monteren,
+      bekabelen en leveren productieklaar aan — just-in-time.
+    annotatie: Samenstellingen tot 5 t
+    link: machinebouw
+    foto: /src/assets/uploads/capabilities/2/foto.jpg
+  - nummer: '04'
+    titel: Laser- & buislasersnijden
+    omschrijving: >-
+      2D-lasersnijden van plaat en buislasersnijden van profielen. Nauwkeurige
+      contouren, schone snijkanten en korte doorlooptijden.
+    annotatie: Fiberlaser
+    link: buizenlaser
+    foto: /src/assets/uploads/capabilities/3/foto.jpg
+proef:
+  quote: 'Kwaliteit zie je in het detail: de lasnaad, de zetting, de maat.'
+  quoteFoto: /src/assets/uploads/proef/quoteFoto.jpg
+  details:
+    - foto: /src/assets/uploads/proef/details/0/foto.jpg
+      bijschrift: Zetwerk · ± 0,1 mm
+    - foto: /src/assets/uploads/proef/details/1/foto.jpg
+      bijschrift: Kantwerk
+    - foto: /src/assets/uploads/proef/details/2/foto.jpg
+      bijschrift: Afwerking
+mensen:
+  kop: Al {jaren} jaar mensenwerk
+  tekst: >-
+    Machines maken het mogelijk, vakmensen maken het verschil. Onze lassers,
+    kanters en werkvoorbereiders werken dagelijks aan producten waar wat van
+    gevraagd wordt — en leiden zelf de volgende generatie op als SBB-erkend
+    leerbedrijf.
+  foto: /src/assets/uploads/mensen/foto.jpg

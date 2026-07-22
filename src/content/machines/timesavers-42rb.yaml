@@ -1,0 +1,11 @@
+name: "Timesavers 42 Series RB"
+category: "Ontbramen / borstelen"
+order: 40
+description: "Breedband slijp-/schuurmachine voor nabewerking van platte werkstukken na het lasersnijden."
+specs:
+  - { label: "Type", value: "borstel- & afbraammachine" }
+photo:
+  subject: "Timesavers ontbraammachine met plaat op transportband"
+  orient: "Liggend 4:3"
+  crop: "Machine-invoer"
+  comp: "Plaat gaat de machine in"
