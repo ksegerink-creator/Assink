@@ -59,6 +59,15 @@ export default config({
     : { kind: "github", repo: "ksegerink-creator/Assink" },
   ui: {
     brand: { name: "Assink & Schipholt" },
+    // Logische, Nederlandstalige indeling van het beheermenu voor het
+    // marketingteam (i.p.v. de standaard "Collections/Singletons").
+    navigation: {
+      "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte"],
+      Diensten: ["services", "sectoren"],
+      Vacatures: ["vacatures"],
+      "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
+      Menu: ["navigatie"],
+    },
   },
   singletons: {
     homepage: singleton({
@@ -137,7 +146,7 @@ export default config({
     }),
 
     contact: singleton({
-      label: "Contactpagina",
+      label: "Contact",
       path: "src/content/pages/contact",
       format: { data: "yaml" },
       schema: {
@@ -193,7 +202,7 @@ export default config({
     }),
 
     offerte: singleton({
-      label: "Offerte-pagina",
+      label: "Offerte",
       path: "src/content/pages/offerte",
       format: { data: "yaml" },
       schema: {
@@ -212,7 +221,7 @@ export default config({
     }),
 
     kwaliteit: singleton({
-      label: "Kwaliteit-pagina",
+      label: "Kwaliteit",
       path: "src/content/pages/kwaliteit",
       format: { data: "yaml" },
       schema: {
@@ -231,7 +240,7 @@ export default config({
     }),
 
     machinepark: singleton({
-      label: "Machinepark-pagina",
+      label: "Machinepark",
       path: "src/content/pages/machinepark",
       format: { data: "yaml" },
       schema: {
