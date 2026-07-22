@@ -28,6 +28,18 @@ const foto = (label: string, description?: string) =>
     publicPath: "/src/assets/uploads/",
   });
 
+// Fotoveld met een eigen submap per pagina, zodat gelijknamige velden
+// (bv. 'foto') van verschillende singletons elkaar niet overschrijven.
+const pageFoto =
+  (ns: string) =>
+  (label: string, description?: string) =>
+    fields.image({
+      label,
+      description,
+      directory: `src/assets/uploads/${ns}`,
+      publicPath: `/src/assets/uploads/${ns}/`,
+    });
+
 export default config({
   storage: import.meta.env.DEV
     ? { kind: "local" }
@@ -108,6 +120,22 @@ export default config({
           },
           { label: "Mensen & vakmanschap" },
         ),
+      },
+    }),
+
+    contact: singleton({
+      label: "Contactpagina",
+      path: "src/content/pages/contact",
+      format: { data: "yaml" },
+      schema: {
+        kicker: fields.text({ label: "Kicker (bovenregel)" }),
+        titel: fields.text({ label: "Titel (H1)" }),
+        lead: fields.text({ label: "Introzin", multiline: true }),
+        pandFoto: pageFoto("contact")("Pandfoto"),
+        pandBijschrift: fields.text({ label: "Bijschrift bij pandfoto" }),
+        berichtKop: fields.text({ label: "Kop 'stuur een bericht'" }),
+        berichtNote: fields.text({ label: "Toelichting bij formulier", multiline: true }),
+        werkFoto: pageFoto("contact")("Foto bij formulier"),
       },
     }),
   },
