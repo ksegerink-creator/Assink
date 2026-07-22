@@ -367,5 +367,100 @@ export default config({
         photo: photoMeta(),
       },
     }),
+
+    services: collection({
+      label: "Servicepagina's",
+      path: "src/content/services/*",
+      slugField: "title",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Titel" } }),
+        slug: fields.text({ label: "URL-slug", description: "Canonieke route, bv. plaatwerk/rvs. Bepaalt de link en URL." }),
+        template: fields.select({
+          label: "Type pagina",
+          options: [
+            { label: "Detailpagina", value: "service" },
+            { label: "Overzichtspagina (met kaarten)", value: "overview" },
+          ],
+          defaultValue: "service",
+        }),
+        group: fields.select({
+          label: "Groep",
+          options: [
+            { label: "Plaatwerk", value: "plaatwerk" },
+            { label: "Snijden", value: "snijden" },
+            { label: "Lastechniek", value: "lastechniek" },
+            { label: "Samenstellen", value: "samenstellen" },
+            { label: "Sector", value: "sector" },
+            { label: "Hoofd", value: "hoofd" },
+          ],
+          defaultValue: "hoofd",
+        }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        kicker: fields.text({ label: "Kicker" }),
+        h1: fields.text({ label: "Titel (H1)" }),
+        intro: fields.text({ label: "Intro", multiline: true }),
+        heroPhoto: photoMeta(),
+        bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
+        body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
+          label: "Tekst",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        materials: fields.array(fields.text({ label: "Materiaal" }), {
+          label: "Materialen",
+          itemLabel: (p) => p.value,
+        }),
+        process: fields.array(
+          fields.object({
+            step: fields.text({ label: "Stap" }),
+            desc: fields.text({ label: "Toelichting", multiline: true }),
+          }),
+          { label: "Proces", itemLabel: (p) => p.fields.step.value },
+        ),
+        specs: fields.array(
+          fields.object({
+            label: fields.text({ label: "Kenmerk" }),
+            value: fields.text({ label: "Waarde" }),
+          }),
+          { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
+        ),
+        applications: fields.array(fields.text({ label: "Toepassing" }), {
+          label: "Toepassingen",
+          itemLabel: (p) => p.value,
+        }),
+        related: fields.array(
+          fields.object({
+            slug: fields.text({ label: "Link (interne slug)" }),
+            label: fields.text({ label: "Label" }),
+            desc: fields.text({ label: "Omschrijving (optioneel)" }),
+          }),
+          { label: "Gerelateerde pagina's", itemLabel: (p) => p.fields.label.value },
+        ),
+        cards: fields.array(
+          fields.object({
+            slug: fields.text({ label: "Link (interne slug)" }),
+            label: fields.text({ label: "Label" }),
+            desc: fields.text({ label: "Omschrijving" }),
+          }),
+          { label: "Overzichtskaarten", itemLabel: (p) => p.fields.label.value },
+        ),
+        seo: fields.object(
+          {
+            title: fields.text({ label: "SEO-titel" }),
+            description: fields.text({ label: "SEO-omschrijving", multiline: true }),
+          },
+          { label: "SEO (optioneel)" },
+        ),
+        translated: fields.multiselect({
+          label: "Vertaald in",
+          options: [
+            { label: "Nederlands", value: "nl" },
+            { label: "Engels", value: "en" },
+            { label: "Duits", value: "de" },
+          ],
+          defaultValue: ["nl"],
+        }),
+      },
+    }),
   },
 });

@@ -29,8 +29,8 @@ const trail =
 const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug: s.slug, locale })];
 ---
 <PageLayout
-  title={s.seo?.title ?? s.title}
-  description={s.seo?.description ?? s.intro}
+  title={s.seo?.title || s.title}
+  description={s.seo?.description || s.intro}
   canonicalSlug={s.slug}
   trail={trail}
   jsonld={jsonld}
