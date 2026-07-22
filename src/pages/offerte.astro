@@ -1,17 +1,19 @@
 ---
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { CONTACT } from "@data/site";
+import { photo } from "@utils/photos";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const o = await reader.singletons.offerte.read();
+if (!o) throw new Error("Offerte-content ontbreekt (src/content/pages/offerte).");
 
 const services = [
   "Plaatwerk", "Lasersnijden", "Buislasersnijden", "Zetten", "Lassen (hand/robot/laser)",
   "Constructies", "Machinebouw", "Industriële behuizing", "Assemblage", "Anders / weet ik nog niet",
-];
-const steps = [
-  { t: "Deel uw tekening", d: "Stuur een STEP, DWG, PDF of schets — met of zonder materiaalkeuze." },
-  { t: "Maakbaarheidscheck", d: "Wij beoordelen maakbaarheid, materiaal en bewerkingen." },
-  { t: "Offerte", d: "U ontvangt een heldere offerte met levertijdindicatie." },
 ];
 ---
 <PageLayout
@@ -23,15 +25,12 @@ const steps = [
   <section class="sec ov-hero">
     <div class="wrap ov-grid">
       <div>
-        <span class="eyebrow mono"><b>Offerte aanvragen</b></span>
-        <h1>Tekening klaar? Wij ook.</h1>
-        <p class="lead">
-          Bespreek uw tekening, onderdeel of samenstelling met onze specialisten. Van
-          enkelstuks tot serie — u krijgt een concrete offerte met levertijdindicatie.
-        </p>
+        <span class="eyebrow mono"><b>{o.kicker}</b></span>
+        <h1>{o.titel}</h1>
+        <p class="lead">{o.lead}</p>
       </div>
       <figure class="ov-photo">
-        <IndustrialImage imageKey="offerte.werk" alt="Werkvoorbereiding aan de machinebesturing" ratio="4/3" />
+        <IndustrialImage src={photo(o.werkFoto)} alt="Werkvoorbereiding aan de machinebesturing" ratio="4/3" />
       </figure>
     </div>
   </section>
@@ -39,11 +38,11 @@ const steps = [
   <section class="sec tight">
     <div class="wrap">
       <div class="steps">
-        {steps.map((s, i) => (
+        {o.stappen.map((s, i) => (
           <div class="step">
             <span class="step__n mono">{String(i + 1).padStart(2, "0")}</span>
-            <h3>{s.t}</h3>
-            <p>{s.d}</p>
+            <h3>{s.titel}</h3>
+            <p>{s.tekst}</p>
           </div>
         ))}
       </div>

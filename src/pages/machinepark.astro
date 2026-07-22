@@ -1,10 +1,17 @@
 ---
 import { getCollection } from "astro:content";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import SectionHead from "@components/sections/SectionHead.astro";
 import { machineImageFor } from "@data/images";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import { photo } from "@utils/photos";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const m0 = await reader.singletons.machinepark.read();
+if (!m0) throw new Error("Machinepark-content ontbreekt (src/content/pages/machinepark).");
 
 const machines = (await getCollection("machines")).sort((a, b) => a.data.order - b.data.order);
 ---
@@ -17,18 +24,14 @@ const machines = (await getCollection("machines")).sort((a, b) => a.data.order -
   <section class="sec ov-hero">
     <div class="wrap grid2">
       <div class="rv">
-        <span class="eyebrow mono"><b>Productiecapaciteit</b></span>
-        <h1>Machinepark</h1>
-        <p class="lead">
-          Geautomatiseerde productie met traditioneel vakmanschap. Van vlakbedlaser en
-          buislaser tot servo-elektrische kantpers, robotlascel en eigen straal- en
-          afwerkfaciliteiten.
-        </p>
+        <span class="eyebrow mono"><b>{m0.kicker}</b></span>
+        <h1>{m0.titel}</h1>
+        <p class="lead">{m0.lead}</p>
       </div>
       <div class="rv">
         <IndustrialImage
-          imageKey="machinepark.hero"
-          placeholder="Foto benodigd — overzicht productiehal met machinepark"
+          src={photo(m0.heroFoto)}
+          alt="Overzicht van de productiehal met machinepark"
           ratio="16/10"
           annotation="Productiehal Hengelo"
           number="MP-00"

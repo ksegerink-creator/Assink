@@ -138,5 +138,95 @@ export default config({
         werkFoto: pageFoto("contact")("Foto bij formulier"),
       },
     }),
+
+    overOns: singleton({
+      label: "Over ons",
+      path: "src/content/pages/over-ons",
+      format: { data: "yaml" },
+      schema: {
+        heroKicker: fields.text({ label: "Hero — kicker" }),
+        heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
+        heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
+        heroFoto: pageFoto("over-ons")("Hero-foto"),
+        lead: fields.text({ label: "Introzin (vet)", multiline: true, description: "Gebruik {jaren} voor het automatische jaartal." }),
+        feiten: fields.array(
+          fields.object({
+            waarde: fields.text({ label: "Waarde" }),
+            label: fields.text({ label: "Label" }),
+          }),
+          { label: "Feiten", itemLabel: (p) => `${p.fields.waarde.value} — ${p.fields.label.value}` },
+        ),
+        proza: fields.array(fields.text({ label: "Alinea", multiline: true }), {
+          label: "Intro-alinea's",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        historieKop1: fields.text({ label: "Geschiedenis — kop regel 1" }),
+        historieKop2: fields.text({ label: "Geschiedenis — kop regel 2" }),
+        historieFoto: pageFoto("over-ons")("Geschiedenis — achtergrondfoto"),
+        tijdlijn: fields.array(
+          fields.object({
+            jaar: fields.text({ label: "Jaar / label" }),
+            tekst: fields.text({ label: "Tekst", multiline: true }),
+          }),
+          { label: "Tijdlijn", itemLabel: (p) => p.fields.jaar.value },
+        ),
+        vakEyebrow: fields.text({ label: "Vakmanschap — eyebrow" }),
+        vakKop: fields.text({ label: "Vakmanschap — kop" }),
+        vakTekst: fields.text({ label: "Vakmanschap — tekst", multiline: true }),
+        vakFoto: pageFoto("over-ons")("Vakmanschap — foto"),
+        pandFoto: pageFoto("over-ons")("Pandfoto"),
+        pandBijschrift: fields.text({ label: "Bijschrift pandfoto" }),
+      },
+    }),
+
+    offerte: singleton({
+      label: "Offerte-pagina",
+      path: "src/content/pages/offerte",
+      format: { data: "yaml" },
+      schema: {
+        kicker: fields.text({ label: "Kicker" }),
+        titel: fields.text({ label: "Titel (H1)" }),
+        lead: fields.text({ label: "Introzin", multiline: true }),
+        werkFoto: pageFoto("offerte")("Foto"),
+        stappen: fields.array(
+          fields.object({
+            titel: fields.text({ label: "Titel" }),
+            tekst: fields.text({ label: "Tekst", multiline: true }),
+          }),
+          { label: "Stappen", itemLabel: (p) => p.fields.titel.value },
+        ),
+      },
+    }),
+
+    kwaliteit: singleton({
+      label: "Kwaliteit-pagina",
+      path: "src/content/pages/kwaliteit",
+      format: { data: "yaml" },
+      schema: {
+        kicker: fields.text({ label: "Kicker" }),
+        titel: fields.text({ label: "Titel (H1)" }),
+        lead: fields.text({ label: "Introzin", multiline: true }),
+        heroFoto: pageFoto("kwaliteit")("Hero-foto"),
+        proces: fields.array(
+          fields.object({
+            stap: fields.text({ label: "Stap" }),
+            tekst: fields.text({ label: "Toelichting", multiline: true }),
+          }),
+          { label: "Kwaliteitsproces", itemLabel: (p) => p.fields.stap.value },
+        ),
+      },
+    }),
+
+    machinepark: singleton({
+      label: "Machinepark-pagina",
+      path: "src/content/pages/machinepark",
+      format: { data: "yaml" },
+      schema: {
+        kicker: fields.text({ label: "Kicker" }),
+        titel: fields.text({ label: "Titel (H1)" }),
+        lead: fields.text({ label: "Introzin", multiline: true }),
+        heroFoto: pageFoto("machinepark")("Hero-foto"),
+      },
+    }),
   },
 });

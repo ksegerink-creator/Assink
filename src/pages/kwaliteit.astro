@@ -1,18 +1,18 @@
 ---
 import { getCollection } from "astro:content";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import { photo } from "@utils/photos";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const q = await reader.singletons.kwaliteit.read();
+if (!q) throw new Error("Kwaliteit-content ontbreekt (src/content/pages/kwaliteit).");
 
 const certs = (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order);
-
-const steps = [
-  { step: "Ingangscontrole", desc: "Materiaalcertificaten en afmetingen bij binnenkomst gecontroleerd." },
-  { step: "Proces­beheersing", desc: "Gekwalificeerde lasprocessen en gecontroleerde productieparameters." },
-  { step: "Maatcontrole", desc: "Meetgereedschap en visuele keuring tijdens en na productie." },
-  { step: "Eindkeuring & vrijgave", desc: "Documentatie en vrijgave vóór just-in-time levering." },
-];
 ---
 <PageLayout
   title="Kwaliteit & certificering"
@@ -23,17 +23,14 @@ const steps = [
   <section class="sec ov-hero">
     <div class="wrap grid2">
       <div class="rv">
-        <span class="eyebrow mono"><b>Geborgde kwaliteit</b></span>
-        <h1>Kwaliteit &amp; certificering</h1>
-        <p class="lead">
-          Kwaliteit borgen we in het proces, niet achteraf. Van gekwalificeerde
-          lasprocessen tot maatcontrole en documentatie — aantoonbaar en herleidbaar.
-        </p>
+        <span class="eyebrow mono"><b>{q.kicker}</b></span>
+        <h1>{q.titel}</h1>
+        <p class="lead">{q.lead}</p>
       </div>
       <div class="rv">
         <IndustrialImage
-          imageKey="kwaliteit.hero"
-          placeholder="Foto benodigd — kwaliteitscontrole van RVS onderdeel"
+          src={photo(q.heroFoto)}
+          alt="Kwaliteitscontrole van een RVS-onderdeel"
           ratio="16/10"
           annotation="Maatcontrole"
           number="QA-00"
@@ -64,11 +61,11 @@ const steps = [
     <div class="wrap">
       <SectionHead title="Kwaliteitsproces" index="Van ingang tot vrijgave" />
       <ul class="rows">
-        {steps.map((p, i) => (
+        {q.proces.map((p, i) => (
           <li class="row rv">
             <span class="idx">{String(i + 1).padStart(2, "0")}</span>
-            <h3>{p.step}</h3>
-            <p>{p.desc}</p>
+            <h3>{p.stap}</h3>
+            <p>{p.tekst}</p>
           </li>
         ))}
       </ul>

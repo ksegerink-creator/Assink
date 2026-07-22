@@ -1,0 +1,8 @@
+kicker: "Offerte aanvragen"
+titel: "Tekening klaar? Wij ook."
+lead: "Bespreek uw tekening, onderdeel of samenstelling met onze specialisten. Van enkelstuks tot serie — u krijgt een concrete offerte met levertijdindicatie."
+werkFoto: "/src/assets/uploads/offerte/werkFoto.jpg"
+stappen:
+  - { titel: "Deel uw tekening", tekst: "Stuur een STEP, DWG, PDF of schets — met of zonder materiaalkeuze." }
+  - { titel: "Maakbaarheidscheck", tekst: "Wij beoordelen maakbaarheid, materiaal en bewerkingen." }
+  - { titel: "Offerte", tekst: "U ontvangt een heldere offerte met levertijdindicatie." }

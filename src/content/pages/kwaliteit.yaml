@@ -1,0 +1,9 @@
+kicker: "Geborgde kwaliteit"
+titel: "Kwaliteit & certificering"
+lead: "Kwaliteit borgen we in het proces, niet achteraf. Van gekwalificeerde lasprocessen tot maatcontrole en documentatie — aantoonbaar en herleidbaar."
+heroFoto: "/src/assets/uploads/kwaliteit/heroFoto.jpg"
+proces:
+  - { stap: "Ingangscontrole", tekst: "Materiaalcertificaten en afmetingen bij binnenkomst gecontroleerd." }
+  - { stap: "Procesbeheersing", tekst: "Gekwalificeerde lasprocessen en gecontroleerde productieparameters." }
+  - { stap: "Maatcontrole", tekst: "Meetgereedschap en visuele keuring tijdens en na productie." }
+  - { stap: "Eindkeuring & vrijgave", tekst: "Documentatie en vrijgave vóór just-in-time levering." }

@@ -1,0 +1,27 @@
+heroKicker: "Over ons · Hengelo (Ov.)"
+heroTitelRegel1: "Meer dan een eeuw"
+heroTitelRegel2: "metaalbewerking"
+heroFoto: "/src/assets/uploads/over-ons/heroFoto.jpg"
+lead: "Assink & Schipholt bewerkt al sinds 1919 metaal in Hengelo. De combinatie van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling."
+feiten:
+  - { waarde: "{jaren}", label: "jaar ervaring" }
+  - { waarde: "5 t", label: "max. stukgewicht" }
+  - { waarde: "±50 m²", label: "constructieoppervlak" }
+  - { waarde: "1", label: "aanspreekpunt" }
+proza:
+  - "Wij werken voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."
+  - "Sinds enkele jaren zijn we onderdeel van de HARMAX Groep, samen met andere technische maakbedrijven in de regio. Daardoor kunnen we ook voor grotere en bredere uitvragen één partij zijn."
+historieKop1: "Van smederij"
+historieKop2: "tot moderne productie"
+historieFoto: "/src/assets/uploads/over-ons/historieFoto.png"
+tijdlijn:
+  - { jaar: "1919", tekst: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." }
+  - { jaar: "20e eeuw", tekst: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." }
+  - { jaar: "Vandaag", tekst: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, robotlassen en eigen afwerking." }
+  - { jaar: "Nu", tekst: "Onderdeel van HARMAX Groep — één productiepartner van engineering tot afgewerkte samenstelling." }
+vakEyebrow: "Kwaliteit & vakmanschap"
+vakKop: "Aantoonbaar goed werk"
+vakTekst: "Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze eigen vakmensen op."
+vakFoto: "/src/assets/uploads/over-ons/vakFoto.jpg"
+pandFoto: "/src/assets/uploads/over-ons/pandFoto.jpg"
+pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"
