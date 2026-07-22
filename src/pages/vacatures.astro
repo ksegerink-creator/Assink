@@ -34,7 +34,7 @@ const WHY = [
         </p>
         <div class="vhero__acts">
           <a class="btn" href="#vacatures">Bekijk vacatures ({open.length})</a>
-          <a class="btn ghost" href={`mailto:${CONTACT.hrm}`}>Open sollicitatie</a>
+          <a class="btn ghost" href={`mailto:${CONTACT.email}`}>Open sollicitatie</a>
         </div>
       </div>
       <figure class="vhero__photo">
@@ -94,7 +94,7 @@ const WHY = [
       ) : (
         <p class="prose rv">
           Er zijn op dit moment geen openstaande vacatures. Een open sollicitatie is
-          altijd welkom via <a href={`mailto:${CONTACT.hrm}`}>{CONTACT.hrm}</a>.
+          altijd welkom via <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
         </p>
       )}
     </div>
@@ -105,10 +105,10 @@ const WHY = [
     <div class="wrap vcta rv">
       <div>
         <h2>Gewoon eens komen kijken?</h2>
-        <p>Loop een dag mee op de werkvloer. Bel {CONTACT.tel} of mail HRM — dan plannen we wat in.</p>
+        <p>Loop een dag mee op de werkvloer. Bel {CONTACT.tel} of mail ons — dan plannen we wat in.</p>
       </div>
       <div class="vcta__acts">
-        <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Meeloopdag`}>Plan een meeloopdag</a>
+        <a class="btn" href={`mailto:${CONTACT.email}?subject=Meeloopdag`}>Plan een meeloopdag</a>
         <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
       </div>
     </div>

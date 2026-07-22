@@ -27,7 +27,6 @@ export const CONTACT = {
   telHref: "tel:+31742912235",
   telE164: "+31742912235",
   email: "info@assinkschipholt.nl",
-  hrm: "hrm@assinkschipholt.nl",
   // Approximate coordinates for LocalBusiness / map — confirm before launch.
   geo: { lat: 52.2426, lng: 6.8098 },
 } as const;

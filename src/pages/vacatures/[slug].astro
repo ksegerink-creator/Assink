@@ -54,7 +54,7 @@ const vacImage = imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
         </div>
         <p class="lead">{v.intro}</p>
         <div class="acts">
-          <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
+          <a class="btn" href={`mailto:${CONTACT.email}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
           <a class="btn ghost" href={CONTACT.telHref}>Bel {CONTACT.tel}</a>
         </div>
       </div>
@@ -93,7 +93,7 @@ const vacImage = imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
         <h2>Solliciteer<br /><span class="alt">bij Assink &amp; Schipholt</span></h2>
       </div>
       <div class="acts">
-        <a class="btn" href={`mailto:${CONTACT.hrm}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail HRM</a>
+        <a class="btn" href={`mailto:${CONTACT.email}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail ons</a>
         <a class="btn ghost" href="/contact/">Contact</a>
       </div>
     </div>

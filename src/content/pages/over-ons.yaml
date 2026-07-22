@@ -10,7 +10,7 @@ feiten:
   - { waarde: "1", label: "aanspreekpunt" }
 proza:
   - "Wij werken voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."
-  - "Sinds enkele jaren zijn we onderdeel van de HARMAX Groep, samen met andere technische maakbedrijven in de regio. Daardoor kunnen we ook voor grotere en bredere uitvragen één partij zijn."
+  - "Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u heeft één aanspreekpunt dat het hele traject overziet — van engineering tot afgewerkte samenstelling."
 historieKop1: "Van smederij"
 historieKop2: "tot moderne productie"
 historieFoto: "/src/assets/uploads/over-ons/historieFoto.png"
@@ -18,7 +18,7 @@ tijdlijn:
   - { jaar: "1919", tekst: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." }
   - { jaar: "20e eeuw", tekst: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." }
   - { jaar: "Vandaag", tekst: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, robotlassen en eigen afwerking." }
-  - { jaar: "Nu", tekst: "Onderdeel van HARMAX Groep — één productiepartner van engineering tot afgewerkte samenstelling." }
+  - { jaar: "Nu", tekst: "Eén productiepartner van engineering tot afgewerkte samenstelling voor machinebouw en industrie." }
 vakEyebrow: "Kwaliteit & vakmanschap"
 vakKop: "Aantoonbaar goed werk"
 vakTekst: "Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze eigen vakmensen op."
