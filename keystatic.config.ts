@@ -4,18 +4,18 @@ import { config, singleton, fields } from "@keystatic/core";
  * Keystatic — contentbeheer voor Assink & Schipholt.
  *
  * Opslagmodus:
- *  - lokaal (dev): bewerken via /keystatic op de dev-machine; content wordt als
- *    bestanden in het project opgeslagen.
- *  - GitHub (productie): het marketingteam logt via de browser in en bewerkt;
- *    wijzigingen worden commits in de repo. Wordt geactiveerd zodra de
- *    omgevingsvariabele KEYSTATIC_GITHUB_REPO ("eigenaar/repo") is ingesteld
- *    (bv. op Vercel). Zie DEPLOY.md.
+ *  - lokaal (astro dev): bewerken via /keystatic op de dev-machine; content
+ *    wordt als bestanden in het project opgeslagen.
+ *  - GitHub (productie/Vercel): het marketingteam logt via de browser in en
+ *    bewerkt; wijzigingen worden commits in de repo.
+ *
+ * De keuze hangt af van `import.meta.env.DEV` — dat werkt zowel server- als
+ * client-side (Vite inlinet het in de Studio-bundel), zodat de browser-UI
+ * dezelfde modus kiest als de server. De repo staat hier direct (niet geheim).
  *
  * Foto's worden opgeslagen in src/assets/uploads/ en op de site geresolved via
  * src/utils/photos.ts (behoud van beeldoptimalisatie).
  */
-const githubRepo = process.env.KEYSTATIC_GITHUB_REPO;
-const useGithub = !!githubRepo && process.env.NODE_ENV !== "development";
 
 // Door Keystatic beheerde uploads staan in een EIGEN map (src/assets/uploads),
 // gescheiden van de curated registry src/assets/photos (src/data/images.ts) van
@@ -29,9 +29,9 @@ const foto = (label: string, description?: string) =>
   });
 
 export default config({
-  storage: useGithub
-    ? { kind: "github", repo: githubRepo as `${string}/${string}` }
-    : { kind: "local" },
+  storage: import.meta.env.DEV
+    ? { kind: "local" }
+    : { kind: "github", repo: "ksegerink-creator/Assink" },
   ui: {
     brand: { name: "Assink & Schipholt" },
   },

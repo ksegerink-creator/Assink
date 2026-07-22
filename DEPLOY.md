@@ -28,9 +28,9 @@ git push -u origin main
    voeg ze daarna toe + redeploy.
 
 ## 3. Omgevingsvariabelen op Vercel (Project → Settings → Environment Variables)
+De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nodig.
 | Variabele | Waarde |
 |---|---|
-| `KEYSTATIC_GITHUB_REPO` | `<eigenaar>/<repo>` (zelfde als GitHub) |
 | `KEYSTATIC_SECRET` | willekeurige lange string (bv. `openssl rand -hex 32`) |
 | `KEYSTATIC_GITHUB_CLIENT_ID` | volgt uit stap 4 |
 | `KEYSTATIC_GITHUB_CLIENT_SECRET` | volgt uit stap 4 |
