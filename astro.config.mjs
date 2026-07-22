@@ -23,6 +23,16 @@ export default defineConfig({
    */
   output: "static",
   adapter: vercel(),
+  /**
+   * Vertrouw de host-header van Vercel. Astro negeert 'x-forwarded-host'
+   * standaard (anti-spoofing) en valt dan terug op 'localhost' — waardoor
+   * Keystatic's GitHub-OAuth de redirect naar https://localhost stuurde.
+   * Door *.vercel.app als toegestaan domein op te geven bepaalt Astro de
+   * juiste origin. Voeg hier later het eigen domein toe zodra dat live is.
+   */
+  security: {
+    allowedDomains: [{ hostname: "**.vercel.app" }],
+  },
   // 'ignore' i.p.v. 'always': Keystatic's admin-routes (/keystatic/…) werken niet
   // met een afgedwongen trailing slash. Canonical-URL's en sitemap houden de
   // trailing slash aan via absUrl()/localizePath(), dus SEO blijft ongewijzigd.
