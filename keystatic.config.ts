@@ -40,6 +40,19 @@ const pageFoto =
       publicPath: `/src/assets/uploads/${ns}/`,
     });
 
+// Fotometadata voor collectie-items (het beeld zelf komt nog uit src/data/images.ts).
+const photoMeta = () =>
+  fields.object(
+    {
+      subject: fields.text({ label: "Onderwerp" }),
+      orient: fields.text({ label: "Oriëntatie (optioneel)" }),
+      crop: fields.text({ label: "Uitsnede (optioneel)" }),
+      comp: fields.text({ label: "Compositie (optioneel)" }),
+      src: fields.text({ label: "Beeldbron (optioneel)" }),
+    },
+    { label: "Fotogegevens" },
+  );
+
 export default config({
   storage: import.meta.env.DEV
     ? { kind: "local" }
@@ -298,16 +311,60 @@ export default config({
           }),
           { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
         ),
-        photo: fields.object(
-          {
-            subject: fields.text({ label: "Onderwerp (voor fotopositie)" }),
-            orient: fields.text({ label: "Oriëntatie (optioneel)" }),
-            crop: fields.text({ label: "Uitsnede (optioneel)" }),
-            comp: fields.text({ label: "Compositie (optioneel)" }),
-            src: fields.text({ label: "Beeldbron (optioneel)" }),
-          },
-          { label: "Fotogegevens" },
-        ),
+        photo: photoMeta(),
+      },
+    }),
+
+    sectoren: collection({
+      label: "Sectoren",
+      path: "src/content/sectors/*",
+      slugField: "title",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Titel" } }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        summary: fields.text({ label: "Samenvatting", multiline: true }),
+        link: fields.text({ label: "Link (interne slug)", description: "Naar welke pagina deze sector verwijst." }),
+      },
+    }),
+
+    projecten: collection({
+      label: "Projecten (referenties)",
+      path: "src/content/projects/*",
+      slugField: "title",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Titel" } }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        sector: fields.text({ label: "Sector" }),
+        summary: fields.text({ label: "Samenvatting", multiline: true }),
+        photo: photoMeta(),
+      },
+    }),
+
+    vacatures: collection({
+      label: "Vacatures",
+      path: "src/content/vacancies/*",
+      slugField: "title",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Functietitel" } }),
+        slug: fields.text({ label: "URL-slug", description: "Bv. bankwerker-lasser (bepaalt de link)." }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        employmentType: fields.text({ label: "Dienstverband" }),
+        hours: fields.text({ label: "Uren (optioneel)" }),
+        education: fields.text({ label: "Opleiding (optioneel)" }),
+        intro: fields.text({ label: "Intro", multiline: true }),
+        responsibilities: fields.array(fields.text({ label: "Taak" }), {
+          label: "Wat je doet",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        requirements: fields.array(fields.text({ label: "Eis" }), {
+          label: "Wat je meebrengt",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
+        photo: photoMeta(),
       },
     }),
   },
