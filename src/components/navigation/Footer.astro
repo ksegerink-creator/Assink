@@ -1,9 +1,14 @@
 ---
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../../keystatic.config";
 import { SITE, CONTACT, CERTS } from "@data/site";
-import { FOOTER_SERVICES } from "@data/nav";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import Logo from "./Logo.astro";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const navData = await reader.singletons.navigatie.read();
+const FOOTER_SERVICES = navData?.footerDiensten ?? [];
 
 const locale = toLocale(Astro.currentLocale);
 const nav = (slug: string) => localizePath(slug, "nl");

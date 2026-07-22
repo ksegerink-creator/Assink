@@ -1,5 +1,6 @@
 ---
-import { MEGA, SECTORS } from "@data/nav";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../../keystatic.config";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import LangSwitcher from "./LangSwitcher.astro";
@@ -12,6 +13,12 @@ interface Props {
 }
 const { canonicalSlug, available = ["nl"] } = Astro.props;
 const locale = toLocale(Astro.currentLocale);
+
+// Navigatie komt uit de Keystatic-singleton (bewerkbaar via /keystatic).
+const reader = createReader(process.cwd(), keystaticConfig);
+const navData = await reader.singletons.navigatie.read();
+const MEGA = (navData?.megaKolommen ?? []).map((c) => ({ heading: c.titel, items: c.items }));
+const SECTORS = navData?.sectoren ?? [];
 
 /* Content pages currently exist in Dutch; link nav items to the Dutch canonical
    route so there are never dead links. The language switcher toggles the locale. */
@@ -30,7 +37,7 @@ const home = localizePath("", locale);
           {
             MEGA.map((col) => (
               <div class="col">
-                <h4>{col.heading[locale]}</h4>
+                <h4>{col.heading}</h4>
                 {col.items.map((it) => (
                   <a role="menuitem" href={nav(it.slug)}>
                     {it.idx && <span class="m">{it.idx}</span>}

@@ -1,4 +1,4 @@
-import { config, singleton, fields } from "@keystatic/core";
+import { config, singleton, collection, fields } from "@keystatic/core";
 
 /**
  * Keystatic — contentbeheer voor Assink & Schipholt.
@@ -226,6 +226,88 @@ export default config({
         titel: fields.text({ label: "Titel (H1)" }),
         lead: fields.text({ label: "Introzin", multiline: true }),
         heroFoto: pageFoto("machinepark")("Hero-foto"),
+      },
+    }),
+
+    navigatie: singleton({
+      label: "Navigatie (menu)",
+      path: "src/content/pages/navigatie",
+      format: { data: "yaml" },
+      schema: {
+        megaKolommen: fields.array(
+          fields.object({
+            titel: fields.text({ label: "Kolomtitel" }),
+            items: fields.array(
+              fields.object({
+                label: fields.text({ label: "Label" }),
+                slug: fields.text({ label: "Link (interne slug)", description: "Zonder schuine strepen ervoor/erna. Bv. plaatwerk/rvs. Moet naar een bestaande pagina wijzen." }),
+                idx: fields.text({ label: "Nummer (optioneel)" }),
+              }),
+              { label: "Items", itemLabel: (p) => p.fields.label.value },
+            ),
+          }),
+          { label: "Mega-menu kolommen", itemLabel: (p) => p.fields.titel.value },
+        ),
+        sectoren: fields.array(
+          fields.object({
+            label: fields.text({ label: "Label" }),
+            slug: fields.text({ label: "Link (interne slug)" }),
+            idx: fields.text({ label: "Nummer (optioneel)" }),
+          }),
+          { label: "Sectoren-menu", itemLabel: (p) => p.fields.label.value },
+        ),
+        footerDiensten: fields.array(
+          fields.object({
+            label: fields.text({ label: "Label" }),
+            slug: fields.text({ label: "Link (interne slug)" }),
+          }),
+          { label: "Footer — diensten", itemLabel: (p) => p.fields.label.value },
+        ),
+      },
+    }),
+  },
+
+  collections: {
+    certificeringen: collection({
+      label: "Certificeringen",
+      path: "src/content/certifications/*",
+      slugField: "name",
+      format: { data: "yaml" },
+      schema: {
+        name: fields.slug({ name: { label: "Naam", description: "Bv. ISO 9001" } }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        scope: fields.text({ label: "Scope / omschrijving", multiline: true }),
+        document: fields.text({ label: "PDF-bestandsnaam (optioneel)", description: "In /public/documents/" }),
+      },
+    }),
+
+    machines: collection({
+      label: "Machines",
+      path: "src/content/machines/*",
+      slugField: "name",
+      format: { data: "yaml" },
+      schema: {
+        name: fields.slug({ name: { label: "Naam" } }),
+        category: fields.text({ label: "Categorie" }),
+        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        description: fields.text({ label: "Omschrijving", multiline: true }),
+        specs: fields.array(
+          fields.object({
+            label: fields.text({ label: "Kenmerk" }),
+            value: fields.text({ label: "Waarde" }),
+          }),
+          { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
+        ),
+        photo: fields.object(
+          {
+            subject: fields.text({ label: "Onderwerp (voor fotopositie)" }),
+            orient: fields.text({ label: "Oriëntatie (optioneel)" }),
+            crop: fields.text({ label: "Uitsnede (optioneel)" }),
+            comp: fields.text({ label: "Compositie (optioneel)" }),
+            src: fields.text({ label: "Beeldbron (optioneel)" }),
+          },
+          { label: "Fotogegevens" },
+        ),
       },
     }),
   },
