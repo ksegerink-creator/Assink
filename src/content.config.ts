@@ -31,6 +31,7 @@ const services = defineCollection({
     kicker: z.string(),
     h1: z.string(),
     intro: z.string(),
+    foto: z.string().optional(),
     heroPhoto: photo,
     body: z.array(z.string()).default([]),
     bodyHeading: z.string().optional(),
@@ -60,6 +61,7 @@ const machines = defineCollection({
     order: z.number().default(50),
     description: z.string(),
     specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
+    foto: z.string().optional(),
     photo,
   }),
 });
@@ -78,6 +80,7 @@ const vacancies = defineCollection({
     responsibilities: z.array(z.string()).default([]),
     requirements: z.array(z.string()).default([]),
     open: z.boolean().default(true),
+    foto: z.string().optional(),
     photo,
   }),
 });
@@ -90,6 +93,7 @@ const projects = defineCollection({
     order: z.number().default(50),
     sector: z.string(),
     summary: z.string(),
+    foto: z.string().optional(),
     photo,
   }),
 });

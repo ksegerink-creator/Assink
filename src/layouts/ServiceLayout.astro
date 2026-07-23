@@ -6,6 +6,7 @@ import { t } from "@data/i18n";
 import { serviceJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
 import { serviceImageFor, serviceMidImageFor } from "@data/images";
+import { photo } from "@utils/photos";
 import { SITE } from "@data/site";
 import type { CollectionEntry } from "astro:content";
 
@@ -15,7 +16,7 @@ const locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
 const nav = (slug: string) => localizePath(slug, "nl");
 
-const heroImg = serviceImageFor(s.slug);
+const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 const midImg = serviceMidImageFor(s.group);
 // Toon het middenbeeld alleen als het niet hetzelfde beeld is als de hero.
 const showMid = midImg && midImg !== heroImg && s.process.length > 0;

@@ -1,7 +1,58 @@
 /**
  * Central company / site facts.
  * Source of truth: crawl of assinkschipholt.nl (July 2026).
+ *
+ * De contactgegevens (adres/telefoon/e-mail) worden uit het CMS gelezen:
+ * src/content/pages/bedrijfsgegevens.yaml, bewerkbaar via Keystatic
+ * ("Menu & vaste teksten → Bedrijfsgegevens"). Dit bestand wordt alleen
+ * server-side (tijdens de build) uitgelezen; geen enkel client-script importeert
+ * site.ts, dus node:fs komt niet in de browserbundel terecht.
  */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import { parse } from "yaml";
+
+type ContactFile = {
+  straat?: string;
+  postcode?: string;
+  plaats?: string;
+  telefoon?: string;
+  email?: string;
+};
+
+const CONTACT_DEFAULTS: Required<ContactFile> = {
+  straat: "Oosterveldsingel 18",
+  postcode: "7558 PK",
+  plaats: "Hengelo",
+  telefoon: "074-2912235",
+  email: "info@assinkschipholt.nl",
+};
+
+function readContactFile(): Required<ContactFile> {
+  try {
+    const raw = readFileSync(join(process.cwd(), "src/content/pages/bedrijfsgegevens.yaml"), "utf8");
+    const data = (parse(raw) ?? {}) as ContactFile;
+    return {
+      straat: data.straat?.trim() || CONTACT_DEFAULTS.straat,
+      postcode: data.postcode?.trim() || CONTACT_DEFAULTS.postcode,
+      plaats: data.plaats?.trim() || CONTACT_DEFAULTS.plaats,
+      telefoon: data.telefoon?.trim() || CONTACT_DEFAULTS.telefoon,
+      email: data.email?.trim() || CONTACT_DEFAULTS.email,
+    };
+  } catch {
+    return CONTACT_DEFAULTS;
+  }
+}
+
+/** Zet een NL-weergavenummer om naar E.164 (bv. "074-2912235" → "+31742912235"). */
+function toE164(tel: string): string {
+  const digits = tel.replace(/\D/g, "");
+  if (digits.startsWith("00")) return "+" + digits.slice(2);
+  if (digits.startsWith("0")) return "+31" + digits.slice(1);
+  if (tel.trim().startsWith("+")) return "+" + digits;
+  return "+31" + digits;
+}
+
 export const SITE = {
   name: "Assink & Schipholt",
   legalName: "Assink & Schipholt B.V.",
@@ -16,17 +67,20 @@ export const SITE = {
   defaultLocale: "nl" as const,
 } as const;
 
+const _c = readContactFile();
+const _e164 = toE164(_c.telefoon);
+
 export const CONTACT = {
-  street: "Oosterveldsingel 18",
-  postalCode: "7558 PK",
-  city: "Hengelo",
+  street: _c.straat,
+  postalCode: _c.postcode,
+  city: _c.plaats,
   region: "Overijssel",
   country: "NL",
-  addr: "Oosterveldsingel 18, 7558 PK Hengelo",
-  tel: "074-2912235",
-  telHref: "tel:+31742912235",
-  telE164: "+31742912235",
-  email: "info@assinkschipholt.nl",
+  addr: `${_c.straat}, ${_c.postcode} ${_c.plaats}`,
+  tel: _c.telefoon,
+  telHref: `tel:${_e164}`,
+  telE164: _e164,
+  email: _c.email,
   // Approximate coordinates for LocalBusiness / map — confirm before launch.
   geo: { lat: 52.2426, lng: 6.8098 },
 } as const;

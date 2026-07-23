@@ -120,7 +120,7 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
       <div class="aproj">
         {projects.map((p) => (
           <figure class="rv">
-            <IndustrialImage src={projectImageFor(p.id)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
+            <IndustrialImage src={photo(p.data.foto) ?? projectImageFor(p.id)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
             <figcaption>
               <span class="mono">{p.data.sector}</span>
               <h3>{p.data.title}</h3>

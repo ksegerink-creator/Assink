@@ -66,7 +66,7 @@ export default config({
       Diensten: ["services", "sectoren"],
       Vacatures: ["vacatures"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
-      "Menu & vaste teksten": ["navigatie", "algemeen"],
+      "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens"],
     },
   },
   singletons: {
@@ -289,6 +289,19 @@ export default config({
       },
     }),
 
+    bedrijfsgegevens: singleton({
+      label: "Bedrijfsgegevens (contact)",
+      path: "src/content/pages/bedrijfsgegevens",
+      format: { data: "yaml" },
+      schema: {
+        straat: fields.text({ label: "Straat + huisnummer" }),
+        postcode: fields.text({ label: "Postcode" }),
+        plaats: fields.text({ label: "Plaats" }),
+        telefoon: fields.text({ label: "Telefoon", description: "Zoals getoond, bv. 074-2912235. De bel-link wordt automatisch afgeleid." }),
+        email: fields.text({ label: "E-mailadres" }),
+      },
+    }),
+
     navigatie: singleton({
       label: "Navigatie (menu)",
       path: "src/content/pages/navigatie",
@@ -358,6 +371,7 @@ export default config({
           }),
           { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
         ),
+        foto: pageFoto("machines")("Foto", "Laat leeg voor de standaardfoto van deze machine."),
         photo: photoMeta(),
       },
     }),
@@ -385,6 +399,7 @@ export default config({
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
         sector: fields.text({ label: "Sector" }),
         summary: fields.text({ label: "Samenvatting", multiline: true }),
+        foto: pageFoto("projecten")("Foto", "Laat leeg voor de standaardfoto van dit project."),
         photo: photoMeta(),
       },
     }),
@@ -411,6 +426,7 @@ export default config({
           itemLabel: (p) => (p.value || "").slice(0, 45),
         }),
         open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
+        foto: pageFoto("vacatures")("Foto", "Laat leeg voor de standaardfoto bij deze vacature."),
         photo: photoMeta(),
       },
     }),
@@ -447,6 +463,7 @@ export default config({
         kicker: fields.text({ label: "Kicker" }),
         h1: fields.text({ label: "Titel (H1)" }),
         intro: fields.text({ label: "Intro", multiline: true }),
+        foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
         heroPhoto: photoMeta(),
         bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
         body: fields.array(fields.text({ label: "Alinea", multiline: true }), {

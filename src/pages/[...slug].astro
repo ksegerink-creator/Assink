@@ -8,6 +8,7 @@ import CtaBand from "@components/sections/CtaBand.astro";
 import { t } from "@data/i18n";
 import { toLocale, localizePath } from "@utils/paths";
 import { serviceImageFor } from "@data/images";
+import { photo } from "@utils/photos";
 
 /**
  * Alle servicepagina's. template = "overview" → editoriale indexpagina,
@@ -27,7 +28,7 @@ const s = entry.data;
 const locale = toLocale(Astro.currentLocale);
 const nav = (slug: string) => localizePath(slug, "nl");
 const isOverview = s.template === "overview";
-const heroImg = serviceImageFor(s.slug);
+const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 ---
 
 {

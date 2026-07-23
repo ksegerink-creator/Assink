@@ -5,6 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { imageFor } from "@data/images";
+import { photo } from "@utils/photos";
 import { CONTACT, SITE } from "@data/site";
 import { jobPostingJsonLd } from "@utils/seo";
 
@@ -32,7 +33,7 @@ const VAC_IMG: Record<string, string> = {
   "stage": "vacatures.sfeer.1",
   "vakantiewerk": "vacatures.sfeer.2",
 };
-const vacImage = imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
+const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
 ---
 <PageLayout
   title={v.title}

@@ -47,7 +47,7 @@ const machines = (await getCollection("machines")).sort((a, b) => a.data.order -
         {machines.map((m, i) => (
           <article class="mp__row">
             <div class="mp__media">
-              <IndustrialImage src={machineImageFor(m.id)} alt={m.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${m.data.photo.subject}`} />
+              <IndustrialImage src={photo(m.data.foto) ?? machineImageFor(m.id)} alt={m.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${m.data.photo.subject}`} />
             </div>
             <div class="mp__body">
               <span class="mp__cat mono">{String(i + 1).padStart(2, "0")} · {m.data.category}</span>
