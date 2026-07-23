@@ -12,7 +12,7 @@ heroPhoto:
   crop: "Machine + hand van operator"
   comp: "Kantpers, plaat onder de pers"
 body:
-  - "Zetten (kanten) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150T zetten we maatvast, met aandacht voor terugvering en buigradius per materiaal."
+  - "Zetten (kanten) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150-3100 T3 zetten we maatvast, met aandacht voor terugvering en buigradius per materiaal."
 materials: ["RVS", "Aluminium", "Messing", "Staal"]
 process:
   - { step: "Uitslag bepalen", desc: "Correcte uitslag inclusief buigcompensatie." }
@@ -20,7 +20,7 @@ process:
   - { step: "Zetten", desc: "Buigen met constante hoeknauwkeurigheid." }
   - { step: "Controle", desc: "Hoek- en maatcontrole." }
 specs:
-  - { label: "Machine", value: "Safan Darley E-Brake 150T" }
+  - { label: "Machine", value: "Safan Darley E-Brake 150-3100 T3" }
   - { label: "Perskracht", value: "150 ton" }
   - { label: "Werklengte", value: "tot 3100 mm" }
   - { label: "Aandrijving", value: "servo-elektrisch" }
@@ -30,5 +30,5 @@ related:
   - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "Snijden vóór het zetten." }
 seo:
   title: "Kanten & zetten — nauwkeurige buighoeken op de kantpers"
-  description: "Maatvast zetten op de servo-elektrische Safan Darley E-Brake 150T: 150 ton perskracht, werklengte tot 3100 mm."
+  description: "Maatvast zetten op de servo-elektrische Safan Darley E-Brake 150-3100 T3: 150 ton perskracht, werklengte tot 3100 mm."
 translated: ["nl"]
