@@ -13,18 +13,12 @@ megaKolommen:
       - label: Messing
         slug: plaatwerk/messing
         idx: '2.3'
-      - label: Precisieplaatwerk
-        slug: plaatwerk/precisieplaatwerk
-        idx: '2.4'
-      - label: Zetten
+      - label: Kanten & zetten
         slug: plaatwerk/zetten
-        idx: '2.5'
-      - label: Ontbramen
-        slug: plaatwerk/ontbramen
-        idx: '2.6'
+        idx: '2.4'
       - label: Pers- & trekmoeren
         slug: plaatwerk/persmoeren-trekmoeren
-        idx: '2.7'
+        idx: '2.5'
   - titel: Snijden
     items:
       - label: Lasersnijden
@@ -33,6 +27,9 @@ megaKolommen:
       - label: Buislasersnijden
         slug: buizenlaser
         idx: '3.2'
+      - label: Verspaning
+        slug: verspaning
+        idx: '3.3'
   - titel: Lastechniek
     items:
       - label: Lassen
