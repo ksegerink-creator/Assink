@@ -18,6 +18,9 @@ type ContactFile = {
   plaats?: string;
   telefoon?: string;
   email?: string;
+  linkedin?: string;
+  facebook?: string;
+  instagram?: string;
 };
 
 const CONTACT_DEFAULTS: Required<ContactFile> = {
@@ -26,6 +29,9 @@ const CONTACT_DEFAULTS: Required<ContactFile> = {
   plaats: "Hengelo",
   telefoon: "074-2912235",
   email: "info@assinkschipholt.nl",
+  linkedin: "https://www.linkedin.com/company/assink-schipholt",
+  facebook: "https://www.facebook.com/assinkschipholt",
+  instagram: "",
 };
 
 function readContactFile(): Required<ContactFile> {
@@ -38,6 +44,10 @@ function readContactFile(): Required<ContactFile> {
       plaats: data.plaats?.trim() || CONTACT_DEFAULTS.plaats,
       telefoon: data.telefoon?.trim() || CONTACT_DEFAULTS.telefoon,
       email: data.email?.trim() || CONTACT_DEFAULTS.email,
+      // Socials: leeg laten verbergt het icoon. Fallback alleen als de sleutel ontbreekt.
+      linkedin: (data.linkedin ?? CONTACT_DEFAULTS.linkedin).trim(),
+      facebook: (data.facebook ?? CONTACT_DEFAULTS.facebook).trim(),
+      instagram: (data.instagram ?? CONTACT_DEFAULTS.instagram).trim(),
     };
   } catch {
     return CONTACT_DEFAULTS;
@@ -94,8 +104,9 @@ export const CERTS = [
 ] as const;
 
 export const SOCIAL = {
-  linkedin: "https://www.linkedin.com/company/assink-schipholt",
-  facebook: "https://www.facebook.com/assinkschipholt",
+  linkedin: _c.linkedin,
+  facebook: _c.facebook,
+  instagram: _c.instagram,
 } as const;
 
 export type Locale = (typeof SITE.locales)[number];

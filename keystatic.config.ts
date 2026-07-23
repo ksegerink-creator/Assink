@@ -299,6 +299,9 @@ export default config({
         plaats: fields.text({ label: "Plaats" }),
         telefoon: fields.text({ label: "Telefoon", description: "Zoals getoond, bv. 074-2912235. De bel-link wordt automatisch afgeleid." }),
         email: fields.text({ label: "E-mailadres" }),
+        linkedin: fields.url({ label: "LinkedIn-URL", description: "Laat leeg om het icoon te verbergen." }),
+        facebook: fields.url({ label: "Facebook-URL", description: "Laat leeg om het icoon te verbergen." }),
+        instagram: fields.url({ label: "Instagram-URL", description: "Laat leeg om het icoon te verbergen." }),
       },
     }),
 

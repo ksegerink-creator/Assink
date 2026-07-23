@@ -5,6 +5,7 @@ import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import LangSwitcher from "./LangSwitcher.astro";
 import Logo from "./Logo.astro";
+import SocialLinks from "./SocialLinks.astro";
 import type { Locale } from "@data/site";
 
 interface Props {
@@ -74,6 +75,7 @@ const home = localizePath("", locale);
     </nav>
 
     <div class="tools">
+      <SocialLinks class="hdr-soc" />
       <LangSwitcher canonicalSlug={canonicalSlug} available={available} />
       <a class="btn sm" href={nav("offerte")}>{t(locale, "quoteShort")}</a>
       <button type="button" class="burger" aria-label={t(locale, "menu")} aria-expanded="false" aria-controls="drawer">
@@ -104,6 +106,7 @@ const home = localizePath("", locale);
       <a class="macc-link" href={nav("vacatures")}>{t(locale, "careers")}</a>
       <a class="macc-link" href={nav("contact")}>{t(locale, "contact")}</a>
       <a class="macc-link" href={nav("offerte")}>{t(locale, "quoteShort")}</a>
+      <SocialLinks class="drawer-soc" />
     </div>
   </div>
 </header>
@@ -126,6 +129,8 @@ const home = localizePath("", locale);
   .chev { font-size: 9px; transition: transform .2s var(--ease); }
   .link[aria-expanded="true"] .chev { transform: rotate(180deg); }
   .tools { display: flex; align-items: center; gap: 10px; margin-left: 6px; }
+  .tools :global(.hdr-soc) { margin-right: 2px; padding-right: 8px; border-right: 1px solid var(--line); }
+  :global(.drawer-soc) { display: none; }
 
   .mega {
     position: absolute; top: calc(100% + 1px); left: 0; background: var(--surface);
@@ -164,6 +169,9 @@ const home = localizePath("", locale);
   @media (max-width: 1040px) {
     .main { display: none; }
     .burger { display: flex; }
+    .tools :global(.hdr-soc) { display: none; }
+    :global(.drawer-soc) { display: flex; gap: 6px; padding: 20px 0 6px; }
+    :global(.drawer-soc .soc__a) { width: 40px; height: 40px; border: 1px solid var(--line); }
   }
   @media (max-width: 680px) {
     .tools :global(.lang) { display: none; }

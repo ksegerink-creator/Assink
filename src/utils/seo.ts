@@ -36,7 +36,7 @@ export function organizationJsonLd(site: URL | string) {
       "Laserlassen",
     ],
     hasCredential: CERTS.filter((c) => c.startsWith("ISO")),
-    sameAs: [SOCIAL.linkedin, SOCIAL.facebook],
+    sameAs: [SOCIAL.linkedin, SOCIAL.facebook, SOCIAL.instagram].filter(Boolean),
   };
 }
 
