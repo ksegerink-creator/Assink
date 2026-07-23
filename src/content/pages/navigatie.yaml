@@ -1,42 +1,95 @@
 megaKolommen:
-  - titel: "Plaatwerk"
+  - titel: Plaatwerk
     items:
-      - { label: "Plaatwerk (overzicht)", slug: "plaatwerk", idx: "2.0" }
-      - { label: "RVS", slug: "plaatwerk/rvs", idx: "2.1" }
-      - { label: "Aluminium", slug: "plaatwerk/aluminium", idx: "2.2" }
-      - { label: "Messing", slug: "plaatwerk/messing", idx: "2.3" }
-      - { label: "Precisieplaatwerk", slug: "plaatwerk/precisieplaatwerk", idx: "2.4" }
-      - { label: "Zetten", slug: "plaatwerk/zetten", idx: "2.5" }
-      - { label: "Ontbramen", slug: "plaatwerk/ontbramen", idx: "2.6" }
-      - { label: "Pers- & trekmoeren", slug: "plaatwerk/persmoeren-trekmoeren", idx: "2.7" }
-  - titel: "Snijden"
+      - label: Plaatwerk (overzicht)
+        slug: plaatwerk
+        idx: '2.0'
+      - label: RVS
+        slug: plaatwerk/rvs
+        idx: '2.1'
+      - label: Aluminium
+        slug: plaatwerk/aluminium
+        idx: '2.2'
+      - label: Messing
+        slug: plaatwerk/messing
+        idx: '2.3'
+      - label: Precisieplaatwerk
+        slug: plaatwerk/precisieplaatwerk
+        idx: '2.4'
+      - label: Zetten
+        slug: plaatwerk/zetten
+        idx: '2.5'
+      - label: Ontbramen
+        slug: plaatwerk/ontbramen
+        idx: '2.6'
+      - label: Pers- & trekmoeren
+        slug: plaatwerk/persmoeren-trekmoeren
+        idx: '2.7'
+  - titel: Snijden
     items:
-      - { label: "Lasersnijden", slug: "plaatwerk/lasersnijden", idx: "3.1" }
-      - { label: "Buislasersnijden", slug: "buizenlaser", idx: "3.2" }
-      - { label: "Verspaning", slug: "verspaning", idx: "3.3" }
-  - titel: "Lastechniek"
+      - label: Lasersnijden
+        slug: plaatwerk/lasersnijden
+        idx: '3.1'
+      - label: Buislasersnijden
+        slug: buizenlaser
+        idx: '3.2'
+  - titel: Lastechniek
     items:
-      - { label: "Lassen", slug: "plaatwerk/lassen", idx: "4.1" }
-      - { label: "Laserlassen", slug: "plaatwerk/laserlassen", idx: "4.2" }
-      - { label: "Robotlassen", slug: "plaatwerk/robotlassen", idx: "4.3" }
-      - { label: "Aluminium lassen", slug: "aluminium-lassen", idx: "4.4" }
-  - titel: "Samenstellen"
+      - label: Lassen
+        slug: plaatwerk/lassen
+        idx: '4.1'
+      - label: Laserlassen
+        slug: plaatwerk/laserlassen
+        idx: '4.2'
+      - label: Robotlassen
+        slug: plaatwerk/robotlassen
+        idx: '4.3'
+      - label: Aluminium lassen
+        slug: aluminium-lassen
+        idx: '4.4'
+  - titel: Samenstellen
     items:
-      - { label: "Constructies", slug: "constructies", idx: "5.1" }
-      - { label: "RVS-constructies", slug: "rvs-constructies", idx: "5.2" }
-      - { label: "Machinebouw", slug: "machinebouw", idx: "5.3" }
-      - { label: "Industriële behuizing", slug: "industriele-behuizing", idx: "5.4" }
+      - label: Constructies
+        slug: constructies
+        idx: '5.1'
+      - label: RVS-constructies
+        slug: rvs-constructies
+        idx: '5.2'
+      - label: Machinebouw
+        slug: machinebouw
+        idx: '5.3'
+      - label: Industriële behuizing
+        slug: industriele-behuizing
+        idx: '5.4'
 sectoren:
-  - { label: "Machinebouw", slug: "machinebouw", idx: "1" }
-  - { label: "Voedingsmiddelenindustrie", slug: "plaatwerk/voedingsmiddelenindustrie", idx: "2" }
-  - { label: "Industriële behuizing", slug: "industriele-behuizing", idx: "3" }
-  - { label: "RVS-plaatwerk voor machinebouw", slug: "plaatwerk/rvs-plaatwerk-voor-machinebouw", idx: "4" }
-  - { label: "RVS-constructies voor machinebouw", slug: "plaatwerk/rvs-constructies-voor-machinebouw", idx: "5" }
-  - { label: "RVS-behuizingen & machinebeplating", slug: "plaatwerk/rvs-behuizingen-machinebeplating", idx: "6" }
+  - label: Machinebouw
+    slug: machinebouw
+    idx: '1'
+  - label: Voedingsmiddelenindustrie
+    slug: plaatwerk/voedingsmiddelenindustrie
+    idx: '2'
+  - label: Industriële behuizing
+    slug: industriele-behuizing
+    idx: '3'
+  - label: RVS-plaatwerk voor machinebouw
+    slug: plaatwerk/rvs-plaatwerk-voor-machinebouw
+    idx: '4'
+  - label: RVS-constructies voor machinebouw
+    slug: plaatwerk/rvs-constructies-voor-machinebouw
+    idx: '5'
+  - label: RVS-behuizingen & machinebeplating
+    slug: plaatwerk/rvs-behuizingen-machinebeplating
+    idx: '6'
 footerDiensten:
-  - { label: "Plaatwerk", slug: "plaatwerk" }
-  - { label: "Constructies", slug: "constructies" }
-  - { label: "Machinebouw", slug: "machinebouw" }
-  - { label: "Industriële behuizing", slug: "industriele-behuizing" }
-  - { label: "Buislasersnijden", slug: "buizenlaser" }
-  - { label: "Laserlassen", slug: "plaatwerk/laserlassen" }
+  - label: Plaatwerk
+    slug: plaatwerk
+  - label: Constructies
+    slug: constructies
+  - label: Machinebouw
+    slug: machinebouw
+  - label: Industriële behuizing
+    slug: industriele-behuizing
+  - label: Buislasersnijden
+    slug: buizenlaser
+  - label: Laserlassen
+    slug: plaatwerk/laserlassen
