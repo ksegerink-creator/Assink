@@ -21,7 +21,7 @@ process:
 applications: ["Behuizingen", "Panelen", "Montageklaar plaatwerk"]
 related:
   - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast plaatwerk." }
-  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Kantwerk." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Kantwerk." }
 seo:
   title: "Pers- en trekmoeren — montageklaar plaatwerk"
   description: "Inpers- en trekmoeren voor betrouwbare schroefdraadverbindingen in dunne plaat: montageklaar plaatwerk."

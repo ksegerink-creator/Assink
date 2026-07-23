@@ -1,10 +1,10 @@
-title: "Zetten"
+title: "Kanten & zetten"
 slug: "plaatwerk/zetten"
 template: "service"
 group: "plaatwerk"
 order: 25
-kicker: "Plaatwerk 2.5"
-h1: "Zetten"
+kicker: "Plaatwerk 2.4"
+h1: "Kanten & zetten"
 intro: "Nauwkeurige buighoeken en constante maatvoering op onze servo-elektrische kantpers."
 heroPhoto:
   subject: "Kantpers in bedrijf — plaat wordt gezet"
@@ -29,6 +29,6 @@ related:
   - { slug: "machinepark", label: "Machinepark", desc: "Bekijk onze kantpers." }
   - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "Snijden vóór het zetten." }
 seo:
-  title: "Zetten — nauwkeurige buighoeken op de kantpers"
+  title: "Kanten & zetten — nauwkeurige buighoeken op de kantpers"
   description: "Maatvast zetten op de servo-elektrische Safan Darley E-Brake 150T: 150 ton perskracht, werklengte tot 3100 mm."
 translated: ["nl"]

@@ -18,7 +18,7 @@ cards:
   - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lichtgewicht en sterk, incl. TIG- en MIG-laswerk." }
   - { slug: "plaatwerk/messing", label: "Messing", desc: "Warme koperzink-legering voor techniek en interieur." }
   - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast enkelstuks- en seriewerk." }
-  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Nauwkeurige buighoeken op de servo-elektrische kantpers." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Nauwkeurige buighoeken op de servo-elektrische kantpers." }
   - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-lasersnijden van staal, RVS en aluminium." }
   - { slug: "plaatwerk/lassen", label: "Lassen", desc: "TIG, MIG en gerobotiseerd lassen." }
   - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Strakke, vervormingsarme lasverbindingen." }

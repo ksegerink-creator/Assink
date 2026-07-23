@@ -22,7 +22,7 @@ process:
 applications: ["Machinebouw", "Elektronica", "Apparatenbouw"]
 related:
   - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-lasersnijden." }
-  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Kantwerk." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Kantwerk." }
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "Onze kwaliteitsborging." }
 seo:
   title: "Precisieplaatwerk — maatvast tot op de millimeter"

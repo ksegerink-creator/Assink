@@ -23,7 +23,7 @@ process:
 applications: ["Machinebouw", "Behuizingen", "Transport & lichtgewicht constructies"]
 related:
   - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "Specialistisch TIG/MIG-laswerk." }
-  - { slug: "plaatwerk/zetten", label: "Zetten", desc: "Nauwkeurige buighoeken." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Nauwkeurige buighoeken." }
   - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Aluminium behuizingen." }
 seo:
   title: "Aluminium plaatwerk — lichtgewicht en sterk"
