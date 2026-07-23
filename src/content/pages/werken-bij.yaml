@@ -1,0 +1,15 @@
+heroKicker: "Werken bij · Hengelo (Ov.)"
+heroTitelRegel1: "Vakwerk is"
+heroTitelRegel2: "mensenwerk"
+heroTekst: "Bij Assink & Schipholt maak je met je handen én je hoofd. Van enkelstuks tot serie, van plaat tot compleet gelast frame — met korte lijnen en collega's die hun vak verstaan."
+heroFoto: "/src/assets/uploads/werken-bij/heroFoto.jpg"
+waarom:
+  - { titel: "Echt werk", tekst: "Je maakt producten die je terugziet: frames, behuizingen en machines voor echte klanten — geen anoniem lopende-bandwerk." }
+  - { titel: "Modern machinepark", tekst: "Lasersnijden, buislaser, robotlassen en servo-elektrische kantpersen. Je werkt met goed en actueel gereedschap." }
+  - { titel: "Ruimte om te groeien", tekst: "SBB-erkend leerbedrijf. Wij leiden zelf op — van leerling tot allround vakman of -vrouw, in je eigen tempo." }
+sfeerFoto1: "/src/assets/uploads/werken-bij/sfeerFoto1.jpg"
+sfeerFoto2: "/src/assets/uploads/werken-bij/sfeerFoto2.jpg"
+sfeerFoto3: "/src/assets/uploads/werken-bij/sfeerFoto3.jpg"
+vacaturesKop: "Openstaande vacatures"
+ctaKop: "Gewoon eens komen kijken?"
+ctaTekst: "Loop een dag mee op de werkvloer. Bel of mail ons — dan plannen we wat in."

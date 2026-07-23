@@ -62,11 +62,11 @@ export default config({
     // Logische, Nederlandstalige indeling van het beheermenu voor het
     // marketingteam (i.p.v. de standaard "Collections/Singletons").
     navigation: {
-      "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte"],
+      "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte", "werkenBij"],
       Diensten: ["services", "sectoren"],
       Vacatures: ["vacatures"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
-      Menu: ["navigatie"],
+      "Menu & vaste teksten": ["navigatie", "algemeen"],
     },
   },
   singletons: {
@@ -248,6 +248,44 @@ export default config({
         titel: fields.text({ label: "Titel (H1)" }),
         lead: fields.text({ label: "Introzin", multiline: true }),
         heroFoto: pageFoto("machinepark")("Hero-foto"),
+      },
+    }),
+
+    werkenBij: singleton({
+      label: "Werken bij",
+      path: "src/content/pages/werken-bij",
+      format: { data: "yaml" },
+      schema: {
+        heroKicker: fields.text({ label: "Hero — kicker" }),
+        heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
+        heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
+        heroTekst: fields.text({ label: "Hero — tekst", multiline: true }),
+        heroFoto: pageFoto("werken-bij")("Hero-foto"),
+        waarom: fields.array(
+          fields.object({
+            titel: fields.text({ label: "Titel" }),
+            tekst: fields.text({ label: "Tekst", multiline: true }),
+          }),
+          { label: "Waarom hier (blokken)", itemLabel: (p) => p.fields.titel.value },
+        ),
+        sfeerFoto1: pageFoto("werken-bij")("Sfeerfoto 1 (breed)"),
+        sfeerFoto2: pageFoto("werken-bij")("Sfeerfoto 2"),
+        sfeerFoto3: pageFoto("werken-bij")("Sfeerfoto 3"),
+        vacaturesKop: fields.text({ label: "Kop vacatures-sectie" }),
+        ctaKop: fields.text({ label: "Slotblok — kop" }),
+        ctaTekst: fields.text({ label: "Slotblok — tekst", multiline: true }),
+      },
+    }),
+
+    algemeen: singleton({
+      label: "Algemeen (footer & CTA)",
+      path: "src/content/pages/algemeen",
+      format: { data: "yaml" },
+      schema: {
+        footerIntro: fields.text({ label: "Footer — introtekst", multiline: true }),
+        ctaTitelRegel1: fields.text({ label: "CTA-balk — titel regel 1" }),
+        ctaTitelRegel2: fields.text({ label: "CTA-balk — titel regel 2" }),
+        ctaSubtekst: fields.text({ label: "CTA-balk — subtekst", description: "Telefoon en e-mail worden er automatisch achter gezet." }),
       },
     }),
 

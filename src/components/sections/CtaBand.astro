@@ -1,22 +1,31 @@
 ---
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../../keystatic.config";
 import { t } from "@data/i18n";
 import { CONTACT } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
 const locale = toLocale(Astro.currentLocale);
 const nav = (slug: string) => localizePath(slug, "nl");
 
+const reader = createReader(process.cwd(), keystaticConfig);
+const alg = await reader.singletons.algemeen.read();
+
 const HEAD: Record<string, { l1: string; l2: string }> = {
   nl: { l1: "Bespreek uw tekening,", l2: "onderdeel of samenstelling." },
   en: { l1: "Discuss your drawing,", l2: "part or assembly." },
   de: { l1: "Besprechen Sie Ihre Zeichnung,", l2: "Ihr Teil oder Ihre Baugruppe." },
 };
-const h = HEAD[locale] ?? HEAD.nl;
+// nl-teksten komen uit het CMS (algemeen); en/de vallen terug op de vertalingen.
+const h = locale === "nl" && alg
+  ? { l1: alg.ctaTitelRegel1, l2: alg.ctaTitelRegel2 }
+  : (HEAD[locale] ?? HEAD.nl);
+const sub = locale === "nl" && alg?.ctaSubtekst ? alg.ctaSubtekst : "Reactie binnen één werkdag";
 ---
 <section class="sec band">
   <div class="wrap cta rv">
     <div>
       <h2>{h.l1}<br /><span class="alt">{h.l2}</span></h2>
-      <p class="cta__sub">Reactie binnen één werkdag · <a href={CONTACT.telHref}>{CONTACT.tel}</a> · <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>
+      <p class="cta__sub">{sub} · <a href={CONTACT.telHref}>{CONTACT.tel}</a> · <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>
     </div>
     <div class="cta__acts">
       <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>

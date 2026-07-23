@@ -1,19 +1,20 @@
 ---
 import { getCollection } from "astro:content";
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { CONTACT } from "@data/site";
 import { localizePath } from "@utils/paths";
+import { photo } from "@utils/photos";
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const w = await reader.singletons.werkenBij.read();
+if (!w) throw new Error("Werken-bij-content ontbreekt (src/content/pages/werken-bij).");
 
 const nav = (slug: string) => localizePath(slug, "nl");
 const vacancies = (await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order);
 const open = vacancies.filter((v) => v.data.open);
-
-const WHY = [
-  { t: "Echt werk", d: "Je maakt producten die je terugziet: frames, behuizingen en machines voor echte klanten — geen anoniem lopende-bandwerk." },
-  { t: "Modern machinepark", d: "Lasersnijden, buislaser, robotlassen en servo-elektrische kantpersen. Je werkt met goed en actueel gereedschap." },
-  { t: "Ruimte om te groeien", d: "SBB-erkend leerbedrijf. Wij leiden zelf op — van leerling tot allround vakman of -vrouw, in je eigen tempo." },
-];
 ---
 <PageLayout
   title="Werken bij Assink & Schipholt"
@@ -25,20 +26,16 @@ const WHY = [
   <section class="vhero">
     <div class="wrap vhero__grid">
       <div class="vhero__text">
-        <span class="mono vhero__kicker">Werken bij · Hengelo (Ov.)</span>
-        <h1>Vakwerk is<br />mensenwerk</h1>
-        <p>
-          Bij Assink &amp; Schipholt maak je met je handen én je hoofd. Van enkelstuks
-          tot serie, van plaat tot compleet gelast frame — met korte lijnen en collega's
-          die hun vak verstaan.
-        </p>
+        <span class="mono vhero__kicker">{w.heroKicker}</span>
+        <h1>{w.heroTitelRegel1}<br />{w.heroTitelRegel2}</h1>
+        <p>{w.heroTekst}</p>
         <div class="vhero__acts">
           <a class="btn" href="#vacatures">Bekijk vacatures ({open.length})</a>
           <a class="btn ghost" href={`mailto:${CONTACT.email}`}>Open sollicitatie</a>
         </div>
       </div>
       <figure class="vhero__photo">
-        <IndustrialImage imageKey="vacatures.hero" alt="Medewerker van Assink & Schipholt in de lasafdeling" ratio="4/5" priority={true} position="center 30%" />
+        <IndustrialImage src={photo(w.heroFoto)} alt="Medewerker van Assink & Schipholt in de lasafdeling" ratio="4/5" priority={true} position="center 30%" />
       </figure>
     </div>
   </section>
@@ -47,11 +44,11 @@ const WHY = [
   <section class="sec tight vwhy">
     <div class="wrap">
       <div class="vwhy__grid">
-        {WHY.map((w, i) => (
+        {w.waarom.map((item, i) => (
           <div class="vwhy__item rv">
             <span class="mono">{String(i + 1).padStart(2, "0")}</span>
-            <h2>{w.t}</h2>
-            <p>{w.d}</p>
+            <h2>{item.titel}</h2>
+            <p>{item.tekst}</p>
           </div>
         ))}
       </div>
@@ -61,9 +58,9 @@ const WHY = [
   <!-- Fotostrip: de werkvloer -->
   <section class="vstrip">
     <div class="wrap vstrip__grid rv">
-      <figure><IndustrialImage imageKey="vacatures.sfeer.1" alt="De lasafdeling van Assink & Schipholt" ratio="16/10" /></figure>
-      <figure><IndustrialImage imageKey="vacatures.detail" alt="TIG-lassen close-up" ratio="1/1" /></figure>
-      <figure><IndustrialImage imageKey="vacatures.sfeer.3" alt="Stralen van een frame in de straalcabine" ratio="1/1" /></figure>
+      <figure><IndustrialImage src={photo(w.sfeerFoto1)} alt="De lasafdeling van Assink & Schipholt" ratio="16/10" /></figure>
+      <figure><IndustrialImage src={photo(w.sfeerFoto2)} alt="TIG-lassen close-up" ratio="1/1" /></figure>
+      <figure><IndustrialImage src={photo(w.sfeerFoto3)} alt="Stralen van een frame in de straalcabine" ratio="1/1" /></figure>
     </div>
   </section>
 
@@ -71,7 +68,7 @@ const WHY = [
   <section class="sec" id="vacatures">
     <div class="wrap">
       <div class="rule-head rv">
-        <h2>Openstaande vacatures</h2>
+        <h2>{w.vacaturesKop}</h2>
         <span class="mono">{open.length} open</span>
       </div>
       {open.length > 0 ? (
@@ -104,8 +101,8 @@ const WHY = [
   <section class="sec band">
     <div class="wrap vcta rv">
       <div>
-        <h2>Gewoon eens komen kijken?</h2>
-        <p>Loop een dag mee op de werkvloer. Bel {CONTACT.tel} of mail ons — dan plannen we wat in.</p>
+        <h2>{w.ctaKop}</h2>
+        <p>{w.ctaTekst}</p>
       </div>
       <div class="vcta__acts">
         <a class="btn" href={`mailto:${CONTACT.email}?subject=Meeloopdag`}>Plan een meeloopdag</a>

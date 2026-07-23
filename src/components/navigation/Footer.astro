@@ -8,6 +8,7 @@ import Logo from "./Logo.astro";
 
 const reader = createReader(process.cwd(), keystaticConfig);
 const navData = await reader.singletons.navigatie.read();
+const alg = await reader.singletons.algemeen.read();
 const FOOTER_SERVICES = navData?.footerDiensten ?? [];
 
 const locale = toLocale(Astro.currentLocale);
@@ -19,7 +20,7 @@ const year = 2026;
     <div class="top">
       <div class="brand">
         <Logo variant="footer" />
-        <p>{t(locale, "footerIntro") || ""}</p>
+        <p>{alg?.footerIntro ?? ""}</p>
         <div class="badges">
           {CERTS.slice(0, 3).map((c) => <span class="badge">{c}</span>)}
         </div>
