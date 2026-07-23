@@ -1,0 +1,104 @@
+---
+import { SOCIAL } from "@data/site";
+import SocialIcon from "@components/navigation/SocialIcon.astro";
+
+/**
+ * Editoriale social-sectie (homepage + contact). Platforms komen uit het CMS
+ * (Bedrijfsgegevens); een leeg URL-veld laat dat platform weg. Rendert niets
+ * als er geen enkel kanaal is ingevuld.
+ */
+interface Props {
+  kicker?: string;
+  title?: string;
+  lead?: string;
+  /** "band" = donkere navy-variant, "plain" = op de gewone achtergrond. */
+  variant?: "band" | "plain";
+}
+const {
+  kicker = "Blijf op de hoogte",
+  title = "Volg Assink & Schipholt",
+  lead = "Projecten van de werkvloer, nieuw machinepark en openstaande vacatures — we delen het op social media.",
+  variant = "plain",
+} = Astro.props;
+
+const platforms = [
+  { name: "LinkedIn", href: SOCIAL.linkedin, desc: "Bedrijfsnieuws & vacatures" },
+  { name: "Instagram", href: SOCIAL.instagram, desc: "Werk & sfeer in beeld" },
+  { name: "Facebook", href: SOCIAL.facebook, desc: "Updates & achter de schermen" },
+].filter((p) => p.href);
+---
+{
+  platforms.length > 0 && (
+    <section class={`sec socsec socsec--${variant}`}>
+      <div class="wrap socsec__grid rv">
+        <div class="socsec__head">
+          <span class="mono socsec__kicker">{kicker}</span>
+          <h2>{title}</h2>
+          <p>{lead}</p>
+        </div>
+        <div class="socsec__cards">
+          {platforms.map((p) => (
+            <a class="socard" href={p.href} target="_blank" rel="noopener noreferrer" aria-label={`${p.name} — ${p.desc}`}>
+              <span class="socard__ico"><SocialIcon name={p.name} size={22} /></span>
+              <span class="socard__txt">
+                <span class="socard__name">{p.name}</span>
+                <span class="socard__desc">{p.desc}</span>
+              </span>
+              <span class="socard__arr mono" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+<style>
+  .socsec__grid {
+    display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(24px, 4vw, 64px); align-items: center;
+  }
+  .socsec__kicker { color: var(--steel); letter-spacing: .14em; }
+  .socsec__head h2 { font-size: clamp(26px, 3.4vw, 44px); margin-top: 12px; }
+  .socsec__head p { color: var(--ink-2); margin-top: 14px; max-width: 34em; font-size: clamp(15px, 1.3vw, 17px); }
+
+  .socsec__cards { display: flex; flex-direction: column; gap: 12px; }
+  .socard {
+    display: flex; align-items: center; gap: 16px;
+    border: 1px solid var(--line); background: var(--surface);
+    padding: 16px 18px; transition: border-color .16s var(--ease), transform .16s var(--ease), background .16s var(--ease);
+  }
+  .socard:hover { border-color: var(--blue); transform: translateY(-2px); }
+  .socard__ico {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 46px; height: 46px; flex: none; color: var(--navy);
+    background: var(--sky-bg); border: 1px solid var(--line-2);
+    transition: background .16s var(--ease), color .16s var(--ease);
+  }
+  .socard:hover .socard__ico { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .socard__txt { display: flex; flex-direction: column; gap: 2px; margin-right: auto; }
+  .socard__name {
+    font-family: var(--f-disp); font-weight: 600; font-size: 17px;
+    text-transform: uppercase; letter-spacing: .03em; color: var(--ink);
+  }
+  .socard__desc { color: var(--ink-2); font-size: 14px; }
+  .socard__arr { color: var(--steel); transition: transform .16s var(--ease), color .16s var(--ease); }
+  .socard:hover .socard__arr { color: var(--blue); transform: translateX(4px); }
+
+  /* Donkere variant (band) */
+  .socsec--band { background: var(--navy); }
+  .socsec--band .socsec__head h2 { color: #fff; }
+  .socsec--band .socsec__head p { color: #A9BFD6; }
+  .socsec--band .socsec__kicker { color: var(--sky); }
+  .socsec--band .socard { background: color-mix(in srgb, #fff 6%, transparent); border-color: color-mix(in srgb, #fff 16%, transparent); }
+  .socsec--band .socard:hover { border-color: var(--sky); background: color-mix(in srgb, #fff 10%, transparent); }
+  .socsec--band .socard__name { color: #fff; }
+  .socsec--band .socard__desc { color: #A9BFD6; }
+  .socsec--band .socard__ico { background: color-mix(in srgb, #fff 10%, transparent); color: #fff; border-color: color-mix(in srgb, #fff 20%, transparent); }
+  .socsec--band .socard:hover .socard__ico { background: var(--sky); color: var(--navy); border-color: var(--sky); }
+  .socsec--band .socard__arr { color: #A9BFD6; }
+  .socsec--band .socard:hover .socard__arr { color: var(--sky); }
+
+  @media (max-width: 780px) {
+    .socsec__grid { grid-template-columns: 1fr; }
+  }
+</style>

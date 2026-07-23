@@ -4,6 +4,7 @@ import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import SocialSection from "@components/sections/SocialSection.astro";
 import { SITE, CONTACT, CERTS } from "@data/site";
 import { localizePath } from "@utils/paths";
 import { photo } from "@utils/photos";
@@ -165,6 +166,8 @@ const description =
       </div>
     </div>
   </section>
+
+  <SocialSection variant="plain" />
 
   <CtaBand />
 </PageLayout>

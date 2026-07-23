@@ -3,6 +3,7 @@ import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SocialSection from "@components/sections/SocialSection.astro";
 import { CONTACT } from "@data/site";
 import { photo } from "@utils/photos";
 
@@ -62,6 +63,8 @@ if (!c) throw new Error("Contact-content ontbreekt (src/content/pages/contact)."
       </form>
     </div>
   </section>
+
+  <SocialSection variant="band" lead="Blijf op de hoogte van projecten, machinepark en vacatures — volg Assink & Schipholt op social media." />
 </PageLayout>
 
 <style>
