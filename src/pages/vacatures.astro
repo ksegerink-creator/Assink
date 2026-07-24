@@ -31,7 +31,7 @@ const open = vacancies.filter((v) => v.data.open);
         <p>{w.heroTekst}</p>
         <div class="vhero__acts">
           <a class="btn" href="#vacatures">Bekijk vacatures ({open.length})</a>
-          <a class="btn ghost" href={`mailto:${CONTACT.email}`}>Open sollicitatie</a>
+          <a class="btn ghost" href={`mailto:${CONTACT.sollicitatieEmail}`}>Open sollicitatie</a>
         </div>
       </div>
       <figure class="vhero__photo">
@@ -91,7 +91,7 @@ const open = vacancies.filter((v) => v.data.open);
       ) : (
         <p class="prose rv">
           Er zijn op dit moment geen openstaande vacatures. Een open sollicitatie is
-          altijd welkom via <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+          altijd welkom via <a href={`mailto:${CONTACT.sollicitatieEmail}`}>{CONTACT.sollicitatieEmail}</a>.
         </p>
       )}
     </div>
@@ -105,7 +105,7 @@ const open = vacancies.filter((v) => v.data.open);
         <p>{w.ctaTekst}</p>
       </div>
       <div class="vcta__acts">
-        <a class="btn" href={`mailto:${CONTACT.email}?subject=Meeloopdag`}>Plan een meeloopdag</a>
+        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Meeloopdag`}>Plan een meeloopdag</a>
         <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
       </div>
     </div>

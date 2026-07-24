@@ -10,7 +10,7 @@ import keystatic from "@keystatic/astro";
  * Used for canonical URLs, hreflang, sitemap and Open Graph metadata.
  * Override locally with the SITE_URL environment variable if needed.
  */
-const SITE = process.env.SITE_URL || "https://www.assinkschipholt.nl";
+const SITE = process.env.SITE_URL || "https://assinkschipholt.nl";
 
 export default defineConfig({
   site: SITE,

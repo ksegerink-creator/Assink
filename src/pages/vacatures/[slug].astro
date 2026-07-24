@@ -28,7 +28,7 @@ const jsonld = [
 // Tijdelijk sfeerbeeld per vacature (officiële fotografie volgt).
 const VAC_IMG: Record<string, string> = {
   "bankwerker-lasser": "vacatures.detail",
-  "kanter-lasser": "home.plaatwerk",
+  "kanter-zetter": "home.plaatwerk",
   "werkvoorbereider-tekenaar": "contact.werk",
   "stage": "vacatures.sfeer.1",
   "vakantiewerk": "vacatures.sfeer.2",
@@ -55,7 +55,7 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
         </div>
         <p class="lead">{v.intro}</p>
         <div class="acts">
-          <a class="btn" href={`mailto:${CONTACT.email}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
+          <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
           <a class="btn ghost" href={CONTACT.telHref}>Bel {CONTACT.tel}</a>
         </div>
       </div>
@@ -94,7 +94,7 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
         <h2>Solliciteer<br /><span class="alt">bij Assink &amp; Schipholt</span></h2>
       </div>
       <div class="acts">
-        <a class="btn" href={`mailto:${CONTACT.email}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail ons</a>
+        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail ons</a>
         <a class="btn ghost" href="/contact/">Contact</a>
       </div>
     </div>

@@ -18,6 +18,7 @@ type ContactFile = {
   plaats?: string;
   telefoon?: string;
   email?: string;
+  sollicitatieEmail?: string;
   kvk?: string;
   openingstijden?: string;
   maps?: string;
@@ -32,6 +33,7 @@ const CONTACT_DEFAULTS: Required<ContactFile> = {
   plaats: "Hengelo",
   telefoon: "074-2912235",
   email: "info@assinkschipholt.nl",
+  sollicitatieEmail: "hrm@assinkschipholt.nl",
   kvk: "06004033",
   openingstijden: "Werkdagen 8.00–17.00 uur",
   maps: "https://www.google.com/maps/search/?api=1&query=Assink+%26+Schipholt%2C+Oosterveldsingel+18%2C+7558+PK+Hengelo",
@@ -50,6 +52,7 @@ function readContactFile(): Required<ContactFile> {
       plaats: data.plaats?.trim() || CONTACT_DEFAULTS.plaats,
       telefoon: data.telefoon?.trim() || CONTACT_DEFAULTS.telefoon,
       email: data.email?.trim() || CONTACT_DEFAULTS.email,
+      sollicitatieEmail: data.sollicitatieEmail?.trim() || CONTACT_DEFAULTS.sollicitatieEmail,
       kvk: data.kvk?.trim() || CONTACT_DEFAULTS.kvk,
       openingstijden: data.openingstijden?.trim() || CONTACT_DEFAULTS.openingstijden,
       maps: (data.maps ?? CONTACT_DEFAULTS.maps).trim(),
@@ -81,7 +84,7 @@ export const SITE = {
     en: "Metalworking in Hengelo since 1919",
     de: "Metallbearbeitung in Hengelo seit 1919",
   },
-  url: "https://www.assinkschipholt.nl",
+  url: "https://assinkschipholt.nl",
   locales: ["nl", "en", "de"] as const,
   defaultLocale: "nl" as const,
 } as const;
@@ -100,6 +103,7 @@ export const CONTACT = {
   telHref: `tel:${_e164}`,
   telE164: _e164,
   email: _c.email,
+  sollicitatieEmail: _c.sollicitatieEmail,
   kvk: _c.kvk,
   openingstijden: _c.openingstijden,
   maps: _c.maps,
