@@ -7,7 +7,6 @@ import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { SITE, CERTS } from "@data/site";
 import { localizePath } from "@utils/paths";
-import { projectImageFor } from "@data/images";
 import { photo } from "@utils/photos";
 
 const reader = createReader(process.cwd(), keystaticConfig);
@@ -16,7 +15,6 @@ if (!a) throw new Error("Over-ons-content ontbreekt (src/content/pages/over-ons)
 
 const nav = (slug: string) => localizePath(slug, "nl");
 const sectors = (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order);
-const projects = (await getCollection("projects")).sort((x, y) => x.data.order - y.data.order);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
 ---
@@ -107,28 +105,6 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
           </li>
         ))}
       </ul>
-    </div>
-  </section>
-
-  <!-- Referentiewerk: foto-drieluik -->
-  <section class="sec tight">
-    <div class="wrap">
-      <div class="rule-head rv">
-        <h2>Recent werk</h2>
-        <span class="mono">Referenties</span>
-      </div>
-      <div class="aproj">
-        {projects.map((p) => (
-          <figure class="rv">
-            <IndustrialImage src={photo(p.data.foto) ?? projectImageFor(p.id)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
-            <figcaption>
-              <span class="mono">{p.data.sector}</span>
-              <h3>{p.data.title}</h3>
-              <p>{p.data.summary}</p>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
     </div>
   </section>
 

@@ -19,6 +19,9 @@ megaKolommen:
       - label: Pers- & trekmoeren
         slug: plaatwerk/persmoeren-trekmoeren
         idx: '2.5'
+      - label: Precisieplaatwerk
+        slug: plaatwerk/precisieplaatwerk
+        idx: '2.6'
   - titel: Snijden
     items:
       - label: Lasersnijden

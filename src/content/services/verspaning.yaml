@@ -4,16 +4,16 @@ template: "service"
 group: "snijden"
 order: 33
 kicker: "Snijden 3.3"
-h1: "Specialist in verspaning"
-intro: "Betrouwbare partner voor verspaning in Hengelo. Wij combineren geavanceerde CNC-machines met ervaren vakmensen voor fijnmechanische onderdelen en lassamenstellen."
+h1: "Verspaning binnen onze groep"
+intro: "Verspaning verzorgen wij binnen onze groep: het draai- en freeswerk gebeurt bij Baas Metaal. Zo leveren we naast plaatwerk en constructies ook fijnmechanische onderdelen — met één aanspreekpunt."
 heroPhoto:
   subject: "CNC-freesmachine bewerkt metalen onderdeel met koelvloeistof"
   orient: "Liggend 16:10"
   crop: "Machine-detail"
   comp: "Frees, spanen, koeling"
 body:
-  - "Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Ons machinepark is CNC-gestuurd, wat herhaalbare kwaliteit en hoge nauwkeurigheid garandeert."
-  - "Wij zijn gespecialiseerd in staal, RVS, aluminium, messing en gietaluminium — van prototypes tot serieproductie, geïntegreerd met eigen plaatwerk en constructiewerk voor complete producten."
+  - "Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Dit werk voeren we uit binnen onze groep, bij Baas Metaal, op CNC-gestuurde machines — voor herhaalbare kwaliteit en hoge nauwkeurigheid."
+  - "Werkbaar in staal, RVS, aluminium, messing en gietaluminium — van prototype tot serie, gecombineerd met ons eigen plaatwerk en constructiewerk voor complete producten uit één hand."
 materials: ["Staal", "RVS", "Aluminium", "Messing", "Gietaluminium"]
 process:
   - { step: "Frezen", desc: "Vlakken, contouren en kamers." }

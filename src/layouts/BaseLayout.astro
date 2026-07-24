@@ -25,9 +25,15 @@ const {
   canonicalSlug,
   altLocales = ["nl"],
   image = "/logos/og-default.png",
-  noindex = false,
+  noindex: noindexProp = false,
   jsonld = [],
 } = Astro.props;
+
+// Tot livegang staat de site als preview op *.vercel.app; die mag niet
+// geïndexeerd worden. Indexeren pas toestaan als PUBLIC_SITE_LIVE="true" is
+// gezet (Vercel-omgevingsvariabele, in te stellen bij livegang op het echte domein).
+const siteLive = import.meta.env.PUBLIC_SITE_LIVE === "true";
+const noindex = noindexProp || !siteLive;
 
 const locale: Locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);

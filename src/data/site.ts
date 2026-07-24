@@ -18,6 +18,9 @@ type ContactFile = {
   plaats?: string;
   telefoon?: string;
   email?: string;
+  kvk?: string;
+  openingstijden?: string;
+  maps?: string;
   linkedin?: string;
   facebook?: string;
   instagram?: string;
@@ -29,6 +32,9 @@ const CONTACT_DEFAULTS: Required<ContactFile> = {
   plaats: "Hengelo",
   telefoon: "074-2912235",
   email: "info@assinkschipholt.nl",
+  kvk: "06004033",
+  openingstijden: "Werkdagen 8.00–17.00 uur",
+  maps: "https://www.google.com/maps/search/?api=1&query=Assink+%26+Schipholt%2C+Oosterveldsingel+18%2C+7558+PK+Hengelo",
   linkedin: "https://www.linkedin.com/company/assink-schipholt",
   facebook: "https://www.facebook.com/assinkschipholt",
   instagram: "",
@@ -44,6 +50,9 @@ function readContactFile(): Required<ContactFile> {
       plaats: data.plaats?.trim() || CONTACT_DEFAULTS.plaats,
       telefoon: data.telefoon?.trim() || CONTACT_DEFAULTS.telefoon,
       email: data.email?.trim() || CONTACT_DEFAULTS.email,
+      kvk: data.kvk?.trim() || CONTACT_DEFAULTS.kvk,
+      openingstijden: data.openingstijden?.trim() || CONTACT_DEFAULTS.openingstijden,
+      maps: (data.maps ?? CONTACT_DEFAULTS.maps).trim(),
       // Socials: leeg laten verbergt het icoon. Fallback alleen als de sleutel ontbreekt.
       linkedin: (data.linkedin ?? CONTACT_DEFAULTS.linkedin).trim(),
       facebook: (data.facebook ?? CONTACT_DEFAULTS.facebook).trim(),
@@ -91,6 +100,9 @@ export const CONTACT = {
   telHref: `tel:${_e164}`,
   telE164: _e164,
   email: _c.email,
+  kvk: _c.kvk,
+  openingstijden: _c.openingstijden,
+  maps: _c.maps,
   // Approximate coordinates for LocalBusiness / map — confirm before launch.
   geo: { lat: 52.2426, lng: 6.8098 },
 } as const;

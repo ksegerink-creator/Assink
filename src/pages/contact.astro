@@ -29,8 +29,13 @@ if (!c) throw new Error("Contact-content ontbreekt (src/content/pages/contact)."
           <div><span class="k">Adres</span><span>{CONTACT.addr}</span></div>
           <div><span class="k">Telefoon</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
           <div><span class="k">E-mail</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
+          {CONTACT.openingstijden && <div><span class="k">Openingstijden</span><span>{CONTACT.openingstijden}</span></div>}
+          {CONTACT.kvk && <div><span class="k">KvK</span><span>{CONTACT.kvk}</span></div>}
         </div>
-        <a class="btn" href="/offerte/" style="margin-top:24px">Vraag een offerte aan</a>
+        <div class="chead__acts">
+          <a class="btn" href="/offerte/">Vraag een offerte aan</a>
+          {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">Route &amp; kaart</a>}
+        </div>
       </div>
 
       <figure class="chead__photo rv">
@@ -73,6 +78,7 @@ if (!c) throw new Error("Contact-content ontbreekt (src/content/pages/contact)."
   .chead__kicker { color: var(--steel); letter-spacing: .14em; }
   .chead h1 { font-size: clamp(36px, 5vw, 68px); margin-top: 12px; }
   .chead__lead { margin: 18px 0 26px; color: var(--ink-2); max-width: 30em; font-size: clamp(15.5px, 1.4vw, 18px); }
+  .chead__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
   .chead__photo { margin: 0; max-width: 460px; justify-self: end; }
   .chead__photo figcaption { margin-top: 10px; color: var(--steel); letter-spacing: .1em; font-size: 10.5px; }
   @media (max-width: 780px) { .chead__grid { grid-template-columns: 1fr; } .chead__photo { justify-self: stretch; max-width: none; } }

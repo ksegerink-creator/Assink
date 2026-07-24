@@ -38,9 +38,9 @@ capabilities:
   - nummer: '02'
     titel: Constructies & lassen
     omschrijving: >-
-      Gelaste samenstellingen tot 5 ton. TIG, MIG, robot- en laserlassen — van
+      Gelaste samenstellingen tot 5 ton. TIG-, MIG- en laserlassen — van
       los onderdeel tot compleet gelast frame, inclusief oppervlaktebehandeling.
-    annotatie: TIG · MIG · robot
+    annotatie: TIG · MIG · laser
     link: constructies
     foto: /src/assets/uploads/capabilities/1/foto.jpg
   - nummer: '03'
