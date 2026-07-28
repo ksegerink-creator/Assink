@@ -1,0 +1,6 @@
+name: "Trumpf TruLaser 3040"
+category: "2D-Laserschneiden"
+description: "Geeignet für Stahl, Edelstahl und Aluminium. Hohe Präzision, minimale Toleranzen und konstante Maßhaltigkeit."
+specs:
+  - { label: "Typ", value: "2D-Lasermaschine" }
+  - { label: "Werkstoffe", value: "Stahl · Edelstahl · Aluminium" }

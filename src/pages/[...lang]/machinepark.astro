@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import { t } from "@data/i18n";
 import { toLocale } from "@utils/paths";
-import { readPage } from "@utils/content";
+import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import { machineImageFor } from "@data/images";
@@ -18,7 +18,7 @@ export function getStaticPaths() {
 const locale = toLocale(Astro.params.lang);
 const m0 = await readPage("machinepark", locale);
 
-const machines = (await getCollection("machines")).sort((a, b) => a.data.order - b.data.order);
+const machines = await localizeEntries("machines", (await getCollection("machines")).sort((a, b) => a.data.order - b.data.order), locale);
 ---
 <PageLayout
   title={m0.seoTitel}

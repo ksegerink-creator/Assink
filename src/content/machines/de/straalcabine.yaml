@@ -1,0 +1,7 @@
+name: "Strahlkabine 8×4×3 m"
+category: "Glasperlstrahlen"
+description: "Oberflächenbehandlung mit Glasperlen für Aluminium und Edelstahl — gleichmäßige, matte Oberfläche."
+specs:
+  - { label: "Druck", value: "3,0 bar" }
+  - { label: "Glasperlen", value: "100–200 μm" }
+  - { label: "Kabine", value: "8 × 4 × 3 m" }

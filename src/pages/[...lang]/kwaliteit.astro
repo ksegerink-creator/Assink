@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import { t } from "@data/i18n";
 import { toLocale } from "@utils/paths";
-import { readPage } from "@utils/content";
+import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
@@ -17,7 +17,7 @@ export function getStaticPaths() {
 const locale = toLocale(Astro.params.lang);
 const q = await readPage("kwaliteit", locale);
 
-const certs = (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order);
+const certs = await localizeEntries("certificeringen", (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order), locale);
 ---
 <PageLayout
   title={q.seoTitel}

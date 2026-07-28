@@ -1,0 +1,7 @@
+name: "Safan Darley E-Brake 150-3100 T3"
+category: "Abkanten / Biegen"
+description: "Servoelektrische Abkantpresse mit genauen Biegewinkeln und konstanter Maßhaltigkeit."
+specs:
+  - { label: "Presskraft", value: "150 Tonnen" }
+  - { label: "Arbeitslänge", value: "bis 3100 mm" }
+  - { label: "Antrieb", value: "servoelektrisch" }

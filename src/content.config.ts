@@ -21,7 +21,7 @@ const seo = z
 
 /** Services (plaatwerk, constructies, machinebouw, materials, sectors…) */
 const services = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/services" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/services" }),
   schema: z.object({
     title: z.string(),
     slug: z.string(), // canonical NL route, e.g. "plaatwerk/rvs"
@@ -54,7 +54,7 @@ const services = defineCollection({
 
 /** Machine park */
 const machines = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/machines" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/machines" }),
   schema: z.object({
     name: z.string(),
     category: z.string(),
@@ -68,7 +68,7 @@ const machines = defineCollection({
 
 /** Vacancies */
 const vacancies = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/vacancies" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/vacancies" }),
   schema: z.object({
     title: z.string(),
     slug: z.string(),
@@ -87,7 +87,7 @@ const vacancies = defineCollection({
 
 /** Projects / reference work */
 const projects = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/projects" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/projects" }),
   schema: z.object({
     title: z.string(),
     order: z.number().default(50),
@@ -100,7 +100,7 @@ const projects = defineCollection({
 
 /** Sectors (industries served) */
 const sectors = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/sectors" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/sectors" }),
   schema: z.object({
     title: z.string(),
     order: z.number().default(50),
@@ -111,7 +111,7 @@ const sectors = defineCollection({
 
 /** Certifications */
 const certifications = defineCollection({
-  loader: glob({ pattern: "**/*.yaml", base: "./src/content/certifications" }),
+  loader: glob({ pattern: "*.yaml", base: "./src/content/certifications" }),
   schema: z.object({
     name: z.string(),
     order: z.number().default(50),

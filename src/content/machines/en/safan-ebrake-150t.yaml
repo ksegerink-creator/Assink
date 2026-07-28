@@ -1,0 +1,7 @@
+name: "Safan Darley E-Brake 150-3100 T3"
+category: "Bending / press braking"
+description: "Servo-electric press brake delivering accurate bend angles and consistent dimensions."
+specs:
+  - { label: "Press force", value: "150 tonnes" }
+  - { label: "Working length", value: "up to 3100 mm" }
+  - { label: "Drive", value: "servo-electric" }

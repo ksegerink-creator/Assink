@@ -1,0 +1,6 @@
+name: "Trumpf TruLaser 3040"
+category: "2D laser cutting"
+description: "Suitable for steel, stainless steel and aluminium. High precision, minimal tolerances and consistent dimensions."
+specs:
+  - { label: "Type", value: "2D laser machine" }
+  - { label: "Materials", value: "steel · stainless steel · aluminium" }

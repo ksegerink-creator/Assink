@@ -8,18 +8,25 @@ import { imageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { CONTACT, SITE } from "@data/site";
 import { jobPostingJsonLd } from "@utils/seo";
+import { toLocale } from "@utils/paths";
+import { localizeEntry } from "@utils/content";
+import { LOCALES } from "@utils/locales";
 
 export async function getStaticPaths() {
   const vacancies = await getCollection("vacancies");
-  return vacancies.map((entry: CollectionEntry<"vacancies">) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  // Elke vacature × elke taal; lang=undefined levert de Nederlandse route.
+  return vacancies.flatMap((entry: CollectionEntry<"vacancies">) =>
+    LOCALES.map((loc) => ({
+      params: { lang: loc === "nl" ? undefined : loc, slug: entry.data.slug },
+      props: { entry },
+    })),
+  );
 }
 
 interface Props { entry: CollectionEntry<"vacancies"> }
 const { entry } = Astro.props;
-const v = entry.data;
+const locale = toLocale(Astro.params.lang);
+const v = await localizeEntry("vacatures", entry.id, entry.data, locale);
 const site = Astro.site ?? new URL(SITE.url);
 const jsonld = [
   jobPostingJsonLd(site, { title: v.title, description: v.intro, employmentType: v.employmentType }),

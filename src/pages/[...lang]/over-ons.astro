@@ -6,7 +6,7 @@ import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { SITE, CERTS } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
-import { readPage } from "@utils/content";
+import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
 
@@ -18,7 +18,7 @@ const locale = toLocale(Astro.params.lang);
 const a = await readPage("overOns", locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
-const sectors = (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order);
+const sectors = await localizeEntries("sectoren", (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order), locale);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
 ---

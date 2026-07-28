@@ -1,0 +1,7 @@
+name: "Blasting cabin 8×4×3 m"
+category: "Glass bead blasting"
+description: "Surface treatment with glass beads for aluminium and stainless steel — an even, matt finish."
+specs:
+  - { label: "Pressure", value: "3.0 bar" }
+  - { label: "Glass beads", value: "100–200 μm" }
+  - { label: "Cabin", value: "8 × 4 × 3 m" }

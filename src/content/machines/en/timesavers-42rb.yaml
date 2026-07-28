@@ -1,0 +1,5 @@
+name: "Timesavers 42 Series RB (GrindingMaster)"
+category: "Deburring / brushing"
+description: "Wide-belt grinding and sanding machine for finishing flat workpieces after laser cutting."
+specs:
+  - { label: "Type", value: "brushing & deburring machine" }

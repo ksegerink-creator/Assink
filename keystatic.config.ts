@@ -327,6 +327,145 @@ const werkenBij = pageTrio("Werken bij", "werken-bij", werkenBijSchema);
 const algemeen = pageTrio("Algemeen (footer & CTA)", "algemeen", algemeenSchema);
 const navigatie = pageTrio("Navigatie (menu)", "navigatie", navigatieSchema);
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Vertaalcollecties
+   Bevatten uitsluitend tekstvelden. Slug, volgorde, groep en foto's komen
+   altijd uit de Nederlandse bron — die bepalen URL en sortering en moeten in
+   alle talen gelijk zijn. De bestandsnaam moet daarom exact overeenkomen met
+   het Nederlandse bestand; dat staat ook in het label van het slug-veld.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/** Slug-veld voor vertalingen: naam is vrij, bestandsnaam moet matchen met NL. */
+const vertaalSlug = (label: string) =>
+  fields.slug({
+    name: { label },
+    slug: {
+      label: "Bestandsnaam",
+      description:
+        "Moet exact gelijk zijn aan de Nederlandse versie, anders wordt de vertaling niet gevonden.",
+    },
+  });
+
+const serviceVertaling = () => ({
+  title: vertaalSlug("Titel"),
+  kicker: fields.text({ label: "Kicker" }),
+  h1: fields.text({ label: "Titel (H1)" }),
+  intro: fields.text({ label: "Intro", multiline: true }),
+  bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
+  body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
+    label: "Tekst",
+    itemLabel: (p) => (p.value || "").slice(0, 45),
+  }),
+  materials: fields.array(fields.text({ label: "Materiaal" }), {
+    label: "Materialen",
+    itemLabel: (p) => p.value,
+  }),
+  process: fields.array(
+    fields.object({
+      step: fields.text({ label: "Stap" }),
+      desc: fields.text({ label: "Toelichting", multiline: true }),
+    }),
+    { label: "Proces", itemLabel: (p) => p.fields.step.value },
+  ),
+  specs: fields.array(
+    fields.object({
+      label: fields.text({ label: "Kenmerk" }),
+      value: fields.text({ label: "Waarde" }),
+    }),
+    { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
+  ),
+  applications: fields.array(fields.text({ label: "Toepassing" }), {
+    label: "Toepassingen",
+    itemLabel: (p) => p.value,
+  }),
+  related: fields.array(
+    fields.object({
+      slug: fields.text({ label: "Link (interne slug — gelijk aan NL)" }),
+      label: fields.text({ label: "Label" }),
+      desc: fields.text({ label: "Omschrijving (optioneel)" }),
+    }),
+    { label: "Gerelateerde pagina's", itemLabel: (p) => p.fields.label.value },
+  ),
+  cards: fields.array(
+    fields.object({
+      slug: fields.text({ label: "Link (interne slug — gelijk aan NL)" }),
+      label: fields.text({ label: "Label" }),
+      desc: fields.text({ label: "Omschrijving" }),
+    }),
+    { label: "Overzichtskaarten", itemLabel: (p) => p.fields.label.value },
+  ),
+  seo: fields.object(
+    {
+      title: fields.text({ label: "SEO-titel" }),
+      description: fields.text({ label: "SEO-omschrijving", multiline: true }),
+    },
+    { label: "SEO" },
+  ),
+});
+
+const vacatureVertaling = () => ({
+  title: vertaalSlug("Functietitel"),
+  employmentType: fields.text({ label: "Dienstverband" }),
+  hours: fields.text({ label: "Uren (optioneel)" }),
+  education: fields.text({ label: "Opleiding (optioneel)" }),
+  intro: fields.text({ label: "Intro", multiline: true }),
+  responsibilities: fields.array(fields.text({ label: "Taak" }), {
+    label: "Wat je doet",
+    itemLabel: (p) => (p.value || "").slice(0, 45),
+  }),
+  requirements: fields.array(fields.text({ label: "Eis" }), {
+    label: "Wat je meebrengt",
+    itemLabel: (p) => (p.value || "").slice(0, 45),
+  }),
+});
+
+const machineVertaling = () => ({
+  name: vertaalSlug("Naam"),
+  category: fields.text({ label: "Categorie" }),
+  description: fields.text({ label: "Omschrijving", multiline: true }),
+  specs: fields.array(
+    fields.object({
+      label: fields.text({ label: "Kenmerk" }),
+      value: fields.text({ label: "Waarde" }),
+    }),
+    { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
+  ),
+});
+
+const sectorVertaling = () => ({
+  title: vertaalSlug("Titel"),
+  summary: fields.text({ label: "Samenvatting", multiline: true }),
+});
+
+const certVertaling = () => ({
+  name: vertaalSlug("Naam"),
+  scope: fields.text({ label: "Scope / omschrijving", multiline: true }),
+});
+
+/** Bouwt de EN- en DE-vertaalcollectie voor een bestaande collectie. */
+const vertaalPaar = <S>(label: string, dir: string, schema: () => S) => ({
+  en: collection({
+    label: `${label} — EN`,
+    path: `src/content/${dir}/en/*`,
+    slugField: "title" in schema() ? "title" : "name",
+    format: { data: "yaml" },
+    schema: schema() as never,
+  }),
+  de: collection({
+    label: `${label} — DE`,
+    path: `src/content/${dir}/de/*`,
+    slugField: "title" in schema() ? "title" : "name",
+    format: { data: "yaml" },
+    schema: schema() as never,
+  }),
+});
+
+const servicesT = vertaalPaar("Servicepagina's", "services", serviceVertaling);
+const vacaturesT = vertaalPaar("Vacatures", "vacancies", vacatureVertaling);
+const machinesT = vertaalPaar("Machines", "machines", machineVertaling);
+const sectorenT = vertaalPaar("Sectoren", "sectors", sectorVertaling);
+const certsT = vertaalPaar("Certificeringen", "certifications", certVertaling);
+
 export default config({
   storage: import.meta.env.DEV
     ? { kind: "local" }
@@ -346,10 +485,12 @@ export default config({
       "Engels (EN)": [
         "homepageEn", "overOnsEn", "kwaliteitEn", "machineparkEn", "contactEn",
         "offerteEn", "werkenBijEn", "navigatieEn", "algemeenEn",
+        "servicesEn", "vacaturesEn", "machinesEn", "sectorenEn", "certificeringenEn",
       ],
       "Duits (DE)": [
         "homepageDe", "overOnsDe", "kwaliteitDe", "machineparkDe", "contactDe",
         "offerteDe", "werkenBijDe", "navigatieDe", "algemeenDe",
+        "servicesDe", "vacaturesDe", "machinesDe", "sectorenDe", "certificeringenDe",
       ],
     },
   },
@@ -598,5 +739,17 @@ export default config({
         }),
       },
     }),
+
+    // Vertalingen — alleen tekst; slug/volgorde/foto's komen uit de NL-bron.
+    servicesEn: servicesT.en,
+    servicesDe: servicesT.de,
+    vacaturesEn: vacaturesT.en,
+    vacaturesDe: vacaturesT.de,
+    machinesEn: machinesT.en,
+    machinesDe: machinesT.de,
+    sectorenEn: sectorenT.en,
+    sectorenDe: sectorenT.de,
+    certificeringenEn: certsT.en,
+    certificeringenDe: certsT.de,
   },
 });

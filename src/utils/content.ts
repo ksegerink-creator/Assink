@@ -85,4 +85,60 @@ export async function readPage<K extends keyof Singletons & string>(
   return merge(nl, translated) as never;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Collecties (diensten, vacatures, machines, sectoren, certificeringen)
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/**
+ * Vertaalt één collectie-item. De Nederlandse entry is de basis; de vertaling
+ * in src/content/<collectie>/{en,de}/<slug>.yaml gaat er per veld over heen.
+ * Ontbreekt de vertaling, dan blijft het Nederlands staan.
+ *
+ * Slugs, links en `order` blijven bewust uit de Nederlandse bron komen: die
+ * bepalen de URL en de sortering en moeten in alle talen gelijk zijn.
+ */
+export async function localizeEntry<T extends Record<string, unknown>>(
+  collection: string,
+  slug: string,
+  data: T,
+  locale: Locale,
+): Promise<T> {
+  if (locale === "nl") return data;
+  const key = `${collection}${locale === "en" ? "En" : "De"}`;
+  const collections = reader.collections as Record<
+    string,
+    { read: (slug: string) => Promise<unknown> } | undefined
+  >;
+  const c = collections[key];
+  if (!c) return data;
+  let translated: unknown = null;
+  try {
+    translated = await c.read(slug);
+  } catch {
+    translated = null;
+  }
+  if (!translated) return data;
+  const merged = merge(data, translated) as T;
+  // Route-bepalende velden nooit uit de vertaling overnemen.
+  for (const field of ["slug", "link", "order", "template", "group", "open"] as const) {
+    if (field in data) (merged as Record<string, unknown>)[field] = data[field];
+  }
+  return merged;
+}
+
+/** Vertaalt een lijst entries (uit `getCollection`) in één keer. */
+export async function localizeEntries<T extends Record<string, unknown>>(
+  collection: string,
+  entries: { id: string; data: T }[],
+  locale: Locale,
+): Promise<{ id: string; data: T }[]> {
+  if (locale === "nl") return entries;
+  return Promise.all(
+    entries.map(async (e) => ({
+      ...e,
+      data: await localizeEntry(collection, e.id, e.data, locale),
+    })),
+  );
+}
+
 export { reader };

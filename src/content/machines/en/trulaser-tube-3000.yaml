@@ -1,0 +1,6 @@
+name: "Trumpf TruLaser Tube 3000"
+category: "Tube laser cutting"
+description: "Advanced tube laser system for various shapes and materials — complex contours in a single operation."
+specs:
+  - { label: "Type", value: "tube laser" }
+  - { label: "Materials", value: "steel · stainless steel · aluminium · brass · copper" }

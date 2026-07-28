@@ -1,0 +1,5 @@
+name: "Timesavers 42 Series RB (GrindingMaster)"
+category: "Entgraten / Bürsten"
+description: "Breitbandschleifmaschine zur Nachbearbeitung flacher Werkstücke nach dem Laserschneiden."
+specs:
+  - { label: "Typ", value: "Bürst- & Entgratmaschine" }
