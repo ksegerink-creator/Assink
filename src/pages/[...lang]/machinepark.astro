@@ -26,6 +26,7 @@ const machines = await localizeEntries("machines", (await getCollection("machine
   canonicalSlug="machinepark"
   trail={[{ label: t(locale, "machinepark"), slug: "machinepark" }]}
   altLocales={["nl", "en", "de"]}
+  ogPhoto={photo(m0.heroFoto)}
 >
   <section class="sec ov-hero">
     <div class="wrap grid2">

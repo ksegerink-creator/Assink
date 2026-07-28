@@ -32,7 +32,7 @@ const { hero, intro, capabilities, proef, mensen } = home;
 const capRatios = ["3/2", "4/3", "3/2", "4/3"];
 ---
 
-<PageLayout title={home.seoTitel} description={home.seoOmschrijving} canonicalSlug="" altLocales={["nl", "en", "de"]}>
+<PageLayout title={home.seoTitel} description={home.seoOmschrijving} canonicalSlug="" altLocales={["nl", "en", "de"]} ogPhoto={photo(hero.foto)}>
   <!-- ═══ Hero — full-bleed fotografie met rustige tekstlaag ═══ -->
   <section class="hero">
     <div class="hero__media">

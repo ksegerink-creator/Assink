@@ -49,6 +49,7 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   description={v.intro}
   canonicalSlug={`vacatures/${v.slug}`}
   trail={[{ label: t(locale, "careers"), slug: "vacatures" }, { label: v.title, slug: `vacatures/${v.slug}` }]}
+  ogPhoto={vacImage}
   jsonld={jsonld}
 >
   <section class="sec vd-hero">

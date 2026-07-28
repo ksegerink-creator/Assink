@@ -28,6 +28,7 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   canonicalSlug="over-ons"
   trail={[{ label: t(locale, "about"), slug: "over-ons" }]}
   altLocales={["nl", "en", "de"]}
+  ogPhoto={photo(a.heroFoto)}
 >
   <!-- Hero: pagina opent met de productie -->
   <section class="ahero">

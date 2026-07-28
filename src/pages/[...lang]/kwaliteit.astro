@@ -25,6 +25,7 @@ const certs = await localizeEntries("certificeringen", (await getCollection("cer
   canonicalSlug="kwaliteit"
   trail={[{ label: t(locale, "quality"), slug: "kwaliteit" }]}
   altLocales={["nl", "en", "de"]}
+  ogPhoto={photo(q.heroFoto)}
 >
   <section class="sec ov-hero">
     <div class="wrap grid2">

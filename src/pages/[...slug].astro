@@ -47,6 +47,7 @@ const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
       description={s.seo?.description || s.intro}
       canonicalSlug={s.slug}
   altLocales={["nl", "en", "de"]}
+      ogPhoto={heroImg}
       trail={[{ label: s.title, slug: s.slug }]}
     >
       <section class="ohero">

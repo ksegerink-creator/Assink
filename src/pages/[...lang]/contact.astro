@@ -22,6 +22,7 @@ const c = await readPage("contact", locale);
   canonicalSlug="contact"
   trail={[{ label: t(locale, "contact"), slug: "contact" }]}
   altLocales={["nl", "en", "de"]}
+  ogPhoto={photo(c.pandFoto)}
 >
   <!-- Kop + gegevens + pand in één compacte compositie -->
   <section class="sec chead">

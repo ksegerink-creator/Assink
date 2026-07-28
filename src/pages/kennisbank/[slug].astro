@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import { photo } from "@utils/photos";
+import { imageFor } from "@data/images";
 
 /** Kennisbank-artikel. Nederlandstalig (zie kennisbank/index.astro). */
 export async function getStaticPaths() {
@@ -24,6 +26,10 @@ const datum = (iso: string) =>
     year: "numeric",
   });
 
+// Deelafbeelding: eigen artikelfoto als die is ingesteld, anders een passende
+// sfeerfoto uit de vaste beeldregistratie.
+const ogPhoto = photo(a.foto) ?? imageFor("home.detail.zetwerk");
+
 // FAQPage-structured data zodat de vragen in Google kunnen verschijnen.
 const jsonld = a.faq.length
   ? [{
@@ -42,6 +48,7 @@ const jsonld = a.faq.length
   description={a.seo?.description || a.intro}
   canonicalSlug={`kennisbank/${a.slug}`}
   trail={[{ label: "Kennisbank", slug: "kennisbank" }, { label: a.title, slug: `kennisbank/${a.slug}` }]}
+  ogPhoto={ogPhoto}
   jsonld={jsonld}
 >
   <article>

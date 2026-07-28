@@ -1,5 +1,7 @@
 ---
 import "@styles/global.css";
+import { getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import { SITE } from "@data/site";
 import { HTML_LANG } from "@data/i18n";
 import { hreflangAlternates, absUrl, toLocale } from "@utils/paths";
@@ -13,7 +15,13 @@ interface Props {
   canonicalSlug: string;
   /** Locales in which this page exists (for hreflang). Defaults to NL only. */
   altLocales?: Locale[];
+  /** Pad naar een vaste afbeelding in /public (terugval: het logo). */
   image?: string;
+  /**
+   * Echte paginafoto voor het deelvoorbeeld op LinkedIn/Facebook/WhatsApp.
+   * Wordt automatisch naar 1200×630 JPEG omgezet; heeft voorrang op `image`.
+   */
+  ogPhoto?: ImageMetadata;
   noindex?: boolean;
   /** Extra JSON-LD graphs to embed (breadcrumb, service, jobposting…). */
   jsonld?: unknown[];
@@ -25,6 +33,7 @@ const {
   canonicalSlug,
   altLocales = ["nl"],
   image = "/logos/og-default.png",
+  ogPhoto,
   noindex: noindexProp = false,
   jsonld = [],
 } = Astro.props;
@@ -39,7 +48,19 @@ const locale: Locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
 const canonical = absUrl(site, canonicalSlug, locale);
 const alternates = altLocales.length > 1 ? hreflangAlternates(site, canonicalSlug, altLocales) : [];
-const ogImage = new URL(image, site).href;
+/**
+ * Deelafbeelding. Is er een paginafoto meegegeven, dan maken we daar een
+ * 1200×630 JPEG van — het formaat dat LinkedIn, Facebook en WhatsApp
+ * verwachten. Bewust JPEG en niet WebP: die laatste wordt door die platforms
+ * niet betrouwbaar weergegeven, terwijl WebP op de site zelf wél wordt gebruikt.
+ * Zonder foto valt het terug op het standaardlogo.
+ */
+const OG_W = 1200;
+const OG_H = 630;
+const ogSrc = ogPhoto
+  ? (await getImage({ src: ogPhoto, width: OG_W, height: OG_H, format: "jpeg", fit: "cover" })).src
+  : image;
+const ogImage = new URL(ogSrc, site).href;
 const graphs = [organizationJsonLd(site), ...jsonld];
 ---
 
@@ -63,9 +84,13 @@ const graphs = [organizationJsonLd(site), ...jsonld];
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content={String(OG_W)} />
+    <meta property="og:image:height" content={String(OG_H)} />
+    <meta property="og:image:alt" content={title} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <meta name="theme-color" content="#0C1F3A" />
     <meta name="generator" content={Astro.generator} />
