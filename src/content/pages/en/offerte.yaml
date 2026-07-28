@@ -1,0 +1,12 @@
+# Engelse vertaling. Foto's bewust weggelaten: beeld komt uit de NL-bron.
+seoTitel: Request a quote
+seoOmschrijving: >-
+  Send us your drawing, part or assembly and receive a clear quotation with an
+  indication of lead time. From one-offs to series — Assink & Schipholt, Hengelo.
+kicker: "Request a quote"
+titel: "Drawing ready? So are we."
+lead: "Discuss your drawing, part or assembly with our specialists. From one-offs to series — you will receive a concrete quotation with an indication of lead time."
+stappen:
+  - { titel: "Share your drawing", tekst: "Send a STEP, DWG, PDF or sketch — with or without a specified material." }
+  - { titel: "Manufacturability check", tekst: "We assess manufacturability, material and required operations." }
+  - { titel: "Quotation", tekst: "You receive a clear quotation with an indication of lead time." }

@@ -1,25 +1,16 @@
 ---
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../../keystatic.config";
 import { t } from "@data/i18n";
 import { CONTACT } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+
 const locale = toLocale(Astro.currentLocale);
-const nav = (slug: string) => localizePath(slug, "nl");
+const nav = (slug: string) => localizePath(slug, locale);
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const alg = await reader.singletons.algemeen.read();
-
-const HEAD: Record<string, { l1: string; l2: string }> = {
-  nl: { l1: "Bespreek uw tekening,", l2: "onderdeel of samenstelling." },
-  en: { l1: "Discuss your drawing,", l2: "part or assembly." },
-  de: { l1: "Besprechen Sie Ihre Zeichnung,", l2: "Ihr Teil oder Ihre Baugruppe." },
-};
-// nl-teksten komen uit het CMS (algemeen); en/de vallen terug op de vertalingen.
-const h = locale === "nl" && alg
-  ? { l1: alg.ctaTitelRegel1, l2: alg.ctaTitelRegel2 }
-  : (HEAD[locale] ?? HEAD.nl);
-const sub = locale === "nl" && alg?.ctaSubtekst ? alg.ctaSubtekst : "Reactie binnen één werkdag";
+// Titel en subtekst komen per taal uit het CMS (algemeen), met terugval op NL.
+const alg = await readPage("algemeen", locale);
+const h = { l1: alg.ctaTitelRegel1, l2: alg.ctaTitelRegel2 };
+const sub = alg.ctaSubtekst;
 ---
 <section class="sec band">
   <div class="wrap cta rv">

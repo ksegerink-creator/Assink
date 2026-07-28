@@ -1,18 +1,19 @@
 ---
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../../keystatic.config";
 import { SITE, CONTACT, CERTS } from "@data/site";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
 import Logo from "./Logo.astro";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const navData = await reader.singletons.navigatie.read();
-const alg = await reader.singletons.algemeen.read();
+const locale = toLocale(Astro.currentLocale);
+const navData = await readPage("navigatie", locale);
+const alg = await readPage("algemeen", locale);
 const FOOTER_SERVICES = navData?.footerDiensten ?? [];
 
-const locale = toLocale(Astro.currentLocale);
-const nav = (slug: string) => localizePath(slug, "nl");
+const nav = (slug: string) => localizePath(slug, locale);
+// De privacyverklaring bestaat alleen in het Nederlands (juridische tekst);
+// vanuit elke taal verwijzen we naar die ene versie.
+const privacyHref = localizePath("privacy", "nl");
 const year = 2026;
 ---
 <footer class="ft">
@@ -38,7 +39,7 @@ const year = 2026;
         <a href={nav("machinepark")}>{t(locale, "machinepark")}</a>
         <a href={nav("kwaliteit")}>{t(locale, "quality")}</a>
         <a href={nav("vacatures")}>{t(locale, "careers")}</a>
-        <a href={nav("privacy")}>{t(locale, "privacy")}</a>
+        <a href={privacyHref}>{t(locale, "privacy")}</a>
       </div>
 
       <div class="col">
@@ -52,7 +53,7 @@ const year = 2026;
 
     <div class="bottom">
       <span>© {SITE.founded}–{year} {SITE.legalName}</span>
-      <span>Hengelo (Ov.) · NL / EN / DE</span>
+      <span>{t(locale, "footerBottom")}</span>
     </div>
   </div>
 </footer>

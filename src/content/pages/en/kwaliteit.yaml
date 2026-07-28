@@ -1,0 +1,14 @@
+# Engelse vertaling. Foto's bewust weggelaten: beeld komt uit de NL-bron.
+seoTitel: Quality & certification
+seoOmschrijving: >-
+  ISO 9001, ISO 3834-2 and ISO 1090-1 certified. We build quality into the
+  process: qualified welding procedures, dimensional inspection and
+  documentation — demonstrable and traceable.
+kicker: "Assured quality"
+titel: "Quality & certification"
+lead: "We build quality into the process, not after the fact. From qualified welding procedures to dimensional inspection and documentation — demonstrable and traceable."
+proces:
+  - { stap: "Incoming inspection", tekst: "Material certificates and dimensions checked on arrival." }
+  - { stap: "Process control", tekst: "Qualified welding procedures and controlled production parameters." }
+  - { stap: "Dimensional inspection", tekst: "Measuring equipment and visual inspection during and after production." }
+  - { stap: "Final inspection & release", tekst: "Documentation and release prior to just-in-time delivery." }

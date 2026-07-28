@@ -1,0 +1,13 @@
+# Duitse vertaling. Foto's bewust weggelaten: beeld komt uit de NL-bron.
+seoTitel: Angebot anfragen
+seoOmschrijving: >-
+  Senden Sie uns Ihre Zeichnung, Ihr Bauteil oder Ihre Baugruppe und erhalten Sie
+  ein klares Angebot mit Lieferzeitangabe. Von Einzelstücken bis zur Serie —
+  Assink & Schipholt, Hengelo.
+kicker: "Angebot anfragen"
+titel: "Zeichnung fertig? Wir auch."
+lead: "Besprechen Sie Ihre Zeichnung, Ihr Bauteil oder Ihre Baugruppe mit unseren Spezialisten. Von Einzelstücken bis zur Serie — Sie erhalten ein konkretes Angebot mit Lieferzeitangabe."
+stappen:
+  - { titel: "Zeichnung übermitteln", tekst: "Senden Sie eine STEP-, DWG- oder PDF-Datei oder eine Skizze — mit oder ohne Materialangabe." }
+  - { titel: "Fertigbarkeitsprüfung", tekst: "Wir prüfen Fertigbarkeit, Material und erforderliche Bearbeitungsschritte." }
+  - { titel: "Angebot", tekst: "Sie erhalten ein klares Angebot mit Lieferzeitangabe." }

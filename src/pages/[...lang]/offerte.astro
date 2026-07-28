@@ -1,26 +1,29 @@
 ---
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { CONTACT } from "@data/site";
 import { photo } from "@utils/photos";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const o = await reader.singletons.offerte.read();
-if (!o) throw new Error("Offerte-content ontbreekt (src/content/pages/offerte).");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
 
-const services = [
-  "Plaatwerk", "Lasersnijden", "Buislasersnijden", "Zetten", "Lassen (hand/laser)",
-  "Constructies", "Machinebouw", "Industriële behuizing", "Assemblage", "Anders / weet ik nog niet",
-];
+const locale = toLocale(Astro.params.lang);
+const o = await readPage("offerte", locale);
+
+const services = t(locale, "operations").split(",");
 ---
 <PageLayout
-  title="Vraag een offerte aan"
-  description="Vraag een offerte aan voor plaatwerk, constructies of samenstellingen. Deel uw tekening of onderdeel met de specialisten van Assink & Schipholt in Hengelo."
+  title={o.seoTitel}
+  description={o.seoOmschrijving}
   canonicalSlug="offerte"
-  trail={[{ label: "Offerte aanvragen", slug: "offerte" }]}
+  trail={[{ label: t(locale, "quote"), slug: "offerte" }]}
+  altLocales={["nl", "en", "de"]}
 >
   <section class="sec ov-hero">
     <div class="wrap ov-grid">
@@ -51,36 +54,36 @@ const services = [
 
   <section class="sec tight">
     <div class="wrap">
-      <SectionHead title="Aanvraagformulier" index="Reactie binnen 1 werkdag" />
+      <SectionHead title={t(locale, "formHead")} index={t(locale, "formIndex")} />
       <form class="form rv" method="post" action="#" enctype="multipart/form-data" aria-describedby="q-note">
         <div class="form__grid">
-          <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
-          <label>Bedrijf<input type="text" name="bedrijf" autocomplete="organization" required /></label>
-          <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
-          <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
+          <label>{t(locale, "formName")}<input type="text" name="naam" autocomplete="name" required /></label>
+          <label>{t(locale, "formCompany")}<input type="text" name="bedrijf" autocomplete="organization" required /></label>
+          <label>{t(locale, "formEmail")}<input type="email" name="email" autocomplete="email" required /></label>
+          <label>{t(locale, "formPhone")}<input type="tel" name="telefoon" autocomplete="tel" /></label>
         </div>
         <div class="form__grid">
-          <label>Bewerking
+          <label>{t(locale, "formOperation")}
             <select name="bewerking">
               {services.map((s) => <option value={s}>{s}</option>)}
             </select>
           </label>
-          <label>Aantal / serie<input type="text" name="aantal" placeholder="bijv. 1 stuk, 25 stuks, jaarserie" /></label>
+          <label>{t(locale, "formQuantity")}<input type="text" name="aantal" placeholder={t(locale, "formQuantityPlaceholder")} /></label>
         </div>
-        <label>Toelichting / specificaties
-          <textarea name="toelichting" rows="5" placeholder="Materiaal, afmetingen, bewerkingen, gewenste levertijd…" required></textarea>
+        <label>{t(locale, "formNotes")}
+          <textarea name="toelichting" rows="5" placeholder={t(locale, "formNotesPlaceholder")} required></textarea>
         </label>
-        <label class="file">Tekening / bestand
+        <label class="file">{t(locale, "formFile")}
           <input type="file" name="tekening" accept=".pdf,.dwg,.dxf,.step,.stp,.png,.jpg,.jpeg" />
-          <span class="file__hint mono">STEP, DWG, DXF, PDF of afbeelding</span>
+          <span class="file__hint mono">{t(locale, "formFileHint")}</span>
         </label>
         <div class="form__foot">
-          <button class="btn" type="submit">Verstuur aanvraag <span class="arr">→</span></button>
-          <a class="btn ghost" href={CONTACT.telHref}>Of bel {CONTACT.tel}</a>
+          <button class="btn" type="submit">{t(locale, "formSubmit")} <span class="arr">→</span></button>
+          <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "formOrCall")} {CONTACT.tel}</a>
         </div>
         <p id="q-note" class="notice">
-          <span class="tag">Nog koppelen</span>
-          <span>Dit formulier (inclusief bestandsupload) moet vóór livegang aan een backend of e-maildienst worden gekoppeld. Mail uw tekening tot die tijd naar <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</span>
+          <span class="tag">{t(locale, "formTodoTag")}</span>
+          <span>{t(locale, "formTodoText")} <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</span>
         </p>
       </form>
     </div>

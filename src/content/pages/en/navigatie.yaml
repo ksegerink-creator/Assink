@@ -1,0 +1,97 @@
+# Engelse menulabels. De slugs blijven canoniek Nederlands — localizePath()
+# zet er de /en/-prefix voor, zodat er nooit dode links ontstaan.
+megaKolommen:
+  - titel: Sheet metal
+    items:
+      - label: Sheet metal (overview)
+        slug: plaatwerk
+        idx: '2.0'
+      - label: Stainless steel
+        slug: plaatwerk/rvs
+        idx: '2.1'
+      - label: Aluminium
+        slug: plaatwerk/aluminium
+        idx: '2.2'
+      - label: Brass
+        slug: plaatwerk/messing
+        idx: '2.3'
+      - label: Bending & forming
+        slug: plaatwerk/zetten
+        idx: '2.4'
+      - label: Self-clinching & rivet nuts
+        slug: plaatwerk/persmoeren-trekmoeren
+        idx: '2.5'
+      - label: Precision sheet metal
+        slug: plaatwerk/precisieplaatwerk
+        idx: '2.6'
+  - titel: Cutting
+    items:
+      - label: Laser cutting
+        slug: plaatwerk/lasersnijden
+        idx: '3.1'
+      - label: Tube laser cutting
+        slug: buizenlaser
+        idx: '3.2'
+      - label: Machining
+        slug: verspaning
+        idx: '3.3'
+  - titel: Welding
+    items:
+      - label: Welding
+        slug: plaatwerk/lassen
+        idx: '4.1'
+      - label: Laser welding
+        slug: plaatwerk/laserlassen
+        idx: '4.2'
+      - label: Robot welding
+        slug: plaatwerk/robotlassen
+        idx: '4.3'
+      - label: Aluminium welding
+        slug: aluminium-lassen
+        idx: '4.4'
+  - titel: Assembly
+    items:
+      - label: Welded constructions
+        slug: constructies
+        idx: '5.1'
+      - label: Stainless steel constructions
+        slug: rvs-constructies
+        idx: '5.2'
+      - label: Machine building
+        slug: machinebouw
+        idx: '5.3'
+      - label: Industrial enclosures
+        slug: industriele-behuizing
+        idx: '5.4'
+sectoren:
+  - label: Machine building
+    slug: machinebouw
+    idx: '1'
+  - label: Food industry
+    slug: plaatwerk/voedingsmiddelenindustrie
+    idx: '2'
+  - label: Industrial enclosures
+    slug: industriele-behuizing
+    idx: '3'
+  - label: Stainless steel sheet metal for machine building
+    slug: plaatwerk/rvs-plaatwerk-voor-machinebouw
+    idx: '4'
+  - label: Stainless steel constructions for machine building
+    slug: plaatwerk/rvs-constructies-voor-machinebouw
+    idx: '5'
+  - label: Stainless steel enclosures & machine cladding
+    slug: plaatwerk/rvs-behuizingen-machinebeplating
+    idx: '6'
+footerDiensten:
+  - label: Sheet metal
+    slug: plaatwerk
+  - label: Welded constructions
+    slug: constructies
+  - label: Machine building
+    slug: machinebouw
+  - label: Industrial enclosures
+    slug: industriele-behuizing
+  - label: Tube laser cutting
+    slug: buizenlaser
+  - label: Laser welding
+    slug: plaatwerk/laserlassen

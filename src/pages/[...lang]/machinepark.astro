@@ -1,25 +1,31 @@
 ---
 import { getCollection } from "astro:content";
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import { machineImageFor } from "@data/images";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const m0 = await reader.singletons.machinepark.read();
-if (!m0) throw new Error("Machinepark-content ontbreekt (src/content/pages/machinepark).");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
+
+const locale = toLocale(Astro.params.lang);
+const m0 = await readPage("machinepark", locale);
 
 const machines = (await getCollection("machines")).sort((a, b) => a.data.order - b.data.order);
 ---
 <PageLayout
-  title="Machinepark"
-  description="Modern machinepark voor plaatwerk, lasersnijden, buislasersnijden, zetten en lassen. Geautomatiseerde productie met traditioneel vakmanschap — Assink & Schipholt, Hengelo."
+  title={m0.seoTitel}
+  description={m0.seoOmschrijving}
   canonicalSlug="machinepark"
-  trail={[{ label: "Machinepark", slug: "machinepark" }]}
+  trail={[{ label: t(locale, "machinepark"), slug: "machinepark" }]}
+  altLocales={["nl", "en", "de"]}
 >
   <section class="sec ov-hero">
     <div class="wrap grid2">
@@ -42,7 +48,7 @@ const machines = (await getCollection("machines")).sort((a, b) => a.data.order -
 
   <section class="sec">
     <div class="wrap">
-      <SectionHead title="Machines" index={`${machines.length} in bedrijf`} />
+      <SectionHead title={t(locale, "machinesHead")} index={`${machines.length} ${t(locale, "machinesIndex")}`} />
       <div class="mp rv">
         {machines.map((m, i) => (
           <article class="mp__row">

@@ -1,26 +1,31 @@
 ---
 import { getCollection } from "astro:content";
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { CONTACT } from "@data/site";
-import { localizePath } from "@utils/paths";
+import { localizePath, toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const w = await reader.singletons.werkenBij.read();
-if (!w) throw new Error("Werken-bij-content ontbreekt (src/content/pages/werken-bij).");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
 
-const nav = (slug: string) => localizePath(slug, "nl");
+const locale = toLocale(Astro.params.lang);
+const w = await readPage("werkenBij", locale);
+
+const nav = (slug: string) => localizePath(slug, locale);
 const vacancies = (await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order);
 const open = vacancies.filter((v) => v.data.open);
 ---
 <PageLayout
-  title="Werken bij Assink & Schipholt"
-  description="Vacatures bij Assink & Schipholt in Hengelo: lassers, kanters, werkvoorbereiders, stages en vakantiewerk. Vakmanschap in de metaal sinds 1919."
+  title={w.seoTitel}
+  description={w.seoOmschrijving}
   canonicalSlug="vacatures"
-  trail={[{ label: "Werken bij", slug: "vacatures" }]}
+  trail={[{ label: t(locale, "careers"), slug: "vacatures" }]}
+  altLocales={["nl", "en", "de"]}
 >
   <!-- Hero: portret + tekst naast elkaar, geen kaart-layout -->
   <section class="vhero">
@@ -30,8 +35,8 @@ const open = vacancies.filter((v) => v.data.open);
         <h1>{w.heroTitelRegel1}<br />{w.heroTitelRegel2}</h1>
         <p>{w.heroTekst}</p>
         <div class="vhero__acts">
-          <a class="btn" href="#vacatures">Bekijk vacatures ({open.length})</a>
-          <a class="btn ghost" href={`mailto:${CONTACT.sollicitatieEmail}`}>Open sollicitatie</a>
+          <a class="btn" href="#vacatures">{t(locale, "viewVacancies")} ({open.length})</a>
+          <a class="btn ghost" href={`mailto:${CONTACT.sollicitatieEmail}`}>{t(locale, "openApplication")}</a>
         </div>
       </div>
       <figure class="vhero__photo">
@@ -69,7 +74,7 @@ const open = vacancies.filter((v) => v.data.open);
     <div class="wrap">
       <div class="rule-head rv">
         <h2>{w.vacaturesKop}</h2>
-        <span class="mono">{open.length} open</span>
+        <span class="mono">{open.length} {t(locale, "openCount")}</span>
       </div>
       {open.length > 0 ? (
         <ul class="vlist">
@@ -90,8 +95,7 @@ const open = vacancies.filter((v) => v.data.open);
         </ul>
       ) : (
         <p class="prose rv">
-          Er zijn op dit moment geen openstaande vacatures. Een open sollicitatie is
-          altijd welkom via <a href={`mailto:${CONTACT.sollicitatieEmail}`}>{CONTACT.sollicitatieEmail}</a>.
+          {t(locale, "noVacancies")} <a href={`mailto:${CONTACT.sollicitatieEmail}`}>{CONTACT.sollicitatieEmail}</a>.
         </p>
       )}
     </div>
@@ -105,7 +109,7 @@ const open = vacancies.filter((v) => v.data.open);
         <p>{w.ctaTekst}</p>
       </div>
       <div class="vcta__acts">
-        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Meeloopdag`}>Plan een meeloopdag</a>
+        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "visitSubject"))}`}>{t(locale, "planVisit")}</a>
         <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
       </div>
     </div>

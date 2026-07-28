@@ -1,8 +1,7 @@
 ---
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../../keystatic.config";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
 import LangSwitcher from "./LangSwitcher.astro";
 import Logo from "./Logo.astro";
 import SocialLinks from "./SocialLinks.astro";
@@ -15,15 +14,14 @@ interface Props {
 const { canonicalSlug, available = ["nl"] } = Astro.props;
 const locale = toLocale(Astro.currentLocale);
 
-// Navigatie komt uit de Keystatic-singleton (bewerkbaar via /keystatic).
-const reader = createReader(process.cwd(), keystaticConfig);
-const navData = await reader.singletons.navigatie.read();
+// Navigatie komt uit de Keystatic-singleton (bewerkbaar via /keystatic),
+// per taal met terugval op het Nederlands.
+const navData = await readPage("navigatie", locale);
 const MEGA = (navData?.megaKolommen ?? []).map((c) => ({ heading: c.titel, items: c.items }));
 const SECTORS = navData?.sectoren ?? [];
 
-/* Content pages currently exist in Dutch; link nav items to the Dutch canonical
-   route so there are never dead links. The language switcher toggles the locale. */
-const nav = (slug: string) => localizePath(slug, "nl");
+/* Slugs blijven canoniek Nederlands; localizePath zet er de taalprefix voor. */
+const nav = (slug: string) => localizePath(slug, locale);
 const home = localizePath("", locale);
 ---
 <header class="hdr">

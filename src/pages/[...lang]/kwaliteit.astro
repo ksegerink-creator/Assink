@@ -1,24 +1,30 @@
 ---
 import { getCollection } from "astro:content";
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const q = await reader.singletons.kwaliteit.read();
-if (!q) throw new Error("Kwaliteit-content ontbreekt (src/content/pages/kwaliteit).");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
+
+const locale = toLocale(Astro.params.lang);
+const q = await readPage("kwaliteit", locale);
 
 const certs = (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order);
 ---
 <PageLayout
-  title="Kwaliteit & certificering"
-  description="ISO 9001, ISO 3834-2 en ISO 1090-1 gecertificeerd. Beheerste lasprocessen, maatcontrole en documentatie — Assink & Schipholt, Hengelo."
+  title={q.seoTitel}
+  description={q.seoOmschrijving}
   canonicalSlug="kwaliteit"
-  trail={[{ label: "Kwaliteit", slug: "kwaliteit" }]}
+  trail={[{ label: t(locale, "quality"), slug: "kwaliteit" }]}
+  altLocales={["nl", "en", "de"]}
 >
   <section class="sec ov-hero">
     <div class="wrap grid2">
@@ -41,7 +47,7 @@ const certs = (await getCollection("certifications")).sort((a, b) => a.data.orde
 
   <section class="sec">
     <div class="wrap">
-      <SectionHead title="Certificeringen" index="Aantoonbaar" />
+      <SectionHead title={t(locale, "certsHead")} index={t(locale, "certsIndex")} />
       <div class="g-3 rv">
         {certs.map((c) => (
           <article class="card">
@@ -59,7 +65,7 @@ const certs = (await getCollection("certifications")).sort((a, b) => a.data.orde
 
   <section class="sec tight">
     <div class="wrap">
-      <SectionHead title="Kwaliteitsproces" index="Van ingang tot vrijgave" />
+      <SectionHead title={t(locale, "processHead")} index={t(locale, "processIndex")} />
       <ul class="rows">
         {q.proces.map((p, i) => (
           <li class="row rv">

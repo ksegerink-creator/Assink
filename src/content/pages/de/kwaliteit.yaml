@@ -1,0 +1,14 @@
+# Duitse vertaling. Foto's bewust weggelaten: beeld komt uit de NL-bron.
+seoTitel: Qualität & Zertifizierung
+seoOmschrijving: >-
+  Zertifiziert nach ISO 9001, ISO 3834-2 und ISO 1090-1. Qualität sichern wir im
+  Prozess: qualifizierte Schweißverfahren, Maßkontrolle und Dokumentation —
+  nachweisbar und nachvollziehbar.
+kicker: "Gesicherte Qualität"
+titel: "Qualität & Zertifizierung"
+lead: "Qualität sichern wir im Prozess, nicht im Nachhinein. Von qualifizierten Schweißverfahren bis zu Maßkontrolle und Dokumentation — nachweisbar und nachvollziehbar."
+proces:
+  - { stap: "Eingangskontrolle", tekst: "Materialzeugnisse und Maße werden bei Anlieferung geprüft." }
+  - { stap: "Prozesslenkung", tekst: "Qualifizierte Schweißverfahren und überwachte Fertigungsparameter." }
+  - { stap: "Maßkontrolle", tekst: "Messmittel und Sichtprüfung während und nach der Fertigung." }
+  - { stap: "Endprüfung & Freigabe", tekst: "Dokumentation und Freigabe vor der Just-in-time-Lieferung." }

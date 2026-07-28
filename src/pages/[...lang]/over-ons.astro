@@ -1,28 +1,33 @@
 ---
 import { getCollection } from "astro:content";
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { SITE, CERTS } from "@data/site";
-import { localizePath } from "@utils/paths";
+import { localizePath, toLocale } from "@utils/paths";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const a = await reader.singletons.overOns.read();
-if (!a) throw new Error("Over-ons-content ontbreekt (src/content/pages/over-ons).");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
 
-const nav = (slug: string) => localizePath(slug, "nl");
+const locale = toLocale(Astro.params.lang);
+const a = await readPage("overOns", locale);
+
+const nav = (slug: string) => localizePath(slug, locale);
 const sectors = (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
 ---
 <PageLayout
-  title="Over ons"
-  description="Assink & Schipholt: metaalbewerking in Hengelo sinds 1919. Traditioneel vakmanschap met moderne, geautomatiseerde productie."
+  title={a.seoTitel}
+  description={a.seoOmschrijving}
   canonicalSlug="over-ons"
-  trail={[{ label: "Over ons", slug: "over-ons" }]}
+  trail={[{ label: t(locale, "about"), slug: "over-ons" }]}
+  altLocales={["nl", "en", "de"]}
 >
   <!-- Hero: pagina opent met de productie -->
   <section class="ahero">

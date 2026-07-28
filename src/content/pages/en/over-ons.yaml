@@ -1,0 +1,29 @@
+# Engelse vertaling. Foto's bewust weggelaten: beeld komt uit de NL-bron.
+seoTitel: About us
+seoOmschrijving: >-
+  Assink & Schipholt has been working metal in Hengelo since 1919: sheet metal
+  work, welded constructions and assemblies for machine building and industry.
+  Experienced professionals, a modern machine park, one point of contact.
+heroKicker: "About us · Hengelo, the Netherlands"
+heroTitelRegel1: "More than a century"
+heroTitelRegel2: "of metalworking"
+lead: "Assink & Schipholt has been working metal in Hengelo since 1919. The combination of experienced professionals, a modern machine park and short lines of communication makes us a dependable production partner — from a single part to a complete assembly."
+feiten:
+  - { waarde: "{jaren}", label: "years of experience" }
+  - { waarde: "5 t", label: "max. unit weight" }
+  - { waarde: "±50 m²", label: "construction area" }
+  - { waarde: "1", label: "point of contact" }
+proza:
+  - "We work for machine builders, equipment manufacturers and industry throughout the Netherlands. Many operations — from laser cutting to surface treatment — are carried out in house. That keeps lead times short and quality demonstrable."
+  - "From one-offs to series and from a loose part to a complete assembly: you have a single point of contact who oversees the entire process — from engineering to finished assembly."
+historieKop1: "From forge"
+historieKop2: "to modern production"
+tijdlijn:
+  - { jaar: "1919", tekst: "Founded in Hengelo — the start of more than a century of metalworking." }
+  - { jaar: "20th century", tekst: "Grew into an all-round specialist in sheet metal and structural work for regional industry." }
+  - { jaar: "Today", tekst: "Modern, partly automated production: laser cutting, tube laser, laser welding and in-house finishing." }
+  - { jaar: "Now", tekst: "One production partner from engineering to finished assembly for machine building and industry." }
+vakEyebrow: "Quality & craftsmanship"
+vakKop: "Demonstrably good work"
+vakTekst: "We build quality into the process: qualified welding procedures, dimensional inspection and documentation for every order. As an SBB-accredited training company, we also train our own skilled professionals."
+pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"

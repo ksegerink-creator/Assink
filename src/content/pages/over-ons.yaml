@@ -1,3 +1,5 @@
+seoTitel: "Over ons"
+seoOmschrijving: "Assink & Schipholt: metaalbewerking in Hengelo sinds 1919. Traditioneel vakmanschap met moderne, geautomatiseerde productie."
 heroKicker: "Over ons · Hengelo (Ov.)"
 heroTitelRegel1: "Meer dan een eeuw"
 heroTitelRegel2: "metaalbewerking"
@@ -17,7 +19,7 @@ historieFoto: "/src/assets/uploads/over-ons/historieFoto.png"
 tijdlijn:
   - { jaar: "1919", tekst: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." }
   - { jaar: "20e eeuw", tekst: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." }
-  - { jaar: "Vandaag", tekst: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, robotlassen en eigen afwerking." }
+  - { jaar: "Vandaag", tekst: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, laserlassen en eigen afwerking." }
   - { jaar: "Nu", tekst: "Eén productiepartner van engineering tot afgewerkte samenstelling voor machinebouw en industrie." }
 vakEyebrow: "Kwaliteit & vakmanschap"
 vakKop: "Aantoonbaar goed werk"
