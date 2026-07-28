@@ -1,37 +1,38 @@
 ---
-import { createReader } from "@keystatic/core/reader";
-import keystaticConfig from "../../keystatic.config";
 import PageLayout from "@layouts/PageLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import SocialSection from "@components/sections/SocialSection.astro";
 import { SITE, CONTACT, CERTS } from "@data/site";
-import { localizePath } from "@utils/paths";
+import { t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
 import { photo } from "@utils/photos";
+import { readPage } from "@utils/content";
+import { LOCALE_PATHS } from "@utils/locales";
 
 /**
  * Homepage — compact, foto-geleid, editorial.
  * Alle teksten en foto's komen uit de Keystatic-singleton `homepage`
- * (src/content/pages/home). Beheer via /keystatic. Beeldverhoudingen en
- * layout blijven in code; alleen inhoud is bewerkbaar.
+ * (src/content/pages/home, met en/ + de/ voor de vertalingen). Beheer via
+ * /keystatic. Beeldverhoudingen en layout blijven in code.
  */
-const nav = (slug: string) => localizePath(slug, "nl");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
+
+const locale = toLocale(Astro.params.lang);
+const nav = (slug: string) => localizePath(slug, locale);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
 
-const reader = createReader(process.cwd(), keystaticConfig);
-const home = await reader.singletons.homepage.read();
-if (!home) throw new Error("Homepage-content ontbreekt (src/content/pages/home).");
+const home = await readPage("homepage", locale);
 
 const { hero, intro, capabilities, proef, mensen } = home;
 // Vaste beeldverhoudingen/annotatie-styling per tegel (blijft in code).
 const capRatios = ["3/2", "4/3", "3/2", "4/3"];
-
-const description =
-  "Assink & Schipholt produceert plaatwerk, constructies en samenstellingen voor de machinebouw en industrie — van enkel onderdeel tot compleet eindproduct. Metaalbewerking in Hengelo sinds 1919.";
 ---
 
-<PageLayout title="Constructief sinds 1919" description={description} canonicalSlug="">
+<PageLayout title={home.seoTitel} description={home.seoOmschrijving} canonicalSlug="" altLocales={["nl", "en", "de"]}>
   <!-- ═══ Hero — full-bleed fotografie met rustige tekstlaag ═══ -->
   <section class="hero">
     <div class="hero__media">
@@ -50,24 +51,24 @@ const description =
         <p class="hero__kicker mono">{hero.kicker}</p>
         <h1>{hero.titelRegel1}<br />{hero.titelRegel2}<span class="dot">.</span></h1>
         <p class="hero__copy">{hero.copy}</p>
-        <a class="hero__more mono" href={nav("plaatwerk")}>Bekijk onze mogelijkheden →</a>
+        <a class="hero__more mono" href={nav("plaatwerk")}>{t(locale, "allCaps")} →</a>
       </div>
 
       <!-- Direct een aanvraag doen, zonder doorklikken -->
       <form class="hform" method="post" action="#" aria-labelledby="hform-h">
         <h2 id="hform-h" class="hform__h">{hero.formulierTitel}</h2>
-        <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
+        <label>{t(locale, "formName")}<input type="text" name="naam" autocomplete="name" required /></label>
         <div class="hform__row">
-          <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
-          <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
+          <label>{t(locale, "formEmail")}<input type="email" name="email" autocomplete="email" required /></label>
+          <label>{t(locale, "formPhone")}<input type="tel" name="telefoon" autocomplete="tel" /></label>
         </div>
-        <label>Waar gaat het om?<textarea name="omschrijving" rows="3" placeholder="Bijv. RVS-omkasting, 25 stuks, tekening beschikbaar" required></textarea></label>
-        <button class="btn hform__btn" type="submit">Verstuur aanvraag <span class="arr">→</span></button>
-        <p class="hform__hint mono">Reactie binnen één werkdag · Tekening meesturen? <a href={nav("offerte")}>Uitgebreid formulier</a> · Liever direct: <a href={CONTACT.telHref}>{CONTACT.tel}</a></p>
+        <label>{t(locale, "formSubject")}<textarea name="omschrijving" rows="3" placeholder={t(locale, "formSubjectPlaceholder")} required></textarea></label>
+        <button class="btn hform__btn" type="submit">{t(locale, "formSubmit")} <span class="arr">→</span></button>
+        <p class="hform__hint mono">{t(locale, "formHintResponse")} · {t(locale, "formHintDrawing")} <a href={nav("offerte")}>{t(locale, "formHintFull")}</a> · {t(locale, "formHintDirect")} <a href={CONTACT.telHref}>{CONTACT.tel}</a></p>
       </form>
     </div>
     <div class="wrap hero__meta mono">
-      <span>Plaatwerk</span><span>Constructies</span><span>Machinebouw</span><span>Buislasersnijden</span><span>Assemblage</span>
+      {t(locale, "heroMeta").split(",").map((label) => <span>{label}</span>)}
     </div>
   </section>
 
@@ -79,7 +80,7 @@ const description =
         <p class="prose">
           {fill(intro.tekst)} <strong>{intro.tekstAccent}</strong>
         </p>
-        <ul class="facts mono" aria-label="Kerngegevens">
+        <ul class="facts mono" aria-label={t(locale, "factsAria")}>
           {intro.feiten.map((f) => (
             <li><b>{fill(f.waarde)}</b> {f.label}</li>
           ))}
@@ -92,7 +93,7 @@ const description =
           ratio="16/10"
           position="center 32%"
         />
-        <figcaption class="mono">Oosterveldsingel 18 · Hengelo (Ov.)</figcaption>
+        <figcaption class="mono">{t(locale, "pandCaption")}</figcaption>
       </figure>
     </div>
   </section>
@@ -102,7 +103,7 @@ const description =
     <div class="wrap">
       <div class="rule-head rv">
         <h2>{home.capabilitiesKop}</h2>
-        <span class="mono">Mogelijkheden</span>
+        <span class="mono">{t(locale, "possibilities")}</span>
       </div>
       <div class="mosaic">
         {capabilities.map((c, i) => (
@@ -113,7 +114,7 @@ const description =
             <div class="tile__body">
               <h3>{c.titel}</h3>
               <p>{c.omschrijving}</p>
-              <span class="tile__go mono">Lees meer <span class="arr">→</span></span>
+              <span class="tile__go mono">{t(locale, "readmore")} <span class="arr">→</span></span>
             </div>
           </a>
         ))}
@@ -142,8 +143,8 @@ const description =
         </figure>
       ))}
       <div class="proof__link rv">
-        <p>Bekijk waarmee wij dit maken.</p>
-        <a class="btn ghost sm" href={nav("machinepark")}>Naar het machinepark</a>
+        <p>{t(locale, "proofLink")}</p>
+        <a class="btn ghost sm" href={nav("machinepark")}>{t(locale, "proofLinkBtn")}</a>
       </div>
     </div>
   </section>
@@ -155,13 +156,13 @@ const description =
         <IndustrialImage src={photo(mensen.foto)} alt="Vakman van Assink & Schipholt met een stalen profiel" ratio="4/5" position="center 35%" />
       </figure>
       <div class="people__text rv">
-        <span class="eyebrow mono">Mensen &amp; vakmanschap</span>
+        <span class="eyebrow mono">{t(locale, "peopleEyebrow")}</span>
         <h2>{fill(mensen.kop)}</h2>
         <p class="prose">{mensen.tekst}</p>
         <p class="people__certs mono">{CERTS.join("  ·  ")}</p>
         <div class="people__acts">
-          <a class="btn ghost" href={nav("over-ons")}>Over ons bedrijf</a>
-          <a class="btn ghost" href={nav("vacatures")}>Werken bij</a>
+          <a class="btn ghost" href={nav("over-ons")}>{t(locale, "peopleAbout")}</a>
+          <a class="btn ghost" href={nav("vacatures")}>{t(locale, "careers")}</a>
         </div>
       </div>
     </div>

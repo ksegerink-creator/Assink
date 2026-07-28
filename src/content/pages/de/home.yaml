@@ -1,0 +1,78 @@
+# Duitse vertaling van de homepage. Foto's zijn hier bewust weggelaten:
+# beeld komt altijd uit de Nederlandse bron (src/content/pages/home.yaml).
+seoTitel: Solide seit 1919
+seoOmschrijving: >-
+  Assink & Schipholt fertigt Blechbearbeitung, Konstruktionen und Baugruppen für
+  Maschinenbau und Industrie — vom einzelnen Bauteil bis zum kompletten
+  Endprodukt. Metallbearbeitung in Hengelo seit 1919.
+hero:
+  kicker: Metallbearbeitung · Hengelo (NL)
+  titelRegel1: Solide
+  titelRegel2: seit 1919
+  copy: >-
+    Blechbearbeitung, Konstruktionen und Baugruppen für Maschinenbau und
+    Industrie. Vom einzelnen Bauteil bis zum kompletten Endprodukt — aus
+    einer Hand.
+  formulierTitel: Jetzt direkt ein Angebot anfragen
+intro:
+  kop: Ein Produktionspartner für den gesamten Prozess
+  tekst: >-
+    Assink & Schipholt bearbeitet seit über einem Jahrhundert Metall in Hengelo.
+    Erfahrene Fachkräfte, ein moderner und teilweise automatisierter
+    Maschinenpark und kurze Wege: Wir prüfen Ihre Zeichnung auf Fertigbarkeit,
+    produzieren maßhaltig und liefern just in time.
+  tekstAccent: Von der Konstruktion bis zur fertigen Baugruppe.
+  feiten:
+    - waarde: '{jaren}'
+      label: Jahre Handwerkskunst
+    - waarde: 5 t
+      label: max. Stückgewicht
+    - waarde: 3×
+      label: ISO-zertifiziert
+    - waarde: '1'
+      label: Ansprechpartner
+capabilitiesKop: Was wir fertigen
+capabilities:
+  - nummer: '01'
+    titel: Blechbearbeitung
+    omschrijving: >-
+      Präzisionsblech in Stahl, Edelstahl, Aluminium und Messing.
+      Laserschneiden, Abkanten und Nachbearbeiten — Einzelstücke und Serien,
+      maßhaltig bis auf den Millimeter.
+    annotatie: Abkantpresse · ± 0,1 mm
+    link: plaatwerk
+  - nummer: '02'
+    titel: Konstruktionen & Schweißen
+    omschrijving: >-
+      Geschweißte Baugruppen bis 5 Tonnen. WIG-, MIG- und Laserschweißen — vom
+      einzelnen Bauteil bis zum komplett geschweißten Rahmen, einschließlich
+      Oberflächenbehandlung.
+    annotatie: WIG · MIG · Laser
+    link: constructies
+  - nummer: '03'
+    titel: Maschinenbau & Montage
+    omschrijving: >-
+      Komplette Maschinen, Baugruppen und Industriegehäuse. Wir montieren,
+      verkabeln und liefern produktionsbereit — just in time.
+    annotatie: Baugruppen bis 5 t
+    link: machinebouw
+  - nummer: '04'
+    titel: Laser- & Rohrlaserschneiden
+    omschrijving: >-
+      2D-Laserschneiden von Blech und Rohrlaserschneiden von Profilen. Genaue
+      Konturen, saubere Schnittkanten und kurze Durchlaufzeiten.
+    annotatie: Faserlaser
+    link: buizenlaser
+proef:
+  quote: 'Qualität zeigt sich im Detail: in der Schweißnaht, der Biegung, dem Maß.'
+  details:
+    - bijschrift: Biegen · ± 0,1 mm
+    - bijschrift: Abkanten
+    - bijschrift: Nachbearbeitung
+mensen:
+  kop: Seit {jaren} Jahren Menschenarbeit
+  tekst: >-
+    Maschinen machen es möglich, Fachkräfte machen den Unterschied. Unsere
+    Schweißer, Abkanter und Arbeitsvorbereiter arbeiten täglich an Produkten,
+    die etwas abverlangen — und bilden als SBB-anerkannter Ausbildungsbetrieb
+    selbst die nächste Generation aus.

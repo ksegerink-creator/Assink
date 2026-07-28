@@ -1,0 +1,76 @@
+# Engelse vertaling van de homepage. Foto's zijn hier bewust weggelaten:
+# beeld komt altijd uit de Nederlandse bron (src/content/pages/home.yaml).
+seoTitel: Solid since 1919
+seoOmschrijving: >-
+  Assink & Schipholt produces sheet metal work, welded constructions and
+  assemblies for machine building and industry — from a single part to a
+  complete end product. Metalworking in Hengelo since 1919.
+hero:
+  kicker: Metalworking · Hengelo, the Netherlands
+  titelRegel1: Solid
+  titelRegel2: since 1919
+  copy: >-
+    Sheet metal work, welded constructions and assemblies for machine building
+    and industry. From a single part to a complete end product — from one source.
+  formulierTitel: Request a quote straight away
+intro:
+  kop: One production partner for the entire process
+  tekst: >-
+    Assink & Schipholt has been working metal in Hengelo for over a century.
+    Experienced professionals, a modern and partly automated machine park and
+    short lines of communication: we assess your drawing for manufacturability,
+    produce to tight tolerances and deliver just in time.
+  tekstAccent: From engineering to finished assembly.
+  feiten:
+    - waarde: '{jaren}'
+      label: years of craftsmanship
+    - waarde: 5 t
+      label: max. unit weight
+    - waarde: 3×
+      label: ISO certified
+    - waarde: '1'
+      label: point of contact
+capabilitiesKop: What we make
+capabilities:
+  - nummer: '01'
+    titel: Sheet metal work
+    omschrijving: >-
+      Precision sheet metal in steel, stainless steel, aluminium and brass.
+      Laser cutting, bending and finishing — one-offs and series, dimensionally
+      accurate to the millimetre.
+    annotatie: Press brake · ± 0.1 mm
+    link: plaatwerk
+  - nummer: '02'
+    titel: Constructions & welding
+    omschrijving: >-
+      Welded assemblies up to 5 tonnes. TIG, MIG and laser welding — from a
+      loose part to a complete welded frame, including surface treatment.
+    annotatie: TIG · MIG · laser
+    link: constructies
+  - nummer: '03'
+    titel: Machine building & assembly
+    omschrijving: >-
+      Complete machines, sub-assemblies and industrial enclosures. We assemble,
+      wire and deliver ready for production — just in time.
+    annotatie: Assemblies up to 5 t
+    link: machinebouw
+  - nummer: '04'
+    titel: Laser & tube laser cutting
+    omschrijving: >-
+      2D laser cutting of sheet and tube laser cutting of profiles. Accurate
+      contours, clean cut edges and short lead times.
+    annotatie: Fibre laser
+    link: buizenlaser
+proef:
+  quote: 'Quality shows in the detail: the weld seam, the bend, the dimension.'
+  details:
+    - bijschrift: Bending · ± 0.1 mm
+    - bijschrift: Press braking
+    - bijschrift: Finishing
+mensen:
+  kop: '{jaren} years of people at work'
+  tekst: >-
+    Machines make it possible; skilled people make the difference. Our welders,
+    press brake operators and production engineers work daily on products that
+    are genuinely demanding — and train the next generation themselves as an
+    SBB-accredited training company.
