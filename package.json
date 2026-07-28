@@ -13,7 +13,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "gen:redirects": "node scripts/gen-vercel-json.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",

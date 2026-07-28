@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import vercel from "@astrojs/vercel";
 import keystatic from "@keystatic/astro";
+import { astroRedirects } from "./src/data/redirects.ts";
 
 /**
  * Production URL of the Assink & Schipholt website.
@@ -38,6 +39,11 @@ export default defineConfig({
   // trailing slash aan via absUrl()/localizePath(), dus SEO blijft ongewijzigd.
   trailingSlash: "ignore",
   build: { format: "directory" },
+  /**
+   * 301-redirects van de oude WordPress-URL's. De mapping staat in
+   * src/data/redirects.ts, gebaseerd op de sitemaps van de live site.
+   */
+  redirects: astroRedirects,
   i18n: {
     defaultLocale: "nl",
     locales: ["nl", "en", "de"],

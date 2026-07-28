@@ -1,0 +1,132 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+
+/** Kennisbank-artikel. Nederlandstalig (zie kennisbank/index.astro). */
+export async function getStaticPaths() {
+  const artikelen = await getCollection("articles");
+  return artikelen.map((entry: CollectionEntry<"articles">) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+interface Props { entry: CollectionEntry<"articles"> }
+const { entry } = Astro.props;
+const a = entry.data;
+
+const datum = (iso: string) =>
+  new Date(iso + "T12:00:00Z").toLocaleDateString("nl-NL", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+// FAQPage-structured data zodat de vragen in Google kunnen verschijnen.
+const jsonld = a.faq.length
+  ? [{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: a.faq.map((f) => ({
+        "@type": "Question",
+        name: f.vraag,
+        acceptedAnswer: { "@type": "Answer", text: f.antwoord },
+      })),
+    }]
+  : [];
+---
+<PageLayout
+  title={a.seo?.title || a.title}
+  description={a.seo?.description || a.intro}
+  canonicalSlug={`kennisbank/${a.slug}`}
+  trail={[{ label: "Kennisbank", slug: "kennisbank" }, { label: a.title, slug: `kennisbank/${a.slug}` }]}
+  jsonld={jsonld}
+>
+  <article>
+    <section class="sec art-hero">
+      <div class="wrap">
+        <span class="mono art-hero__meta">Kennisbank · {datum(a.date)}</span>
+        <h1>{a.title}</h1>
+        <p class="art-hero__lead">{a.intro}</p>
+      </div>
+    </section>
+
+    {a.secties.map((s) => (
+      <section class="sec tight art-sec">
+        <div class="wrap art-grid">
+          <h2 class="art-sec__h rv">{s.kop}</h2>
+          <div class="prose rv">
+            {s.alineas.map((p) => <p set:html={p} />)}
+            {s.lijst.length > 0 && (
+              <ul class="art-list">
+                {s.lijst.map((li) => <li>{li}</li>)}
+              </ul>
+            )}
+          </div>
+        </div>
+      </section>
+    ))}
+
+    {a.faq.length > 0 && (
+      <section class="sec tight">
+        <div class="wrap art-grid">
+          <h2 class="art-sec__h rv">Veelgestelde vragen</h2>
+          <div class="rv">
+            {a.faq.map((f) => (
+              <details class="art-faq">
+                <summary>{f.vraag}</summary>
+                <p>{f.antwoord}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </article>
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  .art-hero { padding-block: clamp(28px, 4vw, 56px) clamp(12px, 2vw, 24px); }
+  .art-hero__meta { color: var(--steel); letter-spacing: .12em; }
+  .art-hero h1 { font-size: clamp(32px, 4.4vw, 60px); margin-top: 12px; max-width: 26em; }
+  .art-hero__lead {
+    margin-top: 20px; color: var(--ink-2); max-width: 40em;
+    font-size: clamp(16.5px, 1.5vw, 19px); line-height: 1.65;
+  }
+
+  .art-sec { padding-block: clamp(16px, 2.4vw, 30px); }
+  .art-grid {
+    display: grid; grid-template-columns: minmax(0, .5fr) minmax(0, 1.5fr);
+    gap: clamp(18px, 3vw, 52px); align-items: start;
+  }
+  .art-sec__h {
+    font-size: clamp(19px, 2vw, 26px); border-top: 1px solid var(--ink);
+    padding-top: 14px; position: sticky; top: calc(var(--head-h) + 16px);
+  }
+  .art-list { margin-top: 6px; padding-left: 0; list-style: none; }
+  .art-list li { position: relative; padding-left: 26px; color: var(--ink-2); }
+  .art-list li::before {
+    content: ""; position: absolute; left: 0; top: .68em;
+    width: 13px; height: 1px; background: var(--blue);
+  }
+
+  .art-faq { border-bottom: 1px solid var(--line); }
+  .art-faq summary {
+    cursor: pointer; list-style: none; padding: 15px 0;
+    font-family: var(--f-disp); font-weight: 600; font-size: clamp(15.5px, 1.5vw, 18px);
+    display: flex; justify-content: space-between; gap: 16px; align-items: baseline;
+  }
+  .art-faq summary::-webkit-details-marker { display: none; }
+  .art-faq summary::after { content: "+"; font-family: var(--f-mono); color: var(--blue); }
+  .art-faq[open] summary::after { content: "–"; }
+  .art-faq p { color: var(--ink-2); font-size: 15.5px; padding-bottom: 16px; max-width: 46em; }
+
+  @media (max-width: 780px) {
+    .art-grid { grid-template-columns: 1fr; }
+    .art-sec__h { position: static; }
+  }
+</style>

@@ -109,6 +109,34 @@ const sectors = defineCollection({
   }),
 });
 
+/**
+ * Kennisbank-artikelen (overgenomen uit de blog van de vorige site).
+ * Nederlandstalig, net als op de huidige site — er waren geen EN/DE-versies.
+ */
+const articles = defineCollection({
+  loader: glob({ pattern: "*.yaml", base: "./src/content/articles" }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    // Publicatiedatum als tekst (bv. "2026-07-23") zodat het CMS er geen
+    // tijdzone-interpretatie op doet; alleen gebruikt voor sortering/weergave.
+    date: z.string(),
+    intro: z.string(),
+    secties: z
+      .array(
+        z.object({
+          kop: z.string(),
+          alineas: z.array(z.string()).default([]),
+          lijst: z.array(z.string()).default([]),
+        }),
+      )
+      .default([]),
+    faq: z.array(z.object({ vraag: z.string(), antwoord: z.string() })).default([]),
+    foto: z.string().optional(),
+    seo,
+  }),
+});
+
 /** Certifications */
 const certifications = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/certifications" }),
@@ -121,4 +149,4 @@ const certifications = defineCollection({
   }),
 });
 
-export const collections = { services, machines, vacancies, projects, sectors, certifications };
+export const collections = { services, machines, vacancies, projects, sectors, certifications, articles };

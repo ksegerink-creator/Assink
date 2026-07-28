@@ -480,6 +480,7 @@ export default config({
       "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte", "werkenBij"],
       Diensten: ["services", "sectoren"],
       Vacatures: ["vacatures"],
+      Kennisbank: ["artikelen"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
       "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens"],
       "Engels (EN)": [
@@ -737,6 +738,48 @@ export default config({
           ],
           defaultValue: ["nl"],
         }),
+      },
+    }),
+
+    artikelen: collection({
+      label: "Kennisbank-artikelen",
+      path: "src/content/articles/*",
+      slugField: "title",
+      format: { data: "yaml" },
+      schema: {
+        title: fields.slug({ name: { label: "Titel" } }),
+        slug: fields.text({ label: "URL-slug", description: "Bepaalt de link: /kennisbank/<slug>/" }),
+        date: fields.text({ label: "Publicatiedatum", description: "Formaat JJJJ-MM-DD, bv. 2026-07-23. Bepaalt de sortering." }),
+        intro: fields.text({ label: "Intro", multiline: true }),
+        secties: fields.array(
+          fields.object({
+            kop: fields.text({ label: "Kop" }),
+            alineas: fields.array(fields.text({ label: "Alinea", multiline: true }), {
+              label: "Alinea's",
+              itemLabel: (p) => (p.value || "").slice(0, 45),
+            }),
+            lijst: fields.array(fields.text({ label: "Punt" }), {
+              label: "Opsomming (optioneel)",
+              itemLabel: (p) => p.value,
+            }),
+          }),
+          { label: "Secties", itemLabel: (p) => p.fields.kop.value },
+        ),
+        faq: fields.array(
+          fields.object({
+            vraag: fields.text({ label: "Vraag" }),
+            antwoord: fields.text({ label: "Antwoord", multiline: true }),
+          }),
+          { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
+        ),
+        foto: pageFoto("artikelen")("Foto (optioneel)"),
+        seo: fields.object(
+          {
+            title: fields.text({ label: "SEO-titel" }),
+            description: fields.text({ label: "SEO-omschrijving", multiline: true }),
+          },
+          { label: "SEO" },
+        ),
       },
     }),
 

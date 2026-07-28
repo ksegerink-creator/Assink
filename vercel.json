@@ -1,0 +1,150 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/wat-maakt-een-buislaser-uniek(/?)",
+      "destination": "/kennisbank/wat-maakt-een-buislaser-uniek/",
+      "permanent": true
+    },
+    {
+      "source": "/industriele-behuizingen-op-maat-rvs-aluminium(/?)",
+      "destination": "/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/",
+      "permanent": true
+    },
+    {
+      "source": "/metaalbewerking-voedingsmiddelenindustrie(/?)",
+      "destination": "/kennisbank/metaalbewerking-voedingsmiddelenindustrie/",
+      "permanent": true
+    },
+    {
+      "source": "/machinebouw-uitbesteden-ervaren-metaalpartner(/?)",
+      "destination": "/kennisbank/machinebouw-uitbesteden-ervaren-metaalpartner/",
+      "permanent": true
+    },
+    {
+      "source": "/en/sheet-metal(/?)",
+      "destination": "/en/plaatwerk/",
+      "permanent": true
+    },
+    {
+      "source": "/en/constructions(/?)",
+      "destination": "/en/constructies/",
+      "permanent": true
+    },
+    {
+      "source": "/en/mechanical-engineering(/?)",
+      "destination": "/en/machinebouw/",
+      "permanent": true
+    },
+    {
+      "source": "/en/industrial-housing(/?)",
+      "destination": "/en/industriele-behuizing/",
+      "permanent": true
+    },
+    {
+      "source": "/en/machine-park(/?)",
+      "destination": "/en/machinepark/",
+      "permanent": true
+    },
+    {
+      "source": "/en/about-us(/?)",
+      "destination": "/en/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact-2(/?)",
+      "destination": "/en/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/en/working-at-assink-schiphol(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/privacy-statement(/?)",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/en/404-page(/?)",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/de/blech(/?)",
+      "destination": "/de/plaatwerk/",
+      "permanent": true
+    },
+    {
+      "source": "/de/konstruktionen(/?)",
+      "destination": "/de/constructies/",
+      "permanent": true
+    },
+    {
+      "source": "/de/maschinenbau(/?)",
+      "destination": "/de/machinebouw/",
+      "permanent": true
+    },
+    {
+      "source": "/de/industriewohnungen(/?)",
+      "destination": "/de/industriele-behuizing/",
+      "permanent": true
+    },
+    {
+      "source": "/de/maschinenpark(/?)",
+      "destination": "/de/machinepark/",
+      "permanent": true
+    },
+    {
+      "source": "/de/ueber-ons(/?)",
+      "destination": "/de/over-ons/",
+      "permanent": true
+    },
+    {
+      "source": "/de/kontakt(/?)",
+      "destination": "/de/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/de/arbeiten-bei-assink-schiphol(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/datenschutzerklaerung(/?)",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/de/404-seite(/?)",
+      "destination": "/de/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy2(/?)",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/category/machinebouw(/?)",
+      "destination": "/kennisbank/",
+      "permanent": true
+    },
+    {
+      "source": "/category/rvs(/?)",
+      "destination": "/kennisbank/",
+      "permanent": true
+    },
+    {
+      "source": "/category/zonder-categorie-nl(/?)",
+      "destination": "/kennisbank/",
+      "permanent": true
+    },
+    {
+      "source": "/404-pagina(/?)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

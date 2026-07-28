@@ -1,0 +1,91 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import CtaBand from "@components/sections/CtaBand.astro";
+import { readPage } from "@utils/content";
+
+/**
+ * Kennisbank — overzicht van de technische artikelen.
+ *
+ * Alleen Nederlands, net als op de vorige site: er bestonden geen Engelse of
+ * Duitse versies van deze artikelen. De pagina staat daarom buiten de
+ * [...lang]-map en is niet in het EN/DE-menu opgenomen.
+ */
+const artikelen = (await getCollection("articles")).sort((a, b) =>
+  b.data.date.localeCompare(a.data.date),
+);
+const alg = await readPage("algemeen", "nl");
+
+const datum = (iso: string) =>
+  new Date(iso + "T12:00:00Z").toLocaleDateString("nl-NL", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+---
+<PageLayout
+  title="Kennisbank"
+  description="Technische artikelen over plaatwerk, buislasersnijden, industriële behuizingen en uitbesteden in de machinebouw — van de vakmensen van Assink & Schipholt."
+  canonicalSlug="kennisbank"
+  trail={[{ label: "Kennisbank", slug: "kennisbank" }]}
+>
+  <section class="sec kb-hero">
+    <div class="wrap">
+      <span class="mono kb-hero__kicker">Kennisbank · {artikelen.length} artikelen</span>
+      <h1>Vakkennis,<br />opgeschreven</h1>
+      <p class="kb-hero__lead">
+        Wat we dagelijks op de werkvloer tegenkomen, uitgelegd voor engineers,
+        werkvoorbereiders en inkopers. Over materiaalkeuze, lastechniek en
+        maakbaarheid.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <ul class="kb-list">
+        {artikelen.map((a, i) => (
+          <li class="rv">
+            <a href={`/kennisbank/${a.data.slug}/`}>
+              <span class="mono kb-list__n">{String(i + 1).padStart(2, "0")}</span>
+              <div class="kb-list__body">
+                <h2>{a.data.title}</h2>
+                <p>{a.data.intro}</p>
+                <span class="mono kb-list__date">{datum(a.data.date)}</span>
+              </div>
+              <span class="mono kb-list__arr">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand />
+</PageLayout>
+
+<style>
+  .kb-hero { padding-block: clamp(28px, 4vw, 56px) clamp(20px, 3vw, 36px); }
+  .kb-hero__kicker { color: var(--steel); letter-spacing: .14em; }
+  .kb-hero h1 { font-size: clamp(38px, 5.6vw, 76px); margin-top: 12px; }
+  .kb-hero__lead { margin-top: 18px; color: var(--ink-2); max-width: 34em; font-size: clamp(15.5px, 1.4vw, 18px); }
+
+  .kb-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .kb-list li { border-bottom: 1px solid var(--line); }
+  .kb-list a {
+    display: grid; grid-template-columns: 52px minmax(0, 1fr) auto;
+    gap: clamp(14px, 2.4vw, 32px); align-items: start;
+    padding: clamp(20px, 2.6vw, 30px) 2px; transition: background .15s var(--ease);
+  }
+  .kb-list a:hover { background: var(--sky-bg); }
+  .kb-list__n { color: var(--steel); padding-top: .35em; }
+  .kb-list h2 { font-size: clamp(20px, 2.3vw, 29px); }
+  .kb-list a:hover h2 { color: var(--blue); }
+  .kb-list__body p { color: var(--ink-2); font-size: 15.5px; margin-top: 9px; max-width: 48em; }
+  .kb-list__date { display: block; margin-top: 12px; color: var(--steel); font-size: 11px; letter-spacing: .08em; }
+  .kb-list__arr { color: var(--blue); padding-top: .35em; }
+  @media (max-width: 680px) {
+    .kb-list a { grid-template-columns: 34px 1fr; }
+    .kb-list__arr { display: none; }
+  }
+</style>
