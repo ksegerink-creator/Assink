@@ -1,0 +1,20 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Stainless steel sheet metal for machine building"
+kicker: "Sector"
+h1: "Stainless steel sheet metal for machine building"
+intro: "Dimensionally stable stainless steel sheet metal for machine building: panels, casings and parts, matched to your series and your schedule."
+body:
+  - "For machine builders we supply stainless steel sheet metal that is dimensionally stable and reproducible, integrated with welding and assembly. That way you keep a single point of contact from drawing to finished assembly."
+materials: ["Stainless steel 304 / 316"]
+process:
+  - { step: "Production engineering", desc: "Flat patterns and tolerances." }
+  - { step: "Production", desc: "Cutting, bending, welding." }
+  - { step: "Delivery", desc: "Just-in-time." }
+applications: ["OEM machine building", "Electronics", "Food"]
+related:
+  - { slug: "machinebouw", label: "Machine building", desc: "Complete machine building." }
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Stainless steel sheet metal work." }
+  - { slug: "plaatwerk/rvs-constructies-voor-machinebouw", label: "Stainless steel constructions for machine building", desc: "Welded stainless steel assemblies." }
+seo:
+  title: "Stainless steel sheet metal for machine building"
+  description: "Dimensionally stable stainless steel sheet metal for machine building: panels, casings and parts, delivered just-in-time."

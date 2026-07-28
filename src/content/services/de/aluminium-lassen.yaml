@@ -1,0 +1,19 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Aluminium schweißen"
+kicker: "Schweißtechnik 4.4"
+h1: "Aluminium schweißen"
+intro: "Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir schweißen Aluminium mit WIG und MIG, verzugsarm und sauber."
+body:
+  - "Aluminium leitet Wärme schnell und oxidiert leicht. Mit der richtigen Vorbereitung und Technik (WIG/MIG) legen wir feste, saubere Nähte — geeignet für Maschinenbau, Gehäuse und Leichtbaukonstruktionen."
+materials: ["Aluminium (verschiedene Legierungen)"]
+process:
+  - { step: "Vorbereitung", desc: "Reinigen und Oxidschicht entfernen." }
+  - { step: "Schweißen", desc: "WIG/MIG mit beherrschter Wärmeeinbringung." }
+  - { step: "Nachbearbeitung", desc: "Schleifen und Endbearbeitung." }
+applications: ["Maschinenbau", "Gehäuse", "Leichtbaukonstruktionen"]
+related:
+  - { slug: "plaatwerk/aluminium", label: "Aluminium-Blechbearbeitung", desc: "Aluminiumverarbeitung." }
+  - { slug: "plaatwerk/lassen", label: "Schweißen", desc: "Alle Schweißverfahren." }
+seo:
+  title: "Aluminium schweißen — WIG und MIG, verzugsarm"
+  description: "Spezialisierte WIG- und MIG-Schweißarbeit in Aluminium für Maschinenbau, Gehäuse und Leichtbaukonstruktionen."

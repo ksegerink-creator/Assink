@@ -26,14 +26,29 @@ export function organizationJsonLd(site: URL | string) {
     },
     geo: { "@type": "GeoCoordinates", latitude: CONTACT.geo.lat, longitude: CONTACT.geo.lng },
     areaServed: "NL",
+    // Openingstijden: werkdagen, uit de CMS-waarde afgeleid vaste opening.
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
+    // KvK-nummer als officieel identificatienummer.
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "KvK",
+      value: CONTACT.kvk,
+    },
+    // Alleen bewerkingen die A&S zelf uitvoert (robotlassen gebeurt binnen de
+    // groep bij Baas Metaal en staat hier daarom niet).
     knowsAbout: [
       "Precisieplaatwerk",
       "RVS-bewerking",
       "Constructiewerk",
       "Machinebouw",
       "Buislasersnijden",
-      "Robotlassen",
       "Laserlassen",
+      "Lasersnijden",
     ],
     hasCredential: CERTS.filter((c) => c.startsWith("ISO")),
     sameAs: [SOCIAL.linkedin, SOCIAL.facebook, SOCIAL.instagram].filter(Boolean),

@@ -20,7 +20,7 @@ materials: ["RVS 304 / 316", "Aluminium", "Messing", "Staal"]
 process:
   - { step: "Engineering & werkvoorbereiding", desc: "Beoordeling van tekening, lasvolgorde en maakbaarheid." }
   - { step: "Snijden & voorbewerken", desc: "Lasersnijden van plaat en buis, kanten en passend maken." }
-  - { step: "Lassen & samenstellen", desc: "Hand-, robot- en laserlassen tot volledige samenstelling." }
+  - { step: "Lassen & samenstellen", desc: "Hand- en laserlassen tot volledige samenstelling." }
   - { step: "Oppervlaktebehandeling", desc: "Stralen, poedercoaten, anodiseren of passiveren." }
   - { step: "Controle & levering", desc: "Maatcontrole en visuele keuring, daarna just-in-time levering." }
 specs:

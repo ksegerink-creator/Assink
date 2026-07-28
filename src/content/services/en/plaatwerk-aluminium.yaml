@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Aluminium sheet metal"
+kicker: "Sheet metal work 2.2"
+h1: "Aluminium sheet metal"
+intro: "Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building and enclosures."
+body:
+  - "Aluminium combines low weight with good strength and corrosion resistance. That makes it ideal for moving parts, enclosures and structures where weight matters."
+  - "Our welding work in aluminium is done with TIG and MIG, matched to sheet thickness and application."
+materials: ["Aluminium (various alloys)"]
+process:
+  - { step: "Laser cutting", desc: "Cutting aluminium sheet." }
+  - { step: "Press braking", desc: "Bending with attention to springback." }
+  - { step: "Aluminium welding", desc: "TIG/MIG welding, low distortion." }
+  - { step: "Finishing", desc: "Shot blasting, anodising or powder coating." }
+applications: ["Machine building", "Enclosures", "Transport & lightweight structures"]
+related:
+  - { slug: "aluminium-lassen", label: "Aluminium welding", desc: "Specialist TIG/MIG welding." }
+  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Precise bend angles." }
+  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Aluminium enclosures." }
+seo:
+  title: "Aluminium sheet metal — lightweight and strong"
+  description: "Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight, strong and corrosion-resistant."

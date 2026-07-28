@@ -90,16 +90,33 @@ export async function readPage<K extends keyof Singletons & string>(
    ───────────────────────────────────────────────────────────────────────────── */
 
 /**
+ * Bepaalt onder welke naam een vertaling wordt opgezocht: de bestandsnaam
+ * zonder extensie.
+ *
+ * Let op: `entry.id` is hiervoor niet bruikbaar. Astro leidt het id af van een
+ * `slug`-veld in de data wanneer dat aanwezig is, waardoor een dienst met
+ * bestandsnaam `plaatwerk-rvs.yaml` het id `plaatwerk/rvs` krijgt. De
+ * vertaalbestanden volgen juist de bestandsnaam, zodat NL en vertaling
+ * één-op-één te koppelen zijn.
+ */
+export function entryFileSlug(entry: { id: string; filePath?: string }): string {
+  const fp = entry.filePath;
+  if (!fp) return entry.id;
+  const base = fp.split(/[\\/]/).pop() ?? entry.id;
+  return base.replace(/\.[^.]+$/, "");
+}
+
+/**
  * Vertaalt één collectie-item. De Nederlandse entry is de basis; de vertaling
- * in src/content/<collectie>/{en,de}/<slug>.yaml gaat er per veld over heen.
- * Ontbreekt de vertaling, dan blijft het Nederlands staan.
+ * in src/content/<collectie>/{en,de}/<bestandsnaam>.yaml gaat er per veld over
+ * heen. Ontbreekt de vertaling, dan blijft het Nederlands staan.
  *
  * Slugs, links en `order` blijven bewust uit de Nederlandse bron komen: die
  * bepalen de URL en de sortering en moeten in alle talen gelijk zijn.
  */
 export async function localizeEntry<T extends Record<string, unknown>>(
   collection: string,
-  slug: string,
+  fileSlug: string,
   data: T,
   locale: Locale,
 ): Promise<T> {
@@ -110,13 +127,15 @@ export async function localizeEntry<T extends Record<string, unknown>>(
     { read: (slug: string) => Promise<unknown> } | undefined
   >;
   const c = collections[key];
-  if (!c) return data;
+  if (!c) { console.warn(`[i18n] collectie ontbreekt: ${key}`); return data; }
   let translated: unknown = null;
   try {
-    translated = await c.read(slug);
-  } catch {
+    translated = await c.read(fileSlug);
+  } catch (err) {
+    console.warn(`[i18n] leesfout ${key}/${fileSlug}:`, (err as Error).message);
     translated = null;
   }
+  // Geen vertaling is een geldige toestand (nog niet vertaald) → stil terugvallen.
   if (!translated) return data;
   const merged = merge(data, translated) as T;
   // Route-bepalende velden nooit uit de vertaling overnemen.
@@ -127,16 +146,15 @@ export async function localizeEntry<T extends Record<string, unknown>>(
 }
 
 /** Vertaalt een lijst entries (uit `getCollection`) in één keer. */
-export async function localizeEntries<T extends Record<string, unknown>>(
-  collection: string,
-  entries: { id: string; data: T }[],
-  locale: Locale,
-): Promise<{ id: string; data: T }[]> {
+export async function localizeEntries<
+  T extends Record<string, unknown>,
+  E extends { id: string; filePath?: string; data: T },
+>(collection: string, entries: E[], locale: Locale): Promise<E[]> {
   if (locale === "nl") return entries;
   return Promise.all(
     entries.map(async (e) => ({
       ...e,
-      data: await localizeEntry(collection, e.id, e.data, locale),
+      data: await localizeEntry(collection, entryFileSlug(e), e.data, locale),
     })),
   );
 }

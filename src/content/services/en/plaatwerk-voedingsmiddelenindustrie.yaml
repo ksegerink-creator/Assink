@@ -1,0 +1,21 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Food industry"
+kicker: "Sector"
+h1: "Food industry"
+intro: "Hygienic, corrosion-resistant and cleanable stainless steel sheet metal work for the food industry — where accuracy and finishing are essential."
+body:
+  - "For the food industry we supply stainless steel sheet metal parts and welded constructions with smooth, cleanable surfaces and carefully finished weld seams. Laser welding and passivation contribute to hygiene and service life."
+materials: ["Stainless steel 304", "Stainless steel 316"]
+process:
+  - { step: "Design", desc: "Hygienic, cleanable detailing." }
+  - { step: "Laser cutting & bending", desc: "Dimensionally stable parts." }
+  - { step: "Laser welding", desc: "Tight, smooth seams." }
+  - { step: "Passivation", desc: "Corrosion protection." }
+applications: ["Food processing machinery", "Process equipment", "Enclosures"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Stainless steel sheet metal work." }
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Hygienic seams." }
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Welded stainless steel assemblies." }
+seo:
+  title: "Food industry — hygienic stainless steel sheet metal work"
+  description: "Hygienic, cleanable stainless steel sheet metal work and welded constructions for the food industry: corrosion-resistant and with a presentable finish."

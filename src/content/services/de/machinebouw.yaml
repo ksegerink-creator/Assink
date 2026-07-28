@@ -1,0 +1,24 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Maschinenbau"
+kicker: "Sektor 5.3"
+h1: "Maßarbeit im Maschinenbau"
+intro: "Ob Sie eine komplette Maschinenlösung suchen oder maßgeschneiderte Baugruppen benötigen — bei Assink & Schipholt können Sie auf bewährte Handwerkskunst und technisches Know-how zählen."
+bodyHeading: "Verlässlicher Partner"
+body:
+  - "Assink & Schipholt ist ein langjähriger Partner für kompletten Maschinenbau und Montage. Wir liefern Blechteile nach Maß, zerspante Bauteile und mechanische Baugruppen — mit Schwerpunkt auf Just-in-time-Lieferung."
+  - "Wir arbeiten für Unternehmen mit Auslagerungsbedarf, OEMs und technische Partner, die eine flexible Arbeitsweise und kurze Wege schätzen."
+process:
+  - { step: "Komplette Maschinen", desc: "Der gesamte Weg von der Konstruktion bis zur Übergabe — Blechbearbeitung, Konstruktion und Montage." }
+  - { step: "Einzelne Baugruppen", desc: "Funktionale Module wie Tragkonstruktionen und Rahmen." }
+  - { step: "Blechteile", desc: "Umkleidungen, Paneele und Gehäuse aus Edelstahl, Aluminium oder Messing." }
+  - { step: "Zerspante Bauteile", desc: "CNC-Bearbeitung von Wellen, Befestigungsteilen und Komponenten." }
+  - { step: "Mechanische Baugruppen", desc: "Zusammenbau von Bauteilen zu funktionierenden Systemen." }
+materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
+applications: ["OEM-Maschinenbau", "Elektronik", "Lebensmittelindustrie", "Apparatebau"]
+related:
+  - { slug: "verspaning", label: "Zerspanung", desc: "CNC-Fräsen, -Drehen und -Bohren." }
+  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Rahmen und Baugruppen." }
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Edelstahlgehäuse nach Maß." }
+seo:
+  title: "Maschinenbau — komplette Maschinen und Baugruppen"
+  description: "Kompletter Maschinenbau und Montage: Blechbearbeitung, zerspante Bauteile und mechanische Baugruppen mit Just-in-time-Lieferung für OEMs und Industrie."

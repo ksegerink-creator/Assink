@@ -1,0 +1,20 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Zerspanung"
+kicker: "Schneiden 3.3"
+h1: "Zerspanung innerhalb unserer Gruppe"
+intro: "Die Zerspanung erbringen wir innerhalb unserer Gruppe: Die Dreh- und Fräsarbeiten erfolgen bei Baas Metaal. So liefern wir neben Blechbearbeitung und Konstruktionen auch feinmechanische Bauteile — mit einem Ansprechpartner."
+body:
+  - "Die Zerspanung umfasst Fräsen, Drehen, Bohren und Ausspindeln zur Herstellung präziser Metallteile. Diese Arbeiten führen wir innerhalb unserer Gruppe bei Baas Metaal auf CNC-gesteuerten Maschinen aus — für wiederholbare Qualität und hohe Genauigkeit."
+  - "Bearbeitbar in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss — vom Prototyp bis zur Serie, kombiniert mit unserer eigenen Blechbearbeitung und Konstruktionsarbeit für komplette Produkte aus einer Hand."
+materials: ["Stahl", "Edelstahl", "Aluminium", "Messing", "Aluminiumguss"]
+process:
+  - { step: "Fräsen", desc: "Flächen, Konturen und Taschen." }
+  - { step: "Drehen", desc: "Rotationssymmetrische Teile." }
+  - { step: "Bohren & Ausspindeln", desc: "Präzise Bohrungen und Passungen." }
+applications: ["Feinmechanik", "Maschinenbau", "Wellen & Befestigungsteile"]
+related:
+  - { slug: "machinebouw", label: "Maschinenbau", desc: "Komplette Baugruppen." }
+  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Konstruktionsarbeit." }
+seo:
+  title: "Zerspanung — CNC-Fräsen, -Drehen und -Bohren"
+  description: "CNC-Zerspanung feinmechanischer Bauteile in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss: vom Prototyp bis zur Serie."

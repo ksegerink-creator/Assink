@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Laserschweißen"
+kicker: "Schweißtechnik 4.2"
+h1: "Perfektion im Laserschweißen"
+intro: "Präzisionsschweißarbeit für OEMs und Industriekunden, die höchste Genauigkeit und kurze Durchlaufzeiten benötigen. Spezialisiert auf das Laserschweißen von Edelstahl und Aluminium."
+body:
+  - "Laserschweißen mit minimaler Wärmeeinbringung führt zu sauberen, verzugsarmen Schweißverbindungen, die direkt für die Montage geeignet sind. Besonders bei Sichtflächen und dünnem Material ist das ein großer Vorteil."
+  - "Nachbearbeitung, Kantarbeit und Integration in komplette Baugruppen erfolgen im eigenen Haus. Mit eigenem Lagerbestand, Just-in-time-Lieferung, kurzen Kommunikationswegen und einem Ansprechpartner."
+materials: ["Edelstahl 304 / 316", "Aluminium", "Messing"]
+process:
+  - { step: "Vorbereitung", desc: "Anpassen und Fixieren." }
+  - { step: "Laserschweißen", desc: "Konzentrierte, verzugsarme Naht." }
+  - { step: "Nachbearbeitung", desc: "Wo erforderlich Schleifen und Passivieren." }
+  - { step: "Integration", desc: "Aufbau zur kompletten Baugruppe." }
+applications: ["Lebensmittelindustrie", "Maschinenbau", "Sichtflächen"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Korrosionsbeständige Sichtflächen." }
+  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Automatisiertes Serienschweißen." }
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse mit sauberen Sichtflächen." }
+seo:
+  title: "Laserschweißen — saubere, verzugsarme Nähte"
+  description: "Präzisionsschweißarbeit in Edelstahl und Aluminium mit minimaler Wärmeeinbringung: saubere, verzugsarme Nähte, montagefertig für OEM und Industrie."

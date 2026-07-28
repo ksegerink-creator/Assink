@@ -1,0 +1,19 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Einpress- & Blindnietmuttern"
+kicker: "Blechbearbeitung 2.7"
+h1: "Einpress- & Blindnietmuttern"
+intro: "Mit Einpress- und Blindnietmuttern machen wir Blechteile montagefertig: zuverlässige Gewinde, auch in dünnem Material."
+body:
+  - "Einpressmuttern und Blindnietmuttern geben Blechteilen eine feste Gewindeverbindung ohne loses Befestigungsmaterial. So liefern wir montagefertige Teile, die in Ihrer Linie direkt weiterverarbeitet werden können."
+materials: ["Edelstahl", "Aluminium", "Stahl"]
+process:
+  - { step: "Vorbereiten", desc: "Löcher maßgenau schneiden." }
+  - { step: "Einpressen", desc: "Einpress- oder Blindnietmutter setzen." }
+  - { step: "Kontrolle", desc: "Prüfung auf Planheit und Festigkeit." }
+applications: ["Gehäuse", "Paneele", "Montagefertige Blechteile"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Blechteile." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Kantarbeiten." }
+seo:
+  title: "Einpress- & Blindnietmuttern — montagefertige Blechteile"
+  description: "Einpress- und Blindnietmuttern für zuverlässige Gewindeverbindungen in dünnem Blech: montagefertige Blechteile."

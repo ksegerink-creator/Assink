@@ -1,0 +1,24 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Laserschneiden"
+kicker: "Schneiden 3.1"
+h1: "Laserschneiden"
+intro: "2D-Laserschneiden von Stahl, Edelstahl und Aluminium mit hoher Präzision und minimalen Toleranzen auf unserer Trumpf TruLaser 3040."
+body:
+  - "Auf der Trumpf TruLaser 3040 schneiden wir Stahl, Edelstahl und Aluminium mit hoher Präzision und gleichbleibender Maßhaltigkeit. Das Laserschneiden ist häufig der erste Schritt im Produktionsprozess, gefolgt vom Entgraten und Abkanten."
+materials: ["Stahl", "Edelstahl", "Aluminium"]
+process:
+  - { step: "Schachteln", desc: "Effiziente Blechbelegung." }
+  - { step: "Schneiden", desc: "Berührungsloses Laserschneiden." }
+  - { step: "Entgraten", desc: "Gratfreie Kanten." }
+specs:
+  - { label: "Maschine", value: "Trumpf TruLaser 3040" }
+  - { label: "Typ", value: "2D-Lasermaschine" }
+  - { label: "Materialien", value: "Stahl, Edelstahl, Aluminium" }
+applications: ["Blechbearbeitung", "Konstruktionen", "Präzisionsteile"]
+related:
+  - { slug: "buizenlaser", label: "Rohrlaserschneiden", desc: "Schneiden von Rohr und Profil." }
+  - { slug: "plaatwerk/ontbramen", label: "Entgraten", desc: "Kantenbearbeitung." }
+  - { slug: "machinepark", label: "Maschinenpark", desc: "Maschine ansehen." }
+seo:
+  title: "Laserschneiden — 2D-Schneiden auf der Trumpf TruLaser 3040"
+  description: "2D-Laserschneiden von Stahl, Edelstahl und Aluminium auf der Trumpf TruLaser 3040 mit hoher Präzision und gleichbleibender Maßhaltigkeit."

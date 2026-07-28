@@ -1,0 +1,25 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Kanten & Biegen"
+kicker: "Blechbearbeitung 2.4"
+h1: "Kanten & Biegen"
+intro: "Präzise Biegewinkel und konstante Maßhaltigkeit auf unserer servoelektrischen Abkantpresse."
+body:
+  - "Das Abkanten bestimmt die Form des Blechteils. Auf unserer Safan Darley E-Brake 150-3100 T3 kanten wir maßhaltig, mit Rücksicht auf Rückfederung und Biegeradius je Material."
+materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
+process:
+  - { step: "Abwicklung festlegen", desc: "Korrekte Abwicklung inklusive Biegekompensation." }
+  - { step: "Einrichten", desc: "Werkzeug und Anschlag einstellen." }
+  - { step: "Abkanten", desc: "Biegen mit konstanter Winkelgenauigkeit." }
+  - { step: "Kontrolle", desc: "Winkel- und Maßkontrolle." }
+specs:
+  - { label: "Maschine", value: "Safan Darley E-Brake 150-3100 T3" }
+  - { label: "Presskraft", value: "150 Tonnen" }
+  - { label: "Arbeitslänge", value: "bis 3100 mm" }
+  - { label: "Antrieb", value: "servoelektrisch" }
+applications: ["Gehäuse", "Paneele", "Verkleidungen", "Konstruktionsteile"]
+related:
+  - { slug: "machinepark", label: "Maschinenpark", desc: "Sehen Sie unsere Abkantpresse." }
+  - { slug: "plaatwerk/lasersnijden", label: "Laserschneiden", desc: "Schneiden vor dem Abkanten." }
+seo:
+  title: "Kanten & Biegen — präzise Biegewinkel auf der Abkantpresse"
+  description: "Maßhaltiges Abkanten auf der servoelektrischen Safan Darley E-Brake 150-3100 T3: 150 Tonnen Presskraft, Arbeitslänge bis 3100 mm."

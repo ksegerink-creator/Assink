@@ -16,7 +16,7 @@ body:
 materials: ["RVS 304", "RVS 316"]
 process:
   - { step: "Buislasersnijden", desc: "Passklare buis en profiel." }
-  - { step: "Lassen", desc: "TIG-, robot- of laserlassen." }
+  - { step: "Lassen", desc: "TIG- of laserlassen." }
   - { step: "Afwerking", desc: "Beitsen en passiveren." }
   - { step: "Controle", desc: "Maat- en naadcontrole." }
 applications: ["Machinebouw", "Voedingsmiddelenindustrie", "Apparatenbouw", "Offshore & maritiem"]

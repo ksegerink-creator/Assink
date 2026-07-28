@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Laser welding"
+kicker: "Welding technology 4.2"
+h1: "Perfection in laser welding"
+intro: "Precision welding for OEMs and industrial customers that need extreme accuracy and short lead times. Specialised in laser welding of stainless steel and aluminium."
+body:
+  - "Laser welding with minimal heat input results in clean, low-distortion welded joints that are immediately suitable for assembly. That is a major advantage particularly on visible surfaces and thin material."
+  - "Finishing, bending work and integration into complete assemblies take place in house. With our own stock, just-in-time delivery, short lines of communication and a single point of contact."
+materials: ["Stainless steel 304 / 316", "Aluminium", "Brass"]
+process:
+  - { step: "Preparation", desc: "Fitting up and fixing in place." }
+  - { step: "Laser welding", desc: "Concentrated, low-distortion seam." }
+  - { step: "Finishing", desc: "Grinding and passivating where required." }
+  - { step: "Integration", desc: "Build-up into a complete assembly." }
+applications: ["Food industry", "Machine building", "Visible surfaces"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Corrosion-resistant visible surfaces." }
+  - { slug: "plaatwerk/robotlassen", label: "Robot welding", desc: "Automated series welding." }
+  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Enclosures with clean visible surfaces." }
+seo:
+  title: "Laser welding — clean, low-distortion seams"
+  description: "Precision welding in stainless steel and aluminium with minimal heat input: clean, low-distortion seams, ready for assembly for OEM and industry."

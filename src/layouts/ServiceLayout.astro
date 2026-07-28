@@ -14,7 +14,7 @@ interface Props { service: CollectionEntry<"services">["data"] }
 const { service: s } = Astro.props;
 const locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
-const nav = (slug: string) => localizePath(slug, "nl");
+const nav = (slug: string) => localizePath(slug, locale);
 
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 const midImg = serviceMidImageFor(s.group);
@@ -24,7 +24,7 @@ const showMid = midImg && midImg !== heroImg && s.process.length > 0;
 const parts = s.slug.split("/");
 const trail =
   parts.length > 1 && parts[0] === "plaatwerk"
-    ? [{ label: "Plaatwerk", slug: "plaatwerk" }, { label: s.title, slug: s.slug }]
+    ? [{ label: t(locale, "plaatwerkTrail"), slug: "plaatwerk" }, { label: s.title, slug: s.slug }]
     : [{ label: s.title, slug: s.slug }];
 
 const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug: s.slug, locale })];
@@ -33,6 +33,7 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
   title={s.seo?.title || s.title}
   description={s.seo?.description || s.intro}
   canonicalSlug={s.slug}
+  altLocales={["nl", "en", "de"]}
   trail={trail}
   jsonld={jsonld}
 >
@@ -62,11 +63,11 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
   {s.body.length > 0 && (
     <section class="sec tight">
       <div class="wrap sbody">
-        <h2 class="sbody__h rv">{s.bodyHeading ?? "Over deze bewerking"}</h2>
+        <h2 class="sbody__h rv">{s.bodyHeading || t(locale, "aboutOperation")}</h2>
         <div class="prose rv">
           {s.body.map((p) => <p set:html={p} />)}
           {s.materials.length > 0 && (
-            <p class="smat mono">Materialen: <b>{s.materials.join(" · ")}</b></p>
+            <p class="smat mono">{t(locale, "materialsLabel")}: <b>{s.materials.join(" · ")}</b></p>
           )}
         </div>
       </div>
@@ -77,7 +78,7 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
     <section class="sec tight">
       <div class="wrap sproc">
         <div class="sproc__side rv">
-          <h2>Van tekening<br />tot levering</h2>
+          <h2>{t(locale, "drawingToDelivery").split("|")[0]}<br />{t(locale, "drawingToDelivery").split("|")[1]}</h2>
           {showMid && (
             <figure class="sproc__img">
               <IndustrialImage src={midImg} alt={`${s.title} — productie in de werkplaats`} ratio="4/5" />
@@ -102,10 +103,10 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
   {s.specs.length > 0 && (
     <section class="sec tight">
       <div class="wrap sspec">
-        <h2 class="rv">Specificaties</h2>
+        <h2 class="rv">{t(locale, "specsHead")}</h2>
         <div class="tbl-wrap rv">
           <table class="tbl">
-            <caption>Richtwaarden — te bevestigen per project</caption>
+            <caption>{t(locale, "specsCaption")}</caption>
             <tbody>
               {s.specs.map((r) => (
                 <tr><th scope="row">{r.label}</th><td class="spec">{r.value}</td></tr>
@@ -120,7 +121,7 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
   {s.applications.length > 0 && (
     <section class="sec tight">
       <div class="wrap sapp rv">
-        <h2>Toepassingen</h2>
+        <h2>{t(locale, "applicationsHead")}</h2>
         <p>{s.applications.join(" · ")}</p>
       </div>
     </section>

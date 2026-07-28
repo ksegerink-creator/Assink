@@ -1,0 +1,20 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Edelstahl-Blechbearbeitung für den Maschinenbau"
+kicker: "Branche"
+h1: "Edelstahl-Blechbearbeitung für den Maschinenbau"
+intro: "Maßhaltige Edelstahl-Blechteile für den Maschinenbau: Paneele, Einhausungen und Bauteile, abgestimmt auf Ihre Serie und Ihre Planung."
+body:
+  - "Für Maschinenbauer liefern wir Edelstahl-Blechteile, die maßhaltig und reproduzierbar sind, integriert mit Schweißarbeiten und Montage. So behalten Sie einen Ansprechpartner von der Zeichnung bis zur Baugruppe."
+materials: ["Edelstahl 304 / 316"]
+process:
+  - { step: "Arbeitsvorbereitung", desc: "Abwicklung und Toleranzen." }
+  - { step: "Produktion", desc: "Schneiden, Abkanten, Schweißen." }
+  - { step: "Lieferung", desc: "Just-in-time." }
+applications: ["OEM-Maschinenbau", "Elektronik", "Lebensmittel"]
+related:
+  - { slug: "machinebouw", label: "Maschinenbau", desc: "Kompletter Maschinenbau." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Blechbearbeitung in Edelstahl." }
+  - { slug: "plaatwerk/rvs-constructies-voor-machinebouw", label: "Edelstahlkonstruktionen für den Maschinenbau", desc: "Geschweißte Edelstahl-Baugruppen." }
+seo:
+  title: "Edelstahl-Blechbearbeitung für den Maschinenbau"
+  description: "Maßhaltige Edelstahl-Blechteile für den Maschinenbau: Paneele, Einhausungen und Bauteile, just-in-time geliefert."

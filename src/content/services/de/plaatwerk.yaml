@@ -1,0 +1,23 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Blechbearbeitung"
+kicker: "Möglichkeit 2.0"
+h1: "Perfektion in der Blechbearbeitung"
+intro: "Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim Schneiden, Abkanten und Veredeln von Feinblech — Einzelstücke und Serien."
+body:
+  - "Wir bearbeiten Feinblech mit CO₂-Laser, Abkantpresse und Veredelung im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar."
+cards:
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen." }
+  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Leicht und stabil, inkl. WIG- und MIG-Schweißen." }
+  - { slug: "plaatwerk/messing", label: "Messing", desc: "Warme Kupfer-Zink-Legierung für Technik und Interieur." }
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Einzelstücke und Serienteile." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Präzise Biegewinkel auf der servoelektrischen Abkantpresse." }
+  - { slug: "plaatwerk/lasersnijden", label: "Laserschneiden", desc: "2D-Laserschneiden von Stahl, Edelstahl und Aluminium." }
+  - { slug: "plaatwerk/lassen", label: "Schweißen", desc: "WIG-, MIG- und Roboterschweißen." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Saubere, verzugsarme Schweißverbindungen." }
+  - { slug: "plaatwerk/ontbramen", label: "Entgraten", desc: "Gratfreie Kanten nach dem Schneiden." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Einpress- & Blindnietmuttern", desc: "Einpressmuttern für montagefertige Produkte." }
+  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Lebensmittelindustrie", desc: "Hygienische Edelstahl-Blechbearbeitung." }
+  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Edelstahlgehäuse & Verkleidung", desc: "Maschinenverkleidungen und Gehäuse." }
+seo:
+  title: "Blechbearbeitung nach Maß — Edelstahl, Aluminium und Messing"
+  description: "Präzisionsblech in Edelstahl, Aluminium und Messing: Laserschneiden, Abkanten, Schweißen und Veredeln bis auf den Millimeter. Einzelstücke und Serien aus Hengelo."

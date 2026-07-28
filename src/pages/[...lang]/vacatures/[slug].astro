@@ -2,14 +2,15 @@
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import { imageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { CONTACT, SITE } from "@data/site";
 import { jobPostingJsonLd } from "@utils/seo";
-import { toLocale } from "@utils/paths";
-import { localizeEntry } from "@utils/content";
+import { toLocale, localizePath } from "@utils/paths";
+import { localizeEntry, entryFileSlug } from "@utils/content";
 import { LOCALES } from "@utils/locales";
 
 export async function getStaticPaths() {
@@ -26,7 +27,8 @@ export async function getStaticPaths() {
 interface Props { entry: CollectionEntry<"vacancies"> }
 const { entry } = Astro.props;
 const locale = toLocale(Astro.params.lang);
-const v = await localizeEntry("vacatures", entry.id, entry.data, locale);
+const v = await localizeEntry("vacatures", entryFileSlug(entry), entry.data, locale);
+const nav = (slug: string) => localizePath(slug, locale);
 const site = Astro.site ?? new URL(SITE.url);
 const jsonld = [
   jobPostingJsonLd(site, { title: v.title, description: v.intro, employmentType: v.employmentType }),
@@ -46,24 +48,24 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   title={v.title}
   description={v.intro}
   canonicalSlug={`vacatures/${v.slug}`}
-  trail={[{ label: "Werken bij", slug: "vacatures" }, { label: v.title, slug: `vacatures/${v.slug}` }]}
+  trail={[{ label: t(locale, "careers"), slug: "vacatures" }, { label: v.title, slug: `vacatures/${v.slug}` }]}
   jsonld={jsonld}
 >
   <section class="sec vd-hero">
     <div class="wrap grid2">
       <div class="rv">
-        <span class="eyebrow mono"><b>Vacature</b></span>
+        <span class="eyebrow mono"><b>{t(locale, "vacancyEyebrow")}</b></span>
         <h1>{v.title}</h1>
         <div class="badges" style="margin:18px 0">
           <span class="badge"><b>◆</b> {v.employmentType}</span>
           {v.hours && <span class="badge">{v.hours}</span>}
           {v.education && <span class="badge">{v.education}</span>}
-          {!v.open && <span class="badge">Gesloten</span>}
+          {!v.open && <span class="badge">{t(locale, "vacancyClosed")}</span>}
         </div>
         <p class="lead">{v.intro}</p>
         <div class="acts">
-          <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Solliciteer via e-mail</a>
-          <a class="btn ghost" href={CONTACT.telHref}>Bel {CONTACT.tel}</a>
+          <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyApplyMail")}</a>
+          <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "callVerb")} {CONTACT.tel}</a>
         </div>
       </div>
       <div class="rv">
@@ -75,7 +77,7 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   {v.responsibilities.length > 0 && (
     <section class="sec tight">
       <div class="wrap">
-        <SectionHead title="Wat je doet" index="01 / Taken" />
+        <SectionHead title={t(locale, "vacancyTasks")} index={t(locale, "vacancyTasksIdx")} />
         <ul class="ticklist prose rv">
           {v.responsibilities.map((r) => <li>{r}</li>)}
         </ul>
@@ -86,7 +88,7 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   {v.requirements.length > 0 && (
     <section class="sec tight">
       <div class="wrap">
-        <SectionHead title="Wat je meebrengt" index="02 / Profiel" />
+        <SectionHead title={t(locale, "vacancyProfile")} index={t(locale, "vacancyProfileIdx")} />
         <ul class="ticklist prose rv">
           {v.requirements.map((r) => <li>{r}</li>)}
         </ul>
@@ -97,12 +99,12 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   <section class="sec band">
     <div class="wrap cta-band rv">
       <div>
-        <span class="eyebrow mono">Interesse?</span>
-        <h2>Solliciteer<br /><span class="alt">bij Assink &amp; Schipholt</span></h2>
+        <span class="eyebrow mono">{t(locale, "vacancyInterest")}</span>
+        <h2>{t(locale, "vacancyApplyHead")}<br /><span class="alt">{t(locale, "vacancyApplyAt")}</span></h2>
       </div>
       <div class="acts">
-        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=Sollicitatie ${encodeURIComponent(v.title)}`}>Mail ons</a>
-        <a class="btn ghost" href="/contact/">Contact</a>
+        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyMailUs")}</a>
+        <a class="btn ghost" href={nav("contact")}>{t(locale, "contact")}</a>
       </div>
     </div>
   </section>

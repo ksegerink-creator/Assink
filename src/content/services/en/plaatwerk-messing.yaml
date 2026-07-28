@@ -1,0 +1,19 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Brass sheet metal"
+kicker: "Sheet metal work 2.3"
+h1: "Brass sheet metal"
+intro: "Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre, for technical and visible applications alike."
+body:
+  - "Brass is valued for its warm colour and its workability. We process brass for interior fit-out, art objects and decorative technical components, with care for preserving its natural lustre."
+materials: ["Brass (copper-zinc alloy)"]
+process:
+  - { step: "Cutting", desc: "Precise cutting of brass sheet." }
+  - { step: "Press braking", desc: "Bending without damaging the surface." }
+  - { step: "Finishing", desc: "Deburring and protecting the lustre." }
+applications: ["Interior fit-out", "Art objects", "Decorative technical components"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Corrosion-resistant visible surfaces." }
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Dimensionally stable one-offs and series." }
+seo:
+  title: "Brass sheet metal — preserving the warm lustre"
+  description: "Brass sheet metal with its natural lustre preserved, for interior fit-out, art objects and decorative technical components."

@@ -1,0 +1,25 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Rohrlaserschneiden"
+kicker: "Schneiden 3.2"
+h1: "Rohrlaserschneiden"
+intro: "Präzises Rohrlaserschneiden für maßhaltige Rohre und Profile, mit moderner CNC-Steuerung und hoher Genauigkeit."
+body:
+  - "Wir arbeiten mit einem Trumpf-Rohrlaser für Stahl, Edelstahl, Aluminium, Messing und Kupfer — geeignet für komplexe Konturen, Bohrungen und Verbindungen in einem Arbeitsgang."
+  - "Durch das berührungslose Laserschneiden entstehen eine sehr hohe Maßhaltigkeit und Reproduzierbarkeit, weniger Nacharbeit und kürzere Durchlaufzeiten. Ideal für Einzelstücke wie auch für Serienteile. Komplexe Verbindungen entstehen in einem Arbeitsgang — weniger Anpassen, schnelleres Schweißen."
+materials: ["Stahl", "Edelstahl", "Aluminium", "Messing", "Kupfer"]
+process:
+  - { step: "Programmieren", desc: "Konturen und Verbindungen aus der Zeichnung." }
+  - { step: "Rohrlaserschneiden", desc: "Schneiden von Rohr und Profil." }
+  - { step: "Zusammenbau", desc: "Passgenaue Teile zum Schweißen." }
+specs:
+  - { label: "Maschine", value: "Trumpf TruLaser Tube 3000" }
+  - { label: "Typ", value: "Rohrlaserschneidsystem" }
+  - { label: "Materialien", value: "Stahl, Edelstahl, Aluminium, Messing, Kupfer" }
+applications: ["Maschinenbau", "Konstruktionen", "Innenausbau", "Industrielle Anwendungen"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Laserschneiden", desc: "2D-Blechschneiden." }
+  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißter Rahmenbau." }
+  - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Geschweißte Edelstahl-Baugruppen." }
+seo:
+  title: "Rohrlaserschneiden — Trumpf-Rohrlaser"
+  description: "Präzises Rohrlaserschneiden: komplexe Konturen, Bohrungen und Verbindungen in Rohr und Profil in einem Arbeitsgang, in Stahl, Edelstahl, Aluminium, Messing und Kupfer."

@@ -1,0 +1,23 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Industriegehäuse"
+kicker: "Sektor 5.4"
+h1: "Innovativ bei Industriegehäusen aus Edelstahl"
+intro: "Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus Edelstahl oder Aluminium? Dann nimmt Ihnen Assink & Schipholt von Entwurf und Engineering bis zum Endprodukt die Arbeit ab."
+bodyHeading: "Über Edelstahlgehäuse"
+body:
+  - "Wir sind auf hochwertige Gehäuse aus Edelstahl für Steuerungssysteme, Maschinen und anspruchsvolle Umgebungen spezialisiert — sowohl Einzelstücke als auch Serienproduktion, mit Begleitung von Entwurf und Engineering bis zu Montage und Endbearbeitung."
+  - "Außerdem beraten wir Sie zu Materialwahl, Befestigungstechniken und Komponentenintegration."
+process:
+  - { step: "Edelstahl-Schaltschränke nach Maß", desc: "Widerstandsfähig gegen Feuchtigkeit, Staub und Chemikalien." }
+  - { step: "ATEX-zertifizierte Gehäuse", desc: "Für die Prozessindustrie und Chemie." }
+  - { step: "Maßarbeit & Integration", desc: "Für Steuerungssysteme, Maschinenbau, Offshore und Maritim." }
+  - { step: "Beratung", desc: "Materialwahl, Befestigung und Komponentenintegration." }
+materials: ["Edelstahl 304 / 316", "Aluminium"]
+applications: ["Industrielle Steuerungssysteme", "Maschinenbau", "Lebensmittelindustrie", "Offshore & Maritim", "Prozessindustrie & Chemie (ATEX)"]
+related:
+  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Edelstahlgehäuse & Maschinenverkleidung", desc: "Gehäuse und Verkleidungen." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Edelstahlblech und Sichtflächen." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Saubere Nähte für Sichtflächen." }
+seo:
+  title: "Industriegehäuse — Edelstahlgehäuse nach Maß"
+  description: "Hochwertige Gehäuse aus Edelstahl und Aluminium für Steuerungssysteme, Maschinen und anspruchsvolle Umgebungen. Maßarbeit und Serie, inklusive ATEX."

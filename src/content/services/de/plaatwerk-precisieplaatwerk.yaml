@@ -1,0 +1,21 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Präzisionsblech"
+kicker: "Blechbearbeitung 2.4"
+h1: "Präzisionsblech"
+intro: "Genauigkeit bis auf den Millimeter. Von Einzelstücken bis zu Serien und Wiederholaufträgen — maßhaltig und reproduzierbar."
+body:
+  - "Präzisionsblech verlangt beherrschte Prozesse: vom Laserschneiden und Abkanten bis zur Nachbearbeitung. Durch feste Arbeitsanweisungen und Maßkontrolle ist Teil eintausend genauso gut wie Teil eins."
+materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
+process:
+  - { step: "Arbeitsvorbereitung", desc: "Abwicklung, Biegelinien und Toleranzen festlegen." }
+  - { step: "Laserschneiden", desc: "Maßhaltiges Schneiden." }
+  - { step: "Abkanten", desc: "Wiederholbare Biegewinkel." }
+  - { step: "Maßkontrolle", desc: "Kontrolle während und nach der Produktion." }
+applications: ["Maschinenbau", "Elektronik", "Apparatebau"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Laserschneiden", desc: "2D-Laserschneiden." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Kantarbeiten." }
+  - { slug: "kwaliteit", label: "Qualität", desc: "Unsere Qualitätssicherung." }
+seo:
+  title: "Präzisionsblech — maßhaltig bis auf den Millimeter"
+  description: "Maßhaltiges Präzisionsblech: Einzelstücke, Serien und Wiederholaufträge, reproduzierbar geliefert durch feste Arbeitsanweisungen und Maßkontrolle."

@@ -1,0 +1,24 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Laser cutting"
+kicker: "Cutting 3.1"
+h1: "Laser cutting"
+intro: "2D laser cutting of steel, stainless steel and aluminium with high precision and minimal tolerances on our Trumpf TruLaser 3040."
+body:
+  - "On the Trumpf TruLaser 3040 we cut steel, stainless steel and aluminium with high precision and consistent dimensioning. Laser cutting is often the first step in the production process, followed by deburring and press braking."
+materials: ["Steel", "Stainless steel", "Aluminium"]
+process:
+  - { step: "Nesting", desc: "Efficient sheet layout." }
+  - { step: "Cutting", desc: "Non-contact laser cutting." }
+  - { step: "Deburring", desc: "Burr-free edges." }
+specs:
+  - { label: "Machine", value: "Trumpf TruLaser 3040" }
+  - { label: "Type", value: "2D laser machine" }
+  - { label: "Materials", value: "steel, stainless steel, aluminium" }
+applications: ["Sheet metal work", "Welded constructions", "Precision parts"]
+related:
+  - { slug: "buizenlaser", label: "Tube laser cutting", desc: "Cutting tube and profile." }
+  - { slug: "plaatwerk/ontbramen", label: "Deburring", desc: "Edge finishing." }
+  - { slug: "machinepark", label: "Machine park", desc: "View the machine." }
+seo:
+  title: "Laser cutting — 2D cutting on the Trumpf TruLaser 3040"
+  description: "2D laser cutting of steel, stainless steel and aluminium on the Trumpf TruLaser 3040 with high precision and consistent dimensioning."

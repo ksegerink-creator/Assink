@@ -1,0 +1,19 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Edelstahlgehäuse & Maschinenverkleidung"
+kicker: "Branche"
+h1: "Edelstahlgehäuse & Maschinenverkleidung"
+intro: "Einhausungen, Paneele und Verkleidungen aus Edelstahl: saubere Sichtflächen, korrosionsbeständig und montagefertig geliefert."
+body:
+  - "Maschinenverkleidung und Gehäuse bestimmen sowohl das Erscheinungsbild als auch den Schutz einer Maschine. Wir liefern Verkleidungen und Gehäuse aus Edelstahl nach Maß, mit sauberen Sichtflächen und montagefertiger Befestigung."
+materials: ["Edelstahl 304 / 316"]
+process:
+  - { step: "Engineering", desc: "Detaillierung und Befestigung." }
+  - { step: "Blechbearbeitung", desc: "Schneiden, Abkanten, Entgraten." }
+  - { step: "Schweißarbeiten & Nachbearbeitung", desc: "Laserschweißen und Passivieren." }
+applications: ["Maschinenbau", "Maschinenverkleidung", "Gehäuse"]
+related:
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse nach Maß." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Blechbearbeitung in Edelstahl." }
+seo:
+  title: "Edelstahlgehäuse & Maschinenverkleidung nach Maß"
+  description: "Edelstahlgehäuse, Einhausungen und Maschinenverkleidung nach Maß: saubere Sichtflächen, korrosionsbeständig und montagefertig."

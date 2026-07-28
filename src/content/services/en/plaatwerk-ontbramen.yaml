@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Deburring"
+kicker: "Sheet metal work 2.6"
+h1: "Deburring"
+intro: "After laser cutting, edges are deburred: safe to handle, ready for the next operation and neatly finished."
+body:
+  - "Burrs arise during cutting and can be sharp or a nuisance during assembly and finishing. On our Timesavers 42 Series RB we deburr and brush flat workpieces after laser cutting."
+materials: ["Steel", "Stainless steel", "Aluminium"]
+process:
+  - { step: "Cutting", desc: "Laser cutting of the part." }
+  - { step: "Deburring", desc: "Burr removal and edge rounding." }
+  - { step: "Brushing", desc: "Levelling out the surface." }
+specs:
+  - { label: "Machine", value: "Timesavers 42 Series RB" }
+  - { label: "Type", value: "brushing and deburring machine" }
+applications: ["Sheet metal work", "Visible surfaces", "Assembly-ready parts"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "The operation before deburring." }
+  - { slug: "machinepark", label: "Machine park", desc: "View the machine." }
+seo:
+  title: "Deburring — burr-free, safe edges"
+  description: "Deburring and brushing after laser cutting on the Timesavers 42 Series RB: safe, assembly-ready edges."

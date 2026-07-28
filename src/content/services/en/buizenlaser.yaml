@@ -1,0 +1,25 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Tube laser cutting"
+kicker: "Cutting 3.2"
+h1: "Tube laser cutting"
+intro: "Precision tube laser cutting for dimensionally stable tubes and profiles, with advanced CNC control and high accuracy."
+body:
+  - "We work with a Trumpf tube laser for steel, stainless steel, aluminium, brass and copper — suitable for complex contours, holes and joints in a single operation."
+  - "Contactless laser cutting delivers very high dimensional stability and reproducibility, less post-processing and shorter lead times. Ideal for one-offs as well as series work. Complex joints come out of a single operation — less fitting, faster welding."
+materials: ["Steel", "Stainless steel", "Aluminium", "Brass", "Copper"]
+process:
+  - { step: "Programming", desc: "Contours and joints taken from the drawing." }
+  - { step: "Tube laser cutting", desc: "Cutting tube and profile." }
+  - { step: "Assembly", desc: "Ready-to-fit parts for welding." }
+specs:
+  - { label: "Machine", value: "Trumpf TruLaser Tube 3000" }
+  - { label: "Type", value: "tube laser cutting system" }
+  - { label: "Materials", value: "steel, stainless steel, aluminium, brass, copper" }
+applications: ["Machine building", "Welded constructions", "Interior construction", "Industrial applications"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "2D sheet cutting." }
+  - { slug: "constructies", label: "Welded constructions", desc: "Welded frame construction." }
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Welded stainless steel assemblies." }
+seo:
+  title: "Tube laser cutting — Trumpf tube laser"
+  description: "Precision tube laser cutting: complex contours, holes and joints in tube and profile in a single operation, in steel, stainless steel, aluminium, brass and copper."

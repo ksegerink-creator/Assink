@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Stainless steel sheet metal"
+kicker: "Sheet metal work 2.1"
+h1: "Stainless steel sheet metal"
+intro: "Ground stainless steel for visible surfaces: corrosion-resistant, presentable and dimensionally stable. Processed by CO₂ laser, deburring and bending."
+body:
+  - "Stainless steel is ideally suited to applications that must be corrosion-resistant as well as presentable. We mainly work with stainless steel 304 and 316."
+  - "For visible surfaces we supply ground finishes with a consistent grain. Cutting is done with the laser; edges are deburred and, where required, passivated."
+materials: ["Stainless steel 304", "Stainless steel 316", "Ground / brushed"]
+process:
+  - { step: "Laser cutting", desc: "2D laser cutting with minimal tolerances." }
+  - { step: "Press braking", desc: "Precise bend angles on the press brake." }
+  - { step: "Deburring", desc: "Burr-free, safe edges." }
+  - { step: "Welding & finishing", desc: "Laser/TIG welding and passivation for visible surfaces." }
+applications: ["Food industry", "Machine building", "Enclosures", "Visible surfaces"]
+related:
+  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Food industry", desc: "Hygienic stainless steel sheet metal." }
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Low-distortion seams." }
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Welded stainless steel assemblies." }
+seo:
+  title: "Stainless steel sheet metal — ground stainless steel 304 and 316"
+  description: "Corrosion-resistant, presentable stainless steel sheet metal in 304 and 316: laser cutting, press braking, deburring and passivation for visible surfaces and machine building."

@@ -1,0 +1,20 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Edelstahlkonstruktionen für den Maschinenbau"
+kicker: "Branche"
+h1: "Edelstahlkonstruktionen für den Maschinenbau"
+intro: "Geschweißte Edelstahlrahmen und Baugruppen für den Maschinenbau — stabil, korrosionsbeständig und maßhaltig."
+body:
+  - "Wir fertigen Edelstahlkonstruktionen und Rahmen für den Maschinenbau: maßhaltig, sauber geschweißt und ausgeführt. Rohrlaserschneiden sorgt für passgenaue Verbindungen und effizientes Schweißen."
+materials: ["Edelstahl 304 / 316"]
+process:
+  - { step: "Rohrlaserschneiden", desc: "Passgenaue Profile." }
+  - { step: "Schweißen", desc: "Laserschweißen." }
+  - { step: "Nachbearbeitung", desc: "Beizen und Passivieren." }
+applications: ["OEM-Maschinenbau", "Apparatebau"]
+related:
+  - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Alle Edelstahl-Konstruktionsarbeiten." }
+  - { slug: "constructies", label: "Konstruktionen", desc: "Konstruktionsarbeiten." }
+  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Automatisiertes Schweißen." }
+seo:
+  title: "Edelstahlkonstruktionen für den Maschinenbau"
+  description: "Geschweißte Edelstahlkonstruktionen und Rahmen für den Maschinenbau: korrosionsbeständig, maßhaltig und montagefertig."

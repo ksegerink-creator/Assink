@@ -1,0 +1,21 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Welding"
+kicker: "Welding technology 4.1"
+h1: "Welding"
+intro: "From manual TIG and MIG welding to automated and laser welding. We choose the welding method that suits the material, the batch size and the quality requirement."
+body:
+  - "Welding is core craftsmanship at Assink & Schipholt. Depending on the application we use manual or laser welding — always with attention to penetration, distortion and seam quality. Automated cobot welding is carried out within our group."
+materials: ["Stainless steel", "Aluminium", "Steel"]
+process:
+  - { step: "Preparation", desc: "Fitting up and fixturing." }
+  - { step: "Welding", desc: "TIG / MIG or laser." }
+  - { step: "Finishing", desc: "Grinding, pickling and passivating where required." }
+  - { step: "Inspection", desc: "Visual inspection of the weld seams." }
+applications: ["Welded constructions", "Enclosures", "Machine parts"]
+related:
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Low-distortion seams." }
+  - { slug: "plaatwerk/robotlassen", label: "Robot welding", desc: "Consistent quality in series." }
+  - { slug: "aluminium-lassen", label: "Aluminium welding", desc: "TIG/MIG in aluminium." }
+seo:
+  title: "Welding — manual and laser welding"
+  description: "Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series, with consistent weld seam quality."

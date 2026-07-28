@@ -1,0 +1,20 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Stainless steel constructions for machine building"
+kicker: "Sector"
+h1: "Stainless steel constructions for machine building"
+intro: "Welded stainless steel frames and assemblies for machine building — strong, corrosion-resistant and dimensionally stable."
+body:
+  - "We build stainless steel constructions and frames that fit machine building: dimensionally stable, neatly welded and finished. Tube laser cutting provides ready-to-fit joints and efficient welding."
+materials: ["Stainless steel 304 / 316"]
+process:
+  - { step: "Tube laser cutting", desc: "Ready-to-fit profiles." }
+  - { step: "Welding", desc: "Laser welding." }
+  - { step: "Finishing", desc: "Pickling and passivation." }
+applications: ["OEM machine building", "Equipment manufacturing"]
+related:
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "All stainless steel construction work." }
+  - { slug: "constructies", label: "Welded constructions", desc: "Construction work." }
+  - { slug: "plaatwerk/robotlassen", label: "Robot welding", desc: "Automated welding." }
+seo:
+  title: "Stainless steel constructions for machine building"
+  description: "Welded stainless steel constructions and frames for machine building: corrosion-resistant, dimensionally stable and ready for assembly."

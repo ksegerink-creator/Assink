@@ -1,0 +1,24 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Machine building"
+kicker: "Sector 5.3"
+h1: "Custom work in machine building"
+intro: "Whether you are looking for a complete machine solution or need custom assemblies — at Assink & Schipholt you are assured of proven craftsmanship and technical expertise."
+bodyHeading: "A dependable partner"
+body:
+  - "Assink & Schipholt is a long-term partner for complete machine building and assembly. We supply custom sheet metal work, machined parts and mechanical assemblies, with an emphasis on just-in-time delivery."
+  - "We work for companies that outsource production, OEMs and technical partners who value a flexible approach and short lines of communication."
+process:
+  - { step: "Complete machines", desc: "The full route from design to handover — sheet metal work, construction and assembly." }
+  - { step: "Individual assemblies", desc: "Functional modules such as support structures and frames." }
+  - { step: "Sheet metal parts", desc: "Housings, panels and enclosures in stainless steel, aluminium or brass." }
+  - { step: "Machined parts", desc: "CNC machining of shafts, fasteners and components." }
+  - { step: "Mechanical assemblies", desc: "Assembling parts into working systems." }
+materials: ["Stainless steel", "Aluminium", "Brass", "Steel"]
+applications: ["OEM machine building", "Electronics", "Food industry", "Equipment manufacturing"]
+related:
+  - { slug: "verspaning", label: "Machining", desc: "CNC milling, turning and drilling." }
+  - { slug: "constructies", label: "Welded constructions", desc: "Welded frames and assemblies." }
+  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Custom stainless steel enclosures." }
+seo:
+  title: "Machine building — complete machines and assemblies"
+  description: "Complete machine building and assembly: sheet metal work, machined parts and mechanical assemblies with just-in-time delivery for OEMs and industry."

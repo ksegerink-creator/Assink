@@ -1,0 +1,25 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Bending & forming"
+kicker: "Sheet metal work 2.4"
+h1: "Bending & forming"
+intro: "Precise bend angles and consistent dimensioning on our servo-electric press brake."
+body:
+  - "Press braking determines the shape of the sheet metal part. On our Safan Darley E-Brake 150-3100 T3 we bend to size, with attention to springback and bend radius for each material."
+materials: ["Stainless steel", "Aluminium", "Brass", "Steel"]
+process:
+  - { step: "Determining the flat pattern", desc: "Correct flat pattern including bend compensation." }
+  - { step: "Setting up", desc: "Setting the tooling and back gauge." }
+  - { step: "Press braking", desc: "Bending with consistent angular accuracy." }
+  - { step: "Inspection", desc: "Angle and dimensional inspection." }
+specs:
+  - { label: "Machine", value: "Safan Darley E-Brake 150-3100 T3" }
+  - { label: "Press force", value: "150 tonnes" }
+  - { label: "Working length", value: "up to 3100 mm" }
+  - { label: "Drive", value: "servo-electric" }
+applications: ["Enclosures", "Panels", "Casings", "Structural parts"]
+related:
+  - { slug: "machinepark", label: "Machinery", desc: "See our press brake." }
+  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "Cutting before bending." }
+seo:
+  title: "Bending & forming — precise bend angles on the press brake"
+  description: "Dimensionally accurate press braking on the servo-electric Safan Darley E-Brake 150-3100 T3: 150 tonnes press force, working length up to 3100 mm."

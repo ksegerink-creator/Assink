@@ -1,0 +1,23 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Industrial enclosures"
+kicker: "Sector 5.4"
+h1: "Innovative in industrial stainless steel enclosures"
+intro: "Do you need custom or series-produced craftsmanship for stainless steel or aluminium enclosures? Then Assink & Schipholt takes care of everything, from design and engineering to the finished product."
+bodyHeading: "About stainless steel enclosures"
+body:
+  - "We specialise in high-quality stainless steel enclosures for control systems, machines and demanding environments — both single pieces and series production, with support from design and engineering through to assembly and finishing."
+  - "We also advise on material selection, fastening techniques and component integration."
+process:
+  - { step: "Custom stainless steel control cabinets", desc: "Resistant to moisture, dust and chemicals." }
+  - { step: "ATEX-certified enclosures", desc: "For the process and chemical industries." }
+  - { step: "Custom work & integration", desc: "For control systems, machine building, offshore and maritime." }
+  - { step: "Advice", desc: "Material selection, fastening and component integration." }
+materials: ["Stainless steel 304 / 316", "Aluminium"]
+applications: ["Industrial control systems", "Machine building", "Food industry", "Offshore & maritime", "Process industry & chemicals (ATEX)"]
+related:
+  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Stainless steel enclosures & machine cladding", desc: "Housings and cladding." }
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Stainless sheet metal work and visible work." }
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Clean seams for visible work." }
+seo:
+  title: "Industrial enclosures — custom stainless steel enclosures"
+  description: "High-quality stainless steel and aluminium enclosures for control systems, machines and demanding environments. Custom work and series, including ATEX."

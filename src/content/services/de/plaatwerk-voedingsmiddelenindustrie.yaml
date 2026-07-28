@@ -1,0 +1,21 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Lebensmittelindustrie"
+kicker: "Branche"
+h1: "Lebensmittelindustrie"
+intro: "Hygienische, korrosionsbeständige und reinigbare Blechbearbeitung in Edelstahl für die Lebensmittelindustrie — wo Genauigkeit und Verarbeitung entscheidend sind."
+body:
+  - "Für die Lebensmittelindustrie liefern wir Blechteile und Konstruktionen aus Edelstahl mit glatten, reinigbaren Oberflächen und sorgfältig ausgearbeiteten Schweißnähten. Laserschweißen und Passivieren tragen zur Hygiene und zur Lebensdauer bei."
+materials: ["Edelstahl 304", "Edelstahl 316"]
+process:
+  - { step: "Konstruktion", desc: "Hygienische, reinigbare Detaillierung." }
+  - { step: "Laserschneiden & Abkanten", desc: "Maßhaltige Teile." }
+  - { step: "Laserschweißen", desc: "Saubere, glatte Nähte." }
+  - { step: "Passivieren", desc: "Korrosionsschutz." }
+applications: ["Lebensmittelmaschinen", "Prozessanlagen", "Gehäuse"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Blechbearbeitung in Edelstahl." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Hygienische Nähte." }
+  - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Geschweißte Edelstahl-Baugruppen." }
+seo:
+  title: "Lebensmittelindustrie — hygienische Edelstahl-Blechbearbeitung"
+  description: "Hygienische, reinigbare Blechbearbeitung und Konstruktionen aus Edelstahl für die Lebensmittelindustrie: korrosionsbeständig und repräsentativ ausgeführt."

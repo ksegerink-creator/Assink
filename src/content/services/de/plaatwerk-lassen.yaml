@@ -1,0 +1,21 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Schweißen"
+kicker: "Schweißtechnik 4.1"
+h1: "Schweißen"
+intro: "Vom manuellen WIG- und MIG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt."
+body:
+  - "Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Cobot-Schweißen führen wir innerhalb unserer Gruppe aus."
+materials: ["Edelstahl", "Aluminium", "Stahl"]
+process:
+  - { step: "Vorbereitung", desc: "Anpassen und Aufspannen." }
+  - { step: "Schweißen", desc: "WIG / MIG oder Laser." }
+  - { step: "Nachbearbeitung", desc: "Schleifen, Beizen und Passivieren, wo erforderlich." }
+  - { step: "Kontrolle", desc: "Visuelle Prüfung der Schweißnähte." }
+applications: ["Konstruktionen", "Gehäuse", "Maschinenteile"]
+related:
+  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Verzugsarme Nähte." }
+  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Gleichbleibende Serienqualität." }
+  - { slug: "aluminium-lassen", label: "Aluminium schweißen", desc: "WIG/MIG in Aluminium." }
+seo:
+  title: "Schweißen — Hand- und Laserschweißen"
+  description: "Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien, mit gleichbleibender Schweißnahtqualität."

@@ -16,7 +16,7 @@ body:
 materials: ["RVS 304 / 316"]
 process:
   - { step: "Buislasersnijden", desc: "Passklare profielen." }
-  - { step: "Lassen", desc: "Robot-/laserlassen." }
+  - { step: "Lassen", desc: "Laserlassen." }
   - { step: "Afwerking", desc: "Beitsen en passiveren." }
 applications: ["OEM-machinebouw", "Apparatenbouw"]
 related:

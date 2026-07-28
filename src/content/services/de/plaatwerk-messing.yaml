@@ -1,0 +1,19 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Messing-Blechbearbeitung"
+kicker: "Blechbearbeitung 2.3"
+h1: "Messing-Blechbearbeitung"
+intro: "Messing ist eine Kupfer-Zink-Legierung mit warmer Farbe. Wir verarbeiten es unter Erhalt des natürlichen Glanzes — für technische wie auch für Sichtanwendungen."
+body:
+  - "Messing wird für seine warme Farbe und seine gute Bearbeitbarkeit geschätzt. Wir verarbeiten Messing für den Innenausbau, für Kunstobjekte und für dekorative technische Komponenten, mit Sorgfalt für den Erhalt des natürlichen Glanzes."
+materials: ["Messing (Kupfer-Zink-Legierung)"]
+process:
+  - { step: "Schneiden", desc: "Präzises Ausschneiden von Messingblech." }
+  - { step: "Abkanten", desc: "Kanten ohne Beschädigung der Oberfläche." }
+  - { step: "Nachbearbeitung", desc: "Entgraten und Schutz des Glanzes." }
+applications: ["Innenausbau", "Kunstobjekte", "Dekorative technische Komponenten"]
+related:
+  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Rostfreie Sichtflächen." }
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Einzelstücke und Serien." }
+seo:
+  title: "Messing-Blechbearbeitung — warmen Glanz erhalten"
+  description: "Messing-Blechbearbeitung unter Erhalt des natürlichen Glanzes für Innenausbau, Kunstobjekte und dekorative technische Komponenten."

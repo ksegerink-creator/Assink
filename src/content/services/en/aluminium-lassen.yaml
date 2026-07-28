@@ -1,0 +1,19 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Aluminium welding"
+kicker: "Welding technology 4.4"
+h1: "Aluminium welding"
+intro: "Aluminium calls for craftsmanship: the right heat input, preparation and technique. We weld aluminium with TIG and MIG, low-distortion and cleanly finished."
+body:
+  - "Aluminium conducts heat quickly and oxidises easily. With the right preparation and technique (TIG/MIG) we lay strong, clean seams — suitable for machine building, enclosures and lightweight constructions."
+materials: ["Aluminium (various alloys)"]
+process:
+  - { step: "Preparation", desc: "Cleaning and removing the oxide layer." }
+  - { step: "Welding", desc: "TIG/MIG with controlled heat input." }
+  - { step: "Finishing", desc: "Grinding and finishing." }
+applications: ["Machine building", "Enclosures", "Lightweight constructions"]
+related:
+  - { slug: "plaatwerk/aluminium", label: "Aluminium sheet metal work", desc: "Aluminium processing." }
+  - { slug: "plaatwerk/lassen", label: "Welding", desc: "All welding methods." }
+seo:
+  title: "Aluminium welding — TIG and MIG, low-distortion"
+  description: "Specialised TIG and MIG welding work in aluminium for machine building, enclosures and lightweight constructions."

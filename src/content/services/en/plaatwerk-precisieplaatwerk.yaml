@@ -1,0 +1,21 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Precision sheet metal"
+kicker: "Sheet metal work 2.4"
+h1: "Precision sheet metal"
+intro: "Accuracy down to the millimetre. From one-offs to series and repeat orders — dimensionally stable and reproducible."
+body:
+  - "Precision sheet metal calls for controlled processes: from laser cutting and press braking through to finishing. Thanks to fixed work instructions and dimensional inspection, part one thousand is just as good as part one."
+materials: ["Stainless steel", "Aluminium", "Brass", "Steel"]
+process:
+  - { step: "Production engineering", desc: "Determining the flat pattern, bend lines and tolerances." }
+  - { step: "Laser cutting", desc: "Dimensionally accurate cutting." }
+  - { step: "Press braking", desc: "Repeatable bend angles." }
+  - { step: "Dimensional inspection", desc: "Inspection during and after production." }
+applications: ["Machine building", "Electronics", "Equipment manufacturing"]
+related:
+  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "2D laser cutting." }
+  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Press brake work." }
+  - { slug: "kwaliteit", label: "Quality", desc: "Our quality assurance." }
+seo:
+  title: "Precision sheet metal — dimensionally accurate down to the millimetre"
+  description: "Dimensionally stable precision sheet metal: one-offs, series and repeat orders, delivered reproducibly thanks to fixed work instructions and dimensional inspection."

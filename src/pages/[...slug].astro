@@ -6,27 +6,36 @@ import ServiceLayout from "@layouts/ServiceLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { t } from "@data/i18n";
-import { toLocale, localizePath } from "@utils/paths";
+import { localizePath } from "@utils/paths";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
+import { localizeEntry, entryFileSlug } from "@utils/content";
+import { LOCALES } from "@utils/locales";
+import type { Locale } from "@data/site";
 
 /**
  * Alle servicepagina's. template = "overview" → editoriale indexpagina,
  * template = "service" → detailpagina via ServiceLayout.
+ *
+ * De dienstenslugs zijn genest (bv. plaatwerk/rvs) en gebruiken daarom de
+ * rest-parameter. Astro staat maar één rest-parameter per route toe, dus de
+ * taalprefix zit hier ín die parameter ("en/plaatwerk/rvs") in plaats van in
+ * een aparte [...lang]-map. De canonieke slug blijft Nederlands.
  */
 export async function getStaticPaths() {
   const services = await getCollection("services");
-  return services.map((entry: CollectionEntry<"services">) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  return services.flatMap((entry: CollectionEntry<"services">) =>
+    LOCALES.map((loc) => ({
+      params: { slug: loc === "nl" ? entry.data.slug : `${loc}/${entry.data.slug}` },
+      props: { entry, locale: loc },
+    })),
+  );
 }
 
-interface Props { entry: CollectionEntry<"services"> }
-const { entry } = Astro.props;
-const s = entry.data;
-const locale = toLocale(Astro.currentLocale);
-const nav = (slug: string) => localizePath(slug, "nl");
+interface Props { entry: CollectionEntry<"services">; locale: Locale }
+const { entry, locale } = Astro.props;
+const s = await localizeEntry("services", entryFileSlug(entry), entry.data, locale);
+const nav = (slug: string) => localizePath(slug, locale);
 const isOverview = s.template === "overview";
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 ---
@@ -37,6 +46,7 @@ const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
       title={s.seo?.title || s.title}
       description={s.seo?.description || s.intro}
       canonicalSlug={s.slug}
+  altLocales={["nl", "en", "de"]}
       trail={[{ label: s.title, slug: s.slug }]}
     >
       <section class="ohero">
@@ -71,7 +81,7 @@ const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
         <div class="wrap">
           <div class="rule-head rv">
             <h2>{t(locale, "possibilities")}</h2>
-            <span class="mono">{s.cards.length} bewerkingen</span>
+            <span class="mono">{s.cards.length} {t(locale, "operationsCount")}</span>
           </div>
           <ul class="olist">
             {s.cards.map((c, i) => (

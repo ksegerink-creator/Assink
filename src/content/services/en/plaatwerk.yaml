@@ -1,0 +1,23 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Sheet metal work"
+kicker: "Capability 2.0"
+h1: "Perfection in sheet metal work"
+intro: "Precision sheet metal with accuracy down to the millimetre. Custom cutting, press braking and finishing of thin sheet material — one-offs as well as series."
+body:
+  - "We process thin sheet with a CO₂ laser, press brake and in-house finishing. From stainless steel visible work to aluminium enclosures — dimensionally stable and reproducible."
+cards:
+  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Ground stainless steel 304 and 316 for corrosion-resistant visible work." }
+  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lightweight and strong, including TIG and MIG welding." }
+  - { slug: "plaatwerk/messing", label: "Brass", desc: "Warm copper-zinc alloy for engineering and interiors." }
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Dimensionally stable one-offs and series work." }
+  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Accurate bending angles on the servo-electric press brake." }
+  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "2D laser cutting of steel, stainless steel and aluminium." }
+  - { slug: "plaatwerk/lassen", label: "Welding", desc: "TIG, MIG and robotic welding." }
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Clean, low-distortion welded joints." }
+  - { slug: "plaatwerk/ontbramen", label: "Deburring", desc: "Burr-free edges after cutting." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Self-clinching nuts & rivet nuts", desc: "Self-clinching nuts for assembly-ready products." }
+  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Food industry", desc: "Hygienic stainless steel sheet metal work." }
+  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Stainless steel enclosures & cladding", desc: "Machine cladding and housings." }
+seo:
+  title: "Custom sheet metal work — stainless steel, aluminium and brass"
+  description: "Precision sheet metal in stainless steel, aluminium and brass: laser cutting, press braking, welding and finishing down to the millimetre. One-offs and series from Hengelo."

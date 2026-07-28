@@ -1,0 +1,30 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Welded constructions"
+kicker: "Capability 5.1"
+h1: "Constructive in constructions"
+intro: "More than 100 years as a specialist in high-quality metal constructions. From individual parts to fully welded assemblies — traditional craftsmanship with modern technology."
+bodyHeading: "Specialist in structural work"
+body:
+  - "Assink & Schipholt carries out heavy and complex welded assemblies — from individual parts to fully welded assemblies. We work for machine building, equipment manufacturing and infrastructure engineering, and handle parts up to 5 tonnes."
+  - "With an overhead crane and a spacious hall, we produce constructions up to 4 metres high and 50 m² in area — safely and efficiently."
+  - "We take care of not only welding and structural work but also surface treatments such as shot blasting, powder coating, anodising and stainless steel passivation — much of it in house. That gives you a single point of contact from engineering to finishing."
+materials: ["Stainless steel 304 / 316", "Aluminium", "Brass", "Steel"]
+process:
+  - { step: "Engineering & production engineering", desc: "Assessment of the drawing, welding sequence and manufacturability." }
+  - { step: "Cutting & preparation", desc: "Laser cutting of sheet and tube, bending and fitting." }
+  - { step: "Welding & assembly", desc: "Manual and laser welding through to the complete assembly." }
+  - { step: "Surface treatment", desc: "Shot blasting, powder coating, anodising or passivation." }
+  - { step: "Inspection & delivery", desc: "Dimensional inspection and visual inspection, followed by just-in-time delivery." }
+specs:
+  - { label: "Max. weight per piece", value: "up to 5 tonnes" }
+  - { label: "Max. height of construction", value: "± 4 m" }
+  - { label: "Max. area", value: "± 50 m²" }
+  - { label: "Lifting equipment", value: "overhead crane" }
+applications: ["Machine building (frames, guards)", "Equipment manufacturing", "Infrastructure engineering", "Food industry", "Electrical engineering", "Mechatronics"]
+related:
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Corrosion-resistant constructions in stainless steel." }
+  - { slug: "machinebouw", label: "Machine building", desc: "Complete machines and assemblies." }
+  - { slug: "plaatwerk/robotlassen", label: "Robotic welding", desc: "Automated welding for series production." }
+seo:
+  title: "Welded constructions — welded assemblies up to 5 tonnes"
+  description: "Heavy and complex welded metal constructions up to 5 tonnes in stainless steel, aluminium and steel for machine building, equipment manufacturing and infrastructure engineering."

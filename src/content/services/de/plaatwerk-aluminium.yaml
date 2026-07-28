@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Aluminium-Blechbearbeitung"
+kicker: "Blechbearbeitung 2.2"
+h1: "Aluminium-Blechbearbeitung"
+intro: "Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und Gehäuse spezialisiert."
+body:
+  - "Aluminium verbindet ein geringes Gewicht mit guter Festigkeit und Korrosionsbeständigkeit. Damit ist es ideal für bewegte Teile, Gehäuse und Konstruktionen, bei denen das Gewicht zählt."
+  - "Unsere Schweißarbeiten in Aluminium erfolgen mit WIG und MIG, abgestimmt auf Blechdicke und Anwendung."
+materials: ["Aluminium (verschiedene Legierungen)"]
+process:
+  - { step: "Laserschneiden", desc: "Schneiden von Aluminiumblech." }
+  - { step: "Abkanten", desc: "Kanten mit Rücksicht auf die Rückfederung." }
+  - { step: "Aluminium-Schweißen", desc: "WIG-/MIG-Schweißen, verzugsarm." }
+  - { step: "Nachbearbeitung", desc: "Strahlen, Eloxieren oder Pulverbeschichten." }
+applications: ["Maschinenbau", "Gehäuse", "Transport & Leichtbaukonstruktionen"]
+related:
+  - { slug: "aluminium-lassen", label: "Aluminium-Schweißen", desc: "Spezialisierte WIG-/MIG-Schweißarbeiten." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Präzise Biegewinkel." }
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse aus Aluminium." }
+seo:
+  title: "Aluminium-Blechbearbeitung — leicht und fest"
+  description: "Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse: leicht, fest und korrosionsbeständig."
