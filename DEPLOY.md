@@ -106,6 +106,12 @@ Bijgewerkt 28 juli 2026. De punten met **[jij]** kan ik niet zelf uitvoeren.
   KvK), BreadcrumbList, JobPosting bij vacatures, FAQPage bij artikelen.
 
 ### Nog open, niet blokkerend
-- **og-afbeelding per pagina**: nu overal hetzelfde logo. Echte foto's geven
-  een betere weergave bij delen op LinkedIn.
 - **Privacyverklaring** is alleen Nederlands; EN/DE verwijzen daarnaartoe.
+
+### Let op bij het testen van deelvoorbeelden
+De `og:image`-URL's zijn absoluut en verwijzen naar `https://assinkschipholt.nl`
+(het productiedomein), niet naar de vercel.app-preview. Dat is met opzet: bij
+livegang moeten ze kloppen. Gevolg: als je nú een preview-link in LinkedIn of
+WhatsApp plakt, ziet die geen afbeelding — het domein wijst nog naar de oude
+site. Na livegang werkt het direct. Wil je het eerder controleren, gebruik dan
+de LinkedIn Post Inspector op de definitieve URL zodra het domein is omgezet.
