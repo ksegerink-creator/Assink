@@ -3,4 +3,4 @@ category: "Rohrlaserschneiden"
 description: "Fortschrittliches Rohrlasersystem für unterschiedliche Formen und Werkstoffe — komplexe Konturen in einem Arbeitsgang."
 specs:
   - { label: "Typ", value: "Rohrlaser" }
-  - { label: "Werkstoffe", value: "Stahl · Edelstahl · Aluminium · Messing · Kupfer" }
+  - { label: "Werkstoffe", value: "Stahl · Edelstahl · Aluminium" }

@@ -6,6 +6,7 @@ specs:
   - { label: "Druk", value: "3,0 bar" }
   - { label: "Glasparels", value: "100–200 μm" }
   - { label: "Cabine", value: "8 × 4 × 3 m" }
+  - { label: "Materialen", value: "aluminium · RVS" }
 photo:
   subject: "Straalcabine — operator straalt RVS-onderdeel"
   orient: "Liggend 4:3"

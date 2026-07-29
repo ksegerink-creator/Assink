@@ -1,16 +1,16 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
 title: "Robot welding"
 kicker: "Welding technology 4.3"
-h1: "Robot welding — cobot welding within our group"
-intro: "For series welding work, consistency is not a luxury but a requirement. Automated welding (cobot welding) is carried out within our group at Baas Metaal — integrated with our sheet metal work, assembly and finishing."
+h1: "Robot welding — automated welding in series"
+intro: "For series welding work, consistency is not a luxury but a requirement. Automated welding is not done in Hengelo: we outsource it to a regular partner. The sheet metal work, assembly and finishing we do ourselves, so you keep a single point of contact."
 body:
-  - "Cobot welding lays weld seams under preset parameters, with continuous monitoring of current, voltage, travel speed and heat input. This gives an even weld bead shape and consistent penetration, ideal for repetitive production in steel, stainless steel and aluminium."
-  - "Advantages: less variation, fewer rejects, less finishing work and reliable lead times. Engineering forms the basis — fixturing, welding sequence, accessibility and material behaviour determine process efficiency. This work is carried out within our group."
+  - "Automated welding lays weld seams under preset parameters, with continuous monitoring of current, voltage, travel speed and heat input. This gives an even weld bead shape and consistent penetration, ideal for repetitive production in steel, stainless steel and aluminium."
+  - "Advantages: less variation, fewer rejects, less finishing work and reliable lead times. Engineering forms the basis — fixturing, welding sequence, accessibility and material behaviour determine process efficiency. That preparation we do ourselves."
 materials: ["Steel", "Stainless steel", "Aluminium"]
 process:
   - { step: "Engineering", desc: "Determining fixturing, welding sequence and accessibility." }
   - { step: "Programming", desc: "Setting parameters and the welding path." }
-  - { step: "Cobot welding", desc: "Automated welding with monitoring." }
+  - { step: "Automated welding", desc: "Carried out by our partner, with monitoring." }
   - { step: "Inspection", desc: "Seam inspection and dimensional stability." }
 applications: ["Medium to large series", "Products with recurring weld seams", "Constructions with strict dimensional stability"]
 related:

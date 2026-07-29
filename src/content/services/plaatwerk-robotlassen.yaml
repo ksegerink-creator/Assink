@@ -4,21 +4,23 @@ template: "service"
 group: "lastechniek"
 order: 43
 kicker: "Lastechniek 4.3"
-h1: "Robotlassen — cobotlassen binnen onze groep"
-intro: "Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Geautomatiseerd lassen (cobotlassen) verzorgen we binnen onze groep bij Baas Metaal — geïntegreerd met ons plaatwerk, samenstellen en nabewerking."
+h1: "Robotlassen — geautomatiseerd lassen in serie"
+intro: "Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Geautomatiseerd lassen staat niet in Hengelo: dat besteden we uit aan een vaste partner. Het plaatwerk, het samenstellen en de nabewerking doen we zelf, zodat u één aanspreekpunt houdt."
 heroPhoto:
-  subject: "Cobot-lasopstelling in bedrijf met gefixeerde samenstelling"
+  # Let op: in Hengelo staat geen cobot of lasrobot. Vraag hier dus geen foto
+  # van een lasopstelling aan — die kan niet bij Assink gemaakt worden.
+  subject: "Gelaste samenstelling uit serieproductie, lasnaad in beeld"
   orient: "Liggend 16:10"
-  crop: "Cobot + lasnaad"
-  comp: "Cobotarm, lasboog, mal"
+  crop: "Werkstuk + lasnaad"
+  comp: "Doorlopende lasnaad op een maatvast werkstuk"
 body:
-  - "Cobotlassen legt lasnaden onder vooraf ingestelde parameters, met continu monitoren van stroom, spanning, voortloopsnelheid en warmte-inbreng. Dat geeft een gelijkmatige lasrupsvorm en constante inbranding, ideaal voor repeterende productie in staal, RVS en aluminium."
-  - "Voordelen: minder variatie, lagere uitval, minder nabewerking en betrouwbare levertijden. Engineering vormt de basis — opspanning, lasvolgorde, toegankelijkheid en materiaalgedrag bepalen de procesefficiëntie. Dit werk voeren we uit binnen onze groep."
+  - "Geautomatiseerd lassen legt lasnaden onder vooraf ingestelde parameters, met continu monitoren van stroom, spanning, voortloopsnelheid en warmte-inbreng. Dat geeft een gelijkmatige lasrupsvorm en constante inbranding, ideaal voor repeterende productie in staal, RVS en aluminium."
+  - "Voordelen: minder variatie, lagere uitval, minder nabewerking en betrouwbare levertijden. Engineering vormt de basis — opspanning, lasvolgorde, toegankelijkheid en materiaalgedrag bepalen de procesefficiëntie. Die voorbereiding doen wij."
 materials: ["Staal", "RVS", "Aluminium"]
 process:
   - { step: "Engineering", desc: "Opspanning, lasvolgorde en toegankelijkheid bepalen." }
   - { step: "Programmeren", desc: "Parameters en baan instellen." }
-  - { step: "Cobotlassen", desc: "Geautomatiseerd lassen met monitoring." }
+  - { step: "Geautomatiseerd lassen", desc: "Uitgevoerd bij onze partner, met monitoring." }
   - { step: "Controle", desc: "Naadcontrole en maatvastheid." }
 applications: ["Middelgrote tot grote series", "Producten met terugkerende lasnaden", "Constructies met strikte maatvastheid"]
 related:
@@ -27,5 +29,5 @@ related:
   - { slug: "machinepark", label: "Machinepark", desc: "Ons machinepark." }
 seo:
   title: "Robotlassen — constante kwaliteit in serie"
-  description: "Geautomatiseerd robotlassen met constante lasnaadkwaliteit voor middelgrote tot grote series: minder uitval, betrouwbare levertijden."
+  description: "Geautomatiseerd lassen voor series met constante lasnaadkwaliteit. Engineering, plaatwerk en samenstellen doen wij; het lassen zelf besteden we uit."
 translated: ["nl"]

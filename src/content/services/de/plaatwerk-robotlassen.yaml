@@ -1,16 +1,16 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
 title: "Roboterschweißen"
 kicker: "Schweißtechnik 4.3"
-h1: "Roboterschweißen — Cobot-Schweißen innerhalb unserer Gruppe"
-intro: "Bei Serienschweißarbeit ist Gleichmäßigkeit kein Luxus, sondern eine Voraussetzung. Automatisiertes Schweißen (Cobot-Schweißen) führen wir innerhalb unserer Gruppe bei Baas Metaal aus — integriert mit unserer Blechbearbeitung, dem Zusammenbau und der Nachbearbeitung."
+h1: "Roboterschweißen — automatisiertes Schweißen in Serie"
+intro: "Bei Serienschweißarbeit ist Gleichmäßigkeit kein Luxus, sondern eine Voraussetzung. Automatisiertes Schweißen erfolgt nicht in Hengelo: das geben wir an einen festen Partner. Blechbearbeitung, Zusammenbau und Nachbearbeitung übernehmen wir selbst, sodass Sie einen Ansprechpartner behalten."
 body:
-  - "Beim Cobot-Schweißen werden die Schweißnähte unter voreingestellten Parametern gelegt, mit kontinuierlicher Überwachung von Strom, Spannung, Vorschubgeschwindigkeit und Wärmeeinbringung. Das ergibt eine gleichmäßige Schweißraupenform und einen konstanten Einbrand — ideal für wiederkehrende Produktion in Stahl, Edelstahl und Aluminium."
-  - "Vorteile: weniger Streuung, geringerer Ausschuss, weniger Nachbearbeitung und verlässliche Lieferzeiten. Die Arbeitsvorbereitung bildet die Basis — Aufspannung, Schweißfolge, Zugänglichkeit und Materialverhalten bestimmen die Prozesseffizienz. Diese Arbeit führen wir innerhalb unserer Gruppe aus."
+  - "Beim automatisierten Schweißen werden die Schweißnähte unter voreingestellten Parametern gelegt, mit kontinuierlicher Überwachung von Strom, Spannung, Vorschubgeschwindigkeit und Wärmeeinbringung. Das ergibt eine gleichmäßige Schweißraupenform und einen konstanten Einbrand — ideal für wiederkehrende Produktion in Stahl, Edelstahl und Aluminium."
+  - "Vorteile: weniger Streuung, geringerer Ausschuss, weniger Nachbearbeitung und verlässliche Lieferzeiten. Die Arbeitsvorbereitung bildet die Basis — Aufspannung, Schweißfolge, Zugänglichkeit und Materialverhalten bestimmen die Prozesseffizienz. Diese Vorbereitung übernehmen wir selbst."
 materials: ["Stahl", "Edelstahl", "Aluminium"]
 process:
   - { step: "Arbeitsvorbereitung", desc: "Aufspannung, Schweißfolge und Zugänglichkeit festlegen." }
   - { step: "Programmieren", desc: "Parameter und Bahn einstellen." }
-  - { step: "Cobot-Schweißen", desc: "Automatisiertes Schweißen mit Überwachung." }
+  - { step: "Automatisiertes Schweißen", desc: "Bei unserem Partner ausgeführt, mit Überwachung." }
   - { step: "Kontrolle", desc: "Nahtprüfung und Maßhaltigkeit." }
 applications: ["Mittlere bis große Serien", "Produkte mit wiederkehrenden Schweißnähten", "Konstruktionen mit strenger Maßhaltigkeit"]
 related:

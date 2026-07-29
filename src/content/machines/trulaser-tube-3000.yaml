@@ -4,7 +4,7 @@ order: 20
 description: "Geavanceerd buislasersysteem voor diverse vormen en materialen — complexe contouren in één bewerking."
 specs:
   - { label: "Type", value: "buislaser" }
-  - { label: "Materialen", value: "staal · RVS · aluminium · messing · koper" }
+  - { label: "Materialen", value: "staal · RVS · aluminium" }
 photo:
   subject: "Trumpf TruLaser Tube 3000 met roterend profiel"
   orient: "Liggend 4:3"

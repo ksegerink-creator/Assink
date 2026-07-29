@@ -12,7 +12,7 @@ heroPhoto:
   crop: "Persoon centraal"
   comp: "Lasvlam, vonken, beschermkleding"
 body:
-  - "Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand- of laserlassen in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit. Geautomatiseerd cobotlassen verzorgen we binnen onze groep."
+  - "Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand- of laserlassen in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit. Geautomatiseerd lassen voor grotere series besteden we uit aan een vaste partner; in Hengelo lassen we met de hand en met de laser."
 materials: ["RVS", "Aluminium", "Staal"]
 process:
   - { step: "Voorbereiding", desc: "Passend maken en opspannen." }

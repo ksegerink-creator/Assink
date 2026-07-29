@@ -5,6 +5,7 @@ description: "Geschikt voor staal, RVS en aluminium. Hoge precisie, minimale tol
 specs:
   - { label: "Type", value: "2D-lasermachine" }
   - { label: "Materialen", value: "staal · RVS · aluminium" }
+  - { label: "Aandrijving", value: "lineaire aandrijvingen" }
 photo:
   subject: "Trumpf TruLaser 3040 lasersnijmachine in bedrijf"
   orient: "Liggend 4:3"

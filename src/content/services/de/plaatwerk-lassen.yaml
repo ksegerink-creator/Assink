@@ -4,7 +4,7 @@ kicker: "Schweißtechnik 4.1"
 h1: "Schweißen"
 intro: "Vom manuellen WIG- und MIG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt."
 body:
-  - "Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Cobot-Schweißen führen wir innerhalb unserer Gruppe aus."
+  - "Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Schweißen für größere Serien geben wir an einen festen Partner; in Hengelo schweißen wir von Hand und mit dem Laser."
 materials: ["Edelstahl", "Aluminium", "Stahl"]
 process:
   - { step: "Vorbereitung", desc: "Anpassen und Aufspannen." }
