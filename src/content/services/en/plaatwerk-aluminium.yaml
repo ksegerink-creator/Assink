@@ -11,7 +11,7 @@ process:
   - { step: "Laser cutting", desc: "Cutting aluminium sheet." }
   - { step: "Press braking", desc: "Bending with attention to springback." }
   - { step: "Aluminium welding", desc: "TIG/MIG welding, low distortion." }
-  - { step: "Finishing", desc: "Shot blasting, anodising or powder coating." }
+  - { step: "Finishing", desc: "Blasting in house; anodising and powder coating are outsourced." }
 applications: ["Machine building", "Enclosures", "Transport & lightweight structures"]
 related:
   - { slug: "aluminium-lassen", label: "Aluminium welding", desc: "Specialist TIG/MIG welding." }

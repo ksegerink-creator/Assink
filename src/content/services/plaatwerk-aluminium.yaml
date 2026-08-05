@@ -19,7 +19,7 @@ process:
   - { step: "Lasersnijden", desc: "Snijden van aluminium plaat." }
   - { step: "Zetten", desc: "Kanten met aandacht voor terugvering." }
   - { step: "Aluminium lassen", desc: "TIG/MIG-lassen, vervormingsarm." }
-  - { step: "Afwerking", desc: "Stralen, anodiseren of poedercoaten." }
+  - { step: "Afwerking", desc: "Stralen doen we zelf; anodiseren en poedercoaten besteden we uit." }
 applications: ["Machinebouw", "Behuizingen", "Transport & lichtgewicht constructies"]
 related:
   - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "Specialistisch TIG/MIG-laswerk." }

@@ -1,0 +1,24 @@
+# Toegevoegd omdat deze vacature volgens de leidinggevende openstaat; ze stond
+# wel op het sollicitatieformulier van de huidige site, maar niet in de lijst.
+# De tekst hieronder is een eerste opzet — laat die vóór livegang nog even
+# nalezen door HR of de afdeling.
+title: "Junior laser operator"
+slug: "junior-laser-operator"
+order: 25
+employmentType: "Fulltime"
+hours: "38 uur per week"
+intro: "Voor onze lasersnijafdeling zoeken wij een junior laser operator. Je werkt met de Trumpf TruLaser 3040 en leert het vak bij ons in de praktijk."
+responsibilities:
+  - "Bedienen van de lasersnijmachine en de productie in de gaten houden"
+  - "Materiaal klaarzetten en gesneden delen uitnemen en sorteren"
+  - "Snijkwaliteit en maatvoering controleren"
+requirements:
+  - "Technische interesse; ervaring met lasersnijden is een pré"
+  - "Nauwkeurig en aanpakken"
+  - "Bereid om te leren — wij leiden je verder op"
+open: true
+photo:
+  subject: "Operator bij de lasersnijmachine"
+  orient: "Staand 3:4"
+  crop: "Persoon aan machine"
+  comp: "Operator bij het bedieningspaneel"

@@ -70,6 +70,18 @@ const open = vacancies.filter((v) => v.data.open);
     </div>
   </section>
 
+  <!-- Arbeidsvoorwaarden -->
+  {w.bieden.length > 0 && (
+    <section class="sec tight vbied">
+      <div class="wrap vbied__grid">
+        <h2 class="rv">{w.biedenKop}</h2>
+        <ul class="vbied__list rv">
+          {w.bieden.map((b) => <li>{b}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
   <!-- Vacatures -->
   <section class="sec" id="vacatures">
     <div class="wrap">
@@ -139,6 +151,13 @@ const open = vacancies.filter((v) => v.data.open);
   .vstrip__grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, .7fr) minmax(0, .7fr); gap: clamp(14px, 2vw, 24px); align-items: end; }
   .vstrip figure { margin: 0; }
   @media (max-width: 680px) { .vstrip__grid { grid-template-columns: 1fr 1fr; } .vstrip figure:first-child { grid-column: 1 / -1; } }
+
+  .vbied__grid { display: grid; grid-template-columns: minmax(0, .5fr) minmax(0, 1.5fr); gap: clamp(18px, 3vw, 52px); align-items: start; }
+  .vbied__grid h2 { font-size: clamp(20px, 2.2vw, 28px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .vbied__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 10px 28px; }
+  .vbied__list li { position: relative; padding-left: 26px; color: var(--ink-2); font-size: 15.5px; }
+  .vbied__list li::before { content: ""; position: absolute; left: 0; top: .72em; width: 13px; height: 1px; background: var(--blue); }
+  @media (max-width: 780px) { .vbied__grid { grid-template-columns: 1fr; } }
 
   .vlist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
   .vlist li { border-bottom: 1px solid var(--line); }

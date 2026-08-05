@@ -246,6 +246,11 @@ const werkenBijSchema = (ns: string) => ({
   sfeerFoto1: pageFoto(ns)("Sfeerfoto 1 (breed)"),
   sfeerFoto2: pageFoto(ns)("Sfeerfoto 2"),
   sfeerFoto3: pageFoto(ns)("Sfeerfoto 3"),
+  biedenKop: fields.text({ label: "Arbeidsvoorwaarden — kop" }),
+  bieden: fields.array(fields.text({ label: "Voorwaarde" }), {
+    label: "Wat wij bieden",
+    itemLabel: (p) => (p.value || "").slice(0, 50),
+  }),
   vacaturesKop: fields.text({ label: "Kop vacatures-sectie" }),
   ctaKop: fields.text({ label: "Slotblok — kop" }),
   ctaTekst: fields.text({ label: "Slotblok — tekst", multiline: true }),

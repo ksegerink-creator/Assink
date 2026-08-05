@@ -7,8 +7,8 @@ heroFoto: "/src/assets/uploads/over-ons/heroFoto.jpg"
 lead: "Assink & Schipholt bewerkt al sinds 1919 metaal in Hengelo. De combinatie van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling."
 feiten:
   - { waarde: "{jaren}", label: "jaar ervaring" }
-  - { waarde: "5 t", label: "max. stukgewicht" }
-  - { waarde: "±50 m²", label: "constructieoppervlak" }
+  - { waarde: "10 t", label: "max. stukgewicht" }
+  - { waarde: "8 m", label: "max. bouwhoogte" }
   - { waarde: "1", label: "aanspreekpunt" }
 proza:
   - "Wij werken voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."

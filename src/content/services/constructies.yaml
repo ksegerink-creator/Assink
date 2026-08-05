@@ -13,8 +13,8 @@ heroPhoto:
   comp: "Frame op bok, lasser op achtergrond"
 bodyHeading: "Specialist in constructiewerk"
 body:
-  - "Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen tot 5 ton."
-  - "Met bovenloopkraan en een ruime hal produceren we constructies tot 4 meter hoogte en 50 m² oppervlakte — veilig en efficiënt."
+  - "Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen tot 10 ton."
+  - "Met vijf bovenloopkranen van 5 ton en een ruime hal produceren we constructies tot 8 meter hoogte — veilig en efficiënt."
   - "Wij verzorgen niet alleen las- en constructiewerk, maar ook oppervlaktebehandelingen zoals stralen, poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer. Zo heeft u één aanspreekpunt van engineering tot afwerking."
 materials: ["RVS 304 / 316", "Aluminium", "Messing", "Staal"]
 process:
@@ -24,16 +24,15 @@ process:
   - { step: "Oppervlaktebehandeling", desc: "Stralen, poedercoaten, anodiseren of passiveren." }
   - { step: "Controle & levering", desc: "Maatcontrole en visuele keuring, daarna just-in-time levering." }
 specs:
-  - { label: "Max. gewicht per stuk", value: "tot 5 ton" }
-  - { label: "Max. hoogte constructie", value: "± 4 m" }
-  - { label: "Max. oppervlak", value: "± 50 m²" }
-  - { label: "Hijsmiddel", value: "bovenloopkraan" }
+  - { label: "Max. gewicht per stuk", value: "tot 10 ton" }
+  - { label: "Max. hoogte constructie", value: "8 m" }
+  - { label: "Hijsmiddelen", value: "5 bovenloopkranen van 5 ton" }
 applications: ["Machinebouw (frames, beschermkappen)", "Apparatenbouw", "Infratechniek", "Voedingsmiddelenindustrie", "Elektrotechniek", "Mechatronica"]
 related:
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendige constructies in roestvast staal." }
   - { slug: "machinebouw", label: "Machinebouw", desc: "Complete machines en bouwgroepen." }
   - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd lassen voor series." }
 seo:
-  title: "Constructies — gelaste samenstellingen tot 5 ton"
-  description: "Zware en complexe gelaste metaalconstructies tot 5 ton in RVS, aluminium en staal voor machinebouw, apparatenbouw en infratechniek."
+  title: "Constructies — gelaste samenstellingen tot 10 ton"
+  description: "Zware en complexe gelaste metaalconstructies tot 10 ton in RVS, aluminium en staal voor machinebouw, apparatenbouw en infratechniek."
 translated: ["nl"]

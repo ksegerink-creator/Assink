@@ -38,12 +38,12 @@ capabilities:
       Precision sheet metal in steel, stainless steel, aluminium and brass.
       Laser cutting, bending and finishing — one-offs and series, dimensionally
       accurate to the millimetre.
-    annotatie: Press brake · ± 0.1 mm
+    annotatie: Press brake · ± 0.2 mm
     link: plaatwerk
   - nummer: '02'
     titel: Constructions & welding
     omschrijving: >-
-      Welded assemblies up to 5 tonnes. TIG, MIG and laser welding — from a
+      Welded assemblies up to 10 tonnes. TIG, MIG and laser welding — from a
       loose part to a complete welded frame, including surface treatment.
     annotatie: TIG · MIG · laser
     link: constructies
@@ -64,7 +64,7 @@ capabilities:
 proef:
   quote: 'Quality shows in the detail: the weld seam, the bend, the dimension.'
   details:
-    - bijschrift: Bending · ± 0.1 mm
+    - bijschrift: Bending · ± 0.2 mm
     - bijschrift: Press braking
     - bijschrift: Finishing
 mensen:

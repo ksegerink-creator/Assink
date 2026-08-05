@@ -11,7 +11,7 @@ process:
   - { step: "Laserschneiden", desc: "Schneiden von Aluminiumblech." }
   - { step: "Abkanten", desc: "Kanten mit Rücksicht auf die Rückfederung." }
   - { step: "Aluminium-Schweißen", desc: "WIG-/MIG-Schweißen, verzugsarm." }
-  - { step: "Nachbearbeitung", desc: "Strahlen, Eloxieren oder Pulverbeschichten." }
+  - { step: "Nachbearbeitung", desc: "Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern." }
 applications: ["Maschinenbau", "Gehäuse", "Transport & Leichtbaukonstruktionen"]
 related:
   - { slug: "aluminium-lassen", label: "Aluminium-Schweißen", desc: "Spezialisierte WIG-/MIG-Schweißarbeiten." }

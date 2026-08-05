@@ -5,8 +5,8 @@ h1: "Konstruktiv in Konstruktionen"
 intro: "Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis zu vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik."
 bodyHeading: "Spezialist für Konstruktionsarbeit"
 body:
-  - "Assink & Schipholt fertigt schwere und komplexe Schweißbaugruppen — von einzelnen Bauteilen bis zu vollständig geschweißten Baugruppen. Wir arbeiten für Maschinenbau, Apparatebau und Infrastrukturtechnik und verarbeiten Bauteile bis 5 Tonnen."
-  - "Mit Hallenkran und einer geräumigen Halle fertigen wir Konstruktionen bis 4 Meter Höhe und 50 m² Fläche — sicher und effizient."
+  - "Assink & Schipholt fertigt schwere und komplexe Schweißbaugruppen — von einzelnen Bauteilen bis zu vollständig geschweißten Baugruppen. Wir arbeiten für Maschinenbau, Apparatebau und Infrastrukturtechnik und verarbeiten Bauteile bis 10 Tonnen."
+  - "Mit fünf Hallenkranen von je 5 Tonnen und einer geräumigen Halle fertigen wir Konstruktionen bis 8 Meter Höhe — sicher und effizient."
   - "Wir übernehmen nicht nur Schweiß- und Konstruktionsarbeiten, sondern auch Oberflächenbehandlungen wie Strahlen, Pulverbeschichten, Eloxieren und Edelstahl-Passivieren — vieles davon im eigenen Haus. So haben Sie einen Ansprechpartner von der Konstruktion bis zur Endbearbeitung."
 materials: ["Edelstahl 304 / 316", "Aluminium", "Messing", "Stahl"]
 process:
@@ -16,15 +16,14 @@ process:
   - { step: "Oberflächenbehandlung", desc: "Strahlen, Pulverbeschichten, Eloxieren oder Passivieren." }
   - { step: "Prüfung & Lieferung", desc: "Maßkontrolle und visuelle Prüfung, danach Just-in-time-Lieferung." }
 specs:
-  - { label: "Max. Gewicht pro Stück", value: "bis 5 Tonnen" }
-  - { label: "Max. Höhe der Konstruktion", value: "± 4 m" }
-  - { label: "Max. Fläche", value: "± 50 m²" }
-  - { label: "Hebezeug", value: "Hallenkran" }
+  - { label: "Max. Gewicht pro Stück", value: "bis 10 Tonnen" }
+  - { label: "Max. Höhe der Konstruktion", value: "8 m" }
+  - { label: "Hebezeuge", value: "5 Hallenkrane von je 5 Tonnen" }
 applications: ["Maschinenbau (Rahmen, Schutzhauben)", "Apparatebau", "Infrastrukturtechnik", "Lebensmittelindustrie", "Elektrotechnik", "Mechatronik"]
 related:
   - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Korrosionsbeständige Konstruktionen aus Edelstahl." }
   - { slug: "machinebouw", label: "Maschinenbau", desc: "Komplette Maschinen und Baugruppen." }
   - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Automatisiertes Schweißen für Serien." }
 seo:
-  title: "Konstruktionen — geschweißte Baugruppen bis 5 Tonnen"
-  description: "Schwere und komplexe geschweißte Metallkonstruktionen bis 5 Tonnen in Edelstahl, Aluminium und Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik."
+  title: "Konstruktionen — geschweißte Baugruppen bis 10 Tonnen"
+  description: "Schwere und komplexe geschweißte Metallkonstruktionen bis 10 Tonnen in Edelstahl, Aluminium und Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik."

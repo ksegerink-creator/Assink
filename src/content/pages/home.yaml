@@ -37,13 +37,13 @@ capabilities:
     omschrijving: >-
       Precisieplaatwerk in staal, RVS, aluminium en messing. Lasersnijden,
       zetten en afwerken — enkelstuks en serie, maatvast tot op de millimeter.
-    annotatie: Kantbank · ± 0,1 mm
+    annotatie: Kantbank · ± 0,2 mm
     link: plaatwerk
     foto: /src/assets/uploads/capabilities/0/foto.jpg
   - nummer: '02'
     titel: Constructies & lassen
     omschrijving: >-
-      Gelaste samenstellingen tot 5 ton. TIG-, MIG- en laserlassen — van
+      Gelaste samenstellingen tot 10 ton. TIG-, MIG- en laserlassen — van
       los onderdeel tot compleet gelast frame, inclusief oppervlaktebehandeling.
     annotatie: TIG · MIG · laser
     link: constructies
@@ -69,7 +69,7 @@ proef:
   quoteFoto: /src/assets/uploads/proef/quoteFoto.jpg
   details:
     - foto: /src/assets/uploads/proef/details/0/foto.jpg
-      bijschrift: Zetwerk · ± 0,1 mm
+      bijschrift: Zetwerk · ± 0,2 mm
     - foto: /src/assets/uploads/proef/details/1/foto.jpg
       bijschrift: Kantwerk
     - foto: /src/assets/uploads/proef/details/2/foto.jpg

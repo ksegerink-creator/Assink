@@ -39,12 +39,12 @@ capabilities:
       Präzisionsblech in Stahl, Edelstahl, Aluminium und Messing.
       Laserschneiden, Abkanten und Nachbearbeiten — Einzelstücke und Serien,
       maßhaltig bis auf den Millimeter.
-    annotatie: Abkantpresse · ± 0,1 mm
+    annotatie: Abkantpresse · ± 0,2 mm
     link: plaatwerk
   - nummer: '02'
     titel: Konstruktionen & Schweißen
     omschrijving: >-
-      Geschweißte Baugruppen bis 5 Tonnen. WIG-, MIG- und Laserschweißen — vom
+      Geschweißte Baugruppen bis 10 Tonnen. WIG-, MIG- und Laserschweißen — vom
       einzelnen Bauteil bis zum komplett geschweißten Rahmen, einschließlich
       Oberflächenbehandlung.
     annotatie: WIG · MIG · Laser
@@ -66,7 +66,7 @@ capabilities:
 proef:
   quote: 'Qualität zeigt sich im Detail: in der Schweißnaht, der Biegung, dem Maß.'
   details:
-    - bijschrift: Biegen · ± 0,1 mm
+    - bijschrift: Biegen · ± 0,2 mm
     - bijschrift: Abkanten
     - bijschrift: Nachbearbeitung
 mensen:

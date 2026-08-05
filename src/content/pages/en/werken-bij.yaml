@@ -12,6 +12,14 @@ waarom:
   - { titel: "Real work", tekst: "You make products you see again: frames, enclosures and machines for real customers — not anonymous production-line work." }
   - { titel: "Modern machinery", tekst: "Laser cutting, tube laser, laser welding and servo-electric press brakes. You work with good, up-to-date equipment." }
   - { titel: "Room to grow", tekst: "An SBB-accredited training company. We train our own people — from apprentice to all-round professional, at your own pace." }
+biedenKop: "What we offer"
+bieden:
+  - "Competitive primary and secondary employment terms"
+  - "Training and development opportunities"
+  - "Varied work in an enthusiastic and ambitious environment"
+  - "Holiday and ADV days in line with the CAO Klein Metaal collective agreement"
+  - "A good working atmosphere with solid colleagues"
+  - "Travel allowance"
 vacaturesKop: "Current vacancies"
 ctaKop: "Fancy coming to take a look?"
 ctaTekst: "Spend a day on the shop floor. Call or email us and we will arrange something."

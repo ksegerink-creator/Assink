@@ -18,6 +18,7 @@ const locale = toLocale(Astro.params.lang);
 const a = await readPage("overOns", locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
+const projects = (await getCollection("projects")).sort((x, y) => x.data.order - y.data.order);
 const sectors = await localizeEntries("sectoren", (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order), locale);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
@@ -113,6 +114,34 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
       </ul>
     </div>
   </section>
+
+  <!--
+    Referentiewerk. De sectie verschijnt pas zodra er echte projecten in het CMS
+    staan (met foto en toestemming van de klant); leeg dus geen lege kop op de
+    pagina. Beheer via Keystatic → Lijsten & referenties → Projecten.
+  -->
+  {projects.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap">
+        <div class="rule-head rv">
+          <h2>{t(locale, "recentWork")}</h2>
+          <span class="mono">{t(locale, "references")}</span>
+        </div>
+        <div class="aproj">
+          {projects.map((p) => (
+            <figure class="rv">
+              <IndustrialImage src={photo(p.data.foto)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
+              <figcaption>
+                <span class="mono">{p.data.sector}</span>
+                <h3>{p.data.title}</h3>
+                <p>{p.data.summary}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- Pand -->
   <section class="sec tight">
