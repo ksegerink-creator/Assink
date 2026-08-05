@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Mechatronics"
+kicker: "Sector"
+h1: "Sheet metal and frames for mechatronics"
+intro: "In mechatronics, mechanics, electronics and control come together in very little space. That calls for dimensionally stable frames, brackets and panels in which everything falls into place."
+body:
+  - "We make machine frames, mounting brackets, cable trays and guard panels — in steel, stainless steel and aluminium. Tube laser cutting is often the fastest route here: cut-outs, holes and mitres are already in the profile before any welding starts."
+  - "For the build-up, dimensional stability is decisive. We bend to ± 0.2 mm and check dimensions after welding, because heat input can make an assembly move. Machined parts are sourced from a regular partner."
+materials: ["Aluminium", "Steel", "Stainless steel 304", "Stainless steel 316"]
+process:
+  - { step: "Tube laser cutting", desc: "Profiles with cut-outs and mitres." }
+  - { step: "Bending", desc: "Dimensionally stable panels and brackets, ± 0.2 mm." }
+  - { step: "Welding", desc: "Low-distortion TIG or laser welding." }
+  - { step: "Dimensional check", desc: "Measuring after welding." }
+applications: ["Machine frames", "Mounting brackets", "Guard panels", "Cable trays"]
+related:
+  - { slug: "buizenlaser", label: "Tube laser cutting", desc: "Profiles in a single operation." }
+  - { slug: "machinebouw", label: "Machine building", desc: "Complete sub-assemblies." }
+  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Low-distortion seams." }
+seo:
+  title: "Mechatronics — frames, brackets and panels"
+  description: "Dimensionally stable machine frames, mounting brackets and guard panels for mechatronics in aluminium, steel and stainless steel. Tube laser cutting, bending to ± 0.2 mm and low-distortion welding."

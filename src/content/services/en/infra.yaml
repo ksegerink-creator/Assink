@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Infrastructure"
+kicker: "Sector"
+h1: "Steel structures for infrastructure"
+intro: "Work for public infrastructure is judged on traceability: which material, which weld, which inspection. We are certified to ISO 1090-1 and record that for every order."
+body:
+  - "For infrastructure engineering we make welded steel structures, frames, hatches and enclosures. Parts up to 10 tonnes and constructions up to 8 metres high can be produced in our own hall and moved safely with five 5-tonne overhead cranes."
+  - "ISO 1090-1 governs the execution of steel and aluminium structures with CE marking; ISO 3834-2 governs the welding procedures. From incoming inspection to final inspection we document the steps, so a client can see what has been done."
+materials: ["Steel", "Stainless steel 304", "Stainless steel 316", "Aluminium"]
+process:
+  - { step: "Incoming inspection", desc: "Material certificates and dimensions on arrival." }
+  - { step: "Cutting & bending", desc: "Laser and tube laser cutting, bending." }
+  - { step: "Welding", desc: "Qualified procedures, ISO 3834-2." }
+  - { step: "Final inspection", desc: "Dimensional check and release with documentation." }
+applications: ["Welded steel structures", "Frames and platforms", "Hatches and enclosures"]
+related:
+  - { slug: "constructies", label: "Welded constructions", desc: "Heavy structural work." }
+  - { slug: "kwaliteit", label: "Quality", desc: "ISO 1090-1 and ISO 3834-2." }
+  - { slug: "buizenlaser", label: "Tube laser cutting", desc: "Profiles cut to size." }
+seo:
+  title: "Infrastructure — welded steel structures to ISO 1090-1"
+  description: "Steel structures, frames and enclosures for infrastructure engineering. Certified to ISO 1090-1 and ISO 3834-2, documented from incoming inspection to final release."

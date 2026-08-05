@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Mechatronik"
+kicker: "Branche"
+h1: "Blechbearbeitung und Rahmen für die Mechatronik"
+intro: "In der Mechatronik treffen Mechanik, Elektronik und Steuerung auf engem Raum zusammen. Das verlangt maßhaltige Rahmen, Winkel und Paneele, in denen alles an seinen Platz fällt."
+body:
+  - "Wir fertigen Maschinenrahmen, Montagewinkel, Kabelkanäle und Schutzpaneele — in Stahl, Edelstahl und Aluminium. Rohrlaserschneiden ist hier oft der schnellste Weg: Ausschnitte, Bohrungen und Gehrungen sitzen bereits im Profil, bevor geschweißt wird."
+  - "Für den Aufbau ist Maßhaltigkeit entscheidend. Wir kanten auf ± 0,2 mm und prüfen die Maße nach dem Schweißen, weil die Wärmeeinbringung eine Baugruppe arbeiten lassen kann. Zerspante Teile beziehen wir von einem festen Partner."
+materials: ["Aluminium", "Stahl", "Edelstahl 304", "Edelstahl 316"]
+process:
+  - { step: "Rohrlaserschneiden", desc: "Profile mit Ausschnitten und Gehrungen." }
+  - { step: "Abkanten", desc: "Maßhaltige Paneele und Winkel, ± 0,2 mm." }
+  - { step: "Schweißen", desc: "Verzugsarmes WIG- oder Laserschweißen." }
+  - { step: "Maßkontrolle", desc: "Messen nach dem Schweißen." }
+applications: ["Maschinenrahmen", "Montagewinkel", "Schutzpaneele", "Kabelkanäle"]
+related:
+  - { slug: "buizenlaser", label: "Rohrlaserschneiden", desc: "Profile in einem Arbeitsgang." }
+  - { slug: "machinebouw", label: "Maschinenbau", desc: "Komplette Baugruppen." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Verzugsarme Nähte." }
+seo:
+  title: "Mechatronik — Rahmen, Winkel und Paneele"
+  description: "Maßhaltige Maschinenrahmen, Montagewinkel und Schutzpaneele für die Mechatronik in Aluminium, Stahl und Edelstahl. Rohrlaserschneiden, Abkanten bis ± 0,2 mm und verzugsarmes Schweißen."

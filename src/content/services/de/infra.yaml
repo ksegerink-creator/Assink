@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Infrastruktur"
+kicker: "Branche"
+h1: "Stahlkonstruktionen für die Infrastruktur"
+intro: "Arbeiten für die öffentliche Infrastruktur werden an der Nachvollziehbarkeit gemessen: welches Material, welche Schweißnaht, welche Prüfung. Wir sind nach ISO 1090-1 zertifiziert und halten das pro Auftrag fest."
+body:
+  - "Für die Infrastrukturtechnik fertigen wir geschweißte Stahlkonstruktionen, Rahmen, Luken und Gehäuse. Bauteile bis 10 Tonnen und Konstruktionen bis 8 Meter Höhe können wir in der eigenen Halle fertigen und mit fünf Hallenkranen von je 5 Tonnen sicher bewegen."
+  - "ISO 1090-1 regelt die Ausführung von Stahl- und Aluminiumtragwerken mit CE-Kennzeichnung, ISO 3834-2 regelt die Schweißverfahren. Von der Eingangskontrolle bis zur Endprüfung dokumentieren wir die Schritte, sodass ein Auftraggeber nachvollziehen kann, was ausgeführt wurde."
+materials: ["Stahl", "Edelstahl 304", "Edelstahl 316", "Aluminium"]
+process:
+  - { step: "Eingangskontrolle", desc: "Materialzeugnisse und Maße bei Anlieferung." }
+  - { step: "Schneiden & Abkanten", desc: "Laser- und Rohrlaserschneiden, Abkanten." }
+  - { step: "Schweißen", desc: "Qualifizierte Verfahren, ISO 3834-2." }
+  - { step: "Endprüfung", desc: "Maßkontrolle und Freigabe mit Dokumentation." }
+applications: ["Geschweißte Stahlkonstruktionen", "Rahmen und Bühnen", "Luken und Gehäuse"]
+related:
+  - { slug: "constructies", label: "Konstruktionen", desc: "Schwere geschweißte Konstruktionsarbeit." }
+  - { slug: "kwaliteit", label: "Qualität", desc: "ISO 1090-1 und ISO 3834-2." }
+  - { slug: "buizenlaser", label: "Rohrlaserschneiden", desc: "Profile nach Maß." }
+seo:
+  title: "Infrastruktur — geschweißte Stahlkonstruktionen nach ISO 1090-1"
+  description: "Stahlkonstruktionen, Rahmen und Gehäuse für die Infrastrukturtechnik. Zertifiziert nach ISO 1090-1 und ISO 3834-2, dokumentiert von der Eingangskontrolle bis zur Endprüfung."

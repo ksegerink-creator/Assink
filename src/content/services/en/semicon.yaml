@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Semiconductor"
+kicker: "Sector"
+h1: "Precision sheet metal for the semiconductor industry"
+intro: "Equipment builders in the semiconductor industry ask for tight tolerances and a clean, even finish. We supply precision sheet metal, frames and panels in stainless steel and aluminium."
+body:
+  - "We make frames, guard panels, mounting plates and enclosures for machines and modules. Cutting is done on the laser, bending on the servo-electric press brake with an accuracy of ± 0.2 mm, and edges are deburred by machine."
+  - "Evenness of the surface matters here: we supply ground stainless steel with a consistent grain, or glass-bead blasted aluminium and stainless steel. Where required, we passivate. Assembly in a cleanroom is not part of our work; we supply the parts and assemblies."
+materials: ["Stainless steel 304", "Stainless steel 316", "Aluminium"]
+process:
+  - { step: "Laser cutting", desc: "Dimensionally stable parts and cut-outs." }
+  - { step: "Bending", desc: "Tight tolerances, ± 0.2 mm." }
+  - { step: "Deburring", desc: "Machine-deburred, burr-free and safe edges." }
+  - { step: "Surface", desc: "Grinding, glass-bead blasting or passivation." }
+applications: ["Frames and modules", "Guard panels", "Mounting plates", "Enclosures"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Tight tolerances." }
+  - { slug: "plaatwerk/rvs", label: "Stainless steel sheet metal", desc: "Ground stainless steel for visible surfaces." }
+  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lightweight sheet metal." }
+seo:
+  title: "Semiconductor — precision sheet metal, frames and panels"
+  description: "Precision sheet metal, frames and guard panels for the semiconductor industry in stainless steel and aluminium. Bending to ± 0.2 mm, machine deburring and an even surface finish."

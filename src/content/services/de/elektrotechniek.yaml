@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Elektrotechnik"
+kicker: "Branche"
+h1: "Blechbearbeitung für die Elektrotechnik"
+intro: "Schaltschränke, Montageplatten und Gehäuse verlangen maßhaltiges Blech: Türen, die schließen, Ausschnitte, die passen, und Kanten, die sicher sind. Wir schneiden, kanten und schweißen diese Teile in Stahl, Edelstahl und Aluminium."
+body:
+  - "Für die Elektrotechnik fertigen wir unter anderem Schrankteile, Montageplatten, Frontpaneele und Gehäuse. Ausschnitte für Kabelverschraubungen, Displays und Belüftung schneiden wir am Laser mit, sodass später nichts nachgearbeitet werden muss."
+  - "Maßhaltigkeit ist hier wichtiger als Geschwindigkeit: Ein Schrank, der einen halben Millimeter aus dem Lot steht, schließt nicht. Unsere Abkantpresse arbeitet servoelektrisch mit einer Genauigkeit von ± 0,2 mm, und nach dem Kanten entgraten wir die Kanten maschinell."
+materials: ["Stahl", "Edelstahl 304", "Edelstahl 316", "Aluminium"]
+process:
+  - { step: "Laserschneiden", desc: "Ausschnitte für Verschraubungen, Displays und Belüftung." }
+  - { step: "Abkanten", desc: "Maßhaltige Schrankteile, ± 0,2 mm." }
+  - { step: "Schweißen & Zusammenbau", desc: "WIG-, MIG- oder Laserschweißen bis zum kompletten Gehäuse." }
+  - { step: "Nachbearbeitung", desc: "Entgraten, Strahlen oder Passivieren." }
+applications: ["Schaltschränke", "Montageplatten", "Frontpaneele", "Industriegehäuse"]
+related:
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse nach Maß." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl-Blechbearbeitung", desc: "Geschliffener Edelstahl für Sichtflächen." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Einpress- & Blindnietmuttern", desc: "Befestigung in dünnem Blech." }
+seo:
+  title: "Blechbearbeitung für die Elektrotechnik — Schränke und Gehäuse"
+  description: "Maßhaltige Schrankteile, Montageplatten und Gehäuse für die Elektrotechnik in Stahl, Edelstahl und Aluminium. Laserschneiden, Abkanten bis ± 0,2 mm und Schweißen im eigenen Haus."

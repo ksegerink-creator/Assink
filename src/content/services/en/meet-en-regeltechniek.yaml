@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Instrumentation & control"
+kicker: "Sector"
+h1: "Precision sheet metal for instrumentation and control"
+intro: "In instrumentation and control the parts are small and the tolerances tight. We cut and bend enclosures, mounting frames and panels where a tenth of a millimetre counts."
+body:
+  - "We make instrument enclosures, mounting plates, brackets and frames — often in small series and in stainless steel or aluminium. Fits for sensors, glands and connectors are cut along with the part, so assembly needs no reworking."
+  - "With thin sheet, fixing needs attention: we set self-clinching and rivet nuts in place, so no loose tapped holes or nuts are needed. Edges are deburred by machine, and where the part is on show we supply it ground or blasted."
+materials: ["Stainless steel 304", "Stainless steel 316", "Aluminium", "Steel", "Brass"]
+process:
+  - { step: "Laser cutting", desc: "Fits for sensors and connectors." }
+  - { step: "Bending", desc: "Tight tolerances, ± 0.2 mm." }
+  - { step: "Fixings", desc: "Setting self-clinching and rivet nuts." }
+  - { step: "Finishing", desc: "Deburring, grinding or blasting." }
+applications: ["Instrument enclosures", "Mounting plates and brackets", "Panels", "Small series"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Tight tolerances." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Self-clinching & rivet nuts", desc: "Fixings in thin sheet." }
+  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Dimensionally stable bending." }
+seo:
+  title: "Instrumentation & control — precision sheet metal and enclosures"
+  description: "Instrument enclosures, mounting plates and panels for instrumentation and control in stainless steel and aluminium. Laser cutting and bending to ± 0.2 mm, also in small series."

@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Apparatebau"
+kicker: "Branche"
+h1: "Blechbearbeitung und Konstruktionen für den Apparatebau"
+intro: "Apparatebauer brauchen Blechteile und geschweißte Baugruppen, die auf Anhieb passen. Wir fertigen Rahmen, Einhausungen und Gehäuse bis 10 Tonnen, vom einzelnen Bauteil bis zur fertigen Baugruppe."
+body:
+  - "Wir liefern geschweißte Rahmen, Einhausungen, Trichter und Gehäuse. Weil Laserschneiden, Rohrlaserschneiden, Abkanten und Schweißen unter einem Dach stehen, bleiben die Durchlaufzeiten kurz und lassen sich Maßabweichungen schnell zur Quelle zurückführen."
+  - "Für Bauteile, die mit Produkt oder Reinigungsmitteln in Berührung kommen, arbeiten wir in Edelstahl 304 oder 316 und arbeiten die Nähte glatt aus. Passivieren und Beizen erledigen wir im eigenen Haus; Pulverbeschichten geben wir extern."
+materials: ["Edelstahl 304", "Edelstahl 316", "Stahl", "Aluminium"]
+process:
+  - { step: "Arbeitsvorbereitung", desc: "Mitdenken bei Fertigbarkeit und Schweißfolge." }
+  - { step: "Schneiden & Abkanten", desc: "Laser, Rohrlaser und Abkantpresse." }
+  - { step: "Schweißen & Zusammenbau", desc: "WIG-, MIG- oder Laserschweißen bis 10 Tonnen." }
+  - { step: "Nachbearbeitung", desc: "Schleifen, Beizen, Passivieren oder Strahlen." }
+applications: ["Geschweißte Rahmen", "Einhausungen und Gehäuse", "Trichter", "Baugruppen bis 10 Tonnen"]
+related:
+  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Konstruktionsarbeit." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl-Blechbearbeitung", desc: "Korrosionsbeständiges Blech." }
+  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse nach Maß." }
+seo:
+  title: "Apparatebau — Blechbearbeitung und geschweißte Baugruppen"
+  description: "Rahmen, Einhausungen und Gehäuse für den Apparatebau in Edelstahl, Stahl und Aluminium. Laserschneiden, Abkanten und Schweißen bis 10 Tonnen unter einem Dach."

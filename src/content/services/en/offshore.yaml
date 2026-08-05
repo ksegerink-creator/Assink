@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Offshore"
+kicker: "Sector"
+h1: "Constructions and sheet metal for offshore"
+intro: "Offshore is a salty, wet environment where corrosion and vibration set the terms. We make welded constructions and sheet metal in stainless steel 316 and steel, with qualified welding procedures and documentation for every order."
+body:
+  - "For offshore applications we supply frames, enclosures, platforms and welded assemblies up to 10 tonnes. Material choice determines service life: where seawater is involved, we advise stainless steel 316 rather than 304."
+  - "Our welding falls under ISO 3834-2, and for steel structures we are certified to ISO 1090-1. Material certificates and dimensional checks are recorded per order, so traceability is covered. Preservation and coating are outsourced to a regular partner."
+materials: ["Stainless steel 316", "Stainless steel 304", "Steel", "Aluminium"]
+process:
+  - { step: "Material selection", desc: "Advice based on corrosion class and application." }
+  - { step: "Cutting & bending", desc: "Laser and tube laser cutting, bending." }
+  - { step: "Welding", desc: "Qualified procedures to ISO 3834-2." }
+  - { step: "Inspection & documentation", desc: "Dimensional checks and records per order." }
+applications: ["Frames and platforms", "Enclosures", "Welded assemblies up to 10 tonnes"]
+related:
+  - { slug: "constructies", label: "Welded constructions", desc: "Structural work up to 10 tonnes." }
+  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Corrosion-resistant assembly." }
+  - { slug: "kwaliteit", label: "Quality", desc: "Certification and inspection." }
+seo:
+  title: "Offshore — welded constructions and stainless steel sheet metal"
+  description: "Frames, enclosures and welded assemblies up to 10 tonnes for offshore, in stainless steel 316 and steel. Welding under ISO 3834-2, steel structures to ISO 1090-1."

@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Halbleiterindustrie"
+kicker: "Branche"
+h1: "Präzisionsblech für die Halbleiterindustrie"
+intro: "Anlagenbauer in der Halbleiterindustrie verlangen enge Toleranzen und eine saubere, gleichmäßige Oberfläche. Wir liefern Präzisionsblech, Rahmen und Paneele in Edelstahl und Aluminium."
+body:
+  - "Wir fertigen Rahmen, Schutzpaneele, Montageplatten und Gehäuse für Maschinen und Module. Geschnitten wird am Laser, gekantet auf der servoelektrischen Abkantpresse mit einer Genauigkeit von ± 0,2 mm, und die Kanten werden maschinell entgratet."
+  - "Bei der Oberfläche zählt Gleichmäßigkeit: Wir liefern geschliffenen Edelstahl mit einheitlicher Körnung oder glasperlgestrahltes Aluminium und Edelstahl. Wo nötig, passivieren wir. Die Montage im Reinraum gehört nicht zu unserer Arbeit; wir liefern die Teile und Baugruppen an."
+materials: ["Edelstahl 304", "Edelstahl 316", "Aluminium"]
+process:
+  - { step: "Laserschneiden", desc: "Maßhaltige Teile und Ausschnitte." }
+  - { step: "Abkanten", desc: "Enge Toleranzen, ± 0,2 mm." }
+  - { step: "Entgraten", desc: "Maschinell gratfreie, sichere Kanten." }
+  - { step: "Oberfläche", desc: "Schleifen, Glasperlstrahlen oder Passivieren." }
+applications: ["Rahmen und Module", "Schutzpaneele", "Montageplatten", "Gehäuse"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Enge Toleranzen." }
+  - { slug: "plaatwerk/rvs", label: "Edelstahl-Blechbearbeitung", desc: "Geschliffener Edelstahl für Sichtflächen." }
+  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Leichte Blechbearbeitung." }
+seo:
+  title: "Halbleiterindustrie — Präzisionsblech, Rahmen und Paneele"
+  description: "Präzisionsblech, Rahmen und Schutzpaneele für die Halbleiterindustrie in Edelstahl und Aluminium. Abkanten bis ± 0,2 mm, maschinelles Entgraten und gleichmäßige Oberflächenqualität."

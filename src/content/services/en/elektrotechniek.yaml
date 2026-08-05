@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Electrical engineering"
+kicker: "Sector"
+h1: "Sheet metal for electrical engineering"
+intro: "Control cabinets, mounting plates and enclosures call for dimensionally stable sheet metal: doors that close, cut-outs that fit and edges that are safe. We cut, bend and weld those parts in steel, stainless steel and aluminium."
+body:
+  - "For electrical engineering we make cabinet parts, mounting plates, front panels and enclosures. Cut-outs for glands, displays and ventilation are cut on the laser, so nothing needs reworking afterwards."
+  - "Dimensional accuracy matters more here than speed: a cabinet half a millimetre out of true will not close. Our press brake is servo-electric with an accuracy of ± 0.2 mm, and after bending we deburr the edges by machine."
+materials: ["Steel", "Stainless steel 304", "Stainless steel 316", "Aluminium"]
+process:
+  - { step: "Laser cutting", desc: "Cut-outs for glands, displays and ventilation." }
+  - { step: "Bending", desc: "Dimensionally stable cabinet parts, ± 0.2 mm." }
+  - { step: "Welding & assembly", desc: "TIG, MIG or laser welding through to the complete enclosure." }
+  - { step: "Finishing", desc: "Deburring, blasting or passivation." }
+applications: ["Control cabinets", "Mounting plates", "Front panels", "Industrial enclosures"]
+related:
+  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Enclosures made to measure." }
+  - { slug: "plaatwerk/rvs", label: "Stainless steel sheet metal", desc: "Ground stainless steel for visible surfaces." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Self-clinching & rivet nuts", desc: "Fixings in thin sheet." }
+seo:
+  title: "Sheet metal for electrical engineering — cabinets and enclosures"
+  description: "Dimensionally stable cabinet parts, mounting plates and enclosures for electrical engineering in steel, stainless steel and aluminium. Laser cutting, bending to ± 0.2 mm and welding in house."

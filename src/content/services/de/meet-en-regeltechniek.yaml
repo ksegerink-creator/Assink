@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Mess- & Regeltechnik"
+kicker: "Branche"
+h1: "Präzisionsblech für die Mess- und Regeltechnik"
+intro: "In der Mess- und Regeltechnik sind die Teile klein und die Toleranzen eng. Wir schneiden und kanten Gehäuse, Montagerahmen und Paneele, bei denen ein Zehntelmillimeter zählt."
+body:
+  - "Wir fertigen Instrumentengehäuse, Montageplatten, Winkel und Rahmen — häufig in kleinen Serien und in Edelstahl oder Aluminium. Passungen für Sensoren, Verschraubungen und Steckverbinder schneiden wir mit, sodass die Montage ohne Nacharbeit möglich ist."
+  - "Bei dünnem Blech ist die Befestigung ein Aufmerksamkeitspunkt: Einpress- und Blindnietmuttern setzen wir mit ein, sodass keine losen Gewindebohrungen oder Muttern nötig sind. Kanten werden maschinell entgratet, und wo es Sichtflächen sind, liefern wir geschliffen oder gestrahlt."
+materials: ["Edelstahl 304", "Edelstahl 316", "Aluminium", "Stahl", "Messing"]
+process:
+  - { step: "Laserschneiden", desc: "Passungen für Sensoren und Steckverbinder." }
+  - { step: "Abkanten", desc: "Enge Toleranzen, ± 0,2 mm." }
+  - { step: "Befestigung", desc: "Einpress- und Blindnietmuttern setzen." }
+  - { step: "Nachbearbeitung", desc: "Entgraten, Schleifen oder Strahlen." }
+applications: ["Instrumentengehäuse", "Montageplatten und Winkel", "Paneele", "Kleine Serien"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Enge Toleranzen." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Einpress- & Blindnietmuttern", desc: "Befestigung in dünnem Blech." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Maßhaltiges Abkanten." }
+seo:
+  title: "Mess- & Regeltechnik — Präzisionsblech und Gehäuse"
+  description: "Instrumentengehäuse, Montageplatten und Paneele für die Mess- und Regeltechnik in Edelstahl und Aluminium. Laserschneiden und Abkanten bis ± 0,2 mm, auch in kleinen Serien."

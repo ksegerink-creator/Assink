@@ -1,0 +1,22 @@
+# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Equipment manufacturing"
+kicker: "Sector"
+h1: "Sheet metal and constructions for equipment manufacturing"
+intro: "Equipment manufacturers need sheet metal and welded assemblies that fit first time. We make frames, casings and enclosures up to 10 tonnes, from a loose part to a finished assembly."
+body:
+  - "We supply welded frames, casings, hoppers and enclosures. Because laser cutting, tube laser cutting, bending and welding are all under one roof, lead times stay short and any dimensional deviation is quickly traced back to its source."
+  - "For parts that come into contact with product or cleaning agents, we work in stainless steel 304 or 316 and finish the seams smooth. Passivation and pickling are done in house; powder coating is outsourced."
+materials: ["Stainless steel 304", "Stainless steel 316", "Steel", "Aluminium"]
+process:
+  - { step: "Engineering", desc: "Thinking along on manufacturability and welding sequence." }
+  - { step: "Cutting & bending", desc: "Laser, tube laser and press brake." }
+  - { step: "Welding & assembly", desc: "TIG, MIG or laser welding up to 10 tonnes." }
+  - { step: "Finishing", desc: "Grinding, pickling, passivation or blasting." }
+applications: ["Welded frames", "Casings and enclosures", "Hoppers", "Assemblies up to 10 tonnes"]
+related:
+  - { slug: "constructies", label: "Welded constructions", desc: "Structural welded work." }
+  - { slug: "plaatwerk/rvs", label: "Stainless steel sheet metal", desc: "Corrosion-resistant sheet metal." }
+  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Enclosures made to measure." }
+seo:
+  title: "Equipment manufacturing — sheet metal and welded assemblies"
+  description: "Frames, casings and enclosures for equipment manufacturing in stainless steel, steel and aluminium. Laser cutting, bending and welding up to 10 tonnes under one roof."

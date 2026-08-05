@@ -1,0 +1,22 @@
+# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
+title: "Offshore"
+kicker: "Branche"
+h1: "Konstruktionen und Blechbearbeitung für Offshore"
+intro: "Offshore ist eine salzige, nasse Umgebung, in der Korrosion und Vibrationen die Arbeit bestimmen. Wir fertigen geschweißte Konstruktionen und Blechbauteile in Edelstahl 316 und Stahl, mit qualifizierten Schweißverfahren und Dokumentation pro Auftrag."
+body:
+  - "Für Offshore-Anwendungen liefern wir Rahmen, Gehäuse, Bühnen und geschweißte Baugruppen bis 10 Tonnen. Die Materialwahl bestimmt die Lebensdauer: Wo Seewasser hinzukommt, empfehlen wir Edelstahl 316 statt 304."
+  - "Unsere Schweißarbeiten fallen unter ISO 3834-2, für Stahlkonstruktionen sind wir nach ISO 1090-1 zertifiziert. Materialzeugnisse und Maßkontrollen halten wir pro Auftrag fest, sodass die Nachvollziehbarkeit geregelt ist. Konservieren und Beschichten geben wir an einen festen Partner."
+materials: ["Edelstahl 316", "Edelstahl 304", "Stahl", "Aluminium"]
+process:
+  - { step: "Materialwahl", desc: "Beratung nach Korrosionsklasse und Anwendung." }
+  - { step: "Schneiden & Abkanten", desc: "Laser- und Rohrlaserschneiden, Abkanten." }
+  - { step: "Schweißen", desc: "Qualifizierte Verfahren nach ISO 3834-2." }
+  - { step: "Prüfung & Dokumentation", desc: "Maßkontrolle und Aufzeichnung pro Auftrag." }
+applications: ["Rahmen und Bühnen", "Gehäuse", "Geschweißte Baugruppen bis 10 Tonnen"]
+related:
+  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Konstruktionsarbeit bis 10 Tonnen." }
+  - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Korrosionsbeständiger Zusammenbau." }
+  - { slug: "kwaliteit", label: "Qualität", desc: "Zertifizierung und Prüfung." }
+seo:
+  title: "Offshore — geschweißte Konstruktionen und Edelstahlblech"
+  description: "Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für Offshore, in Edelstahl 316 und Stahl. Schweißen unter ISO 3834-2, Stahlkonstruktionen nach ISO 1090-1."
