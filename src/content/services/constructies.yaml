@@ -14,7 +14,7 @@ heroPhoto:
 bodyHeading: "Specialist in constructiewerk"
 body:
   - "Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen tot 10 ton."
-  - "Met vijf bovenloopkranen van 5 ton en een ruime hal produceren we constructies tot 8 meter hoogte — veilig en efficiënt."
+  - "In de hal hangen vijf bovenloopkranen van 5 ton. Door in tandem te hijsen — met twee kranen aan één last — verplaatsen we samenstellingen tot 10 ton, tot 8 meter hoogte."
   - "Wij verzorgen niet alleen las- en constructiewerk, maar ook oppervlaktebehandelingen zoals stralen, poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer. Zo heeft u één aanspreekpunt van engineering tot afwerking."
 materials: ["RVS 304 / 316", "Aluminium", "Messing", "Staal"]
 process:
@@ -26,7 +26,7 @@ process:
 specs:
   - { label: "Max. gewicht per stuk", value: "tot 10 ton" }
   - { label: "Max. hoogte constructie", value: "8 m" }
-  - { label: "Hijsmiddelen", value: "5 bovenloopkranen van 5 ton" }
+  - { label: "Hijsmiddelen", value: "5 bovenloopkranen van 5 ton; tandem hijsen tot 10 ton" }
 applications: ["Machinebouw (frames, beschermkappen)", "Apparatenbouw", "Infratechniek", "Voedingsmiddelenindustrie", "Elektrotechniek", "Mechatronica"]
 related:
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendige constructies in roestvast staal." }

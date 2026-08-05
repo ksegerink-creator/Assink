@@ -6,7 +6,7 @@ intro: "More than 100 years as a specialist in high-quality metal constructions.
 bodyHeading: "Specialist in structural work"
 body:
   - "Assink & Schipholt carries out heavy and complex welded assemblies — from individual parts to fully welded assemblies. We work for machine building, equipment manufacturing and infrastructure engineering, and handle parts up to 10 tonnes."
-  - "With five 5-tonne overhead cranes and a spacious hall, we produce constructions up to 8 metres high — safely and efficiently."
+  - "The hall has five 5-tonne overhead cranes. By lifting in tandem — two cranes on a single load — we move assemblies of up to 10 tonnes, to a height of 8 metres."
   - "We take care of not only welding and structural work but also surface treatments such as shot blasting, powder coating, anodising and stainless steel passivation — much of it in house. That gives you a single point of contact from engineering to finishing."
 materials: ["Stainless steel 304 / 316", "Aluminium", "Brass", "Steel"]
 process:
@@ -18,7 +18,7 @@ process:
 specs:
   - { label: "Max. weight per piece", value: "up to 10 tonnes" }
   - { label: "Max. height of construction", value: "8 m" }
-  - { label: "Lifting equipment", value: "5 overhead cranes, 5 tonnes each" }
+  - { label: "Lifting equipment", value: "5 overhead cranes of 5 tonnes; tandem lifting up to 10 tonnes" }
 applications: ["Machine building (frames, guards)", "Equipment manufacturing", "Infrastructure engineering", "Food industry", "Electrical engineering", "Mechatronics"]
 related:
   - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Corrosion-resistant constructions in stainless steel." }
