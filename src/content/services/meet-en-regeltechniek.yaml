@@ -1,0 +1,31 @@
+title: "Meet- en regeltechniek"
+slug: "meet-en-regeltechniek"
+template: "service"
+group: "sector"
+order: 67
+kicker: "Sector"
+h1: "Precisieplaatwerk voor meet- en regeltechniek"
+intro: "In de meet- en regeltechniek zijn de delen klein en de toleranties krap. Wij snijden en kanten behuizingen, montageframes en panelen waarbij een tiende millimeter uitmaakt."
+heroPhoto:
+  subject: "Werk voor de sector meet- en regeltechniek"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "We maken instrumentbehuizingen, montageplaten, beugels en frames — vaak in kleine series en in RVS of aluminium. Passingen voor sensoren, wartels en connectoren snijden we mee, zodat monteren zonder nabewerken kan."
+  - "Bij dun plaatwerk is bevestiging een aandachtspunt: pers- en trekmoeren zetten we mee in, zodat er geen losse tapgaten of moeren nodig zijn. Randen worden machinaal ontbraamd, en waar het zichtwerk is leveren we geslepen of gestraald."
+materials: ["RVS 304", "RVS 316", "Aluminium", "Staal", "Messing"]
+process:
+  - { step: "Lasersnijden", desc: "Passingen voor sensoren en connectoren." }
+  - { step: "Kanten", desc: "Krappe toleranties, ± 0,2 mm." }
+  - { step: "Bevestiging", desc: "Pers- en trekmoeren inzetten." }
+  - { step: "Afwerken", desc: "Ontbramen, slijpen of stralen." }
+applications: ["Instrumentbehuizingen", "Montageplaten en beugels", "Panelen", "Kleine series"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Krappe toleranties." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Bevestiging in dun plaatwerk." }
+  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Maatvast kantwerk." }
+seo:
+  title: "Meet- en regeltechniek — precisieplaatwerk en behuizingen"
+  description: "Instrumentbehuizingen, montageplaten en panelen voor meet- en regeltechniek in RVS en aluminium. Lasersnijden en kanten tot ± 0,2 mm, ook in kleine series."
+translated: ["nl"]

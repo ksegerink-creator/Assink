@@ -1,0 +1,31 @@
+title: "Mechatronica"
+slug: "mechatronica"
+template: "service"
+group: "sector"
+order: 69
+kicker: "Sector"
+h1: "Plaatwerk en frames voor mechatronica"
+intro: "In mechatronica komen mechanica, elektronica en besturing samen in weinig ruimte. Dat vraagt maatvaste frames, beugels en panelen waarin alles op zijn plek valt."
+heroPhoto:
+  subject: "Werk voor de sector mechatronica"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Wij maken machineframes, montagebeugels, kabelgoten en afschermpanelen — in staal, RVS en aluminium. Buislasersnijden is hier vaak de snelste route: uitsparingen, gaten en verstekken zitten al in het profiel voordat er gelast wordt."
+  - "Voor de opbouw is maatvastheid bepalend. We kanten op ± 0,2 mm en controleren de maten na het lassen, omdat warmte-inbreng een samenstelling kan laten werken. Verspaande delen betrekken we van een vaste partner."
+materials: ["Aluminium", "Staal", "RVS 304", "RVS 316"]
+process:
+  - { step: "Buislasersnijden", desc: "Profielen met uitsparingen en verstekken." }
+  - { step: "Kanten", desc: "Maatvaste panelen en beugels, ± 0,2 mm." }
+  - { step: "Lassen", desc: "Vervormingsarm TIG- of laserlassen." }
+  - { step: "Maatcontrole", desc: "Meten na het lassen." }
+applications: ["Machineframes", "Montagebeugels", "Afschermpanelen", "Kabelgoten"]
+related:
+  - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Profielen in één bewerking." }
+  - { slug: "machinebouw", label: "Machinebouw", desc: "Complete bouwgroepen." }
+  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
+seo:
+  title: "Mechatronica — frames, beugels en panelen"
+  description: "Maatvaste machineframes, montagebeugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm en vervormingsarm lassen."
+translated: ["nl"]

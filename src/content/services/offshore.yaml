@@ -1,0 +1,31 @@
+title: "Offshore"
+slug: "offshore"
+template: "service"
+group: "sector"
+order: 65
+kicker: "Sector"
+h1: "Constructies en plaatwerk voor offshore"
+intro: "Offshore is een zoute, natte omgeving waar corrosie en trillingen het werk bepalen. Wij maken gelaste constructies en plaatwerk in RVS 316 en staal, met gekwalificeerde lasprocessen en documentatie per order."
+heroPhoto:
+  subject: "Werk voor de sector offshore"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Voor offshore-toepassingen leveren we frames, behuizingen, bordessen en gelaste samenstellingen tot 10 ton. De materiaalkeuze bepaalt de levensduur: waar zeewater bij komt, adviseren we RVS 316 in plaats van 304."
+  - "Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we gecertificeerd volgens ISO 1090-1. Materiaalcertificaten en maatcontroles leggen we per order vast, zodat de herleidbaarheid geregeld is. Conserveren en coaten besteden we uit aan een vaste partner."
+materials: ["RVS 316", "RVS 304", "Staal", "Aluminium"]
+process:
+  - { step: "Materiaalkeuze", desc: "Advies op corrosieklasse en toepassing." }
+  - { step: "Snijden & kanten", desc: "Laser- en buislasersnijden, kanten." }
+  - { step: "Lassen", desc: "Gekwalificeerde processen volgens ISO 3834-2." }
+  - { step: "Keuring & documentatie", desc: "Maatcontrole en vastlegging per order." }
+applications: ["Frames en bordessen", "Behuizingen", "Gelaste samenstellingen tot 10 ton"]
+related:
+  - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk tot 10 ton." }
+  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendig samenstellen." }
+  - { slug: "kwaliteit", label: "Kwaliteit", desc: "Certificering en keuring." }
+seo:
+  title: "Offshore — gelaste constructies en RVS-plaatwerk"
+  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor offshore, in RVS 316 en staal. Laswerk onder ISO 3834-2, staalconstructies volgens ISO 1090-1."
+translated: ["nl"]

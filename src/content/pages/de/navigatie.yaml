@@ -67,21 +67,30 @@ sectoren:
   - label: Maschinenbau
     slug: machinebouw
     idx: '1'
-  - label: Lebensmittelindustrie
+  - label: Lebensmittel- & Verpackungsindustrie
     slug: plaatwerk/voedingsmiddelenindustrie
     idx: '2'
-  - label: Industriegehäuse
-    slug: industriele-behuizing
+  - label: Elektrotechnik
+    slug: elektrotechniek
     idx: '3'
-  - label: Edelstahlblech für den Maschinenbau
-    slug: plaatwerk/rvs-plaatwerk-voor-machinebouw
+  - label: Apparatebau
+    slug: apparatenbouw
     idx: '4'
-  - label: Edelstahlkonstruktionen für den Maschinenbau
-    slug: plaatwerk/rvs-constructies-voor-machinebouw
+  - label: Offshore
+    slug: offshore
     idx: '5'
-  - label: Edelstahlgehäuse & Maschinenverkleidung
-    slug: plaatwerk/rvs-behuizingen-machinebeplating
+  - label: Infrastruktur
+    slug: infra
     idx: '6'
+  - label: Mess- & Regeltechnik
+    slug: meet-en-regeltechniek
+    idx: '7'
+  - label: Mechatronik
+    slug: mechatronica
+    idx: '8'
+  - label: Halbleiterindustrie
+    slug: semicon
+    idx: '9'
 footerDiensten:
   - label: Blechbearbeitung
     slug: plaatwerk

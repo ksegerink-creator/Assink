@@ -4,15 +4,15 @@ template: "service"
 group: "snijden"
 order: 33
 kicker: "Snijden 3.3"
-h1: "Verspaning via een vaste partner"
-intro: "Draai- en freeswerk voeren we niet in Hengelo uit; dat besteden we uit aan een vaste partner. Zo leveren we naast ons eigen plaatwerk en constructiewerk ook fijnmechanische onderdelen, met één aanspreekpunt voor het geheel."
+h1: "Verspaning bij uw plaatwerk en constructies"
+intro: "Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen. Het verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming en de levering. Zo bestelt u een compleet product op één adres."
 heroPhoto:
   # Let op: verspaning gebeurt niet in Hengelo. Deze foto kan dus niet bij
   # Assink gemaakt worden — gebruik beeld van het geleverde onderdeel.
-  subject: "Fijnmechanisch gedraaid en gefreesd onderdeel bewerkt metalen onderdeel met koelvloeistof"
+  subject: "Fijnmechanisch gedraaid en gefreesd onderdeel"
   orient: "Liggend 16:10"
-  crop: "Machine-detail"
-  comp: "Frees, spanen, koeling"
+  crop: "Onderdeel-detail"
+  comp: "Gedraaid deel naast plaatwerk uit eigen productie"
 body:
   - "Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Dit werk laten we uitvoeren op CNC-gestuurde machines bij een vaste partner — voor herhaalbare kwaliteit en hoge nauwkeurigheid."
   - "Werkbaar in staal, RVS, aluminium, messing en gietaluminium — van prototype tot serie, gecombineerd met ons eigen plaatwerk en constructiewerk voor complete producten uit één hand."

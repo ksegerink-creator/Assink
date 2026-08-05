@@ -67,21 +67,30 @@ sectoren:
   - label: Machine building
     slug: machinebouw
     idx: '1'
-  - label: Food industry
+  - label: Food & packaging industry
     slug: plaatwerk/voedingsmiddelenindustrie
     idx: '2'
-  - label: Industrial enclosures
-    slug: industriele-behuizing
+  - label: Electrical engineering
+    slug: elektrotechniek
     idx: '3'
-  - label: Stainless steel sheet metal for machine building
-    slug: plaatwerk/rvs-plaatwerk-voor-machinebouw
+  - label: Equipment manufacturing
+    slug: apparatenbouw
     idx: '4'
-  - label: Stainless steel constructions for machine building
-    slug: plaatwerk/rvs-constructies-voor-machinebouw
+  - label: Offshore
+    slug: offshore
     idx: '5'
-  - label: Stainless steel enclosures & machine cladding
-    slug: plaatwerk/rvs-behuizingen-machinebeplating
+  - label: Infrastructure
+    slug: infra
     idx: '6'
+  - label: Instrumentation & control
+    slug: meet-en-regeltechniek
+    idx: '7'
+  - label: Mechatronics
+    slug: mechatronica
+    idx: '8'
+  - label: Semiconductor
+    slug: semicon
+    idx: '9'
 footerDiensten:
   - label: Sheet metal
     slug: plaatwerk

@@ -1,0 +1,31 @@
+title: "Semicon"
+slug: "semicon"
+template: "service"
+group: "sector"
+order: 70
+kicker: "Sector"
+h1: "Precisieplaatwerk voor de semiconindustrie"
+intro: "Equipmentbouwers in de semicon vragen krappe toleranties en een schone, gelijkmatige afwerking. Wij leveren precisieplaatwerk, frames en panelen in RVS en aluminium."
+heroPhoto:
+  subject: "Werk voor de sector semicon"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "We maken frames, afschermpanelen, montageplaten en behuizingen voor machines en modules. Snijden gebeurt op de laser, kanten op de servo-elektrische kantpers met een nauwkeurigheid van ± 0,2 mm, en randen worden machinaal ontbraamd."
+  - "Voor het oppervlak is gelijkmatigheid belangrijk: we leveren geslepen RVS met een consistente korrel of glasparelgestraald aluminium en RVS. Waar nodig passiveren we. Assemblage in een cleanroom hoort niet bij ons werk; wij leveren de delen en samenstellingen aan."
+materials: ["RVS 304", "RVS 316", "Aluminium"]
+process:
+  - { step: "Lasersnijden", desc: "Maatvaste delen en uitsparingen." }
+  - { step: "Kanten", desc: "Krappe toleranties, ± 0,2 mm." }
+  - { step: "Ontbramen", desc: "Machinaal gratvrije, veilige randen." }
+  - { step: "Oppervlak", desc: "Slijpen, glasparelstralen of passiveren." }
+applications: ["Frames en modules", "Afschermpanelen", "Montageplaten", "Behuizingen"]
+related:
+  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Krappe toleranties." }
+  - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Geslepen RVS voor zichtwerk." }
+  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lichtgewicht plaatwerk." }
+seo:
+  title: "Semicon — precisieplaatwerk, frames en panelen"
+  description: "Precisieplaatwerk, frames en afschermpanelen voor de semiconindustrie in RVS en aluminium. Kanten tot ± 0,2 mm, machinaal ontbramen en een gelijkmatige oppervlakteafwerking."
+translated: ["nl"]

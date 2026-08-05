@@ -1,0 +1,31 @@
+title: "Elektrotechniek"
+slug: "elektrotechniek"
+template: "service"
+group: "sector"
+order: 64
+kicker: "Sector"
+h1: "Plaatwerk voor de elektrotechniek"
+intro: "Besturingskasten, montageplaten en behuizingen vragen maatvast plaatwerk: deuren die sluiten, uitsparingen die passen en randen die veilig zijn. Wij snijden, kanten en lassen die delen in staal, RVS en aluminium."
+heroPhoto:
+  subject: "Werk voor de sector elektrotechniek"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Voor de elektrotechniek maken we onder andere kastdelen, montageplaten, frontpanelen en behuizingen. Uitsparingen voor wartels, displays en koeling snijden we mee op de laser, zodat er achteraf niets bijgewerkt hoeft te worden."
+  - "Maatvastheid is hier belangrijker dan snelheid: een kast die een halve millimeter uit het lood staat, sluit niet. Onze kantpers werkt servo-elektrisch met een nauwkeurigheid van ± 0,2 mm, en na het kanten ontbramen we de randen machinaal."
+materials: ["Staal", "RVS 304", "RVS 316", "Aluminium"]
+process:
+  - { step: "Lasersnijden", desc: "Uitsparingen voor wartels, displays en ventilatie." }
+  - { step: "Kanten", desc: "Maatvaste kastdelen, ± 0,2 mm." }
+  - { step: "Lassen & samenstellen", desc: "TIG-, MIG- of laserlassen tot complete behuizing." }
+  - { step: "Afwerken", desc: "Ontbramen, stralen of passiveren." }
+applications: ["Besturingskasten", "Montageplaten", "Frontpanelen", "Industriële behuizingen"]
+related:
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen op maat." }
+  - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Geslepen RVS voor zichtwerk." }
+  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Bevestiging in dun plaatwerk." }
+seo:
+  title: "Plaatwerk voor de elektrotechniek — kasten en behuizingen"
+  description: "Maatvaste kastdelen, montageplaten en behuizingen voor de elektrotechniek in staal, RVS en aluminium. Lasersnijden, kanten tot ± 0,2 mm en lassen in eigen huis."
+translated: ["nl"]

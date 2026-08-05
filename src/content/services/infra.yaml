@@ -1,0 +1,31 @@
+title: "Infra"
+slug: "infra"
+template: "service"
+group: "sector"
+order: 66
+kicker: "Sector"
+h1: "Staalconstructies voor infra"
+intro: "Werk voor de openbare infrastructuur wordt beoordeeld op herleidbaarheid: welk materiaal, welke las, welke keuring. Wij zijn gecertificeerd volgens ISO 1090-1 en leggen dat per order vast."
+heroPhoto:
+  subject: "Werk voor de sector infra"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Voor infratechniek maken we gelaste staalconstructies, frames, luiken en behuizingen. Onderdelen tot 10 ton en constructies tot 8 meter hoogte kunnen we in eigen hal produceren en met vijf bovenloopkranen van 5 ton veilig verplaatsen."
+  - "ISO 1090-1 regelt de uitvoering van staal- en aluminiumconstructies met CE-markering; ISO 3834-2 regelt de lasprocessen. Van ingangscontrole tot eindkeuring documenteren we de stappen, zodat een opdrachtgever kan zien wat er is gedaan."
+materials: ["Staal", "RVS 304", "RVS 316", "Aluminium"]
+process:
+  - { step: "Ingangscontrole", desc: "Materiaalcertificaten en maten bij binnenkomst." }
+  - { step: "Snijden & kanten", desc: "Laser- en buislasersnijden, kanten." }
+  - { step: "Lassen", desc: "Gekwalificeerde processen, ISO 3834-2." }
+  - { step: "Eindkeuring", desc: "Maatcontrole en vrijgave met documentatie." }
+applications: ["Gelaste staalconstructies", "Frames en bordessen", "Luiken en behuizingen"]
+related:
+  - { slug: "constructies", label: "Constructies", desc: "Zwaar gelast constructiewerk." }
+  - { slug: "kwaliteit", label: "Kwaliteit", desc: "ISO 1090-1 en ISO 3834-2." }
+  - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Profielen op maat." }
+seo:
+  title: "Infra — gelaste staalconstructies volgens ISO 1090-1"
+  description: "Staalconstructies, frames en behuizingen voor infratechniek. Gecertificeerd volgens ISO 1090-1 en ISO 3834-2, met documentatie van ingangscontrole tot eindkeuring."
+translated: ["nl"]

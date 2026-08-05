@@ -1,0 +1,31 @@
+title: "Apparatenbouw"
+slug: "apparatenbouw"
+template: "service"
+group: "sector"
+order: 68
+kicker: "Sector"
+h1: "Plaatwerk en constructies voor apparatenbouw"
+intro: "Apparatenbouwers hebben plaatwerk en gelaste samenstellingen nodig die in één keer passen. Wij maken frames, omkastingen en behuizingen tot 10 ton, van los onderdeel tot afgewerkte samenstelling."
+heroPhoto:
+  subject: "Werk voor de sector apparatenbouw"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "We leveren gelaste frames, omkastingen, trechters en behuizingen. Doordat lasersnijden, buislasersnijden, kanten en lassen onder één dak staan, blijven de doorlooptijden kort en zijn maatafwijkingen snel terug te leiden naar de bron."
+  - "Voor onderdelen die met product of reinigingsmiddelen in aanraking komen, werken we in RVS 304 of 316 en werken we naden glad af. Passiveren en beitsen doen we in eigen huis; poedercoaten besteden we uit."
+materials: ["RVS 304", "RVS 316", "Staal", "Aluminium"]
+process:
+  - { step: "Engineering", desc: "Meedenken over maakbaarheid en lasvolgorde." }
+  - { step: "Snijden & kanten", desc: "Laser, buislaser en kantpers." }
+  - { step: "Lassen & samenstellen", desc: "TIG-, MIG- of laserlassen tot 10 ton." }
+  - { step: "Afwerken", desc: "Slijpen, beitsen, passiveren of stralen." }
+applications: ["Gelaste frames", "Omkastingen en behuizingen", "Trechters", "Samenstellingen tot 10 ton"]
+related:
+  - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk." }
+  - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Corrosiebestendig plaatwerk." }
+  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen op maat." }
+seo:
+  title: "Apparatenbouw — plaatwerk en gelaste samenstellingen"
+  description: "Frames, omkastingen en behuizingen voor apparatenbouw in RVS, staal en aluminium. Lasersnijden, kanten en lassen tot 10 ton onder één dak."
+translated: ["nl"]
