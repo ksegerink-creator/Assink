@@ -57,6 +57,73 @@ Authentication), zodat alleen ingelogde teamleden de site zien.
 Vervang in `astro.config.mjs` alleen de adapter-regel (`vercel()` →
 `netlify()` na `npm i @astrojs/netlify`). De rest van de opzet blijft gelijk.
 
+## Draaiboek livegang
+
+De volgorde is belangrijk: DNS pas omzetten als de rest klaarstaat, anders staat
+er even een halve site. De DNS-records worden beheerd door **Joey**.
+
+### Stap 0 — vooraf (klaar)
+- Build groen, 135 pagina's in NL/EN/DE.
+- 12.539 interne links gecontroleerd: geen dode links.
+- 301-redirects van alle 59 oude URL's getest op de deploy: 60/60 komen uit op
+  een werkende pagina.
+- Site staat op `noindex` zolang `PUBLIC_SITE_LIVE` niet op `true` staat.
+
+### Stap 1 — domein toevoegen in Vercel [jij]
+Project → **Settings → Domains → Add Domain**:
+1. Voeg `assinkschipholt.nl` toe (zonder www). Vercel vraagt dan of je `www`
+   ook wilt toevoegen — ja, en zet die op **redirect naar** `assinkschipholt.nl`.
+   De huidige site is zonder www geïndexeerd; daarom is dat de primaire variant.
+2. Vercel toont daarna de **exacte DNS-waarden**. Neem die letterlijk over.
+
+> **Let op:** de CNAME-waarde is per project uniek (bijvoorbeeld
+> `d1d4fc829fe7bc7c.vercel-dns-017.com`). Geef Joey dus de waarden die in
+> jullie dashboard staan — niet een waarde uit een handleiding.
+
+### Stap 2 — DNS zetten [Joey]
+Joey heeft nodig, letterlijk zoals Vercel ze toont:
+
+| Naam | Type | Waarde | Voor |
+|---|---|---|---|
+| `@` (root) | A | *IP uit het Vercel-dashboard* | assinkschipholt.nl |
+| `www` | CNAME | *projectspecifieke waarde uit het dashboard* | www → redirect |
+
+Bestaande records die blijven werken: laat MX (e-mail) en eventuele TXT-records
+voor SPF/DKIM **ongemoeid**. Alleen de A- en CNAME-records voor de website
+wijzigen. Wordt dit verkeerd gedaan, dan valt de e-mail uit — dat is het
+grootste risico van deze stap.
+
+### Stap 3 — indexering aanzetten [jij]
+Zet in Vercel `PUBLIC_SITE_LIVE=true` (Production) en **redeploy**. Controleer
+daarna dat de `noindex`-regel weg is:
+
+```bash
+curl -s https://assinkschipholt.nl/ | grep -c "noindex"
+```
+
+Uitkomst `0` is goed. Staat er `1`, dan is de variabele niet actief of is er
+niet opnieuw gedeployd.
+
+### Stap 4 — controleren na livegang
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" https://assinkschipholt.nl/
+curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://www.assinkschipholt.nl/
+curl -s -o /dev/null -w "%{http_code} -> %{redirect_url}\n" https://assinkschipholt.nl/wat-maakt-een-buislaser-uniek/
+```
+Verwacht: `200`, een redirect naar de non-www variant, en een redirect van het
+oude blogartikel naar `/kennisbank/...`.
+
+### Stap 5 — Search Console [jij]
+Verifieer het domein via **DNS** (niet via de metatag van de oude site; die
+staat niet in de nieuwe). Dien daarna de sitemap in:
+`https://assinkschipholt.nl/sitemap-index.xml`
+
+### Terugdraaien
+Gaat er iets mis, dan zet Joey de DNS terug naar de oude host. De oude site
+blijft ondertussen ongewijzigd staan, dus terugvallen kost alleen de
+DNS-propagatietijd (meestal minuten tot een uur, afhankelijk van de TTL).
+Zet de TTL daarom **vóór** de omzetting laag, bijvoorbeeld 300 seconden.
+
 ## Nog te doen vóór PUBLIEKE livegang
 
 Bijgewerkt 28 juli 2026. De punten met **[jij]** kan ik niet zelf uitvoeren.
