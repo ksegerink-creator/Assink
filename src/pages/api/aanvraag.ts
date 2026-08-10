@@ -11,7 +11,7 @@ import { CONTACT, SITE } from "@data/site";
  * gevoelig. Zo komen ze rechtstreeks in de eigen mailbox.
  *
  * Benodigde omgevingsvariabelen op Vercel (Production):
- *   SMTP_HOST   mailserver, bv. smtp.example.nl
+ *   SMTP_HOST   smtp.resend.com (of een andere SMTP-server)
  *   SMTP_PORT   587 (STARTTLS) of 465 (SSL)
  *   SMTP_USER   gebruikersnaam van het verzendaccount
  *   SMTP_PASS   wachtwoord van dat account

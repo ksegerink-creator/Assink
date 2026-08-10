@@ -99,19 +99,51 @@ De drie formulieren (hero-offerte, contact, offerte) posten naar
 een externe formulierdienst — klanten sturen tekeningen mee en die horen niet
 door een derde partij te lopen.
 
-Zet in Vercel → Settings → Environment Variables (**Production**):
+**Gekozen route: Resend.** De Microsoft 365-route (SMTP AUTH op `info@`) viel af
+omdat het beheer van de `assinkschipholt.nl`-tenant buiten ons bereik ligt.
+Resend biedt gewone SMTP, dus de code hoeft niet aangepast te worden.
 
-| Variabele | Waarde | Toelichting |
+**1. Account en domein.** Maak een account op resend.com en voeg onder
+**Domains** het subdomein `send.assinkschipholt.nl` toe (niet het rootdomein).
+Kies zo mogelijk de EU-regio.
+
+**2. DNS-records naar Joey.** Resend toont drie records. Ze staan allemaal op
+het `send`-subdomein of op een DKIM-selector:
+
+| Type | Host | Waarvoor |
 |---|---|---|
-| `SMTP_HOST` | bv. `smtp.jullieprovider.nl` | mailserver |
-| `SMTP_PORT` | `587` of `465` | 465 = SSL, 587 = STARTTLS |
-| `SMTP_USER` | gebruikersnaam | van het verzendaccount |
-| `SMTP_PASS` | wachtwoord | vul dit **zelf** in het dashboard in |
-| `MAIL_TO` | `info@assinkschipholt.nl` | waar aanvragen aankomen |
-| `MAIL_FROM` | bv. `website@assinkschipholt.nl` | moet bij het SMTP-account horen |
+| MX | `send` | bezorging bij Resend |
+| TXT | `send` | SPF |
+| TXT | `resend._domainkey.send` | DKIM |
 
-Daarna **redeployen**. Controleer met een testaanvraag via het contactformulier
-of de mail aankomt.
+> **Veiligheidscheck:** de MX-record hoort op host `send`, **nooit** op `@`.
+> Het MX-record van het rootdomein blijft `assinkschipholt-nl.mail.protection.outlook.com`
+> — dat is jullie Microsoft 365-mail. Wordt dat overschreven, dan ligt de
+> e-mail eruit. Laat Joey dit expliciet nakijken vóór hij opslaat.
+
+**3. API-sleutel.** Maak onder **API Keys** een sleutel met verzendrechten en
+kopieer die (begint met `re_`).
+
+**4. Variabelen in Vercel** → Settings → Environment Variables, **Production**:
+
+| Variabele | Waarde |
+|---|---|
+| `SMTP_HOST` | `smtp.resend.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_USER` | `resend` |
+| `SMTP_PASS` | de API-sleutel (`re_…`) |
+| `MAIL_TO` | `info@assinkschipholt.nl` |
+| `MAIL_FROM` | `website@send.assinkschipholt.nl` |
+
+`MAIL_FROM` moet op het geverifieerde subdomein liggen, anders weigert Resend
+de verzending. `MAIL_TO` mag elk adres zijn.
+
+**5. Redeployen** en een testaanvraag doen via het contactformulier.
+
+Grenzen van deze route: een bericht mag maximaal 40 MB zijn inclusief
+base64-codering, dus onze bijlagelimiet van 10 MB past ruim. CAD-formaten
+(`.dwg`, `.dxf`, `.step`, `.stp`) staan niet op de lijst met geblokkeerde
+bestandstypen — die kunnen dus gewoon mee.
 
 Wat er is ingebouwd en getest: verplichte AVG-checkbox met link naar de
 privacyverklaring, honeypot- en tijdslotcontrole tegen bots, bestandsupload
