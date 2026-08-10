@@ -1,0 +1,162 @@
+---
+import { t } from "@data/i18n";
+import { localizePath, toLocale } from "@utils/paths";
+
+/**
+ * Vaste onderdelen van elk formulier: het honeypot-veld, het tijdstempelveld,
+ * de verplichte AVG-checkbox en het vak voor de statusmelding.
+ *
+ * Het honeypot-veld is voor bezoekers verborgen maar niet met `display:none` —
+ * sommige bots vullen juist alleen zichtbare velden niet in. We halen het uit
+ * beeld en uit de tabvolgorde, en zetten aria-hidden zodat schermlezers het
+ * overslaan.
+ */
+interface Props {
+  /** Welk formulier: bepaalt waar we bij een fout naartoe terugsturen. */
+  soort: "hero" | "contact" | "offerte";
+}
+const { soort } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+// De privacyverklaring bestaat alleen in het Nederlands.
+const privacy = localizePath("privacy", "nl");
+---
+<input type="hidden" name="soort" value={soort} />
+<input type="hidden" name="taal" value={locale} />
+<input type="hidden" name="ts" value="" data-ts />
+
+<div class="hp" aria-hidden="true">
+  <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+</div>
+
+<label class="consent">
+  <input type="checkbox" name="akkoord" required />
+  <span>
+    {t(locale, "consentPre")} <a href={privacy} target="_blank" rel="noopener">{t(locale, "consentLink")}</a>{t(locale, "consentPost") ? ` ${t(locale, "consentPost")}` : ""}.
+  </span>
+</label>
+
+<p class="fstatus" role="status" aria-live="polite" data-status hidden></p>
+
+<style>
+  .hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .consent {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .6rem;
+    align-items: start;
+    font-family: var(--f-body) !important;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    color: var(--ink-2) !important;
+    line-height: 1.5;
+  }
+  .consent input {
+    appearance: none;
+    width: 1.05rem; height: 1.05rem;
+    margin: .15rem 0 0;
+    border: 1.5px solid var(--steel);
+    background: transparent;
+    display: grid; place-content: center;
+    cursor: pointer;
+    flex: none;
+  }
+  .consent input:checked { background: var(--blue); border-color: var(--blue); }
+  .consent input:checked::after {
+    content: "";
+    width: .28rem; height: .56rem;
+    border: solid #fff; border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  .consent input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .consent a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+
+  .fstatus {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    line-height: 1.5;
+    padding: .6rem .8rem;
+    border-left: 2px solid var(--blue);
+    background: var(--sky-bg);
+    color: var(--ink);
+  }
+  .fstatus[data-fout] { border-left-color: #B4472A; background: color-mix(in srgb, #B4472A 8%, transparent); }
+  .fdone { font-family: var(--f-body); }
+  .fdone strong { display: block; font-family: var(--f-disp); font-size: 1.15rem; margin-bottom: .4rem; }
+</style>
+
+<script>
+  /**
+   * Progressieve verbetering. Zonder JavaScript post het formulier gewoon naar
+   * /api/aanvraag en stuurt de server door naar de bedanktpagina. Met
+   * JavaScript versturen we via fetch en tonen we de melding op de pagina, zodat
+   * de bezoeker zijn plek niet verliest.
+   */
+  const TEKST = {
+    sending: document.documentElement.lang.startsWith("de")
+      ? "Wird gesendet…"
+      : document.documentElement.lang.startsWith("en")
+        ? "Sending…"
+        : "Versturen…",
+  };
+
+  document.querySelectorAll<HTMLFormElement>('form[action="/api/aanvraag"]').forEach((form) => {
+    const ts = form.querySelector<HTMLInputElement>("[data-ts]");
+    if (ts) ts.value = String(Date.now());
+
+    const status = form.querySelector<HTMLElement>("[data-status]");
+    const knop = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+    form.addEventListener("submit", async (e) => {
+      // Laat de browser zelf de verplichte velden afdwingen.
+      if (!form.checkValidity()) return;
+      e.preventDefault();
+
+      if (status) {
+        status.hidden = false;
+        status.removeAttribute("data-fout");
+        status.textContent = TEKST.sending;
+      }
+      if (knop) knop.disabled = true;
+
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { accept: "application/json" },
+        });
+        const data = await res.json().catch(() => ({ ok: false, bericht: "" }));
+
+        if (res.ok && data.ok) {
+          // Formulier vervangen door de bevestiging: geen dubbele inzending.
+          const klaar = document.createElement("div");
+          klaar.className = "fstatus fdone";
+          klaar.setAttribute("role", "status");
+          klaar.innerHTML = `<strong>✓</strong>${data.bericht ?? ""}`;
+          form.replaceWith(klaar);
+          klaar.scrollIntoView({ block: "center", behavior: "smooth" });
+          return;
+        }
+
+        if (status) {
+          status.setAttribute("data-fout", "");
+          status.textContent = data.bericht || "Het verzenden lukte niet.";
+        }
+      } catch {
+        if (status) {
+          status.setAttribute("data-fout", "");
+          status.textContent = "Geen verbinding. Probeer het opnieuw of bel ons.";
+        }
+      } finally {
+        if (knop) knop.disabled = false;
+      }
+    });
+  });
+</script>

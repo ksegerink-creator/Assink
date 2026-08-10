@@ -1,0 +1,51 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import { t } from "@data/i18n";
+import { CONTACT } from "@data/site";
+import { localizePath, toLocale } from "@utils/paths";
+import { LOCALE_PATHS } from "@utils/locales";
+
+/**
+ * Bedanktpagina na een verstuurd formulier. Bestaat in alle drie de talen,
+ * omdat de formulieren ook op de Engelse en Duitse pagina's staan.
+ * Bewust op noindex: deze pagina hoort niet in Google.
+ */
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
+
+const locale = toLocale(Astro.params.lang);
+const nav = (slug: string) => localizePath(slug, locale);
+---
+<PageLayout
+  title={t(locale, "thanksTitle")}
+  description={t(locale, "sentText")}
+  canonicalSlug="bedankt"
+  noindex={true}
+>
+  <section class="sec dank">
+    <div class="wrap dank__inner">
+      <span class="mono dank__mark" aria-hidden="true">✓</span>
+      <h1>{t(locale, "sentHead")}</h1>
+      <p class="dank__lead">{t(locale, "sentText")}</p>
+      <div class="dank__acts">
+        <a class="btn" href={nav("")}>{t(locale, "sentBack")}</a>
+        <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .dank { padding-block: clamp(48px, 9vw, 120px); }
+  .dank__inner { max-width: 34em; }
+  .dank__mark {
+    display: inline-grid; place-content: center;
+    width: 2.6rem; height: 2.6rem;
+    background: var(--blue); color: var(--btn-ink);
+    font-size: 1.3rem; margin-bottom: 1.4rem;
+  }
+  .dank h1 { font-size: clamp(30px, 4.6vw, 58px); }
+  .dank__lead { margin-top: 18px; color: var(--ink-2); font-size: clamp(16px, 1.5vw, 19px); }
+  .dank__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+</style>

@@ -18,6 +18,8 @@ pnpm-debug.log*
 # environment
 .env
 .env.production
+.env*.local
+!.env.example
 
 # editor / OS
 .DS_Store

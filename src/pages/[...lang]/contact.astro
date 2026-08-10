@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
+import FormExtras from "@components/forms/FormExtras.astro";
 import { t } from "@data/i18n";
 import { toLocale } from "@utils/paths";
 import { readPage } from "@utils/content";
@@ -62,7 +63,7 @@ const c = await readPage("contact", locale);
           <IndustrialImage src={photo(c.werkFoto)} alt="Kantpersgereedschap met plaatdeel" ratio="4/3" />
         </figure>
       </div>
-      <form class="form rv" method="post" action="#" aria-describedby="form-note">
+      <form class="form rv" method="post" action="/api/aanvraag">
         <div class="form__grid">
           <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
           <label>{t(locale, "formCompany")}<input type="text" name="bedrijf" autocomplete="organization" /></label>
@@ -70,8 +71,8 @@ const c = await readPage("contact", locale);
           <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
         </div>
         <label>Bericht<textarea name="bericht" rows="6" required></textarea></label>
+        <FormExtras soort="contact" />
         <button class="btn" type="submit">{t(locale, "sendMessage")} <span class="arr">→</span></button>
-        <p id="form-note" class="form__hint mono">Formulier wordt vóór livegang gekoppeld aan het e-mailsysteem — bel of mail tot die tijd rechtstreeks.</p>
       </form>
     </div>
   </section>

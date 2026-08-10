@@ -93,6 +93,38 @@ voor SPF/DKIM **ongemoeid**. Alleen de A- en CNAME-records voor de website
 wijzigen. Wordt dit verkeerd gedaan, dan valt de e-mail uit — dat is het
 grootste risico van deze stap.
 
+### Stap 2b — formulieren activeren [jij]
+De drie formulieren (hero-offerte, contact, offerte) posten naar
+`/api/aanvraag`. Die route verstuurt via **jullie eigen mailserver**, niet via
+een externe formulierdienst — klanten sturen tekeningen mee en die horen niet
+door een derde partij te lopen.
+
+Zet in Vercel → Settings → Environment Variables (**Production**):
+
+| Variabele | Waarde | Toelichting |
+|---|---|---|
+| `SMTP_HOST` | bv. `smtp.jullieprovider.nl` | mailserver |
+| `SMTP_PORT` | `587` of `465` | 465 = SSL, 587 = STARTTLS |
+| `SMTP_USER` | gebruikersnaam | van het verzendaccount |
+| `SMTP_PASS` | wachtwoord | vul dit **zelf** in het dashboard in |
+| `MAIL_TO` | `info@assinkschipholt.nl` | waar aanvragen aankomen |
+| `MAIL_FROM` | bv. `website@assinkschipholt.nl` | moet bij het SMTP-account horen |
+
+Daarna **redeployen**. Controleer met een testaanvraag via het contactformulier
+of de mail aankomt.
+
+Wat er is ingebouwd en getest: verplichte AVG-checkbox met link naar de
+privacyverklaring, honeypot- en tijdslotcontrole tegen bots, bestandsupload
+(PDF, DWG, DXF, STEP, PNG, JPG; max. 10 MB), `Reply-To` op de aanvrager zodat
+antwoorden direct bij de klant komen, en een bedanktpagina in alle drie de
+talen. Zonder JavaScript werkt het formulier ook — dan stuurt de server door
+naar de bedanktpagina.
+
+> **Belangrijk:** ontbreken de SMTP-variabelen, dan verdwijnt een aanvraag
+> **niet** stil. De bezoeker krijgt dan de melding dat het versturen niet lukte,
+> met telefoonnummer en e-mailadres erbij. Zo raken jullie geen aanvraag kwijt
+> zolang de koppeling nog niet staat.
+
 ### Stap 3 — indexering aanzetten [jij]
 Zet in Vercel `PUBLIC_SITE_LIVE=true` (Production) en **redeploy**. Controleer
 daarna dat de `noindex`-regel weg is:

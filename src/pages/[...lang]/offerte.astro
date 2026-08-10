@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
+import FormExtras from "@components/forms/FormExtras.astro";
 import { t } from "@data/i18n";
 import { toLocale } from "@utils/paths";
 import { readPage } from "@utils/content";
@@ -56,7 +57,7 @@ const services = t(locale, "operations").split(",");
   <section class="sec tight">
     <div class="wrap">
       <SectionHead title={t(locale, "formHead")} index={t(locale, "formIndex")} />
-      <form class="form rv" method="post" action="#" enctype="multipart/form-data" aria-describedby="q-note">
+      <form class="form rv" method="post" action="/api/aanvraag" enctype="multipart/form-data">
         <div class="form__grid">
           <label>{t(locale, "formName")}<input type="text" name="naam" autocomplete="name" required /></label>
           <label>{t(locale, "formCompany")}<input type="text" name="bedrijf" autocomplete="organization" required /></label>
@@ -78,14 +79,11 @@ const services = t(locale, "operations").split(",");
           <input type="file" name="tekening" accept=".pdf,.dwg,.dxf,.step,.stp,.png,.jpg,.jpeg" />
           <span class="file__hint mono">{t(locale, "formFileHint")}</span>
         </label>
+        <FormExtras soort="offerte" />
         <div class="form__foot">
           <button class="btn" type="submit">{t(locale, "formSubmit")} <span class="arr">→</span></button>
           <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "formOrCall")} {CONTACT.tel}</a>
         </div>
-        <p id="q-note" class="notice">
-          <span class="tag">{t(locale, "formTodoTag")}</span>
-          <span>{t(locale, "formTodoText")} <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</span>
-        </p>
       </form>
     </div>
   </section>
