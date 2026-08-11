@@ -7,7 +7,6 @@ specs:
   - { label: "Werklengte", value: "tot 3100 mm" }
   - { label: "Aandrijving", value: "servo-elektrisch" }
   - { label: "Bijzonderheid", value: "gepatenteerde rollenaandrijving in de bovenbalk" }
-foto: /src/assets/uploads/machines/safan-ebrake-fabrieksfoto.jpg
 photo:
   subject: "Safan Darley E-Brake kantpers zet een plaat"
   orient: "Liggend 4:3"
