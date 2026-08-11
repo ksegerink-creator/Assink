@@ -25,7 +25,9 @@ export const prerender = false;
 
 /** Bestandstypen die we accepteren voor tekeningen. */
 const TOEGESTAAN = [".pdf", ".dwg", ".dxf", ".step", ".stp", ".png", ".jpg", ".jpeg"];
-const MAX_BYTES = 10 * 1024 * 1024; // 10 MB
+const MAX_BYTES = 10 * 1024 * 1024; // 10 MB per bestand
+const MAX_BESTANDEN = 6;
+const MAX_TOTAAL_BYTES = 20 * 1024 * 1024; // 20 MB totaal (mailserver-limiet incl. base64-overhead)
 
 /** Velden per formuliersoort, met een leesbare naam voor de mail. */
 const LABELS: Record<string, string> = {
@@ -110,16 +112,24 @@ export const POST: APIRoute = async ({ request }) => {
     return antwoord(request, 422, false, "Vul een geldig e-mailadres in.", terug, taal);
   }
 
-  // ── Bijlage ───────────────────────────────────────────────────────────────
+  // ── Bijlagen ──────────────────────────────────────────────────────────────
   const bijlagen: { filename: string; content: Buffer }[] = [];
-  const bestand = data.get("tekening");
-  if (bestand instanceof File && bestand.size > 0) {
+  const bestanden = data.getAll("tekeningen").filter((b): b is File => b instanceof File && b.size > 0);
+  if (bestanden.length > MAX_BESTANDEN) {
+    return antwoord(request, 422, false, `Maximaal ${MAX_BESTANDEN} bestanden per aanvraag.`, terug, taal);
+  }
+  let totaal = 0;
+  for (const bestand of bestanden) {
     const ext = bestand.name.slice(bestand.name.lastIndexOf(".")).toLowerCase();
     if (!TOEGESTAAN.includes(ext)) {
       return antwoord(request, 422, false, `Bestandstype ${ext} wordt niet ondersteund.`, terug, taal);
     }
     if (bestand.size > MAX_BYTES) {
-      return antwoord(request, 422, false, "Het bestand is groter dan 10 MB. Mail het los toe.", terug, taal);
+      return antwoord(request, 422, false, `${bestand.name} is groter dan 10 MB. Mail dit bestand los toe.`, terug, taal);
+    }
+    totaal += bestand.size;
+    if (totaal > MAX_TOTAAL_BYTES) {
+      return antwoord(request, 422, false, "De bestanden zijn samen groter dan 20 MB. Mail de rest los toe.", terug, taal);
     }
     bijlagen.push({
       filename: bestand.name,
@@ -139,7 +149,7 @@ export const POST: APIRoute = async ({ request }) => {
     kop,
     "",
     ...regels.map(([l, v]) => `${l}: ${v}`),
-    bijlagen.length ? `\nBijlage: ${bijlagen[0].filename}` : "",
+    bijlagen.length ? `\nBijlage${bijlagen.length > 1 ? "n" : ""}: ${bijlagen.map((b) => b.filename).join(", ")}` : "",
     "",
     `Verstuurd via ${SITE.url}`,
   ].join("\n");
@@ -154,7 +164,7 @@ export const POST: APIRoute = async ({ request }) => {
         )
         .join("")}
     </table>
-    ${bijlagen.length ? `<p style="font:14px system-ui">Bijlage: ${esc(bijlagen[0].filename)}</p>` : ""}
+    ${bijlagen.length ? `<p style="font:14px system-ui">Bijlage${bijlagen.length > 1 ? "n" : ""}: ${bijlagen.map((b) => esc(b.filename)).join(", ")}</p>` : ""}
     <p style="font:12px system-ui;color:#6C7A8C">Verstuurd via ${SITE.url}</p>
   `;
 
