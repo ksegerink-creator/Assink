@@ -5,7 +5,7 @@ h1: "Constructions and sheet metal for offshore"
 intro: "Offshore is a salty, wet environment where corrosion and vibration set the terms. We make welded constructions and sheet metal in stainless steel 316 and steel, with qualified welding procedures and documentation for every order."
 body:
   - "For offshore applications we supply frames, enclosures, platforms and welded assemblies up to 10 tonnes. Material choice determines service life: where seawater is involved, we advise stainless steel 316 rather than 304."
-  - "Our welding falls under ISO 3834-2, and for steel structures we are certified to ISO 1090-1. Material certificates and dimensional checks are recorded per order, so traceability is covered. Preservation and coating are outsourced to a regular partner."
+  - "Our welding falls under ISO 3834-2, and for steel structures we are certified to EN 1090-1. Material certificates and dimensional checks are recorded per order, so traceability is covered. Preservation and coating are outsourced to a regular partner."
 materials: ["Stainless steel 316", "Stainless steel 304", "Steel", "Aluminium"]
 process:
   - { step: "Material selection", desc: "Advice based on corrosion class and application." }
@@ -19,4 +19,4 @@ related:
   - { slug: "kwaliteit", label: "Quality", desc: "Certification and inspection." }
 seo:
   title: "Offshore — welded constructions and stainless steel sheet metal"
-  description: "Frames, enclosures and welded assemblies up to 10 tonnes for offshore, in stainless steel 316 and steel. Welding under ISO 3834-2, steel structures to ISO 1090-1."
+  description: "Frames, enclosures and welded assemblies up to 10 tonnes for offshore, in stainless steel 316 and steel. Welding under ISO 3834-2, steel structures to EN 1090-1."

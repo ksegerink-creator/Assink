@@ -13,7 +13,7 @@ heroPhoto:
   comp: "Representatief werk uit deze sector"
 body:
   - "Voor offshore-toepassingen leveren we frames, behuizingen, bordessen en gelaste samenstellingen tot 10 ton. De materiaalkeuze bepaalt de levensduur: waar zeewater bij komt, adviseren we RVS 316 in plaats van 304."
-  - "Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we gecertificeerd volgens ISO 1090-1. Materiaalcertificaten en maatcontroles leggen we per order vast, zodat de herleidbaarheid geregeld is. Conserveren en coaten besteden we uit aan een vaste partner."
+  - "Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we gecertificeerd volgens EN 1090-1. Materiaalcertificaten en maatcontroles leggen we per order vast, zodat de herleidbaarheid geregeld is. Conserveren en coaten besteden we uit aan een vaste partner."
 materials: ["RVS 316", "RVS 304", "Staal", "Aluminium"]
 process:
   - { step: "Materiaalkeuze", desc: "Advies op corrosieklasse en toepassing." }
@@ -27,5 +27,5 @@ related:
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "Certificering en keuring." }
 seo:
   title: "Offshore — gelaste constructies en RVS-plaatwerk"
-  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor offshore, in RVS 316 en staal. Laswerk onder ISO 3834-2, staalconstructies volgens ISO 1090-1."
+  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor offshore, in RVS 316 en staal. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
 translated: ["nl"]

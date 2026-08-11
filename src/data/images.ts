@@ -109,7 +109,6 @@ const SERVICE_MID: Record<string, ImageMetadata> = {
 
 /** Machinepark: beeld per machine-id (bestandsnaam zonder extensie). */
 const MACHINE_IMAGES: Record<string, ImageMetadata> = {
-  "trulaser-3040": asLaser,
   "trulaser-tube-3000": asBesturing,
   "safan-ebrake-150t": asKantbank,
   "timesavers-42rb": asAfwerking,

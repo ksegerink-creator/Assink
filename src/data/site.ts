@@ -114,7 +114,7 @@ export const CONTACT = {
 export const CERTS = [
   "ISO 9001",
   "ISO 3834-2",
-  "ISO 1090-1",
+  "EN 1090-1",
   "Koninklijke Metaalunie",
   "SBB-erkend leerbedrijf",
 ] as const;
