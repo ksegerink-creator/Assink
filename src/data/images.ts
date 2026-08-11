@@ -28,6 +28,7 @@ import asPand from "../assets/photos/as-pand.jpg";                  // bedrijfsp
 import asStralen from "../assets/photos/as-stralen.jpg";            // straalcabine met medewerker (2T8A9554)
 import asBoren from "../assets/photos/as-boren.jpg";                // boren/bewerken (M59A1370)
 import asHistorie from "../assets/photos/as-historie.png";          // historisch beeld productiehal (archief)
+import safanEbrakeFabrieksfoto from "../assets/photos/safan-ebrake-fabrieksfoto.jpg"; // fabrieksfoto Safan Darley, tijdelijk t/m eigen foto van de vloer
 
 /** Sleutel → beeld. Elke fotopositie op de site verwijst hiernaar. */
 export const IMAGES: Record<string, ImageMetadata | undefined> = {
@@ -111,7 +112,7 @@ const SERVICE_MID: Record<string, ImageMetadata> = {
 const MACHINE_IMAGES: Record<string, ImageMetadata> = {
   "trulaser-3040": asLaser,
   "trulaser-tube-3000": asBesturing,
-  "safan-ebrake-150t": asKantbank,
+  "safan-ebrake-150t": safanEbrakeFabrieksfoto,
   "timesavers-42rb": asAfwerking,
   "straalcabine": asStralen,
 };
