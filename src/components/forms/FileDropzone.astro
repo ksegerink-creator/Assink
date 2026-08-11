@@ -1,0 +1,184 @@
+---
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+
+/**
+ * Sleep-en-klik bijlagevak voor tekeningen/bestanden, gedeeld door het
+ * hero-formulier en het offerteformulier. Houdt geselecteerde bestanden zelf
+ * bij (niet alleen in het native <input>), omdat een nieuwe klik-op-kiezen
+ * anders de vorige keuze vervangt in plaats van aanvult. Voor verzending
+ * wordt de lijst via een DataTransfer teruggezet op het echte <input>, zodat
+ * de gewone FormData(form)-afhandeling in FormExtras.astro ongewijzigd werkt.
+ */
+interface Props {
+  /** Compactere opmaak voor gebruik in de donkere hero-kaart. */
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+const msgs = {
+  remove: t(locale, "formFileRemove"),
+  tooBig: t(locale, "formFileTooBig"),
+  tooMany: t(locale, "formFileTooMany"),
+  totalTooBig: t(locale, "formFileTotalTooBig"),
+  typeInvalid: t(locale, "formFileTypeInvalid"),
+};
+---
+<div class:list={["file", { compact }]}>
+  <span class="file__label">{t(locale, "formFile")}</span>
+  <div class="dropzone" data-dropzone>
+    <div class="dropzone__zone">
+      <input
+        type="file"
+        name="tekeningen"
+        id="tekeningen"
+        multiple
+        accept=".pdf,.dwg,.dxf,.step,.stp,.png,.jpg,.jpeg"
+        data-fileinput
+      />
+      <label for="tekeningen" class="dropzone__label">
+        <span class="dropzone__cta">{t(locale, "formFileCta")}</span>
+        <span class="dropzone__hint mono">{t(locale, "formFileHint")} · {t(locale, "formFileLimits")}</span>
+      </label>
+    </div>
+    <ul class="dropzone__list" data-filelist hidden></ul>
+  </div>
+  <p class="dropzone__error mono" data-fileerror hidden></p>
+</div>
+
+<style>
+  .file { display: grid; gap: 7px; }
+  .file__label { font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel); }
+  .file.compact .file__label { font-size: 10.5px; letter-spacing: .07em; }
+
+  .dropzone { border: 1px dashed var(--line); background: var(--surface); transition: border-color .15s, background .15s; }
+  .dropzone[data-over] { border-color: var(--blue); background: var(--sky-bg); }
+  .dropzone__zone { position: relative; }
+  .dropzone__zone input[data-fileinput] {
+    position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;
+  }
+  .dropzone__label {
+    display: grid; gap: 4px; justify-items: center; text-align: center;
+    padding: 22px 16px; cursor: pointer; pointer-events: none;
+  }
+  .file.compact .dropzone__label { padding: 14px 12px; gap: 3px; }
+  .dropzone__cta { font-family: var(--f-body); font-size: 15px; color: var(--ink); text-transform: none; letter-spacing: 0; }
+  .file.compact .dropzone__cta { font-size: 13.5px; }
+  .dropzone__hint { color: var(--steel); font-size: 11.5px; }
+  .file.compact .dropzone__hint { font-size: 10px; }
+  .dropzone__list {
+    list-style: none; margin: 0; padding: 10px 14px 14px; display: grid; gap: 6px;
+    border-top: 1px solid var(--line);
+  }
+  .file.compact .dropzone__list { padding: 8px 12px 12px; }
+  .dropzone__list li {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    font-family: var(--f-body); font-size: 14px; color: var(--ink);
+  }
+  .file.compact .dropzone__list li { font-size: 13px; }
+  .dropzone__list .fname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .dropzone__list .fsize { flex: none; color: var(--steel); font-family: var(--f-mono); font-size: 11.5px; }
+  .dropzone__list button {
+    flex: none; border: none; background: none; color: var(--steel); cursor: pointer;
+    font-family: var(--f-mono); font-size: 12px; text-decoration: underline; text-underline-offset: 2px; padding: 0;
+  }
+  .dropzone__list button:hover { color: #B4472A; }
+  .dropzone__error {
+    color: #B4472A; font-size: 12px;
+  }
+</style>
+
+<script define:vars={{ msgs }}>
+  const ALLOWED = [".pdf", ".dwg", ".dxf", ".step", ".stp", ".png", ".jpg", ".jpeg"];
+  const MAX_BYTES = 10 * 1024 * 1024;
+  const MAX_TOTAL = 20 * 1024 * 1024;
+  const MAX_FILES = 6;
+
+  document.querySelectorAll("[data-dropzone]").forEach((zone) => {
+    const input = zone.querySelector("[data-fileinput]");
+    const list = zone.querySelector("[data-filelist]");
+    const errorEl = zone.parentElement?.querySelector("[data-fileerror]");
+    let files = [];
+
+    const fmt = (bytes) =>
+      bytes >= 1024 * 1024 ? `${(bytes / (1024 * 1024)).toFixed(1)} MB` : `${Math.ceil(bytes / 1024)} KB`;
+
+    function showError(msg) {
+      if (!errorEl) return;
+      errorEl.textContent = msg;
+      errorEl.hidden = !msg;
+    }
+
+    function sync() {
+      const dt = new DataTransfer();
+      files.forEach((f) => dt.items.add(f));
+      input.files = dt.files;
+
+      list.innerHTML = "";
+      list.hidden = files.length === 0;
+      files.forEach((f, i) => {
+        const li = document.createElement("li");
+        const name = document.createElement("span");
+        name.className = "fname";
+        name.textContent = f.name;
+        const size = document.createElement("span");
+        size.className = "fsize";
+        size.textContent = fmt(f.size);
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = msgs.remove;
+        btn.addEventListener("click", () => {
+          files.splice(i, 1);
+          sync();
+        });
+        li.append(name, size, btn);
+        list.append(li);
+      });
+    }
+
+    function addFiles(incoming) {
+      showError("");
+      for (const f of Array.from(incoming)) {
+        if (files.some((x) => x.name === f.name && x.size === f.size)) continue;
+        const ext = f.name.slice(f.name.lastIndexOf(".")).toLowerCase();
+        if (!ALLOWED.includes(ext)) {
+          showError(`${f.name} ${msgs.typeInvalid}`);
+          continue;
+        }
+        if (f.size > MAX_BYTES) {
+          showError(`${f.name} ${msgs.tooBig}`);
+          continue;
+        }
+        if (files.length >= MAX_FILES) {
+          showError(msgs.tooMany);
+          break;
+        }
+        const totaal = files.reduce((s, x) => s + x.size, 0) + f.size;
+        if (totaal > MAX_TOTAL) {
+          showError(msgs.totalTooBig);
+          break;
+        }
+        files.push(f);
+      }
+      sync();
+    }
+
+    input.addEventListener("change", () => addFiles(input.files));
+
+    ["dragenter", "dragover"].forEach((evt) =>
+      zone.addEventListener(evt, (e) => {
+        e.preventDefault();
+        zone.setAttribute("data-over", "");
+      }),
+    );
+    ["dragleave", "dragend", "drop"].forEach((evt) =>
+      zone.addEventListener(evt, (e) => {
+        e.preventDefault();
+        zone.removeAttribute("data-over");
+      }),
+    );
+    zone.addEventListener("drop", (e) => {
+      if (e.dataTransfer?.files?.length) addFiles(e.dataTransfer.files);
+    });
+  });
+</script>

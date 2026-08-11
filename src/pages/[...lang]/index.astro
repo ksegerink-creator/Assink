@@ -1,6 +1,7 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
 import FormExtras from "@components/forms/FormExtras.astro";
+import FileDropzone from "@components/forms/FileDropzone.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import SocialSection from "@components/sections/SocialSection.astro";
@@ -56,7 +57,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
       </div>
 
       <!-- Direct een aanvraag doen, zonder doorklikken -->
-      <form class="hform" method="post" action="/api/aanvraag" aria-labelledby="hform-h">
+      <form class="hform" method="post" action="/api/aanvraag" enctype="multipart/form-data" aria-labelledby="hform-h">
         <h2 id="hform-h" class="hform__h">{hero.formulierTitel}</h2>
         <label>{t(locale, "formName")}<input type="text" name="naam" autocomplete="name" required /></label>
         <div class="hform__row">
@@ -64,6 +65,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
           <label>{t(locale, "formPhone")}<input type="tel" name="telefoon" autocomplete="tel" /></label>
         </div>
         <label>{t(locale, "formSubject")}<textarea name="omschrijving" rows="3" placeholder={t(locale, "formSubjectPlaceholder")} required></textarea></label>
+        <FileDropzone compact />
         <FormExtras soort="hero" />
         <button class="btn hform__btn" type="submit">{t(locale, "formSubmit")} <span class="arr">→</span></button>
         <p class="hform__hint mono">{t(locale, "formHintResponse")} · {t(locale, "formHintDrawing")} <a href={nav("offerte")}>{t(locale, "formHintFull")}</a> · {t(locale, "formHintDirect")} <a href={CONTACT.telHref}>{CONTACT.tel}</a></p>
