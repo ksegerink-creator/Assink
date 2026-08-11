@@ -88,8 +88,30 @@ const privacy = localizePath("privacy", "nl");
     color: var(--ink);
   }
   .fstatus[data-fout] { border-left-color: #B4472A; background: color-mix(in srgb, #B4472A 8%, transparent); }
-  .fdone { font-family: var(--f-body); }
-  .fdone strong { display: block; font-family: var(--f-disp); font-size: 1.15rem; margin-bottom: .4rem; }
+  /*
+   * :global nodig — .fdone wordt door het script hieronder met
+   * document.createElement() aangemaakt. Astro's scoped CSS werkt via een
+   * data-astro-cid-…-attribuut dat alleen op elementen komt die in deze
+   * template staan; dynamisch aangemaakte elementen krijgen dat attribuut
+   * niet en missen anders elke scoped stijl.
+   */
+  :global(.fdone) {
+    font-family: var(--f-body);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ink);
+    border-left: 2px solid var(--blue);
+    background: var(--sky-bg);
+    padding: 1rem 1.1rem;
+  }
+  :global(.fdone strong) {
+    display: block;
+    font-family: var(--f-disp);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--blue);
+    margin-bottom: .35rem;
+  }
 </style>
 
 <script>
@@ -135,13 +157,19 @@ const privacy = localizePath("privacy", "nl");
         const data = await res.json().catch(() => ({ ok: false, bericht: "" }));
 
         if (res.ok && data.ok) {
-          // Formulier vervangen door de bevestiging: geen dubbele inzending.
+          // Inhoud van het formulier vervangen door de bevestiging — niet het
+          // <form>-element zelf. Dat element draagt op sommige pagina's de
+          // kaartopmaak (achtergrond, rand, schaduw, padding), bijvoorbeeld
+          // .hform in de hero; die opmaak moet blijven staan.
           const klaar = document.createElement("div");
-          klaar.className = "fstatus fdone";
+          klaar.className = "fdone";
           klaar.setAttribute("role", "status");
-          klaar.innerHTML = `<strong>✓</strong>${data.bericht ?? ""}`;
-          form.replaceWith(klaar);
-          klaar.scrollIntoView({ block: "center", behavior: "smooth" });
+          const veilig = document.createElement("span");
+          veilig.textContent = data.bericht ?? "";
+          klaar.innerHTML = "<strong>✓</strong>";
+          klaar.append(veilig);
+          form.replaceChildren(klaar);
+          form.scrollIntoView({ block: "center", behavior: "smooth" });
           return;
         }
 
