@@ -44,6 +44,10 @@ const {
 const siteLive = import.meta.env.PUBLIC_SITE_LIVE === "true";
 const noindex = noindexProp || !siteLive;
 
+// Analytics alleen op de live productiesite — nooit op previews/dev, zodat
+// testbezoeken de statistieken niet vervuilen.
+const gaId = siteLive ? import.meta.env.PUBLIC_GA_ID : undefined;
+
 const locale: Locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
 const canonical = absUrl(site, canonicalSlug, locale);
@@ -96,6 +100,18 @@ const graphs = [organizationJsonLd(site), ...jsonld];
     <meta name="generator" content={Astro.generator} />
 
     {graphs.map((g) => <script type="application/ld+json" set:html={JSON.stringify(g)} />)}
+
+    {gaId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script define:vars={{ gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag("js", new Date());
+          gtag("config", gaId);
+        </script>
+      </>
+    )}
 
     <!-- Progressive enhancement flag for reveal animations. -->
     <script is:inline>

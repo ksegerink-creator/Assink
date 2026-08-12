@@ -35,6 +35,7 @@ De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nod
 | `KEYSTATIC_GITHUB_CLIENT_ID` | volgt uit stap 4 |
 | `KEYSTATIC_GITHUB_CLIENT_SECRET` | volgt uit stap 4 |
 | `PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | volgt uit stap 4 |
+| `PUBLIC_GA_ID` | Google Analytics 4 measurement ID (`G-...`), alleen actief bij `PUBLIC_SITE_LIVE=true` |
 
 ## 4. Keystatic ↔ GitHub-app koppelen (eenmalig, begeleid in de browser)
 1. Open na de eerste deploy `https://<jouw-vercel-url>/keystatic`.
