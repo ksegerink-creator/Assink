@@ -13,6 +13,7 @@ heroPhoto:
   comp: "Kantpers, plaat onder de pers"
 body:
   - "Zetten (kanten) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150-3100 T3 zetten we maatvast, met aandacht voor terugvering en buigradius per materiaal."
+  - "RVS zetten vraagt om een andere aanpak dan staal: RVS veert sterker terug en is gevoeliger voor krassen op het zichtoppervlak. Wij passen de buigradius en gereedschapkeuze daarop aan, zodat de hoek klopt en het oppervlak intact blijft."
 materials: ["RVS", "Aluminium", "Messing", "Staal"]
 process:
   - { step: "Uitslag bepalen", desc: "Correcte uitslag inclusief buigcompensatie." }

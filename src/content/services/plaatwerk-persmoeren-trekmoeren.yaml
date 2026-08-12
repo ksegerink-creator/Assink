@@ -13,6 +13,7 @@ heroPhoto:
   comp: "Persmoer in plaat, bovenaanzicht"
 body:
   - "Persmoeren en trekmoeren geven plaatwerk een sterke schroefdraadverbinding zonder los bevestigingsmateriaal. Zo leveren wij montageklare delen die op uw lijn direct verder kunnen."
+  - "Persmoeren plaatsen we machinaal en haaks, met een perskracht die past bij plaatdikte en moertype — zodat de schroefdraad ook bij regelmatig demonteren en monteren stevig blijft zitten."
 materials: ["RVS", "Aluminium", "Staal"]
 process:
   - { step: "Voorbereiden", desc: "Gaten op maat snijden." }

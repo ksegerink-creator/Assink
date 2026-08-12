@@ -14,6 +14,7 @@ heroPhoto:
 body:
   - "Aluminium combineert een laag gewicht met goede sterkte en corrosiebestendigheid. Dat maakt het ideaal voor bewegende delen, behuizingen en constructies waar gewicht telt."
   - "Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing."
+  - "Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer terug bij het zetten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag, gereedschap en lasparameters."
 materials: ["Aluminium (diverse legeringen)"]
 process:
   - { step: "Lasersnijden", desc: "Snijden van aluminium plaat." }

@@ -13,6 +13,7 @@ heroPhoto:
   comp: "Egale aluminium lasrups"
 body:
   - "Aluminium geleidt warmte snel en oxideert makkelijk. Met de juiste voorbereiding en techniek (TIG/MIG) leggen wij sterke, nette naden — geschikt voor machinebouw, behuizingen en lichtgewicht constructies."
+  - "Als metaalbedrijf met ervaring in aluminium lassen kennen wij de valkuilen: te veel warmte-inbreng geeft vervorming, een verkeerde voorbereiding geeft poreuze naden. Wij stemmen stroom, draadkeuze en volgorde af op plaatdikte en legering."
 materials: ["Aluminium (diverse legeringen)"]
 process:
   - { step: "Voorbereiding", desc: "Reinigen en oxidelaag verwijderen." }

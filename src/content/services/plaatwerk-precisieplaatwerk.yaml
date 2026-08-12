@@ -5,7 +5,7 @@ group: "plaatwerk"
 order: 24
 kicker: "Plaatwerk 2.4"
 h1: "Precisieplaatwerk"
-intro: "Nauwkeurigheid tot op de millimeter. Van enkelstuks tot series en herhaalorders — maatvast en reproduceerbaar."
+intro: "Precisie plaatwerk met nauwkeurigheid tot op de millimeter. Van enkelstuks tot series en herhaalorders — maatvast en reproduceerbaar."
 heroPhoto:
   subject: "Precisieplaatwerkdeel op meettafel tijdens maatcontrole"
   orient: "Liggend 16:10"
@@ -13,6 +13,7 @@ heroPhoto:
   comp: "Onderdeel, schuifmaat in beeld"
 body:
   - "Precisieplaatwerk vraagt om beheerste processen: van lasersnijden en zetten tot afwerken. Door vaste werkinstructies en maatcontrole is stuk duizend even goed als stuk één."
+  - "Voor precisie plaatwerk met krappe toleranties combineren wij lasersnijden met een servo-elektrische kantpers: die geeft een constantere buighoek dan een hydraulische pers, ook bij lange series."
 materials: ["RVS", "Aluminium", "Messing", "Staal"]
 process:
   - { step: "Werkvoorbereiding", desc: "Uitslag, buiglijnen en toleranties bepalen." }
