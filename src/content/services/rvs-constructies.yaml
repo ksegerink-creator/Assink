@@ -5,7 +5,7 @@ group: "samenstellen"
 order: 51
 kicker: "Samenstellen 5.2"
 h1: "RVS-constructies"
-intro: "Corrosiebestendige constructies in roestvast staal — van frames tot volledig gelaste samenstellingen, hygiënisch en representatief afgewerkt."
+intro: "Corrosiebestendig RVS-constructiewerk — van frames tot volledig gelaste samenstellingen, hygiënisch en representatief afgewerkt."
 heroPhoto:
   subject: "Gelaste RVS-constructie tijdens eindcontrole"
   orient: "Liggend 16:10"
@@ -13,6 +13,7 @@ heroPhoto:
   comp: "RVS-frame, controlemoment"
 body:
   - "RVS-constructies combineren sterkte met corrosiebestendigheid. Wij lassen en stellen samen in RVS 304 en 316, met afwerking (beitsen, passiveren) afgestemd op de toepassing — bijvoorbeeld in de voedingsmiddelenindustrie."
+  - "Ons RVS-constructiewerk combineert buislasersnijden voor passklare profielen met TIG- en laserlassen, gevolgd door beitsen en passiveren zodat de corrosiebestendigheid van het materiaal na bewerking behouden blijft."
 materials: ["RVS 304", "RVS 316"]
 process:
   - { step: "Buislasersnijden", desc: "Passklare buis en profiel." }

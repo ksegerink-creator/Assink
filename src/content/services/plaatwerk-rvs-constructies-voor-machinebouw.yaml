@@ -5,7 +5,7 @@ group: "sector"
 order: 62
 kicker: "Sector"
 h1: "RVS-constructies voor machinebouw"
-intro: "Gelaste RVS-frames en samenstellingen voor de machinebouw — sterk, corrosiebestendig en maatvast."
+intro: "RVS-frames en -constructies afgestemd op uw machine-assemblage: buislasersnijden voor passklare profielen, gelast en montageklaar geleverd."
 heroPhoto:
   subject: "RVS-frame voor machine tijdens samenstelling"
   orient: "Liggend 16:10"
@@ -13,6 +13,7 @@ heroPhoto:
   comp: "Gelast RVS-frame op bok"
 body:
   - "Wij bouwen RVS-constructies en frames die passen in de machinebouw: maatvast, netjes gelast en afgewerkt. Buislasersnijden zorgt voor passklare verbindingen en efficiënt lassen."
+  - "Frames en samenstellingen worden afgestemd op uw assemblageproces: montagepunten, bevestigingen en toleranties bepalen we samen met uw engineering, zodat het frame in één keer past."
 materials: ["RVS 304 / 316"]
 process:
   - { step: "Buislasersnijden", desc: "Passklare profielen." }
@@ -20,7 +21,7 @@ process:
   - { step: "Afwerking", desc: "Beitsen en passiveren." }
 applications: ["OEM-machinebouw", "Apparatenbouw"]
 related:
-  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Alle RVS-constructiewerk." }
+  - { slug: "rvs-constructies", label: "RVS-constructiewerk", desc: "Materiaal, afwerking en toepassingen." }
   - { slug: "constructies", label: "Constructies", desc: "Constructiewerk." }
   - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd lassen." }
 seo:

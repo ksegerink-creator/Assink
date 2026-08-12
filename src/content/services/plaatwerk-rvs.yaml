@@ -5,7 +5,7 @@ group: "plaatwerk"
 order: 21
 kicker: "Plaatwerk 2.1"
 h1: "RVS-plaatwerk"
-intro: "Geslepen RVS voor zichtwerk: corrosiebestendig, representatief en maatvast. Verwerking via CO₂-laser, ontbramen en kantbewerking."
+intro: "Geslepen RVS-plaatwerk voor zichtwerk: corrosiebestendig, representatief en maatvast. Onze RVS-plaatbewerking omvat lasersnijden, zetten, ontbramen en passiveren."
 heroPhoto:
   subject: "Close-up van geslepen RVS zetwerk met scherpe kant"
   orient: "Liggend 16:10"
@@ -14,6 +14,8 @@ heroPhoto:
 body:
   - "RVS (roestvast staal) is bij uitstek geschikt voor toepassingen die corrosiebestendig én representatief moeten zijn. Wij verwerken voornamelijk RVS 304 en 316."
   - "Voor zichtwerk leveren we geslepen oppervlakken met een consistente korrel. Snijden gebeurt met de laser; randen worden ontbraamd en waar nodig gepassiveerd."
+  - "RVS-plaatbewerking vraagt om zorgvuldigheid: verkeerde lasparameters of resten koolstofstaal op het oppervlak leiden tot roestvorming. Wij passiveren na het lassen, zodat het corrosiebestendige oppervlak intact blijft."
+  - "Van enkelstuks zichtwerk tot seriematig RVS-plaatwerk voor de voedingsmiddelenindustrie of machinebouw: iedere batch wordt met dezelfde korrel en dezelfde toleranties afgewerkt."
 materials: ["RVS 304", "RVS 316", "Geslepen / geborsteld"]
 process:
   - { step: "Lasersnijden", desc: "2D-lasersnijden met minimale toleranties." }

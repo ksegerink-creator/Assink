@@ -5,14 +5,15 @@ group: "sector"
 order: 61
 kicker: "Sector"
 h1: "RVS-plaatwerk voor machinebouw"
-intro: "Maatvast RVS-plaatwerk voor de machinebouw: panelen, omkastingen en onderdelen, afgestemd op uw serie en planning."
+intro: "RVS-plaatwerk geïntegreerd in uw machinebouwtraject: van tekening en werkvoorbereiding tot seriematige levering, afgestemd op uw planning en assemblage."
 heroPhoto:
   subject: "RVS-plaatwerkonderdelen gereed voor machinebouw"
   orient: "Liggend 16:10"
   crop: "Onderdelen op pallet"
   comp: "Serie RVS-delen"
 body:
-  - "Voor machinebouwers leveren wij RVS-plaatwerk dat maatvast en reproduceerbaar is, geïntegreerd met laswerk en assemblage. Zo houdt u één aanspreekpunt van tekening tot samenstelling."
+  - "Voor machinebouwers en OEM'ers leveren wij RVS-plaatwerk dat naadloos aansluit op uw assemblageproces: vaste toleranties, herhaalbare kwaliteit per serie en één aanspreekpunt voor plaatwerk, laswerk en levering."
+  - "Bekijk ook onze bredere pagina over RVS-plaatwerk voor de achtergrond bij materiaalkeuze, oppervlakteafwerking en verwerking van RVS 304 en 316."
 materials: ["RVS 304 / 316"]
 process:
   - { step: "Werkvoorbereiding", desc: "Uitslag en toleranties." }
@@ -21,7 +22,7 @@ process:
 applications: ["OEM-machinebouw", "Elektronica", "Voeding"]
 related:
   - { slug: "machinebouw", label: "Machinebouw", desc: "Complete machinebouw." }
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
+  - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Materiaalkeuze en verwerking van RVS 304/316." }
   - { slug: "plaatwerk/rvs-constructies-voor-machinebouw", label: "RVS-constructies voor machinebouw", desc: "Gelaste RVS-samenstellingen." }
 seo:
   title: "RVS-plaatwerk voor machinebouw"
