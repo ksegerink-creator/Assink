@@ -50,7 +50,7 @@ export function organizationJsonLd(site: URL | string) {
       "Laserlassen",
       "Lasersnijden",
     ],
-    hasCredential: CERTS.filter((c) => c.startsWith("ISO")),
+    hasCredential: CERTS.filter((c) => c.startsWith("ISO") || c.startsWith("EN ")),
     sameAs: [SOCIAL.linkedin, SOCIAL.facebook, SOCIAL.instagram].filter(Boolean),
   };
 }
