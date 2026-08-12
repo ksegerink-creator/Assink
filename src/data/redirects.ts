@@ -24,6 +24,7 @@ export const REDIRECTS: Record<string, string> = {
     "/kennisbank/metaalbewerking-voedingsmiddelenindustrie/",
   "/machinebouw-uitbesteden-ervaren-metaalpartner":
     "/kennisbank/machinebouw-uitbesteden-ervaren-metaalpartner/",
+  "/lassen-hengelo-staal-rvs-aluminium": "/plaatwerk/lassen/",
 
   // ── 2a. Oude Engelse pagina's (vertaalde slugs → canonieke NL-slug) ────
   "/en/sheet-metal": "/en/plaatwerk/",
