@@ -4,8 +4,8 @@ template: "service"
 group: "samenstellen"
 order: 30
 kicker: "Sector 5.3"
-h1: "Maatwerk in machinebouw"
-intro: "Of u nu een complete machineoplossing zoekt of maatwerk bouwgroepen nodig heeft — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise."
+h1: "Machinebouw op maat"
+intro: "Of u nu een complete machineoplossing zoekt of machinebouw op maat nodig heeft voor losse bouwgroepen — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise."
 heroPhoto:
   subject: "Gemonteerde bouwgroep / mechanische samenstelling gereed voor uitlevering"
   orient: "Liggend 16:10"
@@ -28,6 +28,6 @@ related:
   - { slug: "constructies", label: "Constructies", desc: "Gelaste frames en samenstellingen." }
   - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "RVS-behuizingen op maat." }
 seo:
-  title: "Machinebouw — complete machines en bouwgroepen"
-  description: "Complete machinebouw en assemblage: plaatwerk, verspaande onderdelen en mechanische samenstellingen met just-in-time levering voor OEM'ers en industrie."
+  title: "Machinebouw op maat — complete machines en bouwgroepen"
+  description: "Machinebouw op maat: complete machines, bouwgroepen en mechanische samenstellingen met just-in-time levering voor OEM'ers en industrie, uit Hengelo."
 translated: ["nl"]
