@@ -39,6 +39,11 @@ const config = {
     destination: to,
     permanent: true,
   })),
+  // Wekelijkse trigger voor de automatische blogconceptgenerator (zie
+  // src/pages/api/cron/blog-generator.ts). Elke maandag 07:00 UTC. Vercel
+  // stuurt hierbij automatisch "Authorization: Bearer $CRON_SECRET" mee,
+  // mits die omgevingsvariabele is ingesteld — zie DEPLOY.md.
+  crons: [{ path: "/api/cron/blog-generator", schedule: "0 7 * * 1" }],
 };
 
 writeFileSync("vercel.json", JSON.stringify(config, null, 2) + "\n");

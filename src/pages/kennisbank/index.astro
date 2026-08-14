@@ -11,8 +11,8 @@ import { readPage } from "@utils/content";
  * Duitse versies van deze artikelen. De pagina staat daarom buiten de
  * [...lang]-map en is niet in het EN/DE-menu opgenomen.
  */
-const artikelen = (await getCollection("articles")).sort((a, b) =>
-  b.data.date.localeCompare(a.data.date),
+const artikelen = (await getCollection("articles", ({ data }) => data.gepubliceerd)).sort(
+  (a, b) => b.data.date.localeCompare(a.data.date),
 );
 const alg = await readPage("algemeen", "nl");
 

@@ -8,7 +8,9 @@ import { imageFor } from "@data/images";
 
 /** Kennisbank-artikel. Nederlandstalig (zie kennisbank/index.astro). */
 export async function getStaticPaths() {
-  const artikelen = await getCollection("articles");
+  // Concepten (gepubliceerd: false) krijgen bewust geen URL totdat iemand ze
+  // in Keystatic heeft nagekeken en aangevinkt.
+  const artikelen = await getCollection("articles", ({ data }) => data.gepubliceerd);
   return artikelen.map((entry: CollectionEntry<"articles">) => ({
     params: { slug: entry.data.slug },
     props: { entry },

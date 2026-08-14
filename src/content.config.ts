@@ -133,7 +133,26 @@ const articles = defineCollection({
       .default([]),
     faq: z.array(z.object({ vraag: z.string(), antwoord: z.string() })).default([]),
     foto: z.string().optional(),
+    // Standaard false: automatisch gegenereerde conceptartikelen (zie
+    // src/pages/api/cron/blog-generator.ts) staan pas op de site nadat iemand
+    // ze in Keystatic heeft nagekeken en dit vinkje heeft aangezet.
+    gepubliceerd: z.boolean().default(false),
     seo,
+  }),
+});
+
+/**
+ * Wachtrij met blogonderwerpen voor de automatische conceptgenerator
+ * (src/pages/api/cron/blog-generator.ts). Puur intern beheer, geen publieke
+ * pagina's — zie keystatic.config.ts (collectie "blogOnderwerpen").
+ */
+const blogQueue = defineCollection({
+  loader: glob({ pattern: "*.yaml", base: "./src/content/blog-queue" }),
+  schema: z.object({
+    titel: z.string(),
+    onderwerp: z.string(),
+    kernwoord: z.string().optional(),
+    gebruikt: z.boolean().default(false),
   }),
 });
 
@@ -149,4 +168,4 @@ const certifications = defineCollection({
   }),
 });
 
-export const collections = { services, machines, vacancies, projects, sectors, certifications, articles };
+export const collections = { services, machines, vacancies, projects, sectors, certifications, articles, blogQueue };

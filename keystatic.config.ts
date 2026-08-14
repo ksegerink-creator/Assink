@@ -485,7 +485,7 @@ export default config({
       "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte", "werkenBij"],
       Diensten: ["services", "sectoren"],
       Vacatures: ["vacatures"],
-      Kennisbank: ["artikelen"],
+      Kennisbank: ["artikelen", "blogOnderwerpen"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
       "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens"],
       "Engels (EN)": [
@@ -778,6 +778,11 @@ export default config({
           { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
         ),
         foto: pageFoto("artikelen")("Foto (optioneel)"),
+        gepubliceerd: fields.checkbox({
+          label: "Gepubliceerd",
+          description: "Vink aan om dit artikel live te zetten op de site. Automatisch gegenereerde concepten staan hier standaard uit.",
+          defaultValue: false,
+        }),
         seo: fields.object(
           {
             title: fields.text({ label: "SEO-titel" }),
@@ -785,6 +790,27 @@ export default config({
           },
           { label: "SEO" },
         ),
+      },
+    }),
+
+    blogOnderwerpen: collection({
+      label: "Blog-onderwerpen (wachtrij)",
+      path: "src/content/blog-queue/*",
+      slugField: "titel",
+      format: { data: "yaml" },
+      schema: {
+        titel: fields.slug({ name: { label: "Titel / werktitel" } }),
+        onderwerp: fields.text({
+          label: "Onderwerp / instructie",
+          description: "Waar moet het artikel over gaan? Hoe concreter, hoe beter (bv. \"Uitleg over passiveren van RVS na lassen, voor inkopers\").",
+          multiline: true,
+        }),
+        kernwoord: fields.text({ label: "Kernwoord (optioneel)", description: "Zoekterm om op te richten, bv. uit Search Console." }),
+        gebruikt: fields.checkbox({
+          label: "Gebruikt",
+          description: "Wordt automatisch aangevinkt zodra hier een conceptartikel voor is gegenereerd. Handmatig aanvinken om over te slaan.",
+          defaultValue: false,
+        }),
       },
     }),
 

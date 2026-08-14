@@ -36,6 +36,9 @@ De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nod
 | `KEYSTATIC_GITHUB_CLIENT_SECRET` | volgt uit stap 4 |
 | `PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | volgt uit stap 4 |
 | `PUBLIC_GA_ID` | Google Analytics 4 measurement ID (`G-...`), alleen actief bij `PUBLIC_SITE_LIVE=true` |
+| `ANTHROPIC_API_KEY` | Voor de automatische blogconceptgenerator (zie sectie hieronder) |
+| `GITHUB_TOKEN` | Fine-grained GitHub PAT, alleen deze repo, "Contents: Read and write" |
+| `CRON_SECRET` | Willekeurige lange string, beveiligt de cron-route |
 
 ## 4. Keystatic ↔ GitHub-app koppelen (eenmalig, begeleid in de browser)
 1. Open na de eerste deploy `https://<jouw-vercel-url>/keystatic`.
@@ -49,6 +52,25 @@ De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nod
 > Tip: geef marketingcollega's **read/write** toegang tot alleen deze repo
 > (GitHub → repo → Settings → Collaborators). Ze hebben geen technische kennis
 > nodig; ze werken volledig via `/keystatic`.
+
+## 4b. Automatische blogconceptgenerator (optioneel)
+
+Elke maandagochtend (07:00 UTC) haalt een Vercel Cron Job het bovenste
+openstaande onderwerp op uit Keystatic → Kennisbank → **Blog-onderwerpen
+(wachtrij)**, laat er via de Anthropic API een conceptartikel voor schrijven,
+en zet dat concept als nieuwe commit in `src/content/articles/` met
+`gepubliceerd: false`. Er verschijnt **geen** pagina op de site totdat iemand
+het concept in Keystatic controleert en het vinkje "Gepubliceerd" aanzet.
+
+Benodigd:
+1. Vul de wachtrij: Keystatic → Blog-onderwerpen → nieuw item, met een
+   concrete instructie (hoe concreter, hoe beter het resultaat).
+2. Zet de drie omgevingsvariabelen uit stap 3 (`ANTHROPIC_API_KEY`,
+   `GITHUB_TOKEN`, `CRON_SECRET`).
+3. Bij een lege wachtrij of een mislukte poging stuurt de route een mailtje
+   naar `MAIL_TO` (dezelfde SMTP-instellingen als de formulieren).
+4. Handmatig testen kan met:
+   `curl -H "Authorization: Bearer <CRON_SECRET>" https://<domein>/api/cron/blog-generator`
 
 ## 5. Toegang beperken tijdens staging (optioneel)
 Zolang het staging is: zet in Vercel **Deployment Protection** aan (Vercel

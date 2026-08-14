@@ -22,6 +22,11 @@
       "permanent": true
     },
     {
+      "source": "/lassen-hengelo-staal-rvs-aluminium(/?)",
+      "destination": "/plaatwerk/lassen/",
+      "permanent": true
+    },
+    {
       "source": "/en/sheet-metal(/?)",
       "destination": "/en/plaatwerk/",
       "permanent": true
@@ -145,6 +150,12 @@
       "source": "/404-pagina(/?)",
       "destination": "/",
       "permanent": true
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron/blog-generator",
+      "schedule": "0 7 * * 1"
     }
   ]
 }
