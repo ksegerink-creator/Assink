@@ -43,8 +43,6 @@ export const UI: Record<Locale, Dict> = {
     formSubjectPlaceholder: "Bijv. RVS-omkasting, 25 stuks, tekening beschikbaar",
     formSubmit: "Verstuur aanvraag",
     formHintResponse: "Reactie binnen één werkdag",
-    formHintDrawing: "Tekening meesturen?",
-    formHintFull: "Uitgebreid formulier",
     formHintDirect: "Liever direct:",
     // Homepage
     factsAria: "Kerngegevens",
@@ -156,8 +154,6 @@ export const UI: Record<Locale, Dict> = {
     formSubjectPlaceholder: "E.g. stainless steel enclosure, 25 pieces, drawing available",
     formSubmit: "Send request",
     formHintResponse: "Response within one working day",
-    formHintDrawing: "Need to attach a drawing?",
-    formHintFull: "Full form",
     formHintDirect: "Prefer to call:",
     // Homepage
     factsAria: "Key figures",
@@ -269,8 +265,6 @@ export const UI: Record<Locale, Dict> = {
     formSubjectPlaceholder: "Z. B. Edelstahlgehäuse, 25 Stück, Zeichnung vorhanden",
     formSubmit: "Anfrage senden",
     formHintResponse: "Antwort innerhalb eines Werktages",
-    formHintDrawing: "Zeichnung mitschicken?",
-    formHintFull: "Ausführliches Formular",
     formHintDirect: "Lieber direkt:",
     // Startseite
     factsAria: "Kennzahlen",
