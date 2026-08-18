@@ -5,64 +5,64 @@ megaKolommen:
     items:
       - label: Blechbearbeitung (Übersicht)
         slug: plaatwerk
-        idx: '2.0'
+        idx: '1.0'
       - label: Edelstahl
         slug: plaatwerk/rvs
-        idx: '2.1'
+        idx: '1.1'
       - label: Aluminium
         slug: plaatwerk/aluminium
-        idx: '2.2'
+        idx: '1.2'
       - label: Messing
         slug: plaatwerk/messing
-        idx: '2.3'
+        idx: '1.3'
       - label: Kanten & Biegen
         slug: plaatwerk/zetten
-        idx: '2.4'
+        idx: '1.4'
       - label: Einpress- & Blindnietmuttern
         slug: plaatwerk/persmoeren-trekmoeren
-        idx: '2.5'
+        idx: '1.5'
       - label: Präzisionsblech
         slug: plaatwerk/precisieplaatwerk
-        idx: '2.6'
+        idx: '1.6'
   - titel: Schneiden
     items:
       - label: Laserschneiden
         slug: plaatwerk/lasersnijden
-        idx: '3.1'
+        idx: '2.1'
       - label: Rohrlaserschneiden
         slug: buizenlaser
-        idx: '3.2'
+        idx: '2.2'
       - label: Zerspanung
         slug: verspaning
-        idx: '3.3'
+        idx: '2.3'
   - titel: Schweißtechnik
     items:
       - label: Schweißen
         slug: plaatwerk/lassen
-        idx: '4.1'
+        idx: '3.1'
       - label: Laserschweißen
         slug: plaatwerk/laserlassen
-        idx: '4.2'
+        idx: '3.2'
       - label: Roboterschweißen
         slug: plaatwerk/robotlassen
-        idx: '4.3'
+        idx: '3.3'
       - label: Aluminiumschweißen
         slug: aluminium-lassen
-        idx: '4.4'
+        idx: '3.4'
   - titel: Zusammenbau
     items:
       - label: Konstruktionen
         slug: constructies
-        idx: '5.1'
+        idx: '4.1'
       - label: Edelstahlkonstruktionen
         slug: rvs-constructies
-        idx: '5.2'
+        idx: '4.2'
       - label: Maschinenbau
         slug: machinebouw
-        idx: '5.3'
+        idx: '4.3'
       - label: Industriegehäuse
         slug: industriele-behuizing
-        idx: '5.4'
+        idx: '4.4'
 sectoren:
   - label: Maschinenbau
     slug: machinebouw

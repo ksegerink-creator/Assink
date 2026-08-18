@@ -3,64 +3,64 @@ megaKolommen:
     items:
       - label: Plaatwerk (overzicht)
         slug: plaatwerk
-        idx: '2.0'
+        idx: '1.0'
       - label: RVS
         slug: plaatwerk/rvs
-        idx: '2.1'
+        idx: '1.1'
       - label: Aluminium
         slug: plaatwerk/aluminium
-        idx: '2.2'
+        idx: '1.2'
       - label: Messing
         slug: plaatwerk/messing
-        idx: '2.3'
+        idx: '1.3'
       - label: Kanten & zetten
         slug: plaatwerk/zetten
-        idx: '2.4'
+        idx: '1.4'
       - label: Pers- & trekmoeren
         slug: plaatwerk/persmoeren-trekmoeren
-        idx: '2.5'
+        idx: '1.5'
       - label: Precisieplaatwerk
         slug: plaatwerk/precisieplaatwerk
-        idx: '2.6'
+        idx: '1.6'
   - titel: Snijden
     items:
       - label: Lasersnijden
         slug: plaatwerk/lasersnijden
-        idx: '3.1'
+        idx: '2.1'
       - label: Buislasersnijden
         slug: buizenlaser
-        idx: '3.2'
+        idx: '2.2'
       - label: Verspaning
         slug: verspaning
-        idx: '3.3'
+        idx: '2.3'
   - titel: Lastechniek
     items:
       - label: Lassen
         slug: plaatwerk/lassen
-        idx: '4.1'
+        idx: '3.1'
       - label: Laserlassen
         slug: plaatwerk/laserlassen
-        idx: '4.2'
+        idx: '3.2'
       - label: Robotlassen
         slug: plaatwerk/robotlassen
-        idx: '4.3'
+        idx: '3.3'
       - label: Aluminium lassen
         slug: aluminium-lassen
-        idx: '4.4'
+        idx: '3.4'
   - titel: Samenstellen
     items:
       - label: Constructies
         slug: constructies
-        idx: '5.1'
+        idx: '4.1'
       - label: RVS-constructies
         slug: rvs-constructies
-        idx: '5.2'
+        idx: '4.2'
       - label: Machinebouw
         slug: machinebouw
-        idx: '5.3'
+        idx: '4.3'
       - label: Industriële behuizing
         slug: industriele-behuizing
-        idx: '5.4'
+        idx: '4.4'
 sectoren:
   - label: Machinebouw
     slug: machinebouw
