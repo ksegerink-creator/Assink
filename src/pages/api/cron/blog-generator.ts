@@ -280,7 +280,9 @@ export const GET: APIRoute = async ({ request }) => {
     await sendMail(
       `Nieuw conceptartikel klaar: ${artikel.title}`,
       `Er staat een nieuw conceptartikel klaar in Keystatic:\n\n"${artikel.title}"\n\n` +
-        `Bekijk en publiceer het (of pas het aan) via:\n${SITE.url}/keystatic/collection/artikelen/item/${slug}\n\n` +
+        // In GitHub-modus (productie) heeft Keystatic een /branch/<naam>/-segment
+        // nodig in de URL; zonder dat geeft de link "Not found".
+        `Bekijk en publiceer het (of pas het aan) via:\n${SITE.url}/keystatic/branch/${GITHUB_BRANCH}/collection/artikelen/item/${slug}\n\n` +
         `Het artikel is NIET live totdat je in Keystatic het vinkje "Gepubliceerd" aanzet en opslaat.`,
     );
 
