@@ -149,7 +149,7 @@ async function sendMail(subject: string, text: string) {
   const pass = import.meta.env.SMTP_PASS;
   // Blogmeldingen gaan naar een eigen adres (niet de algemene MAIL_TO van de
   // formulieren), zodat de conceptartikelen niet in de gedeelde inbox verdwijnen.
-  const naar = import.meta.env.BLOG_NOTIFY_TO || "kelvin@twentekracht.nl";
+  const naar = import.meta.env.BLOG_NOTIFY_TO || "kelvin@twentekracht.nl, l.baas@baas-metaal.nl";
   const van = import.meta.env.MAIL_FROM || user;
   if (!host || !user || !pass) {
     console.warn("[blog-generator] SMTP niet geconfigureerd — geen meldingsmail verstuurd.");
