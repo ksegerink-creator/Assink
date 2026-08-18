@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
-import { stringify } from "yaml";
+import { stringify, Document, Scalar } from "yaml";
 import nodemailer from "nodemailer";
 import { SITE, CERTS } from "@data/site";
 
@@ -234,7 +234,12 @@ export const GET: APIRoute = async ({ request }) => {
     const slug = slugify(artikel.title);
     const vandaag = new Date().toISOString().slice(0, 10);
 
-    const yamlContent = stringify({
+    // `date` moet als tekst worden opgeslagen (het schema verwacht een
+    // string). Een kale "JJJJ-MM-DD"-waarde wordt door de YAML-parser anders
+    // als een echte datum gelezen, wat het contentschema laat falen — vandaar
+    // hier expliciet dwingen tot een gequote scalar in plaats van de generieke
+    // `stringify()`.
+    const doc = new Document({
       title: artikel.title,
       slug,
       date: vandaag,
@@ -248,6 +253,10 @@ export const GET: APIRoute = async ({ request }) => {
       gepubliceerd: false,
       seo: { title: artikel.seoTitle, description: artikel.seoDescription },
     });
+    const dateNode = doc.createNode(vandaag);
+    dateNode.type = Scalar.QUOTE_DOUBLE;
+    doc.set("date", dateNode);
+    const yamlContent = String(doc);
 
     // ── Wegschrijven als concept + wachtrij-item afvinken ──────────────────
     await ghPutFile(
@@ -256,7 +265,10 @@ export const GET: APIRoute = async ({ request }) => {
       `Concept (automatisch): ${artikel.title}`,
     );
 
-    const queuePath = `src/content/blog-queue/${onderwerp.id}`;
+    // Let op: `onderwerp.id` is hier NIET bruikbaar als bestandsnaam — Astro
+    // geeft het id zonder extensie terug. `filePath` is het echte, relatieve
+    // pad (mét .yaml) zoals het in de repo staat.
+    const queuePath = onderwerp.filePath ?? `src/content/blog-queue/${onderwerp.id}.yaml`;
     const queueSha = await ghGetFileSha(queuePath);
     await ghPutFile(
       queuePath,
