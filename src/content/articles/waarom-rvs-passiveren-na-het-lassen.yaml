@@ -1,81 +1,98 @@
 title: Waarom RVS passiveren na het lassen?
 slug: waarom-rvs-passiveren-na-het-lassen
-date: "2026-08-18"
-intro: RVS dankt zijn corrosiebestendigheid aan een dunne, onzichtbare oxidelaag
-  op het oppervlak. Tijdens lassen wordt deze beschermlaag lokaal aangetast,
+date: '2026-08-18'
+intro: >-
+  RVS dankt zijn corrosiebestendigheid aan een dunne, onzichtbare oxidelaag op
+  het oppervlak. Tijdens lassen wordt deze beschermlaag lokaal aangetast,
   waardoor het materiaal gevoeliger wordt voor corrosie. In dit artikel leggen
   we uit wat RVS passiveren inhoudt en waarom dit een relevante stap is na
   laswerk.
 secties:
   - kop: Wat is passiveren van RVS?
     alineas:
-      - RVS bevat chroom, dat in combinatie met zuurstof een dunne oxidelaag
+      - >-
+        RVS bevat chroom, dat in combinatie met zuurstof een dunne oxidelaag
         vormt op het oppervlak. Deze laag zorgt ervoor dat het onderliggende
         materiaal beschermd blijft tegen corrosie. Passiveren is het proces
         waarbij deze beschermende oxidelaag wordt hersteld of versterkt, zodat
         het RVS zijn corrosiewerende eigenschappen behoudt of terugkrijgt.
-      - Bij passiveren wordt in feite de natuurlijke chemische bescherming van
+      - >-
+        Bij passiveren wordt in feite de natuurlijke chemische bescherming van
         het materiaal geoptimaliseerd, zonder dat dit iets verandert aan de
         mechanische eigenschappen van het RVS.
+    lijst: []
   - kop: Wat gebeurt er met RVS tijdens lassen?
     alineas:
-      - "Lassen brengt lokaal een grote hoeveelheid warmte in het materiaal.
+      - >-
+        Lassen brengt lokaal een grote hoeveelheid warmte in het materiaal.
         Rondom de lasnaad kan hierdoor verkleuring ontstaan, ook wel bekend als
         de aanloopkleur of warmte-invloedzone. Deze verkleuring wijst op een
         verandering in de oxidelaag: de beschermende chroomoxidelaag is daar
-        verstoord of plaatselijk verdwenen."
-      - Daarnaast kunnen tijdens het lasproces kleine hoeveelheden vrij ijzer of
+        verstoord of plaatselijk verdwenen.
+      - >-
+        Daarnaast kunnen tijdens het lasproces kleine hoeveelheden vrij ijzer of
         andere verontreinigingen op het oppervlak terechtkomen. Dit vermindert
         de corrosiebestendigheid ter plaatse van de las, ook als het materiaal
         zelf van goede kwaliteit is.
+    lijst: []
   - kop: Waarom is passiveren na lassen relevant?
     alineas:
-      - Zonder passiveren blijft de lasnaad en de directe omgeving daarvan
+      - >-
+        Zonder passiveren blijft de lasnaad en de directe omgeving daarvan
         kwetsbaarder voor corrosie dan de rest van het RVS onderdeel. Dit is met
         name relevant voor toepassingen waarbij corrosiebestendigheid een
         functionele eis is, bijvoorbeeld in vochtige, chemische of hygiënische
         omgevingen.
-      - Door na het lassen te passiveren, wordt de oxidelaag rondom de lasnaad
+      - >-
+        Door na het lassen te passiveren, wordt de oxidelaag rondom de lasnaad
         hersteld. Hiermee wordt het corrosiegedrag van het gehele onderdeel weer
         gelijkmatiger, in plaats van dat er zwakke plekken overblijven ter
         hoogte van de lasverbindingen.
+    lijst: []
   - kop: Passiveren in relatie tot ontwerp en materiaalkeuze
     alineas:
-      - Wij verwerken onder andere RVS 304 en RVS 316 in ons machinepark, onder
+      - >-
+        Wij verwerken onder andere RVS 304 en RVS 316 in ons machinepark, onder
         meer via 2D-lasersnijden en buislasersnijden. Bij constructies waarin
         deze materialen worden gelast, is het raadzaam om in een vroeg stadium
         na te denken over de gewenste eindafwerking en corrosie-eisen, zodat
         hier in het proces rekening mee gehouden kan worden.
-      - Voor werkzaamheden binnen het toepassingsgebied van EN 1090-1 en
+      - >-
+        Voor werkzaamheden binnen het toepassingsgebied van EN 1090-1 en
         gecertificeerd volgens ISO 3834-2, wordt laswerk uitgevoerd volgens
         vastgelegde kwaliteitsprocedures. Dit draagt bij aan een consistent en
         beheerst proces, ook als het gaat om de nabehandeling van lasnaden in
         RVS.
+    lijst: []
 faq:
   - vraag: Is passiveren hetzelfde als polijsten?
-    antwoord: Nee. Polijsten is een mechanische bewerking gericht op
+    antwoord: >-
+      Nee. Polijsten is een mechanische bewerking gericht op
       oppervlakteafwerking en glans. Passiveren is gericht op het herstellen of
       versterken van de chemische oxidelaag die RVS zijn corrosiebestendigheid
       geeft. Beide bewerkingen kunnen los van elkaar of in combinatie worden
       toegepast, afhankelijk van de eisen aan het onderdeel.
   - vraag: Moet elk gelast RVS onderdeel gepassiveerd worden?
-    antwoord: Dit hangt af van de toepassing en de omgeving waarin het onderdeel
-      wordt gebruikt. Bij toepassingen met hoge eisen aan corrosiebestendigheid,
+    antwoord: >-
+      Dit hangt af van de toepassing en de omgeving waarin het onderdeel wordt
+      gebruikt. Bij toepassingen met hoge eisen aan corrosiebestendigheid,
       bijvoorbeeld in vochtige of chemisch belastende omgevingen, is passiveren
       na lassen relevanter dan bij constructies waarbij dit een minder kritische
       rol speelt.
   - vraag: Verandert passiveren de eigenschappen van het RVS?
-    antwoord: Passiveren is gericht op het oppervlak en de daar aanwezige oxidelaag.
-      De mechanische eigenschappen van het RVS materiaal zelf, zoals sterkte,
+    antwoord: >-
+      Passiveren is gericht op het oppervlak en de daar aanwezige oxidelaag. De
+      mechanische eigenschappen van het RVS materiaal zelf, zoals sterkte,
       blijven hierbij ongewijzigd.
   - vraag: Verzorgt Assink & Schipholt ook de nabehandeling van laswerk?
-    antwoord: Wij denken graag mee over de te volgen stappen in een project, van
+    antwoord: >-
+      Wij denken graag mee over de te volgen stappen in een project, van
       materiaalkeuze tot en met laswerk volgens onze certificeringen ISO 9001,
       ISO 3834-2 en EN 1090-1. Neem contact met ons op om de mogelijkheden voor
       uw specifieke RVS project te bespreken.
-gepubliceerd: false
+gepubliceerd: true
 seo:
   title: RVS passiveren na het lassen | Assink & Schipholt
-  description: Waarom is RVS passiveren na het lassen relevant voor
-    corrosiebestendigheid? Uitleg over de oxidelaag, lasinvloed en nabehandeling
-    van RVS.
+  description: >-
+    Waarom is RVS passiveren na het lassen relevant voor corrosiebestendigheid?
+    Uitleg over de oxidelaag, lasinvloed en nabehandeling van RVS.
