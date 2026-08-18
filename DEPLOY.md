@@ -39,6 +39,7 @@ De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nod
 | `ANTHROPIC_API_KEY` | Voor de automatische blogconceptgenerator (zie sectie hieronder) |
 | `GITHUB_TOKEN` | Fine-grained GitHub PAT, alleen deze repo, "Contents: Read and write" |
 | `CRON_SECRET` | Willekeurige lange string, beveiligt de cron-route |
+| `BLOG_NOTIFY_TO` | Optioneel — ontvanger van de blogmelding, standaard `kelvin@twentekracht.nl` |
 
 ## 4. Keystatic ↔ GitHub-app koppelen (eenmalig, begeleid in de browser)
 1. Open na de eerste deploy `https://<jouw-vercel-url>/keystatic`.

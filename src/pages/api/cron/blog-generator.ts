@@ -2,7 +2,7 @@ import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import { stringify } from "yaml";
 import nodemailer from "nodemailer";
-import { SITE, CONTACT, CERTS } from "@data/site";
+import { SITE, CERTS } from "@data/site";
 
 /**
  * Automatische blogconceptgenerator — draait via een Vercel Cron Job
@@ -147,7 +147,9 @@ async function sendMail(subject: string, text: string) {
   const port = Number(import.meta.env.SMTP_PORT || 587);
   const user = import.meta.env.SMTP_USER;
   const pass = import.meta.env.SMTP_PASS;
-  const naar = import.meta.env.MAIL_TO || CONTACT.email;
+  // Blogmeldingen gaan naar een eigen adres (niet de algemene MAIL_TO van de
+  // formulieren), zodat de conceptartikelen niet in de gedeelde inbox verdwijnen.
+  const naar = import.meta.env.BLOG_NOTIFY_TO || "kelvin@twentekracht.nl";
   const van = import.meta.env.MAIL_FROM || user;
   if (!host || !user || !pass) {
     console.warn("[blog-generator] SMTP niet geconfigureerd — geen meldingsmail verstuurd.");
