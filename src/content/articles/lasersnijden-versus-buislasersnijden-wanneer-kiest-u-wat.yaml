@@ -1,0 +1,89 @@
+title: "Lasersnijden versus buislasersnijden: wanneer kiest u wat?"
+slug: lasersnijden-versus-buislasersnijden-wanneer-kiest-u-wat
+date: 2026-08-18
+intro: "Bij het uitwerken van een constructie komt vroeg of laat de vraag:
+  snijden we dit onderdeel uit plaat, of gaan we uit van een buis of profiel?
+  Beide technieken - 2D-lasersnijden en buislasersnijden - hebben hun eigen
+  toepassingsgebied. In dit artikel zetten we de afweging op een rij, gebaseerd
+  op de machines die wij bij Assink & Schipholt zelf in huis hebben: de Trumpf
+  TruLaser 3040 voor platwerk en de Trumpf TruLaser Tube 3000 voor buis- en
+  profielbewerking."
+secties:
+  - kop: Wat is het verschil tussen lasersnijden en buislasersnijden?
+    alineas:
+      - 2D-lasersnijden gebeurt op platte plaatmaterialen. De machine snijdt
+        vlakke onderdelen uit een plaat staal, RVS of aluminium, waarna deze
+        eventueel verder wordt bewerkt, bijvoorbeeld door kanten of lassen.
+      - Buislasersnijden werkt op ronde, rechthoekige of vierkante buizen en
+        profielen. De machine snijdt niet alleen doorsnedes af, maar kan ook
+        contouren, sparingen, verstekken en aansluitingen direct in het profiel
+        aanbrengen, zodat een lasconstructie met minder naschakelingen in elkaar
+        gezet kan worden.
+  - kop: Wanneer kiest u voor 2D-lasersnijden (plaat)
+    alineas:
+      - "2D-lasersnijden op de Trumpf TruLaser 3040 is de aangewezen keuze
+        wanneer een onderdeel in de basis een vlakke geometrie heeft: flenzen,
+        beugels, panelen, afdekplaten en onderdelen die na het snijden gekant
+        worden op onze Safan Darley E-Brake kantpers."
+      - Ook wanneer een product uit meerdere platte componenten wordt opgebouwd
+        die achteraf worden gelast of gemonteerd, ligt 2D-lasersnijden voor de
+        hand. De machine snijdt staal, RVS en aluminium in plaatvorm nauwkeurig
+        op maat.
+  - kop: Wanneer kiest u voor buislasersnijden (profiel/buis)
+    alineas:
+      - Buislasersnijden op de Trumpf TruLaser Tube 3000 is de logische keuze
+        zodra een constructie is opgebouwd uit buizen of profielen, bijvoorbeeld
+        frames, machinebasements, leuningwerk of doorvoerconstructies.
+      - Omdat contouren, gaten en verbindingen al tijdens het snijproces in het
+        profiel worden aangebracht, hoeven deze bewerkingen niet meer los te
+        worden uitgevoerd. Dat scheelt handmatig uitlijnen en verkleint de kans
+        op maatafwijkingen bij het samenstellen van een lasconstructie.
+  - kop: Combinatie van beide technieken
+    alineas:
+      - "In de praktijk bestaat een constructie vaak uit een combinatie van
+        plaat- en buisonderdelen: een frame uit profiel met daaraan gelaste
+        flenzen of afdekplaten uit plaat. Doordat wij zowel de TruLaser 3040 als
+        de TruLaser Tube 3000 in eigen beheer hebben, kunnen beide onderdelen op
+        elkaar afgestemd worden ontworpen en geproduceerd, wat de assemblage
+        vereenvoudigt."
+      - Voor de materiaalkeuze geldt dat wij RVS 304, RVS 316, aluminium,
+        messing en staal verwerken, zowel in plaat- als in buis-/profielvorm,
+        afhankelijk van de gekozen machine en het beschikbare halffabricaat.
+  - kop: Waar op letten bij het maken van de keuze
+    alineas:
+      - Bij het opstellen van een tekening of stuklijst loont het om vooraf na
+        te denken over de vorm waarin een onderdeel het meest efficiënt te maken
+        is. Onderdelen die van origine als profiel worden ingekocht, lenen zich
+        beter voor buislasersnijden dan voor plaatbewerking gevolgd door lassen
+        tot een gesloten koker.
+      - Wij denken in de werkvoorbereidingsfase graag mee over de vraag of een
+        onderdeel als plaat of als buis/profiel het beste tot zijn recht komt,
+        mede op basis van de vervolgbewerkingen zoals kanten, afbramen op de
+        Timesavers 42 Series RB of stralen in onze straalcabine.
+faq:
+  - vraag: Kan een onderdeel dat nu uit plaat wordt gemaakt ook als buis worden
+      uitgevoerd?
+    antwoord: Dat hangt af van de geometrie en de functie van het onderdeel.
+      Gesloten profielen die nu worden opgebouwd uit meerdere plaatdelen kunnen
+      soms efficiënter als buis worden uitgevoerd. Dit wordt per situatie
+      beoordeeld in overleg met werkvoorbereiding.
+  - vraag: Welke materialen kunnen op beide machines verwerkt worden?
+    antwoord: "Wij verwerken RVS 304, RVS 316, aluminium, messing en staal. Of een
+      materiaal geschikt is voor 2D-lasersnijden of buislasersnijden hangt af
+      van de vorm waarin het beschikbaar is: plaat of buis/profiel."
+  - vraag: Worden onderdelen na het lasersnijden ook gelast?
+    antwoord: "Lassen behoort tot onze mogelijkheden, met uitzondering van
+      robotlassen: dat wordt binnen de groep uitgevoerd bij Baas Metaal. Voor de
+      bewerkingen die wij zelf in huis hebben, kunt u contact opnemen om de
+      mogelijkheden te bespreken."
+  - vraag: Is buislasersnijden altijd goedkoper dan plaat snijden plus lassen?
+    antwoord: Niet per definitie. Het voordeel van buislasersnijden zit vooral in
+      het combineren van meerdere bewerkingen in één stap, wat handmatig werk en
+      uitlijning kan verminderen. Of dit voordeliger is dan een plaatoplossing
+      hangt af van de specifieke constructie en wordt per aanvraag beoordeeld.
+gepubliceerd: false
+seo:
+  title: "Buislasersnijden versus lasersnijden: welke techniek kiest u?"
+  description: Uitleg over wanneer 2D-lasersnijden (plaat) of buislasersnijden
+    (profiel) de beste keuze is, op basis van het machinepark van Assink &
+    Schipholt.
