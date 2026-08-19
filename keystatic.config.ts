@@ -184,7 +184,12 @@ const overOnsSchema = (ns: string) => ({
   }),
   historieKop1: fields.text({ label: "Geschiedenis — kop regel 1" }),
   historieKop2: fields.text({ label: "Geschiedenis — kop regel 2" }),
-  historieFoto: pageFoto(ns)("Geschiedenis — achtergrondfoto"),
+  historieFoto: pageFoto(ns)(
+    "Geschiedenis — archieffoto (grote afdruk)",
+    "Het oudste/mooiste archiefbeeld. Wordt naast de tijdlijn als afdruk getoond.",
+  ),
+  historieFotoJaar: fields.text({ label: "Geschiedenis — jaartal bij de archieffoto", description: "Bv. 1963 of 'jaren 70'. Laat leeg als het jaar onbekend is." }),
+  historieFotoBijschrift: fields.text({ label: "Geschiedenis — bijschrift bij de archieffoto", multiline: true, description: "Beschrijft wat er te zien is; dient ook als alt-tekst." }),
   tijdlijn: fields.array(
     fields.object({
       jaar: fields.text({ label: "Jaar / label" }),
@@ -192,12 +197,29 @@ const overOnsSchema = (ns: string) => ({
     }),
     { label: "Tijdlijn", itemLabel: (p) => p.fields.jaar.value },
   ),
+  archiefKop: fields.text({ label: "Archief — kop", description: "Bv. 'Uit het archief'. Leeg = standaardkop per taal." }),
+  archiefTekst: fields.text({ label: "Archief — introtekst", multiline: true }),
+  archief: fields.array(
+    fields.object({
+      foto: pageFoto(`${ns}/archief`)("Archieffoto"),
+      jaar: fields.text({ label: "Jaartal of periode", description: "Bv. 1948 of 'jaren 60'. Onbekend? Laat leeg — liever geen jaartal dan een verzonnen jaartal." }),
+      bijschrift: fields.text({ label: "Bijschrift", multiline: true, description: "Wat is er te zien? Wordt ook als alt-tekst gebruikt." }),
+    }),
+    {
+      label: "Archieffoto's",
+      description: "Oude foto's. De galerij verschijnt pas zodra hier ten minste één foto staat.",
+      itemLabel: (p) => [p.fields.jaar.value, p.fields.bijschrift.value].filter(Boolean).join(" — ") || "Archieffoto",
+    },
+  ),
   vakEyebrow: fields.text({ label: "Vakmanschap — eyebrow" }),
   vakKop: fields.text({ label: "Vakmanschap — kop" }),
   vakTekst: fields.text({ label: "Vakmanschap — tekst", multiline: true }),
   vakFoto: pageFoto(ns)("Vakmanschap — foto"),
-  pandFoto: pageFoto(ns)("Pandfoto"),
+  pandFoto: pageFoto(ns)("Pandfoto (nu)"),
   pandBijschrift: fields.text({ label: "Bijschrift pandfoto" }),
+  pandArchiefFoto: pageFoto(ns)("Pandfoto (toen)", "Oude foto van het pand of de smederij. Staat er één, dan verschijnt de pandfoto als 'toen & nu'."),
+  pandArchiefJaar: fields.text({ label: "Jaartal bij de oude pandfoto" }),
+  pandArchiefBijschrift: fields.text({ label: "Bijschrift bij de oude pandfoto", multiline: true }),
 });
 
 const offerteSchema = (ns: string) => ({

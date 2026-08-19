@@ -1,0 +1,132 @@
+---
+/**
+ * Lightbox voor archieffoto's.
+ *
+ * Oude foto's wil je groot kunnen bekijken — daar zit het detail. Deze lightbox
+ * werkt zonder externe bibliotheek: het script kloont het <img> dat al op de
+ * pagina staat en zet `sizes` op schermbreedte, zodat de browser uit dezelfde
+ * srcset een grotere variant kiest. Er wordt dus geen extra beeld ingeladen
+ * zolang niemand klikt.
+ *
+ * Zonder JavaScript verschijnt er niets en blijft de afdruk gewoon zichtbaar;
+ * de vergrootknoppen worden door <ArchivePhoto /> alleen bij een echte foto
+ * gerenderd. Escape en klikken naast het beeld sluiten (native <dialog>).
+ */
+interface Props {
+  /** Label van de sluitknop, bv. "Sluiten". */
+  closeLabel: string;
+}
+const { closeLabel } = Astro.props;
+---
+
+<dialog class="alb" data-arch-dialog aria-label={closeLabel}>
+  <button class="alb__close mono" type="button" data-arch-close>
+    <span aria-hidden="true">✕</span> {closeLabel}
+  </button>
+  <div class="alb__stage">
+    <div class="alb__holder" data-arch-holder></div>
+    <p class="alb__cap mono" data-arch-cap></p>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>("[data-arch-dialog]");
+  const holder = dialog?.querySelector<HTMLElement>("[data-arch-holder]");
+  const caption = dialog?.querySelector<HTMLElement>("[data-arch-cap]");
+
+  if (dialog && holder && caption) {
+    for (const btn of document.querySelectorAll<HTMLButtonElement>("[data-arch-zoom]")) {
+      btn.addEventListener("click", () => {
+        const original = btn.closest("[data-arch-frame]")?.querySelector("img");
+        if (!original) return;
+
+        const big = original.cloneNode(true) as HTMLImageElement;
+        big.removeAttribute("style");
+        big.removeAttribute("class");
+        big.sizes = "94vw";
+        big.loading = "eager";
+        big.alt = btn.dataset.archAlt || original.alt;
+        holder.replaceChildren(big);
+
+        caption.textContent = btn.dataset.archCap || "";
+        dialog.showModal();
+      });
+    }
+
+    // Klik op de achtergrond (buiten het beeld) sluit.
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+    dialog.querySelector("[data-arch-close]")?.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("close", () => holder.replaceChildren());
+  }
+</script>
+
+<style>
+  /* Schermvullend en met een eigen donkere ondergrond: ::backdrop alleen is niet
+     genoeg, want de <dialog> houdt anders zijn eigen (kleinere) maat en dan
+     blijft de pagina eromheen zichtbaar. */
+  .alb {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: rgba(4, 20, 40, .95);
+  }
+  .alb::backdrop { background: rgba(4, 20, 40, .8); }
+
+  .alb__stage {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 14px;
+    padding: clamp(48px, 7vh, 84px) clamp(14px, 3vw, 40px);
+    pointer-events: none;
+  }
+  .alb__holder { display: flex; max-width: min(1400px, 94vw); }
+  .alb__holder :global(img) {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(1400px, 94vw);
+    max-height: 78vh;
+    background: #F6F2EA;
+    padding: clamp(6px, .8vw, 12px);
+    box-shadow: 0 30px 70px -30px rgba(0, 0, 0, .8);
+  }
+  .alb__cap {
+    color: #C9D9E8;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 60em;
+  }
+
+  .alb__close {
+    position: absolute;
+    top: clamp(12px, 2vw, 22px);
+    right: clamp(12px, 2vw, 22px);
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    transition: background .18s var(--ease), border-color .18s var(--ease);
+  }
+  .alb__close:hover, .alb__close:focus-visible { background: var(--blue); border-color: var(--blue); }
+</style>
