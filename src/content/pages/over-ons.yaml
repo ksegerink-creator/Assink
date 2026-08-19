@@ -25,13 +25,19 @@ tijdlijn:
   - { jaar: "Nu", tekst: "Eén productiepartner van engineering tot afgewerkte samenstelling voor machinebouw en industrie." }
 archiefKop: "Uit het archief"
 archiefTekst: "Beeld uit ons eigen archief: de hal, de machines en de mensen die hier werkten."
-archief: []
+archief:
+  - foto: "/src/assets/uploads/over-ons/archief/werkplaats-vliegtuig.jpg"
+    jaar: ""
+    bijschrift: "Vliegtuig in de werkplaats, met drie medewerkers"
+  - foto: "/src/assets/uploads/over-ons/archief/gevel-plaatwerken-sanitair.jpg"
+    jaar: ""
+    bijschrift: "Gevel met het opschrift 'Constructies · Plaatwerken en Sanitair'"
 vakEyebrow: "Kwaliteit & vakmanschap"
 vakKop: "Aantoonbaar goed werk"
 vakTekst: "Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze eigen vakmensen op."
 vakFoto: "/src/assets/uploads/over-ons/vakFoto.jpg"
 pandFoto: "/src/assets/uploads/over-ons/pandFoto.jpg"
 pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"
-pandArchiefFoto: null
+pandArchiefFoto: "/src/assets/uploads/over-ons/archief/gevel-ijzerconstructies.jpg"
 pandArchiefJaar: ""
-pandArchiefBijschrift: ""
+pandArchiefBijschrift: "Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'"

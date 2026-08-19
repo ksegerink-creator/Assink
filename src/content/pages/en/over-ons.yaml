@@ -27,9 +27,12 @@ tijdlijn:
   - { jaar: "Now", tekst: "One production partner from engineering to finished assembly for machine building and industry." }
 archiefKop: "From the archive"
 archiefTekst: "Images from our own archive: the hall, the machines and the people who worked here."
+archief:
+  - { jaar: "", bijschrift: "An aircraft in the workshop, with three members of staff" }
+  - { jaar: "", bijschrift: "Facade lettering: structures, sheet metal work and sanitary work" }
 vakEyebrow: "Quality & craftsmanship"
 vakKop: "Demonstrably good work"
 vakTekst: "We build quality into the process: qualified welding procedures, dimensional inspection and documentation for every order. As an SBB-accredited training company, we also train our own skilled professionals."
 pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"
 pandArchiefJaar: ""
-pandArchiefBijschrift: ""
+pandArchiefBijschrift: "Facade lettering: iron structures — Assink & Schipholt"

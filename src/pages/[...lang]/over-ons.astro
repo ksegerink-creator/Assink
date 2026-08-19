@@ -31,7 +31,12 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
    drie zijn optioneel: zonder foto verdwijnt het onderdeel in plaats van dat
    er een lege plek of ontwikkelplaceholder op de live site komt te staan. */
 const histFoto = photo(a.historieFoto);
-const archief = (a.archief ?? []).filter((p) => Boolean(p.foto));
+/* Alleen archieffoto's waarvan het beeld ook echt in de repo staat komen op de
+   pagina. Zo kan een bijschrift al klaarstaan voordat de scan is geüpload,
+   zonder dat er een ontwikkelplaceholder op de live site verschijnt. */
+const archief = (a.archief ?? [])
+  .map((p) => ({ ...p, beeld: photo(p.foto) }))
+  .filter((p) => Boolean(p.beeld));
 const pandToen = photo(a.pandArchiefFoto);
 const archiefAlt = t(locale, "altArchive");
 const zoomLabel = t(locale, "archiveEnlarge");
@@ -134,7 +139,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
           {archief.map((p, i) => (
             <ArchivePhoto
               class="rv"
-              src={photo(p.foto)}
+              src={p.beeld}
               alt={p.bijschrift || archiefAlt}
               jaar={p.jaar}
               bijschrift={p.bijschrift}
