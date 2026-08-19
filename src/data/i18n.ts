@@ -1,4 +1,4 @@
-import type { Locale } from "./site";
+import type { Locale, OpeningHours } from "./site";
 
 /**
  * Interface / chrome strings per locale.
@@ -46,6 +46,7 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Liever direct:",
     formAddress: "Adres",
     formOpeningHours: "Openingstijden",
+    openingHoursWeekdays: "Werkdagen {van}–{tot} uur",
     formKvk: "KvK",
     formMessage: "Bericht",
     routeMap: "Route & kaart",
@@ -169,6 +170,7 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Prefer to call:",
     formAddress: "Address",
     formOpeningHours: "Opening hours",
+    openingHoursWeekdays: "Weekdays {van}–{tot}",
     formKvk: "Chamber of Commerce (KvK)",
     formMessage: "Message",
     routeMap: "Route & map",
@@ -292,6 +294,7 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Lieber direkt:",
     formAddress: "Adresse",
     formOpeningHours: "Öffnungszeiten",
+    openingHoursWeekdays: "Werktags {van}–{tot} Uhr",
     formKvk: "Handelsregister (KvK)",
     formMessage: "Nachricht",
     routeMap: "Route & Karte",
@@ -381,6 +384,30 @@ export const UI: Record<Locale, Dict> = {
 
 export function t(locale: Locale, key: string): string {
   return UI[locale]?.[key] ?? UI.nl[key] ?? key;
+}
+
+/** Tijdnotatie per taal: NL 8.00, DE 8:00, EN 08:00 (en-GB, 24-uurs). */
+function timeFor(locale: Locale, h: number, m: string): string {
+  if (locale === "nl") return `${h}.${m}`;
+  if (locale === "en") return `${String(h).padStart(2, "0")}:${m}`;
+  return `${h}:${m}`;
+}
+
+/**
+ * Zet de openingstijden om naar de zin van de gevraagde taal.
+ *
+ * Nederlands laat de CMS-tekst ongemoeid: die is daar de bron en de redacteur
+ * moet hem vrij kunnen formuleren. EN/DE bouwen hun zin uit de tijden die uit
+ * die tekst zijn gelezen, zodat een wijziging in het CMS in alle drie de talen
+ * doorwerkt zonder dat iemand drie velden bijhoudt. Zijn de tijden onleesbaar
+ * (hours === null), dan blijft de Nederlandse tekst staan — zichtbaar fout is
+ * beter dan een verzonnen openingstijd. De build waarschuwt daar dan over.
+ */
+export function formatOpeningHours(locale: Locale, hours: OpeningHours | null, raw: string): string {
+  if (locale === "nl" || !hours) return raw;
+  return t(locale, "openingHoursWeekdays")
+    .replace("{van}", timeFor(locale, hours.opensH, hours.opensM))
+    .replace("{tot}", timeFor(locale, hours.closesH, hours.closesM));
 }
 
 export const LOCALE_LABEL: Record<Locale, string> = { nl: "NL", en: "EN", de: "DE" };

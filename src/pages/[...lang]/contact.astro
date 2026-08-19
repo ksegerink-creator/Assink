@@ -1,7 +1,7 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
 import FormExtras from "@components/forms/FormExtras.astro";
-import { t } from "@data/i18n";
+import { t, formatOpeningHours } from "@data/i18n";
 import { toLocale, localizePath } from "@utils/paths";
 import { readPage } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
@@ -38,7 +38,7 @@ const nav = (slug: string) => localizePath(slug, locale);
           <div><span class="k">{t(locale, "formAddress")}</span><span>{CONTACT.addr}</span></div>
           <div><span class="k">{t(locale, "formPhone")}</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
           <div><span class="k">{t(locale, "formEmail")}</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
-          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{CONTACT.openingstijden}</span></div>}
+          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{formatOpeningHours(locale, CONTACT.openingHours, CONTACT.openingstijden)}</span></div>}
           {CONTACT.kvk && <div><span class="k">{t(locale, "formKvk")}</span><span>{CONTACT.kvk}</span></div>}
         </div>
         <div class="chead__acts">

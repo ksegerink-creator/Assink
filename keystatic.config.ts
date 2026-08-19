@@ -562,7 +562,11 @@ export default config({
         email: fields.text({ label: "E-mailadres (algemeen)" }),
         sollicitatieEmail: fields.text({ label: "E-mailadres sollicitaties", description: "Wordt gebruikt op de vacaturepagina's, bv. hrm@assinkschipholt.nl." }),
         kvk: fields.text({ label: "KvK-nummer" }),
-        openingstijden: fields.text({ label: "Openingstijden", description: "Bv. Werkdagen 8.00–17.00 uur" }),
+        openingstijden: fields.text({
+          label: "Openingstijden",
+          description:
+            "Nederlandse tekst, bv. Werkdagen 8.00–17.00 uur. De Engelse en Duitse pagina maken hier zelf hun zin van, dus houd de tijden in de vorm 8.00–17.00 staan — anders valt daar de Nederlandse tekst terug.",
+        }),
         maps: fields.url({ label: "Google Maps-link", description: "Laat leeg om de routeknop te verbergen." }),
         linkedin: fields.url({ label: "LinkedIn-URL", description: "Laat leeg om het icoon te verbergen." }),
         facebook: fields.url({ label: "Facebook-URL", description: "Laat leeg om het icoon te verbergen." }),

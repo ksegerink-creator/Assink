@@ -75,6 +75,29 @@ function toE164(tel: string): string {
   return "+31" + digits;
 }
 
+/** Openingstijden als losse tijden, zodat elke taal er zijn eigen zin van maakt. */
+export type OpeningHours = { opensH: number; opensM: string; closesH: number; closesM: string };
+
+/**
+ * Haalt de begin- en eindtijd uit de CMS-zin ("Werkdagen 8.00–17.00 uur").
+ * De tijden zijn locale-onafhankelijk; de zin eromheen niet — die staat per
+ * taal in i18n.ts. Lukt het parsen niet, dan valt de EN/DE-weergave terug op
+ * de Nederlandse CMS-tekst; daarom waarschuwt de build hier hardop over.
+ */
+function parseOpeningHours(raw: string): OpeningHours | null {
+  const m = raw.match(/(\d{1,2})[.:](\d{2})\s*[–—-]\s*(\d{1,2})[.:](\d{2})/);
+  if (!m) {
+    if (raw.trim()) {
+      console.warn(
+        `[site.ts] Openingstijden "${raw}" bevat geen leesbare tijden (verwacht bv. "8.00–17.00"). ` +
+          "De Engelse en Duitse contactpagina laten daarom de Nederlandse tekst zien.",
+      );
+    }
+    return null;
+  }
+  return { opensH: Number(m[1]), opensM: m[2], closesH: Number(m[3]), closesM: m[4] };
+}
+
 export const SITE = {
   name: "Assink & Schipholt",
   legalName: "Assink & Schipholt B.V.",
@@ -105,7 +128,10 @@ export const CONTACT = {
   email: _c.email,
   sollicitatieEmail: _c.sollicitatieEmail,
   kvk: _c.kvk,
+  // Nederlandse weergavetekst uit het CMS; EN/DE bouwen hun eigen zin uit
+  // openingHours (zie formatOpeningHours in i18n.ts).
   openingstijden: _c.openingstijden,
+  openingHours: parseOpeningHours(_c.openingstijden),
   maps: _c.maps,
   // Approximate coordinates for LocalBusiness / map — confirm before launch.
   geo: { lat: 52.2426, lng: 6.8098 },
