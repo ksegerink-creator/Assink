@@ -28,14 +28,24 @@ const MODEL = "claude-sonnet-5";
 const VERIFIED_FACTS = `
 - Bedrijf: ${SITE.legalName}, metaalbedrijf in Hengelo (Ov.), opgericht in ${SITE.founded}.
 - Materialen die wij verwerken: RVS 304, RVS 316, aluminium, messing, staal.
-- Eigen machinepark: Trumpf TruLaser 3040 (2D-lasersnijden: staal, RVS, aluminium),
-  Trumpf TruLaser Tube 3000 (buislasersnijden), Safan Darley E-Brake 150-3100 T3
-  (servo-elektrische kantpers, 150 ton perskracht, werklengte tot 3100 mm),
-  Timesavers 42 Series RB (borstel- en afbraammachine), Straalcabine 8×4×3 m
-  (glasparelstralen, 100–200 μm, 3,0 bar, voor aluminium en RVS).
+- Eigen machinepark: Trumpf TruLaser 3040 (2D-lasersnijden met fiberlaser, 4 kW;
+  staal, RVS, aluminium en gegalvaniseerd staal), Trumpf TruLaser Tube 3000
+  (buislasersnijden), Safan Darley E-Brake 150-3100 T3 (servo-elektrische kantpers,
+  150 ton perskracht, werklengte tot 3100 mm), Timesavers 42 Series RB (borstel- en
+  afbraammachine), Straalcabine 8×4×3 m (glasparelstralen, 100–200 μm, 3,0 bar,
+  voor aluminium en RVS).
+- Plaatdikte bij lasersnijden (bevestigd door productie, 19 augustus 2026): staal
+  0,5-25 mm, RVS 0,5-20 mm, aluminium 0,5-15 mm, gegalvaniseerd staal 0,5-10 mm.
+- Constructiewerk: max. stukgewicht 10 ton, max. bouwhoogte 8 m. In de hal hangen
+  vijf bovenloopkranen van 5 ton; in tandem hijsen gaat tot 10 ton.
 - Certificeringen: ${CERTS.filter((c) => c.startsWith("ISO") || c.startsWith("EN ")).join(", ")}.
 - Wij doen géén: robotlassen in eigen huis (dat gebeurt binnen de groep bij Baas
-  Metaal), en werken niet met een cobot.
+  Metaal), en werken niet met een cobot. Verspaningswerk (draaien, frezen, boren,
+  kotteren) voeren wij niet zelf uit: dat laten wij maken door een vaste partner,
+  wij verzorgen de regie en de samenstelling.
+- Nog NIET vastgesteld, dus nooit noemen: maximale plaatmaat/tafelafmeting van de
+  laser, buisdiameter/wanddikte/lengte van de buislaser, zettolerantie in mm, en
+  of wij puntlassen aanbieden.
 `.trim();
 
 const SYSTEM_PROMPT = `
@@ -177,7 +187,12 @@ export const GET: APIRoute = async ({ request }) => {
   }
 
   try {
-    const wachtrij = await getCollection("blogQueue", ({ data }) => !data.gebruikt);
+    // Sorteren op het volgorde-veld: het onderwerp met het laagste nummer gaat
+    // als eerste de deur uit. Zonder deze sortering bepaalt de bestandsnaam de
+    // planning, en die volgt in Keystatic de titel.
+    const wachtrij = (await getCollection("blogQueue", ({ data }) => !data.gebruikt)).sort(
+      (a, b) => (a.data.volgorde ?? 50) - (b.data.volgorde ?? 50) || a.id.localeCompare(b.id),
+    );
     if (wachtrij.length === 0) {
       await sendMail(
         "Blog-wachtrij is leeg",

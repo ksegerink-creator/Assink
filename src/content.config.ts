@@ -152,6 +152,7 @@ const blogQueue = defineCollection({
     titel: z.string(),
     onderwerp: z.string(),
     kernwoord: z.string().optional(),
+    volgorde: z.number().default(50),
     gebruikt: z.boolean().default(false),
   }),
 });
