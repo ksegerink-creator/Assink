@@ -822,6 +822,11 @@ export default config({
           multiline: true,
         }),
         kernwoord: fields.text({ label: "Kernwoord (optioneel)", description: "Zoekterm om op te richten, bv. uit Search Console." }),
+        volgorde: fields.number({
+          label: "Volgorde",
+          description: "Laagste nummer gaat als eerste de deur uit. Zo bepaal je de planning zonder onderwerpen te verwijderen.",
+          defaultValue: 50,
+        }),
         gebruikt: fields.checkbox({
           label: "Gebruikt",
           description: "Wordt automatisch aangevinkt zodra hier een conceptartikel voor is gegenereerd. Handmatig aanvinken om over te slaan.",
