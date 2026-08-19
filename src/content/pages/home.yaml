@@ -23,7 +23,7 @@ intro:
   feiten:
     - waarde: '{jaren}'
       label: jaar vakmanschap
-    - waarde: 5 t
+    - waarde: 10 t
       label: max. stukgewicht
     - waarde: 3×
       label: ISO-gecertificeerd
@@ -53,7 +53,7 @@ capabilities:
     omschrijving: >-
       Complete machines, bouwgroepen en industriële behuizingen. Wij monteren,
       bekabelen en leveren productieklaar aan — just-in-time.
-    annotatie: Samenstellingen tot 5 t
+    annotatie: Samenstellingen tot 10 ton
     link: machinebouw
     foto: /src/assets/uploads/capabilities/2/foto.jpg
   - nummer: '04'

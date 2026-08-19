@@ -7,7 +7,7 @@ heroPhoto:
   subject: "Laserschneidmaschine in Betrieb — Schneidkopf über dem Blech"
 body:
   - "Auf der Trumpf TruLaser 3040 schneiden wir Stahl, Edelstahl und Aluminium mit hoher Präzision und gleichbleibender Maßhaltigkeit. Das Laserschneiden ist häufig der erste Schritt im Produktionsprozess, gefolgt vom Entgraten und Abkanten."
-materials: ["Stahl", "Edelstahl", "Aluminium"]
+materials: ["Stahl", "Edelstahl", "Aluminium", "Verzinkter Stahl"]
 process:
   - { step: "Schachteln", desc: "Effiziente Blechbelegung." }
   - { step: "Schneiden", desc: "Berührungsloses Laserschneiden." }
@@ -15,7 +15,11 @@ process:
 specs:
   - { label: "Maschine", value: "Trumpf TruLaser 3040" }
   - { label: "Typ", value: "2D-Lasermaschine" }
-  - { label: "Materialien", value: "Stahl, Edelstahl, Aluminium" }
+  - { label: "Materialien", value: "Stahl, Edelstahl, Aluminium, verzinkter Stahl" }
+  - { label: "Blechdicke Stahl", value: "0,5–25 mm" }
+  - { label: "Blechdicke Edelstahl", value: "0,5–20 mm" }
+  - { label: "Blechdicke Aluminium", value: "0,5–15 mm" }
+  - { label: "Blechdicke verzinkter Stahl", value: "0,5–10 mm" }
 applications: ["Blechbearbeitung", "Konstruktionen", "Präzisionsteile"]
 related:
   - { slug: "buizenlaser", label: "Rohrlaserschneiden", desc: "Schneiden von Rohr und Profil." }

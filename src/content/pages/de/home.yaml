@@ -25,7 +25,7 @@ intro:
   feiten:
     - waarde: '{jaren}'
       label: Jahre Handwerkskunst
-    - waarde: 5 t
+    - waarde: 10 t
       label: max. Stückgewicht
     - waarde: 3×
       label: ISO-zertifiziert
@@ -54,7 +54,7 @@ capabilities:
     omschrijving: >-
       Komplette Maschinen, Baugruppen und Industriegehäuse. Wir montieren,
       verkabeln und liefern produktionsbereit — just in time.
-    annotatie: Baugruppen bis 5 t
+    annotatie: Baugruppen bis 10 Tonnen
     link: machinebouw
   - nummer: '04'
     titel: Laser- & Rohrlaserschneiden

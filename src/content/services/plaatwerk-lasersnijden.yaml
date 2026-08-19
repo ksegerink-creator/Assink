@@ -13,7 +13,7 @@ heroPhoto:
   comp: "Snijkop, vonken, plaatveld"
 body:
   - "Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering. Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en zetten."
-materials: ["Staal", "RVS", "Aluminium"]
+materials: ["Staal", "RVS", "Aluminium", "Gegalvaniseerd staal"]
 process:
   - { step: "Nesten", desc: "Efficiënte plaatindeling." }
   - { step: "Snijden", desc: "Contactloos lasersnijden." }
@@ -21,7 +21,11 @@ process:
 specs:
   - { label: "Machine", value: "Trumpf TruLaser 3040" }
   - { label: "Type", value: "2D-lasermachine" }
-  - { label: "Materialen", value: "staal, RVS, aluminium" }
+  - { label: "Materialen", value: "staal, RVS, aluminium, gegalvaniseerd staal" }
+  - { label: "Plaatdikte staal", value: "0,5–25 mm" }
+  - { label: "Plaatdikte RVS", value: "0,5–20 mm" }
+  - { label: "Plaatdikte aluminium", value: "0,5–15 mm" }
+  - { label: "Plaatdikte gegalvaniseerd staal", value: "0,5–10 mm" }
 applications: ["Plaatwerk", "Constructies", "Precisieonderdelen"]
 related:
   - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Snijden van buis en profiel." }

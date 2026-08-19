@@ -7,7 +7,7 @@ heroPhoto:
   subject: "Laser cutting machine in operation — cutting head above sheet"
 body:
   - "On the Trumpf TruLaser 3040 we cut steel, stainless steel and aluminium with high precision and consistent dimensioning. Laser cutting is often the first step in the production process, followed by deburring and press braking."
-materials: ["Steel", "Stainless steel", "Aluminium"]
+materials: ["Steel", "Stainless steel", "Aluminium", "Galvanised steel"]
 process:
   - { step: "Nesting", desc: "Efficient sheet layout." }
   - { step: "Cutting", desc: "Non-contact laser cutting." }
@@ -15,7 +15,11 @@ process:
 specs:
   - { label: "Machine", value: "Trumpf TruLaser 3040" }
   - { label: "Type", value: "2D laser machine" }
-  - { label: "Materials", value: "steel, stainless steel, aluminium" }
+  - { label: "Materials", value: "steel, stainless steel, aluminium, galvanised steel" }
+  - { label: "Sheet thickness, steel", value: "0.5–25 mm" }
+  - { label: "Sheet thickness, stainless steel", value: "0.5–20 mm" }
+  - { label: "Sheet thickness, aluminium", value: "0.5–15 mm" }
+  - { label: "Sheet thickness, galvanised steel", value: "0.5–10 mm" }
 applications: ["Sheet metal work", "Welded constructions", "Precision parts"]
 related:
   - { slug: "buizenlaser", label: "Tube laser cutting", desc: "Cutting tube and profile." }
