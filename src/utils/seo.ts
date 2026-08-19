@@ -2,6 +2,12 @@ import { SITE, CONTACT, CERTS, SOCIAL } from "@data/site";
 import { absUrl, localizePath } from "./paths";
 import type { Locale } from "@data/site";
 
+/** Uur + minuut als "HH:MM" voor schema.org; leeg of onleesbaar → fallback. */
+function hhmm(h: number | undefined, m: string | undefined, fallback: string): string {
+  if (h === undefined || m === undefined) return fallback;
+  return `${String(h).padStart(2, "0")}:${m}`;
+}
+
 /** Organization + LocalBusiness graph (site-wide). */
 export function organizationJsonLd(site: URL | string) {
   const base = (typeof site === "string" ? site : site.href).replace(/\/+$/, "");
@@ -26,12 +32,14 @@ export function organizationJsonLd(site: URL | string) {
     },
     geo: { "@type": "GeoCoordinates", latitude: CONTACT.geo.lat, longitude: CONTACT.geo.lng },
     areaServed: "NL",
-    // Openingstijden: werkdagen, uit de CMS-waarde afgeleid vaste opening.
+    // Openingstijden: werkdagen, met de tijden uit de CMS-waarde
+    // (bedrijfsgegevens.yaml). Staan die er onleesbaar in, dan blijft de
+    // bestaande 08:00-17:00 staan zodat het schema niet leegloopt.
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:00",
-      closes: "17:00",
+      opens: hhmm(CONTACT.openingHours?.opensH, CONTACT.openingHours?.opensM, "08:00"),
+      closes: hhmm(CONTACT.openingHours?.closesH, CONTACT.openingHours?.closesM, "17:00"),
     },
     // KvK-nummer als officieel identificatienummer.
     identifier: {

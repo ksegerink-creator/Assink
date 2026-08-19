@@ -15,7 +15,7 @@ hero:
 intro:
   kop: Eén productiepartner voor het complete traject
   tekst: >-
-    Assink & Schipholt bewerkt al meer dan een eeuw metaal in Hengelo. Ervaren
+    Assink & Schipholt bewerkt al meer dan een eeuw metaal in Hengelo, midden in Twente. Ervaren
     vakmensen, een modern en deels geautomatiseerd machinepark en korte lijnen:
     wij beoordelen uw tekening op maakbaarheid, produceren maatvast en leveren
     just-in-time.
@@ -23,7 +23,7 @@ intro:
   feiten:
     - waarde: '{jaren}'
       label: jaar vakmanschap
-    - waarde: 5 t
+    - waarde: 10 t
       label: max. stukgewicht
     - waarde: 3×
       label: ISO-gecertificeerd
@@ -53,7 +53,7 @@ capabilities:
     omschrijving: >-
       Complete machines, bouwgroepen en industriële behuizingen. Wij monteren,
       bekabelen en leveren productieklaar aan — just-in-time.
-    annotatie: Samenstellingen tot 5 t
+    annotatie: Samenstellingen tot 10 ton
     link: machinebouw
     foto: /src/assets/uploads/capabilities/2/foto.jpg
   - nummer: '04'

@@ -235,10 +235,24 @@ Bijgewerkt 28 juli 2026. De punten met **[jij]** kan ik niet zelf uitvoeren.
    Daarna de nieuwe sitemap indienen: `https://assinkschipholt.nl/sitemap-index.xml`.
 
 ### Content-check met de werkvloer
-5. **Cijferclaims** laten bevestigen door productie/werkvoorbereiding:
-   `±0,1 mm` zetwerk, `5 t` max. stukgewicht en `±50 m²` constructieoppervlak
-   (die laatste noemde Leonard onwaarschijnlijk). Staan nu ongewijzigd in NL,
-   EN en DE — pas ze op één plek aan in het CMS en het werkt overal door.
+5. **Cijferclaims** laten bevestigen door productie/werkvoorbereiding.
+   Bevestigd (19 augustus, via productie):
+   - max. stukgewicht is **10 t**, niet 5 t. De homepage stond op 5 t terwijl
+     Over ons, Constructies, Offshore en Apparatenbouw al 10 ton noemden;
+     de homepage is gelijkgetrokken.
+   - plaatdiktes lasersnijden: staal 0,5–25 mm, RVS 0,5–20 mm, aluminium
+     0,5–15 mm, gegalvaniseerd staal 0,5–10 mm. Staan in de spectabel van
+     /plaatwerk/lasersnijden/.
+   - laserbron TruLaser 3040: fiber, 4 kW.
+
+   Nog te bevestigen: `±0,1 mm` zetwerk en `±50 m²` constructieoppervlak (die
+   laatste noemde Leonard onwaarschijnlijk). Staan ongewijzigd in NL, EN en DE
+   — pas ze op één plek aan in het CMS en het werkt overal door.
+
+   Openstaande vraag: **maximale plaatmaat**. Voor snijden zou 4000 mm passen
+   bij de TruLaser 3040, maar zetwerk tot 4000 mm kan niet op de Safan E-Brake
+   150-**3100** T3, en zetwerk wordt niet binnen de groep uitbesteed. De 4000 mm
+   uit de Plaatweb-/Baas-cijfers is daarom niet zonder meer overgenomen.
 6. **Foto van de Trumpf TruLaser 3040** maken [jij]. De Mazak is weg en de
    laserfoto op de huidige site is AI-gegenereerd; die gebruiken we niet.
 7. **Drie echte referentieprojecten** met foto en klanttoestemming [jij]. De

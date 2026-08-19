@@ -34,7 +34,7 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   <!-- Hero: pagina opent met de productie -->
   <section class="ahero">
     <div class="ahero__media">
-      <IndustrialImage src={photo(a.heroFoto)} alt="Productiehal van Assink & Schipholt met vacuümheffer" ratio="21/9" priority={true} position="center 40%" />
+      <IndustrialImage src={photo(a.heroFoto)} alt={t(locale, "altProductionHall")} ratio="21/9" priority={true} position="center 40%" />
       <div class="ahero__scrim" aria-hidden="true"></div>
     </div>
     <div class="wrap ahero__inner">
@@ -82,14 +82,14 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   <section class="sec">
     <div class="wrap acraft">
       <figure class="acraft__photo rv">
-        <IndustrialImage src={photo(a.vakFoto)} alt="Lasser aan de lastafel bij Assink & Schipholt" ratio="4/5" position="55% center" />
+        <IndustrialImage src={photo(a.vakFoto)} alt={t(locale, "altWelderTable")} ratio="4/5" position="55% center" />
       </figure>
       <div class="rv">
         <span class="eyebrow mono">{a.vakEyebrow}</span>
         <h2>{a.vakKop}</h2>
         <p class="prose">{a.vakTekst}</p>
         <p class="acraft__certs mono">{CERTS.join("  ·  ")}</p>
-        <a class="btn ghost" href={nav("kwaliteit")} style="margin-top:22px">Meer over kwaliteit</a>
+        <a class="btn ghost" href={nav("kwaliteit")} style="margin-top:22px">{t(locale, "moreAboutQuality")}</a>
       </div>
     </div>
   </section>
@@ -98,8 +98,8 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   <section class="sec tight">
     <div class="wrap">
       <div class="rule-head rv">
-        <h2>Voor wie wij werken</h2>
-        <span class="mono">{sectors.length} sectoren</span>
+        <h2>{t(locale, "whoWeWorkFor")}</h2>
+        <span class="mono">{sectors.length} {t(locale, "sectorsCount")}</span>
       </div>
       <ul class="alist rv">
         {sectors.map((s) => (
@@ -147,7 +147,7 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   <section class="sec tight">
     <div class="wrap apand rv">
       <figure>
-        <IndustrialImage src={photo(a.pandFoto)} alt="Bedrijfspand van Assink & Schipholt" ratio="21/9" />
+        <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="21/9" />
         <figcaption class="mono">{a.pandBijschrift}</figcaption>
       </figure>
     </div>

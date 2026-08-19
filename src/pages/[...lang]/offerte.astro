@@ -36,7 +36,7 @@ const services = t(locale, "operations").split(",");
         <p class="lead">{o.lead}</p>
       </div>
       <figure class="ov-photo">
-        <IndustrialImage src={photo(o.werkFoto)} alt="Werkvoorbereiding aan de machinebesturing" ratio="4/3" />
+        <IndustrialImage src={photo(o.werkFoto)} alt={t(locale, "altWorkPrep")} ratio="4/3" />
       </figure>
     </div>
   </section>

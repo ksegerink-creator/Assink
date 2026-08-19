@@ -1,4 +1,4 @@
-import type { Locale } from "./site";
+import type { Locale, OpeningHours } from "./site";
 
 /**
  * Interface / chrome strings per locale.
@@ -46,9 +46,30 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Liever direct:",
     formAddress: "Adres",
     formOpeningHours: "Openingstijden",
+    openingHoursWeekdays: "Werkdagen {van}–{tot} uur",
     formKvk: "KvK",
     formMessage: "Bericht",
     routeMap: "Route & kaart",
+    // Losse paginateksten die eerder in de .astro-bestanden stonden
+    moreAboutQuality: "Meer over kwaliteit",
+    whoWeWorkFor: "Voor wie wij werken",
+    sectorsCount: "sectoren",
+    certItemLabel: "Certificering",
+    certPdf: "Certificaat (PDF)",
+    qaAnnotation: "Maatcontrole",
+    langUnavailable: "Nog niet beschikbaar in deze taal",
+    // Alt-teksten van foto's die niet uit het CMS komen
+    altWelderHall: "Lasser van Assink & Schipholt aan het werk in de productiehal",
+    altBuilding: "Bedrijfspand van Assink & Schipholt",
+    altBuildingStreet: "Het bedrijfspand van Assink & Schipholt aan de Oosterveldsingel in Hengelo",
+    altWelderTable: "Lasser aan de lastafel bij Assink & Schipholt",
+    altCraftsmanProfile: "Vakman van Assink & Schipholt met een stalen profiel",
+    altPressTool: "Kantpersgereedschap met plaatdeel",
+    altQualityCheck: "Kwaliteitscontrole van een RVS-onderdeel",
+    altHallOverview: "Overzicht van de productiehal met machinepark",
+    altWorkPrep: "Werkvoorbereiding aan de machinebesturing",
+    altProductionHall: "Productiehal van Assink & Schipholt met vacuümheffer",
+    altBlasting: "Stralen van een frame in de straalcabine",
     socialKicker: "Blijf op de hoogte",
     socialTitle: "Volg Assink & Schipholt",
     socialLead: "Projecten van de werkvloer, nieuw machinepark en openstaande vacatures — we delen het op social media.",
@@ -169,9 +190,30 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Prefer to call:",
     formAddress: "Address",
     formOpeningHours: "Opening hours",
+    openingHoursWeekdays: "Weekdays {van}–{tot}",
     formKvk: "Chamber of Commerce (KvK)",
     formMessage: "Message",
     routeMap: "Route & map",
+    // Standalone page copy that used to sit in the .astro files
+    moreAboutQuality: "More about quality",
+    whoWeWorkFor: "Who we work for",
+    sectorsCount: "sectors",
+    certItemLabel: "Certification",
+    certPdf: "Certificate (PDF)",
+    qaAnnotation: "Dimensional inspection",
+    langUnavailable: "Not yet available in this language",
+    // Alt text for photos that do not come from the CMS
+    altWelderHall: "Welder at Assink & Schipholt at work in the production hall",
+    altBuilding: "Assink & Schipholt company building",
+    altBuildingStreet: "The Assink & Schipholt building on Oosterveldsingel in Hengelo",
+    altWelderTable: "Welder at the welding table at Assink & Schipholt",
+    altCraftsmanProfile: "Craftsman at Assink & Schipholt holding a steel profile",
+    altPressTool: "Press brake tooling with a sheet metal part",
+    altQualityCheck: "Quality inspection of a stainless steel part",
+    altHallOverview: "Overview of the production hall and its machinery",
+    altWorkPrep: "Work preparation at the machine control panel",
+    altProductionHall: "Assink & Schipholt production hall with a vacuum lifter",
+    altBlasting: "Blasting a frame in the blast cabin",
     socialKicker: "Stay up to date",
     socialTitle: "Follow Assink & Schipholt",
     socialLead: "Projects from the shop floor, new machinery and open vacancies — we share it on social media.",
@@ -292,9 +334,30 @@ export const UI: Record<Locale, Dict> = {
     formHintDirect: "Lieber direkt:",
     formAddress: "Adresse",
     formOpeningHours: "Öffnungszeiten",
+    openingHoursWeekdays: "Werktags {van}–{tot} Uhr",
     formKvk: "Handelsregister (KvK)",
     formMessage: "Nachricht",
     routeMap: "Route & Karte",
+    // Einzelne Seitentexte, die vorher in den .astro-Dateien standen
+    moreAboutQuality: "Mehr über Qualität",
+    whoWeWorkFor: "Für wen wir arbeiten",
+    sectorsCount: "Branchen",
+    certItemLabel: "Zertifizierung",
+    certPdf: "Zertifikat (PDF)",
+    qaAnnotation: "Maßkontrolle",
+    langUnavailable: "In dieser Sprache noch nicht verfügbar",
+    // Alt-Texte für Fotos, die nicht aus dem CMS kommen
+    altWelderHall: "Schweißer von Assink & Schipholt bei der Arbeit in der Produktionshalle",
+    altBuilding: "Betriebsgebäude von Assink & Schipholt",
+    altBuildingStreet: "Das Betriebsgebäude von Assink & Schipholt an der Oosterveldsingel in Hengelo",
+    altWelderTable: "Schweißer am Schweißtisch bei Assink & Schipholt",
+    altCraftsmanProfile: "Facharbeiter von Assink & Schipholt mit einem Stahlprofil",
+    altPressTool: "Abkantwerkzeug mit Blechteil",
+    altQualityCheck: "Qualitätsprüfung eines Edelstahlteils",
+    altHallOverview: "Überblick über die Produktionshalle mit Maschinenpark",
+    altWorkPrep: "Arbeitsvorbereitung an der Maschinensteuerung",
+    altProductionHall: "Produktionshalle von Assink & Schipholt mit Vakuumheber",
+    altBlasting: "Strahlen eines Rahmens in der Strahlkabine",
     socialKicker: "Bleiben Sie auf dem Laufenden",
     socialTitle: "Folgen Sie Assink & Schipholt",
     socialLead: "Projekte von der Werkstatt, neuer Maschinenpark und offene Stellen — wir teilen es in den sozialen Medien.",
@@ -381,6 +444,30 @@ export const UI: Record<Locale, Dict> = {
 
 export function t(locale: Locale, key: string): string {
   return UI[locale]?.[key] ?? UI.nl[key] ?? key;
+}
+
+/** Tijdnotatie per taal: NL 8.00, DE 8:00, EN 08:00 (en-GB, 24-uurs). */
+function timeFor(locale: Locale, h: number, m: string): string {
+  if (locale === "nl") return `${h}.${m}`;
+  if (locale === "en") return `${String(h).padStart(2, "0")}:${m}`;
+  return `${h}:${m}`;
+}
+
+/**
+ * Zet de openingstijden om naar de zin van de gevraagde taal.
+ *
+ * Nederlands laat de CMS-tekst ongemoeid: die is daar de bron en de redacteur
+ * moet hem vrij kunnen formuleren. EN/DE bouwen hun zin uit de tijden die uit
+ * die tekst zijn gelezen, zodat een wijziging in het CMS in alle drie de talen
+ * doorwerkt zonder dat iemand drie velden bijhoudt. Zijn de tijden onleesbaar
+ * (hours === null), dan blijft de Nederlandse tekst staan — zichtbaar fout is
+ * beter dan een verzonnen openingstijd. De build waarschuwt daar dan over.
+ */
+export function formatOpeningHours(locale: Locale, hours: OpeningHours | null, raw: string): string {
+  if (locale === "nl" || !hours) return raw;
+  return t(locale, "openingHoursWeekdays")
+    .replace("{van}", timeFor(locale, hours.opensH, hours.opensM))
+    .replace("{tot}", timeFor(locale, hours.closesH, hours.closesM));
 }
 
 export const LOCALE_LABEL: Record<Locale, string> = { nl: "NL", en: "EN", de: "DE" };

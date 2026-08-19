@@ -139,5 +139,12 @@ vertaalwerk, zodat teksten en menu's consistent blijven. Gebruikte conventie:
   *Trumpf TruLaser 3040*, *Safan Darley*, *Timesavers*, ISO-normen.
 - Niet claimen wat er niet is: verspaning en cobotlassen gebeuren **binnen de
   groep** (Baas Metaal), niet in Hengelo. Zie [src/content/services](src/content/services).
-- Cijferclaims (±0,1 mm / 5 t / ±50 m²) staan intern nog ter controle — laat
-  ze in vertalingen exact gelijk aan het NL, verzin geen andere waarden.
+- Cijferclaims: **10 t** max. stukgewicht en de plaatdiktes bij lasersnijden
+  (staal 0,5–25 / RVS 0,5–20 / aluminium 0,5–15 / gegalvaniseerd 0,5–10 mm)
+  zijn bevestigd door productie. ±0,1 mm zetwerk en ±50 m² constructieoppervlak
+  staan nog ter controle. Laat cijfers in vertalingen exact gelijk aan het NL,
+  verzin geen andere waarden — en let op de decimaalscheiding per taal.
+- Wijzigt een Nederlandse specificatie, werk dan de EN/DE-vertaling in dezelfde
+  commit bij. `i18n:check` ziet dit niet: een vertaling die gevuld maar
+  achterhaald is, telt daar als compleet. Zo bleef "CO₂ laser" in EN en DE
+  staan nadat het NL naar fiberlaser was herschreven.

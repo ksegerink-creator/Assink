@@ -1,7 +1,7 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
 import FormExtras from "@components/forms/FormExtras.astro";
-import { t } from "@data/i18n";
+import { t, formatOpeningHours } from "@data/i18n";
 import { toLocale, localizePath } from "@utils/paths";
 import { readPage } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
@@ -38,7 +38,7 @@ const nav = (slug: string) => localizePath(slug, locale);
           <div><span class="k">{t(locale, "formAddress")}</span><span>{CONTACT.addr}</span></div>
           <div><span class="k">{t(locale, "formPhone")}</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
           <div><span class="k">{t(locale, "formEmail")}</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
-          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{CONTACT.openingstijden}</span></div>}
+          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{formatOpeningHours(locale, CONTACT.openingHours, CONTACT.openingstijden)}</span></div>}
           {CONTACT.kvk && <div><span class="k">{t(locale, "formKvk")}</span><span>{CONTACT.kvk}</span></div>}
         </div>
         <div class="chead__acts">
@@ -48,7 +48,7 @@ const nav = (slug: string) => localizePath(slug, locale);
       </div>
 
       <figure class="chead__photo rv">
-        <IndustrialImage src={photo(c.pandFoto)} alt="Bedrijfspand van Assink & Schipholt" ratio="4/5" />
+        <IndustrialImage src={photo(c.pandFoto)} alt={t(locale, "altBuilding")} ratio="4/5" />
         <figcaption class="mono">{c.pandBijschrift}</figcaption>
       </figure>
     </div>
@@ -61,7 +61,7 @@ const nav = (slug: string) => localizePath(slug, locale);
         <h2>{c.berichtKop}</h2>
         <p class="cform__note">{c.berichtNote}</p>
         <figure class="cform__photo">
-          <IndustrialImage src={photo(c.werkFoto)} alt="Kantpersgereedschap met plaatdeel" ratio="4/3" />
+          <IndustrialImage src={photo(c.werkFoto)} alt={t(locale, "altPressTool")} ratio="4/3" />
         </figure>
       </div>
       <form class="form rv" method="post" action="/api/aanvraag">

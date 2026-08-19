@@ -16,7 +16,7 @@ hero:
 intro:
   kop: One production partner for the entire process
   tekst: >-
-    Assink & Schipholt has been working metal in Hengelo for over a century.
+    Assink & Schipholt has been working metal in Hengelo, in the Twente region, for over a century.
     Experienced professionals, a modern and partly automated machine park and
     short lines of communication: we assess your drawing for manufacturability,
     produce to tight tolerances and deliver just in time.
@@ -24,7 +24,7 @@ intro:
   feiten:
     - waarde: '{jaren}'
       label: years of craftsmanship
-    - waarde: 5 t
+    - waarde: 10 t
       label: max. unit weight
     - waarde: 3×
       label: ISO certified
@@ -52,7 +52,7 @@ capabilities:
     omschrijving: >-
       Complete machines, sub-assemblies and industrial enclosures. We assemble,
       wire and deliver ready for production — just in time.
-    annotatie: Assemblies up to 5 t
+    annotatie: Assemblies up to 10 tonnes
     link: machinebouw
   - nummer: '04'
     titel: Laser & tube laser cutting
