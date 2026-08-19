@@ -26,7 +26,7 @@ const locales = SITE.locales;
       // Content is currently Dutch-only; EN/DE are shown but disabled until translated.
       if (!hasPage && !isCurrent) {
         return (
-          <span class="lang__btn" aria-disabled="true" lang={loc} title="Nog niet beschikbaar in deze taal">
+          <span class="lang__btn" aria-disabled="true" lang={loc} title={t(current, "langUnavailable")}>
             {LOCALE_LABEL[loc]}
           </span>
         );

@@ -4,14 +4,14 @@ heroKicker: "Over ons · Hengelo (Ov.)"
 heroTitelRegel1: "Meer dan een eeuw"
 heroTitelRegel2: "metaalbewerking"
 heroFoto: "/src/assets/uploads/over-ons/heroFoto.jpg"
-lead: "Assink & Schipholt is een metaalbedrijf in Hengelo dat al sinds 1919 metaal bewerkt. De combinatie van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling."
+lead: "Assink & Schipholt is een metaalbedrijf in Hengelo (Twente, Overijssel) dat al sinds 1919 metaal bewerkt. De combinatie van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling."
 feiten:
   - { waarde: "{jaren}", label: "jaar ervaring" }
   - { waarde: "10 t", label: "max. stukgewicht" }
   - { waarde: "8 m", label: "max. bouwhoogte" }
   - { waarde: "1", label: "aanspreekpunt" }
 proza:
-  - "Wij werken voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."
+  - "Vanuit Twente werken wij voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."
   - "Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u heeft één aanspreekpunt dat het hele traject overziet — van engineering tot afgewerkte samenstelling."
 historieKop1: "Van smederij"
 historieKop2: "tot moderne productie"

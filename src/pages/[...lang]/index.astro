@@ -40,7 +40,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
     <div class="hero__media">
       <IndustrialImage
         src={photo(hero.foto)}
-        alt="Lasser van Assink & Schipholt aan het werk in de productiehal"
+        alt={t(locale, "altWelderHall")}
         ratio="21/10"
         priority={true}
         position="60% 40%"
@@ -93,7 +93,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
       <figure class="intro__pand rv">
         <IndustrialImage
           src={photo(intro.pandFoto)}
-          alt="Het bedrijfspand van Assink & Schipholt aan de Oosterveldsingel in Hengelo"
+          alt={t(locale, "altBuildingStreet")}
           ratio="16/10"
           position="center 32%"
         />
@@ -131,7 +131,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
     <figure class="proof__wide">
       <IndustrialImage
         src={photo(proef.quoteFoto)}
-        alt="Lasser aan de lastafel bij Assink & Schipholt"
+        alt={t(locale, "altWelderTable")}
         ratio="21/8"
         position="center 55%"
       />
@@ -157,7 +157,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
   <section class="sec people">
     <div class="wrap people__grid">
       <figure class="people__photo rv">
-        <IndustrialImage src={photo(mensen.foto)} alt="Vakman van Assink & Schipholt met een stalen profiel" ratio="4/5" position="center 35%" />
+        <IndustrialImage src={photo(mensen.foto)} alt={t(locale, "altCraftsmanProfile")} ratio="4/5" position="center 35%" />
       </figure>
       <div class="people__text rv">
         <span class="eyebrow mono">{t(locale, "peopleEyebrow")}</span>

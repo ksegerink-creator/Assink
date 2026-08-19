@@ -37,9 +37,9 @@ const certs = await localizeEntries("certificeringen", (await getCollection("cer
       <div class="rv">
         <IndustrialImage
           src={photo(q.heroFoto)}
-          alt="Kwaliteitscontrole van een RVS-onderdeel"
+          alt={t(locale, "altQualityCheck")}
           ratio="16/10"
-          annotation="Maatcontrole"
+          annotation={t(locale, "qaAnnotation")}
           number="QA-00"
         />
       </div>
@@ -52,11 +52,11 @@ const certs = await localizeEntries("certificeringen", (await getCollection("cer
       <div class="g-3 rv">
         {certs.map((c) => (
           <article class="card">
-            <span class="idx">◆ Certificering</span>
+            <span class="idx">◆ {t(locale, "certItemLabel")}</span>
             <h3>{c.data.name}</h3>
             <p>{c.data.scope}</p>
             {c.data.document && (
-              <a class="go" href={`/documents/${c.data.document}`}>Certificaat (PDF) →</a>
+              <a class="go" href={`/documents/${c.data.document}`}>{t(locale, "certPdf")} →</a>
             )}
           </article>
         ))}

@@ -38,7 +38,7 @@ const machines = await localizeEntries("machines", (await getCollection("machine
       <div class="rv">
         <IndustrialImage
           src={photo(m0.heroFoto)}
-          alt="Overzicht van de productiehal met machinepark"
+          alt={t(locale, "altHallOverview")}
           ratio="16/10"
           annotation="Productiehal Hengelo"
           number="MP-00"

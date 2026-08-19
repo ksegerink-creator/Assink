@@ -48,7 +48,7 @@ const nav = (slug: string) => localizePath(slug, locale);
       </div>
 
       <figure class="chead__photo rv">
-        <IndustrialImage src={photo(c.pandFoto)} alt="Bedrijfspand van Assink & Schipholt" ratio="4/5" />
+        <IndustrialImage src={photo(c.pandFoto)} alt={t(locale, "altBuilding")} ratio="4/5" />
         <figcaption class="mono">{c.pandBijschrift}</figcaption>
       </figure>
     </div>
@@ -61,7 +61,7 @@ const nav = (slug: string) => localizePath(slug, locale);
         <h2>{c.berichtKop}</h2>
         <p class="cform__note">{c.berichtNote}</p>
         <figure class="cform__photo">
-          <IndustrialImage src={photo(c.werkFoto)} alt="Kantpersgereedschap met plaatdeel" ratio="4/3" />
+          <IndustrialImage src={photo(c.werkFoto)} alt={t(locale, "altPressTool")} ratio="4/3" />
         </figure>
       </div>
       <form class="form rv" method="post" action="/api/aanvraag">
