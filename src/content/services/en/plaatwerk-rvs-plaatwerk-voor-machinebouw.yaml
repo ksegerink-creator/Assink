@@ -3,8 +3,11 @@ title: "Stainless steel sheet metal for machine building"
 kicker: "Sector"
 h1: "Stainless steel sheet metal for machine building"
 intro: "Dimensionally stable stainless steel sheet metal for machine building: panels, casings and parts, matched to your series and your schedule."
+heroPhoto:
+  subject: "Stainless steel sheet metal parts ready for machine building"
 body:
   - "For machine builders we supply stainless steel sheet metal that is dimensionally stable and reproducible, integrated with welding and assembly. That way you keep a single point of contact from drawing to finished assembly."
+  - "See also our broader page on stainless steel sheet metal for background on material choice, surface finishing and the processing of stainless steel 304 and 316."
 materials: ["Stainless steel 304 / 316"]
 process:
   - { step: "Production engineering", desc: "Flat patterns and tolerances." }

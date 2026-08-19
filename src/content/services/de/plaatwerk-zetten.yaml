@@ -3,8 +3,11 @@ title: "Kanten & Biegen"
 kicker: "Blechbearbeitung 1.4"
 h1: "Kanten & Biegen"
 intro: "Präzise Biegewinkel und konstante Maßhaltigkeit auf unserer servoelektrischen Abkantpresse."
+heroPhoto:
+  subject: "Abkantpresse in Betrieb — Blech wird gekantet"
 body:
   - "Das Abkanten bestimmt die Form des Blechteils. Auf unserer Safan Darley E-Brake 150-3100 T3 kanten wir maßhaltig, mit Rücksicht auf Rückfederung und Biegeradius je Material."
+  - "Das Kanten von Edelstahl erfordert eine andere Herangehensweise als bei Stahl: Edelstahl federt stärker zurück und ist empfindlicher für Kratzer auf der Sichtfläche. Wir passen Biegeradius und Werkzeugwahl entsprechend an, damit der Winkel stimmt und die Oberfläche intakt bleibt."
 materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
 process:
   - { step: "Abwicklung festlegen", desc: "Korrekte Abwicklung inklusive Biegekompensation." }

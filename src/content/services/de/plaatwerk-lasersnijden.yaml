@@ -3,6 +3,8 @@ title: "Laserschneiden"
 kicker: "Schneiden 2.1"
 h1: "Laserschneiden"
 intro: "2D-Laserschneiden von Stahl, Edelstahl und Aluminium mit hoher Präzision und minimalen Toleranzen auf unserer Trumpf TruLaser 3040."
+heroPhoto:
+  subject: "Laserschneidmaschine in Betrieb — Schneidkopf über dem Blech"
 body:
   - "Auf der Trumpf TruLaser 3040 schneiden wir Stahl, Edelstahl und Aluminium mit hoher Präzision und gleichbleibender Maßhaltigkeit. Das Laserschneiden ist häufig der erste Schritt im Produktionsprozess, gefolgt vom Entgraten und Abkanten."
 materials: ["Stahl", "Edelstahl", "Aluminium"]

@@ -3,8 +3,11 @@ title: "Einpress- & Blindnietmuttern"
 kicker: "Blechbearbeitung 2.7"
 h1: "Einpress- & Blindnietmuttern"
 intro: "Mit Einpress- und Blindnietmuttern machen wir Blechteile montagefertig: zuverlässige Gewinde, auch in dünnem Material."
+heroPhoto:
+  subject: "Nahaufnahme einer eingepressten Mutter im Blechteil"
 body:
   - "Einpressmuttern und Blindnietmuttern geben Blechteilen eine feste Gewindeverbindung ohne loses Befestigungsmaterial. So liefern wir montagefertige Teile, die in Ihrer Linie direkt weiterverarbeitet werden können."
+  - "Einpressmuttern setzen wir maschinell und rechtwinklig ein, mit einer Presskraft, die auf Blechdicke und Mutterntyp abgestimmt ist — sodass das Gewinde auch bei regelmäßigem Demontieren und Montieren fest sitzen bleibt."
 materials: ["Edelstahl", "Aluminium", "Stahl"]
 process:
   - { step: "Vorbereiten", desc: "Löcher maßgenau schneiden." }

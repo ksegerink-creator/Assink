@@ -3,8 +3,11 @@ title: "Precision sheet metal"
 kicker: "Sheet metal work 1.6"
 h1: "Precision sheet metal"
 intro: "Accuracy down to the millimetre. From one-offs to series and repeat orders — dimensionally stable and reproducible."
+heroPhoto:
+  subject: "Precision sheet metal part on a measuring table during dimensional inspection"
 body:
   - "Precision sheet metal calls for controlled processes: from laser cutting and press braking through to finishing. Thanks to fixed work instructions and dimensional inspection, part one thousand is just as good as part one."
+  - "For precision sheet metal with tight tolerances we combine laser cutting with a servo-electric press brake: this gives a more consistent bend angle than a hydraulic press, even over long series."
 materials: ["Stainless steel", "Aluminium", "Brass", "Steel"]
 process:
   - { step: "Production engineering", desc: "Determining the flat pattern, bend lines and tolerances." }

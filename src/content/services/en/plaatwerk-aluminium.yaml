@@ -3,9 +3,12 @@ title: "Aluminium sheet metal"
 kicker: "Sheet metal work 1.2"
 h1: "Aluminium sheet metal"
 intro: "Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building and enclosures."
+heroPhoto:
+  subject: "Aluminium sheet metal part with TIG weld seam, detail"
 body:
   - "Aluminium combines low weight with good strength and corrosion resistance. That makes it ideal for moving parts, enclosures and structures where weight matters."
   - "Our welding work in aluminium is done with TIG and MIG, matched to sheet thickness and application."
+  - "Aluminium sheet processing calls for different machine settings than steel or stainless steel: aluminium springs back more when bending, and heat dissipates faster when welding. We factor that into flat-pattern development, tooling and welding parameters."
 materials: ["Aluminium (various alloys)"]
 process:
   - { step: "Laser cutting", desc: "Cutting aluminium sheet." }

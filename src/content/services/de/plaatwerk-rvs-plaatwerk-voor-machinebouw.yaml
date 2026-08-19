@@ -3,8 +3,11 @@ title: "Edelstahl-Blechbearbeitung für den Maschinenbau"
 kicker: "Branche"
 h1: "Edelstahl-Blechbearbeitung für den Maschinenbau"
 intro: "Maßhaltige Edelstahl-Blechteile für den Maschinenbau: Paneele, Einhausungen und Bauteile, abgestimmt auf Ihre Serie und Ihre Planung."
+heroPhoto:
+  subject: "Edelstahl-Blechteile bereit für den Maschinenbau"
 body:
   - "Für Maschinenbauer liefern wir Edelstahl-Blechteile, die maßhaltig und reproduzierbar sind, integriert mit Schweißarbeiten und Montage. So behalten Sie einen Ansprechpartner von der Zeichnung bis zur Baugruppe."
+  - "Siehe auch unsere ausführlichere Seite zu Edelstahl-Blechbearbeitung für Hintergründe zu Materialwahl, Oberflächenveredelung und der Verarbeitung von Edelstahl 304 und 316."
 materials: ["Edelstahl 304 / 316"]
 process:
   - { step: "Arbeitsvorbereitung", desc: "Abwicklung und Toleranzen." }

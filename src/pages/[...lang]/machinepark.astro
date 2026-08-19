@@ -51,11 +51,15 @@ const machines = await localizeEntries("machines", (await getCollection("machine
     <div class="wrap">
       <SectionHead title={t(locale, "machinesHead")} index={`${machines.length} ${t(locale, "machinesIndex")}`} />
       <div class="mp rv">
-        {machines.map((m, i) => (
-          <article class="mp__row">
-            <div class="mp__media">
-              <IndustrialImage src={photo(m.data.foto) ?? machineImageFor(m.id)} alt={m.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${m.data.photo.subject}`} />
-            </div>
+        {machines.map((m, i) => {
+          const machineImg = photo(m.data.foto) ?? machineImageFor(m.id);
+          return (
+          <article class:list={["mp__row", { "mp__row--no-media": !machineImg }]}>
+            {machineImg && (
+              <div class="mp__media">
+                <IndustrialImage src={machineImg} alt={m.data.photo.subject} ratio="4/3" />
+              </div>
+            )}
             <div class="mp__body">
               <span class="mp__cat mono">{String(i + 1).padStart(2, "0")} · {m.data.category}</span>
               <h3>{m.data.name}</h3>
@@ -73,7 +77,8 @@ const machines = await localizeEntries("machines", (await getCollection("machine
               )}
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
     </div>
   </section>
@@ -88,6 +93,7 @@ const machines = await localizeEntries("machines", (await getCollection("machine
   .ov-hero .lead { max-width: 34em; color: var(--ink-2); font-size: clamp(16px, 1.4vw, 19px); margin-top: 20px; }
   .mp { display: grid; gap: clamp(28px, 4vw, 52px); }
   .mp__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(20px, 3vw, 44px); align-items: start; padding-bottom: clamp(28px, 4vw, 52px); border-bottom: 1px solid var(--line); }
+  .mp__row--no-media { grid-template-columns: 1fr; }
   .mp__row:last-child { border-bottom: 0; padding-bottom: 0; }
   .mp__cat { color: var(--blue); }
   .mp__body h3 { font-size: clamp(22px, 2.6vw, 34px); margin: 8px 0 12px; }

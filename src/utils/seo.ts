@@ -90,6 +90,30 @@ export function serviceJsonLd(
   };
 }
 
+/**
+ * Article schema for a kennisbank artikel.
+ * `authorName` blijft leeg totdat er een echte auteur (naam + functie) wordt
+ * aangeleverd — tot die tijd staat de Organization zelf als auteur, wat voor
+ * Article-schema een geldige, niet-verzonnen waarde is.
+ */
+export function articleJsonLd(
+  site: URL | string,
+  article: { headline: string; description: string; datePublished: string; image?: string; authorName?: string },
+) {
+  const base = (typeof site === "string" ? site : site.href).replace(/\/+$/, "");
+  const org = { "@id": `${base}/#organization` };
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.headline,
+    description: article.description,
+    datePublished: article.datePublished,
+    ...(article.image ? { image: article.image } : {}),
+    publisher: org,
+    author: article.authorName ? { "@type": "Person", name: article.authorName } : org,
+  };
+}
+
 /** JobPosting schema for a vacancy. */
 export function jobPostingJsonLd(
   site: URL | string,

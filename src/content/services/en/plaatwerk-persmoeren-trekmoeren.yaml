@@ -3,8 +3,11 @@ title: "Self-clinching nuts & rivet nuts"
 kicker: "Sheet metal work 2.7"
 h1: "Self-clinching nuts & rivet nuts"
 intro: "With self-clinching nuts and rivet nuts we make sheet metal ready for assembly: dependable threads, even in thin material."
+heroPhoto:
+  subject: "Close-up of a self-clinching nut pressed into sheet metal"
 body:
   - "Self-clinching nuts and rivet nuts give sheet metal a strong threaded connection without loose fasteners. This allows us to supply assembly-ready parts that can go straight into your line."
+  - "We install self-clinching nuts by machine and square, with a press force matched to sheet thickness and nut type — so the thread stays secure even with regular disassembly and reassembly."
 materials: ["Stainless steel", "Aluminium", "Steel"]
 process:
   - { step: "Preparation", desc: "Cutting holes to size." }

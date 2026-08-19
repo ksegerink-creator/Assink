@@ -3,6 +3,8 @@ title: "Welding"
 kicker: "Welding technology 3.1"
 h1: "Welding"
 intro: "From manual TIG and MIG welding to automated and laser welding. We choose the welding method that suits the material, the batch size and the quality requirement."
+heroPhoto:
+  subject: "Welder at work on a stainless steel assembly"
 body:
   - "Welding is core craftsmanship at Assink & Schipholt. Depending on the application we use manual or laser welding — always with attention to penetration, distortion and seam quality. Automated welding for larger series is outsourced to a regular partner; in Hengelo we weld manually and by laser."
 materials: ["Stainless steel", "Aluminium", "Steel"]

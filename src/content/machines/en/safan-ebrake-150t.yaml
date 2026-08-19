@@ -5,3 +5,6 @@ specs:
   - { label: "Press force", value: "150 tonnes" }
   - { label: "Working length", value: "up to 3100 mm" }
   - { label: "Drive", value: "servo-electric" }
+  - { label: "Special feature", value: "patented roller drive in the upper beam" }
+photo:
+  subject: "Safan Darley E-Brake press brake bending a sheet"

@@ -60,6 +60,15 @@ const photoMeta = () =>
     { label: "Fotogegevens" },
   );
 
+// Voor vertalingen: alleen het onderwerp (= alt-tekst) is per taal anders.
+// Oriëntatie/uitsnede/compositie zijn productienotities en komen altijd uit
+// het Nederlands, dus die staan niet in het vertaalschema.
+const photoSubjectMeta = () =>
+  fields.object(
+    { subject: fields.text({ label: "Onderwerp (alt-tekst)" }) },
+    { label: "Fotogegevens" },
+  );
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Pagina-schema's
    Elk schema is een functie van de uploadnamespace, zodat dezelfde definitie
@@ -356,6 +365,7 @@ const serviceVertaling = () => ({
   kicker: fields.text({ label: "Kicker" }),
   h1: fields.text({ label: "Titel (H1)" }),
   intro: fields.text({ label: "Intro", multiline: true }),
+  heroPhoto: photoSubjectMeta(),
   bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
   body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
     label: "Tekst",
@@ -422,6 +432,7 @@ const vacatureVertaling = () => ({
     label: "Wat je meebrengt",
     itemLabel: (p) => (p.value || "").slice(0, 45),
   }),
+  photo: photoSubjectMeta(),
 });
 
 const machineVertaling = () => ({
@@ -435,6 +446,7 @@ const machineVertaling = () => ({
     }),
     { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
   ),
+  photo: photoSubjectMeta(),
 });
 
 const sectorVertaling = () => ({

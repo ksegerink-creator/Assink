@@ -3,9 +3,12 @@ title: "Aluminium-Blechbearbeitung"
 kicker: "Blechbearbeitung 1.2"
 h1: "Aluminium-Blechbearbeitung"
 intro: "Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und Gehäuse spezialisiert."
+heroPhoto:
+  subject: "Aluminium-Blechteil mit WIG-Schweißnaht, Detail"
 body:
   - "Aluminium verbindet ein geringes Gewicht mit guter Festigkeit und Korrosionsbeständigkeit. Damit ist es ideal für bewegte Teile, Gehäuse und Konstruktionen, bei denen das Gewicht zählt."
   - "Unsere Schweißarbeiten in Aluminium erfolgen mit WIG und MIG, abgestimmt auf Blechdicke und Anwendung."
+  - "Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl: Aluminium federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das berücksichtigen wir bei Abwicklung, Werkzeug und Schweißparametern."
 materials: ["Aluminium (verschiedene Legierungen)"]
 process:
   - { step: "Laserschneiden", desc: "Schneiden von Aluminiumblech." }

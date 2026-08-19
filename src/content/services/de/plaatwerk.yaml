@@ -3,8 +3,12 @@ title: "Blechbearbeitung"
 kicker: "Möglichkeit 1.0"
 h1: "Perfektion in der Blechbearbeitung"
 intro: "Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim Schneiden, Abkanten und Veredeln von Feinblech — Einzelstücke und Serien."
+heroPhoto:
+  subject: "Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung"
 body:
-  - "Wir bearbeiten Feinblech mit CO₂-Laser, Abkantpresse und Veredelung im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar."
+  - "Wir bearbeiten Feinblech mit einem Faserlaser (Trumpf TruLaser 3040, 4 kW), Abkantpresse und Veredelung im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar."
+  - "Blechbearbeitung bei Assink & Schipholt geht über Schneiden und Kanten hinaus. Von der ersten Zeichnung bis zum fertigen Teil begleiten wir den gesamten Prozess: Materialberatung, Engineering, Produktion und Oberflächenveredelung — unter einem Dach in Hengelo."
+  - "Ob einzelnes Prototyp oder Jahresserie: Blecharbeiten nach Maß erfordern Präzision, die reproduzierbar bleibt. Unsere servoelektrischen Abkantpressen und Lasermaschinen sorgen für gleichbleibende Maßhaltigkeit, auch bei größeren Serien."
 cards:
   - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen." }
   - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Leicht und stabil, inkl. WIG- und MIG-Schweißen." }

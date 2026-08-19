@@ -3,9 +3,13 @@ title: "Stainless steel sheet metal"
 kicker: "Sheet metal work 1.1"
 h1: "Stainless steel sheet metal"
 intro: "Ground stainless steel for visible surfaces: corrosion-resistant, presentable and dimensionally stable. Processed by CO₂ laser, deburring and bending."
+heroPhoto:
+  subject: "Close-up of ground stainless steel bent work with a sharp edge"
 body:
   - "Stainless steel is ideally suited to applications that must be corrosion-resistant as well as presentable. We mainly work with stainless steel 304 and 316."
   - "For visible surfaces we supply ground finishes with a consistent grain. Cutting is done with the laser; edges are deburred and, where required, passivated."
+  - "Stainless steel sheet processing calls for care: incorrect welding parameters or carbon steel residue on the surface lead to rust formation. We passivate after welding, so the corrosion-resistant surface stays intact."
+  - "From one-off visible work to series stainless steel sheet metal for the food industry or machine building: every batch is finished with the same grain and the same tolerances."
 materials: ["Stainless steel 304", "Stainless steel 316", "Ground / brushed"]
 process:
   - { step: "Laser cutting", desc: "2D laser cutting with minimal tolerances." }

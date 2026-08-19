@@ -14,7 +14,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "astro": "astro",
-    "gen:redirects": "node scripts/gen-vercel-json.mjs"
+    "gen:redirects": "node scripts/gen-vercel-json.mjs",
+    "i18n:check": "node scripts/i18n-check.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",

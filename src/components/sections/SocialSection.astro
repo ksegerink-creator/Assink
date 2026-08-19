@@ -1,5 +1,8 @@
 ---
 import { SOCIAL } from "@data/site";
+import type { Locale } from "@data/site";
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
 import SocialIcon from "@components/navigation/SocialIcon.astro";
 
 /**
@@ -8,6 +11,7 @@ import SocialIcon from "@components/navigation/SocialIcon.astro";
  * als er geen enkel kanaal is ingevuld.
  */
 interface Props {
+  locale?: Locale;
   kicker?: string;
   title?: string;
   lead?: string;
@@ -15,16 +19,17 @@ interface Props {
   variant?: "band" | "plain";
 }
 const {
-  kicker = "Blijf op de hoogte",
-  title = "Volg Assink & Schipholt",
-  lead = "Projecten van de werkvloer, nieuw machinepark en openstaande vacatures — we delen het op social media.",
+  locale = toLocale(Astro.params.lang),
+  kicker = t(locale, "socialKicker"),
+  title = t(locale, "socialTitle"),
+  lead = t(locale, "socialLead"),
   variant = "plain",
 } = Astro.props;
 
 const platforms = [
-  { name: "LinkedIn", href: SOCIAL.linkedin, desc: "Bedrijfsnieuws & vacatures" },
-  { name: "Instagram", href: SOCIAL.instagram, desc: "Werk & sfeer in beeld" },
-  { name: "Facebook", href: SOCIAL.facebook, desc: "Updates & achter de schermen" },
+  { name: "LinkedIn", href: SOCIAL.linkedin, desc: t(locale, "socialLinkedin") },
+  { name: "Instagram", href: SOCIAL.instagram, desc: t(locale, "socialInstagram") },
+  { name: "Facebook", href: SOCIAL.facebook, desc: t(locale, "socialFacebook") },
 ].filter((p) => p.href);
 ---
 {

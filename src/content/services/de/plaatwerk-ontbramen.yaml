@@ -3,6 +3,8 @@ title: "Entgraten"
 kicker: "Blechbearbeitung 1.7"
 h1: "Entgraten"
 intro: "Nach dem Laserschneiden werden die Kanten entgratet: sicher in der Handhabung, bereit für den nächsten Arbeitsgang und sauber ausgeführt."
+heroPhoto:
+  subject: "Blechteil durchläuft die Entgrat-/Bürstmaschine"
 body:
   - "Grate entstehen beim Schneiden und können scharf oder bei Montage und Endbearbeitung störend sein. Auf unserer Timesavers 42 Series RB entgraten und bürsten wir flache Werkstücke nach dem Laserschneiden."
 materials: ["Stahl", "Edelstahl", "Aluminium"]

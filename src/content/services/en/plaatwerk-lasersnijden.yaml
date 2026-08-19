@@ -3,6 +3,8 @@ title: "Laser cutting"
 kicker: "Cutting 2.1"
 h1: "Laser cutting"
 intro: "2D laser cutting of steel, stainless steel and aluminium with high precision and minimal tolerances on our Trumpf TruLaser 3040."
+heroPhoto:
+  subject: "Laser cutting machine in operation — cutting head above sheet"
 body:
   - "On the Trumpf TruLaser 3040 we cut steel, stainless steel and aluminium with high precision and consistent dimensioning. Laser cutting is often the first step in the production process, followed by deburring and press braking."
 materials: ["Steel", "Stainless steel", "Aluminium"]

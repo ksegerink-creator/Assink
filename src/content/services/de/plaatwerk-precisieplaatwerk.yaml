@@ -3,8 +3,11 @@ title: "Präzisionsblech"
 kicker: "Blechbearbeitung 1.6"
 h1: "Präzisionsblech"
 intro: "Genauigkeit bis auf den Millimeter. Von Einzelstücken bis zu Serien und Wiederholaufträgen — maßhaltig und reproduzierbar."
+heroPhoto:
+  subject: "Präzisionsblechteil auf dem Messtisch bei der Maßkontrolle"
 body:
   - "Präzisionsblech verlangt beherrschte Prozesse: vom Laserschneiden und Abkanten bis zur Nachbearbeitung. Durch feste Arbeitsanweisungen und Maßkontrolle ist Teil eintausend genauso gut wie Teil eins."
+  - "Für Präzisionsblech mit engen Toleranzen kombinieren wir Laserschneiden mit einer servoelektrischen Abkantpresse: Diese liefert einen gleichmäßigeren Biegewinkel als eine hydraulische Presse, auch bei langen Serien."
 materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
 process:
   - { step: "Arbeitsvorbereitung", desc: "Abwicklung, Biegelinien und Toleranzen festlegen." }

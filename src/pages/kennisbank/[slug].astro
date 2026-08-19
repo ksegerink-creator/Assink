@@ -1,10 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
+import { getImage } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
 import { imageFor } from "@data/images";
+import { articleJsonLd } from "@utils/seo";
+import { SITE } from "@data/site";
 
 /** Kennisbank-artikel. Nederlandstalig (zie kennisbank/index.astro). */
 export async function getStaticPaths() {
@@ -32,18 +35,33 @@ const datum = (iso: string) =>
 // sfeerfoto uit de vaste beeldregistratie.
 const ogPhoto = photo(a.foto) ?? imageFor("home.detail.zetwerk");
 
+const site = Astro.site ?? new URL(SITE.url);
+const articleImgSrc = (await getImage({ src: ogPhoto, width: 1200, height: 630, format: "jpeg", fit: "cover" })).src;
+
+// Article-schema: author staat voorlopig op de Organization (geen naam
+// verzonnen). Zodra er een echte auteur (naam + functie) wordt aangeleverd,
+// vult authorName dat hier in.
+const jsonld: unknown[] = [
+  articleJsonLd(site, {
+    headline: a.title,
+    description: a.seo?.description || a.intro,
+    datePublished: a.date,
+    image: new URL(articleImgSrc, site).href,
+  }),
+];
+
 // FAQPage-structured data zodat de vragen in Google kunnen verschijnen.
-const jsonld = a.faq.length
-  ? [{
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: a.faq.map((f) => ({
-        "@type": "Question",
-        name: f.vraag,
-        acceptedAnswer: { "@type": "Answer", text: f.antwoord },
-      })),
-    }]
-  : [];
+if (a.faq.length > 0) {
+  jsonld.push({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: a.faq.map((f) => ({
+      "@type": "Question",
+      name: f.vraag,
+      acceptedAnswer: { "@type": "Answer", text: f.antwoord },
+    })),
+  });
+}
 ---
 <PageLayout
   title={a.seo?.title || a.title}
@@ -51,6 +69,7 @@ const jsonld = a.faq.length
   canonicalSlug={`kennisbank/${a.slug}`}
   trail={[{ label: "Kennisbank", slug: "kennisbank" }, { label: a.title, slug: `kennisbank/${a.slug}` }]}
   ogPhoto={ogPhoto}
+  ogType="article"
   jsonld={jsonld}
 >
   <article>

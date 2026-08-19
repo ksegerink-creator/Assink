@@ -3,9 +3,13 @@ title: "Edelstahl-Blechbearbeitung"
 kicker: "Blechbearbeitung 1.1"
 h1: "Edelstahl-Blechbearbeitung"
 intro: "Geschliffener Edelstahl für Sichtflächen: korrosionsbeständig, repräsentativ und maßhaltig. Bearbeitung per CO₂-Laser, Entgraten und Abkanten."
+heroPhoto:
+  subject: "Nahaufnahme von geschliffenem Edelstahl-Kantteil mit scharfer Kante"
 body:
   - "Edelstahl (rostfreier Stahl) eignet sich besonders für Anwendungen, die sowohl korrosionsbeständig als auch repräsentativ sein müssen. Wir verarbeiten vor allem Edelstahl 304 und 316."
   - "Für Sichtflächen liefern wir geschliffene Oberflächen mit einheitlicher Körnung. Geschnitten wird mit dem Laser; Kanten werden entgratet und bei Bedarf passiviert."
+  - "Die Edelstahl-Blechbearbeitung erfordert Sorgfalt: falsche Schweißparameter oder Rückstände von Kohlenstoffstahl auf der Oberfläche führen zu Rostbildung. Wir passivieren nach dem Schweißen, damit die korrosionsbeständige Oberfläche intakt bleibt."
+  - "Von Einzelstück-Sichtflächen bis zu seriellem Edelstahl-Blechwerk für die Lebensmittelindustrie oder den Maschinenbau: Jede Charge wird mit derselben Körnung und denselben Toleranzen ausgeführt."
 materials: ["Edelstahl 304", "Edelstahl 316", "Geschliffen / gebürstet"]
 process:
   - { step: "Laserschneiden", desc: "2D-Laserschneiden mit minimalen Toleranzen." }

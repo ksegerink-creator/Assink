@@ -3,8 +3,11 @@ title: "Aluminium schweißen"
 kicker: "Schweißtechnik 3.4"
 h1: "Aluminium schweißen"
 intro: "Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir schweißen Aluminium mit WIG und MIG, verzugsarm und sauber."
+heroPhoto:
+  subject: "Aluminium-Schweißnaht im Detail mit gleichmäßiger Raupe"
 body:
   - "Aluminium leitet Wärme schnell und oxidiert leicht. Mit der richtigen Vorbereitung und Technik (WIG/MIG) legen wir feste, saubere Nähte — geeignet für Maschinenbau, Gehäuse und Leichtbaukonstruktionen."
+  - "Als Metallbaubetrieb mit Erfahrung im Aluminiumschweißen kennen wir die Fallstricke: zu viel Wärmeeinbringung führt zu Verzug, eine falsche Vorbereitung zu porösen Nähten. Wir stimmen Stromstärke, Drahtwahl und Reihenfolge auf Blechdicke und Legierung ab."
 materials: ["Aluminium (verschiedene Legierungen)"]
 process:
   - { step: "Vorbereitung", desc: "Reinigen und Oxidschicht entfernen." }

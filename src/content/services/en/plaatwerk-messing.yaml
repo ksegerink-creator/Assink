@@ -3,6 +3,8 @@ title: "Brass sheet metal"
 kicker: "Sheet metal work 1.3"
 h1: "Brass sheet metal"
 intro: "Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre, for technical and visible applications alike."
+heroPhoto:
+  subject: "Brass sheet metal part with a warm sheen, detail"
 body:
   - "Brass is valued for its warm colour and its workability. We process brass for interior fit-out, art objects and decorative technical components, with care for preserving its natural lustre."
 materials: ["Brass (copper-zinc alloy)"]

@@ -3,8 +3,11 @@ title: "Aluminium welding"
 kicker: "Welding technology 3.4"
 h1: "Aluminium welding"
 intro: "Aluminium calls for craftsmanship: the right heat input, preparation and technique. We weld aluminium with TIG and MIG, low-distortion and cleanly finished."
+heroPhoto:
+  subject: "Aluminium weld seam in detail with an even bead"
 body:
   - "Aluminium conducts heat quickly and oxidises easily. With the right preparation and technique (TIG/MIG) we lay strong, clean seams — suitable for machine building, enclosures and lightweight constructions."
+  - "As a metalworking company experienced in welding aluminium, we know the pitfalls: too much heat input causes distortion, incorrect preparation causes porous seams. We match current, wire choice and sequence to sheet thickness and alloy."
 materials: ["Aluminium (various alloys)"]
 process:
   - { step: "Preparation", desc: "Cleaning and removing the oxide layer." }

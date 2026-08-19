@@ -5,3 +5,6 @@ specs:
   - { label: "Presskraft", value: "150 Tonnen" }
   - { label: "Arbeitslänge", value: "bis 3100 mm" }
   - { label: "Antrieb", value: "servoelektrisch" }
+  - { label: "Besonderheit", value: "patentierter Rollenantrieb im Oberbalken" }
+photo:
+  subject: "Safan Darley E-Brake Abkantpresse beim Kanten eines Blechs"

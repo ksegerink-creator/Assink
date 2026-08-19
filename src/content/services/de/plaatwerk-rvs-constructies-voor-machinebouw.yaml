@@ -3,8 +3,11 @@ title: "Edelstahlkonstruktionen für den Maschinenbau"
 kicker: "Branche"
 h1: "Edelstahlkonstruktionen für den Maschinenbau"
 intro: "Geschweißte Edelstahlrahmen und Baugruppen für den Maschinenbau — stabil, korrosionsbeständig und maßhaltig."
+heroPhoto:
+  subject: "Edelstahlrahmen für eine Maschine während der Montage"
 body:
   - "Wir fertigen Edelstahlkonstruktionen und Rahmen für den Maschinenbau: maßhaltig, sauber geschweißt und ausgeführt. Rohrlaserschneiden sorgt für passgenaue Verbindungen und effizientes Schweißen."
+  - "Rahmen und Baugruppen werden auf Ihren Montageprozess abgestimmt: Befestigungspunkte, Verbindungen und Toleranzen legen wir gemeinsam mit Ihrem Engineering fest, damit der Rahmen auf Anhieb passt."
 materials: ["Edelstahl 304 / 316"]
 process:
   - { step: "Rohrlaserschneiden", desc: "Passgenaue Profile." }

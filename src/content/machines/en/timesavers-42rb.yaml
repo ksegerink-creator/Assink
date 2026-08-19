@@ -3,3 +3,5 @@ category: "Deburring / brushing"
 description: "Wide-belt grinding and sanding machine for finishing flat workpieces after laser cutting."
 specs:
   - { label: "Type", value: "brushing & deburring machine" }
+photo:
+  subject: "Timesavers deburring machine with a sheet on the conveyor belt"

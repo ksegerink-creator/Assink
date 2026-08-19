@@ -3,8 +3,11 @@ title: "Bending & forming"
 kicker: "Sheet metal work 1.4"
 h1: "Bending & forming"
 intro: "Precise bend angles and consistent dimensioning on our servo-electric press brake."
+heroPhoto:
+  subject: "Press brake in operation — sheet being bent"
 body:
   - "Press braking determines the shape of the sheet metal part. On our Safan Darley E-Brake 150-3100 T3 we bend to size, with attention to springback and bend radius for each material."
+  - "Bending stainless steel calls for a different approach than steel: stainless steel springs back more and is more sensitive to scratches on the visible surface. We adjust the bend radius and tooling accordingly, so the angle is correct and the surface stays intact."
 materials: ["Stainless steel", "Aluminium", "Brass", "Steel"]
 process:
   - { step: "Determining the flat pattern", desc: "Correct flat pattern including bend compensation." }

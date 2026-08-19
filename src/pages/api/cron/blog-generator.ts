@@ -88,7 +88,7 @@ const ARTICLE_TOOL = {
           required: ["vraag", "antwoord"],
         },
       },
-      seoTitle: { type: "string", description: "Max. ~60 tekens." },
+      seoTitle: { type: "string", description: "Max. ~60 tekens. Bevat NIET de bedrijfsnaam — die wordt door de site automatisch achter elke titel geplakt." },
       seoDescription: { type: "string", description: "Max. ~155 tekens." },
     },
     required: ["title", "intro", "secties", "faq", "seoTitle", "seoDescription"],

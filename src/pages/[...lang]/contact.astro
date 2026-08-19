@@ -2,7 +2,7 @@
 import PageLayout from "@layouts/PageLayout.astro";
 import FormExtras from "@components/forms/FormExtras.astro";
 import { t } from "@data/i18n";
-import { toLocale } from "@utils/paths";
+import { toLocale, localizePath } from "@utils/paths";
 import { readPage } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
@@ -16,6 +16,7 @@ export function getStaticPaths() {
 
 const locale = toLocale(Astro.params.lang);
 const c = await readPage("contact", locale);
+const nav = (slug: string) => localizePath(slug, locale);
 ---
 <PageLayout
   title={c.seoTitel}
@@ -34,15 +35,15 @@ const c = await readPage("contact", locale);
         <p class="chead__lead">{c.lead}</p>
 
         <div class="info">
-          <div><span class="k">Adres</span><span>{CONTACT.addr}</span></div>
-          <div><span class="k">Telefoon</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
-          <div><span class="k">E-mail</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
-          {CONTACT.openingstijden && <div><span class="k">Openingstijden</span><span>{CONTACT.openingstijden}</span></div>}
-          {CONTACT.kvk && <div><span class="k">KvK</span><span>{CONTACT.kvk}</span></div>}
+          <div><span class="k">{t(locale, "formAddress")}</span><span>{CONTACT.addr}</span></div>
+          <div><span class="k">{t(locale, "formPhone")}</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
+          <div><span class="k">{t(locale, "formEmail")}</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
+          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{CONTACT.openingstijden}</span></div>}
+          {CONTACT.kvk && <div><span class="k">{t(locale, "formKvk")}</span><span>{CONTACT.kvk}</span></div>}
         </div>
         <div class="chead__acts">
-          <a class="btn" href="/offerte/">Vraag een offerte aan</a>
-          {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">Route &amp; kaart</a>}
+          <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
+          {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">{t(locale, "routeMap")}</a>}
         </div>
       </div>
 
@@ -65,19 +66,19 @@ const c = await readPage("contact", locale);
       </div>
       <form class="form rv" method="post" action="/api/aanvraag">
         <div class="form__grid">
-          <label>Naam<input type="text" name="naam" autocomplete="name" required /></label>
+          <label>{t(locale, "formName")}<input type="text" name="naam" autocomplete="name" required /></label>
           <label>{t(locale, "formCompany")}<input type="text" name="bedrijf" autocomplete="organization" /></label>
-          <label>E-mail<input type="email" name="email" autocomplete="email" required /></label>
-          <label>Telefoon<input type="tel" name="telefoon" autocomplete="tel" /></label>
+          <label>{t(locale, "formEmail")}<input type="email" name="email" autocomplete="email" required /></label>
+          <label>{t(locale, "formPhone")}<input type="tel" name="telefoon" autocomplete="tel" /></label>
         </div>
-        <label>Bericht<textarea name="bericht" rows="6" required></textarea></label>
+        <label>{t(locale, "formMessage")}<textarea name="bericht" rows="6" required></textarea></label>
         <FormExtras soort="contact" />
         <button class="btn" type="submit">{t(locale, "sendMessage")} <span class="arr">→</span></button>
       </form>
     </div>
   </section>
 
-  <SocialSection variant="band" lead="Blijf op de hoogte van projecten, machinepark en vacatures — volg Assink & Schipholt op social media." />
+  <SocialSection variant="band" locale={locale} lead={t(locale, "socialLeadContact")} />
 </PageLayout>
 
 <style>

@@ -3,8 +3,12 @@ title: "Stainless steel constructions"
 kicker: "Assembly 4.2"
 h1: "Stainless steel constructions"
 intro: "Corrosion-resistant constructions in stainless steel — from frames to fully welded assemblies, with a hygienic and presentable finish."
+heroPhoto:
+  subject: "Welded stainless steel structure during final inspection"
 body:
   - "Stainless steel constructions combine strength with corrosion resistance. We weld and assemble in stainless steel 304 and 316, with finishing (pickling, passivation) matched to the application — for example in the food industry."
+  - "Our stainless steel structural work combines tube laser cutting for ready-to-fit profiles with TIG and laser welding, followed by pickling and passivation so the material's corrosion resistance is preserved after processing."
+  - "Would you like a stainless steel frame made? Send us your drawing or sketch — we assess manufacturability and think along on profile choice and welding sequence before production starts."
 materials: ["Stainless steel 304", "Stainless steel 316"]
 process:
   - { step: "Tube laser cutting", desc: "Ready-to-fit tube and profile." }

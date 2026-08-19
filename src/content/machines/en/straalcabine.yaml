@@ -5,3 +5,6 @@ specs:
   - { label: "Pressure", value: "3.0 bar" }
   - { label: "Glass beads", value: "100–200 μm" }
   - { label: "Cabin", value: "8 × 4 × 3 m" }
+  - { label: "Materials", value: "aluminium · stainless steel" }
+photo:
+  subject: "Blasting cabin — operator blasting a stainless steel part"

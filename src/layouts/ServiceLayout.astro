@@ -38,12 +38,17 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
   trail={trail}
   jsonld={jsonld}
 >
-  <!-- Foto-hero: beeld draagt de pagina, titel op het beeld -->
-  <section class="shero">
-    <div class="shero__media">
-      <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="21/9" priority={true} placeholder={`Foto benodigd — ${s.heroPhoto.subject}`} />
-      <div class="shero__scrim" aria-hidden="true"></div>
-    </div>
+  <!-- Foto-hero: beeld draagt de pagina, titel op het beeld. Zonder foto in de
+       content-collectie laten we het beeldblok volledig weg (geen zichtbare
+       "Foto benodigd"-notitie op de live site) en valt de sectie terug op een
+       effen navy band. -->
+  <section class:list={["shero", { "shero--no-media": !heroImg }]}>
+    {heroImg && (
+      <div class="shero__media">
+        <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="21/9" priority={true} />
+        <div class="shero__scrim" aria-hidden="true"></div>
+      </div>
+    )}
     <div class="wrap shero__inner">
       <span class="mono shero__kicker">{s.kicker}</span>
       <h1>{s.h1}</h1>
@@ -153,6 +158,7 @@ const jsonld = [serviceJsonLd(site, { name: s.title, description: s.intro, slug:
 <style>
   /* hero */
   .shero { position: relative; background: var(--navy); overflow: clip; }
+  .shero--no-media { min-height: clamp(220px, 30vw, 340px); display: flex; align-items: flex-end; }
   .shero__media :global(.ii) { border: 0; }
   .shero__scrim {
     position: absolute; inset: 0;

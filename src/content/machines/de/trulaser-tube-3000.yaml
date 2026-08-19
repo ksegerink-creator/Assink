@@ -4,3 +4,5 @@ description: "Fortschrittliches Rohrlasersystem für unterschiedliche Formen und
 specs:
   - { label: "Typ", value: "Rohrlaser" }
   - { label: "Werkstoffe", value: "Stahl · Edelstahl · Aluminium" }
+photo:
+  subject: "Trumpf TruLaser Tube 3000 mit rotierendem Profil"

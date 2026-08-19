@@ -3,6 +3,8 @@ title: "Deburring"
 kicker: "Sheet metal work 1.7"
 h1: "Deburring"
 intro: "After laser cutting, edges are deburred: safe to handle, ready for the next operation and neatly finished."
+heroPhoto:
+  subject: "Sheet metal part passing through the deburring/brushing machine"
 body:
   - "Burrs arise during cutting and can be sharp or a nuisance during assembly and finishing. On our Timesavers 42 Series RB we deburr and brush flat workpieces after laser cutting."
 materials: ["Steel", "Stainless steel", "Aluminium"]

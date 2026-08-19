@@ -5,3 +5,6 @@ specs:
   - { label: "Druck", value: "3,0 bar" }
   - { label: "Glasperlen", value: "100–200 μm" }
   - { label: "Kabine", value: "8 × 4 × 3 m" }
+  - { label: "Materialien", value: "Aluminium · Edelstahl" }
+photo:
+  subject: "Strahlkabine — Bediener strahlt ein Edelstahlteil"

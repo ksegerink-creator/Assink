@@ -4,6 +4,7 @@ order: 10
 description: "Geschikt voor staal, RVS en aluminium. Hoge precisie, minimale toleranties en constante maatvoering."
 specs:
   - { label: "Type", value: "2D-lasermachine" }
+  - { label: "Laserbron", value: "fiberlaser, 4 kW" }
   - { label: "Materialen", value: "staal · RVS · aluminium" }
   - { label: "Aandrijving", value: "lineaire aandrijvingen" }
 photo:

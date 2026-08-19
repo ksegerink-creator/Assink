@@ -3,8 +3,11 @@ title: "Stainless steel constructions for machine building"
 kicker: "Sector"
 h1: "Stainless steel constructions for machine building"
 intro: "Welded stainless steel frames and assemblies for machine building — strong, corrosion-resistant and dimensionally stable."
+heroPhoto:
+  subject: "Stainless steel frame for a machine during assembly"
 body:
   - "We build stainless steel constructions and frames that fit machine building: dimensionally stable, neatly welded and finished. Tube laser cutting provides ready-to-fit joints and efficient welding."
+  - "Frames and assemblies are matched to your assembly process: we determine mounting points, fastenings and tolerances together with your engineering team, so the frame fits first time."
 materials: ["Stainless steel 304 / 316"]
 process:
   - { step: "Tube laser cutting", desc: "Ready-to-fit profiles." }

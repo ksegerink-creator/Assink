@@ -25,6 +25,8 @@ interface Props {
   noindex?: boolean;
   /** Extra JSON-LD graphs to embed (breadcrumb, service, jobposting…). */
   jsonld?: unknown[];
+  /** og:type — "article" voor kennisbankartikelen, anders "website". */
+  ogType?: "website" | "article";
 }
 
 const {
@@ -36,6 +38,7 @@ const {
   ogPhoto,
   noindex: noindexProp = false,
   jsonld = [],
+  ogType = "website",
 } = Astro.props;
 
 // Tot livegang staat de site als preview op *.vercel.app; die mag niet
@@ -81,7 +84,7 @@ const graphs = [organizationJsonLd(site), ...jsonld];
     {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={HTML_LANG[locale].replace("-", "_")} />
     <meta property="og:title" content={title} />
