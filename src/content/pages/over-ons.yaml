@@ -32,7 +32,8 @@ proza:
     afgewerkte samenstelling.
 historieKop1: Van smederij
 historieKop2: tot moderne productie
-historieFoto: /src/assets/uploads/over-ons/historieFoto.jpg
+historieFoto: /src/assets/uploads/over-ons/archief/werkplaats-vliegtuig.jpg
+historieFotoBijschrift: Vliegtuig in de werkplaats, met drie medewerkers
 tijdlijn:
   - jaar: '1919'
     tekst: Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking.
@@ -53,10 +54,10 @@ archiefTekst: >-
   Beeld uit ons eigen archief: de hal, de machines en de mensen die hier
   werkten.
 archief:
-  - foto: /src/assets/uploads/over-ons/archief/archief/0/foto.jpg
-    bijschrift: Vliegtuig in de werkplaats, met drie medewerkers
-  - foto: /src/assets/uploads/over-ons/archief/archief/1/foto.jpg
+  - foto: /src/assets/uploads/over-ons/archief/gevel-plaatwerken-sanitair.jpg
     bijschrift: Gevel met het opschrift 'Constructies · Plaatwerken en Sanitair'
+  - foto: /src/assets/uploads/over-ons/archief/productiehal-vacuumheffer.png
+    bijschrift: Eigen productiehal met vacuümheffer en plaatbewerkingsmachines
 vakEyebrow: Kwaliteit & vakmanschap
 vakKop: Aantoonbaar goed werk
 vakTekst: >-
@@ -66,4 +67,5 @@ vakTekst: >-
 vakFoto: /src/assets/uploads/over-ons/vakFoto.jpg
 pandFoto: /src/assets/uploads/over-ons/pandFoto.jpg
 pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+pandArchiefFoto: /src/assets/uploads/over-ons/archief/gevel-ijzerconstructies.jpg
 pandArchiefBijschrift: Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'
