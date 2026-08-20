@@ -201,7 +201,9 @@ const overOnsSchema = (ns: string) => ({
   archiefTekst: fields.text({ label: "Archief — introtekst", multiline: true }),
   archief: fields.array(
     fields.object({
-      foto: pageFoto(`${ns}/archief`)("Archieffoto"),
+      // Geen submap: Keystatic zet uploads van een array-item al in
+      // <ns>/archief/<index>/, dus een extra "archief" zou dat verdubbelen.
+      foto: pageFoto(ns)("Archieffoto"),
       jaar: fields.text({ label: "Jaartal of periode", description: "Bv. 1948 of 'jaren 60'. Onbekend? Laat leeg — liever geen jaartal dan een verzonnen jaartal." }),
       bijschrift: fields.text({ label: "Bijschrift", multiline: true, description: "Wat is er te zien? Wordt ook als alt-tekst gebruikt." }),
     }),
