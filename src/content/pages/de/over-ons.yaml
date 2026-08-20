@@ -7,15 +7,33 @@ seoOmschrijving: >-
 heroKicker: "Über uns · Hengelo (NL)"
 heroTitelRegel1: "Mehr als ein Jahrhundert"
 heroTitelRegel2: "Metallbearbeitung"
-lead: "Assink & Schipholt ist ein Metallbearbeitungsbetrieb in Hengelo (Twente, Overijssel), der seit 1919 Metall bearbeitet. Die Kombination aus erfahrenen Fachkräften, einem modernen Maschinenpark und kurzen Wegen macht uns zu einem zuverlässigen Produktionspartner — vom einzelnen Bauteil bis zur kompletten Baugruppe."
+lead: >-
+  Von Konstruktionsbau und Sanitär zu Präzisionsblech für den Maschinenbau —
+  seit 1919.
 feiten:
   - { waarde: "{jaren}", label: "Jahre Erfahrung" }
   - { waarde: "10 t", label: "max. Stückgewicht" }
   - { waarde: "8 m", label: "max. Bauhöhe" }
   - { waarde: "1", label: "Ansprechpartner" }
 proza:
-  - "Von Twente aus arbeiten wir für Maschinenbauer, Apparatebauer und die Industrie in den gesamten Niederlanden. Viele Bearbeitungsschritte — vom Laserschneiden bis zur Oberflächenbehandlung — führen wir im eigenen Haus aus. Das hält die Durchlaufzeiten kurz und macht Qualität nachweisbar."
-  - "Von Einzelstücken bis zur Serie und vom einzelnen Bauteil bis zur kompletten Baugruppe: Sie haben einen Ansprechpartner, der den gesamten Prozess überblickt — von der Konstruktion bis zur fertigen Baugruppe."
+  - >-
+    Assink & Schipholt bearbeitet seit 1919 Metall und wuchs mit der Industrie
+    in Twente. Auf der ältesten Fassadenaufnahme in unserem Archiv steht
+    „Constructies · Plaatwerken en Sanitair“ — Konstruktionen, Blecharbeiten und
+    Sanitär; auf einer späteren Aufnahme steht „IJzerconstructies“,
+    Eisenkonstruktionen. Zwischen diesen beiden Schriftzügen liegt die
+    Entwicklung des Betriebs: von breitem Installations- und Konstruktionsbau
+    für die Umgebung zu Blechbearbeitung und Konstruktionen für die Industrie.
+  - >-
+    Die Frage ist im Kern dieselbe geblieben: jemand braucht Metall, das in
+    seine Maschine oder Anlage passt. Die Art der Herstellung nicht. Wo die
+    Arbeit früher von Hand angerissen, geschnitten und geschweißt wurde, läuft
+    sie heute über Laserschneiden, Rohrlaserschneiden, Abkanten sowie Roboter-
+    und Laserschweißen, mit der Nachbearbeitung im eigenen Haus.
+  - >-
+    Unsere Fachkräfte bilden wir selbst aus, als SBB-anerkannter
+    Ausbildungsbetrieb. Deshalb stehen nach mehr als hundert Jahren noch immer
+    Menschen in der Halle, die wissen, wie sich Metall verhält.
 historieKop1: "Von der Schmiede"
 historieKop2: "zur modernen Fertigung"
 historieFotoJaar: ""
