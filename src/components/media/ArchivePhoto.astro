@@ -1,0 +1,181 @@
+---
+import type { ImageMetadata } from "astro";
+import IndustrialImage from "./IndustrialImage.astro";
+
+/**
+ * Archieffoto — oud beeld gepresenteerd als afdruk.
+ *
+ * Oude foto's verdienen een andere behandeling dan de productiefotografie: geen
+ * schermvullend, snijdend beeld maar een afdruk met papierrand, jaartal en
+ * bijschrift in mono. Zo is direct duidelijk dat het archiefmateriaal is en
+ * botst het niet met de moderne beeldtaal elders op de site.
+ *
+ * De foto zelf blijft ongefilterd — die is oud genoeg uit zichzelf; een
+ * sepiafilter zou het beeld alleen vervalsen.
+ *
+ * Met `zoom` komt er een vergrootknop over de afdruk. Die werkt samen met
+ * <ArchiveLightbox />: het script daar zoekt het <img> binnen `data-arch-frame`
+ * en laat het groot zien. Zonder JavaScript blijft de afdruk gewoon staan.
+ */
+interface Props {
+  src?: ImageMetadata;
+  alt: string;
+  /** Jaartal of periode-aanduiding, bv. "1963" of "jaren 70". Leeg mag. */
+  jaar?: string | null;
+  bijschrift?: string | null;
+  /** Beeldverhouding, bv. "4/3" (liggend) of "3/4" (staand). */
+  ratio?: string;
+  position?: string;
+  /** Archiefnummer, bv. "ARCH-03". */
+  nummer?: string;
+  /** "light" = lichte typografie voor donkere ondergrond. */
+  tone?: "dark" | "light";
+  /** Vergrootbaar maken (vereist <ArchiveLightbox /> op de pagina). */
+  zoom?: boolean;
+  /** Toegankelijk label van de vergrootknop, bv. "Vergroot foto". */
+  zoomLabel?: string;
+  /** Ontwikkellabel wanneer de foto nog ontbreekt. */
+  placeholder?: string;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  jaar,
+  bijschrift,
+  ratio = "4/3",
+  position = "center",
+  nummer,
+  tone = "dark",
+  zoom = false,
+  zoomLabel = "Vergroot foto",
+  placeholder = "Archieffoto benodigd",
+  class: cls = "",
+} = Astro.props;
+
+/** Bijschrift voor de lightbox: jaartal en tekst achter elkaar. */
+const zoomCaption = [jaar, bijschrift].filter(Boolean).join(" · ");
+
+/* In een genummerde reeks (de galerij) blijft de jaarregel staan, ook als het
+   jaartal onbekend is: een streepje houdt de bijschriften van alle afdrukken op
+   één lijn en zegt eerlijk dat het jaar niet bekend is. */
+const jaarLabel = jaar || (nummer ? "—" : null);
+---
+
+<figure class={`ap ap--${tone} ${cls}`}>
+  <div class="ap__frame" data-arch-frame>
+    <IndustrialImage
+      src={src}
+      alt={alt}
+      ratio={ratio}
+      position={position}
+      placeholder={placeholder}
+    />
+    {
+      zoom && src && (
+        <button
+          class="ap__zoom mono"
+          type="button"
+          data-arch-zoom
+          data-arch-cap={zoomCaption}
+          data-arch-alt={alt}
+        >
+          <span class="ap__zoom-ico" aria-hidden="true">⤢</span>
+          <span class="ap__zoom-txt">{zoomLabel}</span>
+        </button>
+      )
+    }
+  </div>
+  {
+    (jaarLabel || bijschrift || nummer) && (
+      <figcaption class="ap__cap mono">
+        {jaarLabel && <span class="ap__year">{jaarLabel}</span>}
+        {nummer && <span class="ap__num">{nummer}</span>}
+        {bijschrift && <span class="ap__txt">{bijschrift}</span>}
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  .ap { margin: 0; }
+
+  /* De afdruk: warme papierrand, fijne navylijn, zachte schaduw. Die rand is
+     in beide thema's papierwit — een afdruk is nu eenmaal papier. */
+  .ap__frame {
+    position: relative;
+    background: #F6F2EA;
+    padding: clamp(8px, 1vw, 14px);
+    box-shadow: 0 1px 0 rgba(6, 46, 95, .22), 0 14px 34px -18px rgba(6, 46, 95, .55);
+  }
+  .ap__frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(6, 46, 95, .28);
+    pointer-events: none;
+  }
+  /* Oude foto's worden nooit aangesneden: het hele beeld blijft staan en het
+     papier eromheen vult wat er aan verhouding overblijft — precies zoals een
+     afdruk op een passe-partout. Daarmee kan elke afdruk dezelfde maat hebben
+     zonder dat er iets van de foto verdwijnt. */
+  .ap__frame :global(.ii) { background: #EDE7DA; }
+  .ap__frame :global(.ii__img) { object-fit: contain; }
+
+  /* Vergrootknop: chip in de hoek, altijd bedienbaar (ook op touch), maar
+     rustig tot de bezoeker over de afdruk gaat. */
+  .ap__zoom {
+    position: absolute;
+    right: clamp(14px, 1.6vw, 22px);
+    bottom: clamp(14px, 1.6vw, 22px);
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 11px;
+    border: 0;
+    cursor: pointer;
+    background: rgba(6, 46, 95, .84);
+    color: #fff;
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    opacity: .82;
+    transition: opacity .18s var(--ease), background .18s var(--ease);
+  }
+  .ap__frame:hover .ap__zoom,
+  .ap__zoom:focus-visible { opacity: 1; background: var(--blue); }
+  .ap__zoom-ico { font-size: 13px; line-height: 1; }
+  @media (max-width: 560px) { .ap__zoom-txt { display: none; } }
+
+  /* Bijschrift ------------------------------------------------- */
+  .ap__cap {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 5px 14px;
+    margin-top: 12px;
+    padding-top: 9px;
+    border-top: 1px solid var(--line);
+    font-size: 11px;
+    letter-spacing: .08em;
+    line-height: 1.6;
+  }
+  .ap__year {
+    font-family: var(--f-disp);
+    font-size: 17px;
+    letter-spacing: .04em;
+    color: var(--blue);
+    font-variant-numeric: tabular-nums;
+  }
+  .ap__txt { grid-column: 1 / -1; color: var(--steel); text-transform: uppercase; max-width: 46em; }
+  .ap__num { grid-column: 2; text-align: right; color: var(--steel); opacity: .65; font-variant-numeric: tabular-nums; }
+
+  /* Op donkere ondergrond ------------------------------------- */
+  .ap--light .ap__cap { border-top-color: rgba(255, 255, 255, .22); }
+  .ap--light .ap__year { color: var(--sky); }
+  .ap--light .ap__txt { color: #C9D9E8; }
+  .ap--light .ap__num { color: #C9D9E8; opacity: .5; }
+</style>

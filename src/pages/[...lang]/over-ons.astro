@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import { t } from "@data/i18n";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import ArchivePhoto from "@components/media/ArchivePhoto.astro";
+import ArchiveLightbox from "@components/media/ArchiveLightbox.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { SITE, CERTS } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
@@ -22,6 +24,24 @@ const projects = (await getCollection("projects")).sort((x, y) => x.data.order -
 const sectors = await localizeEntries("sectoren", (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order), locale);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
+
+/* Archiefbeeld -------------------------------------------------------------
+   Oude foto's staan op drie plekken: de grote afdruk naast de tijdlijn, de
+   galerij "Uit het archief" en de oude pandfoto in het toen-&-nu-blok. Alle
+   drie zijn optioneel: zonder foto verdwijnt het onderdeel in plaats van dat
+   er een lege plek of ontwikkelplaceholder op de live site komt te staan. */
+const histFoto = photo(a.historieFoto);
+/* Alleen archieffoto's waarvan het beeld ook echt in de repo staat komen op de
+   pagina. Zo kan een bijschrift al klaarstaan voordat de scan is geüpload,
+   zonder dat er een ontwikkelplaceholder op de live site verschijnt. */
+const archief = (a.archief ?? [])
+  .map((p) => ({ ...p, beeld: photo(p.foto) }))
+  .filter((p) => Boolean(p.beeld));
+const pandToen = photo(a.pandArchiefFoto);
+const archiefAlt = t(locale, "altArchive");
+const zoomLabel = t(locale, "archiveEnlarge");
+/* De lightbox hoeft alleen mee zodra er ook echt iets te vergroten valt. */
+const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
 ---
 <PageLayout
   title={a.seoTitel}
@@ -46,37 +66,93 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
   <!-- Kernverhaal + feiten -->
   <section class="sec tight">
     <div class="wrap astory">
-      <div class="rv">
-        <p class="astory__lead">{fill(a.lead)}</p>
-        <ul class="afacts mono">
-          {a.feiten.map((f) => (
-            <li><b>{fill(f.waarde)}</b> {f.label}</li>
-          ))}
-        </ul>
-      </div>
+      <p class="astory__lead rv">{fill(a.lead)}</p>
       <div class="prose rv">
         {a.proza.map((p) => <p>{p}</p>)}
       </div>
     </div>
+    <div class="wrap">
+      <ul class="afacts rv">
+        {a.feiten.map((f) => (
+          <li>
+            <b>{fill(f.waarde)}</b>
+            <span class="mono">{f.label}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   </section>
 
-  <!-- Geschiedenis: donker fotoblok met tijdlijn -->
+  <!--
+    Geschiedenis. Donkere band met de tijdlijn en het oudste archiefbeeld als
+    afdruk ernaast. Bewust een afdruk en geen weggefilterde achtergrondfoto:
+    zo blijft het oude beeld leesbaar in plaats van decor.
+  -->
   <section class="ahist">
-    <div class="ahist__bg">
-      <IndustrialImage src={photo(a.historieFoto)} alt="Historisch beeld van de productiehal van Assink & Schipholt" ratio="21/9" position="center 45%" />
-    </div>
+    <div class="ahist__grid" aria-hidden="true"></div>
     <div class="wrap ahist__inner">
-      <h2>{a.historieKop1}<br />{a.historieKop2}</h2>
-      <div class="tl">
-        {a.tijdlijn.map((e) => (
-          <div class="tl-item">
-            <div class="y">{e.jaar}</div>
-            <p>{e.tekst}</p>
-          </div>
-        ))}
+      <div class="ahist__head">
+        <span class="mono ahist__span">{SITE.founded} — {new Date().getFullYear()}</span>
+        <h2>{a.historieKop1}<br />{a.historieKop2}</h2>
       </div>
+      <div class="ahist__tl">
+        <div class="tl">
+          {a.tijdlijn.map((e) => (
+            <div class="tl-item">
+              <div class="y">{e.jaar}</div>
+              <p>{e.tekst}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      {histFoto && (
+        <div class="ahist__print rv">
+          <ArchivePhoto
+            src={histFoto}
+            alt={a.historieFotoBijschrift || archiefAlt}
+            jaar={a.historieFotoJaar}
+            bijschrift={a.historieFotoBijschrift}
+            ratio="4/3"
+            tone="light"
+            zoom={true}
+            zoomLabel={zoomLabel}
+          />
+        </div>
+      )}
     </div>
   </section>
+
+  <!--
+    Uit het archief. Verschijnt pas zodra er archieffoto's in het CMS staan
+    (Keystatic → Pagina's → Over ons → Archieffoto's). Jaartal mag leeg blijven
+    als het onbekend is; er wordt niets verzonnen.
+  -->
+  {archief.length > 0 && (
+    <section class="sec aarch">
+      <div class="wrap">
+        <div class="rule-head rv">
+          <h2>{a.archiefKop || t(locale, "archiveTitle")}</h2>
+          <span class="mono">{archief.length} {t(locale, "archivePhotos")}</span>
+        </div>
+        {a.archiefTekst && <p class="prose aarch__lead rv">{a.archiefTekst}</p>}
+        <div class="aarch__grid">
+          {archief.map((p, i) => (
+            <ArchivePhoto
+              class="rv"
+              src={p.beeld}
+              alt={p.bijschrift || archiefAlt}
+              jaar={p.jaar}
+              bijschrift={p.bijschrift}
+              ratio="4/3"
+              nummer={`ARCH-${String(i + 1).padStart(2, "0")}`}
+              zoom={true}
+              zoomLabel={zoomLabel}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- Vakmanschap + certificering -->
   <section class="sec">
@@ -143,17 +219,45 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
     </section>
   )}
 
-  <!-- Pand -->
+  <!-- Pand: met oude pandfoto als toen & nu, anders alleen het pand van nu -->
   <section class="sec tight">
-    <div class="wrap apand rv">
-      <figure>
-        <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="21/9" />
-        <figcaption class="mono">{a.pandBijschrift}</figcaption>
-      </figure>
+    <div class="wrap">
+      {pandToen ? (
+        <div class="apand apand--duo rv">
+          <div class="apand__col">
+            <span class="mono apand__tag apand__tag--then">{t(locale, "archiveThen")}</span>
+            <ArchivePhoto
+              src={pandToen}
+              alt={a.pandArchiefBijschrift || archiefAlt}
+              jaar={a.pandArchiefJaar}
+              bijschrift={a.pandArchiefBijschrift}
+              ratio="4/3"
+              zoom={true}
+              zoomLabel={zoomLabel}
+            />
+          </div>
+          <div class="apand__col">
+            <span class="mono apand__tag">{t(locale, "archiveNow")}</span>
+            <figure class="apand__now">
+              <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="4/3" />
+              <figcaption class="mono">{a.pandBijschrift}</figcaption>
+            </figure>
+          </div>
+        </div>
+      ) : (
+        <div class="apand rv">
+          <figure>
+            <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="21/9" />
+            <figcaption class="mono">{a.pandBijschrift}</figcaption>
+          </figure>
+        </div>
+      )}
     </div>
   </section>
 
   <CtaBand />
+
+  {heeftZoom && <ArchiveLightbox closeLabel={t(locale, "archiveClose")} />}
 </PageLayout>
 
 <style>
@@ -167,22 +271,69 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
 
   .astory { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
   .astory__lead { font-size: clamp(18px, 1.9vw, 24px); color: var(--ink); font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; line-height: 1.3; letter-spacing: .01em; }
-  .afacts { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 30px; margin: 24px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); }
-  .afacts li { color: var(--steel); letter-spacing: .08em; }
-  .afacts b { color: var(--ink); font-family: var(--f-disp); font-size: 19px; margin-right: 7px; }
   @media (max-width: 780px) { .astory { grid-template-columns: 1fr; } }
 
+  /* Feitenstrook: eigen kolom per feit met haarlijn ertussen. */
+  .afacts {
+    list-style: none; margin: clamp(28px, 4vw, 48px) 0 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  }
+  .afacts li { padding: 18px clamp(12px, 2vw, 26px); border-left: 1px solid var(--line-2); }
+  .afacts li:first-child { border-left: 0; padding-left: 0; }
+  .afacts b { display: block; font-family: var(--f-disp); font-weight: 600; font-size: clamp(28px, 3.4vw, 42px); color: var(--ink); line-height: 1; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+  .afacts .mono { display: block; margin-top: 8px; color: var(--steel); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  @media (max-width: 560px) {
+    .afacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .afacts li:nth-child(odd) { border-left: 0; padding-left: 0; }
+    .afacts li:nth-child(n+3) { border-top: 1px solid var(--line-2); }
+  }
+
+  /* Geschiedenis ------------------------------------------------ */
   .ahist { position: relative; overflow: clip; background: var(--navy); }
-  .ahist__bg { position: absolute; inset: 0; opacity: .38; }
-  .ahist__bg :global(.ii) { height: 100%; border: 0; }
-  .ahist__bg :global(.ii img) { height: 100%; }
-  .ahist__inner { position: relative; z-index: 2; padding-block: clamp(48px, 7vw, 96px); display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); }
-  .ahist h2 { color: #fff; font-size: clamp(28px, 3.6vw, 48px); }
+  /* Fijn raster in plaats van een weggefilterde foto: rustige ondergrond die
+     de archiefafdruk laat spreken. */
+  .ahist__grid {
+    position: absolute; inset: 0; opacity: .5;
+    background:
+      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
+      radial-gradient(120% 90% at 15% 0%, rgba(55,170,212,.16), transparent 60%);
+    background-size: 44px 44px, 44px 44px, 100% 100%;
+  }
+  /* De afdruk staat rechts naast kop én tijdlijn; op smal schermen schuift hij
+     tussen de kop en de tijdlijn, zodat het beeld niet onderaan wegvalt. */
+  .ahist__inner {
+    position: relative; z-index: 2; padding-block: clamp(48px, 7vw, 96px);
+    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+    grid-template-areas: "head print" "tl print";
+    grid-template-rows: auto 1fr;
+    column-gap: clamp(28px, 5vw, 72px); row-gap: clamp(24px, 3vw, 38px);
+    align-items: start;
+  }
+  .ahist__head { grid-area: head; }
+  .ahist__tl { grid-area: tl; }
+  .ahist__span { color: var(--sky); letter-spacing: .16em; font-variant-numeric: tabular-nums; }
+  .ahist h2 { color: #fff; font-size: clamp(28px, 3.6vw, 48px); margin-top: 10px; }
   .ahist :global(.tl) { border-left-color: rgba(255,255,255,.25); }
   .ahist :global(.tl-item .y) { color: var(--sky); }
   .ahist :global(.tl-item p) { color: #C9D9E8; }
   .ahist :global(.tl-item::before) { border-color: var(--navy); }
-  @media (max-width: 780px) { .ahist__inner { grid-template-columns: 1fr; } }
+  .ahist__print { grid-area: print; position: sticky; top: calc(var(--head-h) + 24px); }
+  @media (max-width: 900px) {
+    .ahist__inner { grid-template-columns: 1fr; grid-template-areas: "head" "print" "tl"; grid-template-rows: auto auto auto; }
+    .ahist__print { position: static; max-width: 520px; }
+  }
+
+  /* Uit het archief -------------------------------------------- */
+  .aarch { background: var(--surface-2); }
+  .aarch__lead { margin-top: clamp(16px, 2vw, 24px); }
+  .aarch__grid {
+    margin-top: clamp(24px, 3.4vw, 44px);
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    align-items: start;
+  }
 
   .acraft { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); gap: clamp(24px, 4.5vw, 72px); align-items: center; }
   .acraft__photo { margin: 0; max-width: 420px; }
@@ -211,4 +362,17 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
 
   .apand figure { margin: 0; }
   .apand figcaption { margin-top: 10px; color: var(--steel); letter-spacing: .1em; font-size: 10.5px; }
+  .apand--duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); align-items: start; }
+  /* Zelfde passe-partout-maat als de archiefafdruk, maar in koel plaatgrijs:
+     de beelden liggen daarmee exact op één lijn en blijven toch te
+     onderscheiden — papier voor toen, plaat voor nu. */
+  .apand__now { background: var(--sky-bg); padding: clamp(8px, 1vw, 14px); box-shadow: inset 0 0 0 1px var(--line-2); }
+  .apand__now figcaption { margin-top: 12px; padding-top: 9px; border-top: 1px solid var(--line); }
+  .apand__tag {
+    display: inline-flex; align-items: center; gap: 9px; margin-bottom: 12px;
+    color: var(--blue); letter-spacing: .14em; text-transform: uppercase; font-size: 11px;
+  }
+  .apand__tag::before { content: ""; width: 22px; height: 1px; background: currentColor; }
+  .apand__tag--then { color: var(--steel); }
+  @media (max-width: 700px) { .apand--duo { grid-template-columns: 1fr; } }
 </style>
