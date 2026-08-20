@@ -170,7 +170,7 @@ const overOnsSchema = (ns: string) => ({
   heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
   heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
   heroFoto: pageFoto(ns)("Hero-foto"),
-  lead: fields.text({ label: "Introzin (vet)", multiline: true, description: "Gebruik {jaren} voor het automatische jaartal." }),
+  lead: fields.text({ label: "Kop boven het verhaal", multiline: true, description: "Verschijnt links als H2, in kapitalen. Kort houden: drie regels is het maximum. Gebruik {jaren} voor het automatische jaartal." }),
   feiten: fields.array(
     fields.object({
       waarde: fields.text({ label: "Waarde" }),
