@@ -1,43 +1,70 @@
-seoTitel: "Over ons"
-seoOmschrijving: "Assink & Schipholt is een metaalbedrijf in Hengelo, actief in metaalbewerking sinds 1919. Traditioneel vakmanschap met moderne, geautomatiseerde productie."
-heroKicker: "Over ons · Hengelo (Ov.)"
-heroTitelRegel1: "Meer dan een eeuw"
-heroTitelRegel2: "metaalbewerking"
-heroFoto: "/src/assets/uploads/over-ons/heroFoto.jpg"
-lead: "Assink & Schipholt is een metaalbedrijf in Hengelo (Twente, Overijssel) dat al sinds 1919 metaal bewerkt. De combinatie van ervaren vakmensen, een modern machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van enkel onderdeel tot complete samenstelling."
+seoTitel: Over ons
+seoOmschrijving: >-
+  Assink & Schipholt is een metaalbedrijf in Hengelo, actief in metaalbewerking
+  sinds 1919. Traditioneel vakmanschap met moderne, geautomatiseerde productie.
+heroKicker: Over ons · Hengelo (Ov.)
+heroTitelRegel1: Meer dan een eeuw
+heroTitelRegel2: metaalbewerking
+heroFoto: /src/assets/uploads/over-ons/heroFoto.jpg
+lead: >-
+  Assink & Schipholt is een metaalbedrijf in Hengelo (Twente, Overijssel) dat al
+  sinds 1919 metaal bewerkt. De combinatie van ervaren vakmensen, een modern
+  machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van
+  enkel onderdeel tot complete samenstelling.
 feiten:
-  - { waarde: "{jaren}", label: "jaar ervaring" }
-  - { waarde: "10 t", label: "max. stukgewicht" }
-  - { waarde: "8 m", label: "max. bouwhoogte" }
-  - { waarde: "1", label: "aanspreekpunt" }
+  - waarde: '{jaren}'
+    label: jaar ervaring
+  - waarde: 10 t
+    label: max. stukgewicht
+  - waarde: 8 m
+    label: max. bouwhoogte
+  - waarde: '1'
+    label: aanspreekpunt
 proza:
-  - "Vanuit Twente werken wij voor machinebouwers, apparatenbouwers en industrie in heel Nederland. Veel bewerkingen — van lasersnijden tot oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden kort en kwaliteit aantoonbaar."
-  - "Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u heeft één aanspreekpunt dat het hele traject overziet — van engineering tot afgewerkte samenstelling."
-historieKop1: "Van smederij"
-historieKop2: "tot moderne productie"
-historieFoto: null
-historieFotoJaar: ""
-historieFotoBijschrift: "Vliegtuig in de werkplaats, met drie medewerkers"
+  - >-
+    Vanuit Twente werken wij voor machinebouwers, apparatenbouwers en industrie
+    in heel Nederland. Veel bewerkingen — van lasersnijden tot
+    oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden
+    kort en kwaliteit aantoonbaar.
+  - >-
+    Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u
+    heeft één aanspreekpunt dat het hele traject overziet — van engineering tot
+    afgewerkte samenstelling.
+historieKop1: Van smederij
+historieKop2: tot moderne productie
+historieFoto: /src/assets/uploads/over-ons/historieFoto.jpg
+historieFotoBijschrift: Eigen productiehal met vacuümheffer en plaatbewerkingsmachines
 tijdlijn:
-  - { jaar: "1919", tekst: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." }
-  - { jaar: "20e eeuw", tekst: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." }
-  - { jaar: "Vandaag", tekst: "Moderne, deels geautomatiseerde productie: lasersnijden, buislaser, laserlassen en eigen afwerking." }
-  - { jaar: "Nu", tekst: "Eén productiepartner van engineering tot afgewerkte samenstelling voor machinebouw en industrie." }
-archiefKop: "Uit het archief"
-archiefTekst: "Beeld uit ons eigen archief: de hal, de machines en de mensen die hier werkten."
+  - jaar: '1919'
+    tekst: Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking.
+  - jaar: 20e eeuw
+    tekst: >-
+      Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de
+      regionale industrie.
+  - jaar: Vandaag
+    tekst: >-
+      Moderne, deels geautomatiseerde productie: lasersnijden, buislaser,
+      laserlassen en eigen afwerking.
+  - jaar: Nu
+    tekst: >-
+      Eén productiepartner van engineering tot afgewerkte samenstelling voor
+      machinebouw en industrie.
+archiefKop: Uit het archief
+archiefTekst: >-
+  Beeld uit ons eigen archief: de hal, de machines en de mensen die hier
+  werkten.
 archief:
-  - foto: null
-    jaar: ""
-    bijschrift: "Gevel met het opschrift 'Constructies · Plaatwerken en Sanitair'"
-  - foto: "/src/assets/uploads/over-ons/archief/productiehal-vacuumheffer.png"
-    jaar: ""
-    bijschrift: "Eigen productiehal met vacuümheffer en plaatbewerkingsmachines"
-vakEyebrow: "Kwaliteit & vakmanschap"
-vakKop: "Aantoonbaar goed werk"
-vakTekst: "Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze eigen vakmensen op."
-vakFoto: "/src/assets/uploads/over-ons/vakFoto.jpg"
-pandFoto: "/src/assets/uploads/over-ons/pandFoto.jpg"
-pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"
-pandArchiefFoto: null
-pandArchiefJaar: ""
-pandArchiefBijschrift: "Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'"
+  - foto: /src/assets/uploads/over-ons/archief/archief/0/foto.jpg
+    bijschrift: Vliegtuig in de werkplaats, met drie medewerkers
+  - foto: /src/assets/uploads/over-ons/archief/archief/1/foto.jpg
+    bijschrift: Gevel met het opschrift 'Constructies · Plaatwerken en Sanitair'
+vakEyebrow: Kwaliteit & vakmanschap
+vakKop: Aantoonbaar goed werk
+vakTekst: >-
+  Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole
+  en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze
+  eigen vakmensen op.
+vakFoto: /src/assets/uploads/over-ons/vakFoto.jpg
+pandFoto: /src/assets/uploads/over-ons/pandFoto.jpg
+pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+pandArchiefBijschrift: Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'
