@@ -7,10 +7,8 @@ heroTitelRegel1: Meer dan een eeuw
 heroTitelRegel2: metaalbewerking
 heroFoto: /src/assets/uploads/over-ons/heroFoto.jpg
 lead: >-
-  Assink & Schipholt is een metaalbedrijf in Hengelo (Twente, Overijssel) dat al
-  sinds 1919 metaal bewerkt. De combinatie van ervaren vakmensen, een modern
-  machinepark en korte lijnen maakt ons een betrouwbare productiepartner — van
-  enkel onderdeel tot complete samenstelling.
+  Van constructiewerk en sanitair naar precisieplaatwerk voor machinebouw —
+  sinds 1919.
 feiten:
   - waarde: '{jaren}'
     label: jaar ervaring
@@ -22,14 +20,22 @@ feiten:
     label: aanspreekpunt
 proza:
   - >-
-    Vanuit Twente werken wij voor machinebouwers, apparatenbouwers en industrie
-    in heel Nederland. Veel bewerkingen — van lasersnijden tot
-    oppervlaktebehandeling — doen we in eigen huis. Dat houdt doorlooptijden
-    kort en kwaliteit aantoonbaar.
+    Assink & Schipholt bestaat sinds 1919 en groeide mee met de industrie in
+    Twente. Op de oudste gevelfoto uit ons archief staat “Constructies ·
+    Plaatwerken en Sanitair”; op een latere foto is dat “IJzerconstructies”
+    geworden. Tussen die twee opschriften zit de ontwikkeling van het bedrijf:
+    van breed installatie- en constructiewerk voor de omgeving naar plaatwerk
+    en constructies voor de industrie.
   - >-
-    Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u
-    heeft één aanspreekpunt dat het hele traject overziet — van engineering tot
-    afgewerkte samenstelling.
+    De vraag is in de kern dezelfde gebleven: iemand heeft metaal nodig dat past
+    in zijn machine of installatie. De manier waarop het gemaakt wordt niet.
+    Waar het werk vroeger met de hand werd uitgezet, geknipt en gelast, gaat het
+    nu via lasersnijden, buislasersnijden, kanten en robot- en laserlassen, met
+    de afwerking in eigen huis.
+  - >-
+    Onze vakmensen leiden we zelf op, als SBB-erkend leerbedrijf. Daarom staan er
+    na ruim honderd jaar nog steeds mensen op de vloer die weten hoe metaal zich
+    gedraagt.
 historieKop1: Van smederij
 historieKop2: tot moderne productie
 historieFoto: /src/assets/uploads/over-ons/archief/werkplaats-vliegtuig.jpg
