@@ -8,8 +8,7 @@ heroKicker: "Über uns · Hengelo (NL)"
 heroTitelRegel1: "Mehr als ein Jahrhundert"
 heroTitelRegel2: "Metallbearbeitung"
 lead: >-
-  Von Konstruktionsbau und Sanitär zu Präzisionsblech für den Maschinenbau —
-  seit 1919.
+  Von Konstruktionsbau zu Präzisionsblech — seit 1919
 feiten:
   - { waarde: "{jaren}", label: "Jahre Erfahrung" }
   - { waarde: "10 t", label: "max. Stückgewicht" }
@@ -17,23 +16,24 @@ feiten:
   - { waarde: "1", label: "Ansprechpartner" }
 proza:
   - >-
-    Assink & Schipholt bearbeitet seit 1919 Metall und wuchs mit der Industrie
-    in Twente. Auf der ältesten Fassadenaufnahme in unserem Archiv steht
-    „Constructies · Plaatwerken en Sanitair“ — Konstruktionen, Blecharbeiten und
-    Sanitär; auf einer späteren Aufnahme steht „IJzerconstructies“,
-    Eisenkonstruktionen. Zwischen diesen beiden Schriftzügen liegt die
-    Entwicklung des Betriebs: von breitem Installations- und Konstruktionsbau
-    für die Umgebung zu Blechbearbeitung und Konstruktionen für die Industrie.
+    Assink & Schipholt begann 1919 mit Konstruktionsbau, Blecharbeiten und
+    Sanitär. Was einst breites Handwerk für Betriebe und Privatkunden war, wuchs
+    mit der Twenter Industrie. Heute konzentrieren wir uns auf Präzisionsblech
+    und Konstruktionen für Maschinenbau und Industrie.
   - >-
-    Die Frage ist im Kern dieselbe geblieben: jemand braucht Metall, das in
-    seine Maschine oder Anlage passt. Die Art der Herstellung nicht. Wo die
-    Arbeit früher von Hand angerissen, geschnitten und geschweißt wurde, läuft
-    sie heute über Laserschneiden, Rohrlaserschneiden, Abkanten sowie Roboter-
-    und Laserschweißen, mit der Nachbearbeitung im eigenen Haus.
+    Die Technik hat sich verändert, der Ausgangspunkt nicht: Teile herstellen,
+    die stimmen und in die Anwendung passen, für die sie gedacht sind.
   - >-
-    Unsere Fachkräfte bilden wir selbst aus, als SBB-anerkannter
-    Ausbildungsbetrieb. Deshalb stehen nach mehr als hundert Jahren noch immer
-    Menschen in der Halle, die wissen, wie sich Metall verhält.
+    Wo Blech früher von Hand angerissen, geschnitten und geschweißt wurde,
+    verfügen wir heute über moderne Technik für Laserschneiden,
+    Rohrlaserschneiden, Abkanten, Roboterschweißen und Laserschweißen. Von
+    einzelnen Edelstahlteilen bis zu zusammengesetzten Blechbaugruppen:
+    Fertigung und Nachbearbeitung übernehmen wir so weit wie möglich im eigenen
+    Haus.
+  - >-
+    Auch das Handwerk halten wir nah. Als SBB-anerkannter Ausbildungsbetrieb
+    bilden wir neue Fachkräfte selbst aus. So verbinden wir mehr als ein
+    Jahrhundert Erfahrung mit der Produktionstechnik von heute.
 historieKop1: "Von der Schmiede"
 historieKop2: "zur modernen Fertigung"
 historieFotoJaar: ""

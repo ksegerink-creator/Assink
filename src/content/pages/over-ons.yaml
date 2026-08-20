@@ -7,8 +7,7 @@ heroTitelRegel1: Meer dan een eeuw
 heroTitelRegel2: metaalbewerking
 heroFoto: /src/assets/uploads/over-ons/heroFoto.jpg
 lead: >-
-  Van constructiewerk en sanitair naar precisieplaatwerk voor machinebouw —
-  sinds 1919.
+  Van constructiewerk naar precisieplaatwerk — sinds 1919
 feiten:
   - waarde: '{jaren}'
     label: jaar ervaring
@@ -20,22 +19,23 @@ feiten:
     label: aanspreekpunt
 proza:
   - >-
-    Assink & Schipholt bestaat sinds 1919 en groeide mee met de industrie in
-    Twente. Op de oudste gevelfoto uit ons archief staat “Constructies ·
-    Plaatwerken en Sanitair”; op een latere foto is dat “IJzerconstructies”
-    geworden. Tussen die twee opschriften zit de ontwikkeling van het bedrijf:
-    van breed installatie- en constructiewerk voor de omgeving naar plaatwerk
-    en constructies voor de industrie.
+    Assink & Schipholt begon in 1919 met constructiewerk, plaatwerk en sanitair.
+    Wat ooit breed vakwerk voor bedrijven en particulieren was, groeide mee met
+    de Twentse industrie. Vandaag richten we ons op precisieplaatwerk en
+    constructies voor de machinebouw en industrie.
   - >-
-    De vraag is in de kern dezelfde gebleven: iemand heeft metaal nodig dat past
-    in zijn machine of installatie. De manier waarop het gemaakt wordt niet.
-    Waar het werk vroeger met de hand werd uitgezet, geknipt en gelast, gaat het
-    nu via lasersnijden, buislasersnijden, kanten en robot- en laserlassen, met
-    de afwerking in eigen huis.
+    De techniek veranderde, het uitgangspunt niet: onderdelen maken die kloppen
+    en passen in de toepassing waarvoor ze bedoeld zijn.
   - >-
-    Onze vakmensen leiden we zelf op, als SBB-erkend leerbedrijf. Daarom staan er
-    na ruim honderd jaar nog steeds mensen op de vloer die weten hoe metaal zich
-    gedraagt.
+    Waar plaatwerk vroeger met de hand werd uitgezet, geknipt en gelast,
+    beschikken we nu over moderne technieken voor lasersnijden,
+    buislasersnijden, kanten, robotlassen en laserlassen. Van losse
+    RVS-onderdelen tot samengesteld plaatwerk: productie en afwerking verzorgen
+    we zoveel mogelijk in eigen huis.
+  - >-
+    Ook het vakmanschap houden we dichtbij. Als SBB-erkend leerbedrijf leiden we
+    nieuwe vakmensen zelf op. Zo combineren we meer dan een eeuw ervaring met de
+    productietechniek van nu.
 historieKop1: Van smederij
 historieKop2: tot moderne productie
 historieFoto: /src/assets/uploads/over-ons/archief/werkplaats-vliegtuig.jpg
