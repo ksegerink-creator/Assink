@@ -6,7 +6,7 @@ intro: "Bij het uitwerken van een constructie komt vroeg of laat de vraag:
   Beide technieken - 2D-lasersnijden en buislasersnijden - hebben hun eigen
   toepassingsgebied. In dit artikel zetten we de afweging op een rij, gebaseerd
   op de machines die wij bij Assink & Schipholt zelf in huis hebben: de Trumpf
-  TruLaser 3040 voor platwerk en de Trumpf TruLaser Tube 3000 voor buis- en
+  TruLaser 3040 voor plaatwerk en de Trumpf TruLaser Tube 3000 voor buis- en
   profielbewerking."
 secties:
   - kop: Wat is het verschil tussen lasersnijden en buislasersnijden?
@@ -17,11 +17,11 @@ secties:
       - Buislasersnijden werkt op ronde, rechthoekige of vierkante buizen en
         profielen. De machine snijdt niet alleen doorsnedes af, maar kan ook
         contouren, sparingen, verstekken en aansluitingen direct in het profiel
-        aanbrengen, zodat een lasconstructie met minder naschakelingen in elkaar
+        aanbrengen, zodat een lasconstructie met minder nabewerkingen in elkaar
         gezet kan worden.
   - kop: Wanneer kiest u voor 2D-lasersnijden (plaat)
     alineas:
-      - "2D-lasersnijden op de Trumpf TruLaser 3040 is de aangewezen keuze
+      - "<a href=\"/plaatwerk/lasersnijden/\">2D-lasersnijden</a> op de Trumpf TruLaser 3040 is de aangewezen keuze
         wanneer een onderdeel in de basis een vlakke geometrie heeft: flenzen,
         beugels, panelen, afdekplaten en onderdelen die na het snijden gekant
         worden op onze Safan Darley E-Brake kantpers."
@@ -31,9 +31,9 @@ secties:
         op maat.
   - kop: Wanneer kiest u voor buislasersnijden (profiel/buis)
     alineas:
-      - Buislasersnijden op de Trumpf TruLaser Tube 3000 is de logische keuze
+      - '<a href="/buizenlaser/">Buislasersnijden</a> op de Trumpf TruLaser Tube 3000 is de logische keuze
         zodra een constructie is opgebouwd uit buizen of profielen, bijvoorbeeld
-        frames, machinebasements, leuningwerk of doorvoerconstructies.
+        frames, machineframes, leuningwerk of doorvoerconstructies.'
       - Omdat contouren, gaten en verbindingen al tijdens het snijproces in het
         profiel worden aangebracht, hoeven deze bewerkingen niet meer los te
         worden uitgevoerd. Dat scheelt handmatig uitlijnen en verkleint de kans
@@ -58,7 +58,7 @@ secties:
         tot een gesloten koker.
       - Wij denken in de werkvoorbereidingsfase graag mee over de vraag of een
         onderdeel als plaat of als buis/profiel het beste tot zijn recht komt,
-        mede op basis van de vervolgbewerkingen zoals kanten, afbramen op de
+        mede op basis van de vervolgbewerkingen zoals kanten, ontbramen op de
         Timesavers 42 Series RB of stralen in onze straalcabine.
 faq:
   - vraag: Kan een onderdeel dat nu uit plaat wordt gemaakt ook als buis worden
@@ -81,7 +81,7 @@ faq:
       het combineren van meerdere bewerkingen in één stap, wat handmatig werk en
       uitlijning kan verminderen. Of dit voordeliger is dan een plaatoplossing
       hangt af van de specifieke constructie en wordt per aanvraag beoordeeld.
-gepubliceerd: false
+gepubliceerd: true
 seo:
   title: "Buislasersnijden versus lasersnijden: welke techniek kiest u?"
   description: Uitleg over wanneer 2D-lasersnijden (plaat) of buislasersnijden
