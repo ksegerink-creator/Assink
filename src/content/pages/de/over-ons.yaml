@@ -37,7 +37,6 @@ proza:
 historieKop1: "Von der Schmiede"
 historieKop2: "zur modernen Fertigung"
 historieFotoJaar: ""
-historieFotoBijschrift: "Ein Flugzeug in der Werkstatt, mit drei Mitarbeitern"
 tijdlijn:
   - { jaar: "1919", tekst: "Gründung in Hengelo — der Beginn von mehr als einem Jahrhundert Metallbearbeitung." }
   - { jaar: "20. Jahrhundert", tekst: "Entwicklung zum Allround-Spezialisten für Blech- und Konstruktionsarbeiten für die regionale Industrie." }
