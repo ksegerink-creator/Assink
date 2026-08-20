@@ -15,9 +15,9 @@ proza:
   - "Van enkelstuks tot serie en van los onderdeel tot complete samenstelling: u heeft één aanspreekpunt dat het hele traject overziet — van engineering tot afgewerkte samenstelling."
 historieKop1: "Van smederij"
 historieKop2: "tot moderne productie"
-historieFoto: "/src/assets/uploads/over-ons/historieFoto.png"
+historieFoto: null
 historieFotoJaar: ""
-historieFotoBijschrift: "Eigen productiehal met vacuümheffer en plaatbewerkingsmachines"
+historieFotoBijschrift: "Vliegtuig in de werkplaats, met drie medewerkers"
 tijdlijn:
   - { jaar: "1919", tekst: "Oprichting in Hengelo — het begin van meer dan een eeuw metaalbewerking." }
   - { jaar: "20e eeuw", tekst: "Uitgroei tot allround specialist in plaatwerk en constructiewerk voor de regionale industrie." }
@@ -26,18 +26,18 @@ tijdlijn:
 archiefKop: "Uit het archief"
 archiefTekst: "Beeld uit ons eigen archief: de hal, de machines en de mensen die hier werkten."
 archief:
-  - foto: "/src/assets/uploads/over-ons/archief/werkplaats-vliegtuig.jpg"
-    jaar: ""
-    bijschrift: "Vliegtuig in de werkplaats, met drie medewerkers"
-  - foto: "/src/assets/uploads/over-ons/archief/gevel-plaatwerken-sanitair.jpg"
+  - foto: null
     jaar: ""
     bijschrift: "Gevel met het opschrift 'Constructies · Plaatwerken en Sanitair'"
+  - foto: "/src/assets/uploads/over-ons/archief/productiehal-vacuumheffer.png"
+    jaar: ""
+    bijschrift: "Eigen productiehal met vacuümheffer en plaatbewerkingsmachines"
 vakEyebrow: "Kwaliteit & vakmanschap"
 vakKop: "Aantoonbaar goed werk"
 vakTekst: "Kwaliteit borgen we in het proces: gekwalificeerde lasprocessen, maatcontrole en documentatie per order. Als SBB-erkend leerbedrijf leiden we bovendien onze eigen vakmensen op."
 vakFoto: "/src/assets/uploads/over-ons/vakFoto.jpg"
 pandFoto: "/src/assets/uploads/over-ons/pandFoto.jpg"
 pandBijschrift: "Oosterveldsingel 18 · 7558 PK Hengelo"
-pandArchiefFoto: "/src/assets/uploads/over-ons/archief/gevel-ijzerconstructies.jpg"
+pandArchiefFoto: null
 pandArchiefJaar: ""
 pandArchiefBijschrift: "Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'"

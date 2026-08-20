@@ -90,7 +90,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
   -->
   <section class="ahist">
     <div class="ahist__grid" aria-hidden="true"></div>
-    <div class="wrap ahist__inner">
+    <div class:list={["wrap", "ahist__inner", !histFoto && "ahist__inner--tekst"]}>
       <div class="ahist__head">
         <span class="mono ahist__span">{SITE.founded} — {new Date().getFullYear()}</span>
         <h2>{a.historieKop1}<br />{a.historieKop2}</h2>
@@ -112,7 +112,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
             alt={a.historieFotoBijschrift || archiefAlt}
             jaar={a.historieFotoJaar}
             bijschrift={a.historieFotoBijschrift}
-            ratio="4/3"
+            ratio="3/2"
             tone="light"
             zoom={true}
             zoomLabel={zoomLabel}
@@ -311,6 +311,9 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
     column-gap: clamp(28px, 5vw, 72px); row-gap: clamp(24px, 3vw, 38px);
     align-items: start;
   }
+  /* Zonder archiefafdruk (scan nog niet geüpload) valt de band terug op kop
+     links en tijdlijn rechts, zodat er geen lege kolom overblijft. */
+  .ahist__inner--tekst { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); grid-template-areas: "head tl"; grid-template-rows: auto; }
   .ahist__head { grid-area: head; }
   .ahist__tl { grid-area: tl; }
   .ahist__span { color: var(--sky); letter-spacing: .16em; font-variant-numeric: tabular-nums; }
@@ -322,6 +325,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
   .ahist__print { grid-area: print; position: sticky; top: calc(var(--head-h) + 24px); }
   @media (max-width: 900px) {
     .ahist__inner { grid-template-columns: 1fr; grid-template-areas: "head" "print" "tl"; grid-template-rows: auto auto auto; }
+    .ahist__inner--tekst { grid-template-areas: "head" "tl"; }
     .ahist__print { position: static; max-width: 520px; }
   }
 

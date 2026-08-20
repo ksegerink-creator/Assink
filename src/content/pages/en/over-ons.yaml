@@ -19,7 +19,7 @@ proza:
 historieKop1: "From forge"
 historieKop2: "to modern production"
 historieFotoJaar: ""
-historieFotoBijschrift: "Our own production hall with a vacuum lifter and sheet metal machinery"
+historieFotoBijschrift: "An aircraft in the workshop, with three members of staff"
 tijdlijn:
   - { jaar: "1919", tekst: "Founded in Hengelo — the start of more than a century of metalworking." }
   - { jaar: "20th century", tekst: "Grew into an all-round specialist in sheet metal and structural work for regional industry." }
@@ -28,8 +28,8 @@ tijdlijn:
 archiefKop: "From the archive"
 archiefTekst: "Images from our own archive: the hall, the machines and the people who worked here."
 archief:
-  - { jaar: "", bijschrift: "An aircraft in the workshop, with three members of staff" }
   - { jaar: "", bijschrift: "Facade lettering: structures, sheet metal work and sanitary work" }
+  - { jaar: "", bijschrift: "Our own production hall with a vacuum lifter and sheet metal machinery" }
 vakEyebrow: "Quality & craftsmanship"
 vakKop: "Demonstrably good work"
 vakTekst: "We build quality into the process: qualified welding procedures, dimensional inspection and documentation for every order. As an SBB-accredited training company, we also train our own skilled professionals."
