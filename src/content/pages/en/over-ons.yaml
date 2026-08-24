@@ -13,7 +13,6 @@ feiten:
   - { waarde: "{jaren}", label: "years of experience" }
   - { waarde: "10 t", label: "max. unit weight" }
   - { waarde: "8 m", label: "max. build height" }
-  - { waarde: "1", label: "point of contact" }
 proza:
   - >-
     Assink & Schipholt started out in 1919 in structural work, sheet metal and

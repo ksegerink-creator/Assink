@@ -13,7 +13,6 @@ feiten:
   - { waarde: "{jaren}", label: "Jahre Erfahrung" }
   - { waarde: "10 t", label: "max. Stückgewicht" }
   - { waarde: "8 m", label: "max. Bauhöhe" }
-  - { waarde: "1", label: "Ansprechpartner" }
 proza:
   - >-
     Assink & Schipholt begann 1919 mit Konstruktionsbau, Blecharbeiten und
