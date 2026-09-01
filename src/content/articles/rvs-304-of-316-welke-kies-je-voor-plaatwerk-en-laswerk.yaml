@@ -68,9 +68,10 @@ secties:
         Lasgedrag: beide materialen zijn goed lasbaar, verwerking en
         procesinstellingen zijn vergelijkbaar
       - >-
-        Nabehandeling: bij beide materialen is zorgvuldige nabehandeling van
-        lasnaden van belang om de corrosiebestendigheid van het basismateriaal
-        te behouden
+        
+        Nabehandeling: bij beide materialen worden lasnaden ontbraamd en
+        waar nodig gestraald, en na het lassen gepassiveerd om de
+        corrosiebestendigheid te behouden
   - kop: Betekenis voor lassen en nabehandelen
     alineas:
       - >-
@@ -81,9 +82,13 @@ secties:
       - >-
         Bij beide materialen geldt dat lasspetters, aanloopkleuren en
         oppervlakteverontreiniging de corrosiebestendigheid lokaal kunnen
-        verminderen. Een zorgvuldige nabehandeling, zoals stralen, is daarom bij
-        beide materialen aan te raden om de oorspronkelijke eigenschappen van
-        het rvs-oppervlak te herstellen. Bij RVS 316 weegt dit des te zwaarder,
+        verminderen. 
+        Mechanisch reinigen, zoals stralen, haalt die verkleuring weg, maar
+        het herstel van de beschermende oxidelaag komt van passiveren. Dat
+        is de stap die wij na het lassen uitvoeren; waarom dat nodig is,
+        staat in <a
+        href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom RVS
+        passiveren na het lassen</a>. Bij RVS 316 weegt dit des te zwaarder,
         omdat dit materiaal juist wordt ingezet vanwege zijn verhoogde weerstand
         tegen corrosie in belastende omgevingen.
       - >-
@@ -107,8 +112,10 @@ faq:
   - vraag: Verschilt het lasproces tussen RVS 304 en RVS 316?
     antwoord: >-
       Beide materialen zijn goed lasbaar en de procesvoering is vergelijkbaar.
-      Het belangrijkste aandachtspunt bij beide is een zorgvuldige nabehandeling
-      van de lasnaad, zodat de corrosiebestendigheid behouden blijft.
+      
+      Het belangrijkste aandachtspunt bij beide is de nabehandeling van de
+      lasnaad: aanloopkleuren verwijderen en passiveren, zodat de
+      corrosiebestendigheid behouden blijft.
   - vraag: Voor welke toepassingen wordt RVS 316 vaak gebruikt?
     antwoord: >-
       RVS 316 wordt vaak toegepast in omgevingen met chloriden of vocht, zoals
