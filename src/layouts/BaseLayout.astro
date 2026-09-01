@@ -102,7 +102,17 @@ const graphs = [organizationJsonLd(site), ...jsonld];
     <meta name="theme-color" content="#0C1F3A" />
     <meta name="generator" content={Astro.generator} />
 
-    {graphs.map((g) => <script type="application/ld+json" set:html={JSON.stringify(g)} />)}
+    {/*
+      set:html zet de JSON onbewerkt in de pagina en JSON.stringify ontsnapt "<"
+      niet. Een CMS-veld met "</script>" erin sluit daardoor deze tag af en alles
+      erna wordt als script uitgevoerd. Titels, omschrijvingen, breadcrumb-labels
+      en FAQ-antwoorden komen hier rechtstreeks in terecht — ook de tekst die de
+      blogconceptgenerator automatisch schrijft. "\u003c" is geldige JSON en
+      levert dezelfde structured data op.
+    */}
+    {graphs.map((g) => (
+      <script type="application/ld+json" set:html={JSON.stringify(g).replace(/</g, "\\u003c")} />
+    ))}
 
     {gaId && (
       <>
