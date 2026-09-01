@@ -1,22 +1,72 @@
-# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Machining"
-kicker: "Cutting 2.3"
-h1: "Machining alongside your sheet metal and constructions"
-intro: "Alongside our own sheet metal and structural work, we also supply turned and milled parts. The machining itself is made by a regular partner; we handle the engineering, the coordination and the delivery. That way you order a complete product from one address."
+title: Machining
+kicker: Cutting 2.3
+h1: Machining alongside your sheet metal and constructions
+intro: Alongside our own sheet metal and structural work, we also supply turned and milled parts. The
+  machining itself is made by a regular partner; we handle the engineering, the coordination and the delivery.
+  That way you order a complete product from one address.
 heroPhoto:
-  subject: "Precision-machined turned and milled part"
+  subject: Precision-machined turned and milled part
 body:
-  - "Machining covers milling, turning, drilling and boring to produce accurate metal parts. We have this work carried out on CNC-controlled machines by a regular partner — for repeatable quality and high accuracy."
-  - "Workable in steel, stainless steel, aluminium, brass and cast aluminium — from prototype to series, combined with our own sheet metal and structural work for complete products from a single source."
-materials: ["Steel", "Stainless steel", "Aluminium", "Brass", "Cast aluminium"]
+- Machining covers milling, turning, drilling and boring to produce accurate metal parts. We have this
+  work carried out on CNC-controlled machines by a regular partner — for repeatable quality and high accuracy.
+- Workable in steel, stainless steel, aluminium, brass and cast aluminium — from prototype to series,
+  combined with our own sheet metal and structural work for complete products from a single source.
+- 'In practice this concerns shafts, bushings, flanges and fasteners that have to form a single product
+  together with sheet metal work or a welded construction. That combination is precisely the reason to
+  route the machining through us: you have one point of contact and one delivery instead of separate parts
+  you have to bring together yourself.'
+- We handle the work preparation, the coordination with the partner and the incoming inspection, and then
+  build the machined parts into our own <a href="/en/plaatwerk/">sheet metal work</a> and <a href="/en/constructies/">welded
+  constructions</a>. For <a href="/en/machinebouw/">machine building</a> that means a fully assembled
+  sub-assembly rather than a box of components.
+- 'What we need for a request: a drawing or 3D model with the dimensions, the material, the required tolerances
+  and surface requirements, the quantity, and whether the part forms part of a larger assembly. That last
+  point often determines the order in which we schedule the work.'
+- 'Our workshop is in Hengelo, in the Twente region, and we work for machine builders and industrial companies
+  throughout the Netherlands. For machined work that belongs to an assembly, that keeps the lines short:
+  the part arrives with us, is inspected and leaves as part of the finished product.'
+materials:
+- Steel
+- Stainless steel
+- Aluminium
+- Brass
+- Cast aluminium
 process:
-  - { step: "Milling", desc: "Faces, contours and pockets." }
-  - { step: "Turning", desc: "Rotationally symmetrical parts." }
-  - { step: "Drilling & boring", desc: "Accurate holes and fits." }
-applications: ["Precision engineering", "Machine building", "Shafts & fasteners"]
+- step: Milling
+  desc: Faces, contours and pockets.
+- step: Turning
+  desc: Rotationally symmetrical parts.
+- step: Drilling & boring
+  desc: Accurate holes and fits.
+applications:
+- Precision engineering
+- Machine building
+- Shafts & fasteners
 related:
-  - { slug: "machinebouw", label: "Machine building", desc: "Complete assemblies." }
-  - { slug: "constructies", label: "Welded constructions", desc: "Welded structural work." }
+- slug: machinebouw
+  label: Machine building
+  desc: Complete assemblies.
+- slug: constructies
+  label: Welded constructions
+  desc: Welded structural work.
 seo:
-  title: "Machining — CNC milling, turning and drilling"
-  description: "CNC machining of precision parts in steel, stainless steel, aluminium, brass and cast aluminium: from prototype to series."
+  title: Machining — CNC milling, turning and drilling
+  description: 'CNC machining of precision parts in steel, stainless steel, aluminium, brass and cast
+    aluminium: from prototype to series.'
+faq:
+- vraag: Do you carry out the machining yourselves?
+  antwoord: No. Turning, milling, drilling and boring are carried out by a fixed partner with CNC-controlled
+    machines. We handle the work preparation, the coordination, the incoming inspection and the assembly
+    with our own sheet metal and construction work.
+- vraag: Which materials can be machined?
+  antwoord: Steel, stainless steel, aluminium, brass and cast aluminium, from prototype to series. Which
+    operation and which material make most sense depends on the function of the part and on the subsequent
+    operations in our own workshop.
+- vraag: Can you combine machined parts with sheet metal work?
+  antwoord: Yes, and that is precisely the reason to route it through us. The turned or milled parts are
+    built into a welded construction or a sheet metal assembly at our workshop, so that you receive one
+    complete product instead of separate components.
+- vraag: What do you need for a quotation?
+  antwoord: A drawing or 3D model with the dimensions, the material, the required tolerances and surface
+    requirements, the quantity, and whether the part forms part of a larger assembly. That last point
+    often determines the order of the process.

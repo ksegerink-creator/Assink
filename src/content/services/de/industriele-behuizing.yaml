@@ -1,25 +1,77 @@
-# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Industriegehäuse"
-kicker: "Sektor 4.4"
-h1: "Innovativ bei Industriegehäusen aus Edelstahl"
-intro: "Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus Edelstahl oder Aluminium? Dann nimmt Ihnen Assink & Schipholt von Entwurf und Engineering bis zum Endprodukt die Arbeit ab."
+title: Industriegehäuse
+kicker: Sektor 4.4
+h1: Innovativ bei Industriegehäusen aus Edelstahl
+intro: Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus Edelstahl oder Aluminium? Dann
+  nimmt Ihnen Assink & Schipholt von Entwurf und Engineering bis zum Endprodukt die Arbeit ab.
 heroPhoto:
-  subject: "Fertiges Edelstahl-Maschinengehäuse, montagefertig"
-bodyHeading: "Über Edelstahlgehäuse"
+  subject: Fertiges Edelstahl-Maschinengehäuse, montagefertig
+bodyHeading: Über Edelstahlgehäuse
 body:
-  - "Wir sind auf hochwertige Gehäuse aus Edelstahl für Steuerungssysteme, Maschinen und anspruchsvolle Umgebungen spezialisiert — sowohl Einzelstücke als auch Serienproduktion, mit Begleitung von Entwurf und Engineering bis zu Montage und Endbearbeitung."
-  - "Außerdem beraten wir Sie zu Materialwahl, Befestigungstechniken und Komponentenintegration."
+- Wir sind auf hochwertige Gehäuse aus Edelstahl für Steuerungssysteme, Maschinen und anspruchsvolle Umgebungen
+  spezialisiert — sowohl Einzelstücke als auch Serienproduktion, mit Begleitung von Entwurf und Engineering
+  bis zu Montage und Endbearbeitung.
+- Außerdem beraten wir Sie zu Materialwahl, Befestigungstechniken und Komponentenintegration.
+- 'Bei einem Gehäuse entscheidet die Bemaßung, ob das Ganze stimmt: Türen und Paneele müssen eben bleiben,
+  Ausschnitte müssen auf den Millimeter passen und Verschlüsse müssen nach der Montage noch leichtgängig
+  sein. Wir kanten auf einer servoelektrischen Abkantpresse mit einer Arbeitslänge bis 3100 mm, sodass
+  lange Paneele in einem Zug gekantet werden können, statt aus Teilen zusammengesetzt zu werden.'
+- Die Werkstoffwahl ergibt sich aus der Umgebung. <a href="/de/plaatwerk/rvs/">Edelstahl</a> in der Güte
+  304 oder 316 ist die logische Wahl bei Feuchtigkeit, Reinigung oder Außenaufstellung; <a href="/de/plaatwerk/aluminium/">Aluminium</a>
+  ist deutlich leichter und damit angenehmer bei Türen und Paneelen, die von Hand gehandhabt werden. Im
+  Zweifel betrachten wir die Belastung und die Reinigungsmethode.
+- 'Die Komponentenintegration erfolgt im selben Durchlauf: Ausschnitte für Verschraubungen, Displays und
+  Kühlung werden auf dem Laser mitgeschnitten, und für Montagepunkte arbeiten wir mit <a href="/de/plaatwerk/persmoeren-trekmoeren/">Einpress-
+  und Blindnietmuttern</a>. Das erspart separate Arbeitsgänge im Nachhinein und hält die Maßhaltigkeit
+  unter Kontrolle.'
+- 'Was wir benötigen: die Außenmaße, die Positionen von Ausschnitten und Montagepunkten, den Werkstoff,
+  ob es sich um Sichtflächen handelt und welche Oberfläche dazugehört, sowie die Stückzahl. In unserem
+  Wissensbeitrag über <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">Industriegehäuse
+  nach Maß</a> gehen wir tiefer auf die Abwägungen ein (niederländisch).'
 process:
-  - { step: "Edelstahl-Schaltschränke nach Maß", desc: "Widerstandsfähig gegen Feuchtigkeit, Staub und Chemikalien." }
-  - { step: "ATEX-zertifizierte Gehäuse", desc: "Für die Prozessindustrie und Chemie." }
-  - { step: "Maßarbeit & Integration", desc: "Für Steuerungssysteme, Maschinenbau, Offshore und Maritim." }
-  - { step: "Beratung", desc: "Materialwahl, Befestigung und Komponentenintegration." }
-materials: ["Edelstahl 304 / 316", "Aluminium"]
-applications: ["Industrielle Steuerungssysteme", "Maschinenbau", "Lebensmittelindustrie", "Offshore & Maritim", "Prozessindustrie & Chemie (ATEX)"]
+- step: Edelstahl-Schaltschränke nach Maß
+  desc: Widerstandsfähig gegen Feuchtigkeit, Staub und Chemikalien.
+- step: ATEX-zertifizierte Gehäuse
+  desc: Für die Prozessindustrie und Chemie.
+- step: Maßarbeit & Integration
+  desc: Für Steuerungssysteme, Maschinenbau, Offshore und Maritim.
+- step: Beratung
+  desc: Materialwahl, Befestigung und Komponentenintegration.
+materials:
+- Edelstahl 304 / 316
+- Aluminium
+applications:
+- Industrielle Steuerungssysteme
+- Maschinenbau
+- Lebensmittelindustrie
+- Offshore & Maritim
+- Prozessindustrie & Chemie (ATEX)
 related:
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Edelstahlgehäuse & Maschinenverkleidung", desc: "Gehäuse und Verkleidungen." }
-  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Edelstahlblech und Sichtflächen." }
-  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Saubere Nähte für Sichtflächen." }
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: Edelstahlgehäuse & Maschinenverkleidung
+  desc: Gehäuse und Verkleidungen.
+- slug: plaatwerk/rvs
+  label: Edelstahl
+  desc: Edelstahlblech und Sichtflächen.
+- slug: plaatwerk/laserlassen
+  label: Laserschweißen
+  desc: Saubere Nähte für Sichtflächen.
 seo:
-  title: "Industriegehäuse — Edelstahlgehäuse nach Maß"
-  description: "Hochwertige Gehäuse aus Edelstahl und Aluminium für Steuerungssysteme, Maschinen und anspruchsvolle Umgebungen. Maßarbeit und Serie, inklusive ATEX."
+  title: Industriegehäuse — Edelstahlgehäuse nach Maß
+  description: Hochwertige Gehäuse aus Edelstahl und Aluminium für Steuerungssysteme, Maschinen und anspruchsvolle
+    Umgebungen. Maßarbeit und Serie, inklusive ATEX.
+faq:
+- vraag: In welchen Werkstoffen fertigen Sie Gehäuse?
+  antwoord: In Edelstahl 304 und 316 sowie in Aluminium. Edelstahl ist die logische Wahl bei Feuchtigkeit,
+    Reinigung oder Außenaufstellung; Aluminium ist deutlich leichter und damit angenehmer bei Türen und
+    Paneelen, die von Hand gehandhabt werden.
+- vraag: Können Sie Ausschnitte und Montagepunkte mit ausführen?
+  antwoord: Ja. Ausschnitte für Verschraubungen, Displays und Kühlung werden auf dem Laser mitgeschnitten,
+    und für Montagepunkte arbeiten wir mit Einpress- und Blindnietmuttern. Das erspart separate Arbeitsgänge
+    im Nachhinein und hält die Maßhaltigkeit unter Kontrolle.
+- vraag: Liefern Sie Einzelstücke oder nur Serien?
+  antwoord: Beides. Vom einzelnen Schaltschrank bis zur Serienfertigung desselben Gehäuses. Bei Serien
+    achten wir besonders darauf, dass Oberfläche und Schliffrichtung über alle Exemplare gleich bleiben.
+- vraag: Wie wird ein Gehäuse nachbehandelt?
+  antwoord: Das hängt von Werkstoff und Anwendung ab. Edelstahl-Sichtflächen liefern wir geschliffen,
+    und nach dem Schweißen entfernen wir Anlauffarben und passivieren. Aluminium kann glasperlgestrahlt
+    werden für eine gleichmäßig matte Oberfläche.

@@ -1,25 +1,76 @@
-# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Industrial enclosures"
-kicker: "Sector 4.4"
-h1: "Innovative in industrial stainless steel enclosures"
-intro: "Do you need custom or series-produced craftsmanship for stainless steel or aluminium enclosures? Then Assink & Schipholt takes care of everything, from design and engineering to the finished product."
+title: Industrial enclosures
+kicker: Sector 4.4
+h1: Innovative in industrial stainless steel enclosures
+intro: Do you need custom or series-produced craftsmanship for stainless steel or aluminium enclosures?
+  Then Assink & Schipholt takes care of everything, from design and engineering to the finished product.
 heroPhoto:
-  subject: "Finished stainless steel machine enclosure, ready for assembly"
-bodyHeading: "About stainless steel enclosures"
+  subject: Finished stainless steel machine enclosure, ready for assembly
+bodyHeading: About stainless steel enclosures
 body:
-  - "We specialise in high-quality stainless steel enclosures for control systems, machines and demanding environments — both single pieces and series production, with support from design and engineering through to assembly and finishing."
-  - "We also advise on material selection, fastening techniques and component integration."
+- We specialise in high-quality stainless steel enclosures for control systems, machines and demanding
+  environments — both single pieces and series production, with support from design and engineering through
+  to assembly and finishing.
+- We also advise on material selection, fastening techniques and component integration.
+- 'With an enclosure, the dimensions determine whether the whole thing works: doors and panels have to
+  stay flat, cut-outs have to fit to the millimetre and latches have to operate smoothly after assembly.
+  We bend on a servo-electric press brake with a working length of up to 3100 mm, so that long panels
+  can be formed in one go rather than assembled from parts.'
+- The choice of material follows from the environment. <a href="/en/plaatwerk/rvs/">Stainless steel</a>
+  in grade 304 or 316 is the logical choice where there is moisture, cleaning or outdoor exposure; <a
+  href="/en/plaatwerk/aluminium/">aluminium</a> is considerably lighter and therefore more pleasant for
+  doors and panels handled by hand. Where there is doubt, we look at the load and the cleaning method.
+- 'Component integration happens in the same run: cut-outs for glands, displays and cooling are cut on
+  the laser, and for mounting points we work with <a href="/en/plaatwerk/persmoeren-trekmoeren/">self-clinching
+  and rivet nuts</a>. That saves separate operations afterwards and keeps the dimensions under control.'
+- 'What we need: the outer dimensions, the positions of cut-outs and mounting points, the material, whether
+  it concerns visible surfaces and which finishing that requires, and the quantity. Our knowledge base
+  article on <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">custom industrial enclosures</a>
+  goes into the trade-offs in more depth (in Dutch).'
 process:
-  - { step: "Custom stainless steel control cabinets", desc: "Resistant to moisture, dust and chemicals." }
-  - { step: "ATEX-certified enclosures", desc: "For the process and chemical industries." }
-  - { step: "Custom work & integration", desc: "For control systems, machine building, offshore and maritime." }
-  - { step: "Advice", desc: "Material selection, fastening and component integration." }
-materials: ["Stainless steel 304 / 316", "Aluminium"]
-applications: ["Industrial control systems", "Machine building", "Food industry", "Offshore & maritime", "Process industry & chemicals (ATEX)"]
+- step: Custom stainless steel control cabinets
+  desc: Resistant to moisture, dust and chemicals.
+- step: ATEX-certified enclosures
+  desc: For the process and chemical industries.
+- step: Custom work & integration
+  desc: For control systems, machine building, offshore and maritime.
+- step: Advice
+  desc: Material selection, fastening and component integration.
+materials:
+- Stainless steel 304 / 316
+- Aluminium
+applications:
+- Industrial control systems
+- Machine building
+- Food industry
+- Offshore & maritime
+- Process industry & chemicals (ATEX)
 related:
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Stainless steel enclosures & machine cladding", desc: "Housings and cladding." }
-  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Stainless sheet metal work and visible work." }
-  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Clean seams for visible work." }
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: Stainless steel enclosures & machine cladding
+  desc: Housings and cladding.
+- slug: plaatwerk/rvs
+  label: Stainless steel
+  desc: Stainless sheet metal work and visible work.
+- slug: plaatwerk/laserlassen
+  label: Laser welding
+  desc: Clean seams for visible work.
 seo:
-  title: "Industrial enclosures — custom stainless steel enclosures"
-  description: "High-quality stainless steel and aluminium enclosures for control systems, machines and demanding environments. Custom work and series, including ATEX."
+  title: Industrial enclosures — custom stainless steel enclosures
+  description: High-quality stainless steel and aluminium enclosures for control systems, machines and
+    demanding environments. Custom work and series, including ATEX.
+faq:
+- vraag: In which materials do you make enclosures?
+  antwoord: In stainless steel 304 and 316 and in aluminium. Stainless steel is the logical choice where
+    there is moisture, cleaning or outdoor exposure; aluminium is considerably lighter and therefore more
+    pleasant for doors and panels handled by hand.
+- vraag: Can you include cut-outs and mounting points?
+  antwoord: Yes. Cut-outs for glands, displays and cooling are cut on the laser, and for mounting points
+    we work with self-clinching and rivet nuts. That saves separate operations afterwards and keeps the
+    dimensions under control.
+- vraag: Do you supply one-offs or only series?
+  antwoord: Both. From a single control cabinet to series production of the same enclosure. With series
+    we pay extra attention to keeping the finish and the grain direction identical across all units.
+- vraag: How is an enclosure finished?
+  antwoord: That depends on the material and the application. Visible stainless steel is supplied ground,
+    and after welding we remove heat tint and passivate. Aluminium can be glass-bead blasted for an even
+    matt surface.

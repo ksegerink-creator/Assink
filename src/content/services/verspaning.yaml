@@ -1,31 +1,83 @@
-title: "Verspaning"
-slug: "verspaning"
-template: "service"
-group: "snijden"
+title: Verspaning
+slug: verspaning
+template: service
+group: snijden
 order: 33
-kicker: "Snijden 2.3"
-h1: "Verspaning bij uw plaatwerk en constructies"
-intro: "Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen. Het verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming en de levering. Zo bestelt u een compleet product op één adres."
+kicker: Snijden 2.3
+h1: Verspaning bij uw plaatwerk en constructies
+intro: Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen.
+  Het verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming
+  en de levering. Zo bestelt u een compleet product op één adres.
 heroPhoto:
-  # Let op: verspaning gebeurt niet in Hengelo. Deze foto kan dus niet bij
-  # Assink gemaakt worden — gebruik beeld van het geleverde onderdeel.
-  subject: "Fijnmechanisch gedraaid en gefreesd onderdeel"
-  orient: "Liggend 16:10"
-  crop: "Onderdeel-detail"
-  comp: "Gedraaid deel naast plaatwerk uit eigen productie"
+  subject: Fijnmechanisch gedraaid en gefreesd onderdeel
+  orient: Liggend 16:10
+  crop: Onderdeel-detail
+  comp: Gedraaid deel naast plaatwerk uit eigen productie
 body:
-  - "Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Dit werk laten we uitvoeren op CNC-gestuurde machines bij een vaste partner — voor herhaalbare kwaliteit en hoge nauwkeurigheid."
-  - "Werkbaar in staal, RVS, aluminium, messing en gietaluminium — van prototype tot serie, gecombineerd met ons eigen plaatwerk en constructiewerk voor complete producten uit één hand."
-materials: ["Staal", "RVS", "Aluminium", "Messing", "Gietaluminium"]
+- Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Dit werk
+  laten we uitvoeren op CNC-gestuurde machines bij een vaste partner — voor herhaalbare kwaliteit en hoge
+  nauwkeurigheid.
+- Werkbaar in staal, RVS, aluminium, messing en gietaluminium — van prototype tot serie, gecombineerd
+  met ons eigen plaatwerk en constructiewerk voor complete producten uit één hand.
+- 'In de praktijk gaat het om assen, bussen, flenzen en bevestigingsdelen die samen met plaatwerk of een
+  gelaste constructie één product moeten vormen. Juist die combinatie is de reden om het verspaningswerk
+  via ons te laten lopen: u heeft één aanspreekpunt en één levering in plaats van losse onderdelen die
+  u zelf moet samenbrengen.'
+- Wij verzorgen de werkvoorbereiding, de afstemming met de partner en de controle bij binnenkomst, en
+  bouwen de verspaande delen daarna in bij ons eigen <a href="/plaatwerk/">plaatwerk</a> en <a href="/constructies/">constructiewerk</a>.
+  Voor <a href="/machinebouw/">machinebouw</a> betekent dat een compleet samengestelde bouwgroep in plaats
+  van een doos met componenten.
+- 'Wat wij nodig hebben voor een aanvraag: een tekening of 3D-model met de maatvoering, het materiaal,
+  de gewenste toleranties en oppervlakte-eisen, het aantal stuks, en of het onderdeel deel uitmaakt van
+  een grotere samenstelling. Dat laatste bepaalt vaak de volgorde waarin we het traject inplannen.'
+- 'Onze werkplaats staat in Hengelo, midden in Twente, en wij werken voor machinebouwers en industriële
+  bedrijven in heel Nederland. Voor verspaand werk dat bij een samenstelling hoort, houdt dat de lijnen
+  kort: het onderdeel komt bij ons binnen, wordt gecontroleerd en gaat als onderdeel van het eindproduct
+  de deur uit.'
+materials:
+- Staal
+- RVS
+- Aluminium
+- Messing
+- Gietaluminium
 process:
-  - { step: "Frezen", desc: "Vlakken, contouren en kamers." }
-  - { step: "Draaien", desc: "Rotatiesymmetrische delen." }
-  - { step: "Boren & kotteren", desc: "Nauwkeurige gaten en passingen." }
-applications: ["Fijnmechanica", "Machinebouw", "Assen & bevestigingsdelen"]
+- step: Frezen
+  desc: Vlakken, contouren en kamers.
+- step: Draaien
+  desc: Rotatiesymmetrische delen.
+- step: Boren & kotteren
+  desc: Nauwkeurige gaten en passingen.
+applications:
+- Fijnmechanica
+- Machinebouw
+- Assen & bevestigingsdelen
 related:
-  - { slug: "machinebouw", label: "Machinebouw", desc: "Complete samenstellingen." }
-  - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk." }
+- slug: machinebouw
+  label: Machinebouw
+  desc: Complete samenstellingen.
+- slug: constructies
+  label: Constructies
+  desc: Gelast constructiewerk.
 seo:
-  title: "Verspaning — CNC frezen, draaien en boren"
-  description: "CNC-verspaning van fijnmechanische onderdelen in staal, RVS, aluminium, messing en gietaluminium: van prototype tot serie."
-translated: ["nl"]
+  title: Verspaning — CNC frezen, draaien en boren
+  description: 'CNC-verspaning van fijnmechanische onderdelen in staal, RVS, aluminium, messing en gietaluminium:
+    van prototype tot serie.'
+translated:
+- nl
+faq:
+- vraag: Voeren jullie het verspaningswerk zelf uit?
+  antwoord: Nee. Draaien, frezen, boren en kotteren laten wij maken door een vaste partner met CNC-gestuurde
+    machines. Wij verzorgen de werkvoorbereiding, de afstemming, de controle bij binnenkomst en de samenstelling
+    met ons eigen plaatwerk en constructiewerk.
+- vraag: Welke materialen kunnen verspaand worden?
+  antwoord: Staal, RVS, aluminium, messing en gietaluminium, van prototype tot serie. Welke bewerking
+    en welk materiaal het meest voor de hand liggen, hangt af van de functie van het onderdeel en van
+    de vervolgbewerkingen bij ons in de hal.
+- vraag: Kunnen jullie verspaande delen combineren met plaatwerk?
+  antwoord: Ja, dat is juist de reden om het via ons te laten lopen. De gedraaide of gefreesde delen worden
+    bij ons ingebouwd in een gelaste constructie of een plaatwerksamenstelling, zodat u één compleet product
+    ontvangt in plaats van losse componenten.
+- vraag: Wat hebben jullie nodig voor een offerte?
+  antwoord: Een tekening of 3D-model met de maatvoering, het materiaal, de gewenste toleranties en oppervlakte-eisen,
+    het aantal stuks, en of het onderdeel deel uitmaakt van een grotere samenstelling. Dat laatste bepaalt
+    vaak de volgorde van het traject.

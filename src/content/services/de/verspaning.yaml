@@ -1,22 +1,74 @@
-# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Zerspanung"
-kicker: "Schneiden 2.3"
-h1: "Zerspanung zu Ihrer Blechbearbeitung und Konstruktion"
-intro: "Neben unserer eigenen Blechbearbeitung und Konstruktionsarbeit liefern wir auch gedrehte und gefräste Bauteile. Die Zerspanung selbst lassen wir von einem festen Partner fertigen; wir übernehmen die Konstruktion, die Abstimmung und die Lieferung. So bestellen Sie ein komplettes Produkt an einer Adresse."
+title: Zerspanung
+kicker: Schneiden 2.3
+h1: Zerspanung zu Ihrer Blechbearbeitung und Konstruktion
+intro: Neben unserer eigenen Blechbearbeitung und Konstruktionsarbeit liefern wir auch gedrehte und gefräste
+  Bauteile. Die Zerspanung selbst lassen wir von einem festen Partner fertigen; wir übernehmen die Konstruktion,
+  die Abstimmung und die Lieferung. So bestellen Sie ein komplettes Produkt an einer Adresse.
 heroPhoto:
-  subject: "Feinmechanisch gedrehtes und gefrästes Bauteil"
+  subject: Feinmechanisch gedrehtes und gefrästes Bauteil
 body:
-  - "Die Zerspanung umfasst Fräsen, Drehen, Bohren und Ausspindeln zur Herstellung präziser Metallteile. Diese Arbeiten lassen wir auf CNC-gesteuerten Maschinen bei einem festen Partner ausführen — für wiederholbare Qualität und hohe Genauigkeit."
-  - "Bearbeitbar in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss — vom Prototyp bis zur Serie, kombiniert mit unserer eigenen Blechbearbeitung und Konstruktionsarbeit für komplette Produkte aus einer Hand."
-materials: ["Stahl", "Edelstahl", "Aluminium", "Messing", "Aluminiumguss"]
+- Die Zerspanung umfasst Fräsen, Drehen, Bohren und Ausspindeln zur Herstellung präziser Metallteile.
+  Diese Arbeiten lassen wir auf CNC-gesteuerten Maschinen bei einem festen Partner ausführen — für wiederholbare
+  Qualität und hohe Genauigkeit.
+- Bearbeitbar in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss — vom Prototyp bis zur Serie,
+  kombiniert mit unserer eigenen Blechbearbeitung und Konstruktionsarbeit für komplette Produkte aus einer
+  Hand.
+- 'In der Praxis geht es um Wellen, Buchsen, Flansche und Befestigungsteile, die zusammen mit Blechteilen
+  oder einer geschweißten Konstruktion ein Produkt bilden sollen. Genau diese Kombination ist der Grund,
+  die Zerspanung über uns laufen zu lassen: Sie haben einen Ansprechpartner und eine Lieferung statt einzelner
+  Teile, die Sie selbst zusammenführen müssen.'
+- Wir übernehmen die Arbeitsvorbereitung, die Abstimmung mit dem Partner und die Eingangsprüfung und bauen
+  die zerspanten Teile anschließend in unsere eigene <a href="/de/plaatwerk/">Blechbearbeitung</a> und
+  <a href="/de/constructies/">Konstruktionsarbeit</a> ein. Für den <a href="/de/machinebouw/">Maschinenbau</a>
+  bedeutet das eine komplett montierte Baugruppe statt einer Kiste mit Komponenten.
+- 'Was wir für eine Anfrage benötigen: eine Zeichnung oder ein 3D-Modell mit der Bemaßung, den Werkstoff,
+  die gewünschten Toleranzen und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren
+  Baugruppe gehört. Letzteres bestimmt häufig die Reihenfolge, in der wir den Ablauf einplanen.'
+- 'Unsere Werkstatt steht in Hengelo, mitten in der Region Twente, und wir arbeiten für Maschinenbauer
+  und Industriebetriebe in den gesamten Niederlanden. Bei zerspanten Teilen, die zu einer Baugruppe gehören,
+  hält das die Wege kurz: Das Teil kommt bei uns an, wird geprüft und verlässt uns als Teil des Endprodukts.'
+materials:
+- Stahl
+- Edelstahl
+- Aluminium
+- Messing
+- Aluminiumguss
 process:
-  - { step: "Fräsen", desc: "Flächen, Konturen und Taschen." }
-  - { step: "Drehen", desc: "Rotationssymmetrische Teile." }
-  - { step: "Bohren & Ausspindeln", desc: "Präzise Bohrungen und Passungen." }
-applications: ["Feinmechanik", "Maschinenbau", "Wellen & Befestigungsteile"]
+- step: Fräsen
+  desc: Flächen, Konturen und Taschen.
+- step: Drehen
+  desc: Rotationssymmetrische Teile.
+- step: Bohren & Ausspindeln
+  desc: Präzise Bohrungen und Passungen.
+applications:
+- Feinmechanik
+- Maschinenbau
+- Wellen & Befestigungsteile
 related:
-  - { slug: "machinebouw", label: "Maschinenbau", desc: "Komplette Baugruppen." }
-  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Konstruktionsarbeit." }
+- slug: machinebouw
+  label: Maschinenbau
+  desc: Komplette Baugruppen.
+- slug: constructies
+  label: Konstruktionen
+  desc: Geschweißte Konstruktionsarbeit.
 seo:
-  title: "Zerspanung — CNC-Fräsen, -Drehen und -Bohren"
-  description: "CNC-Zerspanung feinmechanischer Bauteile in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss: vom Prototyp bis zur Serie."
+  title: Zerspanung — CNC-Fräsen, -Drehen und -Bohren
+  description: 'CNC-Zerspanung feinmechanischer Bauteile in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss:
+    vom Prototyp bis zur Serie.'
+faq:
+- vraag: Führen Sie die Zerspanung selbst aus?
+  antwoord: Nein. Drehen, Fräsen, Bohren und Ausspindeln lassen wir von einem festen Partner mit CNC-gesteuerten
+    Maschinen ausführen. Wir übernehmen die Arbeitsvorbereitung, die Abstimmung, die Eingangsprüfung und
+    den Zusammenbau mit unserer eigenen Blech- und Konstruktionsarbeit.
+- vraag: Welche Werkstoffe können zerspant werden?
+  antwoord: Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss, vom Prototyp bis zur Serie. Welche
+    Bearbeitung und welcher Werkstoff am sinnvollsten sind, hängt von der Funktion des Teils und von den
+    nachfolgenden Bearbeitungen in unserer Halle ab.
+- vraag: Können Sie zerspante Teile mit Blechbearbeitung kombinieren?
+  antwoord: Ja, und genau das ist der Grund, es über uns laufen zu lassen. Die gedrehten oder gefrästen
+    Teile werden bei uns in eine geschweißte Konstruktion oder eine Blechbaugruppe eingebaut, sodass Sie
+    ein komplettes Produkt statt einzelner Komponenten erhalten.
+- vraag: Was benötigen Sie für ein Angebot?
+  antwoord: Eine Zeichnung oder ein 3D-Modell mit der Bemaßung, den Werkstoff, die gewünschten Toleranzen
+    und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren Baugruppe gehört. Letzteres
+    bestimmt häufig die Reihenfolge des Ablaufs.
