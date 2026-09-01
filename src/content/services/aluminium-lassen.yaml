@@ -1,29 +1,60 @@
-title: "Aluminium lassen"
-slug: "aluminium-lassen"
-template: "service"
-group: "lastechniek"
+title: Aluminium lassen
+slug: aluminium-lassen
+template: service
+group: lastechniek
 order: 44
-kicker: "Lastechniek 3.4"
-h1: "Aluminium lassen"
-intro: "Aluminium vraagt om vakmanschap: de juiste warmte-inbreng, voorbewerking en techniek. Wij lassen aluminium met TIG en MIG, vervormingsarm en netjes."
+kicker: Lastechniek 3.4
+h1: Aluminium lassen
+intro: 'Aluminium vraagt om vakmanschap: de juiste warmte-inbreng, voorbewerking en techniek. Wij lassen
+  aluminium met TIG en MIG, vervormingsarm en netjes.'
 heroPhoto:
-  subject: "Aluminium lasnaad in detail met gelijkmatige rups"
-  orient: "Liggend 16:10"
-  crop: "Macro op naad"
-  comp: "Egale aluminium lasrups"
+  subject: Aluminium lasnaad in detail met gelijkmatige rups
+  orient: Liggend 16:10
+  crop: Macro op naad
+  comp: Egale aluminium lasrups
 body:
-  - "Aluminium geleidt warmte snel en oxideert makkelijk. Met de juiste voorbereiding en techniek (TIG/MIG) leggen wij sterke, nette naden — geschikt voor machinebouw, behuizingen en lichtgewicht constructies."
-  - "Als metaalbedrijf met ervaring in aluminium lassen kennen wij de valkuilen: te veel warmte-inbreng geeft vervorming, een verkeerde voorbereiding geeft poreuze naden. Wij stemmen stroom, draadkeuze en volgorde af op plaatdikte en legering."
-materials: ["Aluminium (diverse legeringen)"]
+- Aluminium geleidt warmte snel en oxideert makkelijk. Met de juiste voorbereiding en techniek (TIG/MIG)
+  leggen wij sterke, nette naden — geschikt voor machinebouw, behuizingen en lichtgewicht constructies.
+- 'Als metaalbedrijf met ervaring in aluminium lassen kennen wij de valkuilen: te veel warmte-inbreng
+  geeft vervorming, een verkeerde voorbereiding geeft poreuze naden. Wij stemmen stroom, draadkeuze en
+  volgorde af op plaatdikte en legering.'
+- 'Aluminium gedraagt zich bij het lassen wezenlijk anders dan staal of RVS. Het geleidt warmte veel sneller,
+  waardoor er meer warmte nodig is om te smelten en die warmte zich verder door het werkstuk verspreidt.
+  Daar komt de oxidehuid bij: die smelt pas bij een veel hogere temperatuur dan het aluminium eronder
+  en moet vóór het lassen worden verwijderd.'
+- Wij lassen aluminium met TIG en MIG. TIG geeft de meeste controle over de warmte-inbreng en past bij
+  dun materiaal en zichtnaden; MIG is sneller en past bij dikker materiaal en grotere series. Welke van
+  de twee we kiezen, bepalen we per opdracht op basis van plaatdikte, naadvorm en de eis aan het uiterlijk.
+- Om vervorming te beperken spannen we delen op, hechten we eerst en bepalen we de lasvolgorde vooraf;
+  na het lassen controleren we de maten. Het plaatwerk dat aan zo'n samenstelling voorafgaat — snijden,
+  zetten en afwerken — beschrijven we op onze pagina over <a href="/plaatwerk/aluminium/">aluminium plaatwerk</a>.
+- Na het lassen bepaalt de toepassing hoever we gaan met de afwerking. Waar het uiterlijk telt, stralen
+  we in onze straalcabine met glasparels, wat een egaal mat oppervlak geeft. Waar de naad functioneel
+  is en uit het zicht blijft, volstaat ontbramen en visueel controleren. Geef bij de aanvraag door welke
+  zijde zichtzijde is; dat bepaalt zowel de laskeuze als de nabehandeling.
+materials:
+- Aluminium (diverse legeringen)
 process:
-  - { step: "Voorbereiding", desc: "Reinigen en oxidelaag verwijderen." }
-  - { step: "Lassen", desc: "TIG/MIG met beheerste warmte-inbreng." }
-  - { step: "Nabewerking", desc: "Slijpen en afwerken." }
-applications: ["Machinebouw", "Behuizingen", "Lichtgewicht constructies"]
+- step: Voorbereiding
+  desc: Reinigen en oxidelaag verwijderen.
+- step: Lassen
+  desc: TIG/MIG met beheerste warmte-inbreng.
+- step: Nabewerking
+  desc: Slijpen en afwerken.
+applications:
+- Machinebouw
+- Behuizingen
+- Lichtgewicht constructies
 related:
-  - { slug: "plaatwerk/aluminium", label: "Aluminium plaatwerk", desc: "Aluminium verwerking." }
-  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "Alle lasmethoden." }
+- slug: plaatwerk/aluminium
+  label: Aluminium plaatwerk
+  desc: Aluminium verwerking.
+- slug: plaatwerk/lassen
+  label: Lassen
+  desc: Alle lasmethoden.
 seo:
-  title: "Aluminium lassen — TIG en MIG, vervormingsarm"
-  description: "Specialistisch TIG- en MIG-laswerk in aluminium voor machinebouw, behuizingen en lichtgewicht constructies."
-translated: ["nl"]
+  title: Aluminium lassen — TIG en MIG, vervormingsarm
+  description: Specialistisch TIG- en MIG-laswerk in aluminium voor machinebouw, behuizingen en lichtgewicht
+    constructies.
+translated:
+- nl

@@ -1,22 +1,51 @@
-# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Aluminium schweißen"
-kicker: "Schweißtechnik 3.4"
-h1: "Aluminium schweißen"
-intro: "Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir schweißen Aluminium mit WIG und MIG, verzugsarm und sauber."
+title: Aluminium schweißen
+kicker: Schweißtechnik 3.4
+h1: Aluminium schweißen
+intro: 'Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir
+  schweißen Aluminium mit WIG und MIG, verzugsarm und sauber.'
 heroPhoto:
-  subject: "Aluminium-Schweißnaht im Detail mit gleichmäßiger Raupe"
+  subject: Aluminium-Schweißnaht im Detail mit gleichmäßiger Raupe
 body:
-  - "Aluminium leitet Wärme schnell und oxidiert leicht. Mit der richtigen Vorbereitung und Technik (WIG/MIG) legen wir feste, saubere Nähte — geeignet für Maschinenbau, Gehäuse und Leichtbaukonstruktionen."
-  - "Als Metallbaubetrieb mit Erfahrung im Aluminiumschweißen kennen wir die Fallstricke: zu viel Wärmeeinbringung führt zu Verzug, eine falsche Vorbereitung zu porösen Nähten. Wir stimmen Stromstärke, Drahtwahl und Reihenfolge auf Blechdicke und Legierung ab."
-materials: ["Aluminium (verschiedene Legierungen)"]
+- Aluminium leitet Wärme schnell und oxidiert leicht. Mit der richtigen Vorbereitung und Technik (WIG/MIG)
+  legen wir feste, saubere Nähte — geeignet für Maschinenbau, Gehäuse und Leichtbaukonstruktionen.
+- 'Als Metallbaubetrieb mit Erfahrung im Aluminiumschweißen kennen wir die Fallstricke: zu viel Wärmeeinbringung
+  führt zu Verzug, eine falsche Vorbereitung zu porösen Nähten. Wir stimmen Stromstärke, Drahtwahl und
+  Reihenfolge auf Blechdicke und Legierung ab.'
+- 'Aluminium verhält sich beim Schweißen grundlegend anders als Stahl oder Edelstahl. Es leitet Wärme
+  deutlich schneller ab, sodass mehr Wärme zum Aufschmelzen nötig ist und sich diese Wärme weiter im Werkstück
+  verteilt. Hinzu kommt die Oxidschicht: Sie schmilzt erst bei einer weit höheren Temperatur als das darunterliegende
+  Aluminium und muss vor dem Schweißen entfernt werden.'
+- Wir schweißen Aluminium mit WIG und MIG. WIG bietet die größte Kontrolle über die Wärmeeinbringung und
+  eignet sich für dünnes Material und Sichtnähte; MIG ist schneller und passt zu dickerem Material und
+  größeren Serien. Welches der beiden Verfahren wir wählen, entscheiden wir pro Auftrag anhand von Blechdicke,
+  Nahtform und Anforderungen an das Aussehen.
+- Um Verzug zu begrenzen, spannen wir Teile auf, heften zuerst und legen die Schweißfolge vorab fest;
+  nach dem Schweißen prüfen wir die Maße. Die Blechbearbeitung, die einer solchen Baugruppe vorausgeht
+  — Schneiden, Abkanten und Veredeln — beschreiben wir auf unserer Seite über <a href="/de/plaatwerk/aluminium/">Aluminium-Blechbearbeitung</a>.
+- Nach dem Schweißen bestimmt die Anwendung, wie weit wir bei der Nachbehandlung gehen. Wo das Aussehen
+  zählt, strahlen wir in unserer Strahlkabine mit Glasperlen, was eine gleichmäßig matte Oberfläche ergibt.
+  Wo die Naht funktional ist und verdeckt bleibt, genügen Entgraten und Sichtprüfung. Geben Sie bei der
+  Anfrage an, welche Seite die Sichtseite ist; das bestimmt sowohl die Verfahrenswahl als auch die Nachbehandlung.
+materials:
+- Aluminium (verschiedene Legierungen)
 process:
-  - { step: "Vorbereitung", desc: "Reinigen und Oxidschicht entfernen." }
-  - { step: "Schweißen", desc: "WIG/MIG mit beherrschter Wärmeeinbringung." }
-  - { step: "Nachbearbeitung", desc: "Schleifen und Endbearbeitung." }
-applications: ["Maschinenbau", "Gehäuse", "Leichtbaukonstruktionen"]
+- step: Vorbereitung
+  desc: Reinigen und Oxidschicht entfernen.
+- step: Schweißen
+  desc: WIG/MIG mit beherrschter Wärmeeinbringung.
+- step: Nachbearbeitung
+  desc: Schleifen und Endbearbeitung.
+applications:
+- Maschinenbau
+- Gehäuse
+- Leichtbaukonstruktionen
 related:
-  - { slug: "plaatwerk/aluminium", label: "Aluminium-Blechbearbeitung", desc: "Aluminiumverarbeitung." }
-  - { slug: "plaatwerk/lassen", label: "Schweißen", desc: "Alle Schweißverfahren." }
+- slug: plaatwerk/aluminium
+  label: Aluminium-Blechbearbeitung
+  desc: Aluminiumverarbeitung.
+- slug: plaatwerk/lassen
+  label: Schweißen
+  desc: Alle Schweißverfahren.
 seo:
-  title: "Aluminium schweißen — WIG und MIG, verzugsarm"
-  description: "Spezialisierte WIG- und MIG-Schweißarbeit in Aluminium für Maschinenbau, Gehäuse und Leichtbaukonstruktionen."
+  title: Aluminium schweißen — WIG und MIG, verzugsarm
+  description: Spezialisierte WIG- und MIG-Schweißarbeit in Aluminium für Maschinenbau, Gehäuse und Leichtbaukonstruktionen.

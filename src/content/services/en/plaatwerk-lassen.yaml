@@ -1,23 +1,61 @@
-# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Welding"
-kicker: "Welding technology 3.1"
-h1: "Welding"
-intro: "From manual TIG and MIG welding to automated and laser welding. We choose the welding method that suits the material, the batch size and the quality requirement."
+title: Welding
+kicker: Welding technology 3.1
+h1: Welding
+intro: From manual TIG and MIG welding to automated and laser welding. We choose the welding method that
+  suits the material, the batch size and the quality requirement.
 heroPhoto:
-  subject: "Welder at work on a stainless steel assembly"
+  subject: Welder at work on a stainless steel assembly
 body:
-  - "Welding is core craftsmanship at Assink & Schipholt. Depending on the application we use manual or laser welding — always with attention to penetration, distortion and seam quality. Automated welding for larger series is outsourced to a regular partner; in Hengelo we weld manually and by laser."
-materials: ["Stainless steel", "Aluminium", "Steel"]
+- Welding is core craftsmanship at Assink & Schipholt. Depending on the application we use manual or laser
+  welding — always with attention to penetration, distortion and seam quality. Automated welding for larger
+  series is outsourced to a regular partner; in Hengelo we weld manually and by laser.
+- Which welding method we choose depends on the material, the sheet thickness and the requirements for
+  the seam. TIG welding gives controlled heat input and a clean seam, which suits thin material and visible
+  work in stainless steel and aluminium. MIG welding is faster and suits thicker material and larger series.
+  <a href="/en/plaatwerk/laserlassen/">Laser welding</a> produces a narrow seam with little distortion.
+- Distortion is the greatest risk to dimensional accuracy when welding. We limit it by metering the heat
+  input, clamping parts and determining the welding sequence in advance. After welding we check the dimensions,
+  so that a deviation does not first come to light during assembly.
+- Finishing differs per material. On stainless steel we remove heat tint and passivate, so that corrosion
+  resistance around the seam is retained — we explain <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">why
+  that is necessary</a> separately (in Dutch). Aluminium and steel are deburred and, where required, blasted
+  in our blast cabin.
+- For welding we work under ISO 3834-2 and we are certified to EN 1090-1. What that means for documentation
+  and inspection per order is set out on our <a href="/en/kwaliteit/">quality page</a>. We do not carry
+  out robot welding in house; that takes place within the group at Baas Metaal.
+- 'What we like to receive with a welding request: the drawing with the required joint shape, the material
+  and sheet thickness, which dimensions are critical, whether there are appearance requirements for the
+  seam, and whether documentation is part of the delivery. The earlier those requirements are known, the
+  better we can set up the welding sequence and the finishing — straightening afterwards always costs
+  more time than planning up front.'
+materials:
+- Stainless steel
+- Aluminium
+- Steel
 process:
-  - { step: "Preparation", desc: "Fitting up and fixturing." }
-  - { step: "Welding", desc: "TIG / MIG or laser." }
-  - { step: "Finishing", desc: "Grinding, pickling and passivating where required." }
-  - { step: "Inspection", desc: "Visual inspection of the weld seams." }
-applications: ["Welded constructions", "Enclosures", "Machine parts"]
+- step: Preparation
+  desc: Fitting up and fixturing.
+- step: Welding
+  desc: TIG / MIG or laser.
+- step: Finishing
+  desc: Grinding, pickling and passivating where required.
+- step: Inspection
+  desc: Visual inspection of the weld seams.
+applications:
+- Welded constructions
+- Enclosures
+- Machine parts
 related:
-  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Low-distortion seams." }
-  - { slug: "plaatwerk/robotlassen", label: "Robot welding", desc: "Consistent quality in series." }
-  - { slug: "aluminium-lassen", label: "Aluminium welding", desc: "TIG/MIG in aluminium." }
+- slug: plaatwerk/laserlassen
+  label: Laser welding
+  desc: Low-distortion seams.
+- slug: plaatwerk/robotlassen
+  label: Robot welding
+  desc: Consistent quality in series.
+- slug: aluminium-lassen
+  label: Aluminium welding
+  desc: TIG/MIG in aluminium.
 seo:
-  title: "Welding — manual and laser welding"
-  description: "Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series, with consistent weld seam quality."
+  title: Welding — manual and laser welding
+  description: 'Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series,
+    with consistent weld seam quality.'

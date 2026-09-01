@@ -1,26 +1,67 @@
-# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Stainless steel sheet metal"
-kicker: "Sheet metal work 1.1"
-h1: "Stainless steel sheet metal"
-intro: "Ground stainless steel sheet metal for visible surfaces: corrosion-resistant, presentable and dimensionally stable. Our stainless steel sheet processing covers laser cutting, press braking, deburring and passivation."
+title: Stainless steel sheet metal
+kicker: Sheet metal work 1.1
+h1: Stainless steel sheet metal
+intro: 'Ground stainless steel sheet metal for visible surfaces: corrosion-resistant, presentable and
+  dimensionally stable. Our stainless steel sheet processing covers laser cutting, press braking, deburring
+  and passivation.'
 heroPhoto:
-  subject: "Close-up of ground stainless steel bent work with a sharp edge"
+  subject: Close-up of ground stainless steel bent work with a sharp edge
 body:
-  - "Stainless steel is ideally suited to applications that must be corrosion-resistant as well as presentable. We mainly work with stainless steel 304 and 316."
-  - "For visible surfaces we supply ground finishes with a consistent grain. Cutting is done with the laser; edges are deburred and, where required, passivated."
-  - "Stainless steel sheet processing calls for care: incorrect welding parameters or carbon steel residue on the surface lead to rust formation. We passivate after welding, so the corrosion-resistant surface stays intact."
-  - "From one-off visible work to series stainless steel sheet metal for the food industry or machine building: every batch is finished with the same grain and the same tolerances."
-materials: ["Stainless steel 304", "Stainless steel 316", "Ground / brushed"]
+- Stainless steel is ideally suited to applications that must be corrosion-resistant as well as presentable.
+  We mainly work with stainless steel 304 and 316.
+- For visible surfaces we supply ground finishes with a consistent grain. Cutting is done with the laser;
+  edges are deburred and, where required, passivated.
+- 'Stainless steel sheet processing calls for care: incorrect welding parameters or carbon steel residue
+  on the surface lead to rust formation. We passivate after welding, so the corrosion-resistant surface
+  stays intact.'
+- 'From one-off visible work to series stainless steel sheet metal for the food industry or machine building:
+  every batch is finished with the same grain and the same tolerances.'
+- 'On the Trumpf TruLaser 3040 we cut stainless steel from 0.5 to 20 mm. Which thickness makes sense depends
+  on the load and on the subsequent operations: thinner material is lighter and cheaper, but across large
+  surfaces it needs stiffeners or bent flanges to stay flat. For visible surfaces we also consider the
+  grain direction, so that it runs consistently across the separate parts of an assembly.'
+- 'Press braking stainless steel calls for more care than steel: the material springs back more and the
+  surface is sensitive to scratches. We bend on a servo-electric press brake with a working length of
+  up to 3100 mm and use protective film and adapted tooling for visible work. Read more on our page about
+  <a href="/en/plaatwerk/zetten/">press braking</a>.'
+- 'To assess a request properly we need: a drawing or 3D model, the required grade, the sheet thickness,
+  whether it concerns visible surfaces and which finishing that requires, and the quantity involved. If
+  you are weighing 304 against 316, we set out the difference in our article on <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">stainless
+  steel 304 or 316</a> (in Dutch).'
+- Not every joint has to be welded. For visible work we often choose <a href="/en/plaatwerk/laserlassen/">laser
+  welding</a>, because the narrow seam introduces little heat and therefore requires little finishing.
+  Where a demountable or continuously loaded connection is needed, we work with <a href="/en/plaatwerk/persmoeren-trekmoeren/">self-clinching
+  and rivet nuts</a>. Which route is best depends on the load, the visible side and the number of assembly
+  cycles.
+materials:
+- Stainless steel 304
+- Stainless steel 316
+- Ground / brushed
 process:
-  - { step: "Laser cutting", desc: "2D laser cutting with minimal tolerances." }
-  - { step: "Press braking", desc: "Precise bend angles on the press brake." }
-  - { step: "Deburring", desc: "Burr-free, safe edges." }
-  - { step: "Welding & finishing", desc: "Laser/TIG welding and passivation for visible surfaces." }
-applications: ["Food industry", "Machine building", "Enclosures", "Visible surfaces"]
+- step: Laser cutting
+  desc: 2D laser cutting with minimal tolerances.
+- step: Press braking
+  desc: Precise bend angles on the press brake.
+- step: Deburring
+  desc: Burr-free, safe edges.
+- step: Welding & finishing
+  desc: Laser/TIG welding and passivation for visible surfaces.
+applications:
+- Food industry
+- Machine building
+- Enclosures
+- Visible surfaces
 related:
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Food industry", desc: "Hygienic stainless steel sheet metal." }
-  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Low-distortion seams." }
-  - { slug: "rvs-constructies", label: "Stainless steel constructions", desc: "Welded stainless steel assemblies." }
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Food industry
+  desc: Hygienic stainless steel sheet metal.
+- slug: plaatwerk/laserlassen
+  label: Laser welding
+  desc: Low-distortion seams.
+- slug: rvs-constructies
+  label: Stainless steel constructions
+  desc: Welded stainless steel assemblies.
 seo:
-  title: "Stainless steel sheet metal — ground stainless steel 304 and 316"
-  description: "Corrosion-resistant, presentable stainless steel sheet metal in 304 and 316: laser cutting, press braking, deburring and passivation for visible surfaces and machine building."
+  title: Stainless steel sheet metal — ground stainless steel 304 and 316
+  description: 'Corrosion-resistant, presentable stainless steel sheet metal in 304 and 316: laser cutting,
+    press braking, deburring and passivation for visible surfaces and machine building.'

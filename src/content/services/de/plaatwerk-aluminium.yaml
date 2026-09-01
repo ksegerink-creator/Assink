@@ -1,25 +1,58 @@
-# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Aluminium-Blechbearbeitung"
-kicker: "Blechbearbeitung 1.2"
-h1: "Aluminium-Blechbearbeitung"
-intro: "Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und Gehäuse spezialisiert."
+title: Aluminium-Blechbearbeitung
+kicker: Blechbearbeitung 1.2
+h1: Aluminium-Blechbearbeitung
+intro: Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und
+  Gehäuse spezialisiert.
 heroPhoto:
-  subject: "Aluminium-Blechteil mit WIG-Schweißnaht, Detail"
+  subject: Aluminium-Blechteil mit WIG-Schweißnaht, Detail
 body:
-  - "Aluminium verbindet ein geringes Gewicht mit guter Festigkeit und Korrosionsbeständigkeit. Damit ist es ideal für bewegte Teile, Gehäuse und Konstruktionen, bei denen das Gewicht zählt."
-  - "Unsere Schweißarbeiten in Aluminium erfolgen mit WIG und MIG, abgestimmt auf Blechdicke und Anwendung."
-  - "Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl: Aluminium federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das berücksichtigen wir bei Abwicklung, Werkzeug und Schweißparametern."
-materials: ["Aluminium (verschiedene Legierungen)"]
+- Aluminium verbindet ein geringes Gewicht mit guter Festigkeit und Korrosionsbeständigkeit. Damit ist
+  es ideal für bewegte Teile, Gehäuse und Konstruktionen, bei denen das Gewicht zählt.
+- Unsere Schweißarbeiten in Aluminium erfolgen mit WIG und MIG, abgestimmt auf Blechdicke und Anwendung.
+- 'Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl: Aluminium
+  federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das berücksichtigen
+  wir bei Abwicklung, Werkzeug und Schweißparametern.'
+- 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Beim Abkanten verhält sich
+  Aluminium anders als Stahl: Es federt stärker zurück, wodurch Biegewinkel und Werkzeugwahl das Endmaß
+  bestimmen. Bei engen Toleranzen berücksichtigen wir das in der Arbeitsvorbereitung, statt es nachträglich
+  zu korrigieren.'
+- Für die Nachbehandlung verfügen wir über eine Strahlkabine von 8 × 4 × 3 m, in der wir mit Glasperlen
+  von 100 bis 200 μm strahlen. Das verleiht Aluminium eine gleichmäßig matte Oberfläche und entfernt leichte
+  Verunreinigungen, ohne das Material anzugreifen.
+- Aluminium ist kratzempfindlicher als Stahl. Bei Sichtflächen belassen wir die Schutzfolie daher bis
+  zur letzten Bearbeitung und berücksichtigen das in der Bearbeitungsreihenfolge. Geht es um geschweißte
+  Baugruppen, finden Sie mehr auf unserer Seite über das <a href="/de/aluminium-lassen/">Aluminiumschweißen</a>.
+- Die Entscheidung für Aluminium statt Stahl oder Edelstahl ist meist eine Abwägung zwischen Gewicht und
+  Belastung. Aluminium ist deutlich leichter, was bei bewegten Teilen, Türen und von Hand gehandhabten
+  Paneelen zählt, und es korrodiert ohne zusätzlichen Schutz nicht. Stahl und Edelstahl sind bei gleicher
+  Dicke steifer; ist die Steifigkeit ausschlaggebend, gleichen wir das in Aluminium durch eine größere
+  Dicke oder durch abgekantete Flansche und Versteifungen aus.
+materials:
+- Aluminium (verschiedene Legierungen)
 process:
-  - { step: "Laserschneiden", desc: "Schneiden von Aluminiumblech." }
-  - { step: "Abkanten", desc: "Kanten mit Rücksicht auf die Rückfederung." }
-  - { step: "Aluminium-Schweißen", desc: "WIG-/MIG-Schweißen, verzugsarm." }
-  - { step: "Nachbearbeitung", desc: "Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern." }
-applications: ["Maschinenbau", "Gehäuse", "Transport & Leichtbaukonstruktionen"]
+- step: Laserschneiden
+  desc: Schneiden von Aluminiumblech.
+- step: Abkanten
+  desc: Kanten mit Rücksicht auf die Rückfederung.
+- step: Aluminium-Schweißen
+  desc: WIG-/MIG-Schweißen, verzugsarm.
+- step: Nachbearbeitung
+  desc: Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern.
+applications:
+- Maschinenbau
+- Gehäuse
+- Transport & Leichtbaukonstruktionen
 related:
-  - { slug: "aluminium-lassen", label: "Aluminium-Schweißen", desc: "Spezialisierte WIG-/MIG-Schweißarbeiten." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Präzise Biegewinkel." }
-  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse aus Aluminium." }
+- slug: aluminium-lassen
+  label: Aluminium-Schweißen
+  desc: Spezialisierte WIG-/MIG-Schweißarbeiten.
+- slug: plaatwerk/zetten
+  label: Kanten & Biegen
+  desc: Präzise Biegewinkel.
+- slug: industriele-behuizing
+  label: Industriegehäuse
+  desc: Gehäuse aus Aluminium.
 seo:
-  title: "Aluminium-Blechbearbeitung — leicht und fest"
-  description: "Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse: leicht, fest und korrosionsbeständig."
+  title: Aluminium-Blechbearbeitung — leicht und fest
+  description: 'Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse:
+    leicht, fest und korrosionsbeständig.'
