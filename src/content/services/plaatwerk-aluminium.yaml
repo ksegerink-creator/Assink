@@ -1,32 +1,68 @@
-title: "Aluminium plaatwerk"
-slug: "plaatwerk/aluminium"
-template: "service"
-group: "plaatwerk"
+title: Aluminium plaatwerk
+slug: plaatwerk/aluminium
+template: service
+group: plaatwerk
 order: 22
-kicker: "Plaatwerk 1.2"
-h1: "Aluminium plaatwerk"
-intro: "Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor machinebouw en behuizingen."
+kicker: Plaatwerk 1.2
+h1: Aluminium plaatwerk
+intro: Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor machinebouw
+  en behuizingen.
 heroPhoto:
-  subject: "Aluminium plaatwerkdeel met TIG-lasnaad, detail"
-  orient: "Liggend 16:10"
-  crop: "Detail op lasnaad"
-  comp: "Mat aluminium, gelijkmatige rups"
+  subject: Aluminium plaatwerkdeel met TIG-lasnaad, detail
+  orient: Liggend 16:10
+  crop: Detail op lasnaad
+  comp: Mat aluminium, gelijkmatige rups
 body:
-  - "Aluminium combineert een laag gewicht met goede sterkte en corrosiebestendigheid. Dat maakt het ideaal voor bewegende delen, behuizingen en constructies waar gewicht telt."
-  - "Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing."
-  - "Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer terug bij het zetten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag, gereedschap en lasparameters."
-materials: ["Aluminium (diverse legeringen)"]
+- Aluminium combineert een laag gewicht met goede sterkte en corrosiebestendigheid. Dat maakt het ideaal
+  voor bewegende delen, behuizingen en constructies waar gewicht telt.
+- Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing.
+- 'Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer
+  terug bij het zetten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
+  gereedschap en lasparameters.'
+- 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij het zetten gedraagt aluminium
+  zich anders dan staal: het veert sterker terug, waardoor de buighoek en de gereedschapkeuze bepalend
+  zijn voor de uiteindelijke maat. Bij een strakke maatvoering nemen we dat mee in de werkvoorbereiding
+  in plaats van het achteraf te corrigeren.'
+- Voor de afwerking beschikken wij over een straalcabine van 8 × 4 × 3 m waarin we met glasparels van
+  100 tot 200 μm stralen. Dat geeft aluminium een egaal mat oppervlak en haalt lichte verontreiniging
+  weg, zonder het materiaal aan te tasten.
+- Aluminium is krasgevoeliger dan staal. Bij zichtwerk laten we de beschermfolie daarom tot en met de
+  laatste bewerking zitten en houden we daar in de volgorde van bewerkingen rekening mee. Gaat het om
+  gelaste samenstellingen, dan leest u meer op onze pagina over <a href="/aluminium-lassen/">aluminium
+  lassen</a>.
+- De keuze voor aluminium in plaats van staal of RVS is meestal een afweging tussen gewicht en belasting.
+  Aluminium is beduidend lichter, wat telt bij bewegende delen, deuren en panelen die met de hand worden
+  gehanteerd, en het corrodeert niet zonder aanvullende bescherming. Staal en RVS zijn stijver bij dezelfde
+  dikte; is stijfheid bepalend, dan compenseren we dat in aluminium met een grotere dikte of met kantflenzen
+  en verstijvingen.
+materials:
+- Aluminium (diverse legeringen)
 process:
-  - { step: "Lasersnijden", desc: "Snijden van aluminium plaat." }
-  - { step: "Zetten", desc: "Kanten met aandacht voor terugvering." }
-  - { step: "Aluminium lassen", desc: "TIG/MIG-lassen, vervormingsarm." }
-  - { step: "Afwerking", desc: "Stralen doen we zelf; anodiseren en poedercoaten besteden we uit." }
-applications: ["Machinebouw", "Behuizingen", "Transport & lichtgewicht constructies"]
+- step: Lasersnijden
+  desc: Snijden van aluminium plaat.
+- step: Zetten
+  desc: Kanten met aandacht voor terugvering.
+- step: Aluminium lassen
+  desc: TIG/MIG-lassen, vervormingsarm.
+- step: Afwerking
+  desc: Stralen doen we zelf; anodiseren en poedercoaten besteden we uit.
+applications:
+- Machinebouw
+- Behuizingen
+- Transport & lichtgewicht constructies
 related:
-  - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "Specialistisch TIG/MIG-laswerk." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Nauwkeurige buighoeken." }
-  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Aluminium behuizingen." }
+- slug: aluminium-lassen
+  label: Aluminium lassen
+  desc: Specialistisch TIG/MIG-laswerk.
+- slug: plaatwerk/zetten
+  label: Kanten & zetten
+  desc: Nauwkeurige buighoeken.
+- slug: industriele-behuizing
+  label: Industriële behuizing
+  desc: Aluminium behuizingen.
 seo:
-  title: "Aluminium plaatwerk — lichtgewicht en sterk"
-  description: "Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht, sterk en corrosiebestendig."
-translated: ["nl"]
+  title: Aluminium plaatwerk — lichtgewicht en sterk
+  description: 'Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht,
+    sterk en corrosiebestendig.'
+translated:
+- nl

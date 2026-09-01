@@ -1,25 +1,58 @@
-# Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Aluminium sheet metal"
-kicker: "Sheet metal work 1.2"
-h1: "Aluminium sheet metal"
-intro: "Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building and enclosures."
+title: Aluminium sheet metal
+kicker: Sheet metal work 1.2
+h1: Aluminium sheet metal
+intro: Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building
+  and enclosures.
 heroPhoto:
-  subject: "Aluminium sheet metal part with TIG weld seam, detail"
+  subject: Aluminium sheet metal part with TIG weld seam, detail
 body:
-  - "Aluminium combines low weight with good strength and corrosion resistance. That makes it ideal for moving parts, enclosures and structures where weight matters."
-  - "Our welding work in aluminium is done with TIG and MIG, matched to sheet thickness and application."
-  - "Aluminium sheet processing calls for different machine settings than steel or stainless steel: aluminium springs back more when bending, and heat dissipates faster when welding. We factor that into flat-pattern development, tooling and welding parameters."
-materials: ["Aluminium (various alloys)"]
+- Aluminium combines low weight with good strength and corrosion resistance. That makes it ideal for moving
+  parts, enclosures and structures where weight matters.
+- Our welding work in aluminium is done with TIG and MIG, matched to sheet thickness and application.
+- 'Aluminium sheet processing calls for different machine settings than steel or stainless steel: aluminium
+  springs back more when bending, and heat dissipates faster when welding. We factor that into flat-pattern
+  development, tooling and welding parameters.'
+- 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. When press braking, aluminium behaves
+  differently from steel: it springs back more, which makes the bend angle and the choice of tooling decisive
+  for the final dimension. Where tolerances are tight we account for that during work preparation rather
+  than correcting afterwards.'
+- For finishing we have a blast cabin of 8 × 4 × 3 m in which we blast with glass beads of 100 to 200
+  μm. This gives aluminium an even matt surface and removes light contamination without attacking the
+  material.
+- Aluminium is more prone to scratching than steel. For visible work we therefore leave the protective
+  film in place through to the final operation and take that into account in the sequence of operations.
+  For welded assemblies, read more on our page about <a href="/en/aluminium-lassen/">aluminium welding</a>.
+- Choosing aluminium over steel or stainless steel is usually a trade-off between weight and load. Aluminium
+  is considerably lighter, which counts for moving parts, doors and panels that are handled by hand, and
+  it does not corrode without additional protection. Steel and stainless steel are stiffer at the same
+  thickness; where stiffness is decisive, we compensate in aluminium with a greater thickness or with
+  bent flanges and stiffeners.
+materials:
+- Aluminium (various alloys)
 process:
-  - { step: "Laser cutting", desc: "Cutting aluminium sheet." }
-  - { step: "Press braking", desc: "Bending with attention to springback." }
-  - { step: "Aluminium welding", desc: "TIG/MIG welding, low distortion." }
-  - { step: "Finishing", desc: "Blasting in house; anodising and powder coating are outsourced." }
-applications: ["Machine building", "Enclosures", "Transport & lightweight structures"]
+- step: Laser cutting
+  desc: Cutting aluminium sheet.
+- step: Press braking
+  desc: Bending with attention to springback.
+- step: Aluminium welding
+  desc: TIG/MIG welding, low distortion.
+- step: Finishing
+  desc: Blasting in house; anodising and powder coating are outsourced.
+applications:
+- Machine building
+- Enclosures
+- Transport & lightweight structures
 related:
-  - { slug: "aluminium-lassen", label: "Aluminium welding", desc: "Specialist TIG/MIG welding." }
-  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Precise bend angles." }
-  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Aluminium enclosures." }
+- slug: aluminium-lassen
+  label: Aluminium welding
+  desc: Specialist TIG/MIG welding.
+- slug: plaatwerk/zetten
+  label: Bending & forming
+  desc: Precise bend angles.
+- slug: industriele-behuizing
+  label: Industrial enclosures
+  desc: Aluminium enclosures.
 seo:
-  title: "Aluminium sheet metal — lightweight and strong"
-  description: "Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight, strong and corrosion-resistant."
+  title: Aluminium sheet metal — lightweight and strong
+  description: 'Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight,
+    strong and corrosion-resistant.'

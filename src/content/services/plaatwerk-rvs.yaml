@@ -1,33 +1,74 @@
-title: "RVS-plaatwerk"
-slug: "plaatwerk/rvs"
-template: "service"
-group: "plaatwerk"
+title: RVS-plaatwerk
+slug: plaatwerk/rvs
+template: service
+group: plaatwerk
 order: 21
-kicker: "Plaatwerk 1.1"
-h1: "RVS-plaatwerk"
-intro: "Geslepen RVS-plaatwerk voor zichtwerk: corrosiebestendig, representatief en maatvast. Onze RVS-plaatbewerking omvat lasersnijden, zetten, ontbramen en passiveren."
+kicker: Plaatwerk 1.1
+h1: RVS-plaatwerk
+intro: 'Geslepen RVS-plaatwerk voor zichtwerk: corrosiebestendig, representatief en maatvast. Onze RVS-plaatbewerking
+  omvat lasersnijden, zetten, ontbramen en passiveren.'
 heroPhoto:
-  subject: "Close-up van geslepen RVS zetwerk met scherpe kant"
-  orient: "Liggend 16:10"
-  crop: "Detailcrop op oppervlak"
-  comp: "Strijklicht over geborsteld RVS"
+  subject: Close-up van geslepen RVS zetwerk met scherpe kant
+  orient: Liggend 16:10
+  crop: Detailcrop op oppervlak
+  comp: Strijklicht over geborsteld RVS
 body:
-  - "RVS (roestvast staal) is bij uitstek geschikt voor toepassingen die corrosiebestendig én representatief moeten zijn. Wij verwerken voornamelijk RVS 304 en 316."
-  - "Voor zichtwerk leveren we geslepen oppervlakken met een consistente korrel. Snijden gebeurt met de laser; randen worden ontbraamd en waar nodig gepassiveerd."
-  - "RVS-plaatbewerking vraagt om zorgvuldigheid: verkeerde lasparameters of resten koolstofstaal op het oppervlak leiden tot roestvorming. Wij passiveren na het lassen, zodat het corrosiebestendige oppervlak intact blijft."
-  - "Van enkelstuks zichtwerk tot seriematig RVS-plaatwerk voor de voedingsmiddelenindustrie of machinebouw: iedere batch wordt met dezelfde korrel en dezelfde toleranties afgewerkt."
-materials: ["RVS 304", "RVS 316", "Geslepen / geborsteld"]
+- RVS (roestvast staal) is bij uitstek geschikt voor toepassingen die corrosiebestendig én representatief
+  moeten zijn. Wij verwerken voornamelijk RVS 304 en 316.
+- Voor zichtwerk leveren we geslepen oppervlakken met een consistente korrel. Snijden gebeurt met de laser;
+  randen worden ontbraamd en waar nodig gepassiveerd.
+- 'RVS-plaatbewerking vraagt om zorgvuldigheid: verkeerde lasparameters of resten koolstofstaal op het
+  oppervlak leiden tot roestvorming. Wij passiveren na het lassen, zodat het corrosiebestendige oppervlak
+  intact blijft.'
+- 'Van enkelstuks zichtwerk tot seriematig RVS-plaatwerk voor de voedingsmiddelenindustrie of machinebouw:
+  iedere batch wordt met dezelfde korrel en dezelfde toleranties afgewerkt.'
+- 'Op de Trumpf TruLaser 3040 snijden wij RVS van 0,5 tot 20 mm. Welke dikte verstandig is, hangt af van
+  de belasting en van de vervolgbewerkingen: dun materiaal is lichter en goedkoper, maar vraagt bij grote
+  vlakken om verstijvingen of kantflenzen om vlak te blijven. Bij zichtwerk kijken we daarnaast naar de
+  korrelrichting, zodat die over de losse delen van een samenstelling doorloopt.'
+- 'Zetten vraagt bij RVS meer aandacht dan bij staal: het materiaal veert sterker terug en het oppervlak
+  is gevoelig voor krassen. Wij zetten op een servo-elektrische kantpers met een werklengte tot 3100 mm
+  en werken bij zichtwerk met beschermfolie en aangepast gereedschap. Meer daarover staat op onze pagina
+  over <a href="/plaatwerk/zetten/">kanten en zetten</a>.'
+- 'Om een aanvraag goed te kunnen beoordelen hebben wij nodig: een tekening of 3D-model, de gewenste kwaliteit,
+  de plaatdikte, of het zichtwerk betreft en welke nabehandeling daarbij hoort, en om hoeveel stuks het
+  gaat. Twijfelt u tussen 304 en 316, dan zetten we het verschil op een rij in ons artikel over <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
+  304 of 316</a>.'
+- Niet elke verbinding hoeft gelast te worden. Voor zichtwerk kiezen we vaak <a href="/plaatwerk/laserlassen/">laserlassen</a>,
+  omdat de smalle naad weinig warmte inbrengt en dus weinig nabewerking vraagt. Waar een demontabele of
+  doorlopend belaste verbinding nodig is, werken we met <a href="/plaatwerk/persmoeren-trekmoeren/">pers-
+  en trekmoeren</a>. Welke route de beste is, hangt af van de belasting, de zichtzijde en het aantal montagecycli.
+materials:
+- RVS 304
+- RVS 316
+- Geslepen / geborsteld
 process:
-  - { step: "Lasersnijden", desc: "2D-lasersnijden met minimale toleranties." }
-  - { step: "Zetten", desc: "Nauwkeurige buighoeken op de kantpers." }
-  - { step: "Ontbramen", desc: "Braamvrije, veilige randen." }
-  - { step: "Laswerk & afwerking", desc: "Laser-/TIG-lassen en passiveren voor zichtwerk." }
-applications: ["Voedingsmiddelenindustrie", "Machinebouw", "Behuizingen", "Zichtwerk"]
+- step: Lasersnijden
+  desc: 2D-lasersnijden met minimale toleranties.
+- step: Zetten
+  desc: Nauwkeurige buighoeken op de kantpers.
+- step: Ontbramen
+  desc: Braamvrije, veilige randen.
+- step: Laswerk & afwerking
+  desc: Laser-/TIG-lassen en passiveren voor zichtwerk.
+applications:
+- Voedingsmiddelenindustrie
+- Machinebouw
+- Behuizingen
+- Zichtwerk
 related:
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsmiddelenindustrie", desc: "Hygiënisch RVS-plaatwerk." }
-  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
-  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Voedingsmiddelenindustrie
+  desc: Hygiënisch RVS-plaatwerk.
+- slug: plaatwerk/laserlassen
+  label: Laserlassen
+  desc: Vervormingsarme naden.
+- slug: rvs-constructies
+  label: RVS-constructies
+  desc: Gelaste RVS-samenstellingen.
 seo:
-  title: "RVS-plaatwerk — geslepen RVS 304 en 316"
-  description: "Corrosiebestendig, representatief RVS-plaatwerk in 304 en 316: lasersnijden, zetten, ontbramen en passiveren voor zichtwerk en machinebouw."
-translated: ["nl"]
+  title: RVS-plaatwerk — geslepen RVS 304 en 316
+  description: 'Corrosiebestendig, representatief RVS-plaatwerk in 304 en 316: lasersnijden, zetten, ontbramen
+    en passiveren voor zichtwerk en machinebouw.'
+translated:
+- nl

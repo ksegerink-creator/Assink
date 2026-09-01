@@ -1,30 +1,69 @@
-title: "Lassen"
-slug: "plaatwerk/lassen"
-template: "service"
-group: "lastechniek"
+title: Lassen
+slug: plaatwerk/lassen
+template: service
+group: lastechniek
 order: 41
-kicker: "Lastechniek 3.1"
-h1: "Lassen"
-intro: "Van handmatig TIG- en MIG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal, serie en kwaliteitseis."
+kicker: Lastechniek 3.1
+h1: Lassen
+intro: Van handmatig TIG- en MIG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal,
+  serie en kwaliteitseis.
 heroPhoto:
-  subject: "Lasser aan het werk aan RVS-samenstelling"
-  orient: "Liggend 16:10"
-  crop: "Persoon centraal"
-  comp: "Lasvlam, vonken, beschermkleding"
+  subject: Lasser aan het werk aan RVS-samenstelling
+  orient: Liggend 16:10
+  crop: Persoon centraal
+  comp: Lasvlam, vonken, beschermkleding
 body:
-  - "Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand- of laserlassen in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit. Geautomatiseerd lassen voor grotere series besteden we uit aan een vaste partner; in Hengelo lassen we met de hand en met de laser."
-materials: ["RVS", "Aluminium", "Staal"]
+- Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand- of laserlassen
+  in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit. Geautomatiseerd lassen voor grotere
+  series besteden we uit aan een vaste partner; in Hengelo lassen we met de hand en met de laser.
+- Welke lasmethode we kiezen, hangt af van materiaal, plaatdikte en de eis aan de naad. TIG-lassen geeft
+  een beheerste warmte-inbreng en een nette naad, en past daarmee bij dun materiaal en zichtwerk in RVS
+  en aluminium. MIG-lassen is sneller en past bij dikker materiaal en grotere series. <a href="/plaatwerk/laserlassen/">Laserlassen</a>
+  levert een smalle naad met weinig vervorming.
+- Vervorming is bij lassen het grootste risico voor de maatvoering. Wij beperken die door de warmte-inbreng
+  te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen. Na het lassen controleren we de
+  maten, zodat een afwijking niet pas bij de montage aan het licht komt.
+- De nabehandeling verschilt per materiaal. Bij RVS verwijderen we aanloopkleuren en passiveren we, zodat
+  de corrosiebestendigheid rond de naad behouden blijft — <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom
+  dat nodig is</a> leggen we apart uit. Aluminium en staal worden ontbraamd en waar nodig gestraald in
+  onze straalcabine.
+- Voor lassen werken wij onder ISO 3834-2 en wij zijn gecertificeerd volgens EN 1090-1. Wat dat betekent
+  voor vastlegging en controle per opdracht, staat op onze <a href="/kwaliteit/">kwaliteitspagina</a>.
+  Robotlassen doen wij niet in eigen huis; dat gebeurt binnen de groep bij Baas Metaal.
+- 'Wat wij bij een lasaanvraag graag meekrijgen: de tekening met de gewenste naadvorm, het materiaal en
+  de plaatdikte, welke maten kritisch zijn, of er zichteisen aan de naad zijn, en of er documentatie bij
+  de levering hoort. Hoe eerder die eisen bekend zijn, hoe beter we de lasvolgorde en de nabehandeling
+  erop kunnen inrichten — achteraf rechttrekken kost altijd meer tijd dan vooraf plannen.'
+materials:
+- RVS
+- Aluminium
+- Staal
 process:
-  - { step: "Voorbereiding", desc: "Passend maken en opspannen." }
-  - { step: "Lassen", desc: "TIG / MIG of laser." }
-  - { step: "Nabewerking", desc: "Slijpen, beitsen en passiveren waar nodig." }
-  - { step: "Controle", desc: "Visuele controle van de lasnaden." }
-applications: ["Constructies", "Behuizingen", "Machinedelen"]
+- step: Voorbereiding
+  desc: Passend maken en opspannen.
+- step: Lassen
+  desc: TIG / MIG of laser.
+- step: Nabewerking
+  desc: Slijpen, beitsen en passiveren waar nodig.
+- step: Controle
+  desc: Visuele controle van de lasnaden.
+applications:
+- Constructies
+- Behuizingen
+- Machinedelen
 related:
-  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
-  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Constante seriekwaliteit." }
-  - { slug: "aluminium-lassen", label: "Aluminium lassen", desc: "TIG/MIG in aluminium." }
+- slug: plaatwerk/laserlassen
+  label: Laserlassen
+  desc: Vervormingsarme naden.
+- slug: plaatwerk/robotlassen
+  label: Robotlassen
+  desc: Constante seriekwaliteit.
+- slug: aluminium-lassen
+  label: Aluminium lassen
+  desc: TIG/MIG in aluminium.
 seo:
-  title: "Lassen — hand- en laserlassen"
-  description: "Hand- en laserlassen in RVS, aluminium en staal: van enkelstuks tot series, met constante lasnaadkwaliteit."
-translated: ["nl"]
+  title: Lassen — hand- en laserlassen
+  description: 'Hand- en laserlassen in RVS, aluminium en staal: van enkelstuks tot series, met constante
+    lasnaadkwaliteit.'
+translated:
+- nl

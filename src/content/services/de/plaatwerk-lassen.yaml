@@ -1,23 +1,62 @@
-# Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Schweißen"
-kicker: "Schweißtechnik 3.1"
-h1: "Schweißen"
-intro: "Vom manuellen WIG- und MIG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt."
+title: Schweißen
+kicker: Schweißtechnik 3.1
+h1: Schweißen
+intro: Vom manuellen WIG- und MIG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir
+  wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt.
 heroPhoto:
-  subject: "Schweißer bei der Arbeit an einer Edelstahl-Baugruppe"
+  subject: Schweißer bei der Arbeit an einer Edelstahl-Baugruppe
 body:
-  - "Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Schweißen für größere Serien geben wir an einen festen Partner; in Hengelo schweißen wir von Hand und mit dem Laser."
-materials: ["Edelstahl", "Aluminium", "Stahl"]
+- Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen
+  ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Schweißen für größere
+  Serien geben wir an einen festen Partner; in Hengelo schweißen wir von Hand und mit dem Laser.
+- Welches Schweißverfahren wir wählen, hängt vom Werkstoff, der Blechdicke und den Anforderungen an die
+  Naht ab. WIG-Schweißen bietet eine kontrollierte Wärmeeinbringung und eine saubere Naht und eignet sich
+  damit für dünnes Material und Sichtflächen in Edelstahl und Aluminium. MIG-Schweißen ist schneller und
+  passt zu dickerem Material und größeren Serien. <a href="/de/plaatwerk/laserlassen/">Laserschweißen</a>
+  liefert eine schmale Naht mit geringem Verzug.
+- Verzug ist beim Schweißen das größte Risiko für die Maßhaltigkeit. Wir begrenzen ihn, indem wir die
+  Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen. Nach dem Schweißen
+  prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
+- Die Nachbehandlung unterscheidet sich je nach Werkstoff. Bei Edelstahl entfernen wir Anlauffarben und
+  passivieren, damit die Korrosionsbeständigkeit rund um die Naht erhalten bleibt — <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">warum
+  das nötig ist</a>, erläutern wir gesondert (niederländisch). Aluminium und Stahl werden entgratet und
+  bei Bedarf in unserer Strahlkabine gestrahlt.
+- Für das Schweißen arbeiten wir nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert. Was das für Dokumentation
+  und Prüfung pro Auftrag bedeutet, steht auf unserer <a href="/de/kwaliteit/">Qualitätsseite</a>. Roboterschweißen
+  führen wir nicht im eigenen Haus aus; das geschieht innerhalb der Gruppe bei Baas Metaal.
+- 'Was wir bei einer Schweißanfrage gerne mitbekommen: die Zeichnung mit der gewünschten Nahtform, den
+  Werkstoff und die Blechdicke, welche Maße kritisch sind, ob es Sichtanforderungen an die Naht gibt und
+  ob Dokumentation zur Lieferung gehört. Je früher diese Anforderungen bekannt sind, desto besser können
+  wir Schweißfolge und Nachbehandlung darauf abstimmen — nachträgliches Richten kostet immer mehr Zeit
+  als vorausschauende Planung.'
+materials:
+- Edelstahl
+- Aluminium
+- Stahl
 process:
-  - { step: "Vorbereitung", desc: "Anpassen und Aufspannen." }
-  - { step: "Schweißen", desc: "WIG / MIG oder Laser." }
-  - { step: "Nachbearbeitung", desc: "Schleifen, Beizen und Passivieren, wo erforderlich." }
-  - { step: "Kontrolle", desc: "Visuelle Prüfung der Schweißnähte." }
-applications: ["Konstruktionen", "Gehäuse", "Maschinenteile"]
+- step: Vorbereitung
+  desc: Anpassen und Aufspannen.
+- step: Schweißen
+  desc: WIG / MIG oder Laser.
+- step: Nachbearbeitung
+  desc: Schleifen, Beizen und Passivieren, wo erforderlich.
+- step: Kontrolle
+  desc: Visuelle Prüfung der Schweißnähte.
+applications:
+- Konstruktionen
+- Gehäuse
+- Maschinenteile
 related:
-  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Verzugsarme Nähte." }
-  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Gleichbleibende Serienqualität." }
-  - { slug: "aluminium-lassen", label: "Aluminium schweißen", desc: "WIG/MIG in Aluminium." }
+- slug: plaatwerk/laserlassen
+  label: Laserschweißen
+  desc: Verzugsarme Nähte.
+- slug: plaatwerk/robotlassen
+  label: Roboterschweißen
+  desc: Gleichbleibende Serienqualität.
+- slug: aluminium-lassen
+  label: Aluminium schweißen
+  desc: WIG/MIG in Aluminium.
 seo:
-  title: "Schweißen — Hand- und Laserschweißen"
-  description: "Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien, mit gleichbleibender Schweißnahtqualität."
+  title: Schweißen — Hand- und Laserschweißen
+  description: 'Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien,
+    mit gleichbleibender Schweißnahtqualität.'
