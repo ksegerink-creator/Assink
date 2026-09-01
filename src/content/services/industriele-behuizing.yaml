@@ -1,32 +1,85 @@
-title: "Industriële behuizing"
-slug: "industriele-behuizing"
-template: "service"
-group: "samenstellen"
+title: Industriële behuizing
+slug: industriele-behuizing
+template: service
+group: samenstellen
 order: 40
-kicker: "Sector 4.4"
-h1: "Innovatief in industriële RVS-behuizing"
-intro: "Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium behuizingen? Dan wordt u bij Assink & Schipholt van ontwerp en engineering tot eindproduct ontzorgd."
+kicker: Sector 4.4
+h1: Innovatief in industriële RVS-behuizing
+intro: Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium behuizingen? Dan wordt
+  u bij Assink & Schipholt van ontwerp en engineering tot eindproduct ontzorgd.
 heroPhoto:
-  subject: "Afgewerkte RVS machineomkasting, montageklaar"
-  orient: "Liggend 16:10"
-  crop: "Product centraal"
-  comp: "Behuizing op neutrale ondergrond"
-bodyHeading: "Over RVS-behuizingen"
+  subject: Afgewerkte RVS machineomkasting, montageklaar
+  orient: Liggend 16:10
+  crop: Product centraal
+  comp: Behuizing op neutrale ondergrond
+bodyHeading: Over RVS-behuizingen
 body:
-  - "Wij specialiseren ons in hoogwaardige roestvrijstalen behuizingen voor besturingssystemen, machines en veeleisende omgevingen — zowel individuele stukken als serieproductie, met begeleiding van ontwerp en engineering tot assemblage en afwerking."
-  - "Ook adviseren wij over materiaalkeuze, bevestigingstechnieken en componentintegratie."
+- Wij specialiseren ons in hoogwaardige roestvrijstalen behuizingen voor besturingssystemen, machines
+  en veeleisende omgevingen — zowel individuele stukken als serieproductie, met begeleiding van ontwerp
+  en engineering tot assemblage en afwerking.
+- Ook adviseren wij over materiaalkeuze, bevestigingstechnieken en componentintegratie.
+- 'Bij een behuizing bepaalt de maatvoering of het geheel klopt: deuren en panelen moeten vlak blijven,
+  uitsparingen moeten op de millimeter passen en sluitingen moeten na montage nog soepel werken. Wij kanten
+  op een servo-elektrische kantpers met een werklengte tot 3100 mm, zodat lange panelen in één keer gezet
+  kunnen worden in plaats van uit delen te worden samengesteld.'
+- De materiaalkeuze volgt uit de omgeving. <a href="/plaatwerk/rvs/">RVS</a> in kwaliteit 304 of 316 is
+  de logische keuze bij vocht, reiniging of buitenopstelling; <a href="/plaatwerk/aluminium/">aluminium</a>
+  is aanmerkelijk lichter en daarmee prettiger bij deuren en panelen die met de hand worden gehanteerd.
+  Bij twijfel kijken we naar de belasting en de reinigingsmethode.
+- 'Componentintegratie doen we in dezelfde doorloop: uitsparingen voor wartels, displays en koeling worden
+  meegesneden op de laser, en voor montagepunten werken we met <a href="/plaatwerk/persmoeren-trekmoeren/">pers-
+  en trekmoeren</a>. Dat scheelt losse bewerkingen achteraf en houdt de maatvoering onder controle.'
+- 'Wat wij nodig hebben: de buitenmaten, de posities van uitsparingen en montagepunten, het materiaal,
+  of het om zichtwerk gaat en welke afwerking daarbij hoort, en het aantal. In ons kennisbankartikel over
+  <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">industriële behuizingen op maat</a>
+  gaan we dieper in op de afwegingen.'
 process:
-  - { step: "RVS besturingskasten op maat", desc: "Bestand tegen vocht, stof en chemicaliën." }
-  - { step: "ATEX-gecertificeerde behuizingen", desc: "Voor de procesindustrie en chemie." }
-  - { step: "Maatwerk & integratie", desc: "Voor besturingssystemen, machinebouw, offshore en maritiem." }
-  - { step: "Advies", desc: "Materiaalkeuze, bevestiging en componentintegratie." }
-materials: ["RVS 304 / 316", "Aluminium"]
-applications: ["Industriële besturingssystemen", "Machinebouw", "Voedingsmiddelenindustrie", "Offshore & maritiem", "Procesindustrie & chemie (ATEX)"]
+- step: RVS besturingskasten op maat
+  desc: Bestand tegen vocht, stof en chemicaliën.
+- step: ATEX-gecertificeerde behuizingen
+  desc: Voor de procesindustrie en chemie.
+- step: Maatwerk & integratie
+  desc: Voor besturingssystemen, machinebouw, offshore en maritiem.
+- step: Advies
+  desc: Materiaalkeuze, bevestiging en componentintegratie.
+materials:
+- RVS 304 / 316
+- Aluminium
+applications:
+- Industriële besturingssystemen
+- Machinebouw
+- Voedingsmiddelenindustrie
+- Offshore & maritiem
+- Procesindustrie & chemie (ATEX)
 related:
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "RVS-behuizingen & machinebeplating", desc: "Omkastingen en beplating." }
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk en zichtwerk." }
-  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Strakke naden voor zichtwerk." }
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: RVS-behuizingen & machinebeplating
+  desc: Omkastingen en beplating.
+- slug: plaatwerk/rvs
+  label: RVS
+  desc: Roestvast plaatwerk en zichtwerk.
+- slug: plaatwerk/laserlassen
+  label: Laserlassen
+  desc: Strakke naden voor zichtwerk.
 seo:
-  title: "Industriële behuizing — RVS-behuizingen op maat"
-  description: "Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende omgevingen. Maatwerk en serie, inclusief ATEX."
-translated: ["nl"]
+  title: Industriële behuizing — RVS-behuizingen op maat
+  description: Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende
+    omgevingen. Maatwerk en serie, inclusief ATEX.
+translated:
+- nl
+faq:
+- vraag: In welke materialen maken jullie behuizingen?
+  antwoord: In RVS 304 en 316 en in aluminium. RVS is de logische keuze bij vocht, reiniging of buitenopstelling;
+    aluminium is aanmerkelijk lichter en daarmee prettiger bij deuren en panelen die met de hand worden
+    gehanteerd.
+- vraag: Kunnen jullie uitsparingen en montagepunten meenemen?
+  antwoord: Ja. Uitsparingen voor wartels, displays en koeling worden meegesneden op de laser, en voor
+    montagepunten werken wij met pers- en trekmoeren. Dat scheelt losse bewerkingen achteraf en houdt
+    de maatvoering onder controle.
+- vraag: Leveren jullie enkelstuks of alleen series?
+  antwoord: Beide. Van een enkele besturingskast tot seriematige productie van dezelfde behuizing. Bij
+    series letten we er extra op dat de afwerking en de korrelrichting over alle exemplaren gelijk blijven.
+- vraag: Hoe wordt een behuizing afgewerkt?
+  antwoord: Dat hangt af van materiaal en toepassing. RVS-zichtwerk leveren wij geslepen, en na laswerk
+    verwijderen wij aanloopkleuren en passiveren wij. Aluminium kan glasparelgestraald worden voor een
+    egaal mat oppervlak.
