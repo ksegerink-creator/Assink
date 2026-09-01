@@ -49,3 +49,19 @@ seo:
   title: Aluminium welding — TIG and MIG, low-distortion
   description: Specialised TIG and MIG welding work in aluminium for machine building, enclosures and
     lightweight constructions.
+faq:
+- vraag: Which technique do you use to weld aluminium?
+  antwoord: TIG and MIG. TIG gives the most control over heat input and suits thin material and visible
+    seams; MIG is faster and suits thicker material and larger series. We make the choice per order.
+- vraag: Why is welding aluminium harder than steel?
+  antwoord: Aluminium conducts heat far more quickly, so more heat is needed and it spreads further through
+    the workpiece. In addition, the oxide layer only melts at a far higher temperature than the aluminium
+    beneath it, and has to be removed before welding.
+- vraag: How do you limit distortion in aluminium?
+  antwoord: By clamping parts, tacking first and determining the welding sequence in advance. After welding
+    we check the dimensions. With thin sheet and long seams, that sequence determines the dimensional
+    stability of the end product.
+- vraag: What happens to the seam after welding?
+  antwoord: That depends on the application. Where appearance matters, we blast with glass beads for an
+    even matt surface. If the seam stays out of sight, deburring and a visual inspection are sufficient.
+    Please indicate with your request which side is the visible side.

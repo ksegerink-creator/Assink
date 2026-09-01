@@ -56,3 +56,20 @@ seo:
   title: Aluminium-Blechbearbeitung — leicht und fest
   description: 'Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse:
     leicht, fest und korrosionsbeständig.'
+faq:
+- vraag: Welche Blechdicke in Aluminium können Sie laserschneiden?
+  antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Bei dünnen Blechen
+    und großen Flächen berücksichtigen wir die Ebenheit: Abgekantete Flansche oder Versteifungen sind
+    dann oft sinnvoller als ein dickeres Blech.'
+- vraag: Warum federt Aluminium beim Abkanten stärker zurück?
+  antwoord: Aluminium hat andere Werkstoffeigenschaften als Stahl und federt nach dem Biegen stärker zurück.
+    Der endgültige Winkel hängt dadurch stärker von Werkzeugwahl und Einstellung ab. Wir berücksichtigen
+    das in der Arbeitsvorbereitung, statt es nachträglich zu korrigieren.
+- vraag: Können Sie Aluminium eine matte Oberfläche geben?
+  antwoord: Ja. In unserer Strahlkabine von 8 mal 4 mal 3 Metern strahlen wir mit Glasperlen von 100 bis
+    200 Mikrometer. Das ergibt eine gleichmäßig matte Oberfläche und entfernt leichte Verunreinigungen,
+    ohne das Material anzugreifen.
+- vraag: Schweißen Sie Aluminium auch selbst?
+  antwoord: Ja, mit WIG und MIG. Welches Verfahren wir wählen, hängt von Blechdicke, Nahtform und den
+    Anforderungen an das Aussehen ab. Auf unserer Seite über das Aluminiumschweißen steht ausführlicher,
+    worauf wir bei Aluminium achten.

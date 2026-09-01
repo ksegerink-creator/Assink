@@ -413,6 +413,13 @@ const serviceVertaling = () => ({
     }),
     { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
   ),
+  faq: fields.array(
+    fields.object({
+      vraag: fields.text({ label: "Vraag" }),
+      antwoord: fields.text({ label: "Antwoord", multiline: true, description: "Kort en concreet: 40 tot 60 woorden werkt het best." }),
+    }),
+    { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
+  ),
   applications: fields.array(fields.text({ label: "Toepassing" }), {
     label: "Toepassingen",
     itemLabel: (p) => p.value,
@@ -751,6 +758,13 @@ export default config({
           label: "Toepassingen",
           itemLabel: (p) => p.value,
         }),
+        faq: fields.array(
+          fields.object({
+            vraag: fields.text({ label: "Vraag" }),
+            antwoord: fields.text({ label: "Antwoord", multiline: true, description: "Kort en concreet: 40 tot 60 woorden werkt het best." }),
+          }),
+          { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
+        ),
         related: fields.array(
           fields.object({
             slug: fields.text({ label: "Link (interne slug)" }),

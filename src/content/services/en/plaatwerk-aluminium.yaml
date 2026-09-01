@@ -56,3 +56,19 @@ seo:
   title: Aluminium sheet metal — lightweight and strong
   description: 'Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight,
     strong and corrosion-resistant.'
+faq:
+- vraag: What sheet thickness in aluminium can you laser cut?
+  antwoord: 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. With thin sheets and large
+    surfaces we take flatness into account: bent flanges or stiffeners are then often more sensible than
+    a thicker sheet.'
+- vraag: Why does aluminium spring back more when press braking?
+  antwoord: Aluminium has different material properties from steel and springs back more after bending.
+    The final angle therefore depends more heavily on the choice of tooling and the settings. We account
+    for that during work preparation rather than correcting afterwards.
+- vraag: Can you give aluminium a matt finish?
+  antwoord: Yes. In our blast cabin of 8 by 4 by 3 metres we blast with glass beads of 100 to 200 micrometres.
+    This gives an even matt surface and removes light contamination without attacking the material.
+- vraag: Do you weld aluminium in house?
+  antwoord: Yes, with TIG and MIG. Which technique we choose depends on sheet thickness, joint shape and
+    the requirements for appearance. Our page on aluminium welding sets out in more detail what we watch
+    for with aluminium.
