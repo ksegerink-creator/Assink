@@ -59,3 +59,20 @@ seo:
   title: Welding — manual and laser welding
   description: 'Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series,
     with consistent weld seam quality.'
+faq:
+- vraag: Which welding methods do you have in house?
+  antwoord: We weld with TIG and MIG and have laser welding available. TIG gives the most control over
+    heat input and suits thin material and visible work; MIG is faster for thicker material and larger
+    series. We do not carry out robot welding in Hengelo — that takes place within the group at Baas Metaal.
+- vraag: Are you certified for welding work?
+  antwoord: For welding we work under ISO 3834-2 and we are certified to EN 1090-1. In addition, our quality
+    system is certified to ISO 9001. What that means per order for documentation and inspection is set
+    out on our quality page.
+- vraag: How do you prevent distortion when welding?
+  antwoord: By metering the heat input, clamping parts and determining the welding sequence in advance.
+    After welding we check the dimensions, so that a deviation does not first come to light during assembly.
+    Straightening afterwards always costs more time than planning up front.
+- vraag: Which materials do you weld?
+  antwoord: 'Steel, stainless steel in grades 304 and 316, and aluminium. We match the welding method
+    and the finishing to the material: on stainless steel we remove heat tint and passivate, while aluminium
+    and steel are deburred and, where required, blasted.'

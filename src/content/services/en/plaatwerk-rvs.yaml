@@ -65,3 +65,21 @@ seo:
   title: Stainless steel sheet metal — ground stainless steel 304 and 316
   description: 'Corrosion-resistant, presentable stainless steel sheet metal in 304 and 316: laser cutting,
     press braking, deburring and passivation for visible surfaces and machine building.'
+faq:
+- vraag: What sheet thickness in stainless steel can you laser cut?
+  antwoord: On the Trumpf TruLaser 3040 we cut stainless steel from 0.5 to 20 mm. Which thickness makes
+    sense in your case depends on the load and on the subsequent operations. If your request falls outside
+    that range, put it to us and we will see what is possible within the group.
+- vraag: What is the difference between stainless steel 304 and 316?
+  antwoord: Stainless steel 316 contains molybdenum and is therefore more resistant to pitting corrosion,
+    particularly in environments with chlorides or a lot of moisture. 304 performs well in drier, less
+    aggressive applications. We process both grades; our knowledge base article on 304 and 316 sets out
+    the trade-off in more detail.
+- vraag: Do you supply ground stainless steel for visible surfaces?
+  antwoord: Yes. For visible work we supply ground finishes with a consistent grain and make sure the
+    grain direction runs across the separate parts of an assembly. Protective film stays in place through
+    to the final operation, because stainless steel is sensitive to scratching.
+- vraag: Do you passivate stainless steel after welding?
+  antwoord: Yes. Welding affects the protective oxide layer around the seam, which makes that area more
+    susceptible to corrosion. We remove heat tint and passivate after welding, so that the corrosion resistance
+    of the surface is retained.

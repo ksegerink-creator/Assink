@@ -60,3 +60,21 @@ seo:
   title: Schweißen — Hand- und Laserschweißen
   description: 'Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien,
     mit gleichbleibender Schweißnahtqualität.'
+faq:
+- vraag: Welche Schweißverfahren haben Sie im Haus?
+  antwoord: Wir schweißen mit WIG und MIG und verfügen über das Laserschweißen. WIG bietet die größte
+    Kontrolle über die Wärmeeinbringung und eignet sich für dünnes Material und Sichtflächen; MIG ist
+    schneller bei dickerem Material und größeren Serien. Roboterschweißen führen wir nicht in Hengelo
+    aus — das geschieht innerhalb der Gruppe bei Baas Metaal.
+- vraag: Sind Sie für Schweißarbeiten zertifiziert?
+  antwoord: Für das Schweißen arbeiten wir nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert. Darüber
+    hinaus ist unser Qualitätssystem nach ISO 9001 zertifiziert. Was das pro Auftrag für Dokumentation
+    und Prüfung bedeutet, lesen Sie auf unserer Qualitätsseite.
+- vraag: Wie vermeiden Sie Verzug beim Schweißen?
+  antwoord: Indem wir die Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen.
+    Nach dem Schweißen prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
+    Nachträgliches Richten kostet immer mehr Zeit als vorausschauende Planung.
+- vraag: Welche Werkstoffe schweißen Sie?
+  antwoord: 'Stahl, Edelstahl in den Güten 304 und 316 sowie Aluminium. Schweißverfahren und Nachbehandlung
+    stimmen wir auf den Werkstoff ab: Bei Edelstahl entfernen wir Anlauffarben und passivieren, Aluminium
+    und Stahl werden entgratet und bei Bedarf gestrahlt.'

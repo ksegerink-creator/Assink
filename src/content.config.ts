@@ -39,6 +39,10 @@ const services = defineCollection({
     process: z.array(z.object({ step: z.string(), desc: z.string() })).default([]),
     specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
     applications: z.array(z.string()).default([]),
+    // Veelgestelde vragen per dienstpagina. Levert FAQPage-structured data op
+    // en beantwoordt de vragen die bezoekers stellen maar die niet in de
+    // lopende tekst passen.
+    faq: z.array(z.object({ vraag: z.string(), antwoord: z.string() })).default([]),
     related: z
       .array(z.object({ slug: z.string(), label: z.string(), desc: z.string().optional() }))
       .default([]),
