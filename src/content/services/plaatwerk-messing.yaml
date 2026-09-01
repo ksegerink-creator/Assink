@@ -1,28 +1,90 @@
-title: "Messing plaatwerk"
-slug: "plaatwerk/messing"
-template: "service"
-group: "plaatwerk"
+title: Messing plaatwerk
+slug: plaatwerk/messing
+template: service
+group: plaatwerk
 order: 23
-kicker: "Plaatwerk 1.3"
-h1: "Messing plaatwerk"
-intro: "Messing is een koperzink-legering met een warme kleur. Wij verwerken het met behoud van de natuurlijke glans voor techniek én zichttoepassingen."
+kicker: Plaatwerk 1.3
+h1: Messing plaatwerk
+intro: Messing is een koperzink-legering met een warme kleur. Wij verwerken het met behoud van de natuurlijke
+  glans voor techniek én zichttoepassingen.
 heroPhoto:
-  subject: "Messing plaatwerkonderdeel met warme glans, detail"
-  orient: "Liggend 16:10"
-  crop: "Detailcrop"
-  comp: "Strijklicht over messing oppervlak"
+  subject: Messing plaatwerkonderdeel met warme glans, detail
+  orient: Liggend 16:10
+  crop: Detailcrop
+  comp: Strijklicht over messing oppervlak
 body:
-  - "Messing wordt gewaardeerd om zijn warme kleur en bewerkbaarheid. Wij verwerken messing voor interieurbouw, kunstobjecten en decoratieve technische componenten, met aandacht voor het behoud van de natuurlijke glans."
-materials: ["Messing (koperzink-legering)"]
+- Messing wordt gewaardeerd om zijn warme kleur en bewerkbaarheid. Wij verwerken messing voor interieurbouw,
+  kunstobjecten en decoratieve technische componenten, met aandacht voor het behoud van de natuurlijke
+  glans.
+- 'Messing is een legering van koper en zink. De verhouding bepaalt het gedrag: meer zink maakt het materiaal
+  sterker en beter vervormbaar, meer koper geeft een warmere, rodere kleur. Voor plaatwerk wordt meestal
+  een goed vervormbare kwaliteit gekozen, zodat het materiaal bij het zetten niet scheurt.'
+- Waar messing zich onderscheidt, is de uitstraling. Het oppervlak heeft een warme, gele glans die met
+  geen enkele coating op RVS te benaderen is. Dat maakt het aantrekkelijk voor zichtwerk in interieurs,
+  voor kunstobjecten en voor decoratieve technische onderdelen — maar het maakt het oppervlak ook het
+  kwetsbaarste deel van het product.
+- Messing verkleurt namelijk. In contact met lucht en vocht vormt zich een donkerder patina, eerst geelbruin
+  en later bruin tot groenig. Voor sommige toepassingen is dat juist gewenst; voor andere niet. Wilt u
+  de glans behouden, dan is een beschermende laklaag nodig — of moet u rekenen op periodiek poetsen. Geef
+  bij uw aanvraag door welke van de twee u wilt, want dat bepaalt de afwerking.
+- 'In de bewerking vraagt messing vooral zorg voor het oppervlak. Het is zachter dan RVS en staal en krast
+  dus makkelijker: wij houden beschermfolie tot en met de laatste bewerking op het materiaal, werken met
+  schoon gereedschap en houden messing gescheiden van staal om ijzerinslag te voorkomen. Bij het zetten
+  letten wij op de walsrichting, omdat een buiging dwars op de vezel eerder scheurt.'
+- 'Welke snijmethode voor uw messing onderdeel het meest geschikt is, bepalen wij per aanvraag: de reflectie
+  en de warmtegeleiding van koperlegeringen maken messing lastiger te snijden dan staal of RVS. Stuur
+  uw tekening mee met de plaatdikte, de gewenste messingkwaliteit en de eis aan het oppervlak; dan geven
+  wij aan wat haalbaar is en welke route wij daarvoor kiezen.'
+- Messing laat zich goed combineren met andere materialen. Zoekt u corrosiebestendig zichtwerk zonder
+  de warme kleur, dan is <a href="/plaatwerk/rvs/">geslepen RVS</a> vaak de logische keuze; is licht gewicht
+  doorslaggevend, dan komt <a href="/plaatwerk/aluminium/">aluminium</a> in beeld. Wij verwerken alle
+  drie, dus de materiaalkeuze hoeft niet door de leverancier bepaald te worden.
+materials:
+- Messing (koperzink-legering)
 process:
-  - { step: "Snijden", desc: "Nauwkeurig uitsnijden van messing plaat." }
-  - { step: "Zetten", desc: "Kanten zonder beschadiging van het oppervlak." }
-  - { step: "Afwerking", desc: "Ontbramen en beschermen van de glans." }
-applications: ["Interieurbouw", "Kunstobjecten", "Decoratieve technische componenten"]
+- step: Snijden
+  desc: Nauwkeurig uitsnijden van messing plaat.
+- step: Zetten
+  desc: Kanten zonder beschadiging van het oppervlak.
+- step: Afwerking
+  desc: Ontbramen en beschermen van de glans.
+applications:
+- Interieurbouw
+- Kunstobjecten
+- Decoratieve technische componenten
+faq:
+- vraag: Welke plaatdiktes messing kunnen jullie verwerken?
+  antwoord: Dat bepalen wij per aanvraag. De snijdiktes die wij op onze fiberlaser bevestigd hebben, gelden
+    voor staal, RVS, aluminium en gegalvaniseerd staal; messing is een koperlegering en gedraagt zich
+    onder de laser anders. Stuur uw tekening met de plaatdikte en de messingkwaliteit mee, dan geven wij
+    aan wat haalbaar is.
+- vraag: Verkleurt messing na verloop van tijd?
+  antwoord: 'Ja. In contact met lucht en vocht vormt zich een patina: eerst geelbruin, later bruin tot
+    groenig. Voor sommige toepassingen is dat juist gewenst. Wilt u de oorspronkelijke glans behouden,
+    dan is een beschermende laklaag nodig of moet er periodiek gepoetst worden.'
+- vraag: Kunnen jullie messing zetten zonder het oppervlak te beschadigen?
+  antwoord: Ja. Messing is zachter dan RVS en staal en krast dus sneller. Wij laten beschermfolie tot
+    en met de laatste bewerking zitten, werken met schoon gereedschap en houden rekening met de walsrichting,
+    omdat een buiging dwars op de vezel eerder scheurt.
+- vraag: Waarvoor wordt messing plaatwerk vooral gebruikt?
+  antwoord: Voor interieurbouw, kunstobjecten en decoratieve technische componenten — toepassingen waarin
+    de warme, gele glans het verschil maakt. Voor puur functionele delen zonder zichteis is RVS of aluminium
+    meestal voordeliger.
+- vraag: Kunnen jullie messing lassen?
+  antwoord: Messing staat bij ons als materiaal voor laserlassen. Wel vraagt het vanwege het zink in de
+    legering om aangepaste parameters en goede afzuiging. Leg uw verbinding voor met de plaatdikte en
+    de naadvorm, dan geven wij aan of lassen, solderen of een mechanische verbinding in uw geval de betere
+    route is.
 related:
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast zichtwerk." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast enkelstuks- en seriewerk." }
+- slug: plaatwerk/rvs
+  label: RVS
+  desc: Roestvast zichtwerk.
+- slug: plaatwerk/precisieplaatwerk
+  label: Precisieplaatwerk
+  desc: Maatvast enkelstuks- en seriewerk.
 seo:
-  title: "Messing plaatwerk — warme glans behouden"
-  description: "Messing plaatwerk met behoud van de natuurlijke glans voor interieurbouw, kunstobjecten en decoratieve technische componenten."
-translated: ["nl"]
+  title: Messing plaatwerk — warme glans behouden
+  description: Messing plaatwerk met behoud van de natuurlijke glans voor interieurbouw, kunstobjecten
+    en decoratieve technische componenten.
+translated:
+- nl

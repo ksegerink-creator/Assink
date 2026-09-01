@@ -1,25 +1,93 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Stainless steel constructions"
-kicker: "Assembly 4.2"
-h1: "Stainless steel constructions"
-intro: "Corrosion-resistant constructions in stainless steel — from frames to fully welded assemblies, with a hygienic and presentable finish."
+title: Stainless steel constructions
+kicker: Assembly 4.2
+h1: Stainless steel constructions
+intro: Corrosion-resistant constructions in stainless steel — from frames to fully welded assemblies,
+  with a hygienic and presentable finish.
 heroPhoto:
-  subject: "Welded stainless steel structure during final inspection"
+  subject: Welded stainless steel structure during final inspection
 body:
-  - "Stainless steel constructions combine strength with corrosion resistance. We weld and assemble in stainless steel 304 and 316, with finishing (pickling, passivation) matched to the application — for example in the food industry."
-  - "Our stainless steel structural work combines tube laser cutting for ready-to-fit profiles with TIG and laser welding, followed by pickling and passivation so the material's corrosion resistance is preserved after processing."
-  - "Would you like a stainless steel frame made? Send us your drawing or sketch — we assess manufacturability and think along on profile choice and welding sequence before production starts."
-materials: ["Stainless steel 304", "Stainless steel 316"]
+- Stainless steel constructions combine strength with corrosion resistance. We weld and assemble in stainless
+  steel 304 and 316, with finishing (pickling, passivation) matched to the application — for example in
+  the food industry.
+- Our stainless steel structural work combines tube laser cutting for ready-to-fit profiles with TIG and
+  laser welding, followed by pickling and passivation so the material's corrosion resistance is preserved
+  after processing.
+- Would you like a stainless steel frame made? Send us your drawing or sketch — we assess manufacturability
+  and think along on profile choice and welding sequence before production starts.
+- The choice between stainless steel 304 and 316 often determines the service life of the structure. Stainless
+  steel 316 contains molybdenum and is therefore more resistant to pitting corrosion in environments with
+  chlorides — seawater, cleaning agents, brine. Stainless steel 304 is sufficient in drier and less aggressive
+  conditions and is more economical. We set out the trade-off in more detail in our article on <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">stainless
+  steel 304 or 316</a> (in Dutch).
+- 'What sets stainless steel construction work apart from steel is not the welding itself, but what happens
+  around it. Stainless steel has to be kept separate from carbon steel: dedicated tools, dedicated brushes,
+  a dedicated work area. Residual steel dust rusts and draws rust spots onto an otherwise perfect surface
+  — a mistake that only becomes visible weeks later, when the structure has long since been delivered.'
+- 'After welding there is heat tint around the seam. That is not merely cosmetic: at that spot the chromium
+  oxide layer has been damaged and the material is susceptible to corrosion. We pickle or blast that zone
+  and then passivate, so that the oxide layer restores itself. For aluminium and stainless steel we have
+  our own blasting cabin of 8 × 4 × 3 metres with glass beads of 100–200 μm.'
+- For the profiles we use the Trumpf TruLaser Tube 3000. Cut-outs, mitres and pass-throughs come straight
+  off the tube laser, so that parts fit without manual work and the seams stay even. That saves welding
+  time and — more importantly with stainless steel — finishing, because every extra grinding operation
+  is another spot that has to be treated again.
+- 'Hygienic environments impose additional requirements on the execution: fully welded and smoothly ground
+  seams instead of tack welds, no cavities in which moisture can stand, and rounded transitions where
+  possible. Tell us with your request whether the structure has to be cleanable and with which agents;
+  that determines both the material choice and the seam execution.'
+- Our structures go up to 10 tonnes unit weight and 8 metres in height. For welding we work under ISO
+  3834-2 and for load-bearing structures under EN 1090-1; our quality system is certified to ISO 9001.
+materials:
+- Stainless steel 304
+- Stainless steel 316
 process:
-  - { step: "Tube laser cutting", desc: "Ready-to-fit tube and profile." }
-  - { step: "Welding", desc: "TIG or laser welding." }
-  - { step: "Finishing", desc: "Pickling and passivation." }
-  - { step: "Inspection", desc: "Dimensional and weld seam inspection." }
-applications: ["Machine building", "Food industry", "Equipment manufacturing", "Offshore & maritime"]
+- step: Tube laser cutting
+  desc: Ready-to-fit tube and profile.
+- step: Welding
+  desc: TIG or laser welding.
+- step: Finishing
+  desc: Pickling and passivation.
+- step: Inspection
+  desc: Dimensional and weld seam inspection.
+applications:
+- Machine building
+- Food industry
+- Equipment manufacturing
+- Offshore & maritime
+faq:
+- vraag: Stainless steel 304 or 316 — which should I choose for my structure?
+  antwoord: Stainless steel 316 contains molybdenum and is more resistant to pitting corrosion in environments
+    with chlorides, such as seawater, brine or aggressive cleaning agents. Stainless steel 304 is adequate
+    in drier and less aggressive conditions and is more economical. Tell us where the structure will be
+    used and we will advise accordingly.
+- vraag: Why is passivation necessary after welding?
+  antwoord: Welding damages the chromium oxide layer around the seam; at that spot the material becomes
+    susceptible to corrosion. We remove heat tint by pickling or blasting and then passivate, so that
+    the protective layer restores itself. Without that step a stainless steel structure will rust precisely
+    at the weld.
+- vraag: Can you supply stainless steel structures for the food industry?
+  antwoord: Yes. In hygienic environments we execute seams fully welded and smoothly ground instead of
+    tack welded, avoid cavities in which moisture can stand and use rounded transitions where possible.
+    Tell us which cleaning agents are used; that partly determines the material choice.
+- vraag: How heavy may a stainless steel structure be?
+  antwoord: Up to 10 tonnes unit weight and 8 metres in height. Five overhead cranes of 5 tonnes are installed
+    in the hall; by lifting in tandem we move assemblies of up to 10 tonnes.
+- vraag: Do you process stainless steel and carbon steel in the same workshop?
+  antwoord: We keep stainless steel separate from carbon steel, with dedicated tools and dedicated brushes.
+    Residual steel dust rusts and causes rust spots on an otherwise perfect stainless steel surface; that
+    only becomes visible weeks later and is hard to repair by then.
 related:
-  - { slug: "constructies", label: "Welded constructions", desc: "All construction work." }
-  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Stainless steel sheet metal work." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Food industry", desc: "Hygienic applications." }
+- slug: constructies
+  label: Welded constructions
+  desc: All construction work.
+- slug: plaatwerk/rvs
+  label: Stainless steel
+  desc: Stainless steel sheet metal work.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Food industry
+  desc: Hygienic applications.
 seo:
-  title: "Stainless steel constructions — corrosion-resistant and welded"
-  description: "Corrosion-resistant welded stainless steel constructions and assemblies for machine building, food and demanding environments."
+  title: Stainless steel constructions — corrosion-resistant and welded
+  description: Corrosion-resistant welded stainless steel constructions and assemblies for machine building,
+    food and demanding environments.

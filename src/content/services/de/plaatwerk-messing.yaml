@@ -1,21 +1,84 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Messing-Blechbearbeitung"
-kicker: "Blechbearbeitung 1.3"
-h1: "Messing-Blechbearbeitung"
-intro: "Messing ist eine Kupfer-Zink-Legierung mit warmer Farbe. Wir verarbeiten es unter Erhalt des natürlichen Glanzes — für technische wie auch für Sichtanwendungen."
+title: Messing-Blechbearbeitung
+kicker: Blechbearbeitung 1.3
+h1: Messing-Blechbearbeitung
+intro: Messing ist eine Kupfer-Zink-Legierung mit warmer Farbe. Wir verarbeiten es unter Erhalt des natürlichen
+  Glanzes — für technische wie auch für Sichtanwendungen.
 heroPhoto:
-  subject: "Messing-Blechteil mit warmem Glanz, Detail"
+  subject: Messing-Blechteil mit warmem Glanz, Detail
 body:
-  - "Messing wird für seine warme Farbe und seine gute Bearbeitbarkeit geschätzt. Wir verarbeiten Messing für den Innenausbau, für Kunstobjekte und für dekorative technische Komponenten, mit Sorgfalt für den Erhalt des natürlichen Glanzes."
-materials: ["Messing (Kupfer-Zink-Legierung)"]
+- Messing wird für seine warme Farbe und seine gute Bearbeitbarkeit geschätzt. Wir verarbeiten Messing
+  für den Innenausbau, für Kunstobjekte und für dekorative technische Komponenten, mit Sorgfalt für den
+  Erhalt des natürlichen Glanzes.
+- 'Messing ist eine Legierung aus Kupfer und Zink. Das Verhältnis bestimmt das Verhalten: mehr Zink macht
+  den Werkstoff fester und besser umformbar, mehr Kupfer ergibt eine wärmere, rötlichere Farbe. Für die
+  Blechbearbeitung wird meist eine gut umformbare Güte gewählt, damit das Material beim Abkanten nicht
+  reißt.'
+- Wo Messing sich abhebt, ist die Ausstrahlung. Die Oberfläche hat einen warmen, gelben Glanz, den keine
+  Beschichtung auf Edelstahl erreicht. Das macht den Werkstoff attraktiv für Sichtflächen im Innenausbau,
+  für Kunstobjekte und für dekorative technische Bauteile — es macht die Oberfläche aber auch zum empfindlichsten
+  Teil des Produkts.
+- Messing verfärbt sich nämlich. In Kontakt mit Luft und Feuchtigkeit bildet sich eine dunklere Patina,
+  zunächst gelbbraun, später braun bis grünlich. Für manche Anwendungen ist das gerade erwünscht, für
+  andere nicht. Möchten Sie den Glanz erhalten, ist eine Schutzlackierung nötig — oder Sie müssen mit
+  regelmäßigem Polieren rechnen. Teilen Sie uns mit, was Sie wünschen, denn das bestimmt die Oberflächenbehandlung.
+- 'In der Bearbeitung verlangt Messing vor allem Sorgfalt für die Oberfläche. Es ist weicher als Edelstahl
+  und Stahl und verkratzt daher leichter: wir belassen die Schutzfolie bis einschließlich des letzten
+  Arbeitsgangs auf dem Material, arbeiten mit sauberem Werkzeug und halten Messing von Stahl getrennt,
+  um Eisenkontamination zu vermeiden. Beim Abkanten achten wir auf die Walzrichtung, weil eine Biegung
+  quer zur Faser eher reißt.'
+- 'Welches Schneidverfahren für Ihr Messingteil am besten passt, entscheiden wir je Anfrage: Reflexion
+  und Wärmeleitfähigkeit von Kupferlegierungen machen Messing schwieriger zu schneiden als Stahl oder
+  Edelstahl. Senden Sie Ihre Zeichnung mit Blechdicke, gewünschter Messinggüte und der Anforderung an
+  die Oberfläche; wir geben an, was machbar ist und welchen Weg wir dafür wählen.'
+- Messing lässt sich gut mit anderen Werkstoffen kombinieren. Suchen Sie korrosionsbeständige Sichtflächen
+  ohne die warme Farbe, ist <a href="/de/plaatwerk/rvs/">geschliffener Edelstahl</a> oft die naheliegende
+  Wahl; ist geringes Gewicht entscheidend, kommt <a href="/de/plaatwerk/aluminium/">Aluminium</a> ins
+  Spiel. Wir verarbeiten alle drei, die Werkstoffwahl muss also nicht vom Lieferanten bestimmt werden.
+materials:
+- Messing (Kupfer-Zink-Legierung)
 process:
-  - { step: "Schneiden", desc: "Präzises Ausschneiden von Messingblech." }
-  - { step: "Abkanten", desc: "Kanten ohne Beschädigung der Oberfläche." }
-  - { step: "Nachbearbeitung", desc: "Entgraten und Schutz des Glanzes." }
-applications: ["Innenausbau", "Kunstobjekte", "Dekorative technische Komponenten"]
+- step: Schneiden
+  desc: Präzises Ausschneiden von Messingblech.
+- step: Abkanten
+  desc: Kanten ohne Beschädigung der Oberfläche.
+- step: Nachbearbeitung
+  desc: Entgraten und Schutz des Glanzes.
+applications:
+- Innenausbau
+- Kunstobjekte
+- Dekorative technische Komponenten
+faq:
+- vraag: Welche Messing-Blechdicken können Sie verarbeiten?
+  antwoord: Das entscheiden wir je Anfrage. Die für unseren Faserlaser bestätigten Schneiddicken gelten
+    für Stahl, Edelstahl, Aluminium und verzinkten Stahl; Messing ist eine Kupferlegierung und verhält
+    sich unter dem Laser anders. Senden Sie Ihre Zeichnung mit Blechdicke und Messinggüte, dann geben
+    wir an, was machbar ist.
+- vraag: Verfärbt sich Messing mit der Zeit?
+  antwoord: 'Ja. In Kontakt mit Luft und Feuchtigkeit bildet sich eine Patina: zunächst gelbbraun, später
+    braun bis grünlich. Für manche Anwendungen ist das gerade erwünscht. Möchten Sie den ursprünglichen
+    Glanz erhalten, ist eine Schutzlackierung nötig oder es muss regelmäßig poliert werden.'
+- vraag: Können Sie Messing abkanten, ohne die Oberfläche zu beschädigen?
+  antwoord: Ja. Messing ist weicher als Edelstahl und Stahl und verkratzt daher schneller. Wir belassen
+    die Schutzfolie bis einschließlich des letzten Arbeitsgangs, arbeiten mit sauberem Werkzeug und berücksichtigen
+    die Walzrichtung, weil eine Biegung quer zur Faser eher reißt.
+- vraag: Wofür wird Messingblech vor allem eingesetzt?
+  antwoord: Für den Innenausbau, Kunstobjekte und dekorative technische Bauteile — Anwendungen, bei denen
+    der warme, gelbe Glanz den Unterschied macht. Für rein funktionale Teile ohne Sichtanforderung sind
+    Edelstahl oder Aluminium meist günstiger.
+- vraag: Können Sie Messing schweißen?
+  antwoord: Messing ist bei uns als Werkstoff für das Laserschweißen gelistet. Wegen des Zinks in der
+    Legierung erfordert es allerdings angepasste Parameter und eine gute Absaugung. Legen Sie uns Ihre
+    Verbindung mit Blechdicke und Nahtform vor, dann geben wir an, ob Schweißen, Löten oder eine mechanische
+    Verbindung in Ihrem Fall der bessere Weg ist.
 related:
-  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Rostfreie Sichtflächen." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Einzelstücke und Serien." }
+- slug: plaatwerk/rvs
+  label: Edelstahl
+  desc: Rostfreie Sichtflächen.
+- slug: plaatwerk/precisieplaatwerk
+  label: Präzisionsblech
+  desc: Maßhaltige Einzelstücke und Serien.
 seo:
-  title: "Messing-Blechbearbeitung — warmen Glanz erhalten"
-  description: "Messing-Blechbearbeitung unter Erhalt des natürlichen Glanzes für Innenausbau, Kunstobjekte und dekorative technische Komponenten."
+  title: Messing-Blechbearbeitung — warmen Glanz erhalten
+  description: Messing-Blechbearbeitung unter Erhalt des natürlichen Glanzes für Innenausbau, Kunstobjekte
+    und dekorative technische Komponenten.

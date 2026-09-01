@@ -1,38 +1,110 @@
-title: "Constructies"
-slug: "constructies"
-template: "service"
-group: "samenstellen"
+title: Constructies
+slug: constructies
+template: service
+group: samenstellen
 order: 20
-kicker: "Mogelijkheid 4.1"
-h1: "Constructief in constructies"
-intro: "Meer dan 100 jaar specialist in hoogwaardige metaalconstructies. Van losse onderdelen tot volledig gelaste samenstellingen — traditioneel vakmanschap met moderne techniek."
+kicker: Mogelijkheid 4.1
+h1: Constructief in constructies
+intro: Meer dan 100 jaar specialist in hoogwaardige metaalconstructies. Van losse onderdelen tot volledig
+  gelaste samenstellingen — traditioneel vakmanschap met moderne techniek.
 heroPhoto:
-  subject: "Gelast frame tijdens kwaliteitscontrole in de constructiehal"
-  orient: "Liggend 16:10"
-  crop: "Halfrontaal"
-  comp: "Frame op bok, lasser op achtergrond"
-bodyHeading: "Specialist in constructiewerk"
+  subject: Gelast frame tijdens kwaliteitscontrole in de constructiehal
+  orient: Liggend 16:10
+  crop: Halfrontaal
+  comp: Frame op bok, lasser op achtergrond
+bodyHeading: Specialist in constructiewerk
 body:
-  - "Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen tot 10 ton."
-  - "In de hal hangen vijf bovenloopkranen van 5 ton. Door in tandem te hijsen — met twee kranen aan één last — verplaatsen we samenstellingen tot 10 ton, tot 8 meter hoogte."
-  - "Wij verzorgen niet alleen las- en constructiewerk, maar ook oppervlaktebehandelingen zoals stralen, poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer. Zo heeft u één aanspreekpunt van engineering tot afwerking."
-materials: ["RVS 304 / 316", "Aluminium", "Messing", "Staal"]
+- Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig
+  gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen
+  tot 10 ton.
+- In de hal hangen vijf bovenloopkranen van 5 ton. Door in tandem te hijsen — met twee kranen aan één
+  last — verplaatsen we samenstellingen tot 10 ton, tot 8 meter hoogte.
+- Wij verzorgen niet alleen las- en constructiewerk, maar ook oppervlaktebehandelingen zoals stralen,
+  poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer. Zo heeft u één aanspreekpunt van
+  engineering tot afwerking.
+- 'Een constructie is meer dan de som van de losse delen. De grootste risico''s zitten in vervorming door
+  warmte-inbreng en in maatafwijkingen die zich door een samenstelling heen opstapelen. Daarom bepalen
+  wij de lasvolgorde in de werkvoorbereiding en niet op de vloer: symmetrisch lassen waar het kan, in
+  stappen waar dat nodig is, en met opspanning op de maten die er echt toe doen.'
+- 'Wij snijden plaat op de fiberlaser en buis en profiel op de Trumpf TruLaser Tube 3000. Dat laatste
+  scheelt in een constructie veel handwerk: uitsparingen, verstekken en pasvormen komen direct uit de
+  machine, waardoor delen in elkaar vallen in plaats van dat ze passend gemaakt moeten worden. Het resultaat
+  is een kortere lastijd en een nauwkeuriger geheel.'
+- Voor het laswerk werken wij onder ISO 3834-2, de norm die kwaliteitseisen stelt aan smeltlassen. Draagconstructies
+  vallen onder EN 1090-1, waarmee wij staal- en aluminiumconstructies CE-conform mogen uitvoeren. In de
+  praktijk betekent dat gekwalificeerde lassers, vastgelegde lasmethodebeschrijvingen en herleidbaar materiaal.
+- Materiaalkeuze is een afweging tussen belasting, omgeving en kosten. Staal is sterk en voordelig, maar
+  heeft een coating nodig. RVS 304 en 316 zijn corrosiebestendig en geschikt voor natte of hygiënische
+  omgevingen — daarover leest u meer op onze pagina over <a href="/rvs-constructies/">RVS-constructies</a>.
+  Aluminium is licht, maar vraagt om een andere lasaanpak en om aandacht voor de sterkte rond de las.
+- 'Wat wij nodig hebben om een constructie te beoordelen: een tekening of 3D-model van de samenstelling,
+  het materiaal en de gewenste kwaliteit, de eisen aan maatvoering, en de gewenste afwerking. Weet u nog
+  niet welke oppervlaktebehandeling passend is, dan denken wij mee — die keuze bepaalt namelijk mede hoe
+  de constructie gelast en opgehangen moet worden.'
+materials:
+- RVS 304 / 316
+- Aluminium
+- Messing
+- Staal
 process:
-  - { step: "Engineering & werkvoorbereiding", desc: "Beoordeling van tekening, lasvolgorde en maakbaarheid." }
-  - { step: "Snijden & voorbewerken", desc: "Lasersnijden van plaat en buis, kanten en passend maken." }
-  - { step: "Lassen & samenstellen", desc: "Hand- en laserlassen tot volledige samenstelling." }
-  - { step: "Oppervlaktebehandeling", desc: "Stralen, poedercoaten, anodiseren of passiveren." }
-  - { step: "Controle & levering", desc: "Maatcontrole en visuele keuring, daarna just-in-time levering." }
+- step: Engineering & werkvoorbereiding
+  desc: Beoordeling van tekening, lasvolgorde en maakbaarheid.
+- step: Snijden & voorbewerken
+  desc: Lasersnijden van plaat en buis, kanten en passend maken.
+- step: Lassen & samenstellen
+  desc: Hand- en laserlassen tot volledige samenstelling.
+- step: Oppervlaktebehandeling
+  desc: Stralen, poedercoaten, anodiseren of passiveren.
+- step: Controle & levering
+  desc: Maatcontrole en visuele keuring, daarna just-in-time levering.
 specs:
-  - { label: "Max. gewicht per stuk", value: "tot 10 ton" }
-  - { label: "Max. hoogte constructie", value: "8 m" }
-  - { label: "Hijsmiddelen", value: "5 bovenloopkranen van 5 ton; tandem hijsen tot 10 ton" }
-applications: ["Machinebouw (frames, beschermkappen)", "Apparatenbouw", "Infratechniek", "Voedingsmiddelenindustrie", "Elektrotechniek", "Mechatronica"]
+- label: Max. gewicht per stuk
+  value: tot 10 ton
+- label: Max. hoogte constructie
+  value: 8 m
+- label: Hijsmiddelen
+  value: 5 bovenloopkranen van 5 ton; tandem hijsen tot 10 ton
+applications:
+- Machinebouw (frames, beschermkappen)
+- Apparatenbouw
+- Infratechniek
+- Voedingsmiddelenindustrie
+- Elektrotechniek
+- Mechatronica
+faq:
+- vraag: Hoe zwaar en hoe hoog mag een constructie zijn?
+  antwoord: Wij verwerken onderdelen tot 10 ton stukgewicht en constructies tot 8 meter hoogte. In de
+    hal hangen vijf bovenloopkranen van 5 ton; door in tandem te hijsen — twee kranen aan één last — verplaatsen
+    wij samenstellingen tot 10 ton.
+- vraag: Werken jullie volgens EN 1090?
+  antwoord: Ja. Wij zijn gecertificeerd voor EN 1090-1, de norm voor de uitvoering van staal- en aluminiumconstructies
+    met CE-markering. Voor het laswerk zelf werken wij onder ISO 3834-2 en ons kwaliteitssysteem is ISO
+    9001-gecertificeerd.
+- vraag: Verzorgen jullie ook de oppervlaktebehandeling?
+  antwoord: Ja. Stralen, poedercoaten, anodiseren en het passiveren van RVS horen bij het traject, veel
+    daarvan in eigen beheer. Zo heeft u één aanspreekpunt van werkvoorbereiding tot afgewerkte constructie
+    en hoeft u het werk niet zelf tussen partijen te verplaatsen.
+- vraag: In welke materialen lassen jullie constructies?
+  antwoord: Staal, RVS 304 en 316, aluminium en messing. Welk materiaal het beste past hangt af van de
+    belasting, de omgeving en de gewenste afwerking; voor natte of hygiënische omgevingen ligt RVS voor
+    de hand, voor gewichtsgevoelige constructies aluminium.
+- vraag: Kunnen jullie ook op basis van een schets werken?
+  antwoord: Ja. Wij beoordelen dan eerst de maakbaarheid en leggen de uitgangspunten — materiaal, profielkeuze,
+    lasvolgorde en maatvoering — vast voordat de productie begint. Dat voorkomt aanpassingen achteraf,
+    die in een gelaste constructie duur zijn.
 related:
-  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendige constructies in roestvast staal." }
-  - { slug: "machinebouw", label: "Machinebouw", desc: "Complete machines en bouwgroepen." }
-  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd lassen voor series." }
+- slug: rvs-constructies
+  label: RVS-constructies
+  desc: Corrosiebestendige constructies in roestvast staal.
+- slug: machinebouw
+  label: Machinebouw
+  desc: Complete machines en bouwgroepen.
+- slug: plaatwerk/robotlassen
+  label: Robotlassen
+  desc: Geautomatiseerd lassen voor series.
 seo:
-  title: "Constructies — gelaste samenstellingen tot 10 ton"
-  description: "Zware en complexe gelaste metaalconstructies tot 10 ton in RVS, aluminium en staal voor machinebouw, apparatenbouw en infratechniek — uit Hengelo, Twente."
-translated: ["nl"]
+  title: Constructies — gelaste samenstellingen tot 10 ton
+  description: Zware en complexe gelaste metaalconstructies tot 10 ton in RVS, aluminium en staal voor
+    machinebouw, apparatenbouw en infratechniek — uit Hengelo, Twente.
+translated:
+- nl

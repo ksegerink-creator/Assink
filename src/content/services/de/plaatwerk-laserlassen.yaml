@@ -1,24 +1,88 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Laserschweißen"
-kicker: "Schweißtechnik 3.2"
-h1: "Perfektion im Laserschweißen"
-intro: "Präzisionsschweißarbeit für OEMs und Industriekunden, die höchste Genauigkeit und kurze Durchlaufzeiten benötigen. Spezialisiert auf das Laserschweißen von Edelstahl und Aluminium."
+title: Laserschweißen
+kicker: Schweißtechnik 3.2
+h1: Perfektion im Laserschweißen
+intro: Präzisionsschweißarbeit für OEMs und Industriekunden, die höchste Genauigkeit und kurze Durchlaufzeiten
+  benötigen. Spezialisiert auf das Laserschweißen von Edelstahl und Aluminium.
 heroPhoto:
-  subject: "Nahaufnahme eines lasergeschweißten Edelstahlprodukts mit sauberer Naht"
+  subject: Nahaufnahme eines lasergeschweißten Edelstahlprodukts mit sauberer Naht
 body:
-  - "Laserschweißen mit minimaler Wärmeeinbringung führt zu sauberen, verzugsarmen Schweißverbindungen, die direkt für die Montage geeignet sind. Besonders bei Sichtflächen und dünnem Material ist das ein großer Vorteil."
-  - "Nachbearbeitung, Kantarbeit und Integration in komplette Baugruppen erfolgen im eigenen Haus. Mit eigenem Lagerbestand, Just-in-time-Lieferung, kurzen Kommunikationswegen und einem Ansprechpartner."
-materials: ["Edelstahl 304 / 316", "Aluminium", "Messing"]
+- Laserschweißen mit minimaler Wärmeeinbringung führt zu sauberen, verzugsarmen Schweißverbindungen, die
+  direkt für die Montage geeignet sind. Besonders bei Sichtflächen und dünnem Material ist das ein großer
+  Vorteil.
+- Nachbearbeitung, Kantarbeit und Integration in komplette Baugruppen erfolgen im eigenen Haus. Mit eigenem
+  Lagerbestand, Just-in-time-Lieferung, kurzen Kommunikationswegen und einem Ansprechpartner.
+- Beim Laserschweißen wird die Wärme in eine sehr schmale Zone eingebracht. Dadurch bleibt die Wärmeeinflusszone
+  klein und das Werkstück verzieht sich kaum — genau das, was man bei dünnem Material und bei Teilen braucht,
+  die nach dem Schweißen maßhaltig bleiben müssen. Beim konventionellen WIG-Schweißen ist die Wärmeeinbringung
+  höher und man muss häufiger mit Richten und Nacharbeit rechnen.
+- 'Der Unterschied zeigt sich vor allem an der Außenseite. Eine Lasernaht ist schmal und gleichmäßig und
+  erfordert bei Sichtflächen wenig bis kein Schleifen. Das spart mehr als nur Zeit: jeder Schleifvorgang
+  trägt Material ab und stört bei geschliffenem Edelstahl die Kornrichtung, die dann über die gesamte
+  Baugruppe neu aufgebaut werden muss.'
+- 'Das Laserschweißen stellt allerdings höhere Anforderungen an die Vorbereitung. Weil der Strahl klein
+  ist, wird wenig Spalt überbrückt: die Teile müssen eng passen und fest aufgespannt sein. Deshalb schneiden
+  wir die Teile auf dem Laser und setzen bei Bedarf Vorrichtungen ein. Bei größeren Spalten oder bei einer
+  Naht, die Volumen füllen muss, ist <a href="/de/plaatwerk/lassen/">WIG- oder MIG-Schweißen</a> die bessere
+  Wahl; diese Abwägung treffen wir je Produkt.'
+- 'Bei Edelstahl gilt nach jedem Schweißvorgang dieselbe Regel: die Wärme greift die schützende Oxidschicht
+  rund um die Naht an. Wir entfernen Anlauffarben und passivieren anschließend, sodass die Korrosionsbeständigkeit
+  zurückkehrt. Beim Laserschweißen ist diese Zone schmaler als beim WIG-Schweißen, aber sie ist vorhanden
+  — Auslassen ist keine Option, erst recht nicht in feuchter oder hygienischer Umgebung.'
+- Wir laserschweißen Edelstahl 304 und 316, Aluminium und Messing und bauen die geschweißten Teile zu
+  kompletten Baugruppen aus. Möchten Sie wissen, ob sich Ihr Produkt zum Laserschweißen eignet? Senden
+  Sie die Zeichnung mit Blechdicke, Nahtform und der Anforderung an die Sichtseite; wir geben an, welches
+  Schweißverfahren am besten passt und was das für die Nacharbeit bedeutet.
+materials:
+- Edelstahl 304 / 316
+- Aluminium
+- Messing
 process:
-  - { step: "Vorbereitung", desc: "Anpassen und Fixieren." }
-  - { step: "Laserschweißen", desc: "Konzentrierte, verzugsarme Naht." }
-  - { step: "Nachbearbeitung", desc: "Wo erforderlich Schleifen und Passivieren." }
-  - { step: "Integration", desc: "Aufbau zur kompletten Baugruppe." }
-applications: ["Lebensmittelindustrie", "Maschinenbau", "Sichtflächen"]
+- step: Vorbereitung
+  desc: Anpassen und Fixieren.
+- step: Laserschweißen
+  desc: Konzentrierte, verzugsarme Naht.
+- step: Nachbearbeitung
+  desc: Wo erforderlich Schleifen und Passivieren.
+- step: Integration
+  desc: Aufbau zur kompletten Baugruppe.
+applications:
+- Lebensmittelindustrie
+- Maschinenbau
+- Sichtflächen
+faq:
+- vraag: Was ist der Vorteil des Laserschweißens gegenüber dem WIG-Schweißen?
+  antwoord: Die Wärmeeinbringung ist deutlich geringer, sodass die Wärmeeinflusszone klein bleibt und
+    sich das Werkstück kaum verzieht. Die Naht ist schmal und gleichmäßig und erfordert bei Sichtflächen
+    wenig Nacharbeit. WIG bleibt die bessere Wahl bei größeren Spalten oder wenn die Naht Volumen füllen
+    muss.
+- vraag: Welche Werkstoffe können Sie laserschweißen?
+  antwoord: Edelstahl 304 und 316, Aluminium und Messing. Welcher Werkstoff und welche Nahtform möglich
+    sind, hängt von der Blechdicke und von der Passgenauigkeit der Teile ab; das beurteilen wir anhand
+    der Zeichnung.
+- vraag: Muss eine lasergeschweißte Naht noch nachbearbeitet werden?
+  antwoord: 'Meist nur wenig: die Naht ist schmal und gleichmäßig, Schleifen ist oft nicht nötig. Bei
+    Edelstahl gehört jedoch immer ein Schritt dazu — Anlauffarben entfernen und passivieren — weil die
+    Wärme die schützende Oxidschicht rund um die Naht angreift.'
+- vraag: Wie genau müssen die Teile beim Laserschweißen passen?
+  antwoord: Genauer als beim WIG-Schweißen. Der Laserstrahl ist klein und überbrückt wenig Spalt, die
+    Teile müssen also eng passen und aufgespannt sein. Deshalb schneiden wir sie auf dem Laser und setzen
+    bei Bedarf Vorrichtungen ein. Ist eine enge Passung nicht machbar, empfehlen wir WIG oder MIG.
+- vraag: Bieten Sie auch Roboterschweißen an?
+  antwoord: Nicht im eigenen Haus. Roboterschweißen erfolgt innerhalb unserer Gruppe bei Baas Metaal.
+    Wir übernehmen die Regie und den Zusammenbau, sodass es für Sie ein Auftrag bleibt. Bei kleineren
+    Serien und Sichtflächen ist das Laserschweißen bei uns oft der naheliegendere Weg.
 related:
-  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Korrosionsbeständige Sichtflächen." }
-  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Automatisiertes Serienschweißen." }
-  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Gehäuse mit sauberen Sichtflächen." }
+- slug: plaatwerk/rvs
+  label: Edelstahl
+  desc: Korrosionsbeständige Sichtflächen.
+- slug: plaatwerk/robotlassen
+  label: Roboterschweißen
+  desc: Automatisiertes Serienschweißen.
+- slug: industriele-behuizing
+  label: Industriegehäuse
+  desc: Gehäuse mit sauberen Sichtflächen.
 seo:
-  title: "Laserschweißen — saubere, verzugsarme Nähte"
-  description: "Präzisionsschweißarbeit in Edelstahl und Aluminium mit minimaler Wärmeeinbringung: saubere, verzugsarme Nähte, montagefertig für OEM und Industrie."
+  title: Laserschweißen — saubere, verzugsarme Nähte
+  description: 'Präzisionsschweißarbeit in Edelstahl und Aluminium mit minimaler Wärmeeinbringung: saubere,
+    verzugsarme Nähte, montagefertig für OEM und Industrie.'

@@ -1,22 +1,90 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Einpress- & Blindnietmuttern"
-kicker: "Blechbearbeitung 2.7"
-h1: "Einpress- & Blindnietmuttern"
-intro: "Mit Einpress- und Blindnietmuttern machen wir Blechteile montagefertig: zuverlässige Gewinde, auch in dünnem Material."
+title: Einpress- & Blindnietmuttern
+kicker: Blechbearbeitung 2.7
+h1: Einpress- & Blindnietmuttern
+intro: 'Mit Einpress- und Blindnietmuttern machen wir Blechteile montagefertig: zuverlässige Gewinde,
+  auch in dünnem Material.'
 heroPhoto:
-  subject: "Nahaufnahme einer eingepressten Mutter im Blechteil"
+  subject: Nahaufnahme einer eingepressten Mutter im Blechteil
 body:
-  - "Einpressmuttern und Blindnietmuttern geben Blechteilen eine feste Gewindeverbindung ohne loses Befestigungsmaterial. So liefern wir montagefertige Teile, die in Ihrer Linie direkt weiterverarbeitet werden können."
-  - "Einpressmuttern setzen wir maschinell und rechtwinklig ein, mit einer Presskraft, die auf Blechdicke und Mutterntyp abgestimmt ist — sodass das Gewinde auch bei regelmäßigem Demontieren und Montieren fest sitzen bleibt."
-materials: ["Edelstahl", "Aluminium", "Stahl"]
+- Einpressmuttern und Blindnietmuttern geben Blechteilen eine feste Gewindeverbindung ohne loses Befestigungsmaterial.
+  So liefern wir montagefertige Teile, die in Ihrer Linie direkt weiterverarbeitet werden können.
+- Einpressmuttern setzen wir maschinell und rechtwinklig ein, mit einer Presskraft, die auf Blechdicke
+  und Mutterntyp abgestimmt ist — sodass das Gewinde auch bei regelmäßigem Demontieren und Montieren fest
+  sitzen bleibt.
+- 'Der Unterschied liegt in der Art der Verbindung. Eine Einpressmutter wird kalt in eine vorgeschnittene
+  Bohrung eingepresst: die Rändelung verdrängt Blechmaterial, das in eine Nut zurückfließt und die Mutter
+  auszieh- und verdrehsicher festsetzt. Eine Blindnietmutter wird von einer Seite verformt und klemmt
+  hinter dem Blech. Einpressmuttern ergeben die festeste und flachste Verbindung; Blindnietmuttern sind
+  die Lösung, wenn die Rückseite nicht zugänglich ist oder nicht verformt werden darf.'
+- 'Die Blechdicke bestimmt weitgehend, was möglich ist. Für eine Einpressmutter muss das Blech weicher
+  sein als die Mutter, sonst fließt es nicht in die Nut; die Kombination aus hartem Werkstoff und feinem
+  Gewinde ist damit kritisch. Auch der Abstand zur Kante und zu umliegenden Aussparungen zählt: zu nah
+  am Rand wölbt sich das Material auf. Wir beurteilen das vorab an der Zeichnung, damit es bei der ersten
+  Serie keine Überraschung gibt.'
+- Werkstoff und Mutternwahl müssen zueinander passen. In Edelstahlblech setzen wir Edelstahlmuttern, um
+  Kontaktkorrosion zu vermeiden. In Aluminium wird je nach Umgebung Edelstahl oder verzinkter Stahl gewählt.
+  Wird das Teil nach dem Einpressen noch pulverbeschichtet, muss das Gewinde abgedeckt oder nachgearbeitet
+  werden — sonst läuft die Beschichtung ins Gewinde und die Schraube passt nicht mehr.
+- Das Einpressen erfolgt bei uns maschinell und rechtwinklig, mit einer Presskraft, die auf Blechdicke
+  und Mutterntyp abgestimmt ist. Anschließend prüfen wir die Ebenheit rund um die Mutter und den Sitz
+  des Gewindes. So bleibt die Verbindung fest, auch wenn das Teil im Betrieb regelmäßig demontiert und
+  wieder montiert wird.
+- 'Einpress- und Blindnietmuttern sind Teil eines größeren Ganzen: die Bohrung kommt vom <a href="/de/plaatwerk/lasersnijden/">Laser</a>,
+  die Kanten werden entgratet und das Teil wird häufig noch <a href="/de/plaatwerk/zetten/">abgekantet</a>,
+  bevor die Mutter hineinkommt. Diese Reihenfolge ist nicht beliebig — eine zu früh gesetzte Mutter stört
+  beim Abkanten oder wird in der Presse verformt. Wir legen die Reihenfolge in der Arbeitsvorbereitung
+  fest.'
+- 'Für eine Beurteilung benötigen wir: die Zeichnung mit den Bohrungspositionen, Blechdicke und Werkstoff,
+  die gewünschte Gewindegröße, ob die Mutter auf der Sicht- oder der Rückseite sitzt, und die Nachbehandlung.
+  Wissen Sie noch nicht, ob eine Einpress- oder eine Blindnietmutter passt, nennen Sie uns die Belastung
+  und wie oft die Verbindung gelöst werden muss; darauf beraten wir.'
+materials:
+- Edelstahl
+- Aluminium
+- Stahl
 process:
-  - { step: "Vorbereiten", desc: "Löcher maßgenau schneiden." }
-  - { step: "Einpressen", desc: "Einpress- oder Blindnietmutter setzen." }
-  - { step: "Kontrolle", desc: "Prüfung auf Planheit und Festigkeit." }
-applications: ["Gehäuse", "Paneele", "Montagefertige Blechteile"]
+- step: Vorbereiten
+  desc: Löcher maßgenau schneiden.
+- step: Einpressen
+  desc: Einpress- oder Blindnietmutter setzen.
+- step: Kontrolle
+  desc: Prüfung auf Planheit und Festigkeit.
+applications:
+- Gehäuse
+- Paneele
+- Montagefertige Blechteile
+faq:
+- vraag: Was ist der Unterschied zwischen Einpressmutter und Blindnietmutter?
+  antwoord: Eine Einpressmutter wird kalt ins Blech gepresst; die Rändelung verdrängt Material, das in
+    eine Nut zurückfließt und die Mutter auszieh- und verdrehsicher festsetzt. Eine Blindnietmutter wird
+    von einer Seite verformt und klemmt hinter dem Blech. Die Einpressmutter ergibt die festeste und flachste
+    Verbindung, die Blindnietmutter ist die Wahl, wenn die Rückseite nicht zugänglich ist.
+- vraag: Ab welcher Blechdicke können Sie eine Einpressmutter setzen?
+  antwoord: Das hängt vom Mutterntyp, vom Blechwerkstoff und von der Gewindegröße ab. Das Blech muss weicher
+    sein als die Mutter; ein harter Werkstoff oder ein feines Gewinde in dünnem Blech kann daher ein Grund
+    sein, eine andere Größe oder eine Blindnietmutter zu wählen. Wir beurteilen diese Kombination je Anfrage
+    an der Zeichnung.
+- vraag: In welchen Werkstoffen setzen Sie Einpress- und Blindnietmuttern?
+  antwoord: 'In Edelstahl, Aluminium und Stahl. Wir stimmen den Mutternwerkstoff auf das Blech ab: in
+    Edelstahlblech Edelstahlmuttern, um Kontaktkorrosion zu vermeiden, in Aluminium je nach Umgebung Edelstahl
+    oder verzinkter Stahl.'
+- vraag: Hält das Gewinde bei wiederholter Demontage?
+  antwoord: Ja, sofern die Mutter rechtwinklig und mit der richtigen Presskraft gesetzt wurde. Eine korrekt
+    eingepresste Mutter ist auszieh- und verdrehsicher und damit für Bauteile geeignet, die im Betrieb
+    regelmäßig geöffnet werden. Nach dem Einpressen prüfen wir Ebenheit und Gewindesitz.
+- vraag: Kann nach dem Einpressen noch pulverbeschichtet werden?
+  antwoord: Ja, das Gewinde muss dann jedoch abgedeckt oder nach dem Beschichten nachgearbeitet werden,
+    sonst läuft die Beschichtung ins Gewinde. Teilen Sie uns mit, welche Nachbehandlung das Teil erhält,
+    dann legen wir die Reihenfolge entsprechend fest.
 related:
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Blechteile." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Kantarbeiten." }
+- slug: plaatwerk/precisieplaatwerk
+  label: Präzisionsblech
+  desc: Maßhaltige Blechteile.
+- slug: plaatwerk/zetten
+  label: Kanten & Biegen
+  desc: Kantarbeiten.
 seo:
-  title: "Einpress- & Blindnietmuttern — montagefertige Blechteile"
-  description: "Einpress- und Blindnietmuttern für zuverlässige Gewindeverbindungen in dünnem Blech: montagefertige Blechteile."
+  title: Einpress- & Blindnietmuttern — montagefertige Blechteile
+  description: 'Einpress- und Blindnietmuttern für zuverlässige Gewindeverbindungen in dünnem Blech: montagefertige
+    Blechteile.'

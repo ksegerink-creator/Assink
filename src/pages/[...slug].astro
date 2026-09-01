@@ -5,8 +5,10 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ServiceLayout from "@layouts/ServiceLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import FaqBlock from "@components/sections/FaqBlock.astro";
 import { t } from "@data/i18n";
 import { localizePath } from "@utils/paths";
+import { faqJsonLd } from "@utils/seo";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { localizeEntry, entryFileSlug } from "@utils/content";
@@ -38,6 +40,10 @@ const s = await localizeEntry("services", entryFileSlug(entry), entry.data, loca
 const nav = (slug: string) => localizePath(slug, locale);
 const isOverview = s.template === "overview";
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
+
+// De overzichtspagina heeft geen Service-schema, maar wel een FAQ-blok als er
+// vragen staan. De ServiceLayout regelt dat voor de detailpagina's zelf.
+const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
 ---
 
 {
@@ -49,6 +55,7 @@ const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
   altLocales={["nl", "en", "de"]}
       ogPhoto={heroImg}
       trail={[{ label: s.title, slug: s.slug }]}
+      jsonld={overviewJsonld}
     >
       <section class="ohero">
         <div class="ohero__media">
@@ -98,6 +105,8 @@ const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
           </ul>
         </div>
       </section>
+
+      <FaqBlock faq={s.faq} />
 
       <CtaBand />
     </PageLayout>
