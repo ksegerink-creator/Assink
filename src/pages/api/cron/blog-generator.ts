@@ -36,6 +36,11 @@ const VERIFIED_FACTS = `
   voor aluminium en RVS).
 - Plaatdikte bij lasersnijden (bevestigd door productie, 19 augustus 2026): staal
   0,5-25 mm, RVS 0,5-20 mm, aluminium 0,5-15 mm, gegalvaniseerd staal 0,5-10 mm.
+- Nabehandeling van RVS, in deze volgorde: ontbramen, waar nodig glasparelstralen,
+  en na het lassen passiveren. Stralen haalt aanloopkleuren en verontreiniging weg;
+  passiveren is de stap die de beschermende oxidelaag herstelt. Noem bij RVS en
+  laswerk dus altijd passiveren — het weglaten daarvan spreekt onze eigen
+  dienstpagina en ons artikel over passiveren tegen.
 - Constructiewerk: max. stukgewicht 10 ton, max. bouwhoogte 8 m. In de hal hangen
   vijf bovenloopkranen van 5 ton; in tandem hijsen gaat tot 10 ton.
 - Certificeringen: ${CERTS.filter((c) => c.startsWith("ISO") || c.startsWith("EN ")).join(", ")}.
@@ -204,6 +209,19 @@ export const GET: APIRoute = async ({ request }) => {
 
     const onderwerp = wachtrij[0];
 
+    // Al gepubliceerde kennisbankartikelen meegeven. Zonder deze lijst schrijft
+    // het model over een onderwerp waar al een artikel over bestaat zonder
+    // ernaar te verwijzen — zo miste het artikel over RVS 304/316 de link naar
+    // ons eigen artikel over passiveren. Alinea's worden met set:html
+    // gerenderd, dus een <a href> werkt.
+    const gepubliceerd = await getCollection("articles", ({ data }) => data.gepubliceerd);
+    const bestaandeArtikelen = gepubliceerd.length
+      ? `\n\nDeze kennisbankartikelen staan al op de site. Verwijst jouw onderwerp ` +
+        `inhoudelijk naar een van deze, link er dan één keer naartoe met ` +
+        `<a href="/kennisbank/<slug>/">…</a>:\n` +
+        gepubliceerd.map((a) => `- "${a.data.title}" → /kennisbank/${a.data.slug}/`).join("\n")
+      : "";
+
     // ── Artikel laten schrijven ────────────────────────────────────────────
     const aiRes = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
@@ -221,7 +239,7 @@ export const GET: APIRoute = async ({ request }) => {
             role: "user",
             content: `Schrijf een artikel over: "${onderwerp.data.titel}"\n\nInstructie: ${onderwerp.data.onderwerp}${
               onderwerp.data.kernwoord ? `\n\nRicht je waar natuurlijk op de zoekterm: "${onderwerp.data.kernwoord}".` : ""
-            }`,
+            }${bestaandeArtikelen}`,
           },
         ],
         tools: [ARTICLE_TOOL],
