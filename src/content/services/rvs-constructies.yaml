@@ -1,32 +1,100 @@
-title: "RVS-constructies"
-slug: "rvs-constructies"
-template: "service"
-group: "samenstellen"
+title: RVS-constructies
+slug: rvs-constructies
+template: service
+group: samenstellen
 order: 51
-kicker: "Samenstellen 4.2"
-h1: "RVS-constructies"
-intro: "Corrosiebestendig RVS-constructiewerk — van frames tot volledig gelaste samenstellingen, hygiënisch en representatief afgewerkt."
+kicker: Samenstellen 4.2
+h1: RVS-constructies
+intro: Corrosiebestendig RVS-constructiewerk — van frames tot volledig gelaste samenstellingen, hygiënisch
+  en representatief afgewerkt.
 heroPhoto:
-  subject: "Gelaste RVS-constructie tijdens eindcontrole"
-  orient: "Liggend 16:10"
-  crop: "Constructie centraal"
-  comp: "RVS-frame, controlemoment"
+  subject: Gelaste RVS-constructie tijdens eindcontrole
+  orient: Liggend 16:10
+  crop: Constructie centraal
+  comp: RVS-frame, controlemoment
 body:
-  - "RVS-constructies combineren sterkte met corrosiebestendigheid. Wij lassen en stellen samen in RVS 304 en 316, met afwerking (beitsen, passiveren) afgestemd op de toepassing — bijvoorbeeld in de voedingsmiddelenindustrie."
-  - "Ons RVS-constructiewerk combineert buislasersnijden voor passklare profielen met TIG- en laserlassen, gevolgd door beitsen en passiveren zodat de corrosiebestendigheid van het materiaal na bewerking behouden blijft."
-  - "Wilt u een RVS-frame laten maken? Stuur uw tekening of schets mee — wij beoordelen de maakbaarheid en denken mee over profielkeuze en lasvolgorde voordat we aan de productie beginnen."
-materials: ["RVS 304", "RVS 316"]
+- RVS-constructies combineren sterkte met corrosiebestendigheid. Wij lassen en stellen samen in RVS 304
+  en 316, met afwerking (beitsen, passiveren) afgestemd op de toepassing — bijvoorbeeld in de voedingsmiddelenindustrie.
+- Ons RVS-constructiewerk combineert buislasersnijden voor passklare profielen met TIG- en laserlassen,
+  gevolgd door beitsen en passiveren zodat de corrosiebestendigheid van het materiaal na bewerking behouden
+  blijft.
+- Wilt u een RVS-frame laten maken? Stuur uw tekening of schets mee — wij beoordelen de maakbaarheid en
+  denken mee over profielkeuze en lasvolgorde voordat we aan de productie beginnen.
+- De keuze tussen RVS 304 en RVS 316 bepaalt in veel gevallen de levensduur van de constructie. RVS 316
+  bevat molybdeen en is daardoor beter bestand tegen putcorrosie in omgevingen met chloriden — zeewater,
+  reinigingsmiddelen, pekel. RVS 304 volstaat in drogere en minder agressieve omstandigheden en is voordeliger.
+  De afweging zetten wij uitgebreider op een rij in ons artikel over <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
+  304 of 316</a>.
+- 'Wat RVS-constructiewerk onderscheidt van staal is niet het lassen zelf, maar wat eromheen gebeurt.
+  RVS moet gescheiden blijven van koolstofstaal: eigen gereedschap, eigen borstels, een eigen werkplek.
+  Achterblijvend staalstof roest en trekt roestvlekken op een verder gaaf oppervlak — een fout die pas
+  weken later zichtbaar wordt, als de constructie allang bij de klant staat.'
+- 'Na het lassen zitten er aanloopkleuren rond de naad. Die zijn niet alleen cosmetisch: op die plek is
+  de chroomoxidelaag aangetast en is het materiaal gevoelig voor corrosie. Wij beitsen of stralen die
+  zone en passiveren daarna, zodat de oxidelaag zich herstelt. Voor aluminium en RVS hebben wij daarvoor
+  een eigen straalcabine van 8 × 4 × 3 meter met glasparels van 100–200 μm.'
+- Voor de profielen gebruiken wij de Trumpf TruLaser Tube 3000. Uitsparingen, verstekken en doorvoeren
+  komen direct uit de buislaser, waardoor de delen passen zonder handwerk en de naden gelijkmatig blijven.
+  Dat scheelt lastijd en — belangrijker bij RVS — nabewerking, want elke extra slijpbewerking is een extra
+  plek die weer behandeld moet worden.
+- 'In hygiënische omgevingen gelden extra eisen aan de uitvoering: doorgelaste en gladgeslepen naden in
+  plaats van hechtlassen, geen holle ruimtes waarin vocht blijft staan, en waar mogelijk afgeronde overgangen.
+  Geef bij uw aanvraag door of de constructie gereinigd moet kunnen worden en met welke middelen; dat
+  bepaalt zowel de materiaalkeuze als de naaduitvoering.'
+- Onze constructies gaan tot 10 ton stukgewicht en 8 meter bouwhoogte. Voor het laswerk werken wij onder
+  ISO 3834-2 en voor draagconstructies onder EN 1090-1; ons kwaliteitssysteem is ISO 9001-gecertificeerd.
+materials:
+- RVS 304
+- RVS 316
 process:
-  - { step: "Buislasersnijden", desc: "Passklare buis en profiel." }
-  - { step: "Lassen", desc: "TIG- of laserlassen." }
-  - { step: "Afwerking", desc: "Beitsen en passiveren." }
-  - { step: "Controle", desc: "Maat- en naadcontrole." }
-applications: ["Machinebouw", "Voedingsmiddelenindustrie", "Apparatenbouw", "Offshore & maritiem"]
+- step: Buislasersnijden
+  desc: Passklare buis en profiel.
+- step: Lassen
+  desc: TIG- of laserlassen.
+- step: Afwerking
+  desc: Beitsen en passiveren.
+- step: Controle
+  desc: Maat- en naadcontrole.
+applications:
+- Machinebouw
+- Voedingsmiddelenindustrie
+- Apparatenbouw
+- Offshore & maritiem
+faq:
+- vraag: RVS 304 of 316 — welke moet ik kiezen voor mijn constructie?
+  antwoord: RVS 316 bevat molybdeen en is beter bestand tegen putcorrosie in omgevingen met chloriden,
+    zoals zeewater, pekel of agressieve reinigingsmiddelen. RVS 304 voldoet in drogere en minder agressieve
+    omstandigheden en is voordeliger. Geef door in welke omgeving de constructie komt te staan, dan adviseren
+    wij daarop.
+- vraag: Waarom is passiveren na het lassen nodig?
+  antwoord: Lassen tast de chroomoxidelaag rond de naad aan; op die plek is het materiaal gevoelig voor
+    corrosie. Wij verwijderen aanloopkleuren door te beitsen of te stralen en passiveren daarna, zodat
+    de beschermende laag zich herstelt. Zonder die stap gaat een RVS-constructie juist bij de las roesten.
+- vraag: Kunnen jullie RVS-constructies leveren voor de voedingsmiddelenindustrie?
+  antwoord: Ja. In hygiënische omgevingen voeren wij naden doorgelast en gladgeslepen uit in plaats van
+    hechtlassen, vermijden wij holle ruimtes waarin vocht blijft staan en werken wij waar mogelijk met
+    afgeronde overgangen. Geef door met welke middelen gereinigd wordt; dat bepaalt de materiaalkeuze
+    mede.
+- vraag: Hoe zwaar mag een RVS-constructie zijn?
+  antwoord: Tot 10 ton stukgewicht en 8 meter bouwhoogte. In de hal hangen vijf bovenloopkranen van 5
+    ton; door in tandem te hijsen verplaatsen wij samenstellingen tot 10 ton.
+- vraag: Verwerken jullie RVS en staal in dezelfde werkplaats?
+  antwoord: Wij houden RVS gescheiden van koolstofstaal, met eigen gereedschap en eigen borstels. Achterblijvend
+    staalstof roest en veroorzaakt roestvlekken op een verder gaaf RVS-oppervlak; dat wordt pas weken
+    later zichtbaar en is dan lastig te herstellen.
 related:
-  - { slug: "constructies", label: "Constructies", desc: "Alle constructiewerk." }
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsmiddelenindustrie", desc: "Hygiënische toepassingen." }
+- slug: constructies
+  label: Constructies
+  desc: Alle constructiewerk.
+- slug: plaatwerk/rvs
+  label: RVS
+  desc: Roestvast plaatwerk.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Voedingsmiddelenindustrie
+  desc: Hygiënische toepassingen.
 seo:
-  title: "RVS-constructies — corrosiebestendig en gelast"
-  description: "Corrosiebestendige gelaste RVS-constructies en samenstellingen voor machinebouw, voeding en veeleisende omgevingen."
-translated: ["nl"]
+  title: RVS-constructies — corrosiebestendig en gelast
+  description: Corrosiebestendige gelaste RVS-constructies en samenstellingen voor machinebouw, voeding
+    en veeleisende omgevingen.
+translated:
+- nl

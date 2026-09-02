@@ -1,34 +1,112 @@
-title: "Plaatwerk"
-slug: "plaatwerk"
-template: "overview"
-group: "hoofd"
+title: Plaatwerk
+slug: plaatwerk
+template: overview
+group: hoofd
 order: 10
-kicker: "Mogelijkheid 1.0"
-h1: "Perfectie in plaatwerk"
-intro: "Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, zetten en afwerken van fijnplaatmateriaal — enkelstuks én serie, uit Hengelo."
+kicker: Mogelijkheid 1.0
+h1: Perfectie in plaatwerk
+intro: Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, zetten en afwerken
+  van fijnplaatmateriaal — enkelstuks én serie, uit Hengelo.
 heroPhoto:
-  subject: "Breedbeeld productievloer met plaatwerk in bewerking"
-  orient: "Liggend 16:10"
-  crop: "Breed overzicht"
-  comp: "Werkvloer, machines op afstand"
+  subject: Breedbeeld productievloer met plaatwerk in bewerking
+  orient: Liggend 16:10
+  crop: Breed overzicht
+  comp: Werkvloer, machines op afstand
 body:
-  - "Wij verwerken fijnplaat met een fiberlaser (Trumpf TruLaser 3040, 4 kW), kantpers en in-house afwerking. Van RVS-zichtwerk tot aluminium behuizingen — maatvast en reproduceerbaar."
-  - "Plaatwerk bij Assink & Schipholt gaat verder dan snijden en zetten. Van eerste tekening tot afgewerkt onderdeel begeleiden wij het hele traject: materiaaladvies, engineering, productie en oppervlakteafwerking — onder één dak in Hengelo."
-  - "Of het gaat om een enkel prototype of een jaarserie: plaatwerk op maat vraagt om precisie die reproduceerbaar blijft. Onze servo-elektrische kantpersen en lasersnijmachines zorgen voor constante maatvoering, ook bij grotere series."
+- Wij verwerken fijnplaat met een fiberlaser (Trumpf TruLaser 3040, 4 kW), kantpers en in-house afwerking.
+  Van RVS-zichtwerk tot aluminium behuizingen — maatvast en reproduceerbaar.
+- 'Plaatwerk bij Assink & Schipholt gaat verder dan snijden en zetten. Van eerste tekening tot afgewerkt
+  onderdeel begeleiden wij het hele traject: materiaaladvies, engineering, productie en oppervlakteafwerking
+  — onder één dak in Hengelo.'
+- 'Of het gaat om een enkel prototype of een jaarserie: plaatwerk op maat vraagt om precisie die reproduceerbaar
+  blijft. Onze servo-elektrische kantpersen en lasersnijmachines zorgen voor constante maatvoering, ook
+  bij grotere series.'
+- 'Welke plaatdikte haalbaar is, hangt af van het materiaal. Op de Trumpf TruLaser 3040 — een fiberlaser
+  van 4 kW — snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en
+  gegalvaniseerd staal van 0,5 tot 10 mm. Valt uw aanvraag buiten dat bereik, leg hem dan voor: binnen
+  onze groep is vaak meer mogelijk dan op onze eigen machine.'
+- 'Een plaatwerkdeel doorloopt bij ons meestal dezelfde route: lasersnijden, ontbramen, zetten en waar
+  nodig lassen en afwerken. Ontbramen doen wij machinaal op een Timesavers 42 Series RB, zodat de randen
+  braamvrij en veilig zijn voordat er iemand mee verder werkt. Zetten gebeurt op een servo-elektrische
+  Safan Darley E-Brake 150-3100 T3 met 150 ton perskracht en een werklengte tot 3100 mm.'
+- 'Enkelstuks en serie vragen om een andere voorbereiding. Bij een prototype ligt het accent op meedenken
+  over maakbaarheid: een buighoek verplaatsen of een uitsparing anders positioneren scheelt vaak een hele
+  bewerking. Bij serie draait het om herhaalbaarheid — dezelfde opspanning, dezelfde volgorde en dezelfde
+  controlepunten, zodat het honderdste deel gelijk is aan het eerste. Wij doen allebei, op dezelfde machines.'
+- Oppervlakteafwerking hoort er in de meeste gevallen bij. Voor aluminium en RVS hebben wij een eigen
+  straalcabine van 8 × 4 × 3 meter, waarin wij met glasparels van 100–200 μm bij 3,0 bar een egaal mat
+  oppervlak stralen. RVS passiveren wij na het lassen, zodat de beschermende oxidelaag rond de naad wordt
+  hersteld. Poedercoaten en anodiseren verzorgen wij eveneens, zodat u een afgewerkt onderdeel ontvangt
+  in plaats van een halffabricaat.
+- Kwaliteit is bij plaatwerk vooral procesbeheersing. Wij werken onder ISO 9001, voor laswerk onder ISO
+  3834-2 en voor draagconstructies onder EN 1090-1. In de praktijk betekent dat een vaste ingangscontrole
+  op materiaal, vastgelegde lasparameters en een maatcontrole vóór verzending — niet alleen op het eerste
+  stuk.
+- Wilt u plaatwerk laten maken? Stuur een tekening of 3D-model mee met de materiaalsoort en plaatdikte,
+  het aantal stuks, en of het zichtwerk betreft met de bijbehorende afwerking. Met die gegevens beoordelen
+  wij de maakbaarheid en maken wij een onderbouwde offerte. Twijfelt u over materiaalkeuze of plaatdikte,
+  dan denken wij daar graag in mee voordat de tekening definitief is.
 cards:
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk." }
-  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lichtgewicht en sterk, incl. TIG- en MIG-laswerk." }
-  - { slug: "plaatwerk/messing", label: "Messing", desc: "Warme koperzink-legering voor techniek en interieur." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast enkelstuks- en seriewerk." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Nauwkeurige buighoeken op de servo-elektrische kantpers." }
-  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-lasersnijden van staal, RVS en aluminium." }
-  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "TIG, MIG en gerobotiseerd lassen." }
-  - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Strakke, vervormingsarme lasverbindingen." }
-  - { slug: "plaatwerk/ontbramen", label: "Ontbramen", desc: "Braamvrije randen na het snijden." }
-  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Inpersmoeren voor montageklare producten." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsmiddelenindustrie", desc: "Hygiënisch RVS-plaatwerk." }
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "RVS-behuizingen & beplating", desc: "Machinebeplating en omkastingen." }
+- slug: plaatwerk/rvs
+  label: RVS
+  desc: Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk.
+- slug: plaatwerk/aluminium
+  label: Aluminium
+  desc: Lichtgewicht en sterk, incl. TIG- en MIG-laswerk.
+- slug: plaatwerk/messing
+  label: Messing
+  desc: Warme koperzink-legering voor techniek en interieur.
+- slug: plaatwerk/precisieplaatwerk
+  label: Precisieplaatwerk
+  desc: Maatvast enkelstuks- en seriewerk.
+- slug: plaatwerk/zetten
+  label: Kanten & zetten
+  desc: Nauwkeurige buighoeken op de servo-elektrische kantpers.
+- slug: plaatwerk/lasersnijden
+  label: Lasersnijden
+  desc: 2D-lasersnijden van staal, RVS en aluminium.
+- slug: plaatwerk/lassen
+  label: Lassen
+  desc: TIG, MIG en gerobotiseerd lassen.
+- slug: plaatwerk/laserlassen
+  label: Laserlassen
+  desc: Strakke, vervormingsarme lasverbindingen.
+- slug: plaatwerk/ontbramen
+  label: Ontbramen
+  desc: Braamvrije randen na het snijden.
+- slug: plaatwerk/persmoeren-trekmoeren
+  label: Pers- & trekmoeren
+  desc: Inpersmoeren voor montageklare producten.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Voedingsmiddelenindustrie
+  desc: Hygiënisch RVS-plaatwerk.
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: RVS-behuizingen & beplating
+  desc: Machinebeplating en omkastingen.
+faq:
+- vraag: Welke plaatdiktes kunnen jullie lasersnijden?
+  antwoord: 'Op de Trumpf TruLaser 3040 snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium
+    van 0,5 tot 15 mm en gegalvaniseerd staal van 0,5 tot 10 mm. Ligt uw aanvraag buiten dat bereik, leg
+    hem dan voor: dan kijken we wat er binnen onze groep mogelijk is.'
+- vraag: Maken jullie ook enkelstuks, of alleen series?
+  antwoord: Allebei, op dezelfde machines. Bij enkelstuks en prototypes ligt het accent op meedenken over
+    maakbaarheid; bij serie op herhaalbaarheid van maatvoering en afwerking, zodat het laatste deel gelijk
+    is aan het eerste.
+- vraag: Welke materialen verwerken jullie in plaatwerk?
+  antwoord: RVS 304 en 316, aluminium, messing en staal, waaronder gegalvaniseerd staal. Welk materiaal
+    het beste past hangt af van de belasting, de omgeving en of het onderdeel zichtwerk is — daar denken
+    wij graag in mee voordat de tekening definitief is.
+- vraag: Leveren jullie plaatwerk afgewerkt en montageklaar?
+  antwoord: Ja. Ontbramen, glasparelstralen, passiveren, poedercoaten en het inpersen van pers- en trekmoeren
+    horen bij het traject. U ontvangt een montageklaar deel in plaats van een halffabricaat dat elders
+    nog bewerkt moet worden.
+- vraag: Wat hebben jullie nodig om een offerte te maken?
+  antwoord: Een tekening of 3D-model, de materiaalsoort en plaatdikte, het aantal stuks, en of het zichtwerk
+    betreft met de bijbehorende afwerking. Ontbreken er gegevens, dan nemen wij contact op voordat we
+    een prijs afgeven.
 seo:
-  title: "Plaatwerk op maat — RVS, aluminium en messing"
-  description: "Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, zetten, lassen en afwerken tot op de millimeter. Enkelstuks en serie uit Hengelo, Twente."
-translated: ["nl"]
+  title: Plaatwerk op maat — RVS, aluminium en messing
+  description: 'Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, zetten, lassen en afwerken
+    tot op de millimeter. Enkelstuks en serie uit Hengelo, Twente.'
+translated:
+- nl

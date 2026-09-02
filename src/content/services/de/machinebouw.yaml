@@ -1,26 +1,88 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Maschinenbau"
-kicker: "Sektor 4.3"
-h1: "Maßarbeit im Maschinenbau"
-intro: "Ob Sie eine komplette Maschinenlösung suchen oder maßgeschneiderte Baugruppen benötigen — bei Assink & Schipholt können Sie auf bewährte Handwerkskunst und technisches Know-how zählen."
+title: Maschinenbau
+kicker: Sektor 4.3
+h1: Maßarbeit im Maschinenbau
+intro: Ob Sie eine komplette Maschinenlösung suchen oder maßgeschneiderte Baugruppen benötigen — bei Assink
+  & Schipholt können Sie auf bewährte Handwerkskunst und technisches Know-how zählen.
 heroPhoto:
-  subject: "Montierte Baugruppe / mechanische Baugruppe versandbereit"
-bodyHeading: "Verlässlicher Partner"
+  subject: Montierte Baugruppe / mechanische Baugruppe versandbereit
+bodyHeading: Verlässlicher Partner
 body:
-  - "Assink & Schipholt ist ein langjähriger Partner für kompletten Maschinenbau und Montage. Wir liefern Blechteile nach Maß, zerspante Bauteile und mechanische Baugruppen — mit Schwerpunkt auf Just-in-time-Lieferung."
-  - "Wir arbeiten für Unternehmen mit Auslagerungsbedarf, OEMs und technische Partner, die eine flexible Arbeitsweise und kurze Wege schätzen."
+- Assink & Schipholt ist ein langjähriger Partner für kompletten Maschinenbau und Montage. Wir liefern
+  Blechteile nach Maß, zerspante Bauteile und mechanische Baugruppen — mit Schwerpunkt auf Just-in-time-Lieferung.
+- Wir arbeiten für Unternehmen mit Auslagerungsbedarf, OEMs und technische Partner, die eine flexible
+  Arbeitsweise und kurze Wege schätzen.
+- 'In der Praxis beginnt ein solches Projekt meist mit einem vorhandenen Zeichnungssatz oder mit einer
+  Baugruppe, die derzeit auf mehrere Lieferanten verteilt ist. Wir übernehmen dann die Regie: Blech- und
+  Konstruktionsteile fertigen wir selbst, zerspante Bauteile lassen wir von einem festen Partner herstellen,
+  und der Zusammenbau erfolgt wieder bei uns. Sie behalten einen Ansprechpartner und eine Stelle, die
+  für die Maßhaltigkeit des Ganzen verantwortlich ist.'
+- 'Für die Blech- und Konstruktionsteile nutzen wir unseren eigenen Maschinenpark: einen Trumpf TruLaser
+  3040 Faserlaser für 2D-Zuschnitte, eine Trumpf TruLaser Tube 3000 für Rohre und Profile sowie eine servoelektrische
+  Abkantpresse mit einer Arbeitslänge bis 3100 mm. Geschweißte Baugruppen gehen bei uns bis 10 Tonnen
+  Stückgewicht und 8 Meter Bauhöhe.'
+- Der Maschinenbau stellt Anforderungen, die über die Einzelteile hinausgehen. Ein Rahmen muss nach dem
+  Schweißen eben bleiben, Bohrungen müssen nach Strahlen und Beschichten noch passen, und eine Umkleidung
+  muss sich montieren lassen, ohne dass vor Ort nachgearbeitet wird. Deshalb legen wir Schweißfolge und
+  Messpunkte in der Arbeitsvorbereitung fest und prüfen die kritischen Maße direkt nach dem Schweißen,
+  nicht erst bei der Endprüfung.
+- Wir arbeiten nach ISO 9001 und beim Schweißen nach ISO 3834-2; tragende Konstruktionen fallen unter
+  EN 1090-1. Für OEMs, die auf Abruf produzieren, liefern wir just in time, damit abgerufene Baugruppen
+  nicht als Bestand bei Ihnen liegen bleiben. Abrufrhythmus und zugehörige Absprachen legen wir je Kunde
+  fest.
+- Erwägen Sie, eine Baugruppe auszulagern? Senden Sie den Zeichnungssatz oder das 3D-Modell mit den gewünschten
+  Stückzahlen und dem Abrufrhythmus. Wir beurteilen die Fertigbarkeit, geben an, welche Teile wir selbst
+  fertigen und welche von unserem Partner kommen, und halten das fest, bevor die Produktion beginnt.
 process:
-  - { step: "Komplette Maschinen", desc: "Der gesamte Weg von der Konstruktion bis zur Übergabe — Blechbearbeitung, Konstruktion und Montage." }
-  - { step: "Einzelne Baugruppen", desc: "Funktionale Module wie Tragkonstruktionen und Rahmen." }
-  - { step: "Blechteile", desc: "Umkleidungen, Paneele und Gehäuse aus Edelstahl, Aluminium oder Messing." }
-  - { step: "Zerspante Bauteile", desc: "CNC-Bearbeitung von Wellen, Befestigungsteilen und Komponenten." }
-  - { step: "Mechanische Baugruppen", desc: "Zusammenbau von Bauteilen zu funktionierenden Systemen." }
-materials: ["Edelstahl", "Aluminium", "Messing", "Stahl"]
-applications: ["OEM-Maschinenbau", "Elektronik", "Lebensmittelindustrie", "Apparatebau"]
+- step: Komplette Maschinen
+  desc: Der gesamte Weg von der Konstruktion bis zur Übergabe — Blechbearbeitung, Konstruktion und Montage.
+- step: Einzelne Baugruppen
+  desc: Funktionale Module wie Tragkonstruktionen und Rahmen.
+- step: Blechteile
+  desc: Umkleidungen, Paneele und Gehäuse aus Edelstahl, Aluminium oder Messing.
+- step: Zerspante Bauteile
+  desc: CNC-Bearbeitung von Wellen, Befestigungsteilen und Komponenten.
+- step: Mechanische Baugruppen
+  desc: Zusammenbau von Bauteilen zu funktionierenden Systemen.
+materials:
+- Edelstahl
+- Aluminium
+- Messing
+- Stahl
+applications:
+- OEM-Maschinenbau
+- Elektronik
+- Lebensmittelindustrie
+- Apparatebau
+faq:
+- vraag: Bauen Sie komplette Maschinen oder nur Einzelteile?
+  antwoord: Beides. Wir liefern komplette Maschinen von der Konstruktion bis zur Übergabe, einzelne Baugruppen
+    wie Tragkonstruktionen und Rahmen sowie einzelne Blech- und Konstruktionsteile. Welche Form am besten
+    passt, hängt davon ab, wie viel Sie im eigenen Haus behalten möchten.
+- vraag: Führen Sie die Zerspanung selbst aus?
+  antwoord: Nein. Drehen, Fräsen, Bohren und Ausspindeln lassen wir von einem festen Partner fertigen.
+    Wir übernehmen die Regie, die Eingangskontrolle und den Zusammenbau, sodass es für Sie ein Auftrag
+    und ein Ansprechpartner bleibt.
+- vraag: Wie schwer und wie groß darf eine Baugruppe sein?
+  antwoord: Bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. In der Halle hängen fünf Hallenkrane mit je
+    5 Tonnen; im Tandemhub bewegen wir Lasten bis 10 Tonnen.
+- vraag: Liefern Sie just in time auf Abruf?
+  antwoord: Ja, das tun wir für mehrere OEM-Kunden. Abrufrhythmus, Losgröße und die zugehörigen Bestandsabsprachen
+    legen wir je Kunde fest, damit abgerufene Baugruppen nicht unnötig bei Ihnen auf Lager liegen.
+- vraag: Welche Zertifizierungen haben Sie für den Maschinenbau?
+  antwoord: Wir arbeiten nach ISO 9001 für das Qualitätsmanagementsystem, ISO 3834-2 für das Schmelzschweißen
+    und EN 1090-1 für die Ausführung von Stahl- und Aluminiumkonstruktionen.
 related:
-  - { slug: "verspaning", label: "Zerspanung", desc: "CNC-Fräsen, -Drehen und -Bohren." }
-  - { slug: "constructies", label: "Konstruktionen", desc: "Geschweißte Rahmen und Baugruppen." }
-  - { slug: "industriele-behuizing", label: "Industriegehäuse", desc: "Edelstahlgehäuse nach Maß." }
+- slug: verspaning
+  label: Zerspanung
+  desc: CNC-Fräsen, -Drehen und -Bohren.
+- slug: constructies
+  label: Konstruktionen
+  desc: Geschweißte Rahmen und Baugruppen.
+- slug: industriele-behuizing
+  label: Industriegehäuse
+  desc: Edelstahlgehäuse nach Maß.
 seo:
-  title: "Maschinenbau — komplette Maschinen und Baugruppen"
-  description: "Kompletter Maschinenbau und Montage: Blechbearbeitung, zerspante Bauteile und mechanische Baugruppen mit Just-in-time-Lieferung für OEMs und Industrie."
+  title: Maschinenbau — komplette Maschinen und Baugruppen
+  description: 'Kompletter Maschinenbau und Montage: Blechbearbeitung, zerspante Bauteile und mechanische
+    Baugruppen mit Just-in-time-Lieferung für OEMs und Industrie.'

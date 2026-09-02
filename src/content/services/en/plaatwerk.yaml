@@ -1,27 +1,104 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Sheet metal work"
-kicker: "Capability 1.0"
-h1: "Perfection in sheet metal work"
-intro: "Precision sheet metal with accuracy down to the millimetre. Custom cutting, press braking and finishing of thin sheet material — one-offs as well as series."
+title: Sheet metal work
+kicker: Capability 1.0
+h1: Perfection in sheet metal work
+intro: Precision sheet metal with accuracy down to the millimetre. Custom cutting, press braking and finishing
+  of thin sheet material — one-offs as well as series.
 heroPhoto:
-  subject: "Wide shot of the production floor with sheet metal being processed"
+  subject: Wide shot of the production floor with sheet metal being processed
 body:
-  - "We process thin sheet with a fiber laser (Trumpf TruLaser 3040, 4 kW), press brake and in-house finishing. From stainless steel visible work to aluminium enclosures — dimensionally stable and reproducible."
-  - "Sheet metal work at Assink & Schipholt goes further than cutting and bending. From the first drawing to the finished part we guide the whole process: material advice, engineering, production and surface finishing — all under one roof in Hengelo."
-  - "Whether it is a single prototype or an annual series: custom sheet metal calls for precision that stays reproducible. Our servo-electric press brakes and laser cutting machines ensure consistent dimensions, even for larger series."
+- We process thin sheet with a fiber laser (Trumpf TruLaser 3040, 4 kW), press brake and in-house finishing.
+  From stainless steel visible work to aluminium enclosures — dimensionally stable and reproducible.
+- 'Sheet metal work at Assink & Schipholt goes further than cutting and bending. From the first drawing
+  to the finished part we guide the whole process: material advice, engineering, production and surface
+  finishing — all under one roof in Hengelo.'
+- 'Whether it is a single prototype or an annual series: custom sheet metal calls for precision that stays
+  reproducible. Our servo-electric press brakes and laser cutting machines ensure consistent dimensions,
+  even for larger series.'
+- 'Which sheet thickness is feasible depends on the material. On the Trumpf TruLaser 3040 — a 4 kW fibre
+  laser — we cut steel from 0.5 to 25 mm, stainless steel from 0.5 to 20 mm, aluminium from 0.5 to 15
+  mm and galvanised steel from 0.5 to 10 mm. If your request falls outside that range, put it to us: within
+  our group more is often possible than on our own machine.'
+- 'A sheet metal part usually follows the same route with us: laser cutting, deburring, press braking
+  and, where required, welding and finishing. Deburring is done by machine on a Timesavers 42 Series RB,
+  so that edges are burr-free and safe before anyone handles them. Press braking is done on a servo-electric
+  Safan Darley E-Brake 150-3100 T3 with 150 tonnes of press force and a working length of up to 3100 mm.'
+- 'One-offs and series call for different preparation. For a prototype the emphasis is on thinking along
+  about manufacturability: moving a bend line or repositioning a cut-out often saves an entire operation.
+  For series it is about repeatability — the same fixturing, the same sequence and the same inspection
+  points, so that the hundredth part matches the first. We do both, on the same machines.'
+- Surface finishing is part of the job in most cases. For aluminium and stainless steel we have our own
+  blasting cabin of 8 × 4 × 3 metres, in which we blast an even matt surface with glass beads of 100–200
+  μm at 3.0 bar. Stainless steel is passivated after welding, so that the protective oxide layer around
+  the seam is restored. We also arrange powder coating and anodising, so you receive a finished part rather
+  than a semi-finished product.
+- In sheet metal work, quality is mainly a matter of process control. We work under ISO 9001, for welding
+  under ISO 3834-2 and for load-bearing structures under EN 1090-1. In practice that means a fixed incoming
+  inspection on material, documented welding parameters and a dimensional inspection before dispatch —
+  not only on the first part.
+- Looking to have sheet metal made? Send a drawing or 3D model together with the material grade and sheet
+  thickness, the quantity, and whether it concerns visible surfaces and the finishing that requires. With
+  that information we assess manufacturability and prepare a substantiated quotation. If you are unsure
+  about material choice or sheet thickness, we are glad to think along before the drawing is final.
 cards:
-  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Ground stainless steel 304 and 316 for corrosion-resistant visible work." }
-  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lightweight and strong, including TIG and MIG welding." }
-  - { slug: "plaatwerk/messing", label: "Brass", desc: "Warm copper-zinc alloy for engineering and interiors." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Dimensionally stable one-offs and series work." }
-  - { slug: "plaatwerk/zetten", label: "Bending & forming", desc: "Accurate bending angles on the servo-electric press brake." }
-  - { slug: "plaatwerk/lasersnijden", label: "Laser cutting", desc: "2D laser cutting of steel, stainless steel and aluminium." }
-  - { slug: "plaatwerk/lassen", label: "Welding", desc: "TIG, MIG and robotic welding." }
-  - { slug: "plaatwerk/laserlassen", label: "Laser welding", desc: "Clean, low-distortion welded joints." }
-  - { slug: "plaatwerk/ontbramen", label: "Deburring", desc: "Burr-free edges after cutting." }
-  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Self-clinching nuts & rivet nuts", desc: "Self-clinching nuts for assembly-ready products." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Food industry", desc: "Hygienic stainless steel sheet metal work." }
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Stainless steel enclosures & cladding", desc: "Machine cladding and housings." }
+- slug: plaatwerk/rvs
+  label: Stainless steel
+  desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.
+- slug: plaatwerk/aluminium
+  label: Aluminium
+  desc: Lightweight and strong, including TIG and MIG welding.
+- slug: plaatwerk/messing
+  label: Brass
+  desc: Warm copper-zinc alloy for engineering and interiors.
+- slug: plaatwerk/precisieplaatwerk
+  label: Precision sheet metal
+  desc: Dimensionally stable one-offs and series work.
+- slug: plaatwerk/zetten
+  label: Bending & forming
+  desc: Accurate bending angles on the servo-electric press brake.
+- slug: plaatwerk/lasersnijden
+  label: Laser cutting
+  desc: 2D laser cutting of steel, stainless steel and aluminium.
+- slug: plaatwerk/lassen
+  label: Welding
+  desc: TIG, MIG and robotic welding.
+- slug: plaatwerk/laserlassen
+  label: Laser welding
+  desc: Clean, low-distortion welded joints.
+- slug: plaatwerk/ontbramen
+  label: Deburring
+  desc: Burr-free edges after cutting.
+- slug: plaatwerk/persmoeren-trekmoeren
+  label: Self-clinching nuts & rivet nuts
+  desc: Self-clinching nuts for assembly-ready products.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Food industry
+  desc: Hygienic stainless steel sheet metal work.
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: Stainless steel enclosures & cladding
+  desc: Machine cladding and housings.
+faq:
+- vraag: Which sheet thicknesses can you laser cut?
+  antwoord: 'On the Trumpf TruLaser 3040 we cut steel from 0.5 to 25 mm, stainless steel from 0.5 to 20
+    mm, aluminium from 0.5 to 15 mm and galvanised steel from 0.5 to 10 mm. If your request falls outside
+    that range, put it to us: we will then look at what is possible within our group.'
+- vraag: Do you also make one-offs, or only series?
+  antwoord: Both, on the same machines. For one-offs and prototypes the emphasis is on thinking along
+    about manufacturability; for series it is on repeatability of dimensions and finishing, so that the
+    last part matches the first.
+- vraag: Which materials do you process in sheet metal work?
+  antwoord: Stainless steel 304 and 316, aluminium, brass and steel, including galvanised steel. Which
+    material suits best depends on the load, the environment and whether the part is a visible surface
+    — we are glad to advise before the drawing is final.
+- vraag: Do you supply sheet metal finished and ready for assembly?
+  antwoord: Yes. Deburring, glass bead blasting, passivation, powder coating and the insertion of self-clinching
+    and rivet nuts are all part of the process. You receive a part ready for assembly rather than a semi-finished
+    product that still needs work elsewhere.
+- vraag: What do you need in order to prepare a quotation?
+  antwoord: A drawing or 3D model, the material grade and sheet thickness, the quantity, and whether it
+    concerns visible surfaces with the associated finishing. If information is missing we contact you
+    before quoting a price.
 seo:
-  title: "Custom sheet metal work — stainless steel, aluminium and brass"
-  description: "Precision sheet metal in stainless steel, aluminium and brass: laser cutting, press braking, welding and finishing down to the millimetre. One-offs and series from Hengelo."
+  title: Custom sheet metal work — stainless steel, aluminium and brass
+  description: 'Precision sheet metal in stainless steel, aluminium and brass: laser cutting, press braking,
+    welding and finishing down to the millimetre. One-offs and series from Hengelo.'

@@ -1,24 +1,85 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Laser welding"
-kicker: "Welding technology 3.2"
-h1: "Perfection in laser welding"
-intro: "Precision welding for OEMs and industrial customers that need extreme accuracy and short lead times. Specialised in laser welding of stainless steel and aluminium."
+title: Laser welding
+kicker: Welding technology 3.2
+h1: Perfection in laser welding
+intro: Precision welding for OEMs and industrial customers that need extreme accuracy and short lead times.
+  Specialised in laser welding of stainless steel and aluminium.
 heroPhoto:
-  subject: "Close-up of a laser-welded stainless steel product with a clean seam"
+  subject: Close-up of a laser-welded stainless steel product with a clean seam
 body:
-  - "Laser welding with minimal heat input results in clean, low-distortion welded joints that are immediately suitable for assembly. That is a major advantage particularly on visible surfaces and thin material."
-  - "Finishing, bending work and integration into complete assemblies take place in house. With our own stock, just-in-time delivery, short lines of communication and a single point of contact."
-materials: ["Stainless steel 304 / 316", "Aluminium", "Brass"]
+- Laser welding with minimal heat input results in clean, low-distortion welded joints that are immediately
+  suitable for assembly. That is a major advantage particularly on visible surfaces and thin material.
+- Finishing, bending work and integration into complete assemblies take place in house. With our own stock,
+  just-in-time delivery, short lines of communication and a single point of contact.
+- In laser welding the heat is introduced into a very narrow zone. The heat-affected zone therefore stays
+  small and the workpiece hardly distorts — exactly what you want with thin material and with parts that
+  must remain dimensionally stable after welding. With conventional TIG welding the heat input is higher
+  and you have to allow more often for straightening and rework.
+- 'The difference is most visible on the outside. A laser seam is narrow and even and needs little to
+  no grinding on visible surfaces. That saves more than time: every grinding operation removes material
+  and, on ground stainless steel, disturbs the grain direction, which then has to be rebuilt across the
+  whole assembly.'
+- 'Laser welding does place higher demands on preparation. Because the beam is small, there is little
+  gap bridging: the parts have to fit tightly and be firmly fixtured. We therefore cut the parts on the
+  laser and use fixturing where required. For larger gaps or for a seam that has to fill volume, <a href="/en/plaatwerk/lassen/">TIG
+  or MIG welding</a> is the better choice; we make that assessment per product.'
+- 'In stainless steel the same rule applies after every welding operation: the heat attacks the protective
+  oxide layer around the seam. We remove heat tint and then passivate, so that corrosion resistance returns.
+  With laser welding that zone is narrower than with TIG, but it is there — skipping it is not an option,
+  certainly not in a wet or hygienic environment.'
+- We laser weld in stainless steel 304 and 316, aluminium and brass, and build the welded parts up into
+  complete assemblies. Want to know whether your product lends itself to laser welding? Send the drawing
+  with the sheet thickness, the joint geometry and the requirement for the visible side; we will indicate
+  which welding method suits best and what that means for finishing.
+materials:
+- Stainless steel 304 / 316
+- Aluminium
+- Brass
 process:
-  - { step: "Preparation", desc: "Fitting up and fixing in place." }
-  - { step: "Laser welding", desc: "Concentrated, low-distortion seam." }
-  - { step: "Finishing", desc: "Grinding and passivating where required." }
-  - { step: "Integration", desc: "Build-up into a complete assembly." }
-applications: ["Food industry", "Machine building", "Visible surfaces"]
+- step: Preparation
+  desc: Fitting up and fixing in place.
+- step: Laser welding
+  desc: Concentrated, low-distortion seam.
+- step: Finishing
+  desc: Grinding and passivating where required.
+- step: Integration
+  desc: Build-up into a complete assembly.
+applications:
+- Food industry
+- Machine building
+- Visible surfaces
+faq:
+- vraag: What is the advantage of laser welding over TIG welding?
+  antwoord: The heat input is far lower, so the heat-affected zone stays small and the workpiece hardly
+    distorts. The seam is narrow and even and needs little finishing on visible surfaces. TIG remains
+    the better choice for larger gaps or when the seam has to fill volume.
+- vraag: Which materials can you laser weld?
+  antwoord: Stainless steel 304 and 316, aluminium and brass. Which material and joint geometry are feasible
+    depends on the sheet thickness and on how accurately the parts fit together; we assess that on the
+    drawing.
+- vraag: Does a laser-welded seam still need finishing?
+  antwoord: 'Usually very little: the seam is narrow and even, so grinding is often unnecessary. With
+    stainless steel one step always applies — removing heat tint and passivating — because the heat attacks
+    the protective oxide layer around the seam.'
+- vraag: How accurately do the parts have to fit for laser welding?
+  antwoord: More accurately than for TIG. The laser beam is small and bridges little gap, so the parts
+    have to fit tightly and be fixtured. We therefore cut them on the laser and use fixturing where required.
+    If a tight fit is not achievable, we advise TIG or MIG.
+- vraag: Do you also offer robot welding?
+  antwoord: Not in house. Robot welding is done within our group at Baas Metaal. We handle the coordination
+    and the assembly, so that it remains a single order for you. For smaller batches and visible work,
+    laser welding with us is often the more logical route.
 related:
-  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Corrosion-resistant visible surfaces." }
-  - { slug: "plaatwerk/robotlassen", label: "Robot welding", desc: "Automated series welding." }
-  - { slug: "industriele-behuizing", label: "Industrial enclosures", desc: "Enclosures with clean visible surfaces." }
+- slug: plaatwerk/rvs
+  label: Stainless steel
+  desc: Corrosion-resistant visible surfaces.
+- slug: plaatwerk/robotlassen
+  label: Robot welding
+  desc: Automated series welding.
+- slug: industriele-behuizing
+  label: Industrial enclosures
+  desc: Enclosures with clean visible surfaces.
 seo:
-  title: "Laser welding — clean, low-distortion seams"
-  description: "Precision welding in stainless steel and aluminium with minimal heat input: clean, low-distortion seams, ready for assembly for OEM and industry."
+  title: Laser welding — clean, low-distortion seams
+  description: 'Precision welding in stainless steel and aluminium with minimal heat input: clean, low-distortion
+    seams, ready for assembly for OEM and industry.'

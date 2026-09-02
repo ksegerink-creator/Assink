@@ -1,0 +1,42 @@
+---
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+
+/**
+ * Zichtbaar FAQ-blok voor dienstpagina's. Gebruikt door ServiceLayout en door
+ * de overzichtsvariant in [...slug].astro, zodat beide dezelfde markup en
+ * dezelfde vragen tonen als het FAQPage-schema in de <head>.
+ */
+interface Props { faq: { vraag: string; antwoord: string }[] }
+const { faq } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+---
+{faq.length > 0 && (
+  <section class="sec tight">
+    <div class="wrap sfaq">
+      <h2 class="rv">{t(locale, "faqHead")}</h2>
+      <div class="rv">
+        {faq.map((f) => (
+          <details class="sfaq__item">
+            <summary>{f.vraag}</summary>
+            <p>{f.antwoord}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .sfaq h2 { font-size: clamp(22px, 2.4vw, 30px); margin-bottom: 18px; }
+  .sfaq__item { border-bottom: 1px solid var(--line); }
+  .sfaq__item summary {
+    cursor: pointer; list-style: none; padding: 15px 0;
+    font-family: var(--f-disp); font-weight: 600; font-size: clamp(15.5px, 1.5vw, 18px);
+    display: flex; justify-content: space-between; gap: 16px; align-items: baseline;
+  }
+  .sfaq__item summary::-webkit-details-marker { display: none; }
+  .sfaq__item summary::after { content: "+"; font-family: var(--f-mono); color: var(--blue); }
+  .sfaq__item[open] summary::after { content: "–"; }
+  .sfaq__item p { color: var(--ink-2); font-size: 15.5px; padding-bottom: 16px; max-width: 46em; }
+</style>

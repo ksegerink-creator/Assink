@@ -1,33 +1,95 @@
-title: "Machinebouw"
-slug: "machinebouw"
-template: "service"
-group: "samenstellen"
+title: Machinebouw
+slug: machinebouw
+template: service
+group: samenstellen
 order: 30
-kicker: "Sector 4.3"
-h1: "Machinebouw op maat"
-intro: "Of u nu een complete machineoplossing zoekt of machinebouw op maat nodig heeft voor losse bouwgroepen — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise."
+kicker: Sector 4.3
+h1: Machinebouw op maat
+intro: Of u nu een complete machineoplossing zoekt of machinebouw op maat nodig heeft voor losse bouwgroepen
+  — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise.
 heroPhoto:
-  subject: "Gemonteerde bouwgroep / mechanische samenstelling gereed voor uitlevering"
-  orient: "Liggend 16:10"
-  crop: "Product centraal"
-  comp: "Samenstelling op montagetafel"
-bodyHeading: "Betrouwbare partner"
+  subject: Gemonteerde bouwgroep / mechanische samenstelling gereed voor uitlevering
+  orient: Liggend 16:10
+  crop: Product centraal
+  comp: Samenstelling op montagetafel
+bodyHeading: Betrouwbare partner
 body:
-  - "Assink & Schipholt is een langdurig partner voor complete machinebouw en assemblage. Wij leveren plaatwerk op maat, verspanende onderdelen en mechanische samenstellingen, met nadruk op just-in-time levering."
-  - "Wij werken voor bedrijven met een uitbestedingsbehoefte, OEM'ers en technische partners die waarde hechten aan een flexibele aanpak en korte communicatielijnen."
+- Assink & Schipholt is een langdurig partner voor complete machinebouw en assemblage. Wij leveren plaatwerk
+  op maat, verspanende onderdelen en mechanische samenstellingen, met nadruk op just-in-time levering.
+- Wij werken voor bedrijven met een uitbestedingsbehoefte, OEM'ers en technische partners die waarde hechten
+  aan een flexibele aanpak en korte communicatielijnen.
+- 'In de praktijk begint zo''n traject meestal bij een bestaande tekeningenset of bij een bouwgroep die
+  nu over meerdere leveranciers verdeeld is. Wij nemen dan de regie: plaatwerk en constructiewerk maken
+  wij zelf, verspaand werk laten wij maken door een vaste partner, en het samenstellen gebeurt weer bij
+  ons. U houdt één aanspreekpunt en één partij die verantwoordelijk is voor de maatvoering van het geheel.'
+- 'Voor de plaatwerk- en constructiedelen gebruiken wij ons eigen machinepark: een Trumpf TruLaser 3040
+  fiberlaser voor 2D-snijwerk, een Trumpf TruLaser Tube 3000 voor buis en profiel en een servo-elektrische
+  kantpers met een werklengte tot 3100 mm. Gelaste samenstellingen gaan bij ons tot 10 ton stukgewicht
+  en 8 meter bouwhoogte.'
+- Machinebouw stelt eisen die verder gaan dan de losse onderdelen. Een frame moet vlak blijven nadat het
+  gelast is, gaten moeten na stralen en coaten nog passen, en een omkasting moet zich laten monteren zonder
+  dat er op locatie iets bijgeslepen wordt. Daarom leggen wij lasvolgorde en meetpunten vast in de werkvoorbereiding
+  en controleren wij de kritische maten direct na het lassen, niet pas bij de eindkeuring.
+- Wij werken onder ISO 9001 en, voor het laswerk, onder ISO 3834-2; draagconstructies vallen onder EN
+  1090-1. Voor OEM'ers die op afroep produceren leveren wij just-in-time, zodat afgeroepen bouwgroepen
+  niet als voorraad bij u blijven staan. Het afroepritme en de bijbehorende afspraken leggen wij per klant
+  vast.
+- Overweegt u een bouwgroep uit te besteden? Stuur de tekeningenset of het 3D-model mee met de gewenste
+  aantallen en het afroepritme. Wij beoordelen de maakbaarheid, geven aan welke delen wij zelf maken en
+  welke bij onze partner vandaan komen, en leggen dat vast voordat de productie begint.
 process:
-  - { step: "Volledige machines", desc: "Traject van ontwerp tot oplevering — plaatwerk, constructie en assemblage." }
-  - { step: "Losse bouwgroepen", desc: "Functionele modules zoals draagconstructies en frames." }
-  - { step: "Plaatwerkdelen", desc: "Omkastingen, panelen en behuizingen in RVS, aluminium of messing." }
-  - { step: "Verspaande onderdelen", desc: "CNC-bewerking van assen, bevestigingsdelen en componenten." }
-  - { step: "Mechanische assemblages", desc: "Samenstellen van onderdelen tot functionerende systemen." }
-materials: ["RVS", "Aluminium", "Messing", "Staal"]
-applications: ["OEM-machinebouw", "Elektronica", "Voedingsmiddelenindustrie", "Apparatenbouw"]
+- step: Volledige machines
+  desc: Traject van ontwerp tot oplevering — plaatwerk, constructie en assemblage.
+- step: Losse bouwgroepen
+  desc: Functionele modules zoals draagconstructies en frames.
+- step: Plaatwerkdelen
+  desc: Omkastingen, panelen en behuizingen in RVS, aluminium of messing.
+- step: Verspaande onderdelen
+  desc: CNC-bewerking van assen, bevestigingsdelen en componenten.
+- step: Mechanische assemblages
+  desc: Samenstellen van onderdelen tot functionerende systemen.
+materials:
+- RVS
+- Aluminium
+- Messing
+- Staal
+applications:
+- OEM-machinebouw
+- Elektronica
+- Voedingsmiddelenindustrie
+- Apparatenbouw
+faq:
+- vraag: Bouwen jullie complete machines of alleen losse onderdelen?
+  antwoord: Allebei. Wij leveren complete machines van ontwerp tot oplevering, losse bouwgroepen zoals
+    draagconstructies en frames, en losse plaatwerk- en constructiedelen. Welke vorm het beste past hangt
+    af van hoeveel u zelf in huis wilt houden.
+- vraag: Voeren jullie het verspaningswerk zelf uit?
+  antwoord: Nee. Draaien, frezen, boren en kotteren laten wij maken door een vaste partner. Wij verzorgen
+    de regie, de ingangscontrole en het samenstellen, zodat het voor u één opdracht en één aanspreekpunt
+    blijft.
+- vraag: Hoe zwaar en hoe groot mag een samenstelling zijn?
+  antwoord: Tot 10 ton stukgewicht en 8 meter bouwhoogte. In de hal hangen vijf bovenloopkranen van 5
+    ton; door in tandem te hijsen verplaatsen wij lasten tot 10 ton.
+- vraag: Leveren jullie just-in-time op afroep?
+  antwoord: Ja, dat doen wij voor meerdere OEM-klanten. Het afroepritme, de seriegrootte en de bijbehorende
+    voorraadafspraken leggen wij per klant vast, zodat afgeroepen bouwgroepen niet onnodig bij u op voorraad
+    komen te staan.
+- vraag: Welke certificeringen hebben jullie voor machinebouw?
+  antwoord: Wij werken onder ISO 9001 voor het kwaliteitsmanagementsysteem, ISO 3834-2 voor smeltlassen
+    en EN 1090-1 voor de uitvoering van staal- en aluminiumconstructies.
 related:
-  - { slug: "verspaning", label: "Verspaning", desc: "CNC frezen, draaien en boren." }
-  - { slug: "constructies", label: "Constructies", desc: "Gelaste frames en samenstellingen." }
-  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "RVS-behuizingen op maat." }
+- slug: verspaning
+  label: Verspaning
+  desc: CNC frezen, draaien en boren.
+- slug: constructies
+  label: Constructies
+  desc: Gelaste frames en samenstellingen.
+- slug: industriele-behuizing
+  label: Industriële behuizing
+  desc: RVS-behuizingen op maat.
 seo:
-  title: "Machinebouw op maat — complete machines en bouwgroepen"
-  description: "Machinebouw op maat: complete machines, bouwgroepen en mechanische samenstellingen met just-in-time levering voor OEM'ers en industrie, uit Hengelo."
-translated: ["nl"]
+  title: Machinebouw op maat — complete machines en bouwgroepen
+  description: 'Machinebouw op maat: complete machines, bouwgroepen en mechanische samenstellingen met
+    just-in-time levering voor OEM''ers en industrie, uit Hengelo.'
+translated:
+- nl

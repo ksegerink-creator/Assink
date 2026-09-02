@@ -1,21 +1,81 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Brass sheet metal"
-kicker: "Sheet metal work 1.3"
-h1: "Brass sheet metal"
-intro: "Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre, for technical and visible applications alike."
+title: Brass sheet metal
+kicker: Sheet metal work 1.3
+h1: Brass sheet metal
+intro: Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre,
+  for technical and visible applications alike.
 heroPhoto:
-  subject: "Brass sheet metal part with a warm sheen, detail"
+  subject: Brass sheet metal part with a warm sheen, detail
 body:
-  - "Brass is valued for its warm colour and its workability. We process brass for interior fit-out, art objects and decorative technical components, with care for preserving its natural lustre."
-materials: ["Brass (copper-zinc alloy)"]
+- Brass is valued for its warm colour and its workability. We process brass for interior fit-out, art
+  objects and decorative technical components, with care for preserving its natural lustre.
+- 'Brass is an alloy of copper and zinc. The ratio determines its behaviour: more zinc makes the material
+  stronger and easier to form, more copper gives a warmer, redder colour. For sheet metal work a readily
+  formable grade is usually chosen, so that the material does not crack during press braking.'
+- Where brass stands out is its appearance. The surface has a warm, yellow lustre that no coating on stainless
+  steel can match. That makes it attractive for visible work in interiors, for art objects and for decorative
+  technical parts — but it also makes the surface the most vulnerable part of the product.
+- Brass discolours over time. In contact with air and moisture a darker patina forms, first yellow-brown
+  and later brown to greenish. For some applications that is exactly what is wanted; for others it is
+  not. If you want to keep the lustre, a protective lacquer is needed — or you have to allow for periodic
+  polishing. Tell us which of the two you want, because it determines the finishing.
+- 'In processing, brass mainly calls for care of the surface. It is softer than stainless steel and steel
+  and therefore scratches more easily: we keep protective film on the material up to and including the
+  last operation, work with clean tooling and keep brass separate from steel to prevent iron contamination.
+  When press braking we take the rolling direction into account, because a bend across the grain is more
+  likely to crack.'
+- 'Which cutting method suits your brass part best we determine per request: the reflectivity and thermal
+  conductivity of copper alloys make brass harder to cut than steel or stainless steel. Send your drawing
+  with the sheet thickness, the required brass grade and the surface requirement; we will indicate what
+  is feasible and which route we choose for it.'
+- Brass combines well with other materials. If you are looking for corrosion-resistant visible work without
+  the warm colour, <a href="/en/plaatwerk/rvs/">ground stainless steel</a> is often the logical choice;
+  if low weight is decisive, <a href="/en/plaatwerk/aluminium/">aluminium</a> comes into play. We process
+  all three, so the material choice need not be dictated by the supplier.
+materials:
+- Brass (copper-zinc alloy)
 process:
-  - { step: "Cutting", desc: "Precise cutting of brass sheet." }
-  - { step: "Press braking", desc: "Bending without damaging the surface." }
-  - { step: "Finishing", desc: "Deburring and protecting the lustre." }
-applications: ["Interior fit-out", "Art objects", "Decorative technical components"]
+- step: Cutting
+  desc: Precise cutting of brass sheet.
+- step: Press braking
+  desc: Bending without damaging the surface.
+- step: Finishing
+  desc: Deburring and protecting the lustre.
+applications:
+- Interior fit-out
+- Art objects
+- Decorative technical components
+faq:
+- vraag: Which brass sheet thicknesses can you process?
+  antwoord: We determine that per request. The cutting thicknesses we have confirmed for our fibre laser
+    apply to steel, stainless steel, aluminium and galvanised steel; brass is a copper alloy and behaves
+    differently under the laser. Send your drawing with the sheet thickness and brass grade and we will
+    indicate what is feasible.
+- vraag: Does brass discolour over time?
+  antwoord: 'Yes. In contact with air and moisture a patina forms: first yellow-brown, later brown to
+    greenish. For some applications that is exactly what is wanted. If you want to keep the original lustre,
+    a protective lacquer is needed or the part has to be polished periodically.'
+- vraag: Can you press brake brass without damaging the surface?
+  antwoord: Yes. Brass is softer than stainless steel and steel and therefore scratches more quickly.
+    We keep protective film on up to and including the last operation, work with clean tooling and take
+    the rolling direction into account, because a bend across the grain is more likely to crack.
+- vraag: What is brass sheet metal mainly used for?
+  antwoord: For interior construction, art objects and decorative technical components — applications
+    in which the warm, yellow lustre makes the difference. For purely functional parts without a visual
+    requirement, stainless steel or aluminium is usually more economical.
+- vraag: Can you weld brass?
+  antwoord: Brass is listed with us as a material for laser welding. Because of the zinc in the alloy
+    it does call for adapted parameters and good extraction. Put your joint to us with the sheet thickness
+    and the joint geometry and we will indicate whether welding, brazing or a mechanical joint is the
+    better route in your case.
 related:
-  - { slug: "plaatwerk/rvs", label: "Stainless steel", desc: "Corrosion-resistant visible surfaces." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precision sheet metal", desc: "Dimensionally stable one-offs and series." }
+- slug: plaatwerk/rvs
+  label: Stainless steel
+  desc: Corrosion-resistant visible surfaces.
+- slug: plaatwerk/precisieplaatwerk
+  label: Precision sheet metal
+  desc: Dimensionally stable one-offs and series.
 seo:
-  title: "Brass sheet metal — preserving the warm lustre"
-  description: "Brass sheet metal with its natural lustre preserved, for interior fit-out, art objects and decorative technical components."
+  title: Brass sheet metal — preserving the warm lustre
+  description: Brass sheet metal with its natural lustre preserved, for interior fit-out, art objects
+    and decorative technical components.

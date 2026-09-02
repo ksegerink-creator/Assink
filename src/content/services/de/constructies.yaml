@@ -1,31 +1,104 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Konstruktionen"
-kicker: "Möglichkeit 4.1"
-h1: "Konstruktiv in Konstruktionen"
-intro: "Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis zu vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik."
+title: Konstruktionen
+kicker: Möglichkeit 4.1
+h1: Konstruktiv in Konstruktionen
+intro: Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis
+  zu vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik.
 heroPhoto:
-  subject: "Geschweißter Rahmen bei der Qualitätskontrolle in der Konstruktionshalle"
-bodyHeading: "Spezialist für Konstruktionsarbeit"
+  subject: Geschweißter Rahmen bei der Qualitätskontrolle in der Konstruktionshalle
+bodyHeading: Spezialist für Konstruktionsarbeit
 body:
-  - "Assink & Schipholt fertigt schwere und komplexe Schweißbaugruppen — von einzelnen Bauteilen bis zu vollständig geschweißten Baugruppen. Wir arbeiten für Maschinenbau, Apparatebau und Infrastrukturtechnik und verarbeiten Bauteile bis 10 Tonnen."
-  - "In der Halle hängen fünf Hallenkrane von je 5 Tonnen. Durch Tandemhub — zwei Krane an einer Last — bewegen wir Baugruppen bis 10 Tonnen, bis 8 Meter Höhe."
-  - "Wir übernehmen nicht nur Schweiß- und Konstruktionsarbeiten, sondern auch Oberflächenbehandlungen wie Strahlen, Pulverbeschichten, Eloxieren und Edelstahl-Passivieren — vieles davon im eigenen Haus. So haben Sie einen Ansprechpartner von der Konstruktion bis zur Endbearbeitung."
-materials: ["Edelstahl 304 / 316", "Aluminium", "Messing", "Stahl"]
+- Assink & Schipholt fertigt schwere und komplexe Schweißbaugruppen — von einzelnen Bauteilen bis zu vollständig
+  geschweißten Baugruppen. Wir arbeiten für Maschinenbau, Apparatebau und Infrastrukturtechnik und verarbeiten
+  Bauteile bis 10 Tonnen.
+- In der Halle hängen fünf Hallenkrane von je 5 Tonnen. Durch Tandemhub — zwei Krane an einer Last — bewegen
+  wir Baugruppen bis 10 Tonnen, bis 8 Meter Höhe.
+- Wir übernehmen nicht nur Schweiß- und Konstruktionsarbeiten, sondern auch Oberflächenbehandlungen wie
+  Strahlen, Pulverbeschichten, Eloxieren und Edelstahl-Passivieren — vieles davon im eigenen Haus. So
+  haben Sie einen Ansprechpartner von der Konstruktion bis zur Endbearbeitung.
+- 'Eine Konstruktion ist mehr als die Summe ihrer Teile. Die größten Risiken liegen im Verzug durch Wärmeeinbringung
+  und in Maßabweichungen, die sich über eine Baugruppe hinweg aufsummieren. Deshalb legen wir die Schweißfolge
+  in der Arbeitsvorbereitung fest und nicht in der Werkstatt: symmetrisch schweißen, wo es geht, in Schritten,
+  wo es nötig ist, und mit Aufspannung auf den Maßen, auf die es wirklich ankommt.'
+- 'Blech schneiden wir auf dem Faserlaser, Rohre und Profile auf der Trumpf TruLaser Tube 3000. Letzteres
+  spart in einer Konstruktion viel Handarbeit: Aussparungen, Gehrungen und Passformen kommen direkt aus
+  der Maschine, sodass die Teile ineinandergreifen, statt passend gemacht werden zu müssen. Das Ergebnis
+  sind kürzere Schweißzeiten und ein genaueres Ganzes.'
+- Beim Schweißen arbeiten wir nach ISO 3834-2, der Norm für Qualitätsanforderungen an das Schmelzschweißen.
+  Tragende Konstruktionen fallen unter EN 1090-1, wodurch wir Stahl- und Aluminiumkonstruktionen CE-konform
+  ausführen dürfen. In der Praxis bedeutet das qualifizierte Schweißer, dokumentierte Schweißanweisungen
+  und rückverfolgbares Material.
+- Die Werkstoffwahl ist eine Abwägung zwischen Belastung, Umgebung und Kosten. Stahl ist fest und günstig,
+  benötigt aber eine Beschichtung. Edelstahl 304 und 316 sind korrosionsbeständig und für feuchte oder
+  hygienische Umgebungen geeignet — mehr dazu auf unserer Seite über <a href="/de/rvs-constructies/">Edelstahlkonstruktionen</a>.
+  Aluminium ist leicht, verlangt aber eine andere Schweißstrategie und Aufmerksamkeit für die Festigkeit
+  rund um die Naht.
+- 'Was wir für die Beurteilung einer Konstruktion benötigen: eine Zeichnung oder ein 3D-Modell der Baugruppe,
+  den Werkstoff und die gewünschte Güte, die Anforderungen an die Maßhaltigkeit sowie die gewünschte Oberfläche.
+  Wissen Sie noch nicht, welche Oberflächenbehandlung passt, denken wir mit — diese Wahl bestimmt nämlich
+  mit, wie die Konstruktion geschweißt und angeschlagen werden muss.'
+materials:
+- Edelstahl 304 / 316
+- Aluminium
+- Messing
+- Stahl
 process:
-  - { step: "Engineering & Arbeitsvorbereitung", desc: "Prüfung von Zeichnung, Schweißfolge und Herstellbarkeit." }
-  - { step: "Schneiden & Vorbereiten", desc: "Laserschneiden von Blech und Rohr, Kanten und Anpassen." }
-  - { step: "Schweißen & Zusammenbau", desc: "Hand- und Laserschweißen bis zur vollständigen Baugruppe." }
-  - { step: "Oberflächenbehandlung", desc: "Strahlen, Pulverbeschichten, Eloxieren oder Passivieren." }
-  - { step: "Prüfung & Lieferung", desc: "Maßkontrolle und visuelle Prüfung, danach Just-in-time-Lieferung." }
+- step: Engineering & Arbeitsvorbereitung
+  desc: Prüfung von Zeichnung, Schweißfolge und Herstellbarkeit.
+- step: Schneiden & Vorbereiten
+  desc: Laserschneiden von Blech und Rohr, Kanten und Anpassen.
+- step: Schweißen & Zusammenbau
+  desc: Hand- und Laserschweißen bis zur vollständigen Baugruppe.
+- step: Oberflächenbehandlung
+  desc: Strahlen, Pulverbeschichten, Eloxieren oder Passivieren.
+- step: Prüfung & Lieferung
+  desc: Maßkontrolle und visuelle Prüfung, danach Just-in-time-Lieferung.
 specs:
-  - { label: "Max. Gewicht pro Stück", value: "bis 10 Tonnen" }
-  - { label: "Max. Höhe der Konstruktion", value: "8 m" }
-  - { label: "Hebezeuge", value: "5 Hallenkrane von je 5 Tonnen; Tandemhub bis 10 Tonnen" }
-applications: ["Maschinenbau (Rahmen, Schutzhauben)", "Apparatebau", "Infrastrukturtechnik", "Lebensmittelindustrie", "Elektrotechnik", "Mechatronik"]
+- label: Max. Gewicht pro Stück
+  value: bis 10 Tonnen
+- label: Max. Höhe der Konstruktion
+  value: 8 m
+- label: Hebezeuge
+  value: 5 Hallenkrane von je 5 Tonnen; Tandemhub bis 10 Tonnen
+applications:
+- Maschinenbau (Rahmen, Schutzhauben)
+- Apparatebau
+- Infrastrukturtechnik
+- Lebensmittelindustrie
+- Elektrotechnik
+- Mechatronik
+faq:
+- vraag: Wie schwer und wie hoch darf eine Konstruktion sein?
+  antwoord: Wir verarbeiten Bauteile bis 10 Tonnen Stückgewicht und Konstruktionen bis 8 Meter Höhe. In
+    der Halle hängen fünf Hallenkrane mit je 5 Tonnen; im Tandemhub — zwei Krane an einer Last — bewegen
+    wir Baugruppen bis 10 Tonnen.
+- vraag: Arbeiten Sie nach EN 1090?
+  antwoord: Ja. Wir sind nach EN 1090-1 zertifiziert, der Norm für die Ausführung von Stahl- und Aluminiumkonstruktionen
+    mit CE-Kennzeichnung. Für das Schweißen selbst arbeiten wir nach ISO 3834-2, unser Qualitätssystem
+    ist nach ISO 9001 zertifiziert.
+- vraag: Übernehmen Sie auch die Oberflächenbehandlung?
+  antwoord: Ja. Strahlen, Pulverbeschichten, Eloxieren und das Passivieren von Edelstahl gehören zum Ablauf,
+    vieles davon in eigener Regie. So haben Sie einen Ansprechpartner von der Arbeitsvorbereitung bis
+    zur fertigen Konstruktion und müssen die Teile nicht selbst zwischen Betrieben hin- und herbewegen.
+- vraag: In welchen Werkstoffen schweißen Sie Konstruktionen?
+  antwoord: Stahl, Edelstahl 304 und 316, Aluminium und Messing. Welcher Werkstoff am besten passt, hängt
+    von Belastung, Umgebung und gewünschter Oberfläche ab; für feuchte oder hygienische Umgebungen liegt
+    Edelstahl nahe, für gewichtskritische Konstruktionen Aluminium.
+- vraag: Können Sie auch anhand einer Skizze arbeiten?
+  antwoord: Ja. Wir beurteilen dann zunächst die Fertigbarkeit und halten die Ausgangspunkte — Werkstoff,
+    Profilwahl, Schweißfolge und Maßhaltigkeit — fest, bevor die Produktion beginnt. Das vermeidet nachträgliche
+    Änderungen, die bei einer geschweißten Konstruktion teuer sind.
 related:
-  - { slug: "rvs-constructies", label: "Edelstahlkonstruktionen", desc: "Korrosionsbeständige Konstruktionen aus Edelstahl." }
-  - { slug: "machinebouw", label: "Maschinenbau", desc: "Komplette Maschinen und Baugruppen." }
-  - { slug: "plaatwerk/robotlassen", label: "Roboterschweißen", desc: "Automatisiertes Schweißen für Serien." }
+- slug: rvs-constructies
+  label: Edelstahlkonstruktionen
+  desc: Korrosionsbeständige Konstruktionen aus Edelstahl.
+- slug: machinebouw
+  label: Maschinenbau
+  desc: Komplette Maschinen und Baugruppen.
+- slug: plaatwerk/robotlassen
+  label: Roboterschweißen
+  desc: Automatisiertes Schweißen für Serien.
 seo:
-  title: "Konstruktionen — geschweißte Baugruppen bis 10 Tonnen"
-  description: "Schwere und komplexe geschweißte Metallkonstruktionen bis 10 Tonnen in Edelstahl, Aluminium und Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik."
+  title: Konstruktionen — geschweißte Baugruppen bis 10 Tonnen
+  description: Schwere und komplexe geschweißte Metallkonstruktionen bis 10 Tonnen in Edelstahl, Aluminium
+    und Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik.

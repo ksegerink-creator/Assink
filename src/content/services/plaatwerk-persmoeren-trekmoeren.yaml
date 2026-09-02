@@ -1,29 +1,95 @@
-title: "Pers- en trekmoeren"
-slug: "plaatwerk/persmoeren-trekmoeren"
-template: "service"
-group: "plaatwerk"
+title: Pers- en trekmoeren
+slug: plaatwerk/persmoeren-trekmoeren
+template: service
+group: plaatwerk
 order: 27
-kicker: "Plaatwerk 2.7"
-h1: "Pers- en trekmoeren"
-intro: "Met pers- en trekmoeren maken we plaatwerk montageklaar: betrouwbare schroefdraad, ook in dun materiaal."
+kicker: Plaatwerk 2.7
+h1: Pers- en trekmoeren
+intro: 'Met pers- en trekmoeren maken we plaatwerk montageklaar: betrouwbare schroefdraad, ook in dun
+  materiaal.'
 heroPhoto:
-  subject: "Close-up van ingeperste moer in plaatwerk"
-  orient: "Liggend 16:10"
-  crop: "Macro op moer"
-  comp: "Persmoer in plaat, bovenaanzicht"
+  subject: Close-up van ingeperste moer in plaatwerk
+  orient: Liggend 16:10
+  crop: Macro op moer
+  comp: Persmoer in plaat, bovenaanzicht
 body:
-  - "Persmoeren en trekmoeren geven plaatwerk een sterke schroefdraadverbinding zonder los bevestigingsmateriaal. Zo leveren wij montageklare delen die op uw lijn direct verder kunnen."
-  - "Persmoeren plaatsen we machinaal en haaks, met een perskracht die past bij plaatdikte en moertype — zodat de schroefdraad ook bij regelmatig demonteren en monteren stevig blijft zitten."
-materials: ["RVS", "Aluminium", "Staal"]
+- Persmoeren en trekmoeren geven plaatwerk een sterke schroefdraadverbinding zonder los bevestigingsmateriaal.
+  Zo leveren wij montageklare delen die op uw lijn direct verder kunnen.
+- Persmoeren plaatsen we machinaal en haaks, met een perskracht die past bij plaatdikte en moertype —
+  zodat de schroefdraad ook bij regelmatig demonteren en monteren stevig blijft zitten.
+- 'Het verschil tussen beide zit in de manier waarop de verbinding tot stand komt. Een persmoer (inpersmoer)
+  wordt koud in een voorgesneden gat geperst: de kartel van de moer verdringt plaatmateriaal, dat in een
+  groef terugvloeit en de moer uittrek- en verdraaiingsvast zet. Een trekmoer (blindklinkmoer) wordt vanaf
+  één zijde vervormd en klemt zich achter de plaat. Persmoeren geven de sterkste en vlakste verbinding;
+  trekmoeren zijn de oplossing wanneer de achterzijde niet bereikbaar is of niet vervormd mag worden.'
+- 'De plaatdikte bepaalt in hoge mate wat er mogelijk is. Voor een persmoer moet het plaatmateriaal zachter
+  zijn dan de moer, anders vloeit het niet in de groef; de combinatie van hard materiaal en fijne schroefdraad
+  is daarmee kritisch. Ook de afstand tot de rand en tot omliggende uitsparingen telt mee: te dicht op
+  de kant bolt het materiaal op. Wij beoordelen dat vooraf op tekening, zodat het bij de eerste serie
+  geen verrassing is.'
+- Materiaal en moerkeuze moeten bij elkaar passen. In RVS-plaatwerk zetten wij RVS-moeren, om contactcorrosie
+  te voorkomen. In aluminium wordt afhankelijk van de omgeving voor RVS of verzinkt staal gekozen. Wordt
+  het deel na het inpersen nog gepoedercoat, dan moet de schroefdraad afgedekt of nabewerkt worden — anders
+  loopt de coating in de draad en past de bout niet meer.
+- Het inpersen gebeurt bij ons machinaal en haaks, met een perskracht die is afgestemd op plaatdikte en
+  moertype. Daarna controleren wij op vlakheid rond de moer en op de zit van de schroefdraad. Zo blijft
+  de verbinding stevig, ook als het deel in de praktijk regelmatig gedemonteerd en weer gemonteerd wordt.
+- 'Pers- en trekmoeren zijn onderdeel van een groter geheel: het gat komt van de <a href="/plaatwerk/lasersnijden/">laser</a>,
+  de randen worden ontbraamd en het deel wordt vaak nog <a href="/plaatwerk/zetten/">gezet</a> voordat
+  de moer erin gaat. Die volgorde is niet vrijblijvend — een moer die te vroeg geplaatst wordt, zit in
+  de weg bij het zetten of vervormt in de pers. Wij leggen die volgorde vast in de werkvoorbereiding.'
+- 'Voor een beoordeling hebben wij nodig: de tekening met de gatposities, de plaatdikte en het materiaal,
+  de gewenste schroefdraadmaat, of de moer aan de zicht- of de achterzijde komt, en de nabehandeling.
+  Weet u nog niet of een pers- of een trekmoer past, geef dan door wat de verbinding moet dragen en hoe
+  vaak hij los moet kunnen; dan adviseren wij daarop.'
+materials:
+- RVS
+- Aluminium
+- Staal
 process:
-  - { step: "Voorbereiden", desc: "Gaten op maat snijden." }
-  - { step: "Inpersen", desc: "Pers- of trekmoer plaatsen." }
-  - { step: "Controle", desc: "Controle op vlakheid en sterkte." }
-applications: ["Behuizingen", "Panelen", "Montageklaar plaatwerk"]
+- step: Voorbereiden
+  desc: Gaten op maat snijden.
+- step: Inpersen
+  desc: Pers- of trekmoer plaatsen.
+- step: Controle
+  desc: Controle op vlakheid en sterkte.
+applications:
+- Behuizingen
+- Panelen
+- Montageklaar plaatwerk
+faq:
+- vraag: Wat is het verschil tussen een persmoer en een trekmoer?
+  antwoord: Een persmoer wordt koud in de plaat geperst; de kartel verdringt materiaal dat in een groef
+    terugvloeit, waardoor de moer uittrek- en verdraaiingsvast zit. Een trekmoer wordt vanaf één zijde
+    vervormd en klemt achter de plaat. De persmoer geeft de sterkste en vlakste verbinding, de trekmoer
+    is de keuze als de achterzijde niet bereikbaar is.
+- vraag: Vanaf welke plaatdikte kunnen jullie een persmoer plaatsen?
+  antwoord: Dat hangt af van het moertype, het plaatmateriaal en de schroefdraadmaat. Het plaatmateriaal
+    moet zachter zijn dan de moer, dus een harde plaat of een fijne draad in dun materiaal kan reden zijn
+    om voor een andere maat of voor een trekmoer te kiezen. Wij beoordelen die combinatie per aanvraag
+    op tekening.
+- vraag: In welke materialen plaatsen jullie pers- en trekmoeren?
+  antwoord: 'In RVS, aluminium en staal. Wij stemmen het moermateriaal af op de plaat: in RVS-plaatwerk
+    RVS-moeren om contactcorrosie te voorkomen, in aluminium afhankelijk van de omgeving RVS of verzinkt
+    staal.'
+- vraag: Blijft de schroefdraad zitten bij herhaald demonteren?
+  antwoord: Ja, mits de moer haaks en met de juiste perskracht is geplaatst. Een correct ingeperste moer
+    is uittrek- en verdraaiingsvast en is daarmee geschikt voor onderdelen die in gebruik regelmatig open
+    moeten. Wij controleren na het inpersen op vlakheid en op de zit van de draad.
+- vraag: Kan er nog gepoedercoat worden nadat de moeren erin zitten?
+  antwoord: Ja, maar de schroefdraad moet dan afgedekt worden of na het coaten worden nabewerkt, anders
+    loopt de coating in de draad. Geef bij uw aanvraag door welke nabehandeling het deel krijgt, dan leggen
+    wij de volgorde daarop vast.
 related:
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Maatvast plaatwerk." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Kantwerk." }
+- slug: plaatwerk/precisieplaatwerk
+  label: Precisieplaatwerk
+  desc: Maatvast plaatwerk.
+- slug: plaatwerk/zetten
+  label: Kanten & zetten
+  desc: Kantwerk.
 seo:
-  title: "Pers- en trekmoeren — montageklaar plaatwerk"
-  description: "Inpers- en trekmoeren voor betrouwbare schroefdraadverbindingen in dunne plaat: montageklaar plaatwerk."
-translated: ["nl"]
+  title: Pers- en trekmoeren — montageklaar plaatwerk
+  description: 'Inpers- en trekmoeren voor betrouwbare schroefdraadverbindingen in dunne plaat: montageklaar
+    plaatwerk.'
+translated:
+- nl

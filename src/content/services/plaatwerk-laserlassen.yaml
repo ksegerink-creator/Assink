@@ -1,31 +1,92 @@
-title: "Laserlassen"
-slug: "plaatwerk/laserlassen"
-template: "service"
-group: "lastechniek"
+title: Laserlassen
+slug: plaatwerk/laserlassen
+template: service
+group: lastechniek
 order: 42
-kicker: "Lastechniek 3.2"
-h1: "Perfectie in laserlassen"
-intro: "Precisielaswerk voor OEM's en industriële klanten die extreme nauwkeurigheid en korte doorlooptijden nodig hebben. Gespecialiseerd in laserlassen van RVS en aluminium."
+kicker: Lastechniek 3.2
+h1: Perfectie in laserlassen
+intro: Precisielaswerk voor OEM's en industriële klanten die extreme nauwkeurigheid en korte doorlooptijden
+  nodig hebben. Gespecialiseerd in laserlassen van RVS en aluminium.
 heroPhoto:
-  subject: "Close-up van laser-gelast RVS-product met strakke naad"
-  orient: "Liggend 16:10"
-  crop: "Macro op lasnaad"
-  comp: "Fijne, egale naad in RVS"
+  subject: Close-up van laser-gelast RVS-product met strakke naad
+  orient: Liggend 16:10
+  crop: Macro op lasnaad
+  comp: Fijne, egale naad in RVS
 body:
-  - "Laserlassen met minimale warmte-inbreng resulteert in strakke, vervormingsarme lasverbindingen die direct geschikt zijn voor montage. Juist bij zichtwerk en dun materiaal is dat een groot voordeel."
-  - "Nabewerking, kantwerk en integratie in complete bouwgroepen gebeuren in-house. Met eigen voorraad, just-in-time levering, korte communicatielijnen en één aanspreekpunt."
-materials: ["RVS 304 / 316", "Aluminium", "Messing"]
+- Laserlassen met minimale warmte-inbreng resulteert in strakke, vervormingsarme lasverbindingen die direct
+  geschikt zijn voor montage. Juist bij zichtwerk en dun materiaal is dat een groot voordeel.
+- Nabewerking, kantwerk en integratie in complete bouwgroepen gebeuren in-house. Met eigen voorraad, just-in-time
+  levering, korte communicatielijnen en één aanspreekpunt.
+- Bij laserlassen wordt de warmte in een zeer smalle zone ingebracht. Daardoor blijft de warmte-beïnvloede
+  zone klein en vervormt het werkstuk nauwelijks — precies wat u wilt bij dun materiaal en bij delen die
+  na het lassen nog maatvast moeten zijn. Bij conventioneel TIG-lassen ligt de warmte-inbreng hoger en
+  moet u vaker rekenen op richten en nabewerken.
+- 'Het verschil is vooral zichtbaar aan de buitenzijde. Een lasernaad is smal en egaal en vraagt bij zichtwerk
+  weinig tot geen slijpwerk. Dat scheelt niet alleen tijd: elke slijpbewerking haalt materiaal weg en
+  verstoort bij geslepen RVS de korrelrichting, die dan over de hele samenstelling opnieuw moet worden
+  opgebouwd.'
+- 'Laserlassen stelt wel hogere eisen aan de voorbereiding. Omdat de bundel klein is, is er weinig spleetoverbrugging:
+  de delen moeten strak passen en stevig gefixeerd zijn. Wij snijden de delen daarom op de laser en gebruiken
+  waar nodig opspangereedschap. Bij grotere spleten of bij een naad die volume moet opvullen is <a href="/plaatwerk/lassen/">TIG-
+  of MIG-lassen</a> de betere keuze; die afweging maken wij per product.'
+- 'In RVS geldt na elke lasbewerking dezelfde regel: de warmte tast de beschermende oxidelaag rond de
+  naad aan. Wij verwijderen aanloopkleuren en passiveren daarna, zodat de corrosiebestendigheid terugkomt.
+  Bij laserlassen is die zone smaller dan bij TIG, maar hij is er wel — overslaan is geen optie, zeker
+  niet in een natte of hygiënische omgeving.'
+- Wij laserlassen in RVS 304 en 316, aluminium en messing, en bouwen de gelaste delen door tot complete
+  bouwgroepen. Wilt u weten of uw product zich leent voor laserlassen? Stuur de tekening mee met de plaatdikte,
+  de naadvorm en de eis aan de zichtzijde; dan geven wij aan welke lasmethode het beste past en wat dat
+  betekent voor de nabewerking.
+materials:
+- RVS 304 / 316
+- Aluminium
+- Messing
 process:
-  - { step: "Voorbereiding", desc: "Passend maken en fixeren." }
-  - { step: "Laserlassen", desc: "Geconcentreerde, vervormingsarme naad." }
-  - { step: "Nabewerking", desc: "Waar nodig slijpen en passiveren." }
-  - { step: "Integratie", desc: "Opbouw tot complete bouwgroep." }
-applications: ["Voedingsmiddelenindustrie", "Machinebouw", "Zichtwerk"]
+- step: Voorbereiding
+  desc: Passend maken en fixeren.
+- step: Laserlassen
+  desc: Geconcentreerde, vervormingsarme naad.
+- step: Nabewerking
+  desc: Waar nodig slijpen en passiveren.
+- step: Integratie
+  desc: Opbouw tot complete bouwgroep.
+applications:
+- Voedingsmiddelenindustrie
+- Machinebouw
+- Zichtwerk
+faq:
+- vraag: Wat is het voordeel van laserlassen ten opzichte van TIG-lassen?
+  antwoord: De warmte-inbreng is veel lager, waardoor de warmte-beïnvloede zone klein blijft en het werkstuk
+    nauwelijks vervormt. De naad is smal en egaal en vraagt bij zichtwerk weinig nabewerking. TIG blijft
+    de betere keuze bij grotere spleten of wanneer de naad volume moet opvullen.
+- vraag: Welke materialen kunnen jullie laserlassen?
+  antwoord: RVS 304 en 316, aluminium en messing. Welk materiaal en welke naadvorm haalbaar zijn, hangt
+    samen met de plaatdikte en de pasnauwkeurigheid van de delen; dat beoordelen wij op tekening.
+- vraag: Moet een lasergelaste naad nog nabewerkt worden?
+  antwoord: 'Meestal weinig: de naad is smal en egaal, dus slijpen is vaak niet nodig. Bij RVS hoort er
+    altijd een stap bij — aanloopkleuren verwijderen en passiveren — omdat de warmte de beschermende oxidelaag
+    rond de naad aantast.'
+- vraag: Hoe nauwkeurig moeten de delen passen bij laserlassen?
+  antwoord: Nauwkeuriger dan bij TIG. De laserbundel is klein en overbrugt weinig spleet, dus de delen
+    moeten strak passen en gefixeerd zijn. Wij snijden ze daarom op de laser en gebruiken waar nodig opspangereedschap.
+    Is een strakke pasvorm niet haalbaar, dan adviseren wij TIG of MIG.
+- vraag: Doen jullie ook robotlassen?
+  antwoord: Niet in eigen huis. Robotlassen gebeurt binnen onze groep bij Baas Metaal. Wij verzorgen de
+    regie en de samenstelling, zodat het voor u één opdracht blijft. Voor kleinere series en zichtwerk
+    is laserlassen bij ons vaak de logischere route.
 related:
-  - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast zichtwerk." }
-  - { slug: "plaatwerk/robotlassen", label: "Robotlassen", desc: "Geautomatiseerd serielassen." }
-  - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen met strak zichtwerk." }
+- slug: plaatwerk/rvs
+  label: RVS
+  desc: Roestvast zichtwerk.
+- slug: plaatwerk/robotlassen
+  label: Robotlassen
+  desc: Geautomatiseerd serielassen.
+- slug: industriele-behuizing
+  label: Industriële behuizing
+  desc: Behuizingen met strak zichtwerk.
 seo:
-  title: "Laserlassen — strakke, vervormingsarme naden"
-  description: "Precisielaswerk in RVS en aluminium met minimale warmte-inbreng: strakke, vervormingsarme naden, montageklaar voor OEM en industrie."
-translated: ["nl"]
+  title: Laserlassen — strakke, vervormingsarme naden
+  description: 'Precisielaswerk in RVS en aluminium met minimale warmte-inbreng: strakke, vervormingsarme
+    naden, montageklaar voor OEM en industrie.'
+translated:
+- nl

@@ -99,6 +99,23 @@ export function serviceJsonLd(
 }
 
 /**
+ * FAQPage schema. Alleen aanroepen als dezelfde vragen ook zichtbaar op de
+ * pagina staan: Google verwacht dat structured data beschrijft wat de bezoeker
+ * ziet.
+ */
+export function faqJsonLd(faq: { vraag: string; antwoord: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.vraag,
+      acceptedAnswer: { "@type": "Answer", text: f.antwoord },
+    })),
+  };
+}
+
+/**
  * Article schema for a kennisbank artikel.
  * `authorName` blijft leeg totdat er een echte auteur (naam + functie) wordt
  * aangeleverd — tot die tijd staat de Organization zelf als auteur, wat voor

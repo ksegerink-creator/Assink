@@ -1,27 +1,105 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Blechbearbeitung"
-kicker: "Möglichkeit 1.0"
-h1: "Perfektion in der Blechbearbeitung"
-intro: "Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim Schneiden, Abkanten und Veredeln von Feinblech — Einzelstücke und Serien."
+title: Blechbearbeitung
+kicker: Möglichkeit 1.0
+h1: Perfektion in der Blechbearbeitung
+intro: Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim Schneiden, Abkanten und
+  Veredeln von Feinblech — Einzelstücke und Serien.
 heroPhoto:
-  subject: "Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung"
+  subject: Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung
 body:
-  - "Wir bearbeiten Feinblech mit einem Faserlaser (Trumpf TruLaser 3040, 4 kW), Abkantpresse und Veredelung im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar."
-  - "Blechbearbeitung bei Assink & Schipholt geht über Schneiden und Kanten hinaus. Von der ersten Zeichnung bis zum fertigen Teil begleiten wir den gesamten Prozess: Materialberatung, Engineering, Produktion und Oberflächenveredelung — unter einem Dach in Hengelo."
-  - "Ob einzelnes Prototyp oder Jahresserie: Blecharbeiten nach Maß erfordern Präzision, die reproduzierbar bleibt. Unsere servoelektrischen Abkantpressen und Lasermaschinen sorgen für gleichbleibende Maßhaltigkeit, auch bei größeren Serien."
+- Wir bearbeiten Feinblech mit einem Faserlaser (Trumpf TruLaser 3040, 4 kW), Abkantpresse und Veredelung
+  im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar.
+- 'Blechbearbeitung bei Assink & Schipholt geht über Schneiden und Kanten hinaus. Von der ersten Zeichnung
+  bis zum fertigen Teil begleiten wir den gesamten Prozess: Materialberatung, Engineering, Produktion
+  und Oberflächenveredelung — unter einem Dach in Hengelo.'
+- 'Ob einzelnes Prototyp oder Jahresserie: Blecharbeiten nach Maß erfordern Präzision, die reproduzierbar
+  bleibt. Unsere servoelektrischen Abkantpressen und Lasermaschinen sorgen für gleichbleibende Maßhaltigkeit,
+  auch bei größeren Serien.'
+- 'Welche Blechdicke möglich ist, hängt vom Werkstoff ab. Auf der Trumpf TruLaser 3040 — einem Faserlaser
+  mit 4 kW — schneiden wir Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis 20 mm, Aluminium von 0,5 bis
+  15 mm und verzinkten Stahl von 0,5 bis 10 mm. Liegt Ihre Anfrage außerhalb dieses Bereichs, legen Sie
+  sie uns vor: innerhalb unserer Gruppe ist häufig mehr möglich als auf unserer eigenen Maschine.'
+- 'Ein Blechteil durchläuft bei uns meist denselben Weg: Laserschneiden, Entgraten, Abkanten und bei Bedarf
+  Schweißen und Oberflächenbehandlung. Entgratet wird maschinell auf einer Timesavers 42 Series RB, damit
+  die Kanten gratfrei und sicher sind, bevor jemand damit weiterarbeitet. Abgekantet wird auf einer servoelektrischen
+  Safan Darley E-Brake 150-3100 T3 mit 150 Tonnen Presskraft und einer Arbeitslänge bis 3100 mm.'
+- 'Einzelstücke und Serien erfordern eine unterschiedliche Vorbereitung. Beim Prototyp liegt der Schwerpunkt
+  auf der Fertigungsgerechtheit: eine Biegekante zu verschieben oder eine Aussparung anders zu positionieren
+  spart oft einen ganzen Arbeitsgang. Bei der Serie geht es um Wiederholgenauigkeit — dieselbe Aufspannung,
+  dieselbe Reihenfolge und dieselben Prüfpunkte, damit das hundertste Teil dem ersten gleicht. Wir fertigen
+  beides, auf denselben Maschinen.'
+- Die Oberflächenbehandlung gehört in den meisten Fällen dazu. Für Aluminium und Edelstahl haben wir eine
+  eigene Strahlkabine von 8 × 4 × 3 Metern, in der wir mit Glasperlen von 100–200 μm bei 3,0 bar eine
+  gleichmäßig matte Oberfläche strahlen. Edelstahl passivieren wir nach dem Schweißen, damit die schützende
+  Oxidschicht rund um die Naht wiederhergestellt wird. Pulverbeschichten und Eloxieren organisieren wir
+  ebenfalls, sodass Sie ein fertiges Bauteil erhalten und kein Halbzeug.
+- Qualität ist in der Blechbearbeitung vor allem Prozesslenkung. Wir arbeiten nach ISO 9001, beim Schweißen
+  nach ISO 3834-2 und bei tragenden Konstruktionen nach EN 1090-1. In der Praxis bedeutet das eine feste
+  Eingangskontrolle des Materials, dokumentierte Schweißparameter und eine Maßkontrolle vor dem Versand
+  — nicht nur am ersten Teil.
+- Möchten Sie Blechteile fertigen lassen? Senden Sie eine Zeichnung oder ein 3D-Modell mit Werkstoff und
+  Blechdicke, der Stückzahl sowie der Angabe, ob es sich um Sichtflächen handelt und welche Oberfläche
+  dazugehört. Damit beurteilen wir die Fertigbarkeit und erstellen ein fundiertes Angebot. Sind Sie bei
+  Werkstoff oder Blechdicke unsicher, denken wir gerne mit, bevor die Zeichnung endgültig ist.
 cards:
-  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen." }
-  - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Leicht und stabil, inkl. WIG- und MIG-Schweißen." }
-  - { slug: "plaatwerk/messing", label: "Messing", desc: "Warme Kupfer-Zink-Legierung für Technik und Interieur." }
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Präzisionsblech", desc: "Maßhaltige Einzelstücke und Serienteile." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & Biegen", desc: "Präzise Biegewinkel auf der servoelektrischen Abkantpresse." }
-  - { slug: "plaatwerk/lasersnijden", label: "Laserschneiden", desc: "2D-Laserschneiden von Stahl, Edelstahl und Aluminium." }
-  - { slug: "plaatwerk/lassen", label: "Schweißen", desc: "WIG-, MIG- und Roboterschweißen." }
-  - { slug: "plaatwerk/laserlassen", label: "Laserschweißen", desc: "Saubere, verzugsarme Schweißverbindungen." }
-  - { slug: "plaatwerk/ontbramen", label: "Entgraten", desc: "Gratfreie Kanten nach dem Schneiden." }
-  - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Einpress- & Blindnietmuttern", desc: "Einpressmuttern für montagefertige Produkte." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Lebensmittelindustrie", desc: "Hygienische Edelstahl-Blechbearbeitung." }
-  - { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "Edelstahlgehäuse & Verkleidung", desc: "Maschinenverkleidungen und Gehäuse." }
+- slug: plaatwerk/rvs
+  label: Edelstahl
+  desc: Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen.
+- slug: plaatwerk/aluminium
+  label: Aluminium
+  desc: Leicht und stabil, inkl. WIG- und MIG-Schweißen.
+- slug: plaatwerk/messing
+  label: Messing
+  desc: Warme Kupfer-Zink-Legierung für Technik und Interieur.
+- slug: plaatwerk/precisieplaatwerk
+  label: Präzisionsblech
+  desc: Maßhaltige Einzelstücke und Serienteile.
+- slug: plaatwerk/zetten
+  label: Kanten & Biegen
+  desc: Präzise Biegewinkel auf der servoelektrischen Abkantpresse.
+- slug: plaatwerk/lasersnijden
+  label: Laserschneiden
+  desc: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium.
+- slug: plaatwerk/lassen
+  label: Schweißen
+  desc: WIG-, MIG- und Roboterschweißen.
+- slug: plaatwerk/laserlassen
+  label: Laserschweißen
+  desc: Saubere, verzugsarme Schweißverbindungen.
+- slug: plaatwerk/ontbramen
+  label: Entgraten
+  desc: Gratfreie Kanten nach dem Schneiden.
+- slug: plaatwerk/persmoeren-trekmoeren
+  label: Einpress- & Blindnietmuttern
+  desc: Einpressmuttern für montagefertige Produkte.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Lebensmittelindustrie
+  desc: Hygienische Edelstahl-Blechbearbeitung.
+- slug: plaatwerk/rvs-behuizingen-machinebeplating
+  label: Edelstahlgehäuse & Verkleidung
+  desc: Maschinenverkleidungen und Gehäuse.
+faq:
+- vraag: Welche Blechdicken können Sie laserschneiden?
+  antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis
+    20 mm, Aluminium von 0,5 bis 15 mm und verzinkten Stahl von 0,5 bis 10 mm. Liegt Ihre Anfrage außerhalb
+    dieses Bereichs, legen Sie sie uns vor: dann prüfen wir, was innerhalb unserer Gruppe möglich ist.'
+- vraag: Fertigen Sie auch Einzelstücke oder nur Serien?
+  antwoord: Beides, auf denselben Maschinen. Bei Einzelstücken und Prototypen liegt der Schwerpunkt auf
+    der Fertigungsgerechtheit, bei Serien auf der Wiederholgenauigkeit von Maßhaltigkeit und Oberfläche,
+    damit das letzte Teil dem ersten gleicht.
+- vraag: Welche Werkstoffe verarbeiten Sie in der Blechbearbeitung?
+  antwoord: Edelstahl 304 und 316, Aluminium, Messing und Stahl, einschließlich verzinktem Stahl. Welcher
+    Werkstoff am besten passt, hängt von der Belastung, der Umgebung und davon ab, ob das Bauteil eine
+    Sichtfläche ist — dazu beraten wir gerne, bevor die Zeichnung endgültig ist.
+- vraag: Liefern Sie Blechteile fertig bearbeitet und montagefertig?
+  antwoord: Ja. Entgraten, Glasperlstrahlen, Passivieren, Pulverbeschichten und das Einpressen von Einpress-
+    und Blindnietmuttern gehören zum Ablauf. Sie erhalten ein montagefertiges Teil und kein Halbzeug,
+    das anderswo noch bearbeitet werden muss.
+- vraag: Was benötigen Sie für ein Angebot?
+  antwoord: Eine Zeichnung oder ein 3D-Modell, Werkstoff und Blechdicke, die Stückzahl sowie die Angabe,
+    ob es sich um Sichtflächen handelt und welche Oberfläche dazugehört. Fehlen Angaben, melden wir uns,
+    bevor wir einen Preis nennen.
 seo:
-  title: "Blechbearbeitung nach Maß — Edelstahl, Aluminium und Messing"
-  description: "Präzisionsblech in Edelstahl, Aluminium und Messing: Laserschneiden, Abkanten, Schweißen und Veredeln bis auf den Millimeter. Einzelstücke und Serien aus Hengelo."
+  title: Blechbearbeitung nach Maß — Edelstahl, Aluminium und Messing
+  description: 'Präzisionsblech in Edelstahl, Aluminium und Messing: Laserschneiden, Abkanten, Schweißen
+    und Veredeln bis auf den Millimeter. Einzelstücke und Serien aus Hengelo.'

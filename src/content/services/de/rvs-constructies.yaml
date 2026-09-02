@@ -1,25 +1,97 @@
 # Duitse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Edelstahlkonstruktionen"
-kicker: "Zusammenbau 4.2"
-h1: "Edelstahlkonstruktionen"
-intro: "Korrosionsbeständige Konstruktionen aus Edelstahl — von Rahmen bis zu vollständig geschweißten Baugruppen, hygienisch und repräsentativ ausgeführt."
+title: Edelstahlkonstruktionen
+kicker: Zusammenbau 4.2
+h1: Edelstahlkonstruktionen
+intro: Korrosionsbeständige Konstruktionen aus Edelstahl — von Rahmen bis zu vollständig geschweißten
+  Baugruppen, hygienisch und repräsentativ ausgeführt.
 heroPhoto:
-  subject: "Geschweißte Edelstahlkonstruktion bei der Endkontrolle"
+  subject: Geschweißte Edelstahlkonstruktion bei der Endkontrolle
 body:
-  - "Edelstahlkonstruktionen verbinden Festigkeit mit Korrosionsbeständigkeit. Wir schweißen und montieren in Edelstahl 304 und 316, mit einer Nachbearbeitung (Beizen, Passivieren), die auf die Anwendung abgestimmt ist — zum Beispiel in der Lebensmittelindustrie."
-  - "Unsere Edelstahl-Konstruktionsarbeit kombiniert Rohrlaserschneiden für passgenaue Profile mit WIG- und Laserschweißen, gefolgt von Beizen und Passivieren, damit die Korrosionsbeständigkeit des Materials nach der Bearbeitung erhalten bleibt."
-  - "Möchten Sie einen Edelstahlrahmen fertigen lassen? Schicken Sie uns Ihre Zeichnung oder Skizze — wir prüfen die Machbarkeit und denken bei Profilwahl und Schweißreihenfolge mit, bevor die Produktion beginnt."
-materials: ["Edelstahl 304", "Edelstahl 316"]
+- Edelstahlkonstruktionen verbinden Festigkeit mit Korrosionsbeständigkeit. Wir schweißen und montieren
+  in Edelstahl 304 und 316, mit einer Nachbearbeitung (Beizen, Passivieren), die auf die Anwendung abgestimmt
+  ist — zum Beispiel in der Lebensmittelindustrie.
+- Unsere Edelstahl-Konstruktionsarbeit kombiniert Rohrlaserschneiden für passgenaue Profile mit WIG- und
+  Laserschweißen, gefolgt von Beizen und Passivieren, damit die Korrosionsbeständigkeit des Materials
+  nach der Bearbeitung erhalten bleibt.
+- Möchten Sie einen Edelstahlrahmen fertigen lassen? Schicken Sie uns Ihre Zeichnung oder Skizze — wir
+  prüfen die Machbarkeit und denken bei Profilwahl und Schweißreihenfolge mit, bevor die Produktion beginnt.
+- Die Wahl zwischen Edelstahl 304 und 316 bestimmt in vielen Fällen die Lebensdauer der Konstruktion.
+  Edelstahl 316 enthält Molybdän und ist dadurch widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
+  Umgebungen — Meerwasser, Reinigungsmittel, Streusalz. Edelstahl 304 genügt in trockeneren und weniger
+  aggressiven Bedingungen und ist günstiger. Die Abwägung stellen wir ausführlicher in unserem Artikel
+  über <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">Edelstahl 304 oder
+  316</a> dar (auf Niederländisch).
+- 'Was die Edelstahlkonstruktion vom Stahlbau unterscheidet, ist nicht das Schweißen selbst, sondern das
+  Drumherum. Edelstahl muss von Kohlenstoffstahl getrennt bleiben: eigenes Werkzeug, eigene Bürsten, ein
+  eigener Arbeitsplatz. Zurückbleibender Stahlstaub rostet und erzeugt Rostflecken auf einer sonst einwandfreien
+  Oberfläche — ein Fehler, der erst Wochen später sichtbar wird, wenn die Konstruktion längst beim Kunden
+  steht.'
+- 'Nach dem Schweißen befinden sich Anlauffarben rund um die Naht. Diese sind nicht nur kosmetisch: an
+  dieser Stelle ist die Chromoxidschicht angegriffen und das Material korrosionsanfällig. Wir beizen oder
+  strahlen diese Zone und passivieren anschließend, damit sich die Oxidschicht wieder aufbaut. Für Aluminium
+  und Edelstahl haben wir dafür eine eigene Strahlkabine von 8 × 4 × 3 Metern mit Glasperlen von 100–200
+  μm.'
+- Für die Profile nutzen wir die Trumpf TruLaser Tube 3000. Aussparungen, Gehrungen und Durchführungen
+  kommen direkt aus dem Rohrlaser, sodass die Teile ohne Handarbeit passen und die Nähte gleichmäßig bleiben.
+  Das spart Schweißzeit und — bei Edelstahl noch wichtiger — Nacharbeit, denn jeder zusätzliche Schleifvorgang
+  ist eine weitere Stelle, die erneut behandelt werden muss.
+- 'In hygienischen Umgebungen gelten zusätzliche Anforderungen an die Ausführung: durchgeschweißte und
+  glattgeschliffene Nähte statt Heftnähte, keine Hohlräume, in denen Feuchtigkeit stehen bleibt, und wo
+  möglich abgerundete Übergänge. Teilen Sie uns bei Ihrer Anfrage mit, ob die Konstruktion gereinigt werden
+  muss und mit welchen Mitteln; das bestimmt sowohl die Werkstoffwahl als auch die Nahtausführung.'
+- Unsere Konstruktionen gehen bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. Beim Schweißen arbeiten
+  wir nach ISO 3834-2, bei tragenden Konstruktionen nach EN 1090-1; unser Qualitätssystem ist nach ISO
+  9001 zertifiziert.
+materials:
+- Edelstahl 304
+- Edelstahl 316
 process:
-  - { step: "Rohrlaserschneiden", desc: "Passgenaue Rohre und Profile." }
-  - { step: "Schweißen", desc: "WIG- oder Laserschweißen." }
-  - { step: "Nachbearbeitung", desc: "Beizen und Passivieren." }
-  - { step: "Prüfung", desc: "Maß- und Schweißnahtkontrolle." }
-applications: ["Maschinenbau", "Lebensmittelindustrie", "Apparatebau", "Offshore & Maritim"]
+- step: Rohrlaserschneiden
+  desc: Passgenaue Rohre und Profile.
+- step: Schweißen
+  desc: WIG- oder Laserschweißen.
+- step: Nachbearbeitung
+  desc: Beizen und Passivieren.
+- step: Prüfung
+  desc: Maß- und Schweißnahtkontrolle.
+applications:
+- Maschinenbau
+- Lebensmittelindustrie
+- Apparatebau
+- Offshore & Maritim
+faq:
+- vraag: Edelstahl 304 oder 316 — was soll ich für meine Konstruktion wählen?
+  antwoord: Edelstahl 316 enthält Molybdän und ist widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
+    Umgebungen wie Meerwasser, Streusalz oder aggressiven Reinigungsmitteln. Edelstahl 304 genügt in trockeneren
+    und weniger aggressiven Bedingungen und ist günstiger. Nennen Sie uns die Einsatzumgebung, dann beraten
+    wir entsprechend.
+- vraag: Warum ist das Passivieren nach dem Schweißen notwendig?
+  antwoord: Das Schweißen greift die Chromoxidschicht rund um die Naht an; dort wird das Material korrosionsanfällig.
+    Wir entfernen Anlauffarben durch Beizen oder Strahlen und passivieren anschließend, damit sich die
+    Schutzschicht wieder aufbaut. Ohne diesen Schritt rostet eine Edelstahlkonstruktion gerade an der
+    Schweißnaht.
+- vraag: Können Sie Edelstahlkonstruktionen für die Lebensmittelindustrie liefern?
+  antwoord: Ja. In hygienischen Umgebungen führen wir Nähte durchgeschweißt und glattgeschliffen aus statt
+    geheftet, vermeiden Hohlräume, in denen Feuchtigkeit stehen bleibt, und arbeiten wo möglich mit abgerundeten
+    Übergängen. Teilen Sie uns mit, womit gereinigt wird; das bestimmt die Werkstoffwahl mit.
+- vraag: Wie schwer darf eine Edelstahlkonstruktion sein?
+  antwoord: Bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. In der Halle hängen fünf Hallenkrane mit je
+    5 Tonnen; im Tandemhub bewegen wir Baugruppen bis 10 Tonnen.
+- vraag: Verarbeiten Sie Edelstahl und Stahl in derselben Werkstatt?
+  antwoord: Wir halten Edelstahl von Kohlenstoffstahl getrennt, mit eigenem Werkzeug und eigenen Bürsten.
+    Zurückbleibender Stahlstaub rostet und verursacht Rostflecken auf einer sonst einwandfreien Edelstahloberfläche;
+    das zeigt sich erst Wochen später und ist dann schwer zu beheben.
 related:
-  - { slug: "constructies", label: "Konstruktionen", desc: "Alle Konstruktionsarbeiten." }
-  - { slug: "plaatwerk/rvs", label: "Edelstahl", desc: "Blechbearbeitung in Edelstahl." }
-  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Lebensmittelindustrie", desc: "Hygienische Anwendungen." }
+- slug: constructies
+  label: Konstruktionen
+  desc: Alle Konstruktionsarbeiten.
+- slug: plaatwerk/rvs
+  label: Edelstahl
+  desc: Blechbearbeitung in Edelstahl.
+- slug: plaatwerk/voedingsmiddelenindustrie
+  label: Lebensmittelindustrie
+  desc: Hygienische Anwendungen.
 seo:
-  title: "Edelstahlkonstruktionen — korrosionsbeständig und geschweißt"
-  description: "Korrosionsbeständige geschweißte Edelstahlkonstruktionen und Baugruppen für Maschinenbau, Lebensmittel und anspruchsvolle Umgebungen."
+  title: Edelstahlkonstruktionen — korrosionsbeständig und geschweißt
+  description: Korrosionsbeständige geschweißte Edelstahlkonstruktionen und Baugruppen für Maschinenbau,
+    Lebensmittel und anspruchsvolle Umgebungen.
