@@ -48,8 +48,16 @@ const siteLive = import.meta.env.PUBLIC_SITE_LIVE === "true";
 const noindex = noindexProp || !siteLive;
 
 // Analytics alleen op de live productiesite — nooit op previews/dev, zodat
-// testbezoeken de statistieken niet vervuilen.
-const gaId = siteLive ? import.meta.env.PUBLIC_GA_ID : undefined;
+// testbezoeken de statistieken niet vervuilen. Het meet-ID gaat letterlijk in
+// een inline <script>, dus we accepteren alleen de vorm die Google uitgeeft
+// (G-, daarna letters en cijfers). Een typefout of een geplakte URL in de
+// omgevingsvariabele levert dan geen kapotte pagina op, maar simpelweg geen tag.
+const GA_ID_PATTERN = /^G-[A-Z0-9]+$/;
+const gaIdRaw = siteLive ? import.meta.env.PUBLIC_GA_ID : undefined;
+const gaId = gaIdRaw && GA_ID_PATTERN.test(gaIdRaw) ? gaIdRaw : undefined;
+if (gaIdRaw && !gaId) {
+  console.warn(`PUBLIC_GA_ID "${gaIdRaw}" heeft niet de vorm G-XXXXXXXXXX; analytics wordt overgeslagen.`);
+}
 
 const locale: Locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
@@ -117,12 +125,18 @@ const graphs = [organizationJsonLd(site), ...jsonld];
     {gaId && (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-        <script define:vars={{ gaId }}>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag("js", new Date());
-          gtag("config", gaId);
-        </script>
+        {/*
+          Bewust is:inline met set:html en niet define:vars: die laatste wikkelt
+          de code in een IIFE, waardoor "gtag" een lokale functie wordt en
+          window.gtag ongedefinieerd blijft. De pageview vertrekt dan nog wel
+          (gtag.js leest window.dataLayer), maar elke latere gtag()-aanroep —
+          een custom event, een consent-update — faalt. Zo staat de functie op
+          de global scope, precies zoals het standaardsnippet van Google.
+        */}
+        <script is:inline set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "${gaId}");`} />
       </>
     )}
 
