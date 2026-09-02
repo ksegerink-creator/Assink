@@ -35,7 +35,7 @@ De repo staat direct in `keystatic.config.ts`; er is dus GEEN repo-variabele nod
 | `KEYSTATIC_GITHUB_CLIENT_ID` | volgt uit stap 4 |
 | `KEYSTATIC_GITHUB_CLIENT_SECRET` | volgt uit stap 4 |
 | `PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | volgt uit stap 4 |
-| `PUBLIC_GA_ID` | Google Analytics 4 measurement ID (`G-...`), alleen actief bij `PUBLIC_SITE_LIVE=true` |
+| `PUBLIC_GA_ID` | Google Analytics 4 measurement ID, exact in de vorm `G-XXXXXXXXXX`, alleen actief bij `PUBLIC_SITE_LIVE=true`. Wijkt de waarde van die vorm af, dan slaat de build de tag over met een waarschuwing in het buildlog — de pagina blijft dus heel, maar er wordt niets gemeten. Let op: dit is een `PUBLIC_`-variabele, die wordt bij de **build** vastgezet. Wijzigen betekent opnieuw deployen. |
 | `ANTHROPIC_API_KEY` | Voor de automatische blogconceptgenerator (zie sectie hieronder) |
 | `GITHUB_TOKEN` | Fine-grained GitHub PAT, alleen deze repo, "Contents: Read and write" |
 | `CRON_SECRET` | Willekeurige lange string, beveiligt de cron-route |
