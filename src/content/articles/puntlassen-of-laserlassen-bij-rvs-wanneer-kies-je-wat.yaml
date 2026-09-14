@@ -1,38 +1,46 @@
-title: "Puntlassen of laserlassen bij RVS: wanneer kies je wat?"
+title: 'Puntlassen of laserlassen bij RVS: wanneer kies je wat?'
 slug: puntlassen-of-laserlassen-bij-rvs-wanneer-kies-je-wat
-date: "2026-09-14"
-intro: Bij het verbinden van RVS-plaatwerk zijn puntlassen (weerstandlassen) en
+date: '2026-09-14'
+intro: >-
+  Bij het verbinden van RVS-plaatwerk zijn puntlassen (weerstandlassen) en
   laserlassen twee veelgebruikte technieken, maar ze verschillen sterk in
   warmte-inbreng, vervorming en de zichtbaarheid van de naad. Voor technische
   inkopers en werkvoorbereiders is het belangrijk te weten welke techniek bij
   welke toepassing past, voordat een keuze in de tekening wordt vastgelegd. In
   dit artikel zetten we de technische verschillen naast elkaar.
 secties:
-  - kop: "Puntlassen (weerstandlassen): het principe"
+  - kop: 'Puntlassen (weerstandlassen): het principe'
     alineas:
-      - Bij puntlassen, ook wel weerstandlassen genoemd, worden twee
+      - >-
+        Bij puntlassen, ook wel weerstandlassen genoemd, worden twee
         overlappende plaatdelen tussen twee elektroden geklemd. Door een korte,
         hoge stroompuls te sturen ontstaat lokaal een smeltpunt op het raakvlak
         van de platen. De warmte-inbreng is zeer geconcentreerd en van korte
         duur, wat de omringende plaat relatief koud houdt.
-      - Deze techniek is van oorsprong ontwikkeld voor het snel en herhaalbaar
+      - >-
+        Deze techniek is van oorsprong ontwikkeld voor het snel en herhaalbaar
         verbinden van dunne, overlappende plaatdelen, vaak in seriematige
         productie. Omdat er geen lasdraad of extra materiaal nodig is, blijft de
         bewerking beperkt tot het smeltpunt zelf.
-  - kop: "Laserlassen: het principe"
+    lijst: []
+  - kop: 'Laserlassen: het principe'
     alineas:
-      - Bij laserlassen wordt een geconcentreerde laserstraal gebruikt om het
+      - >-
+        Bij laserlassen wordt een geconcentreerde laserstraal gebruikt om het
         materiaal lokaal te smelten, meestal in een doorlopende naad langs de
         voeg tussen twee delen. De warmte-inbreng per lengte-eenheid is laag
         doordat de laserbundel zeer nauwkeurig te richten is en de lasnaad smal
         blijft.
-      - Doordat de warmte-inbrengzone klein is, blijft de thermische vervorming
+      - >-
+        Doordat de warmte-inbrengzone klein is, blijft de thermische vervorming
         van het omliggende materiaal beperkt, ook bij langere, doorlopende
         naden. Dit maakt laserlassen geschikt voor constructies waarbij
         maatvastheid en een nette afwerking van belang zijn.
+    lijst: []
   - kop: Warmte-inbreng en vervorming
     alineas:
-      - Het belangrijkste technische onderscheid tussen beide technieken zit in
+      - >-
+        Het belangrijkste technische onderscheid tussen beide technieken zit in
         de manier waarop warmte wordt ingebracht. Puntlassen brengt warmte
         gelokaliseerd en kortstondig in op een enkel punt, waardoor vervorming
         rond dat punt beperkt blijft, maar bij dunne platen wel lokale
@@ -40,78 +48,93 @@ secties:
         warmte over een smalle, doorlopende lijn; de vervorming per naad is
         klein, maar bij lange naden of dunne wanden moet nog steeds rekening
         worden gehouden met interne spanningen.
-      - Voor RVS is dit onderscheid relevant omdat het materiaal een relatief
+      - >-
+        Voor RVS is dit onderscheid relevant omdat het materiaal een relatief
         lage warmtegeleiding heeft. Warmte blijft dus langer geconcentreerd op
         de plek van bewerking, wat het risico op aanloopkleuren en lokale
         structuurverandering vergroot naarmate de warmte-inbreng groter is.
+    lijst: []
   - kop: Zichtbaarheid van de naad en toepassing
     alineas:
-      - Puntlassen laat aan de zichtbare zijde vaak een lichte deuk of afdruk
+      - >-
+        Puntlassen laat aan de zichtbare zijde vaak een lichte deuk of afdruk
         van de elektrode achter, en de verbinding is niet doorlopend maar
         bestaat uit losse laspunten op regelmatige afstand. Dit is functioneel
         geschikt voor constructies waarbij de esthetiek van de naad niet de
         hoofdeis is, zoals interne dragende delen of bevestigingsplaten die niet
         in het zicht komen.
-      - Laserlassen resulteert in een smalle, doorlopende naad die met beperkte
+      - >-
+        Laserlassen resulteert in een smalle, doorlopende naad die met beperkte
         nabewerking vlak en overwegend egaal afgewerkt kan worden. Dat maakt de
         techniek geschikt voor zichtbare RVS-constructies, zoals behuizingen of
         apparatuur waarbij de lasnaad in het aanzicht valt en optisch weinig mag
         opvallen. Zie ook ons artikel over <a
         href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">industriële
         behuizingen op maat in RVS en aluminium</a>.
+    lijst: []
   - kop: Materiaaldikte en materiaalcombinatie
     alineas:
-      - Puntlassen is van oorsprong het meest geschikt voor dunnere,
+      - >-
+        Puntlassen is van oorsprong het meest geschikt voor dunnere,
         overlappende plaatdelen waarbij beide platen tussen de elektroden
         bereikbaar zijn. Bij toenemende plaatdikte neemt de benodigde stroom en
         klemkracht sterk toe, wat de techniek minder praktisch maakt voor dikker
         plaatwerk of voor stompe verbindingen zonder overlap.
-      - 'Laserlassen kan, afhankelijk van het lasproces en de gebruikte
+      - >-
+        Laserlassen kan, afhankelijk van het lasproces en de gebruikte
         laservermogen, over een breder bereik aan plaatdiktes worden ingezet en
         is ook geschikt voor stompe naden zonder overlap. Voor de keuze van het
         juiste RVS-type bij laswerk, zie ons artikel over <a
         href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
-        304 of 316: welke kies je voor plaatwerk en laswerk?</a>.'
-  - kop: "Nabehandeling: waarom passiveren bij laswerk niet mag ontbreken"
+        304 of 316: welke kies je voor plaatwerk en laswerk?</a>.
+    lijst: []
+  - kop: 'Nabehandeling: waarom passiveren bij laswerk niet mag ontbreken'
     alineas:
-      - "Ongeacht de gekozen lasmethode geldt voor RVS dat de warmte-inbreng
+      - >-
+        Ongeacht de gekozen lasmethode geldt voor RVS dat de warmte-inbreng
         tijdens het lassen de beschermende chroomoxidelaag lokaal aantast. Bij
         Assink & Schipholt volgt op laswerk daarom altijd een nabehandeling:
         eerst ontbramen, waar nodig glasparelstralen om aanloopkleuren en
         verontreiniging te verwijderen, en vervolgens passiveren om de
         beschermende oxidelaag te herstellen. Zonder passiveren blijft het
         materiaal op de gelaste zone gevoeliger voor corrosie, ook als de naad
-        er visueel schoon uitziet."
-      - Meer over deze stap leest u in ons artikel <a
+        er visueel schoon uitziet.
+      - >-
+        Meer over deze stap leest u in ons artikel <a
         href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">Waarom RVS
         passiveren na het lassen?</a>. Voor laserlassen in eigen huis, inclusief
         de mogelijkheden binnen ons machinepark, verwijzen we naar de pagina <a
         href="/plaatwerk/laserlassen/">laserlassen</a>.
+    lijst: []
 faq:
   - vraag: Is puntlassen geschikt voor RVS?
-    antwoord: Puntlassen kan technisch gezien worden toegepast op RVS, vooral bij
+    antwoord: >-
+      Puntlassen kan technisch gezien worden toegepast op RVS, vooral bij
       dunnere, overlappende plaatdelen waarbij de zichtbaarheid van de naad niet
       de belangrijkste eis is. De keuze hangt af van plaatdikte,
       materiaalcombinatie en de gewenste afwerking van het eindproduct.
   - vraag: Wat is het belangrijkste verschil tussen puntlassen en laserlassen?
-    antwoord: Puntlassen brengt warmte lokaal en kortstondig in via een enkel
-      lasounpunt tussen elektroden, terwijl laserlassen een smalle, doorlopende
-      naad creëert met een geconcentreerde, nauwkeurig gestuurde warmte-inbreng.
-      Dit verschil bepaalt vervorming, zichtbaarheid van de naad en geschiktheid
-      per toepassing.
+    antwoord: >-
+      Puntlassen brengt warmte lokaal en kortstondig in via een enkel lasounpunt
+      tussen elektroden, terwijl laserlassen een smalle, doorlopende naad
+      creëert met een geconcentreerde, nauwkeurig gestuurde warmte-inbreng. Dit
+      verschil bepaalt vervorming, zichtbaarheid van de naad en geschiktheid per
+      toepassing.
   - vraag: Biedt Assink & Schipholt puntlassen aan?
-    antwoord: Dit artikel beschrijft de technieken puntlassen en laserlassen op
+    antwoord: >-
+      Dit artikel beschrijft de technieken puntlassen en laserlassen op
       neutrale, technische basis. Voor de mogelijkheden die wij zelf in huis
       bieden, waaronder laserlassen, verwijzen we naar onze dienstpagina over
       laserlassen.
   - vraag: Waarom is passiveren nodig na het lassen van RVS?
-    antwoord: Het lasproces beschadigt lokaal de beschermende oxidelaag van RVS door
-      de warmte-inbreng. Passiveren herstelt deze oxidelaag na het ontbramen en
+    antwoord: >-
+      Het lasproces beschadigt lokaal de beschermende oxidelaag van RVS door de
+      warmte-inbreng. Passiveren herstelt deze oxidelaag na het ontbramen en
       eventueel stralen, en is nodig om de corrosiebestendigheid van de gelaste
       zone te waarborgen.
-gepubliceerd: false
+gepubliceerd: true
 seo:
-  title: "Puntlassen of laserlassen bij RVS: het verschil"
-  description: "Puntlassen versus laserlassen bij RVS: verschillen in
-    warmte-inbreng, vervorming, naadzichtbaarheid en dikte uitgelegd voor
-    inkopers en engineers."
+  title: 'Puntlassen of laserlassen bij RVS: het verschil'
+  description: >-
+    Puntlassen versus laserlassen bij RVS: verschillen in warmte-inbreng,
+    vervorming, naadzichtbaarheid en dikte uitgelegd voor inkopers en engineers.
