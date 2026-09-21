@@ -1,0 +1,92 @@
+title: "Aluminium lassen: waarom warmte-inbreng bepaalt of het maatvast blijft"
+slug: aluminium-lassen-waarom-warmte-inbreng-bepaalt-of-het-maatvast-blijft
+date: "2026-09-21"
+intro: Aluminium gedraagt zich bij het lassen wezenlijk anders dan staal. Waar
+  staal warmte relatief traag afvoert en daardoor voorspelbaar vervormt,
+  reageert aluminium sneller en heftiger op de warmte die tijdens het lassen
+  wordt ingebracht. Dat heeft directe gevolgen voor de maatvastheid van een
+  las-constructie. In dit artikel leggen we uit welke materiaaleigenschappen
+  daarbij een rol spelen en wat dat betekent voor voorbereiding, opspanning en
+  controle achteraf.
+secties:
+  - kop: Waarom aluminium anders reageert dan staal
+    alineas:
+      - Aluminium heeft een aanzienlijk hogere warmtegeleiding dan staal. Warmte
+        die tijdens het lassen wordt ingebracht, verspreidt zich daardoor snel
+        door het hele werkstuk in plaats van geconcentreerd te blijven bij de
+        lasnaad. Dat lijkt gunstig, maar betekent in de praktijk dat een groter
+        deel van het product opwarmt en dus ook uitzet. Bij het afkoelen trekt
+        het materiaal weer samen, en die krimp is bij aluminium relatief groot
+        ten opzichte van staal.
+      - "Daarnaast heeft aluminium een oxidehuid: een dun laagje aluminiumoxide
+        dat direct aan de lucht ontstaat en dat een aanzienlijk hoger smeltpunt
+        heeft dan het onderliggende materiaal. Wordt deze laag niet goed
+        verwijderd of verstoort ze de laspoel, dan ontstaat verhoogd risico op
+        poreusheid en insluitingen in de las. Dat raakt niet alleen de sterkte,
+        maar kan ook lokaal tot onregelmatige krimp leiden."
+      - De combinatie van snelle warmteverspreiding, relatief grote uitzetting
+        en krimp, en de oxidehuid maakt dat vervorming bij aluminium sneller en
+        minder voorspelbaar optreedt dan bij staal. Wie dat niet meeneemt in de
+        voorbereiding, loopt het risico dat een op tekening correct gelast
+        product na afkoeling buiten tolerantie valt.
+  - kop: "Voorbereiding: schoon werk als basis"
+    alineas:
+      - Omdat de oxidehuid en oppervlakteverontreiniging (olie, vet,
+        oxidatieresten) een directe oorzaak zijn van poreusheid, begint maatvast
+        lassen bij een schone en goed voorbereide naad. Randen die vlak voor het
+        lassen mechanisch of chemisch zijn ontvet en waar nodig ontdaan van
+        oxide, geven een stabielere laspoel en minder kans op gasinsluitingen.
+      - Ook de manier waarop platen en profielen zijn voorbewerkt speelt een
+        rol. Nauwkeurig lasersnijwerk levert consistente naadaansluitingen op,
+        wat helpt om de warmte-inbreng over de hele lengte van de las
+        gelijkmatig te houden. Ongelijke spleten of bramen dwingen de lasser tot
+        lokaal meer of minder warmte-inbreng, en dat werkt vervorming juist in
+        de hand.
+  - kop: Opspannen en volgorde van lassen
+    alineas:
+      - Bij aluminium is een stevige en doordachte opspanning belangrijker dan
+        bij staal, precies omdat het materiaal sneller vervormt onder warmte.
+        Een opspanning die het werkstuk tijdens het lassen op zijn plaats houdt,
+        beperkt de vrijheid van het materiaal om te bewegen terwijl het nog warm
+        en dus minder stijf is.
+      - De volgorde waarin lasnaden worden gelegd, bepaalt eveneens hoe de
+        warmte zich opbouwt in het product. Door bewust te kiezen welke naad
+        eerst gelast wordt en waar men een pauze inlast om te laten afkoelen,
+        wordt voorkomen dat warmte zich opstapelt in één zone van het werkstuk.
+        Dat is met name relevant bij grotere constructies met meerdere lasnaden
+        dicht bij elkaar.
+  - kop: Naadopbouw en controle na het lassen
+    alineas:
+      - Ook de opbouw van de las zelf, dus het aantal lagen en de manier waarop
+        deze worden gelegd, beïnvloedt de uiteindelijke maatvastheid. Een las
+        die in meerdere gecontroleerde stappen wordt opgebouwd, geeft doorgaans
+        minder totale warmte-inbreng op één moment dan een las die in één keer
+        volledig wordt gevuld.
+      - Na het lassen is controle van de maten essentieel, juist omdat
+        vervorming bij aluminium zich soms pas volledig toont nadat het product
+        is afgekoeld tot omgevingstemperatuur. Voor kritische maten is het
+        daarom aan te raden pas na volledige afkoeling definitief te meten en,
+        waar nodig, na te bewerken.
+faq:
+  - vraag: Waarom vervormt aluminium sneller dan staal bij lassen?
+    antwoord: Aluminium geleidt warmte veel sneller dan staal, waardoor een groter
+      deel van het werkstuk opwarmt en uitzet. Bij afkoeling treedt relatief
+      grote krimp op, wat sneller tot maatafwijkingen leidt dan bij staal.
+  - vraag: Wat is de oxidehuid en waarom is die een aandachtspunt?
+    antwoord: Aluminium vormt direct aan de lucht een dun laagje aluminiumoxide met
+      een veel hoger smeltpunt dan het onderliggende materiaal. Wordt deze laag
+      niet goed verwijderd voor het lassen, dan ontstaat een verhoogd risico op
+      poreusheid in de las.
+  - vraag: Hoe wordt vervorming bij aluminium lassen beperkt?
+    antwoord: Door een schone naadvoorbereiding, een doordachte opspanning die het
+      werkstuk tijdens het lassen fixeert, een bewuste lasvolgorde die
+      warmteopbouw spreidt, en controle van de maten pas na volledige afkoeling.
+  - vraag: Welke materialen worden bij aluminium laswerk vaak gecombineerd?
+    antwoord: Aluminium wordt regelmatig ingezet naast RVS, bijvoorbeeld in
+      behuizingen of constructies waarbij gewicht een rol speelt. Meer daarover
+      leest u in ons artikel over industriële behuizingen op maat.
+gepubliceerd: false
+seo:
+  title: "Aluminium lassen: waarom warmte-inbreng de maatvastheid bepaalt"
+  description: "Waarom aluminium lassen anders vraagt dan staal: warmtegeleiding,
+    oxidehuid en vervorming. Praktische aandachtspunten voor maatvast laswerk."
