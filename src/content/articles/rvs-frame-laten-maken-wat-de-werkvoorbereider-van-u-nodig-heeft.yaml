@@ -1,59 +1,72 @@
-title: "RVS frame laten maken: wat de werkvoorbereider van u nodig heeft"
+title: 'RVS frame laten maken: wat de werkvoorbereider van u nodig heeft'
 slug: rvs-frame-laten-maken-wat-de-werkvoorbereider-van-u-nodig-heeft
-date: "2026-09-28"
-intro: Een aanvraag voor een RVS-frame of -samenstelling verloopt sneller en
-  scherper als de aanlevering in één keer compleet is. Ontbrekende gegevens over
+date: '2026-09-28'
+intro: >-
+  Een aanvraag voor een RVS-frame of -samenstelling verloopt sneller en scherper
+  als de aanlevering in één keer compleet is. Ontbrekende gegevens over
   materiaal, dikte of nabewerking leiden tot vragen over en weer, en dat kost
   tijd in de calculatie. Dit artikel loopt de aanlevercheck punt voor punt
   langs, met uitleg waarom elk onderdeel meetelt voor maakbaarheid en prijs.
 secties:
-  - kop: "Tekening of 3D-model: welk formaat"
+  - kop: 'Tekening of 3D-model: welk formaat'
     alineas:
-      - Voor een frame of samenstelling is een 3D-model (STEP is de meest
+      - >-
+        Voor een frame of samenstelling is een 3D-model (STEP is de meest
         bruikbare indeling) de basis voor de calculatie en de werkvoorbereiding.
         Daarnaast is een 2D-tekening nodig met de maten die echt vastliggen,
         lasnaadaanduidingen en eventuele oppervlaktebehandeling. Ontbreekt het
         3D-model, dan moet dit alsnog opgebouwd worden op basis van de
         2D-tekening, wat extra doorlooptijd kost voordat er geoffreerd kan
         worden.
-      - Geef bij een samenstelling ook aan welke onderdelen los geleverd worden
+      - >-
+        Geef bij een samenstelling ook aan welke onderdelen los geleverd worden
         en welke samengesteld en gelast moeten aankomen. Dat bepaalt of er een
         lasvolgorde en eventuele hulpmiddelen (mallen) uitgewerkt moeten worden.
-  - kop: "Materiaalkeuze: 304 of 316"
+    lijst: []
+  - kop: 'Materiaalkeuze: 304 of 316'
     alineas:
-      - "RVS 304 en RVS 316 verschillen in corrosiebestendigheid en prijs. De
+      - >-
+        RVS 304 en RVS 316 verschillen in corrosiebestendigheid en prijs. De
         keuze hangt af van de toepassingsomgeving: vochtigheid,
         reinigingsmiddelen, chloriden of buitengebruik vragen doorgaans om 316.
         Geef deze keuze expliciet aan in de aanvraag; zonder specificatie moet
-        dit nagevraagd worden, wat de aanvraag vertraagt."
-      - 'Een uitgebreide vergelijking staat in <a
+        dit nagevraagd worden, wat de aanvraag vertraagt.
+      - >-
+        Een uitgebreide vergelijking staat in <a
         href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
-        304 of 316: welke kies je voor plaatwerk en laswerk?</a>.'
+        304 of 316: welke kies je voor plaatwerk en laswerk?</a>.
+    lijst: []
   - kop: Plaatdikte en profielkeuze
     alineas:
-      - Bij plaatwerk in RVS wordt bij ons lasersnijden een dikte van 0,5 tot 20
+      - >-
+        Bij plaatwerk in RVS wordt bij ons lasersnijden een dikte van 0,5 tot 20
         mm verwerkt. Geef de gewenste dikte per onderdeel aan, want dit bepaalt
         niet alleen de snijtijd maar ook of een onderdeel na het snijden nog
         gezet moet worden op de kantpers, en met welke perskracht dat kan.
-      - 'Voor frames met buisprofielen speelt een vergelijkbare afweging tussen
+      - >-
+        Voor frames met buisprofielen speelt een vergelijkbare afweging tussen
         plaatwerk en buismateriaal. Welke methode voor uw constructie logischer
         is, leest u in <a
         href="/kennisbank/lasersnijden-versus-buislasersnijden-wanneer-kiest-u-wat/">Lasersnijden
         versus buislasersnijden: wanneer kiest u wat?</a>. Geef bij
         buisprofielen de wanddikte en het profiel (rond, vierkant, rechthoekig)
-        mee zodat de juiste bewerking ingepland kan worden.'
+        mee zodat de juiste bewerking ingepland kan worden.
+    lijst: []
   - kop: Toleranties die echt nodig zijn
     alineas:
-      - Niet elke maat op een frame heeft een strikte tolerantie nodig. Geef
+      - >-
+        Niet elke maat op een frame heeft een strikte tolerantie nodig. Geef
         alleen de maten aan waar functionele eisen aan hangen, bijvoorbeeld
         aansluitmaten voor andere machineonderdelen of boutpatronen. Een
         tekening waarin alles even strak getolereerd is, dwingt tot extra
         controlestappen en nabewerking die niet altijd nodig zijn, en dat werkt
         door in de prijs. Vermeld dus expliciet welke maten kritisch zijn en
         welke vrij zijn.
-  - kop: "Nabewerking: ontbramen, stralen, passiveren"
+    lijst: []
+  - kop: 'Nabewerking: ontbramen, stralen, passiveren'
     alineas:
-      - "Bij RVS-frames die gelast worden, hoort een vaste volgorde van
+      - >-
+        Bij RVS-frames die gelast worden, hoort een vaste volgorde van
         nabehandeling: ontbramen, waar nodig glasparelstralen, en na het lassen
         passiveren. Stralen verwijdert aanloopkleuren en verontreiniging die
         tijdens het lassen ontstaan; passiveren herstelt daarna de beschermende
@@ -61,42 +74,51 @@ secties:
         corrosiebestendigheid van het gelaste frame niet gegarandeerd op het
         niveau waarvoor RVS gekozen is. Geef in de aanvraag aan of en waar deze
         nabewerkingen gewenst zijn, zeker bij zichtwerk of gebruik in vochtige
-        of hygiënische omgevingen."
-      - Achtergrond over waarom deze stap na het lassen nodig is, staat in <a
+        of hygiënische omgevingen.
+      - >-
+        Achtergrond over waarom deze stap na het lassen nodig is, staat in <a
         href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">Waarom RVS
         passiveren na het lassen?</a>.
+    lijst: []
   - kop: Aantallen, toepassing, gewicht en afmetingen
     alineas:
-      - Geef het aantal frames op (prototype, kleine serie of doorlopende
+      - >-
+        Geef het aantal frames op (prototype, kleine serie of doorlopende
         productie) en de toepassing. Dat laatste helpt om materiaalkeuze en
         nabewerking te toetsen aan de gebruiksomgeving, bijvoorbeeld een
         machineframe binnen de voedingsmiddelenindustrie.
-      - Voor de constructie en hijsvoorbereiding is het van belang het geschatte
+      - >-
+        Voor de constructie en hijsvoorbereiding is het van belang het geschatte
         stukgewicht en de bouwhoogte te vermelden. Wij verwerken frames en
         constructies tot een stukgewicht van 10 ton en een bouwhoogte tot 8 m.
         Ligt uw frame buiten deze grenzen, geef dit dan vroeg in het traject aan
         zodat dit meegenomen kan worden in de haalbaarheidscheck.
+    lijst: []
 faq:
   - vraag: Moet ik altijd een 3D-model aanleveren voor een RVS-frame?
-    antwoord: Een 3D-model is niet verplicht, maar versnelt de calculatie
-      aanzienlijk. Zonder 3D-model wordt dit eerst opgebouwd aan de hand van de
-      2D-tekening, wat extra tijd kost voordat een offerte gemaakt kan worden.
+    antwoord: >-
+      Een 3D-model is niet verplicht, maar versnelt de calculatie aanzienlijk.
+      Zonder 3D-model wordt dit eerst opgebouwd aan de hand van de 2D-tekening,
+      wat extra tijd kost voordat een offerte gemaakt kan worden.
   - vraag: Wat als ik nog niet weet of ik 304 of 316 nodig heb?
-    antwoord: Geef dan de toepassingsomgeving zo concreet mogelijk aan
-      (binnen/buiten, reiniging, chloriden). Op basis daarvan kan een
-      materiaaladvies gegeven worden, al blijft een expliciete keuze de aanvraag
-      sneller maken.
+    antwoord: >-
+      Geef dan de toepassingsomgeving zo concreet mogelijk aan (binnen/buiten,
+      reiniging, chloriden). Op basis daarvan kan een materiaaladvies gegeven
+      worden, al blijft een expliciete keuze de aanvraag sneller maken.
   - vraag: Is passiveren altijd nodig bij een gelast RVS-frame?
-    antwoord: Bij gelaste RVS-constructies wordt passiveren geadviseerd om de
+    antwoord: >-
+      Bij gelaste RVS-constructies wordt passiveren geadviseerd om de
       beschermende oxidelaag te herstellen na het lassen. Of het in uw situatie
       strikt noodzakelijk is, hangt af van de toepassing, maar het is een
       standaardstap in onze nabehandeling van RVS-laswerk.
   - vraag: Wat gebeurt er als mijn frame zwaarder is dan 10 ton of hoger dan 8 m?
-    antwoord: Geef dit dan direct aan bij de aanvraag. Ons machinepark en de
+    antwoord: >-
+      Geef dit dan direct aan bij de aanvraag. Ons machinepark en de
       hijsmiddelen zijn ingericht op stukgewichten tot 10 ton en bouwhoogtes tot
       8 m; buiten deze grenzen wordt de haalbaarheid apart beoordeeld.
-gepubliceerd: false
+gepubliceerd: true
 seo:
-  title: "RVS frame laten maken: complete aanlevercheck"
-  description: Wilt u een RVS frame laten maken? Deze aanlevercheck laat zien
-    welke gegevens nodig zijn voor een offerte in één keer goed.
+  title: 'RVS frame laten maken: complete aanlevercheck'
+  description: >-
+    Wilt u een RVS frame laten maken? Deze aanlevercheck laat zien welke
+    gegevens nodig zijn voor een offerte in één keer goed.
