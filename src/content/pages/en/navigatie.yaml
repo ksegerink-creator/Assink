@@ -91,6 +91,9 @@ sectoren:
   - label: Semiconductor
     slug: semicon
     idx: '9'
+  - label: Defence
+    slug: constructies
+    idx: '10'
 footerDiensten:
   - label: Sheet metal
     slug: plaatwerk
