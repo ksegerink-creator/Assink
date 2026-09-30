@@ -62,6 +62,22 @@ export const REDIRECTS: Record<string, string> = {
   "/category/zonder-categorie-nl": "/kennisbank/",
   // Oude 404-pagina's waren echte, indexeerbare pagina's.
   "/404-pagina": "/",
+
+  // ── 4. Samengevoegde dunne pagina's (30 september 2026) ────────────────
+  // Drie dienstpagina's die hun eigen onderwerp niet droegen. De eerste
+  // concurreerde met /industriele-behuizing/ op exact dezelfde zoektermen en
+  // verloor daar structureel (472 vertoningen, 0 kliks, 36 woorden); de andere
+  // twee kregen over de hele exportperiode geen enkele vertoning en er linkte
+  // vrijwel niets naar. De inhoud is opgegaan in de doelpagina's.
+  "/plaatwerk/rvs-behuizingen-machinebeplating": "/industriele-behuizing/",
+  "/en/plaatwerk/rvs-behuizingen-machinebeplating": "/en/industriele-behuizing/",
+  "/de/plaatwerk/rvs-behuizingen-machinebeplating": "/de/industriele-behuizing/",
+  "/plaatwerk/rvs-constructies-voor-machinebouw": "/rvs-constructies/",
+  "/en/plaatwerk/rvs-constructies-voor-machinebouw": "/en/rvs-constructies/",
+  "/de/plaatwerk/rvs-constructies-voor-machinebouw": "/de/rvs-constructies/",
+  "/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/plaatwerk/rvs/",
+  "/en/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/en/plaatwerk/rvs/",
+  "/de/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/de/plaatwerk/rvs/",
 };
 
 /**

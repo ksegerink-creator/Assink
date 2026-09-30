@@ -29,6 +29,15 @@ body:
 - 'Componentintegratie doen we in dezelfde doorloop: uitsparingen voor wartels, displays en koeling worden
   meegesneden op de laser, en voor montagepunten werken we met <a href="/plaatwerk/persmoeren-trekmoeren/">pers-
   en trekmoeren</a>. Dat scheelt losse bewerkingen achteraf en houdt de maatvoering onder controle.'
+- Machinebeplating vraagt iets anders dan een gesloten behuizing. Panelen die een machine omkasten moeten
+  demontabel blijven voor onderhoud, mogen niet resoneren en moeten na het coaten nog op het frame passen.
+  Wij leveren die beplating passend bij de constructie eronder, met bevestigingen die zonder aanpassing
+  op locatie te monteren zijn.
+- 'Staat de behuizing buiten, dan verschuiven de eisen. Bij een kiosk, een laadpaal of een installatie
+  in de infrastructuur telt vooral hoe het water eruit blijft: overlappende naden, een afwaterende bovenzijde
+  en doordachte kabeldoorvoeren doen meer dan een zwaardere plaatdikte. In die omgevingen ligt RVS 316
+  voor de hand vanwege strooizout en regen. Geef bij uw aanvraag door of de behuizing in de buitenlucht
+  komt te staan, want dat bepaalt zowel de materiaalkeuze als de naaduitvoering.'
 - 'Wat wij nodig hebben: de buitenmaten, de posities van uitsparingen en montagepunten, het materiaal,
   of het om zichtwerk gaat en welke afwerking daarbij hoort, en het aantal. In ons kennisbankartikel over
   <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">industriële behuizingen op maat</a>
@@ -52,9 +61,9 @@ applications:
 - Offshore & maritiem
 - Procesindustrie & chemie (ATEX)
 related:
-- slug: plaatwerk/rvs-behuizingen-machinebeplating
-  label: RVS-behuizingen & machinebeplating
-  desc: Omkastingen en beplating.
+- slug: machinebouw
+  label: Machinebouw
+  desc: Complete machines en bouwgroepen.
 - slug: plaatwerk/rvs
   label: RVS
   desc: Roestvast plaatwerk en zichtwerk.

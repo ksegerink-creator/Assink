@@ -61,9 +61,6 @@ export const SECTORS: NavItem[] = [
   { slug: "machinebouw", label: "Machinebouw", idx: "1" },
   { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsmiddelenindustrie", idx: "2" },
   { slug: "industriele-behuizing", label: "Industriële behuizing", idx: "3" },
-  { slug: "plaatwerk/rvs-plaatwerk-voor-machinebouw", label: "RVS-plaatwerk voor machinebouw", idx: "4" },
-  { slug: "plaatwerk/rvs-constructies-voor-machinebouw", label: "RVS-constructies voor machinebouw", idx: "5" },
-  { slug: "plaatwerk/rvs-behuizingen-machinebeplating", label: "RVS-behuizingen & machinebeplating", idx: "6" },
 ];
 
 /** Footer service shortlist. */
