@@ -1,33 +1,96 @@
-title: "Robotlassen"
-slug: "plaatwerk/robotlassen"
-template: "service"
-group: "lastechniek"
+title: Robotlassen
+slug: plaatwerk/robotlassen
+template: service
+group: lastechniek
 order: 43
-kicker: "Lastechniek 3.3"
-h1: "Robotlassen — geautomatiseerd lassen in serie"
-intro: "Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Voor grotere series zetten we geautomatiseerd lassen in via een vaste partner, terwijl het plaatwerk, het samenstellen en de nabewerking bij ons in Hengelo gebeuren. U houdt één aanspreekpunt voor de hele serie."
+kicker: Lastechniek 3.3
+h1: Robotlassen — geautomatiseerd lassen in serie
+intro: Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Voor grotere series zetten
+  we geautomatiseerd lassen in via een vaste partner, terwijl het plaatwerk, het samenstellen en de nabewerking
+  bij ons in Hengelo gebeuren. U houdt één aanspreekpunt voor de hele serie.
 heroPhoto:
-  # Let op: in Hengelo staat geen cobot of lasrobot. Vraag hier dus geen foto
-  # van een lasopstelling aan — die kan niet bij Assink gemaakt worden.
-  subject: "Gelaste samenstelling uit serieproductie, lasnaad in beeld"
-  orient: "Liggend 16:10"
-  crop: "Werkstuk + lasnaad"
-  comp: "Doorlopende lasnaad op een maatvast werkstuk"
+  subject: Gelaste samenstelling uit serieproductie, lasnaad in beeld
+  orient: Liggend 16:10
+  crop: Werkstuk + lasnaad
+  comp: Doorlopende lasnaad op een maatvast werkstuk
 body:
-  - "Geautomatiseerd lassen legt lasnaden onder vooraf ingestelde parameters, met continu monitoren van stroom, spanning, voortloopsnelheid en warmte-inbreng. Dat geeft een gelijkmatige lasrupsvorm en constante inbranding, ideaal voor repeterende productie in staal, RVS en aluminium."
-  - "Voordelen: minder variatie, lagere uitval, minder nabewerking en betrouwbare levertijden. Engineering vormt de basis — opspanning, lasvolgorde, toegankelijkheid en materiaalgedrag bepalen de procesefficiëntie. Die voorbereiding doen wij."
-materials: ["Staal", "RVS", "Aluminium"]
+- Geautomatiseerd lassen legt lasnaden onder vooraf ingestelde parameters, met continu monitoren van stroom,
+  spanning, voortloopsnelheid en warmte-inbreng. Dat geeft een gelijkmatige lasrupsvorm en constante inbranding,
+  ideaal voor repeterende productie in staal, RVS en aluminium.
+- 'Voordelen: minder variatie, lagere uitval, minder nabewerking en betrouwbare levertijden. Engineering
+  vormt de basis — opspanning, lasvolgorde, toegankelijkheid en materiaalgedrag bepalen de procesefficiëntie.
+  Die voorbereiding doen wij.'
+- 'Of geautomatiseerd lassen loont, hangt minder af van het aantal stuks dan van de herhaling. De tijd
+  zit vooraf: opspanning bouwen, baan programmeren en parameters inregelen. Bij een serie die één keer
+  langskomt weegt die voorbereiding zwaar; bij een product dat elk kwartaal terugkeert verdient hij zich
+  telkens opnieuw terug. Leg uw jaarvolume en afroepritme voor, dan rekenen wij die afweging door.'
+- 'De rolverdeling is bij ons expliciet. Engineering, werkvoorbereiding, plaatwerk, opspanning, samenstellen
+  en nabewerking gebeuren in Hengelo. Het geautomatiseerde lassen zelf voeren wij niet in eigen huis uit:
+  dat gebeurt binnen onze groep bij Baas Metaal. Wij hebben in Hengelo geen lasrobot en geen cobot staan.
+  Voor u blijft het één opdracht, één aanspreekpunt en één partij die verantwoordelijk is voor de maatvoering
+  van het geheel.'
+- 'Niet elk product leent zich ervoor. Een lasrobot volgt een vaste baan, dus de naad moet bereikbaar
+  zijn, de delen moeten elke keer identiek in de mal liggen en de voorbewerking moet strak zijn. Juist
+  daar zit onze voorbereiding: wij snijden de delen op de laser, zodat de spleet klein en constant blijft.
+  Grote of wisselende spleten zijn de belangrijkste reden dat geautomatiseerd lassen niet het verwachte
+  resultaat geeft.'
+- Bij kleine aantallen, prototypes en zichtwerk is handmatig <a href="/plaatwerk/lassen/">TIG- of MIG-lassen</a>
+  of <a href="/plaatwerk/laserlassen/">laserlassen</a> meestal de betere route. Laserlassen brengt weinig
+  warmte in en vraagt weinig nabewerking, wat bij een strakke zichtnaad zwaarder weegt dan snelheid.
+- 'Voor een beoordeling hebben wij nodig: de tekening of het 3D-model van de samenstelling, het materiaal
+  en de plaatdikte, de lasnaden met hun eisen, het aantal per serie en het afroepritme. Daarmee bepalen
+  wij of geautomatiseerd lassen in uw geval iets oplevert, of dat handlassen goedkoper uitvalt.'
+materials:
+- Staal
+- RVS
+- Aluminium
 process:
-  - { step: "Engineering", desc: "Opspanning, lasvolgorde en toegankelijkheid bepalen." }
-  - { step: "Programmeren", desc: "Parameters en baan instellen." }
-  - { step: "Geautomatiseerd lassen", desc: "Uitgevoerd bij onze partner, met monitoring." }
-  - { step: "Controle", desc: "Naadcontrole en maatvastheid." }
-applications: ["Middelgrote tot grote series", "Producten met terugkerende lasnaden", "Constructies met strikte maatvastheid"]
+- step: Engineering
+  desc: Opspanning, lasvolgorde en toegankelijkheid bepalen.
+- step: Programmeren
+  desc: Parameters en baan instellen.
+- step: Geautomatiseerd lassen
+  desc: Uitgevoerd bij onze partner, met monitoring.
+- step: Controle
+  desc: Naadcontrole en maatvastheid.
+applications:
+- Middelgrote tot grote series
+- Producten met terugkerende lasnaden
+- Constructies met strikte maatvastheid
+faq:
+- vraag: Vanaf welke serie is geautomatiseerd lassen interessant?
+  antwoord: 'Daar is geen vast aantal voor. Bepalend is de herhaling: de tijd zit in het bouwen van de
+    opspanning en het programmeren van de baan, en die voorbereiding verdient zich pas terug als het product
+    vaker terugkomt. Geef uw jaarvolume en afroepritme door, dan rekenen wij de afweging door tegen handlassen.'
+- vraag: Hebben jullie zelf een lasrobot in huis?
+  antwoord: Nee. In Hengelo staat geen lasrobot en geen cobot. Het geautomatiseerde lassen gebeurt binnen
+    onze groep bij Baas Metaal. Wij verzorgen de engineering, het plaatwerk, de opspanning, het samenstellen
+    en de nabewerking, en houden de regie over de hele serie.
+- vraag: In welke materialen kan seriematig gelast worden?
+  antwoord: Staal, RVS en aluminium. Per materiaal verschillen de parameters en de warmte-inbreng; bij
+    RVS hoort na het lassen altijd het verwijderen van aanloopkleuren en passiveren, omdat de corrosiebestendigheid
+    rond de naad anders achteruitgaat.
+- vraag: Wat bepaalt of mijn product zich leent voor robotlassen?
+  antwoord: Bereikbaarheid van de naad, een herhaalbare opspanning en een strakke voorbewerking. Een robot
+    volgt een vaste baan, dus de delen moeten elke keer identiek liggen en de spleet moet klein en constant
+    zijn. Wij snijden de delen daarom op de laser.
+- vraag: Wie is verantwoordelijk voor de kwaliteit als het lassen bij een partner gebeurt?
+  antwoord: Wij. U heeft één opdracht en één aanspreekpunt. Wij verzorgen de ingangscontrole, de maatcontrole
+    en het samenstellen, en zijn aanspreekbaar op de maatvoering van het geheel. Ons kwaliteitssysteem
+    is ISO 9001-gecertificeerd en voor laswerk werken wij onder ISO 3834-2.
 related:
-  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "Alle lasmethoden." }
-  - { slug: "constructies", label: "Constructies", desc: "Gelaste samenstellingen." }
-  - { slug: "machinepark", label: "Machinepark", desc: "Ons machinepark." }
+- slug: plaatwerk/lassen
+  label: Lassen
+  desc: Alle lasmethoden.
+- slug: constructies
+  label: Constructies
+  desc: Gelaste samenstellingen.
+- slug: machinepark
+  label: Machinepark
+  desc: Ons machinepark.
 seo:
-  title: "Robotlassen — constante kwaliteit in serie"
-  description: "Geautomatiseerd lassen voor series met constante lasnaadkwaliteit. Engineering, plaatwerk en samenstellen doen wij; het lassen zelf besteden we uit."
-translated: ["nl"]
+  title: Robotlassen — constante kwaliteit in serie
+  description: Geautomatiseerd lassen voor series met constante lasnaadkwaliteit. Engineering, plaatwerk
+    en samenstellen doen wij; het lassen zelf besteden we uit.
+translated:
+- nl

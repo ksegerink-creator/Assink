@@ -1,37 +1,105 @@
-title: "Lasersnijden"
-slug: "plaatwerk/lasersnijden"
-template: "service"
-group: "snijden"
+title: Lasersnijden
+slug: plaatwerk/lasersnijden
+template: service
+group: snijden
 order: 31
-kicker: "Snijden 2.1"
-h1: "Lasersnijden"
-intro: "2D-lasersnijden van staal, RVS en aluminium met hoge precisie en minimale toleranties op onze Trumpf TruLaser 3040."
+kicker: Snijden 2.1
+h1: Lasersnijden
+intro: 2D-lasersnijden van staal, RVS en aluminium met hoge precisie en minimale toleranties op onze Trumpf
+  TruLaser 3040.
 heroPhoto:
-  subject: "Lasersnijmachine in bedrijf — snijkop boven plaat"
-  orient: "Liggend 16:10"
-  crop: "Machine-detail"
-  comp: "Snijkop, vonken, plaatveld"
+  subject: Lasersnijmachine in bedrijf — snijkop boven plaat
+  orient: Liggend 16:10
+  crop: Machine-detail
+  comp: Snijkop, vonken, plaatveld
 body:
-  - "Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering. Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en zetten."
-materials: ["Staal", "RVS", "Aluminium", "Gegalvaniseerd staal"]
+- Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering.
+  Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en zetten.
+- 'Welke plaatdikte haalbaar is, verschilt per materiaal. Op de Trumpf TruLaser 3040, een fiberlaser van
+  4 kW, snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd
+  staal van 0,5 tot 10 mm. Aluminium en RVS reflecteren en geleiden warmte anders dan staal, wat het bereik
+  aan de bovenkant begrenst. Valt uw aanvraag buiten deze grenzen, leg hem dan voor: binnen onze groep
+  is vaak meer mogelijk dan op onze eigen machine.'
+- Lasersnijden is contactloos, dus er staat geen mechanische kracht op het materiaal en het werkstuk vervormt
+  niet door de bewerking zelf. Dat maakt fijne contouren, smalle stegen en kleine gaten haalbaar die met
+  ponsen of zagen niet lukken. De warmte-beïnvloede zone langs de snede blijft smal, wat vooral telt als
+  er daarna nog gezet of gelast wordt.
+- 'Voor het snijden gaat er een stap aan vooraf die de prijs mede bepaalt: het nesten. Door delen slim
+  over de plaat te verdelen, benutten wij het materiaal zo goed mogelijk en beperken wij de restplaat.
+  Bij series levert dat direct materiaalbesparing op, en bij enkelstuks kunnen wij een deel vaak meenemen
+  op een plaat die toch al opengaat.'
+- Na het snijden zit er een braam op de rand. Wij ontbramen machinaal op een Timesavers 42 Series RB,
+  zodat de randen veilig en braamvrij zijn voordat er iemand mee verder werkt — dat is niet alleen een
+  kwestie van afwerking maar ook van arbeidsveiligheid bij u op de lijn. Daarna volgt meestal <a href="/plaatwerk/zetten/">zetten</a>,
+  waarbij de snijkant de buitenzijde van de buiging wordt en dus zichtbaar blijft.
+- 'Wat wij nodig hebben om lasersnijwerk te beoordelen: een tekening of 3D-model, het materiaal en de
+  plaatdikte, het aantal stuks en of de delen ontbraamd of verder bewerkt moeten worden. Twijfelt u over
+  de materiaalkeuze of de dikte, dan denken wij daar graag in mee voordat de tekening definitief is.'
+materials:
+- Staal
+- RVS
+- Aluminium
+- Gegalvaniseerd staal
 process:
-  - { step: "Nesten", desc: "Efficiënte plaatindeling." }
-  - { step: "Snijden", desc: "Contactloos lasersnijden." }
-  - { step: "Ontbramen", desc: "Braamvrije randen." }
+- step: Nesten
+  desc: Efficiënte plaatindeling.
+- step: Snijden
+  desc: Contactloos lasersnijden.
+- step: Ontbramen
+  desc: Braamvrije randen.
 specs:
-  - { label: "Machine", value: "Trumpf TruLaser 3040" }
-  - { label: "Type", value: "2D-lasermachine" }
-  - { label: "Materialen", value: "staal, RVS, aluminium, gegalvaniseerd staal" }
-  - { label: "Plaatdikte staal", value: "0,5–25 mm" }
-  - { label: "Plaatdikte RVS", value: "0,5–20 mm" }
-  - { label: "Plaatdikte aluminium", value: "0,5–15 mm" }
-  - { label: "Plaatdikte gegalvaniseerd staal", value: "0,5–10 mm" }
-applications: ["Plaatwerk", "Constructies", "Precisieonderdelen"]
+- label: Machine
+  value: Trumpf TruLaser 3040
+- label: Type
+  value: 2D-lasermachine
+- label: Materialen
+  value: staal, RVS, aluminium, gegalvaniseerd staal
+- label: Plaatdikte staal
+  value: 0,5–25 mm
+- label: Plaatdikte RVS
+  value: 0,5–20 mm
+- label: Plaatdikte aluminium
+  value: 0,5–15 mm
+- label: Plaatdikte gegalvaniseerd staal
+  value: 0,5–10 mm
+applications:
+- Plaatwerk
+- Constructies
+- Precisieonderdelen
+faq:
+- vraag: Welke plaatdiktes kunnen jullie lasersnijden?
+  antwoord: 'Staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd
+    staal van 0,5 tot 10 mm, op de Trumpf TruLaser 3040. Ligt uw aanvraag daarbuiten, leg hem dan voor:
+    dan kijken wij wat er binnen onze groep mogelijk is.'
+- vraag: Snijden jullie ook gegalvaniseerd staal?
+  antwoord: Ja, van 0,5 tot 10 mm. Houd er rekening mee dat de zinklaag langs de snede wordt aangetast;
+    wordt het deel daarna gelast of gecoat, geef dat dan door, want het bepaalt mee hoe wij de snede en
+    de nabehandeling inrichten.
+- vraag: Moeten de delen na het snijden ontbraamd worden?
+  antwoord: Meestal wel. Na het snijden zit er een braam op de rand, die wij machinaal verwijderen op
+    een Timesavers 42 Series RB. Dat maakt de randen veilig om te hanteren en voorkomt problemen bij het
+    zetten en lassen. Geef door of u de delen ontbraamd wilt ontvangen.
+- vraag: Kan ik één onderdeel laten snijden of moet het een serie zijn?
+  antwoord: Eén onderdeel kan. Er hoeft geen gereedschap gemaakt te worden, dus enkelstuks en prototypes
+    zijn goed te doen. Wij nemen een enkel deel vaak mee op een plaat die toch al opengaat, wat de kosten
+    drukt.
+- vraag: Wat bepaalt de prijs van lasersnijwerk?
+  antwoord: De snijlengte, het materiaal en de plaatdikte, en hoe goed de delen zich over de plaat laten
+    verdelen. Dat laatste heet nesten en bepaalt hoeveel restplaat overblijft. Bij series levert een efficiënte
+    indeling direct materiaalbesparing op.
 related:
-  - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Snijden van buis en profiel." }
-  - { slug: "plaatwerk/ontbramen", label: "Ontbramen", desc: "Randafwerking." }
-  - { slug: "machinepark", label: "Machinepark", desc: "Bekijk de machine." }
+- slug: buizenlaser
+  label: Buislasersnijden
+  desc: Snijden van buis en profiel.
+- slug: plaatwerk/ontbramen
+  label: Ontbramen
+  desc: Randafwerking.
+- slug: machinepark
+  label: Machinepark
+  desc: Bekijk de machine.
 seo:
-  title: "Lasersnijden — 2D snijden op de Trumpf TruLaser 3040"
-  description: "2D-lasersnijden van staal, RVS en aluminium op de Trumpf TruLaser 3040 met hoge precisie en constante maatvoering. Lasersnijwerk uit Hengelo, Twente."
-translated: ["nl"]
+  title: Lasersnijden — 2D snijden op de Trumpf TruLaser 3040
+  description: 2D-lasersnijden van staal, RVS en aluminium op de Trumpf TruLaser 3040 met hoge precisie
+    en constante maatvoering. Lasersnijwerk uit Hengelo, Twente.
+translated:
+- nl

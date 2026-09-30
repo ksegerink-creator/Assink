@@ -1,35 +1,109 @@
-title: "Kanten & zetten"
-slug: "plaatwerk/zetten"
-template: "service"
-group: "plaatwerk"
+title: Kanten & zetten
+slug: plaatwerk/zetten
+template: service
+group: plaatwerk
 order: 25
-kicker: "Plaatwerk 1.4"
-h1: "Kanten & zetten"
-intro: "Nauwkeurige buighoeken en constante maatvoering op onze servo-elektrische kantpers."
+kicker: Plaatwerk 1.4
+h1: Kanten & zetten
+intro: Nauwkeurige buighoeken en constante maatvoering op onze servo-elektrische kantpers.
 heroPhoto:
-  subject: "Kantpers in bedrijf — plaat wordt gezet"
-  orient: "Liggend 16:10"
-  crop: "Machine + hand van operator"
-  comp: "Kantpers, plaat onder de pers"
+  subject: Kantpers in bedrijf — plaat wordt gezet
+  orient: Liggend 16:10
+  crop: Machine + hand van operator
+  comp: Kantpers, plaat onder de pers
 body:
-  - "Zetten (kanten) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150-3100 T3 zetten we maatvast, met aandacht voor terugvering en buigradius per materiaal."
-  - "RVS zetten vraagt om een andere aanpak dan staal: RVS veert sterker terug en is gevoeliger voor krassen op het zichtoppervlak. Wij passen de buigradius en gereedschapkeuze daarop aan, zodat de hoek klopt en het oppervlak intact blijft."
-materials: ["RVS", "Aluminium", "Messing", "Staal"]
+- Zetten (kanten) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150-3100 T3 zetten
+  we maatvast, met aandacht voor terugvering en buigradius per materiaal.
+- 'RVS zetten vraagt om een andere aanpak dan staal: RVS veert sterker terug en is gevoeliger voor krassen
+  op het zichtoppervlak. Wij passen de buigradius en gereedschapkeuze daarop aan, zodat de hoek klopt
+  en het oppervlak intact blijft.'
+- De buigradius is bij zetten geen bijzaak maar een ontwerpkeuze. Een te krappe radius laat het materiaal
+  aan de buitenzijde scheuren, een ruime radius maakt de hoek moeilijker te beheersen. Als vuistregel
+  houdt men bij staal een binnenradius aan die minstens gelijk is aan de materiaaldikte; bij aluminium
+  ligt dat hoger, omdat het minder rekt, en bij RVS speelt de walsrichting mee. Wij bepalen de radius
+  per aanvraag op basis van materiaal, dikte en het gereedschap dat we inzetten, en geven het door als
+  uw tekening een radius vraagt die niet haalbaar is.
+- Terugvering is de tweede factor. Elk materiaal veert na het zetten een stukje terug, waardoor de gemeten
+  hoek groter uitvalt dan de ingestelde. RVS veert sterker terug dan staal, en hoe dikker en harder het
+  materiaal, hoe groter het verschil. Op een servo-elektrische kantpers is dat goed te compenseren omdat
+  de aandrijving nauwkeurig en herhaalbaar positioneert; wij stellen daarop in en controleren de eerste
+  zetting voordat de serie doorloopt.
+- 'De uitslag is waar het in de werkvoorbereiding om draait. Bij het buigen rekt het materiaal aan de
+  buitenkant en stuikt het aan de binnenkant, waardoor de platte lengte niet simpelweg de som van de benen
+  is. Wij berekenen die buigcompensatie zelf, dus u hoeft geen uitgeslagen tekening aan te leveren: een
+  3D-model of een tekening van het eindproduct volstaat. Levert u wel een platte uitslag aan, geef dan
+  door met welke compensatie die is gemaakt, anders wijkt de maat af.'
+- Ook de volgorde telt. Een zetting kan een eerdere zetting in de weg zitten, en een flens die te dicht
+  op een gat of uitsparing ligt vervormt de rand. Daarom beoordelen wij de zetvolgorde en de afstand van
+  gaten tot de buiglijn al op tekening, samen met de vraag of het gereedschap er überhaupt bij kan. Dat
+  voorkomt dat een deel pas op de pers onmaakbaar blijkt.
+- 'Bij zichtwerk komt er een laag bij. Het oppervlak is het kwetsbaarste deel van een gezet product: gereedschap
+  laat sporen na en RVS en messing krassen snel. Wij laten de beschermfolie tot en met de laatste bewerking
+  zitten en werken waar nodig met aangepast gereedschap. Meer over de materiaalkant staat op onze pagina''s
+  over <a href="/plaatwerk/rvs/">RVS-plaatwerk</a> en <a href="/plaatwerk/messing/">messing</a>.'
+- 'Wat wij nodig hebben om zetwerk te beoordelen: een tekening of 3D-model van het eindproduct, het materiaal
+  en de plaatdikte, de gewenste buigradius als die vastligt, of het zichtwerk betreft, en het aantal stuks.
+  De maximale lengte van één zetting is bij ons 3100 mm; langere delen bouwen we op uit meerdere stukken
+  of lossen we anders op.'
+materials:
+- RVS
+- Aluminium
+- Messing
+- Staal
 process:
-  - { step: "Uitslag bepalen", desc: "Correcte uitslag inclusief buigcompensatie." }
-  - { step: "Instellen", desc: "Gereedschap en aanslag instellen." }
-  - { step: "Zetten", desc: "Buigen met constante hoeknauwkeurigheid." }
-  - { step: "Controle", desc: "Hoek- en maatcontrole." }
+- step: Uitslag bepalen
+  desc: Correcte uitslag inclusief buigcompensatie.
+- step: Instellen
+  desc: Gereedschap en aanslag instellen.
+- step: Zetten
+  desc: Buigen met constante hoeknauwkeurigheid.
+- step: Controle
+  desc: Hoek- en maatcontrole.
 specs:
-  - { label: "Machine", value: "Safan Darley E-Brake 150-3100 T3" }
-  - { label: "Perskracht", value: "150 ton" }
-  - { label: "Werklengte", value: "tot 3100 mm" }
-  - { label: "Aandrijving", value: "servo-elektrisch" }
-applications: ["Behuizingen", "Panelen", "Omkastingen", "Constructiedelen"]
+- label: Machine
+  value: Safan Darley E-Brake 150-3100 T3
+- label: Perskracht
+  value: 150 ton
+- label: Werklengte
+  value: tot 3100 mm
+- label: Aandrijving
+  value: servo-elektrisch
+applications:
+- Behuizingen
+- Panelen
+- Omkastingen
+- Constructiedelen
+faq:
+- vraag: Welke buigradius kunnen jullie zetten?
+  antwoord: Dat hangt af van materiaal, plaatdikte en gereedschap. Als vuistregel houdt men bij staal
+    een binnenradius aan die minstens gelijk is aan de materiaaldikte; bij aluminium ligt dat hoger en
+    bij RVS telt de walsrichting mee. Ligt uw radius vast, geef hem dan door — dan beoordelen wij of hij
+    haalbaar is voordat de tekening definitief wordt.
+- vraag: Moet ik zelf de uitslag berekenen?
+  antwoord: Nee. Wij berekenen de buigcompensatie zelf, dus een 3D-model of een tekening van het eindproduct
+    is genoeg. Levert u wel een platte uitslag aan, geef dan door met welke compensatie die gemaakt is,
+    anders wijkt de eindmaat af.
+- vraag: Hoe lang mag een zetting zijn?
+  antwoord: Tot 3100 mm in één zetting, de werklengte van onze Safan Darley E-Brake 150-3100 T3 met 150
+    ton perskracht. Langere delen bouwen wij op uit meerdere stukken of lossen we in overleg anders op.
+- vraag: Waarom veert RVS sterker terug dan staal?
+  antwoord: RVS heeft een hogere rekgrens en veert daardoor na het zetten verder terug, waardoor de gemeten
+    hoek groter uitvalt dan de ingestelde. Hoe dikker en harder het materiaal, hoe groter het verschil.
+    Wij compenseren daarop bij het instellen en controleren de eerste zetting voordat de serie doorloopt.
+- vraag: Kan er gezet worden zonder krassen op zichtwerk?
+  antwoord: Ja. Wij laten de beschermfolie tot en met de laatste bewerking zitten en werken waar nodig
+    met aangepast gereedschap. Geef bij uw aanvraag door welke zijde de zichtzijde is, dan houden wij
+    daar bij de zetvolgorde rekening mee.
 related:
-  - { slug: "machinepark", label: "Machinepark", desc: "Bekijk onze kantpers." }
-  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "Snijden vóór het zetten." }
+- slug: machinepark
+  label: Machinepark
+  desc: Bekijk onze kantpers.
+- slug: plaatwerk/lasersnijden
+  label: Lasersnijden
+  desc: Snijden vóór het zetten.
 seo:
-  title: "Kanten & zetten — nauwkeurige buighoeken op de kantpers"
-  description: "Maatvast zetten op de servo-elektrische Safan Darley E-Brake 150-3100 T3: 150 ton perskracht, werklengte tot 3100 mm."
-translated: ["nl"]
+  title: Kanten & zetten — nauwkeurige buighoeken op de kantpers
+  description: 'Maatvast zetten op de servo-elektrische Safan Darley E-Brake 150-3100 T3: 150 ton perskracht,
+    werklengte tot 3100 mm.'
+translated:
+- nl
