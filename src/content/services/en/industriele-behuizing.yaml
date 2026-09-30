@@ -22,6 +22,15 @@ body:
 - 'Component integration happens in the same run: cut-outs for glands, displays and cooling are cut on
   the laser, and for mounting points we work with <a href="/en/plaatwerk/persmoeren-trekmoeren/">self-clinching
   and rivet nuts</a>. That saves separate operations afterwards and keeps the dimensions under control.'
+- Machine cladding calls for something different from a closed enclosure. Panels that clad a machine have
+  to stay removable for maintenance, must not resonate, and have to still fit the frame after coating.
+  We supply that cladding to match the structure underneath, with fixings that mount without adjustment
+  on site.
+- 'Once the enclosure stands outdoors, the requirements shift. For a kiosk, a charging point or an installation
+  in infrastructure, what counts most is keeping water out: overlapping seams, a sloping top and well-considered
+  cable glands do more than a heavier sheet thickness. Stainless steel 316 is the obvious choice in those
+  environments because of road salt and rain. Tell us with your request whether the enclosure will stand
+  outdoors, as that determines both the material choice and the seam execution.'
 - 'What we need: the outer dimensions, the positions of cut-outs and mounting points, the material, whether
   it concerns visible surfaces and which finishing that requires, and the quantity. Our knowledge base
   article on <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">custom industrial enclosures</a>
@@ -45,9 +54,9 @@ applications:
 - Offshore & maritime
 - Process industry & chemicals (ATEX)
 related:
-- slug: plaatwerk/rvs-behuizingen-machinebeplating
-  label: Stainless steel enclosures & machine cladding
-  desc: Housings and cladding.
+- slug: machinebouw
+  label: Machine building
+  desc: Complete machines and assemblies.
 - slug: plaatwerk/rvs
   label: Stainless steel
   desc: Stainless sheet metal work and visible work.

@@ -177,6 +177,51 @@
       "source": "/404-pagina(/?)",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/plaatwerk/rvs-behuizingen-machinebeplating(/?)",
+      "destination": "/industriele-behuizing/",
+      "permanent": true
+    },
+    {
+      "source": "/en/plaatwerk/rvs-behuizingen-machinebeplating(/?)",
+      "destination": "/en/industriele-behuizing/",
+      "permanent": true
+    },
+    {
+      "source": "/de/plaatwerk/rvs-behuizingen-machinebeplating(/?)",
+      "destination": "/de/industriele-behuizing/",
+      "permanent": true
+    },
+    {
+      "source": "/plaatwerk/rvs-constructies-voor-machinebouw(/?)",
+      "destination": "/rvs-constructies/",
+      "permanent": true
+    },
+    {
+      "source": "/en/plaatwerk/rvs-constructies-voor-machinebouw(/?)",
+      "destination": "/en/rvs-constructies/",
+      "permanent": true
+    },
+    {
+      "source": "/de/plaatwerk/rvs-constructies-voor-machinebouw(/?)",
+      "destination": "/de/rvs-constructies/",
+      "permanent": true
+    },
+    {
+      "source": "/plaatwerk/rvs-plaatwerk-voor-machinebouw(/?)",
+      "destination": "/plaatwerk/rvs/",
+      "permanent": true
+    },
+    {
+      "source": "/en/plaatwerk/rvs-plaatwerk-voor-machinebouw(/?)",
+      "destination": "/en/plaatwerk/rvs/",
+      "permanent": true
+    },
+    {
+      "source": "/de/plaatwerk/rvs-plaatwerk-voor-machinebouw(/?)",
+      "destination": "/de/plaatwerk/rvs/",
+      "permanent": true
     }
   ],
   "crons": [

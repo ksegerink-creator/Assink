@@ -23,6 +23,16 @@ body:
   Kühlung werden auf dem Laser mitgeschnitten, und für Montagepunkte arbeiten wir mit <a href="/de/plaatwerk/persmoeren-trekmoeren/">Einpress-
   und Blindnietmuttern</a>. Das erspart separate Arbeitsgänge im Nachhinein und hält die Maßhaltigkeit
   unter Kontrolle.'
+- Eine Maschinenverkleidung stellt andere Anforderungen als ein geschlossenes Gehäuse. Paneele, die eine
+  Maschine umkleiden, müssen für die Wartung demontierbar bleiben, dürfen nicht schwingen und müssen nach
+  dem Beschichten noch auf den Rahmen passen. Wir liefern diese Verkleidung passend zur darunterliegenden
+  Konstruktion, mit Befestigungen, die sich ohne Nacharbeit vor Ort montieren lassen.
+- 'Steht das Gehäuse im Freien, verschieben sich die Anforderungen. Bei einem Kiosk, einer Ladesäule oder
+  einer Anlage in der Infrastruktur zählt vor allem, wie das Wasser draußen bleibt: überlappende Nähte,
+  eine abfallende Oberseite und durchdachte Kabeldurchführungen bewirken mehr als eine höhere Blechdicke.
+  In solchen Umgebungen liegt Edelstahl 316 wegen Streusalz und Regen nahe. Teilen Sie uns bei Ihrer Anfrage
+  mit, ob das Gehäuse im Freien aufgestellt wird, denn das bestimmt sowohl die Werkstoffwahl als auch
+  die Nahtausführung.'
 - 'Was wir benötigen: die Außenmaße, die Positionen von Ausschnitten und Montagepunkten, den Werkstoff,
   ob es sich um Sichtflächen handelt und welche Oberfläche dazugehört, sowie die Stückzahl. In unserem
   Wissensbeitrag über <a href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">Industriegehäuse
@@ -46,9 +56,9 @@ applications:
 - Offshore & Maritim
 - Prozessindustrie & Chemie (ATEX)
 related:
-- slug: plaatwerk/rvs-behuizingen-machinebeplating
-  label: Edelstahlgehäuse & Maschinenverkleidung
-  desc: Gehäuse und Verkleidungen.
+- slug: machinebouw
+  label: Maschinenbau
+  desc: Komplette Maschinen und Baugruppen.
 - slug: plaatwerk/rvs
   label: Edelstahl
   desc: Edelstahlblech und Sichtflächen.
