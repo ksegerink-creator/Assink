@@ -88,6 +88,7 @@ vertaalwerk, zodat teksten en menu's consistent blijven. Gebruikte conventie:
 | apparatenbouw | equipment manufacturing | Apparatebau |
 | mechatronica | mechatronics | Mechatronik |
 | semicon | semiconductor | Halbleiterindustrie |
+| defensie | defence | Wehrtechnik |
 
 ## Bedrijf & organisatie
 
