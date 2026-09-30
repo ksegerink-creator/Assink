@@ -1,34 +1,100 @@
-title: "Buislasersnijden"
-slug: "buizenlaser"
-template: "service"
-group: "snijden"
+title: Buislasersnijden
+slug: buizenlaser
+template: service
+group: snijden
 order: 32
-kicker: "Snijden 2.2"
-h1: "Buislasersnijden"
-intro: "Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en hoge nauwkeurigheid."
+kicker: Snijden 2.2
+h1: Buislasersnijden
+intro: Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en
+  hoge nauwkeurigheid.
 heroPhoto:
-  subject: "Buislasersnijmachine in productie met roterend profiel"
-  orient: "Liggend 16:10"
-  crop: "Machine + buis"
-  comp: "Roterende buis onder snijkop"
+  subject: Buislasersnijmachine in productie met roterend profiel
+  orient: Liggend 16:10
+  crop: Machine + buis
+  comp: Roterende buis onder snijkop
 body:
-  - "Wij werken met een Trumpf buislaser voor staal, RVS, aluminium, messing en koper — geschikt voor complexe contouren, gaten en verbindingen in één bewerking."
-  - "Dankzij contactloos lasersnijden ontstaat een zeer hoge maatvastheid en reproduceerbaarheid, minder nabewerking en kortere doorlooptijden. Ideaal voor zowel enkelstuks als seriewerk. Complexe verbindingen komen uit één bewerking — minder passen, sneller lassen."
-materials: ["Staal", "RVS", "Aluminium", "Messing", "Koper"]
+- Wij werken met een Trumpf buislaser voor staal, RVS, aluminium, messing en koper — geschikt voor complexe
+  contouren, gaten en verbindingen in één bewerking.
+- Dankzij contactloos lasersnijden ontstaat een zeer hoge maatvastheid en reproduceerbaarheid, minder
+  nabewerking en kortere doorlooptijden. Ideaal voor zowel enkelstuks als seriewerk. Complexe verbindingen
+  komen uit één bewerking — minder passen, sneller lassen.
+- Het verschil met zagen en boren zit niet in de snelheid maar in de pasvorm. Bij de klassieke route wordt
+  een profiel afgekort, daarna geboord, daarna passend geslepen — en elke stap voegt een afwijking toe
+  die zich door de constructie heen opstapelt. Op de buislaser komen de contour, de gaten en de verbindingsvorm
+  in één opspanning uit de machine, waardoor die opeenstapeling wegvalt.
+- Dat werkt door in het laswerk. Delen die in elkaar vallen hoeven niet passend gemaakt te worden, de
+  spleet blijft klein en gelijkmatig, en de lasser hoeft minder te overbruggen. Minder lastijd, minder
+  warmte-inbreng en dus minder vervorming in het geheel. In een frame met tientallen verbindingen is dat
+  het verschil tussen een constructie die klopt en een die achteraf gericht moet worden.
+- Wij combineren buislasersnijden met <a href="/plaatwerk/lasersnijden/">2D-lasersnijden van plaat</a>
+  en met het lassen en samenstellen in dezelfde hal in Hengelo. Voor een frame met plaatwerkdelen betekent
+  dat één werkvoorbereiding, één planning en één aanspreekpunt, in plaats van afstemming tussen een buisleverancier,
+  een plaatleverancier en een lasbedrijf. Voor klanten in Twente en de rest van Overijssel scheelt dat
+  bovendien transportbewegingen.
+- 'Wat wij nodig hebben voor een beoordeling: een 3D-model of tekening van het profiel, de profielsoort
+  en -maat, het materiaal, de lengtes en het aantal stuks. De grenzen aan diameter, wanddikte en lengte
+  hangen af van het profiel en beoordelen wij per aanvraag — leg uw maten dus gewoon voor in plaats van
+  vooraf af te haken. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
+  we meteen naar de lasvolgorde.'
+materials:
+- Staal
+- RVS
+- Aluminium
+- Messing
+- Koper
 process:
-  - { step: "Programmeren", desc: "Contouren en verbindingen uit de tekening." }
-  - { step: "Buislasersnijden", desc: "Snijden van buis en profiel." }
-  - { step: "Samenstellen", desc: "Passklare delen voor lassen." }
+- step: Programmeren
+  desc: Contouren en verbindingen uit de tekening.
+- step: Buislasersnijden
+  desc: Snijden van buis en profiel.
+- step: Samenstellen
+  desc: Passklare delen voor lassen.
 specs:
-  - { label: "Machine", value: "Trumpf TruLaser Tube 3000" }
-  - { label: "Type", value: "buislasersnijsysteem" }
-  - { label: "Materialen", value: "staal, RVS, aluminium, messing, koper" }
-applications: ["Machinebouw", "Constructies", "Interieurbouw", "Industriële toepassingen"]
+- label: Machine
+  value: Trumpf TruLaser Tube 3000
+- label: Type
+  value: buislasersnijsysteem
+- label: Materialen
+  value: staal, RVS, aluminium, messing, koper
+applications:
+- Machinebouw
+- Constructies
+- Interieurbouw
+- Industriële toepassingen
+faq:
+- vraag: Welke profielmaten en wanddiktes kunnen jullie snijden?
+  antwoord: 'Dat beoordelen wij per aanvraag: de grenzen aan diameter, wanddikte en lengte hangen af van
+    het profiel en de opspanning. Stuur uw profielsoort, maten en lengtes mee, dan geven wij aan wat haalbaar
+    is in plaats van dat u vooraf moet inschatten of het past.'
+- vraag: Wat levert buislasersnijden op ten opzichte van zagen en boren?
+  antwoord: Vooral pasvorm. Contour, gaten en verbindingsvorm komen in één opspanning uit de machine,
+    dus de afwijkingen van afkorten, boren en passend slijpen stapelen zich niet op. Delen vallen in elkaar,
+    de lasspleet blijft klein en gelijkmatig, en dat scheelt lastijd, warmte-inbreng en vervorming.
+- vraag: Kunnen jullie na het snijden ook lassen en samenstellen?
+  antwoord: Ja, in dezelfde hal in Hengelo. Buislasersnijden, plaatwerk, lassen en afwerking zitten bij
+    ons onder één dak, dus voor een frame is er één werkvoorbereiding en één aanspreekpunt. Zie ook onze
+    pagina's over <a href="/constructies/">constructies</a> en <a href="/rvs-constructies/">RVS-constructies</a>.
+- vraag: Doen jullie ook enkelstuks of alleen series?
+  antwoord: Allebei. Omdat het programma uit het 3D-model komt en er geen gereedschap gemaakt hoeft te
+    worden, is ook een enkel profiel of een kleine serie goed te doen. Bij grotere series ligt het accent
+    meer op het nesten en de doorlooptijd.
+- vraag: Wat heeft u nodig om een offerte te maken?
+  antwoord: Een 3D-model of tekening van het profiel, de profielsoort en -maat, het materiaal, de lengtes
+    en het aantal stuks. Gaat het om een complete constructie, stuur dan ook het samenstel mee; dan beoordelen
+    wij meteen de lasvolgorde en de maakbaarheid van het geheel.
 related:
-  - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-plaatsnijden." }
-  - { slug: "constructies", label: "Constructies", desc: "Gelaste framebouw." }
-  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
+- slug: plaatwerk/lasersnijden
+  label: Lasersnijden
+  desc: 2D-plaatsnijden.
+- slug: constructies
+  label: Constructies
+  desc: Gelaste framebouw.
+- slug: rvs-constructies
+  label: RVS-constructies
+  desc: Gelaste RVS-samenstellingen.
 seo:
-  title: "Buislasersnijden — Trumpf buislaser"
-  description: "Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel in één bewerking, in staal, RVS, aluminium, messing en koper."
-translated: ["nl"]
+  title: Buislasersnijden — Trumpf buislaser
+  description: 'Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel
+    in één bewerking, in staal, RVS, aluminium, messing en koper.'
+translated:
+- nl

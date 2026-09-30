@@ -1,24 +1,91 @@
 # Engelse vertaling — zie TERMINOLOGIE.md. Slug/foto's komen uit de NL-bron.
-title: "Robot welding"
-kicker: "Welding technology 3.3"
-h1: "Robot welding — automated welding in series"
-intro: "For series welding work, consistency is not a luxury but a requirement. For larger series we bring in automated welding through a regular partner, while the sheet metal work, assembly and finishing take place with us in Hengelo. You keep a single point of contact for the whole series."
+title: Robot welding
+kicker: Welding technology 3.3
+h1: Robot welding — automated welding in series
+intro: For series welding work, consistency is not a luxury but a requirement. For larger series we bring
+  in automated welding through a regular partner, while the sheet metal work, assembly and finishing take
+  place with us in Hengelo. You keep a single point of contact for the whole series.
 heroPhoto:
-  subject: "Welded assembly from series production, weld seam in view"
+  subject: Welded assembly from series production, weld seam in view
 body:
-  - "Automated welding lays weld seams under preset parameters, with continuous monitoring of current, voltage, travel speed and heat input. This gives an even weld bead shape and consistent penetration, ideal for repetitive production in steel, stainless steel and aluminium."
-  - "Advantages: less variation, fewer rejects, less finishing work and reliable lead times. Engineering forms the basis — fixturing, welding sequence, accessibility and material behaviour determine process efficiency. That preparation we do ourselves."
-materials: ["Steel", "Stainless steel", "Aluminium"]
+- Automated welding lays weld seams under preset parameters, with continuous monitoring of current, voltage,
+  travel speed and heat input. This gives an even weld bead shape and consistent penetration, ideal for
+  repetitive production in steel, stainless steel and aluminium.
+- 'Advantages: less variation, fewer rejects, less finishing work and reliable lead times. Engineering
+  forms the basis — fixturing, welding sequence, accessibility and material behaviour determine process
+  efficiency. That preparation we do ourselves.'
+- 'Whether automated welding pays off depends less on the number of parts than on the repetition. The
+  time goes in up front: building the fixture, programming the path and dialling in the parameters. For
+  a batch that comes past once, that preparation weighs heavily; for a product that returns every quarter,
+  it earns itself back each time. Give us your annual volume and call-off rhythm and we will work that
+  trade-off through.'
+- 'We are explicit about the division of roles. Engineering, production engineering, sheet metal work,
+  fixturing, assembly and finishing all happen in Hengelo. The automated welding itself we do not carry
+  out in house: that is done within our group at Baas Metaal. We have no welding robot and no cobot in
+  Hengelo. For you it remains a single order, a single point of contact and one party responsible for
+  the dimensions of the whole.'
+- 'Not every product lends itself to it. A welding robot follows a fixed path, so the seam has to be accessible,
+  the parts have to sit identically in the fixture every time, and the preparation has to be tight. That
+  is precisely where our preparation comes in: we cut the parts on the laser, so the gap stays small and
+  consistent. Large or varying gaps are the main reason automated welding fails to deliver the expected
+  result.'
+- For small quantities, prototypes and visible work, manual <a href="/en/plaatwerk/lassen/">TIG or MIG
+  welding</a> or <a href="/en/plaatwerk/laserlassen/">laser welding</a> is usually the better route. Laser
+  welding introduces little heat and needs little finishing, which counts for more than speed on a tight
+  visible seam.
+- 'To assess a request we need: the drawing or 3D model of the assembly, the material and sheet thickness,
+  the weld seams with their requirements, the quantity per batch and the call-off rhythm. With that we
+  determine whether automated welding gains you anything in your case, or whether manual welding works
+  out cheaper.'
+materials:
+- Steel
+- Stainless steel
+- Aluminium
 process:
-  - { step: "Engineering", desc: "Determining fixturing, welding sequence and accessibility." }
-  - { step: "Programming", desc: "Setting parameters and the welding path." }
-  - { step: "Automated welding", desc: "Carried out by our partner, with monitoring." }
-  - { step: "Inspection", desc: "Seam inspection and dimensional stability." }
-applications: ["Medium to large series", "Products with recurring weld seams", "Constructions with strict dimensional stability"]
+- step: Engineering
+  desc: Determining fixturing, welding sequence and accessibility.
+- step: Programming
+  desc: Setting parameters and the welding path.
+- step: Automated welding
+  desc: Carried out by our partner, with monitoring.
+- step: Inspection
+  desc: Seam inspection and dimensional stability.
+applications:
+- Medium to large series
+- Products with recurring weld seams
+- Constructions with strict dimensional stability
+faq:
+- vraag: From what batch size does automated welding become worthwhile?
+  antwoord: 'There is no fixed number. What matters is repetition: the time goes into building the fixture
+    and programming the path, and that preparation only pays off if the product comes back regularly.
+    Tell us your annual volume and call-off rhythm and we will weigh it against manual welding.'
+- vraag: Do you have a welding robot in house?
+  antwoord: No. There is no welding robot and no cobot in Hengelo. The automated welding is done within
+    our group at Baas Metaal. We handle the engineering, the sheet metal work, the fixturing, the assembly
+    and the finishing, and keep control of the whole batch.
+- vraag: In which materials can series welding be done?
+  antwoord: Steel, stainless steel and aluminium. Parameters and heat input differ per material; with
+    stainless steel, removing heat tint and passivating always follows welding, because otherwise corrosion
+    resistance around the seam deteriorates.
+- vraag: What determines whether my product suits robot welding?
+  antwoord: Accessibility of the seam, a repeatable fixture and tight preparation. A robot follows a fixed
+    path, so the parts have to sit identically every time and the gap has to be small and consistent.
+    That is why we cut the parts on the laser.
+- vraag: Who is responsible for quality if the welding is done by a partner?
+  antwoord: We are. You have a single order and a single point of contact. We handle incoming inspection,
+    dimensional inspection and assembly, and are accountable for the dimensions of the whole. Our quality
+    system is certified to ISO 9001 and for welding we work under ISO 3834-2.
 related:
-  - { slug: "plaatwerk/lassen", label: "Welding", desc: "All welding methods." }
-  - { slug: "constructies", label: "Welded constructions", desc: "Welded assemblies." }
-  - { slug: "machinepark", label: "Machine park", desc: "Our machine park." }
+- slug: plaatwerk/lassen
+  label: Welding
+  desc: All welding methods.
+- slug: constructies
+  label: Welded constructions
+  desc: Welded assemblies.
+- slug: machinepark
+  label: Machine park
+  desc: Our machine park.
 seo:
-  title: "Robot welding — consistent quality in series"
-  description: "Automated robot welding with consistent weld seam quality for medium to large series: fewer rejects, reliable lead times."
+  title: Robot welding — consistent quality in series
+  description: 'Automated robot welding with consistent weld seam quality for medium to large series:
+    fewer rejects, reliable lead times.'
