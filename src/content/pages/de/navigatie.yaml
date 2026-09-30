@@ -91,6 +91,9 @@ sectoren:
   - label: Halbleiterindustrie
     slug: semicon
     idx: '9'
+  - label: Wehrtechnik
+    slug: constructies
+    idx: '10'
 footerDiensten:
   - label: Blechbearbeitung
     slug: plaatwerk
