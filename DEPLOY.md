@@ -212,6 +212,38 @@ blijft ondertussen ongewijzigd staan, dus terugvallen kost alleen de
 DNS-propagatietijd (meestal minuten tot een uur, afhankelijk van de TTL).
 Zet de TTL daarom **vóór** de omzetting laag, bijvoorbeeld 300 seconden.
 
+## Zoekmachines: verificatie en IndexNow
+
+**Google Search Console** is via DNS geverifieerd.
+
+**Bing Webmaster Tools** is geverifieerd met `public/BingSiteAuth.xml`. Dat
+bestand moet blijven staan: Bing hercontroleert periodiek en trekt de
+verificatie in zodra `/BingSiteAuth.xml` een 404 geeft.
+
+**De sitemap** dien je handmatig in bij Bing Webmaster Tools onder Sitemaps:
+`https://assinkschipholt.nl/sitemap-index.xml`. Dien de *index* in, niet
+`sitemap-0.xml` — Bing volgt de index zelf, en dat blijft goed gaan als er
+later een tweede deelsitemap bijkomt. De oude ping-route
+(`www.bing.com/ping?sitemap=...`) is afgeschaft en antwoordt met 410 Gone.
+
+**IndexNow** is de opvolger van die ping-route en meldt gewijzigde pagina's
+direct aan bij Bing, Yandex en Seznam:
+
+```
+npm run indexnow -- https://assinkschipholt.nl/plaatwerk/zetten/
+npm run indexnow -- --sitemap        # alles, alleen na een herstructurering
+npm run indexnow -- --dry-run <url>  # toont wat er verstuurd zou worden
+```
+
+De sleutel staat als `public/<sleutel>.txt` in de repo en is bewust géén
+geheim: zoekmachines halen dat bestand op om te controleren dat de melding van
+de domeineigenaar komt. Raakt het bestand weg, dan mislukt elke melding met
+een 403. Het script controleert vooraf of de bestandsnaam en de inhoud
+overeenkomen en of alle URL's bij het eigen domein horen.
+
+Meld bij voorkeur alleen wat daadwerkelijk gewijzigd is. Herhaald de hele
+sitemap indienen terwijl er niets veranderde, wegen zoekmachines negatief.
+
 ## Nog te doen vóór PUBLIEKE livegang
 
 Bijgewerkt 28 juli 2026. De punten met **[jij]** kan ik niet zelf uitvoeren.
