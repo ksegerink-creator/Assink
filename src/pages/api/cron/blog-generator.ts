@@ -48,9 +48,16 @@ const VERIFIED_FACTS = `
   Metaal), en werken niet met een cobot. Verspaningswerk (draaien, frezen, boren,
   kotteren) voeren wij niet zelf uit: dat laten wij maken door een vaste partner,
   wij verzorgen de regie en de samenstelling.
-- Nog NIET vastgesteld, dus nooit noemen: maximale plaatmaat/tafelafmeting van de
-  laser, buisdiameter/wanddikte/lengte van de buislaser, zettolerantie in mm, en
-  of wij puntlassen aanbieden.
+- Maximale plaatmaat bij lasersnijden (bevestigd door productie, 1 oktober 2026):
+  4000 x 2000 mm.
+- Buislaser (bevestigd door productie, 1 oktober 2026): rond tot diameter 150 mm,
+  vierkant en rechthoekig tot 120 x 120 mm, wanddikte tot 6 mm in staal en tot
+  4 mm in RVS. Alleen staal, RVS en aluminium: messing en koper snijden wij NIET
+  op de buislaser. Afwijkende afmetingen gaan via de werkvoorbereiding.
+- Zetwerk: toleranties volgens ISO 2768; noem geen tolerantie in mm.
+- Puntlassen bieden wij aan (bevestigd door productie, 1 oktober 2026).
+- Wij maken GEEN ATEX-gecertificeerde behuizingen; noem ATEX nooit.
+- Nog NIET vastgesteld, dus nooit noemen: de maximale buislengte op de buislaser.
 `.trim();
 
 const SYSTEM_PROMPT = `

@@ -21,9 +21,10 @@
  *  - overige losse tekstvelden die in de vertaling ontbreken of leeg zijn.
  *
  * Sluit bewust route-/structuurvelden uit (slug, link, order, template,
- * group, open, translated) en interne fotobriefing-velden (orient, crop,
- * comp, src) — die zijn nooit per taal bedoeld en horen altijd van NL te
- * komen (zie de hard-coded override-lijst in content.ts).
+ * group, open, translated), het foto-pad en interne fotobriefing-velden
+ * (orient, crop, comp, src) — die zijn nooit per taal bedoeld en horen altijd
+ * van NL te komen. Het beeld zelf is taalonafhankelijk; merge() in content.ts
+ * houdt de NL-waarde aan zodra de vertaling de sleutel niet overschrijft.
  *
  * Gebruik: npm run i18n:check
  * Exitcode 1 bij hiaten, zodat dit later in CI of een pre-commit hook kan.
@@ -40,7 +41,7 @@ function isBlank(v) {
 }
 
 const ROUTE_FIELDS = new Set(["slug", "link", "order", "template", "group", "open", "translated"]);
-const PHOTO_BRIEF_FIELDS = new Set(["orient", "crop", "comp", "src"]);
+const PHOTO_BRIEF_FIELDS = new Set(["foto", "orient", "crop", "comp", "src"]);
 
 function diff(nl, tr, pathStr, gaps, subjectGaps) {
   const lastKey = pathStr.split(/[.[]/).pop();

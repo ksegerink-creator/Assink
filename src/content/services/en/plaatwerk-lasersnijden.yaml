@@ -49,6 +49,8 @@ specs:
   value: 2D laser machine
 - label: Materials
   value: steel, stainless steel, aluminium, galvanised steel
+- label: Maximum sheet size
+  value: 4000 × 2000 mm
 - label: Sheet thickness, steel
   value: 0.5–25 mm
 - label: Sheet thickness, stainless steel

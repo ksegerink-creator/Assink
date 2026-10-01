@@ -63,6 +63,8 @@ specs:
   value: bis 3100 mm
 - label: Antrieb
   value: servoelektrisch
+- label: Toleranzen
+  value: nach ISO 2768
 applications:
 - Gehäuse
 - Paneele

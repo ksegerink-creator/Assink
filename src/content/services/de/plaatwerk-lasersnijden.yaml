@@ -51,6 +51,8 @@ specs:
   value: 2D-Lasermaschine
 - label: Materialien
   value: Stahl, Edelstahl, Aluminium, verzinkter Stahl
+- label: Maximale Blechgröße
+  value: 4000 × 2000 mm
 - label: Blechdicke Stahl
   value: 0,5–25 mm
 - label: Blechdicke Edelstahl

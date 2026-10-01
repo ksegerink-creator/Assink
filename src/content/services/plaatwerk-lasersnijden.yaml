@@ -54,6 +54,8 @@ specs:
   value: 2D-lasermachine
 - label: Materialen
   value: staal, RVS, aluminium, gegalvaniseerd staal
+- label: Maximale plaatmaat
+  value: 4000 × 2000 mm
 - label: Plaatdikte staal
   value: 0,5–25 mm
 - label: Plaatdikte RVS

@@ -45,8 +45,6 @@ body:
 process:
 - step: RVS besturingskasten op maat
   desc: Bestand tegen vocht, stof en chemicaliën.
-- step: ATEX-gecertificeerde behuizingen
-  desc: Voor de procesindustrie en chemie.
 - step: Maatwerk & integratie
   desc: Voor besturingssystemen, machinebouw, offshore en maritiem.
 - step: Advies
@@ -59,7 +57,7 @@ applications:
 - Machinebouw
 - Voedingsmiddelenindustrie
 - Offshore & maritiem
-- Procesindustrie & chemie (ATEX)
+- Procesindustrie & chemie
 related:
 - slug: machinebouw
   label: Machinebouw
@@ -73,7 +71,7 @@ related:
 seo:
   title: Industriële behuizing — RVS-behuizingen op maat
   description: Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende
-    omgevingen. Maatwerk en serie, inclusief ATEX.
+    omgevingen. Maatwerk en serie.
 translated:
 - nl
 faq:

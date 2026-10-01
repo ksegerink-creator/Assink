@@ -38,8 +38,6 @@ body:
 process:
 - step: Custom stainless steel control cabinets
   desc: Resistant to moisture, dust and chemicals.
-- step: ATEX-certified enclosures
-  desc: For the process and chemical industries.
 - step: Custom work & integration
   desc: For control systems, machine building, offshore and maritime.
 - step: Advice
@@ -52,7 +50,7 @@ applications:
 - Machine building
 - Food industry
 - Offshore & maritime
-- Process industry & chemicals (ATEX)
+- Process industry & chemicals
 related:
 - slug: machinebouw
   label: Machine building
@@ -66,7 +64,7 @@ related:
 seo:
   title: Industrial enclosures — custom stainless steel enclosures
   description: High-quality stainless steel and aluminium enclosures for control systems, machines and
-    demanding environments. Custom work and series, including ATEX.
+    demanding environments. Custom work and series.
 faq:
 - vraag: In which materials do you make enclosures?
   antwoord: In stainless steel 304 and 316 and in aluminium. Stainless steel is the logical choice where

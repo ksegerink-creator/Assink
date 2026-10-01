@@ -13,7 +13,7 @@ heroPhoto:
   crop: Machine + buis
   comp: Roterende buis onder snijkop
 body:
-- Wij werken met een Trumpf buislaser voor staal, RVS, aluminium, messing en koper — geschikt voor complexe
+- Wij werken met een Trumpf buislaser voor staal, RVS en aluminium — geschikt voor complexe
   contouren, gaten en verbindingen in één bewerking.
 - Dankzij contactloos lasersnijden ontstaat een zeer hoge maatvastheid en reproduceerbaarheid, minder
   nabewerking en kortere doorlooptijden. Ideaal voor zowel enkelstuks als seriewerk. Complexe verbindingen
@@ -32,16 +32,14 @@ body:
   een plaatleverancier en een lasbedrijf. Voor klanten in Twente en de rest van Overijssel scheelt dat
   bovendien transportbewegingen.
 - 'Wat wij nodig hebben voor een beoordeling: een 3D-model of tekening van het profiel, de profielsoort
-  en -maat, het materiaal, de lengtes en het aantal stuks. De grenzen aan diameter, wanddikte en lengte
-  hangen af van het profiel en beoordelen wij per aanvraag — leg uw maten dus gewoon voor in plaats van
-  vooraf af te haken. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
+  en -maat, het materiaal, de lengtes en het aantal stuks. Ronde buis snijden wij tot ø 150 mm, vierkante
+  en rechthoekige profielen tot 120 × 120 mm; de wanddikte gaat tot 6 mm in staal en tot 4 mm in RVS.
+  Valt uw profiel daarbuiten, leg het dan voor aan onze werkvoorbereiding. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
   we meteen naar de lasvolgorde.'
 materials:
 - Staal
 - RVS
 - Aluminium
-- Messing
-- Koper
 process:
 - step: Programmeren
   desc: Contouren en verbindingen uit de tekening.
@@ -55,7 +53,11 @@ specs:
 - label: Type
   value: buislasersnijsysteem
 - label: Materialen
-  value: staal, RVS, aluminium, messing, koper
+  value: staal, RVS, aluminium
+- label: Profielmaten
+  value: rond tot ø 150 mm · vierkant tot 120 × 120 mm
+- label: Wanddikte
+  value: staal tot 6 mm · RVS tot 4 mm
 applications:
 - Machinebouw
 - Constructies
@@ -63,9 +65,9 @@ applications:
 - Industriële toepassingen
 faq:
 - vraag: Welke profielmaten en wanddiktes kunnen jullie snijden?
-  antwoord: 'Dat beoordelen wij per aanvraag: de grenzen aan diameter, wanddikte en lengte hangen af van
-    het profiel en de opspanning. Stuur uw profielsoort, maten en lengtes mee, dan geven wij aan wat haalbaar
-    is in plaats van dat u vooraf moet inschatten of het past.'
+  antwoord: 'Ronde buis tot ø 150 mm en vierkante of rechthoekige profielen tot 120 × 120 mm. De wanddikte
+    gaat tot 6 mm in staal en tot 4 mm in RVS. De haalbare lengte hangt af van het profiel en de opspanning;
+    die beoordelen wij per aanvraag. Valt uw profiel buiten deze maten, neem dan contact op met onze werkvoorbereiding.'
 - vraag: Wat levert buislasersnijden op ten opzichte van zagen en boren?
   antwoord: Vooral pasvorm. Contour, gaten en verbindingsvorm komen in één opspanning uit de machine,
     dus de afwijkingen van afkorten, boren en passend slijpen stapelen zich niet op. Delen vallen in elkaar,
@@ -95,6 +97,6 @@ related:
 seo:
   title: Buislasersnijden — Trumpf buislaser
   description: 'Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel
-    in één bewerking, in staal, RVS, aluminium, messing en koper.'
+    in één bewerking, in staal, RVS en aluminium.'
 translated:
 - nl

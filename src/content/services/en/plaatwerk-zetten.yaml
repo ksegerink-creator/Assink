@@ -62,6 +62,8 @@ specs:
   value: up to 3100 mm
 - label: Drive
   value: servo-electric
+- label: Tolerances
+  value: to ISO 2768
 applications:
 - Enclosures
 - Panels

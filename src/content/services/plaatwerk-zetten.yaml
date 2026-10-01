@@ -68,6 +68,8 @@ specs:
   value: tot 3100 mm
 - label: Aandrijving
   value: servo-elektrisch
+- label: Toleranties
+  value: volgens ISO 2768
 applications:
 - Behuizingen
 - Panelen
