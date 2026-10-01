@@ -5,8 +5,9 @@ description: "Geavanceerd buislasersysteem voor diverse vormen en materialen —
 specs:
   - { label: "Type", value: "buislaser" }
   - { label: "Materialen", value: "staal · RVS · aluminium" }
+foto: /src/assets/uploads/machines/trulaser-tube-3000/foto.webp
 photo:
-  subject: "Trumpf TruLaser Tube 3000 met roterend profiel"
-  orient: "Liggend 4:3"
-  crop: "Machine"
-  comp: "Buis onder snijkop"
+  subject: "Operator bedient de Trumpf TruLaser Tube 3000"
+  orient: "Liggend 3:2"
+  crop: "Machine + operator"
+  comp: "Bedieningspaneel links, snijkop achter het venster"
