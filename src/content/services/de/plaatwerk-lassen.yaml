@@ -1,7 +1,7 @@
 title: Schweißen
 kicker: Schweißtechnik 3.1
 h1: Schweißen
-intro: Vom manuellen WIG- und MIG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir
+intro: Vom manuellen WIG-, MIG- und MAG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir
   wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt.
 heroPhoto:
   subject: Schweißer bei der Arbeit an einer Edelstahl-Baugruppe
@@ -11,7 +11,8 @@ body:
   Serien geben wir an einen festen Partner; in Hengelo schweißen wir von Hand und mit dem Laser.
 - Welches Schweißverfahren wir wählen, hängt vom Werkstoff, der Blechdicke und den Anforderungen an die
   Naht ab. WIG-Schweißen bietet eine kontrollierte Wärmeeinbringung und eine saubere Naht und eignet sich
-  damit für dünnes Material und Sichtflächen in Edelstahl und Aluminium. MIG-Schweißen ist schneller und
+  damit für dünnes Material und Sichtflächen in Edelstahl und Aluminium. MIG- und MAG-Schweißen sind
+  schneller — MIG mit inertem Gas für Edelstahl und Aluminium, MAG mit aktivem Gas für Stahl — und
   passt zu dickerem Material und größeren Serien. <a href="/de/plaatwerk/laserlassen/">Laserschweißen</a>
   liefert eine schmale Naht mit geringem Verzug.
 - Verzug ist beim Schweißen das größte Risiko für die Maßhaltigkeit. Wir begrenzen ihn, indem wir die
@@ -37,7 +38,7 @@ process:
 - step: Vorbereitung
   desc: Anpassen und Aufspannen.
 - step: Schweißen
-  desc: WIG / MIG oder Laser.
+  desc: WIG, MIG/MAG oder Laser.
 - step: Nachbearbeitung
   desc: Schleifen, Beizen und Passivieren, wo erforderlich.
 - step: Kontrolle
@@ -62,7 +63,7 @@ seo:
     mit gleichbleibender Schweißnahtqualität.'
 faq:
 - vraag: Welche Schweißverfahren haben Sie im Haus?
-  antwoord: Wir schweißen mit WIG und MIG und verfügen über das Laserschweißen. WIG bietet die größte
+  antwoord: Wir schweißen mit WIG, MIG und MAG und verfügen über das Laserschweißen. WIG bietet die größte
     Kontrolle über die Wärmeeinbringung und eignet sich für dünnes Material und Sichtflächen; MIG ist
     schneller bei dickerem Material und größeren Serien. Roboterschweißen führen wir nicht in Hengelo
     aus — das geschieht innerhalb der Gruppe bei Baas Metaal.

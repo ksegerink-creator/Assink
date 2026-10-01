@@ -1,7 +1,7 @@
 title: Welding
 kicker: Welding technology 3.1
 h1: Welding
-intro: From manual TIG and MIG welding to automated and laser welding. We choose the welding method that
+intro: From manual TIG, MIG and MAG welding to automated and laser welding. We choose the welding method that
   suits the material, the batch size and the quality requirement.
 heroPhoto:
   subject: Welder at work on a stainless steel assembly
@@ -11,7 +11,8 @@ body:
   series is outsourced to a regular partner; in Hengelo we weld manually and by laser.
 - Which welding method we choose depends on the material, the sheet thickness and the requirements for
   the seam. TIG welding gives controlled heat input and a clean seam, which suits thin material and visible
-  work in stainless steel and aluminium. MIG welding is faster and suits thicker material and larger series.
+  work in stainless steel and aluminium. MIG and MAG welding are faster and suit thicker material and
+  larger series — MIG with inert gas for stainless steel and aluminium, MAG with active gas for steel.
   <a href="/en/plaatwerk/laserlassen/">Laser welding</a> produces a narrow seam with little distortion.
 - Distortion is the greatest risk to dimensional accuracy when welding. We limit it by metering the heat
   input, clamping parts and determining the welding sequence in advance. After welding we check the dimensions,
@@ -36,7 +37,7 @@ process:
 - step: Preparation
   desc: Fitting up and fixturing.
 - step: Welding
-  desc: TIG / MIG or laser.
+  desc: TIG, MIG/MAG or laser.
 - step: Finishing
   desc: Grinding, pickling and passivating where required.
 - step: Inspection
@@ -61,8 +62,8 @@ seo:
     with consistent weld seam quality.'
 faq:
 - vraag: Which welding methods do you have in house?
-  antwoord: We weld with TIG and MIG and have laser welding available. TIG gives the most control over
-    heat input and suits thin material and visible work; MIG is faster for thicker material and larger
+  antwoord: We weld with TIG, MIG and MAG and have laser welding available. TIG gives the most control
+    over heat input and suits thin material and visible work; MIG and MAG are faster for thicker material and larger
     series. We do not carry out robot welding in Hengelo — that takes place within the group at Baas Metaal.
 - vraag: Are you certified for welding work?
   antwoord: For welding we work under ISO 3834-2 and we are certified to EN 1090-1. In addition, our quality

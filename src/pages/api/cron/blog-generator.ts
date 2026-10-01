@@ -56,6 +56,8 @@ const VERIFIED_FACTS = `
   op de buislaser. Afwijkende afmetingen gaan via de werkvoorbereiding.
 - Kantwerk: toleranties volgens ISO 2768; noem geen tolerantie in mm.
 - Wij zeggen "kanten" en "kantbank", niet "zetten", "zetwerk" of "kantpers".
+- Lasmethoden in huis: TIG, MIG, MAG en laserlassen. MIG met inert gas voor
+  RVS en aluminium, MAG met actief gas voor staal. Noem MAG dus mee bij staal.
 - Wat wij bij een aanvraag vragen: een PDF-tekening en een 3D STEP-bestand.
   Schrijf nooit "een tekening of 3D-model" — wij willen allebei.
 - Puntlassen bieden wij aan (bevestigd door productie, 1 oktober 2026).
