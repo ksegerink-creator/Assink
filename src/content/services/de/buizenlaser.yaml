@@ -26,7 +26,7 @@ body:
   von Blech</a> sowie mit Schweißen und Montage in derselben Halle in Hengelo. Für einen Rahmen mit Blechteilen
   bedeutet das eine Arbeitsvorbereitung, eine Planung und einen Ansprechpartner statt Abstimmung zwischen
   Rohrlieferant, Blechlieferant und Schweißbetrieb.
-- 'Was wir für eine Beurteilung benötigen: ein 3D-Modell oder eine Zeichnung des Profils, Profilart und
+- 'Was wir für eine Beurteilung benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und
   -größe, den Werkstoff, die Längen und die Stückzahl. Rundrohr schneiden wir bis ø 150 mm, quadratische
   und rechteckige Profile bis 120 × 120 mm; die Wandstärke geht bis 6 mm in Stahl und bis 4 mm in Edelstahl.
   Liegt Ihr Profil außerhalb dieser Maße, legen Sie es unserer Arbeitsvorbereitung vor.
@@ -79,7 +79,7 @@ faq:
     auch ein einzelnes Profil oder eine kleine Serie gut machbar. Bei größeren Serien verschiebt sich
     der Schwerpunkt auf Schachtelung und Durchlaufzeit.
 - vraag: Was benötigen Sie für ein Angebot?
-  antwoord: Ein 3D-Modell oder eine Zeichnung des Profils, Profilart und -größe, den Werkstoff, die Längen
+  antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und -größe, den Werkstoff, die Längen
     und die Stückzahl. Geht es um eine komplette Konstruktion, senden Sie auch die Baugruppe mit; dann
     beurteilen wir gleich Schweißfolge und Fertigbarkeit des Ganzen.
 related:

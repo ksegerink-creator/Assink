@@ -5,7 +5,7 @@ group: hoofd
 order: 10
 kicker: Mogelijkheid 1.0
 h1: Perfectie in plaatwerk
-intro: Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, zetten en afwerken
+intro: Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, kanten en afwerken
   van fijnplaatmateriaal — enkelstuks én serie, uit Hengelo.
 heroPhoto:
   subject: Breedbeeld productievloer met plaatwerk in bewerking
@@ -13,21 +13,21 @@ heroPhoto:
   crop: Breed overzicht
   comp: Werkvloer, machines op afstand
 body:
-- Wij verwerken fijnplaat met een fiberlaser (Trumpf TruLaser 3040, 4 kW), kantpers en in-house afwerking.
+- Wij verwerken fijnplaat met een fiberlaser (Trumpf TruLaser 3040, 4 kW), kantbank en in-house afwerking.
   Van RVS-zichtwerk tot aluminium behuizingen — maatvast en reproduceerbaar.
-- 'Plaatwerk bij Assink & Schipholt gaat verder dan snijden en zetten. Van eerste tekening tot afgewerkt
+- 'Plaatwerk bij Assink & Schipholt gaat verder dan snijden en kanten. Van eerste tekening tot afgewerkt
   onderdeel begeleiden wij het hele traject: materiaaladvies, engineering, productie en oppervlakteafwerking
   — onder één dak in Hengelo.'
 - 'Of het gaat om een enkel prototype of een jaarserie: plaatwerk op maat vraagt om precisie die reproduceerbaar
-  blijft. Onze servo-elektrische kantpersen en lasersnijmachines zorgen voor constante maatvoering, ook
+  blijft. Onze servo-elektrische kantbanken en lasersnijmachines zorgen voor constante maatvoering, ook
   bij grotere series.'
 - 'Welke plaatdikte haalbaar is, hangt af van het materiaal. Op de Trumpf TruLaser 3040 — een fiberlaser
   van 4 kW — snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en
   gegalvaniseerd staal van 0,5 tot 10 mm. Valt uw aanvraag buiten dat bereik, leg hem dan voor: binnen
   onze groep is vaak meer mogelijk dan op onze eigen machine.'
-- 'Een plaatwerkdeel doorloopt bij ons meestal dezelfde route: lasersnijden, ontbramen, zetten en waar
+- 'Een plaatwerkdeel doorloopt bij ons meestal dezelfde route: lasersnijden, ontbramen, kanten en waar
   nodig lassen en afwerken. Ontbramen doen wij machinaal op een Timesavers 42 Series RB, zodat de randen
-  braamvrij en veilig zijn voordat er iemand mee verder werkt. Zetten gebeurt op een servo-elektrische
+  braamvrij en veilig zijn voordat er iemand mee verder werkt. Kanten gebeurt op een servo-elektrische
   Safan Darley E-Brake 150-3100 T3 met 150 ton perskracht en een werklengte tot 3100 mm.'
 - 'Enkelstuks en serie vragen om een andere voorbereiding. Bij een prototype ligt het accent op meedenken
   over maakbaarheid: een buighoek verplaatsen of een uitsparing anders positioneren scheelt vaak een hele
@@ -42,7 +42,7 @@ body:
   3834-2 en voor draagconstructies onder EN 1090-1. In de praktijk betekent dat een vaste ingangscontrole
   op materiaal, vastgelegde lasparameters en een maatcontrole vóór verzending — niet alleen op het eerste
   stuk.
-- Wilt u plaatwerk laten maken? Stuur een tekening of 3D-model mee met de materiaalsoort en plaatdikte,
+- Wilt u plaatwerk laten maken? Stuur een PDF-tekening en een 3D STEP-bestand mee met de materiaalsoort en plaatdikte,
   het aantal stuks, en of het zichtwerk betreft met de bijbehorende afwerking. Met die gegevens beoordelen
   wij de maakbaarheid en maken wij een onderbouwde offerte. Twijfelt u over materiaalkeuze of plaatdikte,
   dan denken wij daar graag in mee voordat de tekening definitief is.
@@ -60,8 +60,8 @@ cards:
   label: Precisieplaatwerk
   desc: Maatvast enkelstuks- en seriewerk.
 - slug: plaatwerk/zetten
-  label: Kanten & zetten
-  desc: Nauwkeurige buighoeken op de servo-elektrische kantpers.
+  label: Kanten
+  desc: Nauwkeurige buighoeken op de servo-elektrische kantbank.
 - slug: plaatwerk/lasersnijden
   label: Lasersnijden
   desc: 2D-lasersnijden van staal, RVS en aluminium.
@@ -101,12 +101,12 @@ faq:
     horen bij het traject. U ontvangt een montageklaar deel in plaats van een halffabricaat dat elders
     nog bewerkt moet worden.
 - vraag: Wat hebben jullie nodig om een offerte te maken?
-  antwoord: Een tekening of 3D-model, de materiaalsoort en plaatdikte, het aantal stuks, en of het zichtwerk
+  antwoord: Een PDF-tekening en een 3D STEP-bestand, de materiaalsoort en plaatdikte, het aantal stuks, en of het zichtwerk
     betreft met de bijbehorende afwerking. Ontbreken er gegevens, dan nemen wij contact op voordat we
     een prijs afgeven.
 seo:
   title: Plaatwerk op maat — RVS, aluminium en messing
-  description: 'Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, zetten, lassen en afwerken
+  description: 'Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, kanten, lassen en afwerken
     tot op de millimeter. Enkelstuks en serie uit Hengelo, Twente.'
 translated:
 - nl

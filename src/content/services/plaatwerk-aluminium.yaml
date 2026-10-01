@@ -17,9 +17,9 @@ body:
   voor bewegende delen, behuizingen en constructies waar gewicht telt.
 - Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing.
 - 'Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer
-  terug bij het zetten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
+  terug bij het kanten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
   gereedschap en lasparameters.'
-- 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij het zetten gedraagt aluminium
+- 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij het kanten gedraagt aluminium
   zich anders dan staal: het veert sterker terug, waardoor de buighoek en de gereedschapkeuze bepalend
   zijn voor de uiteindelijke maat. Bij een strakke maatvoering nemen we dat mee in de werkvoorbereiding
   in plaats van het achteraf te corrigeren.'
@@ -40,7 +40,7 @@ materials:
 process:
 - step: Lasersnijden
   desc: Snijden van aluminium plaat.
-- step: Zetten
+- step: Kanten
   desc: Kanten met aandacht voor terugvering.
 - step: Aluminium lassen
   desc: TIG/MIG-lassen, vervormingsarm.
@@ -55,7 +55,7 @@ related:
   label: Aluminium lassen
   desc: Specialistisch TIG/MIG-laswerk.
 - slug: plaatwerk/zetten
-  label: Kanten & zetten
+  label: Kanten
   desc: Nauwkeurige buighoeken.
 - slug: industriele-behuizing
   label: Industriële behuizing
@@ -71,7 +71,7 @@ faq:
   antwoord: 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij dunne platen en grote
     vlakken houden we rekening met vlakheid: dan zijn kantflenzen of verstijvingen vaak verstandiger dan
     een dikkere plaat.'
-- vraag: Waarom veert aluminium meer terug bij het zetten?
+- vraag: Waarom veert aluminium meer terug bij het kanten?
   antwoord: Aluminium heeft andere materiaaleigenschappen dan staal en veert na het buigen sterker terug.
     De uiteindelijke hoek hangt daardoor sterker af van de gereedschapkeuze en de instelling. Wij nemen
     dat mee in de werkvoorbereiding in plaats van het achteraf te corrigeren.

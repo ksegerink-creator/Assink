@@ -30,7 +30,7 @@ const VERIFIED_FACTS = `
 - Materialen die wij verwerken: RVS 304, RVS 316, aluminium, messing, staal.
 - Eigen machinepark: Trumpf TruLaser 3040 (2D-lasersnijden met fiberlaser, 4 kW;
   staal, RVS, aluminium en gegalvaniseerd staal), Trumpf TruLaser Tube 3000
-  (buislasersnijden), Safan Darley E-Brake 150-3100 T3 (servo-elektrische kantpers,
+  (buislasersnijden), Safan Darley E-Brake 150-3100 T3 (servo-elektrische kantbank,
   150 ton perskracht, werklengte tot 3100 mm), Timesavers 42 Series RB (borstel- en
   afbraammachine), Straalcabine 8×4×3 m (glasparelstralen, 100–200 μm, 3,0 bar,
   voor aluminium en RVS).
@@ -54,7 +54,10 @@ const VERIFIED_FACTS = `
   vierkant en rechthoekig tot 120 x 120 mm, wanddikte tot 6 mm in staal en tot
   4 mm in RVS. Alleen staal, RVS en aluminium: messing en koper snijden wij NIET
   op de buislaser. Afwijkende afmetingen gaan via de werkvoorbereiding.
-- Zetwerk: toleranties volgens ISO 2768; noem geen tolerantie in mm.
+- Kantwerk: toleranties volgens ISO 2768; noem geen tolerantie in mm.
+- Wij zeggen "kanten" en "kantbank", niet "zetten", "zetwerk" of "kantpers".
+- Wat wij bij een aanvraag vragen: een PDF-tekening en een 3D STEP-bestand.
+  Schrijf nooit "een tekening of 3D-model" — wij willen allebei.
 - Puntlassen bieden wij aan (bevestigd door productie, 1 oktober 2026).
 - Wij maken GEEN ATEX-gecertificeerde behuizingen; noem ATEX nooit.
 - Nog NIET vastgesteld, dus nooit noemen: de maximale buislengte op de buislaser.

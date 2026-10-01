@@ -24,7 +24,7 @@ body:
   and with welding and assembly in the same hall in Hengelo. For a frame with sheet metal parts that means
   one production engineering pass, one schedule and one point of contact, instead of coordination between
   a tube supplier, a sheet supplier and a welding shop.
-- 'What we need to assess a request: a 3D model or drawing of the profile, the profile type and size,
+- 'What we need to assess a request: a PDF drawing and a 3D STEP file of the profile, the profile type and size,
   the material, the lengths and the quantity. We cut round tube up to ø 150 mm and square or rectangular
   profiles up to 120 × 120 mm; wall thickness goes up to 6 mm in steel and up to 4 mm in stainless steel.
   If your profile falls outside that, put it to our production engineering. If it concerns a complete structure, send the assembly too and we will look at the welding
@@ -76,7 +76,7 @@ faq:
     profile or a small batch is perfectly workable. For larger series the emphasis shifts to nesting and
     lead time.
 - vraag: What do you need to prepare a quotation?
-  antwoord: A 3D model or drawing of the profile, the profile type and size, the material, the lengths
+  antwoord: A PDF drawing and a 3D STEP file of the profile, the profile type and size, the material, the lengths
     and the quantity. If it concerns a complete structure, send the assembly as well; we will then assess
     the welding sequence and the manufacturability of the whole at the same time.
 related:

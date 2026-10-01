@@ -13,7 +13,7 @@ megaKolommen:
       - label: Messing
         slug: plaatwerk/messing
         idx: '1.3'
-      - label: Kanten & zetten
+      - label: Kanten
         slug: plaatwerk/zetten
         idx: '1.4'
       - label: Pers- & trekmoeren

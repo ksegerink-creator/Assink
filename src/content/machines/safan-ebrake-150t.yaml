@@ -1,8 +1,8 @@
 name: Safan Darley E-Brake 150-3100 T3
-category: Zetten / kanten
+category: Kanten
 order: 30
 description: >-
-  Servo-elektrische kantpers met nauwkeurige buighoeken en constante
+  Servo-elektrische kantbank met nauwkeurige buighoeken en constante
   maatvoering.
 specs:
   - label: Perskracht
@@ -15,7 +15,7 @@ specs:
     value: gepatenteerde rollenaandrijving in de bovenbalk
 foto: /src/assets/uploads/machines/safan-ebrake-150t/foto.jpeg
 photo:
-  subject: Safan Darley E-Brake kantpers zet een plaat
+  subject: Safan Darley E-Brake kantbank kant een plaat
   orient: Liggend 4:3
   crop: Machine + operator
   comp: Plaat onder de pers

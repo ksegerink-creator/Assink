@@ -24,7 +24,7 @@ body:
   ein und prüfen die erste Biegung, bevor die Serie durchläuft.
 - 'Die Abwicklung ist der Kern der Arbeitsvorbereitung. Beim Biegen dehnt sich das Material außen und
   staucht innen, die flache Länge ist also nicht einfach die Summe der Schenkel. Wir berechnen diese Biegekompensation
-  selbst, Sie müssen also keine abgewickelte Zeichnung liefern: ein 3D-Modell oder eine Zeichnung des
+  selbst, Sie müssen also keine abgewickelte Zeichnung liefern: eine PDF-Zeichnung und eine 3D-STEP-Datei des
   Endprodukts genügt. Liefern Sie doch eine Abwicklung, nennen Sie uns die zugrunde gelegte Kompensation,
   sonst weicht das Maß ab.'
 - Auch die Reihenfolge zählt. Eine Biegung kann einer früheren im Weg stehen, und ein Schenkel zu nah
@@ -36,7 +36,7 @@ body:
   die Schutzfolie bis einschließlich des letzten Arbeitsgangs und arbeiten bei Bedarf mit angepasstem
   Werkzeug. Mehr zur Werkstoffseite auf unseren Seiten über <a href="/de/plaatwerk/rvs/">Edelstahlblech</a>
   und <a href="/de/plaatwerk/messing/">Messing</a>.'
-- 'Was wir für die Beurteilung von Abkantarbeit benötigen: eine Zeichnung oder ein 3D-Modell des Endprodukts,
+- 'Was wir für die Beurteilung von Abkantarbeit benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des Endprodukts,
   Werkstoff und Blechdicke, den gewünschten Biegeradius, sofern er feststeht, die Angabe, ob es sich um
   Sichtflächen handelt, und die Stückzahl. Die maximale Länge einer einzelnen Biegung beträgt bei uns
   3100 mm; längere Teile setzen wir aus mehreren Stücken zusammen oder lösen sie anders.'
@@ -77,7 +77,7 @@ faq:
     mit. Steht Ihr Radius fest, nennen Sie ihn uns — dann beurteilen wir die Machbarkeit, bevor die Zeichnung
     endgültig ist.
 - vraag: Muss ich die Abwicklung selbst berechnen?
-  antwoord: Nein. Wir berechnen die Biegekompensation selbst, ein 3D-Modell oder eine Zeichnung des Endprodukts
+  antwoord: Nein. Wir berechnen die Biegekompensation selbst, eine PDF-Zeichnung und eine 3D-STEP-Datei des Endprodukts
     genügt also. Liefern Sie doch eine Abwicklung, nennen Sie uns die zugrunde gelegte Kompensation, sonst
     weicht das Endmaß ab.
 - vraag: Wie lang darf eine Biegung sein?

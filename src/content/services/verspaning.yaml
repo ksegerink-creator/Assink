@@ -27,7 +27,7 @@ body:
   bouwen de verspaande delen daarna in bij ons eigen <a href="/plaatwerk/">plaatwerk</a> en <a href="/constructies/">constructiewerk</a>.
   Voor <a href="/machinebouw/">machinebouw</a> betekent dat een compleet samengestelde bouwgroep in plaats
   van een doos met componenten.
-- 'Wat wij nodig hebben voor een aanvraag: een tekening of 3D-model met de maatvoering, het materiaal,
+- 'Wat wij nodig hebben voor een aanvraag: een PDF-tekening en een 3D STEP-bestand met de maatvoering, het materiaal,
   de gewenste toleranties en oppervlakte-eisen, het aantal stuks, en of het onderdeel deel uitmaakt van
   een grotere samenstelling. Dat laatste bepaalt vaak de volgorde waarin we het traject inplannen.'
 - 'Onze werkplaats staat in Hengelo, midden in Twente, en wij werken voor machinebouwers en industriële
@@ -78,6 +78,6 @@ faq:
     bij ons ingebouwd in een gelaste constructie of een plaatwerksamenstelling, zodat u één compleet product
     ontvangt in plaats van losse componenten.
 - vraag: Wat hebben jullie nodig voor een offerte?
-  antwoord: Een tekening of 3D-model met de maatvoering, het materiaal, de gewenste toleranties en oppervlakte-eisen,
+  antwoord: Een PDF-tekening en een 3D STEP-bestand met de maatvoering, het materiaal, de gewenste toleranties en oppervlakte-eisen,
     het aantal stuks, en of het onderdeel deel uitmaakt van een grotere samenstelling. Dat laatste bepaalt
     vaak de volgorde van het traject.

@@ -6,9 +6,9 @@ order: 21
 kicker: Plaatwerk 1.1
 h1: RVS-plaatwerk
 intro: 'Geslepen RVS-plaatwerk voor zichtwerk: corrosiebestendig, representatief en maatvast. Onze RVS-plaatbewerking
-  omvat lasersnijden, zetten, ontbramen en passiveren.'
+  omvat lasersnijden, kanten, ontbramen en passiveren.'
 heroPhoto:
-  subject: Close-up van geslepen RVS zetwerk met scherpe kant
+  subject: Close-up van geslepen RVS kantwerk met scherpe kant
   orient: Liggend 16:10
   crop: Detailcrop op oppervlak
   comp: Strijklicht over geborsteld RVS
@@ -26,11 +26,11 @@ body:
   de belasting en van de vervolgbewerkingen: dun materiaal is lichter en goedkoper, maar vraagt bij grote
   vlakken om verstijvingen of kantflenzen om vlak te blijven. Bij zichtwerk kijken we daarnaast naar de
   korrelrichting, zodat die over de losse delen van een samenstelling doorloopt.'
-- 'Zetten vraagt bij RVS meer aandacht dan bij staal: het materiaal veert sterker terug en het oppervlak
-  is gevoelig voor krassen. Wij zetten op een servo-elektrische kantpers met een werklengte tot 3100 mm
+- 'Kanten vraagt bij RVS meer aandacht dan bij staal: het materiaal veert sterker terug en het oppervlak
+  is gevoelig voor krassen. Wij kanten op een servo-elektrische kantbank met een werklengte tot 3100 mm
   en werken bij zichtwerk met beschermfolie en aangepast gereedschap. Meer daarover staat op onze pagina
   over <a href="/plaatwerk/zetten/">kanten en zetten</a>.'
-- 'Om een aanvraag goed te kunnen beoordelen hebben wij nodig: een tekening of 3D-model, de gewenste kwaliteit,
+- 'Om een aanvraag goed te kunnen beoordelen hebben wij nodig: een PDF-tekening en een 3D STEP-bestand, de gewenste kwaliteit,
   de plaatdikte, of het zichtwerk betreft en welke nabehandeling daarbij hoort, en om hoeveel stuks het
   gaat. Twijfelt u tussen 304 en 316, dan zetten we het verschil op een rij in ons artikel over <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
   304 of 316</a>.'
@@ -45,8 +45,8 @@ materials:
 process:
 - step: Lasersnijden
   desc: 2D-lasersnijden met minimale toleranties.
-- step: Zetten
-  desc: Nauwkeurige buighoeken op de kantpers.
+- step: Kanten
+  desc: Nauwkeurige buighoeken op de kantbank.
 - step: Ontbramen
   desc: Braamvrije, veilige randen.
 - step: Laswerk & afwerking
@@ -68,7 +68,7 @@ related:
   desc: Gelaste RVS-samenstellingen.
 seo:
   title: RVS-plaatwerk — geslepen RVS 304 en 316
-  description: 'Corrosiebestendig, representatief RVS-plaatwerk in 304 en 316: lasersnijden, zetten, ontbramen
+  description: 'Corrosiebestendig, representatief RVS-plaatwerk in 304 en 316: lasersnijden, kanten, ontbramen
     en passiveren voor zichtwerk en machinebouw.'
 translated:
 - nl

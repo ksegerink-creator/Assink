@@ -37,7 +37,7 @@ body:
 - Bij kleine aantallen, prototypes en zichtwerk is handmatig <a href="/plaatwerk/lassen/">TIG- of MIG-lassen</a>
   of <a href="/plaatwerk/laserlassen/">laserlassen</a> meestal de betere route. Laserlassen brengt weinig
   warmte in en vraagt weinig nabewerking, wat bij een strakke zichtnaad zwaarder weegt dan snelheid.
-- 'Voor een beoordeling hebben wij nodig: de tekening of het 3D-model van de samenstelling, het materiaal
+- 'Voor een beoordeling hebben wij nodig: de PDF-tekening en het 3D STEP-bestand van de samenstelling, het materiaal
   en de plaatdikte, de lasnaden met hun eisen, het aantal per serie en het afroepritme. Daarmee bepalen
   wij of geautomatiseerd lassen in uw geval iets oplevert, of dat handlassen goedkoper uitvalt.'
 materials:

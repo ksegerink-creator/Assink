@@ -24,7 +24,7 @@ applications: ["Instrumentbehuizingen", "Montageplaten en beugels", "Panelen", "
 related:
   - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Krappe toleranties." }
   - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Bevestiging in dun plaatwerk." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Maatvast kantwerk." }
+  - { slug: "plaatwerk/zetten", label: "Kanten", desc: "Maatvast kantwerk." }
 seo:
   title: "Meet- en regeltechniek — precisieplaatwerk en behuizingen"
   description: "Instrumentbehuizingen, montageplaten en panelen voor meet- en regeltechniek in RVS en aluminium. Lasersnijden en kanten tot ± 0,2 mm, ook in kleine series."
