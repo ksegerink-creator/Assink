@@ -41,6 +41,9 @@ body:
   that information we assess manufacturability and prepare a substantiated quotation. If you are unsure
   about material choice or sheet thickness, we are glad to think along before the drawing is final.
 cards:
+- slug: plaatwerk/staal
+  label: Steel
+  desc: Stiff, readily weldable and economical — the workhorse.
 - slug: plaatwerk/rvs
   label: Stainless steel
   desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.

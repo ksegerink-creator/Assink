@@ -42,6 +42,9 @@ body:
   dazugehört. Damit beurteilen wir die Fertigbarkeit und erstellen ein fundiertes Angebot. Sind Sie bei
   Werkstoff oder Blechdicke unsicher, denken wir gerne mit, bevor die Zeichnung endgültig ist.
 cards:
+- slug: plaatwerk/staal
+  label: Stahl
+  desc: Steif, gut schweißbar und günstig — das Arbeitstier.
 - slug: plaatwerk/rvs
   label: Edelstahl
   desc: Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen.

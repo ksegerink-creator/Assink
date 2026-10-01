@@ -47,6 +47,9 @@ body:
   wij de maakbaarheid en maken wij een onderbouwde offerte. Twijfelt u over materiaalkeuze of plaatdikte,
   dan denken wij daar graag in mee voordat de tekening definitief is.
 cards:
+- slug: plaatwerk/staal
+  label: Staal
+  desc: Stijf, goed lasbaar en voordelig — het werkpaard.
 - slug: plaatwerk/rvs
   label: RVS
   desc: Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk.
@@ -67,7 +70,7 @@ cards:
   desc: 2D-lasersnijden van staal, RVS en aluminium.
 - slug: plaatwerk/lassen
   label: Lassen
-  desc: TIG, MIG en gerobotiseerd lassen.
+  desc: TIG, MIG/MAG en gerobotiseerd lassen.
 - slug: plaatwerk/laserlassen
   label: Laserlassen
   desc: Strakke, vervormingsarme lasverbindingen.
