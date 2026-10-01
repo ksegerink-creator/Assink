@@ -15,6 +15,7 @@ const artikelen = (await getCollection("articles", ({ data }) => data.gepublicee
   (a, b) => b.data.date.localeCompare(a.data.date),
 );
 const alg = await readPage("algemeen", "nl");
+const kb = await readPage("kennisbank", "nl");
 
 const datum = (iso: string) =>
   new Date(iso + "T12:00:00Z").toLocaleDateString("nl-NL", {
@@ -24,20 +25,16 @@ const datum = (iso: string) =>
   });
 ---
 <PageLayout
-  title="Kennisbank"
-  description="Technische artikelen over plaatwerk, buislasersnijden, industriële behuizingen en uitbesteden in de machinebouw — van de vakmensen van Assink & Schipholt."
+  title={kb.seoTitel}
+  description={kb.seoOmschrijving}
   canonicalSlug="kennisbank"
-  trail={[{ label: "Kennisbank", slug: "kennisbank" }]}
+  trail={[{ label: kb.seoTitel, slug: "kennisbank" }]}
 >
   <section class="sec kb-hero">
     <div class="wrap">
-      <span class="mono kb-hero__kicker">Kennisbank · {artikelen.length} artikelen</span>
-      <h1>Vakkennis,<br />opgeschreven</h1>
-      <p class="kb-hero__lead">
-        Wat we dagelijks op de werkvloer tegenkomen, uitgelegd voor engineers,
-        werkvoorbereiders en inkopers. Over materiaalkeuze, lastechniek en
-        maakbaarheid.
-      </p>
+      <span class="mono kb-hero__kicker">{kb.kicker} · {artikelen.length} artikelen</span>
+      <h1>{kb.titelRegel1}<br />{kb.titelRegel2}</h1>
+      <p class="kb-hero__lead">{kb.lead}</p>
     </div>
   </section>
 
