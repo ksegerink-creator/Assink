@@ -7,8 +7,9 @@ specs:
   - { label: "Laserbron", value: "fiberlaser, 4 kW" }
   - { label: "Materialen", value: "staal · RVS · aluminium" }
   - { label: "Aandrijving", value: "lineaire aandrijvingen" }
+foto: /src/assets/uploads/machines/trulaser-3040/foto.jpg
 photo:
-  subject: "Trumpf TruLaser 3040 lasersnijmachine in bedrijf"
+  subject: "Trumpf TruLaser 3040 met LiftMaster-beladingssysteem"
   orient: "Liggend 4:3"
-  crop: "Machine"
-  comp: "Snijkop boven plaatveld"
+  crop: "Machine + beladingssysteem"
+  comp: "Plaat op de uitgeschoven wisseltafel"
