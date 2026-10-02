@@ -823,6 +823,10 @@ export default config({
         h1: fields.text({ label: "Titel (H1)" }),
         intro: fields.text({ label: "Intro", multiline: true }),
         foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
+        midFoto: pageFoto("services")(
+          "Foto halverwege de pagina",
+          "Staat naast het processchema. Laat leeg voor de standaardfoto van deze groep pagina's.",
+        ),
         heroPhoto: photoMeta(),
         bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
         body: fields.array(fields.text({ label: "Alinea", multiline: true }), {

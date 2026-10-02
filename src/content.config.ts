@@ -32,6 +32,7 @@ const services = defineCollection({
     h1: z.string(),
     intro: z.string(),
     foto: z.string().optional(),
+    midFoto: z.string().optional(),
     heroPhoto: photo,
     body: z.array(z.string()).default([]),
     bodyHeading: z.string().optional(),

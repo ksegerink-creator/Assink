@@ -19,7 +19,9 @@ const site = Astro.site ?? new URL(SITE.url);
 const nav = (slug: string) => localizePath(slug, locale);
 
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
-const midImg = serviceMidImageFor(s.group);
+// Eigen foto uit het CMS gaat voor; zonder upload valt de pagina terug op
+// het standaardbeeld van haar groep in src/data/images.ts.
+const midImg = photo(s.midFoto) ?? serviceMidImageFor(s.group);
 // Toon het middenbeeld alleen als het niet hetzelfde beeld is als de hero.
 const showMid = midImg && midImg !== heroImg && s.process.length > 0;
 
