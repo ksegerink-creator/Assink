@@ -150,6 +150,12 @@ export const UI_GROUPS: UiGroup[] = [
         "multiline": false
       },
       {
+        "key": "kennisbank",
+        "label": "Kennisbank",
+        "nl": "Kennisbank",
+        "multiline": false
+      },
+      {
         "key": "langLabel",
         "label": "Taal",
         "nl": "Taal",

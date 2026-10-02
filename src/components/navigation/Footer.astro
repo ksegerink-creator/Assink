@@ -40,7 +40,7 @@ const year = 2026;
         <a href={nav("kwaliteit")}>{t(locale, "quality")}</a>
         <a href={nav("vacatures")}>{t(locale, "careers")}</a>
         {/* De kennisbank bestaat alleen in het Nederlands, net als op de vorige site. */}
-        {locale === "nl" && <a href="/kennisbank/">Kennisbank</a>}
+        {locale === "nl" && <a href="/kennisbank/">{t(locale, "kennisbank")}</a>}
         <a href={privacyHref}>{t(locale, "privacy")}</a>
       </div>
 
