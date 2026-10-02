@@ -65,6 +65,9 @@
     "altWorkPrep": "Work preparation at the machine control panel",
     "altProductionHall": "Assink & Schipholt production hall with a vacuum lifter",
     "altBlasting": "Blasting a frame in the blast cabin",
+    "altWeldingDeptEmployee": "Assink & Schipholt employee in the welding department",
+    "altWeldingDept": "The welding department at Assink & Schipholt",
+    "altTigCloseup": "TIG welding close-up",
     "altArchive": "Archive photograph from the Assink & Schipholt archive"
   },
   "archief": {

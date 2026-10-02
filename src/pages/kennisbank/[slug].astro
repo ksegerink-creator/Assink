@@ -8,6 +8,7 @@ import { photo } from "@utils/photos";
 import { imageFor } from "@data/images";
 import { articleJsonLd } from "@utils/seo";
 import { SITE } from "@data/site";
+import { t } from "@data/i18n";
 
 /** Kennisbank-artikel. Nederlandstalig (zie kennisbank/index.astro). */
 export async function getStaticPaths() {
@@ -100,7 +101,7 @@ if (a.faq.length > 0) {
     {a.faq.length > 0 && (
       <section class="sec tight">
         <div class="wrap art-grid">
-          <h2 class="art-sec__h rv">Veelgestelde vragen</h2>
+          <h2 class="art-sec__h rv">{t("nl", "faqHead")}</h2>
           <div class="rv">
             {a.faq.map((f) => (
               <details class="art-faq">

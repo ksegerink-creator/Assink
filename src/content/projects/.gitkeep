@@ -1,0 +1,6 @@
+# Deze map is met opzet leeg.
+#
+# De sectie Referentiewerk op /over-ons/ verschijnt pas zodra hier een
+# project staat. Voeg ze toe via het CMS onder Lijsten & referenties →
+# Projecten (referenties); dit bestand houdt de map in git zodat de
+# build niet waarschuwt over een ontbrekende map.
