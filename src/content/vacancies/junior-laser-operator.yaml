@@ -22,3 +22,39 @@ photo:
   orient: "Staand 3:4"
   crop: "Persoon aan machine"
   comp: "Operator bij het bedieningspaneel"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Junior laser operator
+  employmentType: Full-time
+  hours: 38 hours per week
+  intro: For our laser cutting department we are looking for a junior laser operator. You will work with
+    the Trumpf TruLaser 3040 and learn the trade with us on the job.
+  responsibilities:
+  - Operating the laser cutting machine and monitoring production
+  - Preparing material, removing and sorting cut parts
+  - Checking cut quality and dimensional accuracy
+  requirements:
+  - An interest in engineering; experience with laser cutting is an advantage
+  - Precise and willing to get stuck in
+  - Willing to learn — we will train you further
+  photo:
+    subject: Operator at the laser cutting machine
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Junior Laseroperator
+  employmentType: Vollzeit
+  hours: 38 Stunden pro Woche
+  intro: Für unsere Laserschneidabteilung suchen wir einen Junior Laseroperator. Sie arbeiten mit der Trumpf
+    TruLaser 3040 und lernen das Fach bei uns in der Praxis.
+  responsibilities:
+  - Bedienen der Laserschneidmaschine und Überwachen der Produktion
+  - Material bereitstellen, geschnittene Teile entnehmen und sortieren
+  - Schnittqualität und Maßhaltigkeit prüfen
+  requirements:
+  - Technisches Interesse; Erfahrung im Laserschneiden ist ein Plus
+  - Genau und zupackend
+  - Lernbereit — wir bilden Sie weiter aus
+  photo:
+    subject: Bediener an der Laserschneidmaschine

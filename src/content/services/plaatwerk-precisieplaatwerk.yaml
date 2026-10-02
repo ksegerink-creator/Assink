@@ -29,3 +29,93 @@ seo:
   title: Precisieplaatwerk op maat
   description: "Maatvast precisieplaatwerk: enkelstuks, series en herhaalorders, reproduceerbaar geleverd door vaste werkinstructies en maatcontrole."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Precision sheet metal
+  kicker: Sheet metal work 1.6
+  h1: Precision sheet metal
+  intro: Accuracy down to the millimetre. From one-offs to series and repeat orders — dimensionally stable
+    and reproducible.
+  heroPhoto:
+    subject: Precision sheet metal part on a measuring table during dimensional inspection
+  body:
+  - 'Precision sheet metal calls for controlled processes: from laser cutting and press braking through
+    to finishing. Thanks to fixed work instructions and dimensional inspection, part one thousand is just
+    as good as part one.'
+  - 'For precision sheet metal with tight tolerances we combine laser cutting with a servo-electric press
+    brake: this gives a more consistent bend angle than a hydraulic press, even over long series.'
+  materials:
+  - Stainless steel
+  - Aluminium
+  - Brass
+  - Steel
+  process:
+  - step: Production engineering
+    desc: Determining the flat pattern, bend lines and tolerances.
+  - step: Laser cutting
+    desc: Dimensionally accurate cutting.
+  - step: Press braking
+    desc: Repeatable bend angles.
+  - step: Dimensional inspection
+    desc: Inspection during and after production.
+  applications:
+  - Machine building
+  - Electronics
+  - Equipment manufacturing
+  related:
+  - label: Laser cutting
+    desc: 2D laser cutting.
+  - label: Bending & forming
+    desc: Press brake work.
+  - label: Quality
+    desc: Our quality assurance.
+  seo:
+    title: Precision sheet metal work
+    description: 'Dimensionally stable precision sheet metal: one-offs, series and repeat orders, delivered
+      reproducibly thanks to fixed work instructions and dimensional inspection.'
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Präzisionsblech
+  kicker: Blechbearbeitung 1.6
+  h1: Präzisionsblech
+  intro: Genauigkeit bis auf den Millimeter. Von Einzelstücken bis zu Serien und Wiederholaufträgen — maßhaltig
+    und reproduzierbar.
+  heroPhoto:
+    subject: Präzisionsblechteil auf dem Messtisch bei der Maßkontrolle
+  body:
+  - 'Präzisionsblech verlangt beherrschte Prozesse: vom Laserschneiden und Abkanten bis zur Nachbearbeitung.
+    Durch feste Arbeitsanweisungen und Maßkontrolle ist Teil eintausend genauso gut wie Teil eins.'
+  - 'Für Präzisionsblech mit engen Toleranzen kombinieren wir Laserschneiden mit einer servoelektrischen
+    Abkantpresse: Diese liefert einen gleichmäßigeren Biegewinkel als eine hydraulische Presse, auch bei
+    langen Serien.'
+  materials:
+  - Edelstahl
+  - Aluminium
+  - Messing
+  - Stahl
+  process:
+  - step: Arbeitsvorbereitung
+    desc: Abwicklung, Biegelinien und Toleranzen festlegen.
+  - step: Laserschneiden
+    desc: Maßhaltiges Schneiden.
+  - step: Abkanten
+    desc: Wiederholbare Biegewinkel.
+  - step: Maßkontrolle
+    desc: Kontrolle während und nach der Produktion.
+  applications:
+  - Maschinenbau
+  - Elektronik
+  - Apparatebau
+  related:
+  - label: Laserschneiden
+    desc: 2D-Laserschneiden.
+  - label: Kanten & Biegen
+    desc: Kantarbeiten.
+  - label: Qualität
+    desc: Unsere Qualitätssicherung.
+  seo:
+    title: Präzisionsblech nach Maß
+    description: 'Maßhaltiges Präzisionsblech: Einzelstücke, Serien und Wiederholaufträge, reproduzierbar
+      geliefert durch feste Arbeitsanweisungen und Maßkontrolle.'

@@ -19,3 +19,37 @@ photo:
   orient: Liggend 4:3
   crop: Machine + operator
   comp: Plaat onder de pers
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  name: Safan Darley E-Brake 150-3100 T3
+  category: Bending / press braking
+  description: Servo-electric press brake delivering accurate bend angles and consistent dimensions.
+  specs:
+  - label: Press force
+    value: 150 tonnes
+  - label: Working length
+    value: up to 3100 mm
+  - label: Drive
+    value: servo-electric
+  - label: Special feature
+    value: patented roller drive in the upper beam
+  photo:
+    subject: Safan Darley E-Brake press brake bending a sheet
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  name: Safan Darley E-Brake 150-3100 T3
+  category: Abkanten / Biegen
+  description: Servoelektrische Abkantpresse mit genauen Biegewinkeln und konstanter Maßhaltigkeit.
+  specs:
+  - label: Presskraft
+    value: 150 Tonnen
+  - label: Arbeitslänge
+    value: bis 3100 mm
+  - label: Antrieb
+    value: servoelektrisch
+  - label: Besonderheit
+    value: patentierter Rollenantrieb im Oberbalken
+  photo:
+    subject: Safan Darley E-Brake Abkantpresse beim Kanten eines Blechs

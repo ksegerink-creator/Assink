@@ -29,3 +29,87 @@ seo:
   title: "Ontbramen — braamvrije, veilige randen"
   description: "Ontbramen en borstelen na het lasersnijden op de Timesavers 42 Series RB: veilige, montageklare randen."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Deburring
+  kicker: Sheet metal work 1.7
+  h1: Deburring
+  intro: 'After laser cutting, edges are deburred: safe to handle, ready for the next operation and neatly
+    finished.'
+  heroPhoto:
+    subject: Sheet metal part passing through the deburring/brushing machine
+  body:
+  - Burrs arise during cutting and can be sharp or a nuisance during assembly and finishing. On our Timesavers
+    42 Series RB we deburr and brush flat workpieces after laser cutting.
+  materials:
+  - Steel
+  - Stainless steel
+  - Aluminium
+  process:
+  - step: Cutting
+    desc: Laser cutting of the part.
+  - step: Deburring
+    desc: Burr removal and edge rounding.
+  - step: Brushing
+    desc: Levelling out the surface.
+  specs:
+  - label: Machine
+    value: Timesavers 42 Series RB
+  - label: Type
+    value: brushing and deburring machine
+  applications:
+  - Sheet metal work
+  - Visible surfaces
+  - Assembly-ready parts
+  related:
+  - label: Laser cutting
+    desc: The operation before deburring.
+  - label: Machine park
+    desc: View the machine.
+  seo:
+    title: Deburring — burr-free, safe edges
+    description: 'Deburring and brushing after laser cutting on the Timesavers 42 Series RB: safe, assembly-ready
+      edges.'
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Entgraten
+  kicker: Blechbearbeitung 1.7
+  h1: Entgraten
+  intro: 'Nach dem Laserschneiden werden die Kanten entgratet: sicher in der Handhabung, bereit für den
+    nächsten Arbeitsgang und sauber ausgeführt.'
+  heroPhoto:
+    subject: Blechteil durchläuft die Entgrat-/Bürstmaschine
+  body:
+  - Grate entstehen beim Schneiden und können scharf oder bei Montage und Endbearbeitung störend sein. Auf
+    unserer Timesavers 42 Series RB entgraten und bürsten wir flache Werkstücke nach dem Laserschneiden.
+  materials:
+  - Stahl
+  - Edelstahl
+  - Aluminium
+  process:
+  - step: Schneiden
+    desc: Laserschneiden des Teils.
+  - step: Entgraten
+    desc: Gratentfernung und Kantenverrundung.
+  - step: Bürsten
+    desc: Vereinheitlichen der Oberfläche.
+  specs:
+  - label: Maschine
+    value: Timesavers 42 Series RB
+  - label: Typ
+    value: Bürst- und Entgratmaschine
+  applications:
+  - Blechbearbeitung
+  - Sichtflächen
+  - Montagefertige Teile
+  related:
+  - label: Laserschneiden
+    desc: Arbeitsgang vor dem Entgraten.
+  - label: Maschinenpark
+    desc: Maschine ansehen.
+  seo:
+    title: Entgraten — gratfreie, sichere Kanten
+    description: 'Entgraten und Bürsten nach dem Laserschneiden auf der Timesavers 42 Series RB: sichere,
+      montagefertige Kanten.'

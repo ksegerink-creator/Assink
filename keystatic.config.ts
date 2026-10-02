@@ -1,5 +1,6 @@
 import { config, singleton, collection, fields } from "@keystatic/core";
 import { UI_GROUPS } from "./src/data/ui-schema";
+import { isVertaalbaar } from "./src/data/vertaling";
 
 /**
  * Keystatic — contentbeheer voor Assink & Schipholt.
@@ -69,6 +70,112 @@ const photoSubjectMeta = () =>
     { subject: fields.text({ label: "Onderwerp (alt-tekst)" }) },
     { label: "Fotogegevens" },
   );
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Vertalingen in hetzelfde formulier
+
+   Nederlands is de bron. De Engelse en Duitse tekst hoort bij dezelfde pagina,
+   dus staat die in hetzelfde bestand én in hetzelfde scherm — onder de
+   Nederlandse velden, in een eigen blok. Voorheen was elke vertaling een eigen
+   singleton of collectie, waardoor je voor één zin drie schermen langs moest.
+
+   Het vertaalblok wordt afgeleid uit het Nederlandse schema, zodat de twee niet
+   uit elkaar kunnen lopen: komt er een veld bij, dan staat het vanzelf ook in
+   de vertaling. Wat eruit gefilterd wordt:
+
+   - foto's en bestanden: beeld is in alle talen hetzelfde;
+   - productienotities bij een foto (oriëntatie, uitsnede, compositie,
+     beeldbron): dat zijn geen teksten om te vertalen;
+   - velden die de route of de sortering bepalen (slug, link, volgorde,
+     sjabloon, groep, zichtbaarheid). Die moeten in alle talen gelijk zijn;
+     src/utils/content.ts zet ze bij het samenvoegen sowieso terug op de
+     Nederlandse waarde.
+
+   Welke namen dat precies zijn staat in src/data/vertaling.ts — één lijst,
+   gedeeld met de contentvalidatie en de vertaalcontrole.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+type Veld = {
+  kind?: string;
+  formKind?: string;
+  label?: string;
+  description?: string;
+  fields?: Record<string, Veld>;
+  element?: Veld;
+  itemLabel?: unknown;
+};
+
+/** Is dit een foto- of bestandsveld? Keystatic markeert die als 'asset'. */
+const isBestand = (veld: Veld) => veld.formKind === "asset";
+
+/** Zet één veld om naar zijn vertaalbare vorm; geeft null als het wegvalt. */
+function vertaalbaarVeld(veld: Veld): Veld | null {
+  if (isBestand(veld)) return null;
+  if (veld.kind === "object" && veld.fields) {
+    const binnen = vertaalbareVelden(veld.fields);
+    if (Object.keys(binnen).length === 0) return null;
+    return fields.object(binnen as never, {
+      label: veld.label ?? "",
+      description: veld.description,
+    }) as never;
+  }
+  if (veld.kind === "array" && veld.element) {
+    const element = vertaalbaarVeld(veld.element);
+    if (!element) return null;
+    return fields.array(element as never, {
+      label: veld.label ?? "",
+      description: veld.description,
+      itemLabel: veld.itemLabel as never,
+    }) as never;
+  }
+  return veld;
+}
+
+/** Filtert een heel schema tot de velden die per taal verschillen. */
+function vertaalbareVelden(schema: Record<string, Veld>): Record<string, Veld> {
+  const uit: Record<string, Veld> = {};
+  for (const [sleutel, veld] of Object.entries(schema)) {
+    if (!isVertaalbaar(sleutel)) continue;
+    const vertaald = vertaalbaarVeld(veld);
+    if (vertaald) uit[sleutel] = vertaald;
+  }
+  return uit;
+}
+
+/**
+ * Plakt een Engels en een Duits blok onder een Nederlands schema.
+ *
+ * `slugVeld` is de naam van het veld dat Keystatic als bestandsnaam gebruikt
+ * (bij collecties). In de vertaling moet dat een gewoon tekstveld zijn: de
+ * bestandsnaam ligt vast op de Nederlandse titel, de vertaalde titel is alleen
+ * tekst.
+ */
+function metVertalingen<S extends Record<string, unknown>>(
+  schema: S,
+  slugVeld?: keyof S & string,
+) {
+  const basis = vertaalbareVelden(schema as Record<string, Veld>);
+  if (slugVeld && slugVeld in basis) {
+    const origineel = (schema as Record<string, Veld>)[slugVeld];
+    basis[slugVeld] = fields.text({ label: origineel.label || "Titel" }) as never;
+  }
+  const blok = (taal: string, toelichting: string) =>
+    fields.object(basis as never, {
+      label: taal,
+      description: toelichting,
+    });
+  return {
+    ...schema,
+    en: blok(
+      "Engelse vertaling",
+      "Laat een veld leeg om de Nederlandse tekst hierboven te gebruiken.",
+    ),
+    de: blok(
+      "Duitse vertaling",
+      "Laat een veld leeg om de Nederlandse tekst hierboven te gebruiken.",
+    ),
+  };
+}
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Pagina-schema's
@@ -335,185 +442,35 @@ const navigatieSchema = () => ({
  * submap per taal. Slugs/links blijven in alle talen de Nederlandse canonieke
  * slug — die bepaalt de URL en wordt alleen van een taalprefix voorzien.
  */
-const pageTrio = <S>(label: string, path: string, schema: (ns: string) => S) => ({
-  nl: singleton({
+/**
+ * Eén scherm per pagina, met de drie talen onder elkaar.
+ *
+ * Het schema krijgt de uploadnamespace mee zodat gelijknamige fotovelden van
+ * verschillende pagina's elkaar niet overschrijven. Dat geldt alleen voor het
+ * Nederlands: vertalingen bevatten geen beeld.
+ */
+const pagina = <S extends Record<string, unknown>>(
+  label: string,
+  path: string,
+  schema: (ns: string) => S,
+) =>
+  singleton({
     label,
     path: `src/content/pages/${path}`,
     format: { data: "yaml" },
-    schema: schema(path),
-  }),
-  en: singleton({
-    label: `${label} — EN`,
-    path: `src/content/pages/en/${path}`,
-    format: { data: "yaml" },
-    schema: schema(`en/${path}`),
-  }),
-  de: singleton({
-    label: `${label} — DE`,
-    path: `src/content/pages/de/${path}`,
-    format: { data: "yaml" },
-    schema: schema(`de/${path}`),
-  }),
-});
-
-const homepage = pageTrio("Homepage", "home", homepageSchema);
-const contact = pageTrio("Contact", "contact", contactSchema);
-const overOns = pageTrio("Over ons", "over-ons", overOnsSchema);
-const offerte = pageTrio("Offerte", "offerte", offerteSchema);
-const kwaliteit = pageTrio("Kwaliteit", "kwaliteit", kwaliteitSchema);
-const machinepark = pageTrio("Machinepark", "machinepark", machineparkSchema);
-const werkenBij = pageTrio("Werken bij", "werken-bij", werkenBijSchema);
-const algemeen = pageTrio("Algemeen (footer & CTA)", "algemeen", algemeenSchema);
-const navigatie = pageTrio("Navigatie (menu)", "navigatie", navigatieSchema);
-
-/* ─────────────────────────────────────────────────────────────────────────────
-   Vertaalcollecties
-   Bevatten uitsluitend tekstvelden. Slug, volgorde, groep en foto's komen
-   altijd uit de Nederlandse bron — die bepalen URL en sortering en moeten in
-   alle talen gelijk zijn. De bestandsnaam moet daarom exact overeenkomen met
-   het Nederlandse bestand; dat staat ook in het label van het slug-veld.
-   ───────────────────────────────────────────────────────────────────────────── */
-
-/** Slug-veld voor vertalingen: naam is vrij, bestandsnaam moet matchen met NL. */
-const vertaalSlug = (label: string) =>
-  fields.slug({
-    name: { label },
-    slug: {
-      label: "Bestandsnaam",
-      description:
-        "Moet exact gelijk zijn aan de Nederlandse versie, anders wordt de vertaling niet gevonden.",
-    },
+    schema: metVertalingen(schema(path)) as never,
   });
 
-const serviceVertaling = () => ({
-  title: vertaalSlug("Titel"),
-  kicker: fields.text({ label: "Kicker" }),
-  h1: fields.text({ label: "Titel (H1)" }),
-  intro: fields.text({ label: "Intro", multiline: true }),
-  heroPhoto: photoSubjectMeta(),
-  bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
-  body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
-    label: "Tekst",
-    itemLabel: (p) => (p.value || "").slice(0, 45),
-  }),
-  materials: fields.array(fields.text({ label: "Materiaal" }), {
-    label: "Materialen",
-    itemLabel: (p) => p.value,
-  }),
-  process: fields.array(
-    fields.object({
-      step: fields.text({ label: "Stap" }),
-      desc: fields.text({ label: "Toelichting", multiline: true }),
-    }),
-    { label: "Proces", itemLabel: (p) => p.fields.step.value },
-  ),
-  specs: fields.array(
-    fields.object({
-      label: fields.text({ label: "Kenmerk" }),
-      value: fields.text({ label: "Waarde" }),
-    }),
-    { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
-  ),
-  faq: fields.array(
-    fields.object({
-      vraag: fields.text({ label: "Vraag" }),
-      antwoord: fields.text({ label: "Antwoord", multiline: true, description: "Kort en concreet: 40 tot 60 woorden werkt het best." }),
-    }),
-    { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
-  ),
-  applications: fields.array(fields.text({ label: "Toepassing" }), {
-    label: "Toepassingen",
-    itemLabel: (p) => p.value,
-  }),
-  related: fields.array(
-    fields.object({
-      slug: fields.text({ label: "Link (interne slug — gelijk aan NL)" }),
-      label: fields.text({ label: "Label" }),
-      desc: fields.text({ label: "Omschrijving (optioneel)" }),
-    }),
-    { label: "Gerelateerde pagina's", itemLabel: (p) => p.fields.label.value },
-  ),
-  cards: fields.array(
-    fields.object({
-      slug: fields.text({ label: "Link (interne slug — gelijk aan NL)" }),
-      label: fields.text({ label: "Label" }),
-      desc: fields.text({ label: "Omschrijving" }),
-    }),
-    { label: "Overzichtskaarten", itemLabel: (p) => p.fields.label.value },
-  ),
-  seo: fields.object(
-    {
-      title: fields.text({ label: "SEO-titel" }),
-      description: fields.text({ label: "SEO-omschrijving", multiline: true }),
-    },
-    { label: "SEO" },
-  ),
-});
+const homepage = pagina("Homepage", "home", homepageSchema);
+const contact = pagina("Contact", "contact", contactSchema);
+const overOns = pagina("Over ons", "over-ons", overOnsSchema);
+const offerte = pagina("Offerte", "offerte", offerteSchema);
+const kwaliteit = pagina("Kwaliteit", "kwaliteit", kwaliteitSchema);
+const machinepark = pagina("Machinepark", "machinepark", machineparkSchema);
+const werkenBij = pagina("Werken bij", "werken-bij", werkenBijSchema);
+const algemeen = pagina("Algemeen (footer & CTA)", "algemeen", algemeenSchema);
+const navigatie = pagina("Navigatie (menu)", "navigatie", navigatieSchema);
 
-const vacatureVertaling = () => ({
-  title: vertaalSlug("Functietitel"),
-  employmentType: fields.text({ label: "Dienstverband" }),
-  hours: fields.text({ label: "Uren (optioneel)" }),
-  education: fields.text({ label: "Opleiding (optioneel)" }),
-  intro: fields.text({ label: "Intro", multiline: true }),
-  responsibilities: fields.array(fields.text({ label: "Taak" }), {
-    label: "Wat je doet",
-    itemLabel: (p) => (p.value || "").slice(0, 45),
-  }),
-  requirements: fields.array(fields.text({ label: "Eis" }), {
-    label: "Wat je meebrengt",
-    itemLabel: (p) => (p.value || "").slice(0, 45),
-  }),
-  photo: photoSubjectMeta(),
-});
-
-const machineVertaling = () => ({
-  name: vertaalSlug("Naam"),
-  category: fields.text({ label: "Categorie" }),
-  description: fields.text({ label: "Omschrijving", multiline: true }),
-  specs: fields.array(
-    fields.object({
-      label: fields.text({ label: "Kenmerk" }),
-      value: fields.text({ label: "Waarde" }),
-    }),
-    { label: "Specificaties", itemLabel: (p) => p.fields.label.value },
-  ),
-  photo: photoSubjectMeta(),
-});
-
-const sectorVertaling = () => ({
-  title: vertaalSlug("Titel"),
-  summary: fields.text({ label: "Samenvatting", multiline: true }),
-});
-
-const certVertaling = () => ({
-  name: vertaalSlug("Naam"),
-  scope: fields.text({ label: "Scope / omschrijving", multiline: true }),
-});
-
-/** Bouwt de EN- en DE-vertaalcollectie voor een bestaande collectie. */
-const vertaalPaar = <S>(label: string, dir: string, schema: () => S) => ({
-  en: collection({
-    label: `${label} — EN`,
-    path: `src/content/${dir}/en/*`,
-    slugField: "title" in schema() ? "title" : "name",
-    format: { data: "yaml" },
-    schema: schema() as never,
-  }),
-  de: collection({
-    label: `${label} — DE`,
-    path: `src/content/${dir}/de/*`,
-    slugField: "title" in schema() ? "title" : "name",
-    format: { data: "yaml" },
-    schema: schema() as never,
-  }),
-});
-
-const servicesT = vertaalPaar("Servicepagina's", "services", serviceVertaling);
-const vacaturesT = vertaalPaar("Vacatures", "vacancies", vacatureVertaling);
-const machinesT = vertaalPaar("Machines", "machines", machineVertaling);
-const sectorenT = vertaalPaar("Sectoren", "sectors", sectorVertaling);
-const certsT = vertaalPaar("Certificeringen", "certifications", certVertaling);
 
 
 /**
@@ -529,30 +486,32 @@ const certsT = vertaalPaar("Certificeringen", "certifications", certVertaling);
  * Let op bij teksten met een accolade erin, zoals "{van}" en "{tot}" in de
  * openingstijden: die worden door de site ingevuld. Laat ze staan.
  */
-const interfaceTeksten = (taal: "nl" | "en" | "de", label: string) =>
-  singleton({
-    label,
-    path: `src/data/ui/${taal}`,
-    format: { data: "json" },
-    schema: Object.fromEntries(
-      UI_GROUPS.map((groep) => [
-        groep.id,
-        fields.object(
-          Object.fromEntries(
-            groep.keys.map((veld) => [
-              veld.key,
-              fields.text({
-                label: veld.label,
-                description: taal === "nl" ? veld.key : `${veld.key} — NL: ${veld.nl}`,
-                multiline: veld.multiline,
-              }),
-            ]),
-          ),
-          { label: groep.label, description: `${groep.keys.length} teksten` },
+const interfaceTeksten = singleton({
+  label: "Interfaceteksten",
+  path: "src/data/ui",
+  format: { data: "json" },
+  schema: Object.fromEntries(
+    UI_GROUPS.map((groep) => [
+      groep.id,
+      fields.object(
+        Object.fromEntries(
+          groep.keys.map((veld) => [
+            veld.key,
+            fields.object(
+              {
+                nl: fields.text({ label: "Nederlands", multiline: veld.multiline }),
+                en: fields.text({ label: "Engels", multiline: veld.multiline }),
+                de: fields.text({ label: "Duits", multiline: veld.multiline }),
+              },
+              { label: veld.label, description: veld.key },
+            ),
+          ]),
         ),
-      ]),
-    ),
-  });
+        { label: groep.label, description: `${groep.keys.length} teksten` },
+      ),
+    ]),
+  ),
+});
 
 
 /**
@@ -607,9 +566,10 @@ export default config({
     // Nederlands staat vooraan; de vertalingen zitten in eigen groepen zodat
     // de dagelijkse (NL) redactie overzichtelijk blijft.
     navigation: {
-      // Nederlands bovenaan: dat is de bron. De vertalingen staan onderin,
-      // zodat de dagelijkse route kort blijft. Elke ingang hoort in een groep —
-      // wat je hier vergeet, bungelt los onder de lijst.
+      // Eén ingang per pagina. De Engelse en Duitse tekst staat in het scherm
+      // van de pagina zelf, onder de Nederlandse velden — niet in een eigen
+      // groep. Elke ingang hoort in een groep; wat je hier vergeet, bungelt
+      // los onder de lijst.
       "Pagina's": [
         "homepage", "overOns", "kwaliteit", "machinepark", "contact",
         "offerte", "werkenBij", "kennisbank", "privacy",
@@ -618,55 +578,21 @@ export default config({
       Vacatures: ["vacatures"],
       Kennisbank: ["artikelen", "blogOnderwerpen"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
-      "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens", "interfaceNl"],
-      "Engels (EN)": [
-        "homepageEn", "overOnsEn", "kwaliteitEn", "machineparkEn", "contactEn",
-        "offerteEn", "werkenBijEn", "navigatieEn", "algemeenEn", "interfaceEn",
-        "servicesEn", "vacaturesEn", "machinesEn", "sectorenEn", "certificeringenEn",
-      ],
-      "Duits (DE)": [
-        "homepageDe", "overOnsDe", "kwaliteitDe", "machineparkDe", "contactDe",
-        "offerteDe", "werkenBijDe", "navigatieDe", "algemeenDe", "interfaceDe",
-        "servicesDe", "vacaturesDe", "machinesDe", "sectorenDe", "certificeringenDe",
+      "Menu & vaste teksten": [
+        "navigatie", "algemeen", "bedrijfsgegevens", "interfaceteksten",
       ],
     },
   },
   singletons: {
-    homepage: homepage.nl,
-    homepageEn: homepage.en,
-    homepageDe: homepage.de,
-
-    contact: contact.nl,
-    contactEn: contact.en,
-    contactDe: contact.de,
-
-    overOns: overOns.nl,
-    overOnsEn: overOns.en,
-    overOnsDe: overOns.de,
-
-    offerte: offerte.nl,
-    offerteEn: offerte.en,
-    offerteDe: offerte.de,
-
-    kwaliteit: kwaliteit.nl,
-    kwaliteitEn: kwaliteit.en,
-    kwaliteitDe: kwaliteit.de,
-
-    machinepark: machinepark.nl,
-    machineparkEn: machinepark.en,
-    machineparkDe: machinepark.de,
-
-    werkenBij: werkenBij.nl,
-    werkenBijEn: werkenBij.en,
-    werkenBijDe: werkenBij.de,
-
-    algemeen: algemeen.nl,
-    algemeenEn: algemeen.en,
-    algemeenDe: algemeen.de,
-
-    navigatie: navigatie.nl,
-    navigatieEn: navigatie.en,
-    navigatieDe: navigatie.de,
+    homepage,
+    contact,
+    overOns,
+    offerte,
+    kwaliteit,
+    machinepark,
+    werkenBij,
+    algemeen,
+    navigatie,
 
     // Contactgegevens zijn taalonafhankelijk: één bron voor alle talen.
     bedrijfsgegevens: singleton({
@@ -700,9 +626,7 @@ export default config({
     kennisbank: kennisbankPagina,
     privacy: privacyPagina,
 
-    interfaceNl: interfaceTeksten("nl", "Interfaceteksten — NL"),
-    interfaceEn: interfaceTeksten("en", "Interfaceteksten — EN"),
-    interfaceDe: interfaceTeksten("de", "Interfaceteksten — DE"),
+    interfaceteksten: interfaceTeksten,
   },
 
   collections: {
@@ -711,12 +635,12 @@ export default config({
       path: "src/content/certifications/*",
       slugField: "name",
       format: { data: "yaml" },
-      schema: {
+      schema: metVertalingen({
         name: fields.slug({ name: { label: "Naam", description: "Bv. ISO 9001" } }),
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
         scope: fields.text({ label: "Scope / omschrijving", multiline: true }),
         document: fields.text({ label: "PDF-bestandsnaam (optioneel)", description: "In /public/documents/" }),
-      },
+      }, "name"),
     }),
 
     machines: collection({
@@ -724,7 +648,7 @@ export default config({
       path: "src/content/machines/*",
       slugField: "name",
       format: { data: "yaml" },
-      schema: {
+      schema: metVertalingen({
         name: fields.slug({ name: { label: "Naam" } }),
         category: fields.text({ label: "Categorie" }),
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
@@ -738,7 +662,7 @@ export default config({
         ),
         foto: pageFoto("machines")("Foto", "Laat leeg voor de standaardfoto van deze machine."),
         photo: photoMeta(),
-      },
+      }, "name"),
     }),
 
     sectoren: collection({
@@ -746,12 +670,12 @@ export default config({
       path: "src/content/sectors/*",
       slugField: "title",
       format: { data: "yaml" },
-      schema: {
+      schema: metVertalingen({
         title: fields.slug({ name: { label: "Titel" } }),
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
         summary: fields.text({ label: "Samenvatting", multiline: true }),
         link: fields.text({ label: "Link (interne slug)", description: "Naar welke pagina deze sector verwijst." }),
-      },
+      }, "title"),
     }),
 
     projecten: collection({
@@ -774,7 +698,7 @@ export default config({
       path: "src/content/vacancies/*",
       slugField: "title",
       format: { data: "yaml" },
-      schema: {
+      schema: metVertalingen({
         title: fields.slug({ name: { label: "Functietitel" } }),
         slug: fields.text({ label: "URL-slug", description: "Bv. bankwerker-lasser (bepaalt de link)." }),
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
@@ -793,7 +717,7 @@ export default config({
         open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
         foto: pageFoto("vacatures")("Foto", "Laat leeg voor de standaardfoto bij deze vacature."),
         photo: photoMeta(),
-      },
+      }, "title"),
     }),
 
     services: collection({
@@ -801,7 +725,7 @@ export default config({
       path: "src/content/services/*",
       slugField: "title",
       format: { data: "yaml" },
-      schema: {
+      schema: metVertalingen({
         title: fields.slug({ name: { label: "Titel" } }),
         slug: fields.text({ label: "URL-slug", description: "Canonieke route, bv. plaatwerk/rvs. Bepaalt de link en URL." }),
         template: fields.select({
@@ -900,7 +824,7 @@ export default config({
           ],
           defaultValue: ["nl"],
         }),
-      },
+      }, "title"),
     }),
 
     artikelen: collection({
@@ -975,17 +899,5 @@ export default config({
         }),
       },
     }),
-
-    // Vertalingen — alleen tekst; slug/volgorde/foto's komen uit de NL-bron.
-    servicesEn: servicesT.en,
-    servicesDe: servicesT.de,
-    vacaturesEn: vacaturesT.en,
-    vacaturesDe: vacaturesT.de,
-    machinesEn: machinesT.en,
-    machinesDe: machinesT.de,
-    sectorenEn: sectorenT.en,
-    sectorenDe: sectorenT.de,
-    certificeringenEn: certsT.en,
-    certificeringenDe: certsT.de,
   },
 });

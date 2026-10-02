@@ -2,3 +2,13 @@ title: "Infra"
 order: 60
 summary: "Gelaste staalconstructies met herleidbare documentatie, volgens EN 1090-1."
 link: "infra"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Infrastructure
+  summary: Welded steel structures with traceable documentation, in line with EN 1090-1.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Infrastruktur
+  summary: Geschweißte Stahlkonstruktionen mit nachvollziehbarer Dokumentation, gemäß EN 1090-1.

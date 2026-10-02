@@ -1,3 +1,13 @@
 name: "ISO 9001"
 order: 10
 scope: "Kwaliteitsmanagementsysteem"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  name: ISO 9001
+  scope: Quality management system
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  name: ISO 9001
+  scope: Qualitätsmanagementsystem

@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import { isVertaalbaar } from "./data/vertaling";
 
 /** Reusable sub-schemas ------------------------------------------------ */
 const photo = z.object({
@@ -19,10 +20,54 @@ const seo = z
   })
   .optional();
 
+/**
+ * Vertalingen in hetzelfde bestand ---------------------------------------
+ *
+ * Nederlands is de bron. De Engelse en Duitse tekst staat in hetzelfde
+ * yaml-bestand onder `en:` en `de:`, zodat één scherm in het CMS alle drie de
+ * talen laat zien. Voorheen stonden ze in aparte mappen `en/` en `de/`, wat
+ * betekende dat je voor één zin drie schermen langs moest.
+ *
+ * Een vertaling bevat alleen wat er daadwerkelijk vertaald is. Daarom wordt het
+ * Nederlandse schema hieronder "losjes" gemaakt: elk veld optioneel, op elk
+ * niveau, en zonder standaardwaarden. Dat laatste is geen detail. Zou een
+ * vertaling stilzwijgend een standaardwaarde invullen — een lege lijst,
+ * volgorde 50 — dan zou die bij het samenvoegen de Nederlandse waarde
+ * overschrijven. Nu blijft een veld dat niet vertaald is simpelweg weg, en valt
+ * het terug op het Nederlands (zie readPage() en localizeEntry() in
+ * src/utils/content.ts).
+ *
+ * Velden die src/data/vertaling.ts uitsluit — routes, sortering, fotopaden en
+ * productienotities bij een foto — vallen eruit; die horen per definitie niet
+ * in een vertaling thuis.
+ */
+function losjes(veld: z.ZodTypeAny): z.ZodTypeAny {
+  if (veld instanceof z.ZodDefault) return losjes(veld.removeDefault());
+  if (veld instanceof z.ZodOptional) return losjes(veld.unwrap());
+  if (veld instanceof z.ZodArray) return z.array(losjes(veld.element));
+  if (veld instanceof z.ZodObject) return vertaalObject(veld.shape as z.ZodRawShape);
+  return veld;
+}
+
+/** Maakt van een shape een object waarin alles optioneel is. */
+function vertaalObject(shape: z.ZodRawShape) {
+  const uit: z.ZodRawShape = {};
+  for (const [sleutel, veld] of Object.entries(shape)) {
+    if (!isVertaalbaar(sleutel)) continue;
+    uit[sleutel] = losjes(veld).optional();
+  }
+  return z.object(uit);
+}
+
+function vertaalbaar<T extends z.ZodRawShape>(shape: T) {
+  const vertaling = vertaalObject(shape).optional();
+  return { ...shape, en: vertaling, de: vertaling };
+}
+
 /** Services (plaatwerk, constructies, machinebouw, materials, sectors…) */
 const services = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/services" }),
-  schema: z.object({
+  schema: z.object(vertaalbaar({
     title: z.string(),
     slug: z.string(), // canonical NL route, e.g. "plaatwerk/rvs"
     template: z.enum(["overview", "service"]).default("service"),
@@ -54,13 +99,13 @@ const services = defineCollection({
     seo,
     // Which locales have fully translated copy. NL is always the source of truth.
     translated: z.array(z.enum(["nl", "en", "de"])).default(["nl"]),
-  }),
+  })),
 });
 
 /** Machine park */
 const machines = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/machines" }),
-  schema: z.object({
+  schema: z.object(vertaalbaar({
     name: z.string(),
     category: z.string(),
     order: z.number().default(50),
@@ -68,13 +113,13 @@ const machines = defineCollection({
     specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
     foto: z.string().optional(),
     photo,
-  }),
+  })),
 });
 
 /** Vacancies */
 const vacancies = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/vacancies" }),
-  schema: z.object({
+  schema: z.object(vertaalbaar({
     title: z.string(),
     slug: z.string(),
     order: z.number().default(50),
@@ -87,7 +132,7 @@ const vacancies = defineCollection({
     open: z.boolean().default(true),
     foto: z.string().optional(),
     photo,
-  }),
+  })),
 });
 
 /** Projects / reference work */
@@ -106,12 +151,12 @@ const projects = defineCollection({
 /** Sectors (industries served) */
 const sectors = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/sectors" }),
-  schema: z.object({
+  schema: z.object(vertaalbaar({
     title: z.string(),
     order: z.number().default(50),
     summary: z.string(),
     link: z.string(), // canonical slug of the related page
-  }),
+  })),
 });
 
 /**
@@ -165,13 +210,13 @@ const blogQueue = defineCollection({
 /** Certifications */
 const certifications = defineCollection({
   loader: glob({ pattern: "*.yaml", base: "./src/content/certifications" }),
-  schema: z.object({
+  schema: z.object(vertaalbaar({
     name: z.string(),
     order: z.number().default(50),
     scope: z.string(),
     // Path (under /public/documents/) to a certificate PDF, when available.
     document: z.string().optional(),
-  }),
+  })),
 });
 
 export const collections = { services, machines, vacancies, projects, sectors, certifications, articles, blogQueue };

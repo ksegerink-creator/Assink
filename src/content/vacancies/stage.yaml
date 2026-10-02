@@ -16,3 +16,34 @@ photo:
   orient: "Liggend 4:3"
   crop: "Twee personen"
   comp: "Begeleider en stagiair bij machine"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Internship
+  employmentType: Internship
+  hours: By arrangement
+  intro: For motivated interns we offer a dynamic production environment in which you get to know real metalworking.
+  responsibilities:
+  - Working alongside and observing on the shop floor
+  - Assignments within sheet metal work, welding or production engineering
+  requirements:
+  - Motivated and eager to learn
+  - Technical education (by arrangement)
+  photo:
+    subject: Intern looking on with a craftsman on the shop floor
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Praktikum
+  employmentType: Praktikum
+  hours: Nach Absprache
+  intro: Motivierten Praktikanten bieten wir ein dynamisches Produktionsumfeld, in dem Sie die echte Metallbearbeitung
+    kennenlernen.
+  responsibilities:
+  - Mitarbeiten und Zuschauen in der Produktion
+  - Aufgaben in der Blechbearbeitung, im Schweißen oder in der Arbeitsvorbereitung
+  requirements:
+  - Motiviert und lernbereit
+  - Technische Ausbildung (nach Absprache)
+  photo:
+    subject: Praktikant schaut einem Facharbeiter auf der Werkstatt über die Schulter

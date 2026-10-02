@@ -2,3 +2,15 @@ title: "Defensie"
 order: 100
 summary: "Robuuste gelaste constructies, frames en behuizingen in staal, RVS en aluminium, met vastgelegde lasmethodes en maatcontrole."
 link: "constructies"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Defence
+  summary: Robust welded constructions, frames and enclosures in steel, stainless steel and aluminium, with
+    documented welding procedures and dimensional inspection.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Wehrtechnik
+  summary: Robuste geschweißte Konstruktionen, Rahmen und Gehäuse aus Stahl, Edelstahl und Aluminium, mit
+    dokumentierten Schweißanweisungen und Maßkontrolle.

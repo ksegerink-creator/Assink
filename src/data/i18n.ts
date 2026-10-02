@@ -1,7 +1,5 @@
 import type { Locale, OpeningHours } from "./site";
-import uiNl from "./ui/nl.json";
-import uiEn from "./ui/en.json";
-import uiDe from "./ui/de.json";
+import { UI_TEKSTEN } from "./ui-schema";
 
 /**
  * Interface / chrome strings per locale.
@@ -10,29 +8,30 @@ import uiDe from "./ui/de.json";
  * buttons, labels and form copy.
  *
  * De teksten zelf stonden hier eerder als letterlijke objecten. Ze staan nu in
- * src/data/ui/<taal>.json en worden in Keystatic beheerd onder
- * "Interfaceteksten", gegroepeerd per onderdeel (navigatie, formulieren,
- * alt-teksten, homepage). Hier plakken we die groepen weer tot één platte
- * tabel per taal, zodat t() een simpele synchrone lookup blijft en geen enkele
- * aanroep in de componenten hoeft te veranderen.
+ * src/data/ui.json en zijn in Keystatic te beheren onder "Interfaceteksten".
+ * Elke tekst staat daar met de drie talen bij elkaar, gegroepeerd per onderdeel
+ * (navigatie, formulieren, alt-teksten, homepage). Hier plakken we die groepen
+ * weer tot één platte tabel per taal, zodat t() een simpele synchrone lookup
+ * blijft en geen enkele aanroep in de componenten hoeft te veranderen.
  *
  * Het inlezen gebeurt bij de build. Keystatic commit naar de repo, dus een
  * wijziging in het CMS is na de volgende deploy live — net als bij de
  * pagina-content.
  */
 type Dict = Record<string, string>;
-type UiFile = Record<string, Dict>;
 
-function flatten(file: UiFile): Dict {
+function tabelVoor(locale: Locale): Dict {
   const out: Dict = {};
-  for (const group of Object.values(file)) Object.assign(out, group);
+  for (const groep of Object.values(UI_TEKSTEN)) {
+    for (const [sleutel, tekst] of Object.entries(groep)) out[sleutel] = tekst[locale];
+  }
   return out;
 }
 
 export const UI: Record<Locale, Dict> = {
-  nl: flatten(uiNl as UiFile),
-  en: flatten(uiEn as UiFile),
-  de: flatten(uiDe as UiFile),
+  nl: tabelVoor("nl"),
+  en: tabelVoor("en"),
+  de: tabelVoor("de"),
 };
 
 export function t(locale: Locale, key: string): string {

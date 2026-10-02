@@ -3,23 +3,18 @@ import keystaticConfig from "../../keystatic.config";
 import type { Locale } from "@data/site";
 
 /**
- * Locale-aware toegang tot de Keystatic-pagina-singletons.
+ * Locale-aware toegang tot de content.
  *
- * Nederlands is de bron: `src/content/pages/<naam>.yaml`.
- * Vertalingen staan naast elkaar in `src/content/pages/{en,de}/<naam>.yaml`
- * en worden als eigen singletons beheerd (zie keystatic.config.ts).
+ * Nederlands is de bron: `src/content/pages/<naam>.yaml`. De Engelse en Duitse
+ * tekst staat in hetzelfde bestand onder `en:` en `de:`, zodat het CMS per
+ * pagina één scherm met alle drie de talen toont.
  *
- * `readPage()` leest de taalversie en vult ontbrekende of leeggelaten velden
- * aan met het Nederlands. Zo blijft een pagina altijd volledig gevuld, ook
- * wanneer een vertaling nog niet af is — er verschijnen geen lege koppen.
+ * `readPage()` en `localizeEntry()` leggen de vertaling over het Nederlands
+ * heen en vullen ontbrekende of leeggelaten velden aan met het Nederlands. Zo
+ * blijft een pagina altijd volledig gevuld, ook wanneer een vertaling nog niet
+ * af is — er verschijnen geen lege koppen.
  */
 const reader = createReader(process.cwd(), keystaticConfig);
-
-/** Singleton-namen per taal, bv. homepage → homepageEn / homepageDe. */
-function localizedName(name: string, locale: Locale): string {
-  if (locale === "nl") return name;
-  return `${name}${locale === "en" ? "En" : "De"}`;
-}
 
 /** Leeg? (lege string, null/undefined of lege array) */
 function isBlank(value: unknown): boolean {
@@ -65,6 +60,13 @@ function merge<T>(base: T, override: unknown): T {
 
 type Singletons = typeof reader.singletons;
 
+/** Haalt de vertaalblokken weg, zodat ze nooit in de gerenderde data belanden. */
+function zonderVertalingen<T>(data: T): T {
+  if (typeof data !== "object" || data === null) return data;
+  const { en: _en, de: _de, ...rest } = data as Record<string, unknown>;
+  return rest as T;
+}
+
 /**
  * Lees een pagina-singleton in de gevraagde taal, met NL als terugval.
  * Gooit een fout als de Nederlandse bron ontbreekt — dat is een echte
@@ -75,14 +77,11 @@ export async function readPage<K extends keyof Singletons & string>(
   locale: Locale = "nl",
 ): Promise<NonNullable<Awaited<ReturnType<Singletons[K]["read"]>>>> {
   const singletons = reader.singletons as Record<string, { read: () => Promise<unknown> }>;
-  const nl = await singletons[name].read();
-  if (!nl) throw new Error(`Content ontbreekt: src/content/pages/${name} (Nederlands is de bron).`);
+  const bron = await singletons[name].read();
+  if (!bron) throw new Error(`Content ontbreekt: src/content/pages/${name} (Nederlands is de bron).`);
+  const nl = zonderVertalingen(bron) as Record<string, unknown>;
   if (locale === "nl") return nl as never;
-
-  const key = localizedName(name, locale);
-  // Vertaalsingleton bestaat misschien nog niet in de config; dan simpelweg NL.
-  const translated = key in singletons ? await singletons[key].read() : null;
-  return merge(nl, translated) as never;
+  return merge(nl, (bron as Record<string, unknown>)[locale]) as never;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -90,73 +89,35 @@ export async function readPage<K extends keyof Singletons & string>(
    ───────────────────────────────────────────────────────────────────────────── */
 
 /**
- * Bepaalt onder welke naam een vertaling wordt opgezocht: de bestandsnaam
- * zonder extensie.
- *
- * Let op: `entry.id` is hiervoor niet bruikbaar. Astro leidt het id af van een
- * `slug`-veld in de data wanneer dat aanwezig is, waardoor een dienst met
- * bestandsnaam `plaatwerk-rvs.yaml` het id `plaatwerk/rvs` krijgt. De
- * vertaalbestanden volgen juist de bestandsnaam, zodat NL en vertaling
- * één-op-één te koppelen zijn.
- */
-export function entryFileSlug(entry: { id: string; filePath?: string }): string {
-  const fp = entry.filePath;
-  if (!fp) return entry.id;
-  const base = fp.split(/[\\/]/).pop() ?? entry.id;
-  return base.replace(/\.[^.]+$/, "");
-}
-
-/**
- * Vertaalt één collectie-item. De Nederlandse entry is de basis; de vertaling
- * in src/content/<collectie>/{en,de}/<bestandsnaam>.yaml gaat er per veld over
- * heen. Ontbreekt de vertaling, dan blijft het Nederlands staan.
+ * Vertaalt één collectie-item. De Nederlandse velden zijn de basis; het blok
+ * `en:` of `de:` in hetzelfde bestand gaat er per veld overheen. Ontbreekt een
+ * veld in de vertaling, dan blijft het Nederlands staan.
  *
  * Slugs, links en `order` blijven bewust uit de Nederlandse bron komen: die
- * bepalen de URL en de sortering en moeten in alle talen gelijk zijn.
+ * bepalen de URL en de sortering en moeten in alle talen gelijk zijn. Ook als
+ * iemand ze per ongeluk in een vertaalblok zet, worden ze hier teruggezet.
  */
-export async function localizeEntry<T extends Record<string, unknown>>(
-  collection: string,
-  fileSlug: string,
+export function localizeEntry<T extends Record<string, unknown>>(
   data: T,
   locale: Locale,
-): Promise<T> {
-  if (locale === "nl") return data;
-  const key = `${collection}${locale === "en" ? "En" : "De"}`;
-  const collections = reader.collections as Record<
-    string,
-    { read: (slug: string) => Promise<unknown> } | undefined
-  >;
-  const c = collections[key];
-  if (!c) { console.warn(`[i18n] collectie ontbreekt: ${key}`); return data; }
-  let translated: unknown = null;
-  try {
-    translated = await c.read(fileSlug);
-  } catch (err) {
-    console.warn(`[i18n] leesfout ${key}/${fileSlug}:`, (err as Error).message);
-    translated = null;
-  }
-  // Geen vertaling is een geldige toestand (nog niet vertaald) → stil terugvallen.
-  if (!translated) return data;
-  const merged = merge(data, translated) as T;
+): T {
+  const nl = zonderVertalingen(data);
+  if (locale === "nl") return nl;
+  const merged = merge(nl, data[locale]) as T;
   // Route-bepalende velden nooit uit de vertaling overnemen.
   for (const field of ["slug", "link", "order", "template", "group", "open"] as const) {
-    if (field in data) (merged as Record<string, unknown>)[field] = data[field];
+    if (field in nl) (merged as Record<string, unknown>)[field] = (nl as Record<string, unknown>)[field];
   }
   return merged;
 }
 
 /** Vertaalt een lijst entries (uit `getCollection`) in één keer. */
-export async function localizeEntries<
+export function localizeEntries<
   T extends Record<string, unknown>,
   E extends { id: string; filePath?: string; data: T },
->(collection: string, entries: E[], locale: Locale): Promise<E[]> {
-  if (locale === "nl") return entries;
-  return Promise.all(
-    entries.map(async (e) => ({
-      ...e,
-      data: await localizeEntry(collection, entryFileSlug(e), e.data, locale),
-    })),
-  );
+>(entries: E[], locale: Locale): E[] {
+  if (locale === "nl") return entries.map((e) => ({ ...e, data: zonderVertalingen(e.data) }));
+  return entries.map((e) => ({ ...e, data: localizeEntry(e.data, locale) }));
 }
 
 export { reader };

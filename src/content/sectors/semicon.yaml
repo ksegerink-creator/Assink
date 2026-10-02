@@ -2,3 +2,13 @@ title: "Semicon"
 order: 90
 summary: "Precisieplaatwerk, frames en panelen met een gelijkmatige oppervlakteafwerking."
 link: "semicon"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Semiconductor
+  summary: Precision sheet metal, frames and panels with an even surface finish.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Halbleiterindustrie
+  summary: Präzisionsblech, Rahmen und Paneele mit gleichmäßiger Oberflächenqualität.

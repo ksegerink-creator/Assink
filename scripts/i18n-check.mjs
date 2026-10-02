@@ -1,6 +1,7 @@
 /**
- * Controleert of de EN/DE-vertaling van elke collectie-YAML compleet is
- * t.o.v. de Nederlandse bron.
+ * Controleert of de EN/DE-vertaling in elke content-YAML compleet is t.o.v. de
+ * Nederlandse bron. De vertalingen staan in hetzelfde bestand, onder `en:` en
+ * `de:`; alles daarbuiten is de Nederlandse bron.
  *
  * Waarom dit script bestaat: src/utils/content.ts (merge()) vult per veld —
  * en bij arrays per index — terug naar Nederlands zodra een vertaald veld
@@ -20,11 +21,13 @@
  *    Nederlandse alt-tekst staan op een Engelse/Duitse pagina;
  *  - overige losse tekstvelden die in de vertaling ontbreken of leeg zijn.
  *
- * Sluit bewust route-/structuurvelden uit (slug, link, order, template,
- * group, open, translated), het foto-pad en interne fotobriefing-velden
- * (orient, crop, comp, src) — die zijn nooit per taal bedoeld en horen altijd
- * van NL te komen. Het beeld zelf is taalonafhankelijk; merge() in content.ts
- * houdt de NL-waarde aan zodra de vertaling de sleutel niet overschrijft.
+ * Sluit bewust de velden uit die src/data/vertaling.json opsomt: route- en
+ * structuurvelden (slug, link, order, template, group, open, translated),
+ * fotopaden en interne fotobriefing-velden (orient, crop, comp, src). Die zijn
+ * nooit per taal bedoeld en horen altijd van NL te komen — ze staan daarom ook
+ * niet in het CMS-vertaalblok. Het beeld zelf is taalonafhankelijk; merge() in
+ * content.ts houdt de NL-waarde aan zodra de vertaling de sleutel niet
+ * overschrijft.
  *
  * Gebruik: npm run i18n:check
  * Exitcode 1 bij hiaten, zodat dit later in CI of een pre-commit hook kan.
@@ -32,6 +35,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { parse as parseYaml } from "yaml";
+import regels from "../src/data/vertaling.json" with { type: "json" };
 
 function isBlank(v) {
   if (v === null || v === undefined) return true;
@@ -40,12 +44,16 @@ function isBlank(v) {
   return false;
 }
 
-const ROUTE_FIELDS = new Set(["slug", "link", "order", "template", "group", "open", "translated"]);
-const PHOTO_BRIEF_FIELDS = new Set(["foto", "midFoto", "orient", "crop", "comp", "src"]);
+// Dezelfde lijst die het CMS-formulier en de contentvalidatie gebruiken, zodat
+// dit script niet iets meldt wat je daar helemaal niet kúnt invullen.
+// Zie src/data/vertaling.ts voor de toelichting.
+const NIET_VERTALEN = new Set(regels.nooitVertalen);
+const FOTO_VELD = new RegExp(regels.fotoVeldPatroon);
+const slaOver = (sleutel) => NIET_VERTALEN.has(sleutel) || FOTO_VELD.test(sleutel);
 
 function diff(nl, tr, pathStr, gaps, subjectGaps) {
   const lastKey = pathStr.split(/[.[]/).pop();
-  if (ROUTE_FIELDS.has(lastKey)) return;
+  if (slaOver(lastKey)) return;
 
   if (Array.isArray(nl)) {
     const trArr = Array.isArray(tr) ? tr : [];
@@ -61,7 +69,7 @@ function diff(nl, tr, pathStr, gaps, subjectGaps) {
   }
   if (nl && typeof nl === "object") {
     for (const key of Object.keys(nl)) {
-      if (PHOTO_BRIEF_FIELDS.has(key)) continue;
+      if (slaOver(key)) continue;
       const trVal = tr && typeof tr === "object" ? tr[key] : undefined;
       const childPath = pathStr ? `${pathStr}.${key}` : key;
       if (key === "subject") {
@@ -84,31 +92,51 @@ function loadYaml(p) {
   return parseYaml(readFileSync(p, "utf8"));
 }
 
-const COLLECTIONS = ["services", "sectors", "machines", "vacancies", "certifications"];
+/**
+ * Collecties: een ontbrekend vertaalblok is een hiaat — elk item hoort in alle
+ * drie de talen te bestaan.
+ *
+ * Pagina's: sommige zijn bewust taalonafhankelijk (bedrijfsgegevens) of alleen
+ * Nederlands (kennisbank, privacyverklaring). Een pagina zónder vertaalblok
+ * slaan we daarom over; een pagina mét een blok wordt wel volledig nagelopen.
+ */
+const MAPPEN = [
+  { dir: "services", blokVerplicht: true },
+  { dir: "sectors", blokVerplicht: true },
+  { dir: "machines", blokVerplicht: true },
+  { dir: "vacancies", blokVerplicht: true },
+  { dir: "certifications", blokVerplicht: true },
+  { dir: "pages", blokVerplicht: false },
+];
+
 let totalGaps = 0;
 let totalSubjectGaps = 0;
 
-for (const col of COLLECTIONS) {
-  const base = `src/content/${col}`;
+for (const { dir, blokVerplicht } of MAPPEN) {
+  const base = `src/content/${dir}`;
   if (!existsSync(base)) continue;
   const files = readdirSync(base).filter((f) => f.endsWith(".yaml"));
   for (const f of files) {
-    const nl = loadYaml(path.join(base, f));
-    if (!nl) continue;
+    const data = loadYaml(path.join(base, f));
+    if (!data || typeof data !== "object") continue;
+    const { en, de, ...nl } = data;
+    const vertalingen = { en, de };
+    // Een bestand helemaal zonder vertaalblokken: bij pagina's bewust, bij
+    // collecties een hiaat dat hieronder per taal gemeld wordt.
+    if (!blokVerplicht && !en && !de) continue;
     for (const loc of ["en", "de"]) {
-      const trPath = path.join(base, loc, f);
-      const tr = loadYaml(trPath);
+      const tr = vertalingen[loc];
       const gaps = [];
       const subjectGaps = [];
       if (!tr) {
-        gaps.push(`GEHELE VERTALING ONTBREEKT (${trPath} bestaat niet)`);
+        gaps.push(`VERTAALBLOK ONTBREEKT (geen "${loc}:" in ${path.join(base, f)})`);
       } else {
         diff(nl, tr, "", gaps, subjectGaps);
       }
       totalGaps += gaps.length;
       totalSubjectGaps += subjectGaps.length;
       if (gaps.length || subjectGaps.length) {
-        console.log(`\n=== ${col}/${f} — ${loc.toUpperCase()} ===`);
+        console.log(`\n=== ${dir}/${f} — ${loc.toUpperCase()} ===`);
         gaps.forEach((l) => console.log("  " + l));
         subjectGaps.forEach((l) => console.log("  " + l));
       }

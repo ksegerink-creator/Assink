@@ -17,3 +17,35 @@ photo:
   orient: "Staand 3:4"
   crop: "Persoon aan werkbank"
   comp: "Jonge medewerker, praktisch werk"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Holiday work
+  employmentType: On-call
+  hours: By arrangement
+  intro: During the holiday season we are looking for on-call staff for a variety of production tasks.
+  responsibilities:
+  - Drilling, tapping and countersinking
+  - Simple bending work
+  - Supporting tasks on the shop floor
+  requirements:
+  - Practically minded and eager to learn
+  - Available during the holiday period
+  photo:
+    subject: Holiday worker doing simple work on the shop floor
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Ferienarbeit
+  employmentType: Aushilfe
+  hours: Nach Absprache
+  intro: In der Ferienzeit suchen wir Aushilfen für unterschiedliche Produktionstätigkeiten.
+  responsibilities:
+  - Bohren, Gewindeschneiden und Senken
+  - Einfache Abkantarbeiten
+  - Unterstützende Tätigkeiten in der Produktion
+  requirements:
+  - Praktisch veranlagt und lernbereit
+  - Verfügbar in der Ferienzeit
+  photo:
+    subject: Ferienkraft bei einfachen Arbeiten auf der Werkstatt

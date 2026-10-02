@@ -82,3 +82,127 @@ mensen:
     gevraagd wordt — en leiden zelf de volgende generatie op als SBB-erkend
     leerbedrijf.
   foto: /src/assets/uploads/mensen/foto.jpg
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  seoTitel: Solid since 1919
+  seoOmschrijving: Assink & Schipholt produces sheet metal work, welded constructions and assemblies for
+    machine building and industry — from a single part to a complete end product. Metalworking in Hengelo
+    since 1919.
+  hero:
+    kicker: Metalworking · Hengelo, the Netherlands
+    titelRegel1: Solid
+    titelRegel2: since 1919
+    copy: Sheet metal work, welded constructions and assemblies for machine building and industry. From
+      a single part to a complete end product — from one source.
+    formulierTitel: Request a quote straight away
+  intro:
+    kop: One production partner for the entire process
+    tekst: 'Assink & Schipholt has been working metal in Hengelo, in the Twente region, for over a century.
+      Experienced professionals, a modern and partly automated machine park and short lines of communication:
+      we assess your drawing for manufacturability, produce to tight tolerances and deliver just in time.'
+    tekstAccent: From engineering to finished assembly.
+    feiten:
+    - waarde: '{jaren}'
+      label: years of craftsmanship
+    - waarde: 10 t
+      label: max. unit weight
+    - waarde: 3×
+      label: ISO certified
+    - waarde: '1'
+      label: point of contact
+  capabilitiesKop: What we make
+  capabilities:
+  - nummer: '01'
+    titel: Sheet metal work
+    omschrijving: Precision sheet metal in steel, stainless steel, aluminium and brass. Laser cutting, bending
+      and finishing — one-offs and series, dimensionally accurate to the millimetre.
+    annotatie: Press brake · ± 0.2 mm
+  - nummer: '02'
+    titel: Constructions & welding
+    omschrijving: Welded assemblies up to 10 tonnes. TIG, MIG and laser welding — from a loose part to a
+      complete welded frame, including surface treatment.
+    annotatie: TIG · MIG · laser
+  - nummer: '03'
+    titel: Machine building & assembly
+    omschrijving: Complete machines, sub-assemblies and industrial enclosures. We assemble, wire and deliver
+      ready for production — just in time.
+    annotatie: Assemblies up to 10 tonnes
+  - nummer: '04'
+    titel: Laser & tube laser cutting
+    omschrijving: 2D laser cutting of sheet and tube laser cutting of profiles. Accurate contours, clean
+      cut edges and short lead times.
+    annotatie: Fibre laser
+  proef:
+    quote: 'Quality shows in the detail: the weld seam, the bend, the dimension.'
+    details:
+    - bijschrift: Bending · ± 0.2 mm
+    - bijschrift: Press braking
+    - bijschrift: Finishing
+  mensen:
+    kop: '{jaren} years of people at work'
+    tekst: Machines make it possible; skilled people make the difference. Our welders, press brake operators
+      and production engineers work daily on products that are genuinely demanding — and train the next
+      generation themselves as an SBB-accredited training company.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  seoTitel: Solide seit 1919
+  seoOmschrijving: Assink & Schipholt fertigt Blechbearbeitung, Konstruktionen und Baugruppen für Maschinenbau
+    und Industrie — vom einzelnen Bauteil bis zum kompletten Endprodukt. Metallbearbeitung in Hengelo seit
+    1919.
+  hero:
+    kicker: Metallbearbeitung · Hengelo (NL)
+    titelRegel1: Solide
+    titelRegel2: seit 1919
+    copy: Blechbearbeitung, Konstruktionen und Baugruppen für Maschinenbau und Industrie. Vom einzelnen
+      Bauteil bis zum kompletten Endprodukt — aus einer Hand.
+    formulierTitel: Jetzt direkt ein Angebot anfragen
+  intro:
+    kop: Ein Produktionspartner für den gesamten Prozess
+    tekst: 'Assink & Schipholt bearbeitet seit über einem Jahrhundert Metall in Hengelo in der Region Twente.
+      Erfahrene Fachkräfte, ein moderner und teilweise automatisierter Maschinenpark und kurze Wege: Wir
+      prüfen Ihre Zeichnung auf Fertigbarkeit, produzieren maßhaltig und liefern just in time.'
+    tekstAccent: Von der Konstruktion bis zur fertigen Baugruppe.
+    feiten:
+    - waarde: '{jaren}'
+      label: Jahre Handwerkskunst
+    - waarde: 10 t
+      label: max. Stückgewicht
+    - waarde: 3×
+      label: ISO-zertifiziert
+    - waarde: '1'
+      label: Ansprechpartner
+  capabilitiesKop: Was wir fertigen
+  capabilities:
+  - nummer: '01'
+    titel: Blechbearbeitung
+    omschrijving: Präzisionsblech in Stahl, Edelstahl, Aluminium und Messing. Laserschneiden, Abkanten und
+      Nachbearbeiten — Einzelstücke und Serien, maßhaltig bis auf den Millimeter.
+    annotatie: Abkantpresse · ± 0,2 mm
+  - nummer: '02'
+    titel: Konstruktionen & Schweißen
+    omschrijving: Geschweißte Baugruppen bis 10 Tonnen. WIG-, MIG- und Laserschweißen — vom einzelnen Bauteil
+      bis zum komplett geschweißten Rahmen, einschließlich Oberflächenbehandlung.
+    annotatie: WIG · MIG · Laser
+  - nummer: '03'
+    titel: Maschinenbau & Montage
+    omschrijving: Komplette Maschinen, Baugruppen und Industriegehäuse. Wir montieren, verkabeln und liefern
+      produktionsbereit — just in time.
+    annotatie: Baugruppen bis 10 Tonnen
+  - nummer: '04'
+    titel: Laser- & Rohrlaserschneiden
+    omschrijving: 2D-Laserschneiden von Blech und Rohrlaserschneiden von Profilen. Genaue Konturen, saubere
+      Schnittkanten und kurze Durchlaufzeiten.
+    annotatie: Faserlaser
+  proef:
+    quote: 'Qualität zeigt sich im Detail: in der Schweißnaht, der Biegung, dem Maß.'
+    details:
+    - bijschrift: Biegen · ± 0,2 mm
+    - bijschrift: Abkanten
+    - bijschrift: Nachbearbeitung
+  mensen:
+    kop: Seit {jaren} Jahren Menschenarbeit
+    tekst: Maschinen machen es möglich, Fachkräfte machen den Unterschied. Unsere Schweißer, Abkanter und
+      Arbeitsvorbereiter arbeiten täglich an Produkten, die etwas abverlangen — und bilden als SBB-anerkannter
+      Ausbildungsbetrieb selbst die nächste Generation aus.

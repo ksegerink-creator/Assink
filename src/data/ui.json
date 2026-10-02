@@ -1,0 +1,764 @@
+{
+  "chrome": {
+    "skip": {
+      "nl": "Naar hoofdinhoud",
+      "en": "Skip to content",
+      "de": "Zum Inhalt springen"
+    },
+    "quote": {
+      "nl": "Vraag een offerte aan",
+      "en": "Request a quote",
+      "de": "Angebot anfragen"
+    },
+    "quoteShort": {
+      "nl": "Offerte aanvragen",
+      "en": "Request a quote",
+      "de": "Angebot anfragen"
+    },
+    "menu": {
+      "nl": "Menu",
+      "en": "Menu",
+      "de": "Menü"
+    },
+    "home": {
+      "nl": "Home",
+      "en": "Home",
+      "de": "Home"
+    },
+    "possibilities": {
+      "nl": "Mogelijkheden",
+      "en": "Capabilities",
+      "de": "Möglichkeiten"
+    },
+    "sectors": {
+      "nl": "Sectoren",
+      "en": "Sectors",
+      "de": "Branchen"
+    },
+    "machinepark": {
+      "nl": "Machinepark",
+      "en": "Machinery",
+      "de": "Maschinenpark"
+    },
+    "quality": {
+      "nl": "Kwaliteit",
+      "en": "Quality",
+      "de": "Qualität"
+    },
+    "about": {
+      "nl": "Over ons",
+      "en": "About us",
+      "de": "Über uns"
+    },
+    "careers": {
+      "nl": "Werken bij",
+      "en": "Careers",
+      "de": "Karriere"
+    },
+    "contact": {
+      "nl": "Contact",
+      "en": "Contact",
+      "de": "Kontakt"
+    },
+    "related": {
+      "nl": "Gerelateerd",
+      "en": "Related",
+      "de": "Verwandt"
+    },
+    "allCaps": {
+      "nl": "Bekijk onze mogelijkheden",
+      "en": "View our capabilities",
+      "de": "Unsere Möglichkeiten ansehen"
+    },
+    "talk": {
+      "nl": "Bespreek uw project",
+      "en": "Discuss your project",
+      "de": "Ihr Projekt besprechen"
+    },
+    "readmore": {
+      "nl": "Lees meer",
+      "en": "Read more",
+      "de": "Mehr lesen"
+    },
+    "footerServices": {
+      "nl": "Mogelijkheden",
+      "en": "Capabilities",
+      "de": "Möglichkeiten"
+    },
+    "footerCompany": {
+      "nl": "Bedrijf",
+      "en": "Company",
+      "de": "Unternehmen"
+    },
+    "footerContact": {
+      "nl": "Contact",
+      "en": "Contact",
+      "de": "Kontakt"
+    },
+    "footerIntro": {
+      "nl": "Precisieplaatwerk, constructies en machinebouw uit Hengelo. Traditioneel vakmanschap met moderne, geautomatiseerde productie — sinds 1919.",
+      "en": "Precision sheet metal, welded constructions and machine building from Hengelo. Traditional craftsmanship with modern, automated production — since 1919.",
+      "de": "Präzisionsblech, Konstruktionen und Maschinenbau aus Hengelo. Traditionelles Handwerk mit moderner, automatisierter Fertigung — seit 1919."
+    },
+    "privacy": {
+      "nl": "Privacyverklaring",
+      "en": "Privacy statement",
+      "de": "Datenschutzerklärung"
+    },
+    "kennisbank": {
+      "nl": "Kennisbank",
+      "en": "Kennisbank",
+      "de": "Kennisbank"
+    },
+    "tagline": {
+      "nl": "Metaalbewerking in Hengelo sinds 1919",
+      "en": "Metalworking in Hengelo since 1919",
+      "de": "Metallbearbeitung in Hengelo seit 1919"
+    },
+    "langLabel": {
+      "nl": "Taal",
+      "en": "Language",
+      "de": "Sprache"
+    },
+    "breadcrumbAria": {
+      "nl": "Kruimelpad",
+      "en": "Breadcrumb",
+      "de": "Brotkrümelpfad"
+    },
+    "navAria": {
+      "nl": "Hoofdnavigatie",
+      "en": "Main navigation",
+      "de": "Hauptnavigation"
+    },
+    "toContent": {
+      "nl": "Naar hoofdinhoud",
+      "en": "Skip to content",
+      "de": "Zum Inhalt springen"
+    }
+  },
+  "formulieren": {
+    "formName": {
+      "nl": "Naam",
+      "en": "Name",
+      "de": "Name"
+    },
+    "formEmail": {
+      "nl": "E-mail",
+      "en": "Email",
+      "de": "E-Mail"
+    },
+    "formPhone": {
+      "nl": "Telefoon",
+      "en": "Phone",
+      "de": "Telefon"
+    },
+    "formSubject": {
+      "nl": "Waar gaat het om?",
+      "en": "What is it about?",
+      "de": "Worum geht es?"
+    },
+    "formSubjectPlaceholder": {
+      "nl": "Bijv. RVS-omkasting, 25 stuks, tekening beschikbaar",
+      "en": "E.g. stainless steel enclosure, 25 pieces, drawing available",
+      "de": "Z. B. Edelstahlgehäuse, 25 Stück, Zeichnung vorhanden"
+    },
+    "formSubmit": {
+      "nl": "Verstuur aanvraag",
+      "en": "Send request",
+      "de": "Anfrage senden"
+    },
+    "formHintResponse": {
+      "nl": "Reactie binnen één werkdag",
+      "en": "Response within one working day",
+      "de": "Antwort innerhalb eines Werktages"
+    },
+    "formHintDirect": {
+      "nl": "Liever direct:",
+      "en": "Prefer to call:",
+      "de": "Lieber direkt:"
+    },
+    "formAddress": {
+      "nl": "Adres",
+      "en": "Address",
+      "de": "Adresse"
+    },
+    "formOpeningHours": {
+      "nl": "Openingstijden",
+      "en": "Opening hours",
+      "de": "Öffnungszeiten"
+    },
+    "openingHoursWeekdays": {
+      "nl": "Werkdagen {van}–{tot} uur",
+      "en": "Weekdays {van}–{tot}",
+      "de": "Werktags {van}–{tot} Uhr"
+    },
+    "formKvk": {
+      "nl": "KvK",
+      "en": "Chamber of Commerce (KvK)",
+      "de": "Handelsregister (KvK)"
+    },
+    "formMessage": {
+      "nl": "Bericht",
+      "en": "Message",
+      "de": "Nachricht"
+    },
+    "routeMap": {
+      "nl": "Route & kaart",
+      "en": "Route & map",
+      "de": "Route & Karte"
+    }
+  },
+  "paginas": {
+    "moreAboutQuality": {
+      "nl": "Meer over kwaliteit",
+      "en": "More about quality",
+      "de": "Mehr über Qualität"
+    },
+    "whoWeWorkFor": {
+      "nl": "Voor wie wij werken",
+      "en": "Who we work for",
+      "de": "Für wen wir arbeiten"
+    },
+    "sectorsCount": {
+      "nl": "sectoren",
+      "en": "sectors",
+      "de": "Branchen"
+    },
+    "certItemLabel": {
+      "nl": "Certificering",
+      "en": "Certification",
+      "de": "Zertifizierung"
+    },
+    "certPdf": {
+      "nl": "Certificaat (PDF)",
+      "en": "Certificate (PDF)",
+      "de": "Zertifikat (PDF)"
+    },
+    "qaAnnotation": {
+      "nl": "Maatcontrole",
+      "en": "Dimensional inspection",
+      "de": "Maßkontrolle"
+    },
+    "langUnavailable": {
+      "nl": "Nog niet beschikbaar in deze taal",
+      "en": "Not yet available in this language",
+      "de": "In dieser Sprache noch nicht verfügbar"
+    }
+  },
+  "alt": {
+    "altWelderHall": {
+      "nl": "Lasser van Assink & Schipholt aan het werk in de productiehal",
+      "en": "Welder at Assink & Schipholt at work in the production hall",
+      "de": "Schweißer von Assink & Schipholt bei der Arbeit in der Produktionshalle"
+    },
+    "altBuilding": {
+      "nl": "Bedrijfspand van Assink & Schipholt",
+      "en": "Assink & Schipholt company building",
+      "de": "Betriebsgebäude von Assink & Schipholt"
+    },
+    "altBuildingStreet": {
+      "nl": "Het bedrijfspand van Assink & Schipholt aan de Oosterveldsingel in Hengelo",
+      "en": "The Assink & Schipholt building on Oosterveldsingel in Hengelo",
+      "de": "Das Betriebsgebäude von Assink & Schipholt an der Oosterveldsingel in Hengelo"
+    },
+    "altWelderTable": {
+      "nl": "Lasser aan de lastafel bij Assink & Schipholt",
+      "en": "Welder at the welding table at Assink & Schipholt",
+      "de": "Schweißer am Schweißtisch bei Assink & Schipholt"
+    },
+    "altCraftsmanProfile": {
+      "nl": "Vakman van Assink & Schipholt met een stalen profiel",
+      "en": "Craftsman at Assink & Schipholt holding a steel profile",
+      "de": "Facharbeiter von Assink & Schipholt mit einem Stahlprofil"
+    },
+    "altPressTool": {
+      "nl": "Kantbankgereedschap met plaatdeel",
+      "en": "Press brake tooling with a sheet metal part",
+      "de": "Abkantwerkzeug mit Blechteil"
+    },
+    "altQualityCheck": {
+      "nl": "Kwaliteitscontrole van een RVS-onderdeel",
+      "en": "Quality inspection of a stainless steel part",
+      "de": "Qualitätsprüfung eines Edelstahlteils"
+    },
+    "altHallOverview": {
+      "nl": "Overzicht van de productiehal met machinepark",
+      "en": "Overview of the production hall and its machinery",
+      "de": "Überblick über die Produktionshalle mit Maschinenpark"
+    },
+    "altWorkPrep": {
+      "nl": "Werkvoorbereiding aan de machinebesturing",
+      "en": "Work preparation at the machine control panel",
+      "de": "Arbeitsvorbereitung an der Maschinensteuerung"
+    },
+    "altProductionHall": {
+      "nl": "Productiehal van Assink & Schipholt met vacuümheffer",
+      "en": "Assink & Schipholt production hall with a vacuum lifter",
+      "de": "Produktionshalle von Assink & Schipholt mit Vakuumheber"
+    },
+    "altBlasting": {
+      "nl": "Stralen van een frame in de straalcabine",
+      "en": "Blasting a frame in the blast cabin",
+      "de": "Strahlen eines Rahmens in der Strahlkabine"
+    },
+    "altWeldingDeptEmployee": {
+      "nl": "Medewerker van Assink & Schipholt in de lasafdeling",
+      "en": "Assink & Schipholt employee in the welding department",
+      "de": "Mitarbeiter von Assink & Schipholt in der Schweißabteilung"
+    },
+    "altWeldingDept": {
+      "nl": "De lasafdeling van Assink & Schipholt",
+      "en": "The welding department at Assink & Schipholt",
+      "de": "Die Schweißabteilung von Assink & Schipholt"
+    },
+    "altTigCloseup": {
+      "nl": "TIG-lassen in close-up",
+      "en": "TIG welding close-up",
+      "de": "WIG-Schweißen in Nahaufnahme"
+    },
+    "altArchive": {
+      "nl": "Archieffoto uit het archief van Assink & Schipholt",
+      "en": "Archive photograph from the Assink & Schipholt archive",
+      "de": "Archivfoto aus dem Archiv von Assink & Schipholt"
+    }
+  },
+  "archief": {
+    "archiveTitle": {
+      "nl": "Uit het archief",
+      "en": "From the archive",
+      "de": "Aus dem Archiv"
+    },
+    "archivePhotos": {
+      "nl": "archiefbeelden",
+      "en": "archive images",
+      "de": "Archivbilder"
+    },
+    "archiveEnlarge": {
+      "nl": "Vergroot foto",
+      "en": "Enlarge photo",
+      "de": "Foto vergrößern"
+    },
+    "archiveClose": {
+      "nl": "Sluiten",
+      "en": "Close",
+      "de": "Schließen"
+    },
+    "archiveThen": {
+      "nl": "Toen",
+      "en": "Then",
+      "de": "Damals"
+    },
+    "archiveNow": {
+      "nl": "Nu",
+      "en": "Now",
+      "de": "Heute"
+    },
+    "socialKicker": {
+      "nl": "Blijf op de hoogte",
+      "en": "Stay up to date",
+      "de": "Bleiben Sie auf dem Laufenden"
+    },
+    "socialTitle": {
+      "nl": "Volg Assink & Schipholt",
+      "en": "Follow Assink & Schipholt",
+      "de": "Folgen Sie Assink & Schipholt"
+    },
+    "socialLead": {
+      "nl": "Projecten van de werkvloer, nieuw machinepark en openstaande vacatures — we delen het op social media.",
+      "en": "Projects from the shop floor, new machinery and open vacancies — we share it on social media.",
+      "de": "Projekte von der Werkstatt, neuer Maschinenpark und offene Stellen — wir teilen es in den sozialen Medien."
+    },
+    "socialLeadContact": {
+      "nl": "Blijf op de hoogte van projecten, machinepark en vacatures — volg Assink & Schipholt op social media.",
+      "en": "Stay up to date on projects, machinery and vacancies — follow Assink & Schipholt on social media.",
+      "de": "Bleiben Sie auf dem Laufenden über Projekte, Maschinenpark und offene Stellen — folgen Sie Assink & Schipholt in den sozialen Medien."
+    },
+    "socialLinkedin": {
+      "nl": "Bedrijfsnieuws & vacatures",
+      "en": "Company news & vacancies",
+      "de": "Unternehmensnews & offene Stellen"
+    },
+    "socialInstagram": {
+      "nl": "Werk & sfeer in beeld",
+      "en": "Work & atmosphere in pictures",
+      "de": "Arbeit & Atmosphäre im Bild"
+    },
+    "socialFacebook": {
+      "nl": "Updates & achter de schermen",
+      "en": "Updates & behind the scenes",
+      "de": "Updates & Blick hinter die Kulissen"
+    }
+  },
+  "homepage": {
+    "factsAria": {
+      "nl": "Kerngegevens",
+      "en": "Key figures",
+      "de": "Kennzahlen"
+    },
+    "pandCaption": {
+      "nl": "Oosterveldsingel 18 · Hengelo (Ov.)",
+      "en": "Oosterveldsingel 18 · Hengelo, the Netherlands",
+      "de": "Oosterveldsingel 18 · Hengelo (NL)"
+    },
+    "proofLink": {
+      "nl": "Bekijk waarmee wij dit maken.",
+      "en": "See the machinery behind it.",
+      "de": "Sehen Sie, womit wir das fertigen."
+    },
+    "proofLinkBtn": {
+      "nl": "Naar het machinepark",
+      "en": "View our machinery",
+      "de": "Zum Maschinenpark"
+    },
+    "peopleEyebrow": {
+      "nl": "Mensen & vakmanschap",
+      "en": "People & craftsmanship",
+      "de": "Menschen & Handwerkskunst"
+    },
+    "peopleAbout": {
+      "nl": "Over ons bedrijf",
+      "en": "About our company",
+      "de": "Über unser Unternehmen"
+    },
+    "heroMeta": {
+      "nl": "Plaatwerk,Constructies,Machinebouw,Buislasersnijden,Assemblage",
+      "en": "Sheet metal,Constructions,Machine building,Tube laser cutting,Assembly",
+      "de": "Blechbearbeitung,Konstruktionen,Maschinenbau,Rohrlaserschneiden,Montage"
+    },
+    "certsHead": {
+      "nl": "Certificeringen",
+      "en": "Certifications",
+      "de": "Zertifizierungen"
+    },
+    "certsIndex": {
+      "nl": "Aantoonbaar",
+      "en": "Demonstrable",
+      "de": "Nachweisbar"
+    },
+    "processHead": {
+      "nl": "Kwaliteitsproces",
+      "en": "Quality process",
+      "de": "Qualitätsprozess"
+    },
+    "processIndex": {
+      "nl": "Van ingang tot vrijgave",
+      "en": "From intake to release",
+      "de": "Vom Eingang bis zur Freigabe"
+    },
+    "machinesHead": {
+      "nl": "Machines",
+      "en": "Machines",
+      "de": "Maschinen"
+    },
+    "machinesIndex": {
+      "nl": "in bedrijf",
+      "en": "in operation",
+      "de": "im Einsatz"
+    },
+    "formHead": {
+      "nl": "Aanvraagformulier",
+      "en": "Request form",
+      "de": "Anfrageformular"
+    },
+    "formIndex": {
+      "nl": "Reactie binnen 1 werkdag",
+      "en": "Response within 1 working day",
+      "de": "Antwort innerhalb 1 Werktages"
+    },
+    "sectorsHead": {
+      "nl": "Sectoren",
+      "en": "Sectors",
+      "de": "Branchen"
+    },
+    "recentWork": {
+      "nl": "Recent werk",
+      "en": "Recent work",
+      "de": "Aktuelle Projekte"
+    },
+    "references": {
+      "nl": "Referenties",
+      "en": "References",
+      "de": "Referenzen"
+    },
+    "sendMessage": {
+      "nl": "Verstuur bericht",
+      "en": "Send message",
+      "de": "Nachricht senden"
+    },
+    "viewVacancies": {
+      "nl": "Bekijk vacatures",
+      "en": "View vacancies",
+      "de": "Offene Stellen ansehen"
+    },
+    "openApplication": {
+      "nl": "Open sollicitatie",
+      "en": "Speculative application",
+      "de": "Unaufgeforderte Bewerbung"
+    },
+    "planVisit": {
+      "nl": "Plan een meeloopdag",
+      "en": "Arrange a work-shadowing day",
+      "de": "Schnuppertag vereinbaren"
+    },
+    "visitSubject": {
+      "nl": "Meeloopdag",
+      "en": "Work-shadowing day",
+      "de": "Schnuppertag"
+    },
+    "applySubject": {
+      "nl": "Sollicitatie",
+      "en": "Application",
+      "de": "Bewerbung"
+    },
+    "noVacancies": {
+      "nl": "Er zijn op dit moment geen openstaande vacatures. Een open sollicitatie is altijd welkom via",
+      "en": "There are no vacancies open at the moment. A speculative application is always welcome at",
+      "de": "Derzeit sind keine Stellen offen. Eine unaufgeforderte Bewerbung ist jederzeit willkommen unter"
+    },
+    "openCount": {
+      "nl": "open",
+      "en": "open",
+      "de": "offen"
+    },
+    "formCompany": {
+      "nl": "Bedrijf",
+      "en": "Company",
+      "de": "Unternehmen"
+    },
+    "formOperation": {
+      "nl": "Bewerking",
+      "en": "Operation",
+      "de": "Bearbeitung"
+    },
+    "formQuantity": {
+      "nl": "Aantal / serie",
+      "en": "Quantity / series",
+      "de": "Menge / Serie"
+    },
+    "formQuantityPlaceholder": {
+      "nl": "bijv. 1 stuk, 25 stuks, jaarserie",
+      "en": "e.g. 1 piece, 25 pieces, annual series",
+      "de": "z. B. 1 Stück, 25 Stück, Jahresserie"
+    },
+    "formNotes": {
+      "nl": "Toelichting / specificaties",
+      "en": "Details / specifications",
+      "de": "Erläuterung / Spezifikationen"
+    },
+    "formNotesPlaceholder": {
+      "nl": "Materiaal, afmetingen, bewerkingen, gewenste levertijd…",
+      "en": "Material, dimensions, operations, required lead time…",
+      "de": "Material, Maße, Bearbeitungen, gewünschte Lieferzeit…"
+    },
+    "formFile": {
+      "nl": "Tekeningen / bestanden",
+      "en": "Drawings / files",
+      "de": "Zeichnungen / Dateien"
+    },
+    "formFileHint": {
+      "nl": "STEP, DWG, DXF, PDF of afbeelding",
+      "en": "STEP, DWG, DXF, PDF or image",
+      "de": "STEP, DWG, DXF, PDF oder Bild"
+    },
+    "formFileCta": {
+      "nl": "Sleep bestanden hierheen of klik om te kiezen",
+      "en": "Drag files here or click to choose",
+      "de": "Dateien hierher ziehen oder klicken zum Auswählen"
+    },
+    "formFileLimits": {
+      "nl": "Max. 10 MB per bestand · 20 MB totaal · max. 6 bestanden",
+      "en": "Max. 10 MB per file · 20 MB total · max. 6 files",
+      "de": "Max. 10 MB pro Datei · 20 MB insgesamt · max. 6 Dateien"
+    },
+    "formFileRemove": {
+      "nl": "Verwijderen",
+      "en": "Remove",
+      "de": "Entfernen"
+    },
+    "formFileTooBig": {
+      "nl": "is groter dan 10 MB en is niet toegevoegd.",
+      "en": "is larger than 10 MB and was not added.",
+      "de": "ist größer als 10 MB und wurde nicht hinzugefügt."
+    },
+    "formFileTooMany": {
+      "nl": "Er kunnen maximaal 6 bestanden mee.",
+      "en": "A maximum of 6 files is allowed.",
+      "de": "Es sind maximal 6 Dateien möglich."
+    },
+    "formFileTotalTooBig": {
+      "nl": "Samen zijn de bestanden groter dan 20 MB.",
+      "en": "Combined, the files are larger than 20 MB.",
+      "de": "Zusammen sind die Dateien größer als 20 MB."
+    },
+    "formFileTypeInvalid": {
+      "nl": "heeft een bestandstype dat niet wordt ondersteund.",
+      "en": "has a file type that is not supported.",
+      "de": "hat einen nicht unterstützten Dateityp."
+    },
+    "formOrCall": {
+      "nl": "Of bel",
+      "en": "Or call",
+      "de": "Oder rufen Sie an:"
+    },
+    "footerBottom": {
+      "nl": "Hengelo (Ov.) · NL / EN / DE",
+      "en": "Hengelo, the Netherlands · NL / EN / DE",
+      "de": "Hengelo (NL) · NL / EN / DE"
+    },
+    "operations": {
+      "nl": "Plaatwerk,Lasersnijden,Buislasersnijden,Kanten,Lassen (hand/laser),Constructies,Machinebouw,Industriële behuizing,Assemblage,Anders / weet ik nog niet",
+      "en": "Sheet metal work,Laser cutting,Tube laser cutting,Bending,Welding (manual/laser),Welded constructions,Machine building,Industrial enclosures,Assembly,Other / not sure yet",
+      "de": "Blechbearbeitung,Laserschneiden,Rohrlaserschneiden,Abkanten,Schweißen (manuell/Laser),Konstruktionen,Maschinenbau,Industriegehäuse,Montage,Sonstiges / noch unklar"
+    },
+    "consentPre": {
+      "nl": "Ik ga akkoord met de",
+      "en": "I agree to the",
+      "de": "Ich stimme der"
+    },
+    "consentLink": {
+      "nl": "privacyverklaring",
+      "en": "privacy statement",
+      "de": "Datenschutzerklärung"
+    },
+    "consentPost": {
+      "nl": "",
+      "en": "",
+      "de": "zu"
+    },
+    "sending": {
+      "nl": "Versturen…",
+      "en": "Sending…",
+      "de": "Wird gesendet…"
+    },
+    "sentHead": {
+      "nl": "Bedankt voor uw aanvraag",
+      "en": "Thank you for your enquiry",
+      "de": "Vielen Dank für Ihre Anfrage"
+    },
+    "sentText": {
+      "nl": "We hebben uw bericht ontvangen en reageren binnen één werkdag. Is het spoed? Bel ons dan even.",
+      "en": "We have received your message and will reply within one working day. In a hurry? Please give us a call.",
+      "de": "Wir haben Ihre Nachricht erhalten und antworten innerhalb eines Werktages. Eilt es? Rufen Sie uns gern an."
+    },
+    "sentBack": {
+      "nl": "Terug naar de homepage",
+      "en": "Back to the homepage",
+      "de": "Zurück zur Startseite"
+    },
+    "thanksTitle": {
+      "nl": "Bedankt",
+      "en": "Thank you",
+      "de": "Vielen Dank"
+    },
+    "errPrefix": {
+      "nl": "Er ging iets mis:",
+      "en": "Something went wrong:",
+      "de": "Es ist etwas schiefgegangen:"
+    },
+    "aboutOperation": {
+      "nl": "Over deze bewerking",
+      "en": "About this operation",
+      "de": "Über diese Bearbeitung"
+    },
+    "materialsLabel": {
+      "nl": "Materialen",
+      "en": "Materials",
+      "de": "Werkstoffe"
+    },
+    "drawingToDelivery": {
+      "nl": "Van tekening|tot levering",
+      "en": "From drawing|to delivery",
+      "de": "Von der Zeichnung|zur Lieferung"
+    },
+    "specsHead": {
+      "nl": "Specificaties",
+      "en": "Specifications",
+      "de": "Spezifikationen"
+    },
+    "specsCaption": {
+      "nl": "Richtwaarden — te bevestigen per project",
+      "en": "Indicative values — to be confirmed per project",
+      "de": "Richtwerte — pro Projekt zu bestätigen"
+    },
+    "applicationsHead": {
+      "nl": "Toepassingen",
+      "en": "Applications",
+      "de": "Anwendungen"
+    },
+    "faqHead": {
+      "nl": "Veelgestelde vragen",
+      "en": "Frequently asked questions",
+      "de": "Häufige Fragen"
+    },
+    "operationsCount": {
+      "nl": "bewerkingen",
+      "en": "operations",
+      "de": "Bearbeitungen"
+    },
+    "vacancyEyebrow": {
+      "nl": "Vacature",
+      "en": "Vacancy",
+      "de": "Stellenangebot"
+    },
+    "vacancyClosed": {
+      "nl": "Gesloten",
+      "en": "Closed",
+      "de": "Geschlossen"
+    },
+    "vacancyTasks": {
+      "nl": "Wat je doet",
+      "en": "What you will do",
+      "de": "Ihre Aufgaben"
+    },
+    "vacancyTasksIdx": {
+      "nl": "01 / Taken",
+      "en": "01 / Tasks",
+      "de": "01 / Aufgaben"
+    },
+    "vacancyProfile": {
+      "nl": "Wat je meebrengt",
+      "en": "What you bring",
+      "de": "Ihr Profil"
+    },
+    "vacancyProfileIdx": {
+      "nl": "02 / Profiel",
+      "en": "02 / Profile",
+      "de": "02 / Profil"
+    },
+    "vacancyInterest": {
+      "nl": "Interesse?",
+      "en": "Interested?",
+      "de": "Interessiert?"
+    },
+    "vacancyApplyHead": {
+      "nl": "Solliciteer",
+      "en": "Apply",
+      "de": "Bewerben"
+    },
+    "vacancyApplyAt": {
+      "nl": "bij Assink & Schipholt",
+      "en": "at Assink & Schipholt",
+      "de": "bei Assink & Schipholt"
+    },
+    "vacancyApplyMail": {
+      "nl": "Solliciteer via e-mail",
+      "en": "Apply by email",
+      "de": "Per E-Mail bewerben"
+    },
+    "vacancyMailUs": {
+      "nl": "Mail ons",
+      "en": "Email us",
+      "de": "Schreiben Sie uns"
+    },
+    "callVerb": {
+      "nl": "Bel",
+      "en": "Call",
+      "de": "Anrufen:"
+    },
+    "plaatwerkTrail": {
+      "nl": "Plaatwerk",
+      "en": "Sheet metal",
+      "de": "Blechbearbeitung"
+    }
+  }
+}

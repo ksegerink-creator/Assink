@@ -18,7 +18,7 @@ const locale = toLocale(Astro.params.lang);
 const w = await readPage("werkenBij", locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
-const vacancies = await localizeEntries("vacatures", (await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order), locale);
+const vacancies = localizeEntries((await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order), locale);
 const open = vacancies.filter((v) => v.data.open);
 ---
 <PageLayout

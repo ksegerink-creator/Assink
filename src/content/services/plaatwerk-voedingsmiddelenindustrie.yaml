@@ -28,3 +28,85 @@ seo:
   title: Hygiënisch RVS-plaatwerk voor food
   description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsmiddelenindustrie: corrosiebestendig en representatief afgewerkt."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Food industry
+  kicker: Sector
+  h1: Food industry
+  intro: Hygienic, corrosion-resistant and cleanable stainless steel sheet metal work for the food industry
+    — where accuracy and finishing are essential.
+  heroPhoto:
+    subject: Stainless steel part for food-processing machinery, hygienically finished
+  body:
+  - For the food industry we supply stainless steel sheet metal parts and welded constructions with smooth,
+    cleanable surfaces and carefully finished weld seams. Laser welding and passivation contribute to hygiene
+    and service life.
+  materials:
+  - Stainless steel 304
+  - Stainless steel 316
+  process:
+  - step: Design
+    desc: Hygienic, cleanable detailing.
+  - step: Laser cutting & bending
+    desc: Dimensionally stable parts.
+  - step: Laser welding
+    desc: Tight, smooth seams.
+  - step: Passivation
+    desc: Corrosion protection.
+  applications:
+  - Food processing machinery
+  - Process equipment
+  - Enclosures
+  related:
+  - label: Stainless steel
+    desc: Stainless steel sheet metal work.
+  - label: Laser welding
+    desc: Hygienic seams.
+  - label: Stainless steel constructions
+    desc: Welded stainless steel assemblies.
+  seo:
+    title: Hygienic stainless sheet for food
+    description: 'Hygienic, cleanable stainless steel sheet metal work and welded constructions for the
+      food industry: corrosion-resistant and with a presentable finish.'
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Lebensmittelindustrie
+  kicker: Branche
+  h1: Lebensmittelindustrie
+  intro: Hygienische, korrosionsbeständige und reinigbare Blechbearbeitung in Edelstahl für die Lebensmittelindustrie
+    — wo Genauigkeit und Verarbeitung entscheidend sind.
+  heroPhoto:
+    subject: Edelstahlteil für eine Lebensmittelmaschine, hygienisch ausgeführt
+  body:
+  - Für die Lebensmittelindustrie liefern wir Blechteile und Konstruktionen aus Edelstahl mit glatten, reinigbaren
+    Oberflächen und sorgfältig ausgearbeiteten Schweißnähten. Laserschweißen und Passivieren tragen zur
+    Hygiene und zur Lebensdauer bei.
+  materials:
+  - Edelstahl 304
+  - Edelstahl 316
+  process:
+  - step: Konstruktion
+    desc: Hygienische, reinigbare Detaillierung.
+  - step: Laserschneiden & Abkanten
+    desc: Maßhaltige Teile.
+  - step: Laserschweißen
+    desc: Saubere, glatte Nähte.
+  - step: Passivieren
+    desc: Korrosionsschutz.
+  applications:
+  - Lebensmittelmaschinen
+  - Prozessanlagen
+  - Gehäuse
+  related:
+  - label: Edelstahl
+    desc: Blechbearbeitung in Edelstahl.
+  - label: Laserschweißen
+    desc: Hygienische Nähte.
+  - label: Edelstahlkonstruktionen
+    desc: Geschweißte Edelstahl-Baugruppen.
+  seo:
+    title: Hygienisches Edelstahlblech für Food
+    description: 'Hygienische, reinigbare Blechbearbeitung und Konstruktionen aus Edelstahl für die Lebensmittelindustrie:
+      korrosionsbeständig und repräsentativ ausgeführt.'

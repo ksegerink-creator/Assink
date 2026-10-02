@@ -2,3 +2,13 @@ title: "Apparatenbouw"
 order: 40
 summary: "Gelaste frames, omkastingen en behuizingen tot 10 ton, van onderdeel tot samenstelling."
 link: "apparatenbouw"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Equipment manufacturing
+  summary: Welded frames, casings and enclosures up to 10 tonnes, from part to complete assembly.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Apparatebau
+  summary: Geschweißte Rahmen, Einhausungen und Gehäuse bis 10 Tonnen, vom Bauteil bis zur Baugruppe.

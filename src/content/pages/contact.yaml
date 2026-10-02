@@ -14,3 +14,31 @@ berichtNote: >-
   Reactie binnen één werkdag. Wil je een tekening meesturen? Gebruik dan het
   offerteformulier — daar kun je bestanden toevoegen.
 werkFoto: /src/assets/uploads/contact/werkFoto.jpg
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  seoTitel: Contact
+  seoOmschrijving: 'Get in touch with Assink & Schipholt in Hengelo: call, email or drop by. We are happy
+    to advise — from first drawing to finished assembly.'
+  kicker: Contact · Hengelo, the Netherlands
+  titel: Discuss your project
+  lead: Call, email or drop by. We are happy to think along with you — from the first drawing to the finished
+    assembly.
+  pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+  berichtKop: Send us a message
+  berichtNote: Response within one working day. Would you like to attach a drawing? Please use the quotation
+    form — you can add files there.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  seoTitel: Kontakt
+  seoOmschrijving: 'Nehmen Sie Kontakt mit Assink & Schipholt in Hengelo auf: telefonisch, per E-Mail oder
+    persönlich. Wir denken gern mit — von der ersten Zeichnung bis zur fertigen Baugruppe.'
+  kicker: Kontakt · Hengelo (NL)
+  titel: Besprechen Sie Ihr Projekt
+  lead: Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei. Wir denken gern mit — von der ersten Zeichnung
+    bis zur fertigen Baugruppe.
+  pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+  berichtKop: Schreiben Sie uns
+  berichtNote: Antwort innerhalb eines Werktages. Möchten Sie eine Zeichnung mitschicken? Nutzen Sie dann
+    das Angebotsformular — dort können Sie Dateien anhängen.

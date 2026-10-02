@@ -29,3 +29,97 @@ seo:
   title: Staalconstructies volgens EN 1090-1
   description: "Staalconstructies, frames en behuizingen voor infratechniek. Gecertificeerd volgens EN 1090-1 en ISO 3834-2, met documentatie van ingangscontrole tot eindkeuring."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Infrastructure
+  kicker: Sector
+  h1: Steel structures for infrastructure
+  intro: 'Work for public infrastructure is judged on traceability: which material, which weld, which inspection.
+    We are certified to EN 1090-1 and record that for every order.'
+  heroPhoto:
+    subject: Welding department with two workstations
+  body:
+  - For infrastructure engineering we make welded steel structures, frames, hatches and enclosures. Parts
+    up to 10 tonnes and constructions up to 8 metres high can be produced in our own hall and moved safely
+    with five 5-tonne overhead cranes; above 5 tonnes we lift in tandem with two cranes.
+  - EN 1090-1 governs the execution of steel and aluminium structures with CE marking; ISO 3834-2 governs
+    the welding procedures. From incoming inspection to final inspection we document the steps, so a client
+    can see what has been done.
+  materials:
+  - Steel
+  - Stainless steel 304
+  - Stainless steel 316
+  - Aluminium
+  process:
+  - step: Incoming inspection
+    desc: Material certificates and dimensions on arrival.
+  - step: Cutting & bending
+    desc: Laser and tube laser cutting, bending.
+  - step: Welding
+    desc: Qualified procedures, ISO 3834-2.
+  - step: Final inspection
+    desc: Dimensional check and release with documentation.
+  applications:
+  - Welded steel structures
+  - Frames and platforms
+  - Hatches and enclosures
+  related:
+  - label: Welded constructions
+    desc: Heavy structural work.
+  - label: Quality
+    desc: EN 1090-1 and ISO 3834-2.
+  - label: Tube laser cutting
+    desc: Profiles cut to size.
+  seo:
+    title: Steel structures to EN 1090-1
+    description: Steel structures, frames and enclosures for infrastructure engineering. Certified to EN
+      1090-1 and ISO 3834-2, documented from incoming inspection to final release.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Infrastruktur
+  kicker: Branche
+  h1: Stahlkonstruktionen für die Infrastruktur
+  intro: 'Arbeiten für die öffentliche Infrastruktur werden an der Nachvollziehbarkeit gemessen: welches
+    Material, welche Schweißnaht, welche Prüfung. Wir sind nach EN 1090-1 zertifiziert und halten das pro
+    Auftrag fest.'
+  heroPhoto:
+    subject: Schweißabteilung mit zwei Arbeitsplätzen
+  body:
+  - Für die Infrastrukturtechnik fertigen wir geschweißte Stahlkonstruktionen, Rahmen, Luken und Gehäuse.
+    Bauteile bis 10 Tonnen und Konstruktionen bis 8 Meter Höhe können wir in der eigenen Halle fertigen
+    und mit fünf Hallenkranen von je 5 Tonnen sicher bewegen; über 5 Tonnen heben wir im Tandem mit zwei
+    Kranen.
+  - EN 1090-1 regelt die Ausführung von Stahl- und Aluminiumtragwerken mit CE-Kennzeichnung, ISO 3834-2
+    regelt die Schweißverfahren. Von der Eingangskontrolle bis zur Endprüfung dokumentieren wir die Schritte,
+    sodass ein Auftraggeber nachvollziehen kann, was ausgeführt wurde.
+  materials:
+  - Stahl
+  - Edelstahl 304
+  - Edelstahl 316
+  - Aluminium
+  process:
+  - step: Eingangskontrolle
+    desc: Materialzeugnisse und Maße bei Anlieferung.
+  - step: Schneiden & Abkanten
+    desc: Laser- und Rohrlaserschneiden, Abkanten.
+  - step: Schweißen
+    desc: Qualifizierte Verfahren, ISO 3834-2.
+  - step: Endprüfung
+    desc: Maßkontrolle und Freigabe mit Dokumentation.
+  applications:
+  - Geschweißte Stahlkonstruktionen
+  - Rahmen und Bühnen
+  - Luken und Gehäuse
+  related:
+  - label: Konstruktionen
+    desc: Schwere geschweißte Konstruktionsarbeit.
+  - label: Qualität
+    desc: EN 1090-1 und ISO 3834-2.
+  - label: Rohrlaserschneiden
+    desc: Profile nach Maß.
+  seo:
+    title: Stahlkonstruktionen nach EN 1090-1
+    description: Stahlkonstruktionen, Rahmen und Gehäuse für die Infrastrukturtechnik. Zertifiziert nach
+      EN 1090-1 und ISO 3834-2, dokumentiert von der Eingangskontrolle bis zur Endprüfung.

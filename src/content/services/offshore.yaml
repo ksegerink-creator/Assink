@@ -29,3 +29,97 @@ seo:
   title: Plaatwerk en constructies voor offshore
   description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor offshore, in RVS 316 en staal. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Offshore
+  kicker: Sector
+  h1: Constructions and sheet metal for offshore
+  intro: Offshore is a salty, wet environment where corrosion and vibration set the terms. We make welded
+    constructions and sheet metal in stainless steel 316 and steel, with qualified welding procedures and
+    documentation for every order.
+  heroPhoto:
+    subject: Welding department with two workstations
+  body:
+  - 'For offshore applications we supply frames, enclosures, platforms and welded assemblies up to 10 tonnes.
+    Material choice determines service life: where seawater is involved, we advise stainless steel 316 rather
+    than 304.'
+  - Our welding falls under ISO 3834-2, and for steel structures we are certified to EN 1090-1. Material
+    certificates and dimensional checks are recorded per order, so traceability is covered. Preservation
+    and coating are outsourced to a regular partner.
+  materials:
+  - Stainless steel 316
+  - Stainless steel 304
+  - Steel
+  - Aluminium
+  process:
+  - step: Material selection
+    desc: Advice based on corrosion class and application.
+  - step: Cutting & bending
+    desc: Laser and tube laser cutting, bending.
+  - step: Welding
+    desc: Qualified procedures to ISO 3834-2.
+  - step: Inspection & documentation
+    desc: Dimensional checks and records per order.
+  applications:
+  - Frames and platforms
+  - Enclosures
+  - Welded assemblies up to 10 tonnes
+  related:
+  - label: Welded constructions
+    desc: Structural work up to 10 tonnes.
+  - label: Stainless steel constructions
+    desc: Corrosion-resistant assembly.
+  - label: Quality
+    desc: Certification and inspection.
+  seo:
+    title: Offshore sheet metal and constructions
+    description: Frames, enclosures and welded assemblies up to 10 tonnes for offshore, in stainless steel
+      316 and steel. Welding under ISO 3834-2, steel structures to EN 1090-1.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Offshore
+  kicker: Branche
+  h1: Konstruktionen und Blechbearbeitung für Offshore
+  intro: Offshore ist eine salzige, nasse Umgebung, in der Korrosion und Vibrationen die Arbeit bestimmen.
+    Wir fertigen geschweißte Konstruktionen und Blechbauteile in Edelstahl 316 und Stahl, mit qualifizierten
+    Schweißverfahren und Dokumentation pro Auftrag.
+  heroPhoto:
+    subject: Schweißabteilung mit zwei Arbeitsplätzen
+  body:
+  - 'Für Offshore-Anwendungen liefern wir Rahmen, Gehäuse, Bühnen und geschweißte Baugruppen bis 10 Tonnen.
+    Die Materialwahl bestimmt die Lebensdauer: Wo Seewasser hinzukommt, empfehlen wir Edelstahl 316 statt
+    304.'
+  - Unsere Schweißarbeiten fallen unter ISO 3834-2, für Stahlkonstruktionen sind wir nach EN 1090-1 zertifiziert.
+    Materialzeugnisse und Maßkontrollen halten wir pro Auftrag fest, sodass die Nachvollziehbarkeit geregelt
+    ist. Konservieren und Beschichten geben wir an einen festen Partner.
+  materials:
+  - Edelstahl 316
+  - Edelstahl 304
+  - Stahl
+  - Aluminium
+  process:
+  - step: Materialwahl
+    desc: Beratung nach Korrosionsklasse und Anwendung.
+  - step: Schneiden & Abkanten
+    desc: Laser- und Rohrlaserschneiden, Abkanten.
+  - step: Schweißen
+    desc: Qualifizierte Verfahren nach ISO 3834-2.
+  - step: Prüfung & Dokumentation
+    desc: Maßkontrolle und Aufzeichnung pro Auftrag.
+  applications:
+  - Rahmen und Bühnen
+  - Gehäuse
+  - Geschweißte Baugruppen bis 10 Tonnen
+  related:
+  - label: Konstruktionen
+    desc: Geschweißte Konstruktionsarbeit bis 10 Tonnen.
+  - label: Edelstahlkonstruktionen
+    desc: Korrosionsbeständiger Zusammenbau.
+  - label: Qualität
+    desc: Zertifizierung und Prüfung.
+  seo:
+    title: Offshore — Konstruktionen und Blech
+    description: Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für Offshore, in Edelstahl 316
+      und Stahl. Schweißen unter ISO 3834-2, Stahlkonstruktionen nach EN 1090-1.
