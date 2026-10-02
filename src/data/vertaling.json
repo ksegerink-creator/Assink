@@ -1,0 +1,16 @@
+{
+  "nooitVertalen": [
+    "orient",
+    "crop",
+    "comp",
+    "src",
+    "slug",
+    "link",
+    "order",
+    "template",
+    "group",
+    "open",
+    "translated"
+  ],
+  "fotoVeldPatroon": "^(foto|midFoto|.*Foto[0-9]*)$"
+}

@@ -2,3 +2,19 @@ footerIntro: "Precisieplaatwerk, constructies en machinebouw uit Hengelo. Tradit
 ctaTitelRegel1: "Bespreek uw tekening,"
 ctaTitelRegel2: "onderdeel of samenstelling."
 ctaSubtekst: "Reactie binnen één werkdag"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  footerIntro: Precision sheet metal, welded constructions and machine building from Hengelo. Traditional
+    craftsmanship with modern, automated production — since 1919.
+  ctaTitelRegel1: Discuss your drawing,
+  ctaTitelRegel2: part or assembly.
+  ctaSubtekst: Response within one working day
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  footerIntro: Präzisionsblech, Konstruktionen und Maschinenbau aus Hengelo. Traditionelles Handwerk mit
+    moderner, automatisierter Fertigung — seit 1919.
+  ctaTitelRegel1: Besprechen Sie Ihre Zeichnung,
+  ctaTitelRegel2: Ihr Bauteil oder Ihre Baugruppe.
+  ctaSubtekst: Antwort innerhalb eines Werktages

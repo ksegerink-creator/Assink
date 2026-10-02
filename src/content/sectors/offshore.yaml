@@ -2,3 +2,14 @@ title: "Offshore"
 order: 50
 summary: "Corrosiebestendige constructies en plaatwerk in RVS 316, met gekwalificeerd laswerk."
 link: "offshore"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Offshore
+  summary: Corrosion-resistant constructions and sheet metal in stainless steel 316, with qualified welding.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Offshore
+  summary: Korrosionsbeständige Konstruktionen und Blechbearbeitung in Edelstahl 316, mit qualifiziertem
+    Schweißen.

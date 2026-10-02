@@ -49,7 +49,7 @@ const noindex = noindexProp || !siteLive;
 
 // Analytics alleen op de live productiesite — nooit op previews/dev, zodat
 // testbezoeken de statistieken niet vervuilen. Het meet-ID gaat letterlijk in
-// een inline <script>, dus we accepteren alleen de vorm die Google uitgeeft
+// een inline script-tag, dus we accepteren alleen de vorm die Google uitgeeft
 // (G-, daarna letters en cijfers). Een typefout of een geplakte URL in de
 // omgevingsvariabele levert dan geen kapotte pagina op, maar simpelweg geen tag.
 const GA_ID_PATTERN = /^G-[A-Z0-9]+$/;

@@ -11,3 +11,31 @@ photo:
   orient: "Liggend 3:2"
   crop: "Machine + operator"
   comp: "Bedieningspaneel links, snijkop achter het venster"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  name: Trumpf TruLaser Tube 3000
+  category: Tube laser cutting
+  description: Advanced tube laser system for various shapes and materials — complex contours in a single
+    operation.
+  specs:
+  - label: Type
+    value: tube laser
+  - label: Materials
+    value: steel · stainless steel · aluminium
+  photo:
+    subject: Trumpf TruLaser Tube 3000 with rotating profile
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  name: Trumpf TruLaser Tube 3000
+  category: Rohrlaserschneiden
+  description: Fortschrittliches Rohrlasersystem für unterschiedliche Formen und Werkstoffe — komplexe Konturen
+    in einem Arbeitsgang.
+  specs:
+  - label: Typ
+    value: Rohrlaser
+  - label: Werkstoffe
+    value: Stahl · Edelstahl · Aluminium
+  photo:
+    subject: Trumpf TruLaser Tube 3000 mit rotierendem Profil

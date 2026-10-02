@@ -12,7 +12,7 @@ import { localizePath } from "@utils/paths";
 import { faqJsonLd } from "@utils/seo";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
-import { localizeEntry, entryFileSlug } from "@utils/content";
+import { localizeEntry } from "@utils/content";
 import { LOCALES } from "@utils/locales";
 import type { Locale } from "@data/site";
 
@@ -37,7 +37,7 @@ export async function getStaticPaths() {
 
 interface Props { entry: CollectionEntry<"services">; locale: Locale }
 const { entry, locale } = Astro.props;
-const s = await localizeEntry("services", entryFileSlug(entry), entry.data, locale);
+const s = localizeEntry(entry.data, locale);
 const nav = (slug: string) => localizePath(slug, locale);
 const isOverview = s.template === "overview";
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);

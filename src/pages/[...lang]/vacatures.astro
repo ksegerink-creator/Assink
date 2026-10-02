@@ -18,7 +18,7 @@ const locale = toLocale(Astro.params.lang);
 const w = await readPage("werkenBij", locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
-const vacancies = await localizeEntries("vacatures", (await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order), locale);
+const vacancies = localizeEntries((await getCollection("vacancies")).sort((a, b) => a.data.order - b.data.order), locale);
 const open = vacancies.filter((v) => v.data.open);
 ---
 <PageLayout
@@ -34,7 +34,7 @@ const open = vacancies.filter((v) => v.data.open);
     kicker={w.heroKicker}
     lead={w.heroTekst}
     image={photo(w.heroFoto)}
-    alt="Medewerker van Assink & Schipholt in de lasafdeling"
+    alt={t(locale, "altWeldingDeptEmployee")}
     position="center 30%"
   >
     <h1 slot="title">{w.heroTitelRegel1}<br />{w.heroTitelRegel2}</h1>
@@ -62,8 +62,8 @@ const open = vacancies.filter((v) => v.data.open);
   <!-- Fotostrip: de werkvloer -->
   <section class="vstrip">
     <div class="wrap vstrip__grid rv">
-      <figure><IndustrialImage src={photo(w.sfeerFoto1)} alt="De lasafdeling van Assink & Schipholt" ratio="16/10" /></figure>
-      <figure><IndustrialImage src={photo(w.sfeerFoto2)} alt="TIG-lassen close-up" ratio="1/1" /></figure>
+      <figure><IndustrialImage src={photo(w.sfeerFoto1)} alt={t(locale, "altWeldingDept")} ratio="16/10" /></figure>
+      <figure><IndustrialImage src={photo(w.sfeerFoto2)} alt={t(locale, "altTigCloseup")} ratio="1/1" /></figure>
       <figure><IndustrialImage src={photo(w.sfeerFoto3)} alt={t(locale, "altBlasting")} ratio="1/1" /></figure>
     </div>
   </section>

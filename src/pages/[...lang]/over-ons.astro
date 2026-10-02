@@ -22,7 +22,7 @@ const a = await readPage("overOns", locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
 const projects = (await getCollection("projects")).sort((x, y) => x.data.order - y.data.order);
-const sectors = await localizeEntries("sectoren", (await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order), locale);
+const sectors = localizeEntries((await getCollection("sectors")).sort((x, y) => x.data.order - y.data.order), locale);
 const years = new Date().getFullYear() - SITE.founded;
 const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", String(years));
 

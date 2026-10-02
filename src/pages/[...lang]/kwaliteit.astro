@@ -18,7 +18,7 @@ export function getStaticPaths() {
 const locale = toLocale(Astro.params.lang);
 const q = await readPage("kwaliteit", locale);
 
-const certs = await localizeEntries("certificeringen", (await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order), locale);
+const certs = localizeEntries((await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order), locale);
 ---
 <PageLayout
   title={q.seoTitel}

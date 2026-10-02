@@ -11,7 +11,7 @@ import { photo } from "@utils/photos";
 import { CONTACT, SITE } from "@data/site";
 import { jobPostingJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
-import { localizeEntry, entryFileSlug } from "@utils/content";
+import { localizeEntry } from "@utils/content";
 import { LOCALES } from "@utils/locales";
 
 export async function getStaticPaths() {
@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 interface Props { entry: CollectionEntry<"vacancies"> }
 const { entry } = Astro.props;
 const locale = toLocale(Astro.params.lang);
-const v = await localizeEntry("vacatures", entryFileSlug(entry), entry.data, locale);
+const v = localizeEntry(entry.data, locale);
 const nav = (slug: string) => localizePath(slug, locale);
 const site = Astro.site ?? new URL(SITE.url);
 const jsonld = [

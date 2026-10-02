@@ -72,3 +72,109 @@ pandFoto: /src/assets/uploads/over-ons/pandFoto.jpg
 pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
 pandArchiefFoto: /src/assets/uploads/over-ons/archief/gevel-ijzerconstructies.jpg
 pandArchiefBijschrift: Gevel met het opschrift 'IJzerconstructies · Assink & Schipholt'
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  seoTitel: About us
+  seoOmschrijving: 'Assink & Schipholt has been working metal in Hengelo since 1919: sheet metal work, welded
+    constructions and assemblies for machine building and industry. Experienced professionals, a modern
+    machine park, one point of contact.'
+  heroKicker: About us · Hengelo, the Netherlands
+  heroTitelRegel1: More than a century
+  heroTitelRegel2: of metalworking
+  lead: From structural work to precision sheet metal — since 1919
+  feiten:
+  - waarde: '{jaren}'
+    label: years of experience
+  - waarde: 10 t
+    label: max. unit weight
+  - waarde: 8 m
+    label: max. build height
+  proza:
+  - Assink & Schipholt started out in 1919 in structural work, sheet metal and sanitary installations. What
+    was once broad craftsmanship for companies and private customers grew along with industry in Twente.
+    Today we focus on precision sheet metal and structures for machine building and industry.
+  - 'The technology changed, the principle did not: making parts that are right and that fit the application
+    they are meant for.'
+  - 'Where sheet metal used to be laid out, cut and welded by hand, we now have modern techniques for laser
+    cutting, tube laser cutting, press braking, robot welding and laser welding. From individual stainless
+    steel parts to assembled sheet metal work: we carry out production and finishing in house wherever possible.'
+  - We keep the craft close as well. As an SBB-accredited training company we train new professionals ourselves.
+    That is how we combine more than a century of experience with today's production technology.
+  historieKop1: From forge
+  historieKop2: to modern production
+  tijdlijn:
+  - jaar: '1919'
+    tekst: Founded in Hengelo — the start of more than a century of metalworking.
+  - jaar: 20th century
+    tekst: Grew into an all-round specialist in sheet metal and structural work for regional industry.
+  - jaar: Today
+    tekst: 'Modern, partly automated production: laser cutting, tube laser, laser welding and in-house finishing.'
+  - jaar: Now
+    tekst: One production partner from engineering to finished assembly for machine building and industry.
+  archiefKop: From the archive
+  archiefTekst: 'Images from our own archive: the hall, the machines and the people who worked here.'
+  archief:
+  - bijschrift: 'Facade lettering: structures, sheet metal work and sanitary work'
+  - bijschrift: Our own production hall with a vacuum lifter and sheet metal machinery
+  vakEyebrow: Quality & craftsmanship
+  vakKop: Demonstrably good work
+  vakTekst: 'We build quality into the process: qualified welding procedures, dimensional inspection and
+    documentation for every order. As an SBB-accredited training company, we also train our own skilled
+    professionals.'
+  pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+  pandArchiefBijschrift: 'Facade lettering: iron structures — Assink & Schipholt'
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  seoTitel: Über uns
+  seoOmschrijving: 'Assink & Schipholt bearbeitet seit 1919 Metall in Hengelo: Blechbearbeitung, Konstruktionen
+    und Baugruppen für Maschinenbau und Industrie. Erfahrene Fachkräfte, moderner Maschinenpark, ein Ansprechpartner.'
+  heroKicker: Über uns · Hengelo (NL)
+  heroTitelRegel1: Mehr als ein Jahrhundert
+  heroTitelRegel2: Metallbearbeitung
+  lead: Von Konstruktionsbau zu Präzisionsblech — seit 1919
+  feiten:
+  - waarde: '{jaren}'
+    label: Jahre Erfahrung
+  - waarde: 10 t
+    label: max. Stückgewicht
+  - waarde: 8 m
+    label: max. Bauhöhe
+  proza:
+  - Assink & Schipholt begann 1919 mit Konstruktionsbau, Blecharbeiten und Sanitär. Was einst breites Handwerk
+    für Betriebe und Privatkunden war, wuchs mit der Twenter Industrie. Heute konzentrieren wir uns auf
+    Präzisionsblech und Konstruktionen für Maschinenbau und Industrie.
+  - 'Die Technik hat sich verändert, der Ausgangspunkt nicht: Teile herstellen, die stimmen und in die Anwendung
+    passen, für die sie gedacht sind.'
+  - 'Wo Blech früher von Hand angerissen, geschnitten und geschweißt wurde, verfügen wir heute über moderne
+    Technik für Laserschneiden, Rohrlaserschneiden, Abkanten, Roboterschweißen und Laserschweißen. Von einzelnen
+    Edelstahlteilen bis zu zusammengesetzten Blechbaugruppen: Fertigung und Nachbearbeitung übernehmen wir
+    so weit wie möglich im eigenen Haus.'
+  - Auch das Handwerk halten wir nah. Als SBB-anerkannter Ausbildungsbetrieb bilden wir neue Fachkräfte
+    selbst aus. So verbinden wir mehr als ein Jahrhundert Erfahrung mit der Produktionstechnik von heute.
+  historieKop1: Von der Schmiede
+  historieKop2: zur modernen Fertigung
+  tijdlijn:
+  - jaar: '1919'
+    tekst: Gründung in Hengelo — der Beginn von mehr als einem Jahrhundert Metallbearbeitung.
+  - jaar: 20. Jahrhundert
+    tekst: Entwicklung zum Allround-Spezialisten für Blech- und Konstruktionsarbeiten für die regionale
+      Industrie.
+  - jaar: Heute
+    tekst: 'Moderne, teilweise automatisierte Fertigung: Laserschneiden, Rohrlaser, Laserschweißen und eigene
+      Nachbearbeitung.'
+  - jaar: Jetzt
+    tekst: Ein Produktionspartner von der Konstruktion bis zur fertigen Baugruppe für Maschinenbau und Industrie.
+  archiefKop: Aus dem Archiv
+  archiefTekst: 'Bilder aus dem eigenen Archiv: die Halle, die Maschinen und die Menschen, die hier gearbeitet
+    haben.'
+  archief:
+  - bijschrift: 'Fassadenschrift: Konstruktionen, Blecharbeiten und Sanitär'
+  - bijschrift: Eigene Produktionshalle mit Vakuumheber und Blechbearbeitungsmaschinen
+  vakEyebrow: Qualität & Handwerkskunst
+  vakKop: Nachweisbar gute Arbeit
+  vakTekst: 'Qualität sichern wir im Prozess: qualifizierte Schweißverfahren, Maßkontrolle und Dokumentation
+    pro Auftrag. Als SBB-anerkannter Ausbildungsbetrieb bilden wir zudem unsere eigenen Fachkräfte aus.'
+  pandBijschrift: Oosterveldsingel 18 · 7558 PK Hengelo
+  pandArchiefBijschrift: 'Fassadenschrift: Eisenkonstruktionen — Assink & Schipholt'

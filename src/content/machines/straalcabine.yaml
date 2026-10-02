@@ -12,3 +12,37 @@ photo:
   orient: "Liggend 4:3"
   crop: "Cabine-interieur"
   comp: "Straalpistool op werkstuk"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  name: Blasting cabin 8×4×3 m
+  category: Glass bead blasting
+  description: Surface treatment with glass beads for aluminium and stainless steel — an even, matt finish.
+  specs:
+  - label: Pressure
+    value: 3.0 bar
+  - label: Glass beads
+    value: 100–200 μm
+  - label: Cabin
+    value: 8 × 4 × 3 m
+  - label: Materials
+    value: aluminium · stainless steel
+  photo:
+    subject: Blasting cabin — operator blasting a stainless steel part
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  name: Strahlkabine 8×4×3 m
+  category: Glasperlstrahlen
+  description: Oberflächenbehandlung mit Glasperlen für Aluminium und Edelstahl — gleichmäßige, matte Oberfläche.
+  specs:
+  - label: Druck
+    value: 3,0 bar
+  - label: Glasperlen
+    value: 100–200 μm
+  - label: Kabine
+    value: 8 × 4 × 3 m
+  - label: Materialien
+    value: Aluminium · Edelstahl
+  photo:
+    subject: Strahlkabine — Bediener strahlt ein Edelstahlteil

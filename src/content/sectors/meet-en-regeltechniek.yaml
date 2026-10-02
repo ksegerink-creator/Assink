@@ -2,3 +2,13 @@ title: "Meet- en regeltechniek"
 order: 70
 summary: "Precisieplaatwerk, instrumentbehuizingen en panelen met krappe toleranties."
 link: "meet-en-regeltechniek"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Instrumentation & control
+  summary: Precision sheet metal, instrument enclosures and panels to tight tolerances.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Mess- & Regeltechnik
+  summary: Präzisionsblech, Instrumentengehäuse und Paneele mit engen Toleranzen.

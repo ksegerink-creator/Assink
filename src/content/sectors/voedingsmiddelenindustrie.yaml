@@ -2,3 +2,14 @@ title: "Voedings- en verpakkingsindustrie"
 order: 20
 summary: "Hygiënisch, reinigbaar RVS-plaatwerk en -constructies voor voedingsmachines en verpakkingslijnen."
 link: "plaatwerk/voedingsmiddelenindustrie"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Food & packaging industry
+  summary: Hygienic, cleanable stainless steel sheet metal and constructions for food machinery and packaging
+    lines.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Lebensmittel- & Verpackungsindustrie
+  summary: Hygienisches, reinigbares Edelstahlblech und Konstruktionen für Lebensmittelmaschinen und Verpackungslinien.

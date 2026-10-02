@@ -90,3 +90,176 @@ faq:
   antwoord: Ja. Lassen tast de beschermende oxidelaag rond de naad aan, wat de plek gevoeliger maakt voor
     corrosie. Wij verwijderen aanloopkleuren en passiveren na het lassen, zodat de corrosiebestendigheid
     van het oppervlak behouden blijft.
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Stainless steel sheet metal
+  kicker: Sheet metal work 1.1
+  h1: Stainless steel sheet metal
+  intro: 'Stainless steel sheet metal with or without finishing: corrosion-resistant, presentable and dimensionally
+    stable. Our stainless steel sheet processing covers laser cutting and press braking, and deburring,
+    blasting and passivation where you want it.'
+  heroPhoto:
+    subject: Close-up of ground stainless steel bent work with a sharp edge
+  body:
+  - Stainless steel is ideally suited to applications that must be corrosion-resistant as well as presentable.
+    We mainly work with stainless steel 304 and 316.
+  - For visible surfaces we supply ground finishes with a consistent grain. Cutting is done with the laser;
+    edges are deburred and, where required, passivated.
+  - 'Stainless steel sheet processing calls for care: incorrect welding parameters or carbon steel residue
+    on the surface lead to rust formation. We passivate after welding, so the corrosion-resistant surface
+    stays intact.'
+  - 'From one-off visible work to series stainless steel sheet metal for the food industry or machine building:
+    every batch is finished with the same grain and the same tolerances.'
+  - 'On the Trumpf TruLaser 3040 we cut stainless steel from 0.5 to 20 mm. Which thickness makes sense depends
+    on the load and on the subsequent operations: thinner material is lighter and cheaper, but across large
+    surfaces it needs stiffeners or bent flanges to stay flat. For visible surfaces we also consider the
+    grain direction, so that it runs consistently across the separate parts of an assembly.'
+  - 'Press braking stainless steel calls for more care than steel: the material springs back more and the
+    surface is sensitive to scratches. We bend on a servo-electric press brake with a working length of
+    up to 3100 mm and use protective film and adapted tooling for visible work. Read more on our page about
+    <a href="/en/plaatwerk/zetten/">press braking</a>.'
+  - 'To assess a request properly we need: a PDF drawing and a 3D STEP file, the required grade, the sheet
+    thickness, whether it concerns visible surfaces and which finishing that requires, and the quantity
+    involved. If you are weighing 304 against 316, we set out the difference in our article on <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">stainless
+    steel 304 or 316</a> (in Dutch).'
+  - Not every joint has to be welded. For visible work we often choose <a href="/en/plaatwerk/laserlassen/">laser
+    welding</a>, because the narrow seam introduces little heat and therefore requires little finishing.
+    Where a demountable or continuously loaded connection is needed, we work with <a href="/en/plaatwerk/persmoeren-trekmoeren/">self-clinching
+    and rivet nuts</a>. Which route is best depends on the load, the visible side and the number of assembly
+    cycles.
+  materials:
+  - Stainless steel 304
+  - Stainless steel 316
+  - Ground / brushed
+  process:
+  - step: Laser cutting
+    desc: 2D laser cutting with minimal tolerances.
+  - step: Press braking
+    desc: Precise bend angles on the press brake.
+  - step: Deburring
+    desc: Burr-free, safe edges.
+  - step: Welding & finishing
+    desc: Laser/TIG welding and passivation for visible surfaces.
+  applications:
+  - Food industry
+  - Machine building
+  - Enclosures
+  - Visible surfaces
+  related:
+  - label: Food industry
+    desc: Hygienic stainless steel sheet metal.
+  - label: Laser welding
+    desc: Low-distortion seams.
+  - label: Stainless steel constructions
+    desc: Welded stainless steel assemblies.
+  seo:
+    title: Stainless sheet metal in 304 and 316
+    description: 'Corrosion-resistant, presentable stainless steel sheet metal in 304 and 316: laser cutting,
+      press braking, deburring and passivation for visible surfaces and machine building.'
+  faq:
+  - vraag: What sheet thickness in stainless steel can you laser cut?
+    antwoord: On the Trumpf TruLaser 3040 we cut stainless steel from 0.5 to 20 mm. Which thickness makes
+      sense in your case depends on the load and on the subsequent operations. If your request falls outside
+      that range, put it to us and we will see what is possible within the group.
+  - vraag: What is the difference between stainless steel 304 and 316?
+    antwoord: Stainless steel 316 contains molybdenum and is therefore more resistant to pitting corrosion,
+      particularly in environments with chlorides or a lot of moisture. 304 performs well in drier, less
+      aggressive applications. We process both grades; our knowledge base article on 304 and 316 sets out
+      the trade-off in more detail.
+  - vraag: Do you supply ground stainless steel for visible surfaces?
+    antwoord: Yes. For visible work we supply ground finishes with a consistent grain and make sure the
+      grain direction runs across the separate parts of an assembly. Protective film stays in place through
+      to the final operation, because stainless steel is sensitive to scratching.
+  - vraag: Do you passivate stainless steel after welding?
+    antwoord: Yes. Welding affects the protective oxide layer around the seam, which makes that area more
+      susceptible to corrosion. We remove heat tint and passivate after welding, so that the corrosion resistance
+      of the surface is retained.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Edelstahl-Blechbearbeitung
+  kicker: Blechbearbeitung 1.1
+  h1: Edelstahl-Blechbearbeitung
+  intro: 'Edelstahlblech mit oder ohne Nachbearbeitung: korrosionsbeständig, repräsentativ und maßhaltig.
+    Unsere Edelstahl-Blechbearbeitung umfasst Laserschneiden und Abkanten sowie auf Wunsch Entgraten, Strahlen
+    und Passivieren.'
+  heroPhoto:
+    subject: Nahaufnahme von geschliffenem Edelstahl-Kantteil mit scharfer Kante
+  body:
+  - Edelstahl (rostfreier Stahl) eignet sich besonders für Anwendungen, die sowohl korrosionsbeständig als
+    auch repräsentativ sein müssen. Wir verarbeiten vor allem Edelstahl 304 und 316.
+  - Für Sichtflächen liefern wir geschliffene Oberflächen mit einheitlicher Körnung. Geschnitten wird mit
+    dem Laser; Kanten werden entgratet und bei Bedarf passiviert.
+  - 'Die Edelstahl-Blechbearbeitung erfordert Sorgfalt: falsche Schweißparameter oder Rückstände von Kohlenstoffstahl
+    auf der Oberfläche führen zu Rostbildung. Wir passivieren nach dem Schweißen, damit die korrosionsbeständige
+    Oberfläche intakt bleibt.'
+  - 'Von Einzelstück-Sichtflächen bis zu seriellem Edelstahl-Blechwerk für die Lebensmittelindustrie oder
+    den Maschinenbau: Jede Charge wird mit derselben Körnung und denselben Toleranzen ausgeführt.'
+  - 'Auf der Trumpf TruLaser 3040 schneiden wir Edelstahl von 0,5 bis 20 mm. Welche Dicke sinnvoll ist,
+    hängt von der Belastung und von den nachfolgenden Bearbeitungen ab: dünneres Material ist leichter und
+    günstiger, benötigt bei großen Flächen aber Versteifungen oder abgekantete Flansche, um eben zu bleiben.
+    Bei Sichtflächen achten wir zusätzlich auf die Schliffrichtung, damit sie über die einzelnen Teile einer
+    Baugruppe durchläuft.'
+  - 'Das Abkanten von Edelstahl erfordert mehr Sorgfalt als bei Stahl: Das Material federt stärker zurück
+    und die Oberfläche ist kratzempfindlich. Wir kanten auf einer servoelektrischen Abkantpresse mit einer
+    Arbeitslänge bis 3100 mm und arbeiten bei Sichtflächen mit Schutzfolie und angepasstem Werkzeug. Mehr
+    dazu auf unserer Seite über das <a href="/de/plaatwerk/zetten/">Abkanten</a>.'
+  - 'Für eine belastbare Beurteilung Ihrer Anfrage benötigen wir: eine PDF-Zeichnung und eine 3D-STEP-Datei,
+    die gewünschte Werkstoffgüte, die Blechdicke, ob es sich um Sichtflächen handelt und welche Nachbehandlung
+    dazugehört, sowie die Stückzahl. Falls Sie zwischen 304 und 316 abwägen, stellen wir den Unterschied
+    in unserem Artikel <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">Edelstahl
+    304 oder 316</a> gegenüber (niederländisch).'
+  - Nicht jede Verbindung muss geschweißt werden. Für Sichtflächen wählen wir häufig das <a href="/de/plaatwerk/laserlassen/">Laserschweißen</a>,
+    weil die schmale Naht wenig Wärme einbringt und damit wenig Nacharbeit erfordert. Wo eine demontierbare
+    oder dauerhaft belastete Verbindung nötig ist, arbeiten wir mit <a href="/de/plaatwerk/persmoeren-trekmoeren/">Einpress-
+    und Blindnietmuttern</a>. Welcher Weg der beste ist, hängt von der Belastung, der Sichtseite und der
+    Anzahl der Montagezyklen ab.
+  materials:
+  - Edelstahl 304
+  - Edelstahl 316
+  - Geschliffen / gebürstet
+  process:
+  - step: Laserschneiden
+    desc: 2D-Laserschneiden mit minimalen Toleranzen.
+  - step: Abkanten
+    desc: Präzise Biegewinkel auf der Abkantpresse.
+  - step: Entgraten
+    desc: Gratfreie, sichere Kanten.
+  - step: Schweißen & Nachbearbeitung
+    desc: Laser-/WIG-Schweißen und Passivieren für Sichtflächen.
+  applications:
+  - Lebensmittelindustrie
+  - Maschinenbau
+  - Gehäuse
+  - Sichtflächen
+  related:
+  - label: Lebensmittelindustrie
+    desc: Hygienische Edelstahl-Blechbearbeitung.
+  - label: Laserschweißen
+    desc: Verzugsarme Nähte.
+  - label: Edelstahlkonstruktionen
+    desc: Geschweißte Edelstahl-Baugruppen.
+  seo:
+    title: Edelstahlblech in 304 und 316
+    description: 'Korrosionsbeständige, repräsentative Edelstahl-Blechbearbeitung in 304 und 316: Laserschneiden,
+      Abkanten, Entgraten und Passivieren für Sichtflächen und Maschinenbau.'
+  faq:
+  - vraag: Welche Blechdicke in Edelstahl können Sie laserschneiden?
+    antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Edelstahl von 0,5 bis 20 mm. Welche Dicke in Ihrem
+      Fall sinnvoll ist, hängt von der Belastung und den nachfolgenden Bearbeitungen ab. Liegt Ihre Anfrage
+      außerhalb dieses Bereichs, sprechen Sie uns an: Dann prüfen wir, was innerhalb der Gruppe möglich
+      ist.'
+  - vraag: Was ist der Unterschied zwischen Edelstahl 304 und 316?
+    antwoord: Edelstahl 316 enthält Molybdän und ist dadurch beständiger gegen Lochkorrosion, insbesondere
+      in Umgebungen mit Chloriden oder viel Feuchtigkeit. 304 genügt in trockeneren, weniger aggressiven
+      Anwendungen. Wir verarbeiten beide Güten; in unserem Wissensbeitrag zu 304 und 316 stellen wir die
+      Abwägung ausführlicher dar.
+  - vraag: Liefern Sie geschliffenen Edelstahl für Sichtflächen?
+    antwoord: Ja. Für Sichtflächen liefern wir geschliffene Oberflächen mit einheitlicher Körnung und achten
+      darauf, dass die Schliffrichtung über die einzelnen Teile einer Baugruppe durchläuft. Die Schutzfolie
+      bleibt bis zur letzten Bearbeitung erhalten, da Edelstahl kratzempfindlich ist.
+  - vraag: Passivieren Sie Edelstahl nach dem Schweißen?
+    antwoord: Ja. Das Schweißen beeinträchtigt die schützende Oxidschicht rund um die Naht, wodurch diese
+      Stelle korrosionsanfälliger wird. Wir entfernen Anlauffarben und passivieren nach dem Schweißen, damit
+      die Korrosionsbeständigkeit der Oberfläche erhalten bleibt.

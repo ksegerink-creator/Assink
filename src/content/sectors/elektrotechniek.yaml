@@ -2,3 +2,13 @@ title: "Elektrotechniek"
 order: 30
 summary: "Besturingskasten, montageplaten en behuizingen in staal, RVS en aluminium."
 link: "elektrotechniek"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Electrical engineering
+  summary: Control cabinets, mounting plates and enclosures in steel, stainless steel and aluminium.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Elektrotechnik
+  summary: Schaltschränke, Montageplatten und Gehäuse in Stahl, Edelstahl und Aluminium.

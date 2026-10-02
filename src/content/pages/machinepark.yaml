@@ -4,3 +4,23 @@ kicker: "Productiecapaciteit"
 titel: "Machinepark"
 lead: "Geautomatiseerde productie met traditioneel vakmanschap. Van vlakbedlaser en buislaser tot servo-elektrische kantbank en eigen straal- en afwerkfaciliteiten."
 heroFoto: "/src/assets/uploads/machinepark/heroFoto.jpg"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  seoTitel: Machinery
+  seoOmschrijving: Modern machinery for sheet metal work, laser cutting, tube laser cutting, bending and
+    welding. Automated production combined with traditional craftsmanship — Assink & Schipholt, Hengelo.
+  kicker: Production capacity
+  titel: Our machinery
+  lead: Automated production combined with traditional craftsmanship. From flatbed laser and tube laser
+    to servo-electric press brake and our own blasting and finishing facilities.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  seoTitel: Maschinenpark
+  seoOmschrijving: Moderner Maschinenpark für Blechbearbeitung, Laserschneiden, Rohrlaserschneiden, Abkanten
+    und Schweißen. Automatisierte Fertigung mit traditioneller Handwerkskunst — Assink & Schipholt, Hengelo.
+  kicker: Produktionskapazität
+  titel: Maschinenpark
+  lead: Automatisierte Fertigung mit traditioneller Handwerkskunst. Von Flachbettlaser und Rohrlaser bis
+    zur servoelektrischen Abkantpresse und eigenen Strahl- und Nachbearbeitungsanlagen.

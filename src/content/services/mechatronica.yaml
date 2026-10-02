@@ -29,3 +29,97 @@ seo:
   title: Plaatwerk voor mechatronica
   description: "Maatvaste machineframes, montagebeugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm en vervormingsarm lassen."
 translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Mechatronics
+  kicker: Sector
+  h1: Sheet metal and frames for mechatronics
+  intro: In mechatronics, mechanics, electronics and control come together in very little space. That calls
+    for dimensionally stable frames, brackets and panels in which everything falls into place.
+  heroPhoto:
+    subject: Production engineering at the machine control panel
+  body:
+  - 'We make machine frames, mounting brackets, cable trays and guard panels — in steel, stainless steel
+    and aluminium. Tube laser cutting is often the fastest route here: cut-outs, holes and mitres are already
+    in the profile before any welding starts.'
+  - For the build-up, dimensional stability is decisive. We bend to ± 0.2 mm and check dimensions after
+    welding, because heat input can make an assembly move. Machined parts are sourced from a regular partner.
+  materials:
+  - Aluminium
+  - Steel
+  - Stainless steel 304
+  - Stainless steel 316
+  process:
+  - step: Tube laser cutting
+    desc: Profiles with cut-outs and mitres.
+  - step: Bending
+    desc: Dimensionally stable panels and brackets, ± 0.2 mm.
+  - step: Welding
+    desc: Low-distortion TIG or laser welding.
+  - step: Dimensional check
+    desc: Measuring after welding.
+  applications:
+  - Machine frames
+  - Mounting brackets
+  - Guard panels
+  - Cable trays
+  related:
+  - label: Tube laser cutting
+    desc: Profiles in a single operation.
+  - label: Machine building
+    desc: Complete sub-assemblies.
+  - label: Laser welding
+    desc: Low-distortion seams.
+  seo:
+    title: Sheet metal for mechatronics
+    description: Dimensionally stable machine frames, mounting brackets and guard panels for mechatronics
+      in aluminium, steel and stainless steel. Tube laser cutting, bending to ± 0.2 mm and low-distortion
+      welding.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Mechatronik
+  kicker: Branche
+  h1: Blechbearbeitung und Rahmen für die Mechatronik
+  intro: In der Mechatronik treffen Mechanik, Elektronik und Steuerung auf engem Raum zusammen. Das verlangt
+    maßhaltige Rahmen, Winkel und Paneele, in denen alles an seinen Platz fällt.
+  heroPhoto:
+    subject: Arbeitsvorbereitung an der Maschinensteuerung
+  body:
+  - 'Wir fertigen Maschinenrahmen, Montagewinkel, Kabelkanäle und Schutzpaneele — in Stahl, Edelstahl und
+    Aluminium. Rohrlaserschneiden ist hier oft der schnellste Weg: Ausschnitte, Bohrungen und Gehrungen
+    sitzen bereits im Profil, bevor geschweißt wird.'
+  - Für den Aufbau ist Maßhaltigkeit entscheidend. Wir kanten auf ± 0,2 mm und prüfen die Maße nach dem
+    Schweißen, weil die Wärmeeinbringung eine Baugruppe arbeiten lassen kann. Zerspante Teile beziehen wir
+    von einem festen Partner.
+  materials:
+  - Aluminium
+  - Stahl
+  - Edelstahl 304
+  - Edelstahl 316
+  process:
+  - step: Rohrlaserschneiden
+    desc: Profile mit Ausschnitten und Gehrungen.
+  - step: Abkanten
+    desc: Maßhaltige Paneele und Winkel, ± 0,2 mm.
+  - step: Schweißen
+    desc: Verzugsarmes WIG- oder Laserschweißen.
+  - step: Maßkontrolle
+    desc: Messen nach dem Schweißen.
+  applications:
+  - Maschinenrahmen
+  - Montagewinkel
+  - Schutzpaneele
+  - Kabelkanäle
+  related:
+  - label: Rohrlaserschneiden
+    desc: Profile in einem Arbeitsgang.
+  - label: Maschinenbau
+    desc: Komplette Baugruppen.
+  - label: Laserschweißen
+    desc: Verzugsarme Nähte.
+  seo:
+    title: Blech für die Mechatronik
+    description: Maßhaltige Maschinenrahmen, Montagewinkel und Schutzpaneele für die Mechatronik in Aluminium,
+      Stahl und Edelstahl. Rohrlaserschneiden, Abkanten bis ± 0,2 mm und verzugsarmes Schweißen.

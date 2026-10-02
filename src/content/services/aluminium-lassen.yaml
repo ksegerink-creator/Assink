@@ -75,3 +75,140 @@ faq:
   antwoord: Dat hangt af van de toepassing. Waar het uiterlijk telt, stralen wij met glasparels voor een
     egaal mat oppervlak. Blijft de naad uit het zicht, dan volstaan ontbramen en een visuele controle.
     Geef bij uw aanvraag door welke zijde de zichtzijde is.
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Aluminium welding
+  kicker: Welding technology 3.4
+  h1: Aluminium welding
+  intro: 'Aluminium calls for craftsmanship: the right heat input, preparation and technique. We weld aluminium
+    with TIG and MIG, low-distortion and cleanly finished.'
+  heroPhoto:
+    subject: Aluminium weld seam in detail with an even bead
+  body:
+  - Aluminium conducts heat quickly and oxidises easily. With the right preparation and technique (TIG/MIG)
+    we lay strong, clean seams — suitable for machine building, enclosures and lightweight constructions.
+  - 'As a metalworking company experienced in welding aluminium, we know the pitfalls: too much heat input
+    causes distortion, incorrect preparation causes porous seams. We match current, wire choice and sequence
+    to sheet thickness and alloy.'
+  - 'Aluminium behaves fundamentally differently from steel or stainless steel when welded. It conducts
+    heat far more quickly, so more heat is needed to melt it and that heat spreads further through the workpiece.
+    On top of that comes the oxide layer: it only melts at a far higher temperature than the aluminium beneath
+    it and has to be removed before welding.'
+  - We weld aluminium with TIG and MIG. TIG gives the most control over heat input and suits thin material
+    and visible seams; MIG is faster and suits thicker material and larger series. Which of the two we choose
+    is decided per order, based on sheet thickness, joint shape and the requirements for appearance.
+  - To limit distortion we clamp parts, tack first and determine the welding sequence in advance; after
+    welding we check the dimensions. The sheet metal work preceding such an assembly — cutting, press braking
+    and finishing — is described on our page about <a href="/en/plaatwerk/aluminium/">aluminium sheet metal</a>.
+  - After welding, the application determines how far we take the finishing. Where appearance matters, we
+    blast with glass beads in our blast cabin, which gives an even matt surface. Where the seam is functional
+    and stays out of sight, deburring and visual inspection are sufficient. Please indicate with your request
+    which side is the visible side; that determines both the welding choice and the finishing.
+  materials:
+  - Aluminium (various alloys)
+  process:
+  - step: Preparation
+    desc: Cleaning and removing the oxide layer.
+  - step: Welding
+    desc: TIG/MIG with controlled heat input.
+  - step: Finishing
+    desc: Grinding and finishing.
+  applications:
+  - Machine building
+  - Enclosures
+  - Lightweight constructions
+  related:
+  - label: Aluminium sheet metal work
+    desc: Aluminium processing.
+  - label: Welding
+    desc: All welding methods.
+  seo:
+    title: Aluminium welding with TIG and MIG
+    description: Specialised TIG and MIG welding work in aluminium for machine building, enclosures and
+      lightweight constructions.
+  faq:
+  - vraag: Which technique do you use to weld aluminium?
+    antwoord: TIG and MIG. TIG gives the most control over heat input and suits thin material and visible
+      seams; MIG is faster and suits thicker material and larger series. We make the choice per order.
+  - vraag: Why is welding aluminium harder than steel?
+    antwoord: Aluminium conducts heat far more quickly, so more heat is needed and it spreads further through
+      the workpiece. In addition, the oxide layer only melts at a far higher temperature than the aluminium
+      beneath it, and has to be removed before welding.
+  - vraag: How do you limit distortion in aluminium?
+    antwoord: By clamping parts, tacking first and determining the welding sequence in advance. After welding
+      we check the dimensions. With thin sheet and long seams, that sequence determines the dimensional
+      stability of the end product.
+  - vraag: What happens to the seam after welding?
+    antwoord: That depends on the application. Where appearance matters, we blast with glass beads for an
+      even matt surface. If the seam stays out of sight, deburring and a visual inspection are sufficient.
+      Please indicate with your request which side is the visible side.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Aluminium schweißen
+  kicker: Schweißtechnik 3.4
+  h1: Aluminium schweißen
+  intro: 'Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir
+    schweißen Aluminium mit WIG und MIG, verzugsarm und sauber.'
+  heroPhoto:
+    subject: Aluminium-Schweißnaht im Detail mit gleichmäßiger Raupe
+  body:
+  - Aluminium leitet Wärme schnell und oxidiert leicht. Mit der richtigen Vorbereitung und Technik (WIG/MIG)
+    legen wir feste, saubere Nähte — geeignet für Maschinenbau, Gehäuse und Leichtbaukonstruktionen.
+  - 'Als Metallbaubetrieb mit Erfahrung im Aluminiumschweißen kennen wir die Fallstricke: zu viel Wärmeeinbringung
+    führt zu Verzug, eine falsche Vorbereitung zu porösen Nähten. Wir stimmen Stromstärke, Drahtwahl und
+    Reihenfolge auf Blechdicke und Legierung ab.'
+  - 'Aluminium verhält sich beim Schweißen grundlegend anders als Stahl oder Edelstahl. Es leitet Wärme
+    deutlich schneller ab, sodass mehr Wärme zum Aufschmelzen nötig ist und sich diese Wärme weiter im Werkstück
+    verteilt. Hinzu kommt die Oxidschicht: Sie schmilzt erst bei einer weit höheren Temperatur als das darunterliegende
+    Aluminium und muss vor dem Schweißen entfernt werden.'
+  - Wir schweißen Aluminium mit WIG und MIG. WIG bietet die größte Kontrolle über die Wärmeeinbringung und
+    eignet sich für dünnes Material und Sichtnähte; MIG ist schneller und passt zu dickerem Material und
+    größeren Serien. Welches der beiden Verfahren wir wählen, entscheiden wir pro Auftrag anhand von Blechdicke,
+    Nahtform und Anforderungen an das Aussehen.
+  - Um Verzug zu begrenzen, spannen wir Teile auf, heften zuerst und legen die Schweißfolge vorab fest;
+    nach dem Schweißen prüfen wir die Maße. Die Blechbearbeitung, die einer solchen Baugruppe vorausgeht
+    — Schneiden, Abkanten und Veredeln — beschreiben wir auf unserer Seite über <a href="/de/plaatwerk/aluminium/">Aluminium-Blechbearbeitung</a>.
+  - Nach dem Schweißen bestimmt die Anwendung, wie weit wir bei der Nachbehandlung gehen. Wo das Aussehen
+    zählt, strahlen wir in unserer Strahlkabine mit Glasperlen, was eine gleichmäßig matte Oberfläche ergibt.
+    Wo die Naht funktional ist und verdeckt bleibt, genügen Entgraten und Sichtprüfung. Geben Sie bei der
+    Anfrage an, welche Seite die Sichtseite ist; das bestimmt sowohl die Verfahrenswahl als auch die Nachbehandlung.
+  materials:
+  - Aluminium (verschiedene Legierungen)
+  process:
+  - step: Vorbereitung
+    desc: Reinigen und Oxidschicht entfernen.
+  - step: Schweißen
+    desc: WIG/MIG mit beherrschter Wärmeeinbringung.
+  - step: Nachbearbeitung
+    desc: Schleifen und Endbearbeitung.
+  applications:
+  - Maschinenbau
+  - Gehäuse
+  - Leichtbaukonstruktionen
+  related:
+  - label: Aluminium-Blechbearbeitung
+    desc: Aluminiumverarbeitung.
+  - label: Schweißen
+    desc: Alle Schweißverfahren.
+  seo:
+    title: Aluminium schweißen mit WIG und MIG
+    description: Spezialisierte WIG- und MIG-Schweißarbeit in Aluminium für Maschinenbau, Gehäuse und Leichtbaukonstruktionen.
+  faq:
+  - vraag: Mit welchem Verfahren schweißen Sie Aluminium?
+    antwoord: Mit WIG und MIG. WIG bietet die größte Kontrolle über die Wärmeeinbringung und eignet sich
+      für dünnes Material und Sichtnähte; MIG ist schneller und passt zu dickerem Material und größeren
+      Serien. Die Wahl treffen wir pro Auftrag.
+  - vraag: Warum ist das Schweißen von Aluminium schwieriger als bei Stahl?
+    antwoord: Aluminium leitet Wärme deutlich schneller ab, sodass mehr Wärme nötig ist und sich diese weiter
+      im Werkstück verteilt. Zudem schmilzt die Oxidschicht erst bei einer weit höheren Temperatur als das
+      darunterliegende Aluminium und muss vor dem Schweißen entfernt werden.
+  - vraag: Wie begrenzen Sie den Verzug bei Aluminium?
+    antwoord: Indem wir Teile aufspannen, zuerst heften und die Schweißfolge vorab festlegen. Nach dem Schweißen
+      prüfen wir die Maße. Bei dünnem Blech und langen Nähten bestimmt diese Reihenfolge die Maßhaltigkeit
+      des Endprodukts.
+  - vraag: Was geschieht nach dem Schweißen mit der Naht?
+    antwoord: Das hängt von der Anwendung ab. Wo das Aussehen zählt, strahlen wir mit Glasperlen für eine
+      gleichmäßig matte Oberfläche. Bleibt die Naht verdeckt, genügen Entgraten und eine Sichtprüfung. Geben
+      Sie bei Ihrer Anfrage an, welche Seite die Sichtseite ist.

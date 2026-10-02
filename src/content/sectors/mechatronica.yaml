@@ -2,3 +2,13 @@ title: "Mechatronica"
 order: 80
 summary: "Maatvaste machineframes, montagebeugels en afschermpanelen."
 link: "mechatronica"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Mechatronics
+  summary: Dimensionally stable machine frames, mounting brackets and guard panels.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Mechatronik
+  summary: Maßhaltige Maschinenrahmen, Montagewinkel und Schutzpaneele.
