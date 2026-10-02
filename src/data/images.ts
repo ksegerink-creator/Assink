@@ -17,7 +17,8 @@ import asLastafel from "../assets/photos/as-lastafel.jpg";          // lasser aa
 import asLasafdeling from "../assets/photos/as-lasafdeling.jpg";    // lasafdeling breed, twee werkstations (M59A1476)
 import asKantbank from "../assets/photos/as-kantbank.jpg";          // operator aan de kantbank (2T8A9370)
 import asKantenDetail from "../assets/photos/as-kanten-detail.jpg"; // kantbankgereedschap met plaatdeel (M59A1528)
-import asLaser from "../assets/photos/as-laser.jpg";                // operator bij de fiberlaser (2T8A9341)
+import asTruLaser from "../assets/uploads/machines/trulaser-3040/foto.jpg";      // Trumpf TruLaser 3040, vlakbedlaser
+import asTruLaserTube from "../assets/uploads/machines/trulaser-tube-3000/foto.webp"; // Trumpf TruLaser Tube 3000, buislaser
 import asBesturing from "../assets/photos/as-besturing.jpg";        // machinebesturing / werkvoorbereiding (DSC_4762)
 import asVakman from "../assets/photos/as-vakman.jpg";              // vakman met stalen profiel, lachend (M59A1503)
 import asPortret from "../assets/photos/as-portret.jpg";            // medewerker in A&S-polo, portret (M59A1482)
@@ -36,7 +37,7 @@ export const IMAGES: Record<string, ImageMetadata | undefined> = {
   "home.plaatwerk": asKantbank,
   "home.constructies": asTigLassen,
   "home.machinebouw": asLasafdeling,
-  "home.snijden": asLaser,
+  "home.snijden": asTruLaser,
   "home.band": asLastafel,
   "home.detail.zetwerk": asProductRvs,
   "home.detail.draaiwerk": asKantenDetail,
@@ -67,7 +68,7 @@ export const IMAGES: Record<string, ImageMetadata | undefined> = {
   "kwaliteit.detail": asKantenDetail,
 
   // — Machinepark —
-  "machinepark.hero": asLaser,
+  "machinepark.hero": asTruLaser,
 };
 
 /** Servicepagina's: hero-beeld per slug. */
@@ -81,12 +82,12 @@ const SERVICE_IMAGES: Record<string, ImageMetadata> = {
   "plaatwerk/zetten": asKantbank,
   "plaatwerk/ontbramen": asAfwerking,
   "plaatwerk/persmoeren-trekmoeren": asBoren,
-  "plaatwerk/lasersnijden": asLaser,
+  "plaatwerk/lasersnijden": asTruLaser,
   "plaatwerk/lassen": asTigLassen,
   "plaatwerk/laserlassen": asTigLassen,
   "plaatwerk/robotlassen": asLasserHal,
   "plaatwerk/voedingsmiddelenindustrie": asProductRvs,
-  "buizenlaser": asLaser,
+  "buizenlaser": asTruLaserTube,
   "verspaning": asBoren,
   "aluminium-lassen": asTigLassen,
   "constructies": asLasafdeling,

@@ -31,6 +31,13 @@ h1, h2, h3, h4 {
   letter-spacing: .006em;
   margin: 0;
   text-wrap: balance;
+  /* Nederlandse samenstellingen zijn lang en onbreekbaar: "voedingsmiddelen-
+     industrie", "precisieplaatwerk", "staalconstructies". Zonder deze twee
+     regels loopt zo'n woord buiten zijn kolom — op de hero schoof de titel
+     dan over de foto heen. hyphens werkt op de lang-attribuut van <html>,
+     dat per taal is gezet; overflow-wrap vangt op wat niet af te breken is. */
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* utilities ------------------------------------------------ */
