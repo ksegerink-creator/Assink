@@ -1,0 +1,112 @@
+---
+import type { ImageMetadata } from "astro";
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+
+/**
+ * Gesplitste hero: tekst in een effen navy vlak naast het beeld.
+ *
+ * Verving de oude foto-hero waarin de titel óver het beeld lag. Die had een
+ * donkere waas en een tekstschaduw nodig om leesbaar te blijven, sneed de
+ * machine doormidden in 21:9, en viel per pagina anders uit. Hier staat de
+ * tekst op een egaal vlak, dus de leesbaarheid hangt niet meer af van wat er
+ * toevallig op de foto staat.
+ *
+ * Eén component voor alle pagina's, zodat ze niet opnieuw uiteen gaan lopen.
+ * De linkerrand van het vlak volgt de contentkolom (dezelfde marge als de
+ * tekst eronder), terwijl de band zelf tot de schermrand doorloopt.
+ *
+ * Zonder beeld vervalt de fotokolom en loopt het vlak over de volle breedte;
+ * dat is de vorm voor pagina's waar geen foto bij hoort.
+ *
+ * Wat in de slot wordt meegegeven — knoppen, badges, een gegevenslijst — komt
+ * uit de ouder en valt dus buiten de scoped styling van dit bestand. Die
+ * elementen worden hieronder met :global() op de donkere ondergrond gezet.
+ */
+interface Props {
+  kicker?: string;
+  /** Eenvoudige titel. Meerregelige titels gaan via <h1 slot="title">. */
+  title?: string;
+  lead?: string;
+  image?: ImageMetadata;
+  alt?: string;
+  position?: string;
+  placeholder?: string;
+  priority?: boolean;
+}
+
+const { kicker, title, lead, image, alt, position = "center", placeholder, priority = true } = Astro.props;
+---
+
+<section class:list={["xhero", { "xhero--no-media": !image }]}>
+  <div class="xhero__grid">
+    <div class="xhero__panel">
+      {kicker && <span class="mono xhero__kicker">{kicker}</span>}
+      <slot name="title">{title && <h1>{title}</h1>}</slot>
+      {lead && <p class="xhero__lead">{lead}</p>}
+      <slot />
+    </div>
+    {
+      image && (
+        <div class="xhero__media">
+          <IndustrialImage
+            src={image}
+            alt={alt ?? ""}
+            ratio="4/3"
+            position={position}
+            priority={priority}
+            placeholder={placeholder}
+          />
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .xhero { background: var(--navy); overflow: clip; }
+  .xhero__grid {
+    display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr);
+    align-items: stretch; min-height: clamp(340px, 40vw, 540px);
+  }
+  .xhero--no-media .xhero__grid { grid-template-columns: 1fr; min-height: clamp(200px, 24vw, 300px); }
+
+  .xhero__panel {
+    display: flex; flex-direction: column; justify-content: center;
+    gap: clamp(12px, 1.4vw, 20px);
+    padding-block: clamp(36px, 4.6vw, 68px);
+    padding-left: max(28px, calc((100vw - var(--w)) / 2));
+    padding-right: clamp(24px, 3.4vw, 56px);
+  }
+  .xhero__kicker { color: var(--pale); letter-spacing: .14em; }
+  .xhero__lead { color: var(--pale); font-size: clamp(16px, 1.5vw, 19px); line-height: 1.55; max-width: 28em; }
+
+  /* Titel en slot-inhoud komen uit de ouder: die hebben een andere scope. */
+  .xhero__panel :global(h1) {
+    color: #fff; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.02; max-width: 12em;
+  }
+  .xhero__panel :global(p) { color: var(--pale); max-width: 28em; }
+  .xhero__panel :global(a:not(.btn)) { color: #fff; }
+
+  .xhero__panel :global(.btn) { background: var(--blue-2); border-color: var(--blue-2); color: #042034; }
+  .xhero__panel :global(.btn:hover) { background: transparent; color: var(--blue-2); }
+  .xhero__panel :global(.btn.ghost) { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .6); }
+  .xhero__panel :global(.btn.ghost:hover) { background: #fff; color: var(--navy); border-color: #fff; }
+
+  /* Gegevenslijst (contact) en badges (vacature) op donkere ondergrond. */
+  .xhero__panel :global(.info) { border-top-color: rgba(255, 255, 255, .28); }
+  .xhero__panel :global(.info > div) { border-bottom-color: rgba(255, 255, 255, .28); color: #fff; }
+  .xhero__panel :global(.info .k) { color: var(--pale); }
+  .xhero__panel :global(.info a:hover) { color: var(--blue-2); }
+  .xhero__panel :global(.badge) {
+    background: transparent; border-color: rgba(255, 255, 255, .45); color: #fff;
+  }
+  .xhero__panel :global(.badge b) { color: var(--blue-2); }
+
+  .xhero__media :global(.ii) { border: 0; height: 100%; aspect-ratio: auto !important; }
+
+  @media (max-width: 860px) {
+    .xhero__grid { grid-template-columns: 1fr; min-height: 0; }
+    .xhero__panel { padding-inline: 28px; padding-block: 32px 30px; }
+    .xhero__media :global(.ii) { aspect-ratio: 4/3 !important; height: auto; }
+  }
+</style>

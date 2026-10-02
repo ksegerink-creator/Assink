@@ -4,6 +4,7 @@ import type { CollectionEntry } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import ServiceLayout from "@layouts/ServiceLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SplitHero from "@components/sections/SplitHero.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
 import { t } from "@data/i18n";
@@ -57,21 +58,18 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
       trail={[{ label: s.title, slug: s.slug }]}
       jsonld={overviewJsonld}
     >
-      <section class="ohero">
-        <div class="ohero__grid">
-          <div class="ohero__panel">
-            <span class="mono ohero__kicker">{s.kicker}</span>
-            <h1>{s.h1}</h1>
-            <p class="ohero__lead">{s.intro}</p>
-            <div class="ohero__acts">
-              <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
-            </div>
-          </div>
-          <div class="ohero__media">
-            <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="4/3" priority={true} placeholder={`Foto benodigd — ${s.heroPhoto.subject}`} />
-          </div>
+      <SplitHero
+        kicker={s.kicker}
+        title={s.h1}
+        lead={s.intro}
+        image={heroImg}
+        alt={s.heroPhoto.subject}
+        placeholder={`Foto benodigd — ${s.heroPhoto.subject}`}
+      >
+        <div class="ohero__acts">
+          <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
         </div>
-      </section>
+      </SplitHero>
 
       {s.body.length > 0 && (
         <section class="sec tight">
@@ -112,36 +110,8 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
 }
 
 <style>
-  /* Gesplitste hero: tekstvlak naast het beeld (zie ServiceLayout). */
-  .ohero { background: var(--navy); overflow: clip; }
-  .ohero__grid { display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); align-items: stretch; min-height: clamp(340px, 40vw, 540px); }
-  .ohero__panel {
-    display: flex; flex-direction: column; justify-content: center; gap: clamp(12px, 1.4vw, 20px);
-    padding-block: clamp(36px, 4.6vw, 68px);
-    padding-left: max(28px, calc((100vw - var(--w)) / 2));
-    padding-right: clamp(24px, 3.4vw, 56px);
-  }
-  .ohero__kicker { color: var(--pale); letter-spacing: .14em; }
-  .ohero h1 { color: #fff; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.02; max-width: 12em; }
-  .ohero__lead { color: var(--pale); font-size: clamp(16px, 1.5vw, 19px); line-height: 1.55; max-width: 28em; }
   .ohero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
-  .ohero__acts .btn { background: var(--blue-2); border-color: var(--blue-2); color: #042034; }
-  .ohero__acts .btn:hover { background: transparent; color: var(--blue-2); }
-  .ohero__media :global(.ii) { border: 0; height: 100%; aspect-ratio: auto !important; }
-  @media (max-width: 860px) {
-    .ohero__grid { grid-template-columns: 1fr; min-height: 0; }
-    .ohero__panel { padding-inline: 28px; padding-block: 32px 30px; }
-    .ohero__media :global(.ii) { aspect-ratio: 4/3 !important; height: auto; }
-  }
 
-
-  .olist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-  .olist li { border-bottom: 1px solid var(--line); }
-  .olist a {
-    display: grid; grid-template-columns: 44px minmax(0, .7fr) minmax(0, 1.3fr) auto;
-    gap: clamp(12px, 2vw, 28px); align-items: baseline; padding: clamp(13px, 1.6vw, 18px) 2px;
-    transition: background .15s var(--ease);
-  }
   .olist a:hover { background: var(--sky-bg); }
   .olist__n { color: var(--steel); }
   .olist__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .02em; font-size: clamp(16px, 1.8vw, 21px); color: var(--ink); }

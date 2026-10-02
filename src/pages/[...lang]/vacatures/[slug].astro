@@ -5,6 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 import { t } from "@data/i18n";
 import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SplitHero from "@components/sections/SplitHero.astro";
 import { imageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { CONTACT, SITE } from "@data/site";
@@ -54,28 +55,25 @@ const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1
   ogPhoto={vacImage}
   jsonld={jsonld}
 >
-  <section class="sec vd-hero">
-    <div class="wrap grid2">
-      <div class="rv">
-        <span class="eyebrow mono"><b>{t(locale, "vacancyEyebrow")}</b></span>
-        <h1>{v.title}</h1>
-        <div class="badges" style="margin:18px 0">
-          <span class="badge"><b>◆</b> {v.employmentType}</span>
-          {v.hours && <span class="badge">{v.hours}</span>}
-          {v.education && <span class="badge">{v.education}</span>}
-          {!v.open && <span class="badge">{t(locale, "vacancyClosed")}</span>}
-        </div>
-        <p class="lead">{v.intro}</p>
-        <div class="acts">
-          <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyApplyMail")}</a>
-          <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "callVerb")} {CONTACT.tel}</a>
-        </div>
-      </div>
-      <div class="rv">
-        <IndustrialImage src={vacImage} alt={v.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${v.photo.subject}`} />
-      </div>
+  <SplitHero
+    kicker={t(locale, "vacancyEyebrow")}
+    title={v.title}
+    lead={v.intro}
+    image={vacImage}
+    alt={v.photo.subject}
+    placeholder={`Foto benodigd — ${v.photo.subject}`}
+  >
+    <div class="badges">
+      <span class="badge"><b>◆</b> {v.employmentType}</span>
+      {v.hours && <span class="badge">{v.hours}</span>}
+      {v.education && <span class="badge">{v.education}</span>}
+      {!v.open && <span class="badge">{t(locale, "vacancyClosed")}</span>}
     </div>
-  </section>
+    <div class="vd-acts">
+      <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyApplyMail")}</a>
+      <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "callVerb")} {CONTACT.tel}</a>
+    </div>
+  </SplitHero>
 
   {v.responsibilities.length > 0 && (
     <section class="sec tight">

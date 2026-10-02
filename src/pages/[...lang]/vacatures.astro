@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import { t } from "@data/i18n";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SplitHero from "@components/sections/SplitHero.astro";
 import { CONTACT } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
 import { readPage, localizeEntries } from "@utils/content";
@@ -29,22 +30,19 @@ const open = vacancies.filter((v) => v.data.open);
   ogPhoto={photo(w.heroFoto)}
 >
   <!-- Hero: portret + tekst naast elkaar, geen kaart-layout -->
-  <section class="vhero">
-    <div class="wrap vhero__grid">
-      <div class="vhero__text">
-        <span class="mono vhero__kicker">{w.heroKicker}</span>
-        <h1>{w.heroTitelRegel1}<br />{w.heroTitelRegel2}</h1>
-        <p>{w.heroTekst}</p>
-        <div class="vhero__acts">
-          <a class="btn" href="#vacatures">{t(locale, "viewVacancies")} ({open.length})</a>
-          <a class="btn ghost" href={`mailto:${CONTACT.sollicitatieEmail}`}>{t(locale, "openApplication")}</a>
-        </div>
-      </div>
-      <figure class="vhero__photo">
-        <IndustrialImage src={photo(w.heroFoto)} alt="Medewerker van Assink & Schipholt in de lasafdeling" ratio="4/5" priority={true} position="center 30%" />
-      </figure>
+  <SplitHero
+    kicker={w.heroKicker}
+    lead={w.heroTekst}
+    image={photo(w.heroFoto)}
+    alt="Medewerker van Assink & Schipholt in de lasafdeling"
+    position="center 30%"
+  >
+    <h1 slot="title">{w.heroTitelRegel1}<br />{w.heroTitelRegel2}</h1>
+    <div class="vhero__acts">
+      <a class="btn" href="#vacatures">{t(locale, "viewVacancies")} ({open.length})</a>
+      <a class="btn ghost" href={`mailto:${CONTACT.sollicitatieEmail}`}>{t(locale, "openApplication")}</a>
     </div>
-  </section>
+  </SplitHero>
 
   <!-- Waarom hier: drie redenen als editorial kolommen -->
   <section class="sec tight vwhy">
