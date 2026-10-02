@@ -41,7 +41,7 @@ function isBlank(v) {
 }
 
 const ROUTE_FIELDS = new Set(["slug", "link", "order", "template", "group", "open", "translated"]);
-const PHOTO_BRIEF_FIELDS = new Set(["foto", "orient", "crop", "comp", "src"]);
+const PHOTO_BRIEF_FIELDS = new Set(["foto", "midFoto", "orient", "crop", "comp", "src"]);
 
 function diff(nl, tr, pathStr, gaps, subjectGaps) {
   const lastKey = pathStr.split(/[.[]/).pop();
