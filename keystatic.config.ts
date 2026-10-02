@@ -83,7 +83,6 @@ const seoFields = () => ({
 });
 
 const homepageSchema = () => ({
-  ...seoFields(),
   hero: fields.object(
     {
       kicker: fields.text({ label: "Kicker (bovenregel)" }),
@@ -151,10 +150,10 @@ const homepageSchema = () => ({
     },
     { label: "Mensen & vakmanschap" },
   ),
+  ...seoFields(),
 });
 
 const contactSchema = (ns: string) => ({
-  ...seoFields(),
   kicker: fields.text({ label: "Kicker (bovenregel)" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
@@ -163,10 +162,10 @@ const contactSchema = (ns: string) => ({
   berichtKop: fields.text({ label: "Kop 'stuur een bericht'" }),
   berichtNote: fields.text({ label: "Toelichting bij formulier", multiline: true }),
   werkFoto: pageFoto(ns)("Foto bij formulier"),
+  ...seoFields(),
 });
 
 const overOnsSchema = (ns: string) => ({
-  ...seoFields(),
   heroKicker: fields.text({ label: "Hero — kicker" }),
   heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
   heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
@@ -223,10 +222,10 @@ const overOnsSchema = (ns: string) => ({
   pandArchiefFoto: pageFoto(ns)("Pandfoto (toen)", "Oude foto van het pand of de smederij. Staat er één, dan verschijnt de pandfoto als 'toen & nu'."),
   pandArchiefJaar: fields.text({ label: "Jaartal bij de oude pandfoto" }),
   pandArchiefBijschrift: fields.text({ label: "Bijschrift bij de oude pandfoto", multiline: true }),
+  ...seoFields(),
 });
 
 const offerteSchema = (ns: string) => ({
-  ...seoFields(),
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
@@ -238,10 +237,10 @@ const offerteSchema = (ns: string) => ({
     }),
     { label: "Stappen", itemLabel: (p) => p.fields.titel.value },
   ),
+  ...seoFields(),
 });
 
 const kwaliteitSchema = (ns: string) => ({
-  ...seoFields(),
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
@@ -253,18 +252,18 @@ const kwaliteitSchema = (ns: string) => ({
     }),
     { label: "Kwaliteitsproces", itemLabel: (p) => p.fields.stap.value },
   ),
+  ...seoFields(),
 });
 
 const machineparkSchema = (ns: string) => ({
-  ...seoFields(),
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
   heroFoto: pageFoto(ns)("Hero-foto"),
+  ...seoFields(),
 });
 
 const werkenBijSchema = (ns: string) => ({
-  ...seoFields(),
   heroKicker: fields.text({ label: "Hero — kicker" }),
   heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
   heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
@@ -288,6 +287,7 @@ const werkenBijSchema = (ns: string) => ({
   vacaturesKop: fields.text({ label: "Kop vacatures-sectie" }),
   ctaKop: fields.text({ label: "Slotblok — kop" }),
   ctaTekst: fields.text({ label: "Slotblok — tekst", multiline: true }),
+  ...seoFields(),
 });
 
 const algemeenSchema = () => ({
@@ -569,11 +569,11 @@ const kennisbankPagina = singleton({
   path: "src/content/pages/kennisbank",
   format: { data: "yaml" },
   schema: {
-    ...seoFields(),
     kicker: fields.text({ label: "Kicker", description: "Het aantal artikelen wordt er automatisch achter gezet." }),
     titelRegel1: fields.text({ label: "Titel — regel 1" }),
     titelRegel2: fields.text({ label: "Titel — regel 2" }),
     lead: fields.text({ label: "Introzin", multiline: true }),
+    ...seoFields(),
   },
 });
 
@@ -582,7 +582,6 @@ const privacyPagina = singleton({
   path: "src/content/pages/privacy",
   format: { data: "yaml" },
   schema: {
-    ...seoFields(),
     kicker: fields.text({ label: "Kicker" }),
     titel: fields.text({ label: "Titel (H1)" }),
     lead: fields.text({ label: "Introzin", multiline: true }),
@@ -593,6 +592,7 @@ const privacyPagina = singleton({
       }),
       { label: "Paragrafen", itemLabel: (p) => p.fields.kop.value },
     ),
+    ...seoFields(),
   },
 });
 
@@ -607,20 +607,26 @@ export default config({
     // Nederlands staat vooraan; de vertalingen zitten in eigen groepen zodat
     // de dagelijkse (NL) redactie overzichtelijk blijft.
     navigation: {
-      "Pagina's": ["homepage", "overOns", "kwaliteit", "machinepark", "contact", "offerte", "werkenBij"],
+      // Nederlands bovenaan: dat is de bron. De vertalingen staan onderin,
+      // zodat de dagelijkse route kort blijft. Elke ingang hoort in een groep —
+      // wat je hier vergeet, bungelt los onder de lijst.
+      "Pagina's": [
+        "homepage", "overOns", "kwaliteit", "machinepark", "contact",
+        "offerte", "werkenBij", "kennisbank", "privacy",
+      ],
       Diensten: ["services", "sectoren"],
       Vacatures: ["vacatures"],
       Kennisbank: ["artikelen", "blogOnderwerpen"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
-      "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens"],
+      "Menu & vaste teksten": ["navigatie", "algemeen", "bedrijfsgegevens", "interfaceNl"],
       "Engels (EN)": [
         "homepageEn", "overOnsEn", "kwaliteitEn", "machineparkEn", "contactEn",
-        "offerteEn", "werkenBijEn", "navigatieEn", "algemeenEn",
+        "offerteEn", "werkenBijEn", "navigatieEn", "algemeenEn", "interfaceEn",
         "servicesEn", "vacaturesEn", "machinesEn", "sectorenEn", "certificeringenEn",
       ],
       "Duits (DE)": [
         "homepageDe", "overOnsDe", "kwaliteitDe", "machineparkDe", "contactDe",
-        "offerteDe", "werkenBijDe", "navigatieDe", "algemeenDe",
+        "offerteDe", "werkenBijDe", "navigatieDe", "algemeenDe", "interfaceDe",
         "servicesDe", "vacaturesDe", "machinesDe", "sectorenDe", "certificeringenDe",
       ],
     },
