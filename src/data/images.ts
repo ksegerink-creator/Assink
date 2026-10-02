@@ -73,6 +73,7 @@ export const IMAGES: Record<string, ImageMetadata | undefined> = {
 /** Servicepagina's: hero-beeld per slug. */
 const SERVICE_IMAGES: Record<string, ImageMetadata> = {
   "plaatwerk": asKantbank,
+  "plaatwerk/staal": asVakman,
   "plaatwerk/rvs": asProductRvs,
   "plaatwerk/aluminium": asKantenDetail,
   "plaatwerk/messing": asBoren,
