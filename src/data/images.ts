@@ -93,6 +93,19 @@ const SERVICE_IMAGES: Record<string, ImageMetadata> = {
   "rvs-constructies": asTigLassen,
   "machinebouw": asHal,
   "industriele-behuizing": asProductRvs,
+
+  // Sectorpagina's. Hadden geen sleutel en vielen daardoor terug op een hero
+  // zonder beeld: een kale navy band. Gekozen op wat de pagina beschrijft —
+  // laswerk bij apparatenbouw en offshore, behuizingen bij elektrotechniek,
+  // besturing bij mechatronica, kantwerk bij meet- en regeltechniek, en de
+  // straalcabine bij semicon vanwege de eis aan een schone afwerking.
+  "apparatenbouw": asLastafel,
+  "elektrotechniek": asProductRvs,
+  "infra": asLasafdeling,
+  "mechatronica": asBesturing,
+  "meet-en-regeltechniek": asKantenDetail,
+  "offshore": asLasafdeling,
+  "semicon": asStralen,
 };
 
 /** Servicepagina's: aanvullend beeld halverwege de pagina, per groep. */

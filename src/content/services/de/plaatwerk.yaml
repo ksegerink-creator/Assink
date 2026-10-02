@@ -65,7 +65,7 @@ cards:
   desc: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium.
 - slug: plaatwerk/lassen
   label: Schweißen
-  desc: WIG-, MIG- und Roboterschweißen.
+  desc: WIG-, MIG/MAG- und Roboterschweißen.
 - slug: plaatwerk/laserlassen
   label: Laserschweißen
   desc: Saubere, verzugsarme Schweißverbindungen.
