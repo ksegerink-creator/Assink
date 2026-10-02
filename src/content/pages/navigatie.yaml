@@ -93,7 +93,7 @@ sectoren:
     slug: semicon
     idx: '9'
   - label: Defensie
-    slug: constructies
+    slug: defensie
     idx: '10'
 footerDiensten:
   - label: Plaatwerk

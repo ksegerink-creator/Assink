@@ -7,7 +7,7 @@ import FaqBlock from "@components/sections/FaqBlock.astro";
 import { t } from "@data/i18n";
 import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
-import { serviceImageFor, serviceMidImageFor } from "@data/images";
+import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { SITE } from "@data/site";
 import type { CollectionEntry } from "astro:content";
@@ -21,7 +21,13 @@ const nav = (slug: string) => localizePath(slug, locale);
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 // Eigen foto uit het CMS gaat voor; zonder upload valt de pagina terug op
 // het standaardbeeld van haar groep in src/data/images.ts.
-const midImg = photo(s.midFoto) ?? serviceMidImageFor(s.group);
+/*
+ * De foto halverwege de pagina komt alleen uit het CMS-veld van de pagina zelf.
+ * Eerder stond er een vaste foto per groep, waardoor zes sectorpagina's
+ * hetzelfde beeld toonden — elk met een andere alt-tekst, dus hoogstens één
+ * ervan kon kloppen. Staat er geen foto, dan blijft de sectie zonder beeld.
+ */
+const midImg = photo(s.midFoto);
 // Toon het middenbeeld alleen als het niet hetzelfde beeld is als de hero.
 const showMid = midImg && midImg !== heroImg && s.process.length > 0;
 
@@ -57,7 +63,7 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   {s.body.length > 0 && (
     <section class="sec tight">
       <div class="wrap sbody">
-        <h2 class="sbody__h rv">{s.bodyHeading || t(locale, "aboutOperation")}</h2>
+        <h2 class="sbody__h rv">{s.bodyHeading || t(locale, s.group === "sector" ? "aboutSector" : "aboutOperation")}</h2>
         <div class="prose rv">
           {s.body.map((p) => <p set:html={p} />)}
           {s.materials.length > 0 && (

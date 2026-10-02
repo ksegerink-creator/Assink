@@ -73,50 +73,50 @@ export const IMAGES: Record<string, ImageMetadata | undefined> = {
 
 /** Servicepagina's: hero-beeld per slug. */
 const SERVICE_IMAGES: Record<string, ImageMetadata> = {
-  "plaatwerk": asKantbank,
+  // De fotobibliotheek telt achttien bruikbare foto's voor achtentwintig
+  // heropagina's, dus hergebruik is onvermijdelijk. De regel is: een foto komt
+  // hooguit drie keer terug, nooit op twee pagina's die in hetzelfde menu naast
+  // elkaar staan, en nooit op een pagina waarvan hij het onderwerp tegenspreekt.
+  // Eerder stond as-product-rvs op vijf pagina's en droeg as-lastafel — waarop
+  // voetbalsjaals het bovenste derde deel vullen — de hero van een sectorpagina.
+  // Die foto is nu geen hero meer; hij blijft als sfeerbeeld op de homepage.
+  "plaatwerk": asHal,
   "plaatwerk/staal": asVakman,
   "plaatwerk/rvs": asProductRvs,
   "plaatwerk/aluminium": asKantenDetail,
   "plaatwerk/messing": asBoren,
-  "plaatwerk/precisieplaatwerk": asProductRvs,
+  "plaatwerk/precisieplaatwerk": asKantenDetail,
   "plaatwerk/zetten": asKantbank,
   "plaatwerk/ontbramen": asAfwerking,
   "plaatwerk/persmoeren-trekmoeren": asBoren,
   "plaatwerk/lasersnijden": asTruLaser,
   "plaatwerk/lassen": asTigLassen,
-  "plaatwerk/laserlassen": asTigLassen,
-  "plaatwerk/robotlassen": asLasserHal,
+  "plaatwerk/laserlassen": asLasserHal,
+  // Geautomatiseerd lassen gebeurt bij een partner; een foto van onze eigen
+  // handlasser zou de pagina tegenspreken. De machinebesturing past bij wat de
+  // pagina beschrijft: opspannen, programmeren en parameters instellen.
+  "plaatwerk/robotlassen": asBesturing,
   "plaatwerk/voedingsmiddelenindustrie": asProductRvs,
   "buizenlaser": asTruLaserTube,
-  "verspaning": asBoren,
+  "verspaning": asAfwerking,
   "aluminium-lassen": asTigLassen,
   "constructies": asLasafdeling,
-  "rvs-constructies": asTigLassen,
+  "rvs-constructies": asLasserHal,
   "machinebouw": asHal,
-  "industriele-behuizing": asProductRvs,
+  "industriele-behuizing": asKantbank,
 
-  // Sectorpagina's. Hadden geen sleutel en vielen daardoor terug op een hero
-  // zonder beeld: een kale navy band. Gekozen op wat de pagina beschrijft —
-  // laswerk bij apparatenbouw en offshore, behuizingen bij elektrotechniek,
-  // besturing bij mechatronica, kantwerk bij meet- en regeltechniek, en de
-  // straalcabine bij semicon vanwege de eis aan een schone afwerking.
-  "apparatenbouw": asLastafel,
-  "elektrotechniek": asProductRvs,
-  "infra": asLasafdeling,
+  // Sectorpagina's: gekozen op wat de pagina beschrijft — laswerk bij
+  // apparatenbouw en offshore, kantwerk bij elektrotechniek en meet- en
+  // regeltechniek, besturing bij mechatronica, een stalen profiel bij infra en
+  // de straalcabine bij semicon vanwege de eis aan een schone afwerking.
+  "apparatenbouw": asLasafdeling,
+  "defensie": asTigLassen,
+  "elektrotechniek": asKantbank,
+  "infra": asVakman,
   "mechatronica": asBesturing,
   "meet-en-regeltechniek": asKantenDetail,
   "offshore": asLasafdeling,
   "semicon": asStralen,
-};
-
-/** Servicepagina's: aanvullend beeld halverwege de pagina, per groep. */
-const SERVICE_MID: Record<string, ImageMetadata> = {
-  plaatwerk: asKantenDetail,
-  snijden: asBesturing,
-  lastechniek: asLastafel,
-  samenstellen: asLasafdeling,
-  sector: asProductRvs,
-  hoofd: asProductRvs,
 };
 
 /** Machinepark: beeld per machine-id (bestandsnaam zonder extensie). */
@@ -140,9 +140,6 @@ export function imageFor(key: string | undefined): ImageMetadata | undefined {
 }
 export function serviceImageFor(slug: string): ImageMetadata | undefined {
   return SERVICE_IMAGES[slug];
-}
-export function serviceMidImageFor(group: string): ImageMetadata | undefined {
-  return SERVICE_MID[group];
 }
 export function machineImageFor(id: string): ImageMetadata | undefined {
   return MACHINE_IMAGES[id];

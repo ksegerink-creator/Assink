@@ -65,13 +65,13 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
 <style>
   .xhero { background: var(--navy); overflow: clip; }
   .xhero__grid {
-    display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr);
+    display: grid; grid-template-columns: minmax(0, 50fr) minmax(0, 50fr);
     align-items: stretch; min-height: clamp(340px, 40vw, 540px);
   }
   .xhero--no-media .xhero__grid { grid-template-columns: 1fr; min-height: clamp(200px, 24vw, 300px); }
 
   .xhero__panel {
-    display: flex; flex-direction: column; justify-content: center;
+    display: flex; flex-direction: column; justify-content: center; min-width: 0;
     gap: clamp(12px, 1.4vw, 20px);
     padding-block: clamp(36px, 4.6vw, 68px);
     padding-left: max(28px, calc((100vw - var(--w)) / 2));
@@ -81,8 +81,16 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
   .xhero__lead { color: var(--pale); font-size: clamp(16px, 1.5vw, 19px); line-height: 1.55; max-width: 28em; }
 
   /* Titel en slot-inhoud komen uit de ouder: die hebben een andere scope. */
+  /*
+   * De koptekst moet in de tekstkolom passen. Nederlandse en Duitse
+   * samenstellingen zijn lang — "precisieplaatwerk", "staalconstructies",
+   * "Blechbearbeitung" — en braken bij de vorige maat (tot 62 px) middenin het
+   * woord af: "ELEKTROTECHNIE / K". Met deze maat passen de gangbare woorden
+   * op één regel; alleen de langste Duitse samenstellingen worden nog
+   * afgebroken, dan netjes met een koppelteken via hyphens: auto.
+   */
   .xhero__panel :global(h1) {
-    color: #fff; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.02; max-width: 12em;
+    color: #fff; font-size: clamp(30px, 3.6vw, 50px); line-height: 1.04; max-width: 13em;
   }
   .xhero__panel :global(p) { color: var(--pale); max-width: 28em; }
   .xhero__panel :global(a:not(.btn)) { color: #fff; }
@@ -102,11 +110,27 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
   }
   .xhero__panel :global(.badge b) { color: var(--blue-2); }
 
-  .xhero__media :global(.ii) { border: 0; height: 100%; aspect-ratio: auto !important; }
+  /*
+   * Het beeld vult de rasterkolom en wordt bijgesneden (object-fit: cover).
+   * De figure staat daarom absoluut: anders bepaalt de eigen beeldverhouding
+   * van de foto de hoogte van de hero. Bij een staande foto (as-product-rvs is
+   * 2400x3600) werd de hero dan 1106 px hoog in plaats van 540, met honderden
+   * pixels leeg blauw onder de tekst — en alleen op die pagina's, waardoor de
+   * site er per pagina anders uitzag.
+   */
+  .xhero__media { position: relative; min-height: 0; }
+  .xhero__media :global(.ii) {
+    border: 0; position: absolute; inset: 0;
+    width: 100%; height: 100%; aspect-ratio: auto !important;
+  }
 
   @media (max-width: 860px) {
     .xhero__grid { grid-template-columns: 1fr; min-height: 0; }
     .xhero__panel { padding-inline: 28px; padding-block: 32px 30px; }
-    .xhero__media :global(.ii) { aspect-ratio: 4/3 !important; height: auto; }
+    /* Gestapeld staat het beeld onder de tekst en bepaalt het zijn eigen hoogte. */
+    .xhero__media { position: static; }
+    .xhero__media :global(.ii) {
+      position: static; aspect-ratio: 4/3 !important; height: auto;
+    }
   }
 </style>
