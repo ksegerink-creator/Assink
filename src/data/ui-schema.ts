@@ -156,6 +156,12 @@ export const UI_GROUPS: UiGroup[] = [
         "multiline": false
       },
       {
+        "key": "tagline",
+        "label": "Metaalbewerking in Hengelo sinds 1919",
+        "nl": "Metaalbewerking in Hengelo sinds 1919",
+        "multiline": false
+      },
+      {
         "key": "langLabel",
         "label": "Taal",
         "nl": "Taal",

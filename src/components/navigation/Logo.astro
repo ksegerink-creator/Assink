@@ -1,4 +1,5 @@
 ---
+import { t } from "@data/i18n";
 import { SITE } from "@data/site";
 import { localizePath, toLocale } from "@utils/paths";
 
@@ -13,9 +14,9 @@ const home = localizePath("", locale);
 ---
 <a class={`logo logo--${variant}`} href={home} aria-label={`${SITE.name} — home`}>
   {variant === "footer" ? (
-    <img src="/logos/as-logo-footer-wit.png" alt={`${SITE.name} — ${SITE.tagline[locale]}`} width="150" height="126" loading="lazy" />
+    <img src="/logos/as-logo-footer-wit.png" alt={`${SITE.name} — ${t(locale, "tagline")}`} width="150" height="126" loading="lazy" />
   ) : (
-    <img src="/logos/as-logo-header.png" alt={`${SITE.name} — ${SITE.tagline[locale]}`} width="335" height="85" />
+    <img src="/logos/as-logo-header.png" alt={`${SITE.name} — ${t(locale, "tagline")}`} width="335" height="85" />
   )}
 </a>
 <style>
