@@ -82,7 +82,10 @@ const datum = (iso: string) =>
   .kb-list__date { display: block; margin-top: 12px; color: var(--steel); font-size: 11px; letter-spacing: .08em; }
   .kb-list__arr { color: var(--blue); padding-top: .35em; }
   @media (max-width: 680px) {
-    .kb-list a { grid-template-columns: 34px 1fr; }
+    /* minmax(0, 1fr): zonder die nul mag de kolom meegroeien met het
+       langste woord, en liep een artikeltitel op telefoonbreedte buiten
+       het scherm. De desktopregel hierboven had dat al goed. */
+    .kb-list a { grid-template-columns: 34px minmax(0, 1fr); }
     .kb-list__arr { display: none; }
   }
 </style>
