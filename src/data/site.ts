@@ -13,6 +13,10 @@ import { join } from "node:path";
 import { parse } from "yaml";
 
 type ContactFile = {
+  bedrijfsnaam?: string;
+  juridischeNaam?: string;
+  opgericht?: string;
+  regio?: string;
   straat?: string;
   postcode?: string;
   plaats?: string;
@@ -28,6 +32,10 @@ type ContactFile = {
 };
 
 const CONTACT_DEFAULTS: Required<ContactFile> = {
+  bedrijfsnaam: "Assink & Schipholt",
+  juridischeNaam: "Assink & Schipholt B.V.",
+  opgericht: "1919",
+  regio: "Overijssel",
   straat: "Oosterveldsingel 18",
   postcode: "7558 PK",
   plaats: "Hengelo",
@@ -47,6 +55,10 @@ function readContactFile(): Required<ContactFile> {
     const raw = readFileSync(join(process.cwd(), "src/content/pages/bedrijfsgegevens.yaml"), "utf8");
     const data = (parse(raw) ?? {}) as ContactFile;
     return {
+      bedrijfsnaam: data.bedrijfsnaam?.trim() || CONTACT_DEFAULTS.bedrijfsnaam,
+      juridischeNaam: data.juridischeNaam?.trim() || CONTACT_DEFAULTS.juridischeNaam,
+      opgericht: data.opgericht?.trim() || CONTACT_DEFAULTS.opgericht,
+      regio: data.regio?.trim() || CONTACT_DEFAULTS.regio,
       straat: data.straat?.trim() || CONTACT_DEFAULTS.straat,
       postcode: data.postcode?.trim() || CONTACT_DEFAULTS.postcode,
       plaats: data.plaats?.trim() || CONTACT_DEFAULTS.plaats,
@@ -98,28 +110,35 @@ function parseOpeningHours(raw: string): OpeningHours | null {
   return { opensH: Number(m[1]), opensM: m[2], closesH: Number(m[3]), closesM: m[4] };
 }
 
+const _c = readContactFile();
+
+/**
+ * Bedrijfsnaam, oprichtingsjaar en slogan komen uit Bedrijfsgegevens in het
+ * CMS. Het oprichtingsjaar is daar een tekstveld; hier maken we er een getal
+ * van omdat de structured data dat verwacht. Staat er iets onleesbaars, dan
+ * valt het terug op 1919.
+ *
+ * De slogan staat niet hier maar bij de interfaceteksten ("tagline"): die is
+ * per taal anders en hoort dus in het drieluik NL/EN/DE, niet bij de
+ * taalonafhankelijke bedrijfsgegevens.
+ */
+const _founded = Number.parseInt(_c.opgericht, 10);
+
 export const SITE = {
-  name: "Assink & Schipholt",
-  legalName: "Assink & Schipholt B.V.",
-  founded: 1919,
-  tagline: {
-    nl: "Metaalbewerking in Hengelo sinds 1919",
-    en: "Metalworking in Hengelo since 1919",
-    de: "Metallbearbeitung in Hengelo seit 1919",
-  },
+  name: _c.bedrijfsnaam,
+  legalName: _c.juridischeNaam,
+  founded: Number.isFinite(_founded) ? _founded : 1919,
   url: "https://assinkschipholt.nl",
   locales: ["nl", "en", "de"] as const,
   defaultLocale: "nl" as const,
 } as const;
-
-const _c = readContactFile();
 const _e164 = toE164(_c.telefoon);
 
 export const CONTACT = {
   street: _c.straat,
   postalCode: _c.postcode,
   city: _c.plaats,
-  region: "Overijssel",
+  region: _c.regio,
   country: "NL",
   addr: `${_c.straat}, ${_c.postcode} ${_c.plaats}`,
   tel: _c.telefoon,

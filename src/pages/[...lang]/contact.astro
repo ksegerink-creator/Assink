@@ -6,6 +6,7 @@ import { toLocale, localizePath } from "@utils/paths";
 import { readPage } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SplitHero from "@components/sections/SplitHero.astro";
 import SocialSection from "@components/sections/SocialSection.astro";
 import { CONTACT } from "@data/site";
 import { photo } from "@utils/photos";
@@ -27,32 +28,25 @@ const nav = (slug: string) => localizePath(slug, locale);
   ogPhoto={photo(c.pandFoto)}
 >
   <!-- Kop + gegevens + pand in één compacte compositie -->
-  <section class="sec chead">
-    <div class="wrap chead__grid">
-      <div class="rv">
-        <span class="mono chead__kicker">{c.kicker}</span>
-        <h1>{c.titel}</h1>
-        <p class="chead__lead">{c.lead}</p>
-
-        <div class="info">
-          <div><span class="k">{t(locale, "formAddress")}</span><span>{CONTACT.addr}</span></div>
-          <div><span class="k">{t(locale, "formPhone")}</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
-          <div><span class="k">{t(locale, "formEmail")}</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
-          {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{formatOpeningHours(locale, CONTACT.openingHours, CONTACT.openingstijden)}</span></div>}
-          {CONTACT.kvk && <div><span class="k">{t(locale, "formKvk")}</span><span>{CONTACT.kvk}</span></div>}
-        </div>
-        <div class="chead__acts">
-          <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
-          {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">{t(locale, "routeMap")}</a>}
-        </div>
-      </div>
-
-      <figure class="chead__photo rv">
-        <IndustrialImage src={photo(c.pandFoto)} alt={t(locale, "altBuilding")} ratio="4/5" />
-        <figcaption class="mono">{c.pandBijschrift}</figcaption>
-      </figure>
+  <SplitHero
+    kicker={c.kicker}
+    title={c.titel}
+    lead={c.lead}
+    image={photo(c.pandFoto)}
+    alt={t(locale, "altBuilding")}
+  >
+    <div class="info">
+      <div><span class="k">{t(locale, "formAddress")}</span><span>{CONTACT.addr}</span></div>
+      <div><span class="k">{t(locale, "formPhone")}</span><a href={CONTACT.telHref}>{CONTACT.tel}</a></div>
+      <div><span class="k">{t(locale, "formEmail")}</span><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></div>
+      {CONTACT.openingstijden && <div><span class="k">{t(locale, "formOpeningHours")}</span><span>{formatOpeningHours(locale, CONTACT.openingHours, CONTACT.openingstijden)}</span></div>}
+      {CONTACT.kvk && <div><span class="k">{t(locale, "formKvk")}</span><span>{CONTACT.kvk}</span></div>}
     </div>
-  </section>
+    <div class="chead__acts">
+      <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
+      {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">{t(locale, "routeMap")}</a>}
+    </div>
+  </SplitHero>
 
   <!-- Bericht sturen -->
   <section class="sec tight cform">
@@ -83,14 +77,7 @@ const nav = (slug: string) => localizePath(slug, locale);
 
 <style>
   .chead { padding-block: clamp(28px, 4vw, 56px) clamp(36px, 5vw, 64px); }
-  .chead__grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(28px, 5vw, 80px); align-items: start; }
-  .chead__kicker { color: var(--steel); letter-spacing: .14em; }
-  .chead h1 { font-size: clamp(36px, 5vw, 68px); margin-top: 12px; }
-  .chead__lead { margin: 18px 0 26px; color: var(--ink-2); max-width: 30em; font-size: clamp(15.5px, 1.4vw, 18px); }
-  .chead__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-  .chead__photo { margin: 0; max-width: 460px; justify-self: end; }
-  .chead__photo figcaption { margin-top: 10px; color: var(--steel); letter-spacing: .1em; font-size: 10.5px; }
-  @media (max-width: 780px) { .chead__grid { grid-template-columns: 1fr; } .chead__photo { justify-self: stretch; max-width: none; } }
+  .chead__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 
   .cform { background: var(--surface-2); padding-block: clamp(40px, 6vw, 80px); }
   .cform__grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 4.5vw, 72px); align-items: start; }

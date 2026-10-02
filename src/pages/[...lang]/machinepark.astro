@@ -8,6 +8,7 @@ import { LOCALE_PATHS } from "@utils/locales";
 import SectionHead from "@components/sections/SectionHead.astro";
 import { machineImageFor } from "@data/images";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
+import SplitHero from "@components/sections/SplitHero.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
 
@@ -28,24 +29,13 @@ const machines = await localizeEntries("machines", (await getCollection("machine
   altLocales={["nl", "en", "de"]}
   ogPhoto={photo(m0.heroFoto)}
 >
-  <section class="sec ov-hero">
-    <div class="wrap grid2">
-      <div class="rv">
-        <span class="eyebrow mono"><b>{m0.kicker}</b></span>
-        <h1>{m0.titel}</h1>
-        <p class="lead">{m0.lead}</p>
-      </div>
-      <div class="rv">
-        <IndustrialImage
-          src={photo(m0.heroFoto)}
-          alt={t(locale, "altHallOverview")}
-          ratio="16/10"
-          annotation="Productiehal Hengelo"
-          number="MP-00"
-        />
-      </div>
-    </div>
-  </section>
+  <SplitHero
+    kicker={m0.kicker}
+    title={m0.titel}
+    lead={m0.lead}
+    image={photo(m0.heroFoto)}
+    alt={t(locale, "altHallOverview")}
+  />
 
   <section class="sec">
     <div class="wrap">

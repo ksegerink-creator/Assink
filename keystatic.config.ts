@@ -668,6 +668,10 @@ export default config({
       path: "src/content/pages/bedrijfsgegevens",
       format: { data: "yaml" },
       schema: {
+        bedrijfsnaam: fields.text({ label: "Bedrijfsnaam", description: "Zoals getoond in de footer en het logo-alt, bv. Assink & Schipholt." }),
+        juridischeNaam: fields.text({ label: "Juridische naam", description: "Met rechtsvorm, bv. Assink & Schipholt B.V. Gebruikt in de privacyverklaring en de structured data." }),
+        opgericht: fields.text({ label: "Oprichtingsjaar", description: "Alleen het jaartal, bv. 1919." }),
+        regio: fields.text({ label: "Provincie", description: "Voor de structured data, bv. Overijssel." }),
         straat: fields.text({ label: "Straat + huisnummer" }),
         postcode: fields.text({ label: "Postcode" }),
         plaats: fields.text({ label: "Plaats" }),
