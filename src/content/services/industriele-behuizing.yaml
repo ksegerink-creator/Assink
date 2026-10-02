@@ -20,7 +20,7 @@ body:
 - Ook adviseren wij over materiaalkeuze, bevestigingstechnieken en componentintegratie.
 - 'Bij een behuizing bepaalt de maatvoering of het geheel klopt: deuren en panelen moeten vlak blijven,
   uitsparingen moeten op de millimeter passen en sluitingen moeten na montage nog soepel werken. Wij kanten
-  op een servo-elektrische kantpers met een werklengte tot 3100 mm, zodat lange panelen in één keer gezet
+  op een servo-elektrische kantbank met een werklengte tot 3100 mm, zodat lange panelen in één keer gekant
   kunnen worden in plaats van uit delen te worden samengesteld.'
 - De materiaalkeuze volgt uit de omgeving. <a href="/plaatwerk/rvs/">RVS</a> in kwaliteit 304 of 316 is
   de logische keuze bij vocht, reiniging of buitenopstelling; <a href="/plaatwerk/aluminium/">aluminium</a>
@@ -45,8 +45,6 @@ body:
 process:
 - step: RVS besturingskasten op maat
   desc: Bestand tegen vocht, stof en chemicaliën.
-- step: ATEX-gecertificeerde behuizingen
-  desc: Voor de procesindustrie en chemie.
 - step: Maatwerk & integratie
   desc: Voor besturingssystemen, machinebouw, offshore en maritiem.
 - step: Advies
@@ -59,7 +57,7 @@ applications:
 - Machinebouw
 - Voedingsmiddelenindustrie
 - Offshore & maritiem
-- Procesindustrie & chemie (ATEX)
+- Procesindustrie & chemie
 related:
 - slug: machinebouw
   label: Machinebouw
@@ -73,7 +71,7 @@ related:
 seo:
   title: Industriële behuizing — RVS-behuizingen op maat
   description: Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende
-    omgevingen. Maatwerk en serie, inclusief ATEX.
+    omgevingen. Maatwerk en serie.
 translated:
 - nl
 faq:

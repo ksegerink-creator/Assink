@@ -35,7 +35,7 @@ const CONTACT_DEFAULTS: Required<ContactFile> = {
   email: "info@assinkschipholt.nl",
   sollicitatieEmail: "hrm@assinkschipholt.nl",
   kvk: "06004033",
-  openingstijden: "Werkdagen 8.00–17.00 uur",
+  openingstijden: "Werkdagen 7.30–16.30 uur",
   maps: "https://www.google.com/maps/search/?api=1&query=Assink+%26+Schipholt%2C+Oosterveldsingel+18%2C+7558+PK+Hengelo",
   linkedin: "https://www.linkedin.com/company/assink-schipholt",
   facebook: "https://www.facebook.com/assinkschipholt",

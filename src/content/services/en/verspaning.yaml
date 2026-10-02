@@ -19,7 +19,7 @@ body:
   build the machined parts into our own <a href="/en/plaatwerk/">sheet metal work</a> and <a href="/en/constructies/">welded
   constructions</a>. For <a href="/en/machinebouw/">machine building</a> that means a fully assembled
   sub-assembly rather than a box of components.
-- 'What we need for a request: a drawing or 3D model with the dimensions, the material, the required tolerances
+- 'What we need for a request: a PDF drawing and a 3D STEP file with the dimensions, the material, the required tolerances
   and surface requirements, the quantity, and whether the part forms part of a larger assembly. That last
   point often determines the order in which we schedule the work.'
 - 'Our workshop is in Hengelo, in the Twente region, and we work for machine builders and industrial companies
@@ -67,6 +67,6 @@ faq:
     built into a welded construction or a sheet metal assembly at our workshop, so that you receive one
     complete product instead of separate components.
 - vraag: What do you need for a quotation?
-  antwoord: A drawing or 3D model with the dimensions, the material, the required tolerances and surface
+  antwoord: A PDF drawing and a 3D STEP file with the dimensions, the material, the required tolerances and surface
     requirements, the quantity, and whether the part forms part of a larger assembly. That last point
     often determines the order of the process.

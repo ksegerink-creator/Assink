@@ -6,24 +6,27 @@ megaKolommen:
       - label: Sheet metal (overview)
         slug: plaatwerk
         idx: '1.0'
+      - label: Steel
+        slug: plaatwerk/staal
+        idx: '1.1'
       - label: Stainless steel
         slug: plaatwerk/rvs
-        idx: '1.1'
+        idx: '1.2'
       - label: Aluminium
         slug: plaatwerk/aluminium
-        idx: '1.2'
+        idx: '1.3'
       - label: Brass
         slug: plaatwerk/messing
-        idx: '1.3'
+        idx: '1.4'
       - label: Bending & forming
         slug: plaatwerk/zetten
-        idx: '1.4'
+        idx: '1.5'
       - label: Self-clinching & rivet nuts
         slug: plaatwerk/persmoeren-trekmoeren
-        idx: '1.5'
+        idx: '1.6'
       - label: Precision sheet metal
         slug: plaatwerk/precisieplaatwerk
-        idx: '1.6'
+        idx: '1.7'
   - titel: Cutting
     items:
       - label: Laser cutting
@@ -43,7 +46,7 @@ megaKolommen:
       - label: Laser welding
         slug: plaatwerk/laserlassen
         idx: '3.2'
-      - label: Robot welding
+      - label: (Cobot) robot welding
         slug: plaatwerk/robotlassen
         idx: '3.3'
       - label: Aluminium welding

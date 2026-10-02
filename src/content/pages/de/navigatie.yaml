@@ -6,24 +6,27 @@ megaKolommen:
       - label: Blechbearbeitung (Übersicht)
         slug: plaatwerk
         idx: '1.0'
+      - label: Stahl
+        slug: plaatwerk/staal
+        idx: '1.1'
       - label: Edelstahl
         slug: plaatwerk/rvs
-        idx: '1.1'
+        idx: '1.2'
       - label: Aluminium
         slug: plaatwerk/aluminium
-        idx: '1.2'
+        idx: '1.3'
       - label: Messing
         slug: plaatwerk/messing
-        idx: '1.3'
+        idx: '1.4'
       - label: Kanten & Biegen
         slug: plaatwerk/zetten
-        idx: '1.4'
+        idx: '1.5'
       - label: Einpress- & Blindnietmuttern
         slug: plaatwerk/persmoeren-trekmoeren
-        idx: '1.5'
+        idx: '1.6'
       - label: Präzisionsblech
         slug: plaatwerk/precisieplaatwerk
-        idx: '1.6'
+        idx: '1.7'
   - titel: Schneiden
     items:
       - label: Laserschneiden
@@ -43,7 +46,7 @@ megaKolommen:
       - label: Laserschweißen
         slug: plaatwerk/laserlassen
         idx: '3.2'
-      - label: Roboterschweißen
+      - label: (Cobot-)Roboterschweißen
         slug: plaatwerk/robotlassen
         idx: '3.3'
       - label: Aluminiumschweißen

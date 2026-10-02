@@ -36,11 +36,14 @@ body:
   under ISO 3834-2 and for load-bearing structures under EN 1090-1. In practice that means a fixed incoming
   inspection on material, documented welding parameters and a dimensional inspection before dispatch —
   not only on the first part.
-- Looking to have sheet metal made? Send a drawing or 3D model together with the material grade and sheet
+- Looking to have sheet metal made? Send a PDF drawing and a 3D STEP file together with the material grade and sheet
   thickness, the quantity, and whether it concerns visible surfaces and the finishing that requires. With
   that information we assess manufacturability and prepare a substantiated quotation. If you are unsure
   about material choice or sheet thickness, we are glad to think along before the drawing is final.
 cards:
+- slug: plaatwerk/staal
+  label: Steel
+  desc: Stiff, readily weldable and economical — the workhorse.
 - slug: plaatwerk/rvs
   label: Stainless steel
   desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.
@@ -95,7 +98,7 @@ faq:
     and rivet nuts are all part of the process. You receive a part ready for assembly rather than a semi-finished
     product that still needs work elsewhere.
 - vraag: What do you need in order to prepare a quotation?
-  antwoord: A drawing or 3D model, the material grade and sheet thickness, the quantity, and whether it
+  antwoord: A PDF drawing and a 3D STEP file, the material grade and sheet thickness, the quantity, and whether it
     concerns visible surfaces with the associated finishing. If information is missing we contact you
     before quoting a price.
 seo:

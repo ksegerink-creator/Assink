@@ -16,7 +16,7 @@ body:
 materials: ["RVS 304", "RVS 316"]
 process:
   - { step: "Ontwerp", desc: "Hygiënisch, reinigbaar detailleren." }
-  - { step: "Lasersnijden & zetten", desc: "Maatvaste delen." }
+  - { step: "Lasersnijden & kanten", desc: "Maatvaste delen." }
   - { step: "Laserlassen", desc: "Strakke, gladde naden." }
   - { step: "Passiveren", desc: "Corrosiebescherming." }
 applications: ["Voedingsmiddelenmachines", "Procesapparatuur", "Behuizingen"]

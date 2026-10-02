@@ -13,7 +13,7 @@ heroPhoto:
   comp: "Representatief werk uit deze sector"
 body:
   - "Voor de elektrotechniek maken we onder andere kastdelen, montageplaten, frontpanelen en behuizingen. Uitsparingen voor wartels, displays en koeling snijden we mee op de laser, zodat er achteraf niets bijgewerkt hoeft te worden."
-  - "Maatvastheid is hier belangrijker dan snelheid: een kast die een halve millimeter uit het lood staat, sluit niet. Onze kantpers werkt servo-elektrisch met een nauwkeurigheid van ± 0,2 mm, en na het kanten ontbramen we de randen machinaal."
+  - "Maatvastheid is hier belangrijker dan snelheid: een kast die een halve millimeter uit het lood staat, sluit niet. Onze kantbank werkt servo-elektrisch met een nauwkeurigheid van ± 0,2 mm, en na het kanten ontbramen we de randen machinaal."
 materials: ["Staal", "RVS 304", "RVS 316", "Aluminium"]
 process:
   - { step: "Lasersnijden", desc: "Uitsparingen voor wartels, displays en ventilatie." }

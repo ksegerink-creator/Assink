@@ -7,7 +7,7 @@ intro: Präzises Rohrlaserschneiden für maßhaltige Rohre und Profile, mit mode
 heroPhoto:
   subject: Rohrlaserschneidmaschine in Betrieb mit rotierendem Profil
 body:
-- Wir arbeiten mit einem Trumpf-Rohrlaser für Stahl, Edelstahl, Aluminium, Messing und Kupfer — geeignet
+- Wir arbeiten mit einem Trumpf-Rohrlaser für Stahl, Edelstahl und Aluminium — geeignet
   für komplexe Konturen, Bohrungen und Verbindungen in einem Arbeitsgang.
 - Durch das berührungslose Laserschneiden entstehen eine sehr hohe Maßhaltigkeit und Reproduzierbarkeit,
   weniger Nacharbeit und kürzere Durchlaufzeiten. Ideal für Einzelstücke wie auch für Serienteile. Komplexe
@@ -26,17 +26,16 @@ body:
   von Blech</a> sowie mit Schweißen und Montage in derselben Halle in Hengelo. Für einen Rahmen mit Blechteilen
   bedeutet das eine Arbeitsvorbereitung, eine Planung und einen Ansprechpartner statt Abstimmung zwischen
   Rohrlieferant, Blechlieferant und Schweißbetrieb.
-- 'Was wir für eine Beurteilung benötigen: ein 3D-Modell oder eine Zeichnung des Profils, Profilart und
-  -größe, den Werkstoff, die Längen und die Stückzahl. Die Grenzen für Durchmesser, Wandstärke und Länge
-  hängen vom Profil ab und beurteilen wir je Anfrage — legen Sie uns Ihre Maße also vor, statt vorab abzuwinken.
+- 'Was wir für eine Beurteilung benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und
+  -größe, den Werkstoff, die Längen und die Stückzahl. Rundrohr schneiden wir bis ø 150 mm, quadratische
+  und rechteckige Profile bis 120 × 120 mm; die Wandstärke geht bis 6 mm in Stahl und bis 4 mm in Edelstahl.
+  Liegt Ihr Profil außerhalb dieser Maße, legen Sie es unserer Arbeitsvorbereitung vor.
   Geht es um eine komplette Konstruktion, senden Sie auch die Baugruppe mit, dann prüfen wir gleich die
   Schweißfolge.'
 materials:
 - Stahl
 - Edelstahl
 - Aluminium
-- Messing
-- Kupfer
 process:
 - step: Programmieren
   desc: Konturen und Verbindungen aus der Zeichnung.
@@ -50,7 +49,11 @@ specs:
 - label: Typ
   value: Rohrlaserschneidsystem
 - label: Materialien
-  value: Stahl, Edelstahl, Aluminium, Messing, Kupfer
+  value: Stahl, Edelstahl, Aluminium
+- label: Profilmaße
+  value: rund bis ø 150 mm · quadratisch bis 120 × 120 mm
+- label: Wandstärke
+  value: Stahl bis 6 mm · Edelstahl bis 4 mm
 applications:
 - Maschinenbau
 - Konstruktionen
@@ -58,9 +61,9 @@ applications:
 - Industrielle Anwendungen
 faq:
 - vraag: Welche Profilmaße und Wandstärken können Sie schneiden?
-  antwoord: 'Das beurteilen wir je Anfrage: die Grenzen für Durchmesser, Wandstärke und Länge hängen vom
-    Profil und von der Aufspannung ab. Senden Sie uns Profilart, Maße und Längen, dann geben wir an, was
-    machbar ist, statt dass Sie vorab schätzen müssen.'
+  antwoord: 'Rundrohr bis ø 150 mm und quadratische oder rechteckige Profile bis 120 × 120 mm. Die Wandstärke
+    geht bis 6 mm in Stahl und bis 4 mm in Edelstahl. Die machbare Länge hängt vom Profil und von der Aufspannung
+    ab; das beurteilen wir je Anfrage. Liegt Ihr Profil außerhalb dieser Maße, wenden Sie sich an unsere Arbeitsvorbereitung.'
 - vraag: Was bringt Rohrlaserschneiden gegenüber Sägen und Bohren?
   antwoord: Vor allem Passgenauigkeit. Kontur, Bohrungen und Verbindungsform kommen in einer Aufspannung
     aus der Maschine, die Abweichungen von Ablängen, Bohren und Passschleifen summieren sich also nicht
@@ -76,7 +79,7 @@ faq:
     auch ein einzelnes Profil oder eine kleine Serie gut machbar. Bei größeren Serien verschiebt sich
     der Schwerpunkt auf Schachtelung und Durchlaufzeit.
 - vraag: Was benötigen Sie für ein Angebot?
-  antwoord: Ein 3D-Modell oder eine Zeichnung des Profils, Profilart und -größe, den Werkstoff, die Längen
+  antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und -größe, den Werkstoff, die Längen
     und die Stückzahl. Geht es um eine komplette Konstruktion, senden Sie auch die Baugruppe mit; dann
     beurteilen wir gleich Schweißfolge und Fertigbarkeit des Ganzen.
 related:
@@ -92,4 +95,4 @@ related:
 seo:
   title: Rohrlaserschneiden — Trumpf-Rohrlaser
   description: 'Präzises Rohrlaserschneiden: komplexe Konturen, Bohrungen und Verbindungen in Rohr und
-    Profil in einem Arbeitsgang, in Stahl, Edelstahl, Aluminium, Messing und Kupfer.'
+    Profil in einem Arbeitsgang, in Stahl, Edelstahl und Aluminium.'

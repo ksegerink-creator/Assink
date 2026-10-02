@@ -18,7 +18,7 @@ body:
   glans.
 - 'Messing is een legering van koper en zink. De verhouding bepaalt het gedrag: meer zink maakt het materiaal
   sterker en beter vervormbaar, meer koper geeft een warmere, rodere kleur. Voor plaatwerk wordt meestal
-  een goed vervormbare kwaliteit gekozen, zodat het materiaal bij het zetten niet scheurt.'
+  een goed vervormbare kwaliteit gekozen, zodat het materiaal bij het kanten niet scheurt.'
 - Waar messing zich onderscheidt, is de uitstraling. Het oppervlak heeft een warme, gele glans die met
   geen enkele coating op RVS te benaderen is. Dat maakt het aantrekkelijk voor zichtwerk in interieurs,
   voor kunstobjecten en voor decoratieve technische onderdelen — maar het maakt het oppervlak ook het
@@ -29,7 +29,7 @@ body:
   bij uw aanvraag door welke van de twee u wilt, want dat bepaalt de afwerking.
 - 'In de bewerking vraagt messing vooral zorg voor het oppervlak. Het is zachter dan RVS en staal en krast
   dus makkelijker: wij houden beschermfolie tot en met de laatste bewerking op het materiaal, werken met
-  schoon gereedschap en houden messing gescheiden van staal om ijzerinslag te voorkomen. Bij het zetten
+  schoon gereedschap en houden messing gescheiden van staal om ijzerinslag te voorkomen. Bij het kanten
   letten wij op de walsrichting, omdat een buiging dwars op de vezel eerder scheurt.'
 - 'Welke snijmethode voor uw messing onderdeel het meest geschikt is, bepalen wij per aanvraag: de reflectie
   en de warmtegeleiding van koperlegeringen maken messing lastiger te snijden dan staal of RVS. Stuur
@@ -44,7 +44,7 @@ materials:
 process:
 - step: Snijden
   desc: Nauwkeurig uitsnijden van messing plaat.
-- step: Zetten
+- step: Kanten
   desc: Kanten zonder beschadiging van het oppervlak.
 - step: Afwerking
   desc: Ontbramen en beschermen van de glans.
@@ -62,7 +62,7 @@ faq:
   antwoord: 'Ja. In contact met lucht en vocht vormt zich een patina: eerst geelbruin, later bruin tot
     groenig. Voor sommige toepassingen is dat juist gewenst. Wilt u de oorspronkelijke glans behouden,
     dan is een beschermende laklaag nodig of moet er periodiek gepoetst worden.'
-- vraag: Kunnen jullie messing zetten zonder het oppervlak te beschadigen?
+- vraag: Kunnen jullie messing kanten zonder het oppervlak te beschadigen?
   antwoord: Ja. Messing is zachter dan RVS en staal en krast dus sneller. Wij laten beschermfolie tot
     en met de laatste bewerking zitten, werken met schoon gereedschap en houden rekening met de walsrichting,
     omdat een buiging dwars op de vezel eerder scheurt.

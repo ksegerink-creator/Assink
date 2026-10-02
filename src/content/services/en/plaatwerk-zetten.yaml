@@ -24,7 +24,7 @@ body:
   before the batch runs on.
 - 'The flat pattern is what production engineering turns on. During bending the material stretches on
   the outside and compresses on the inside, so the flat length is not simply the sum of the legs. We calculate
-  that bend allowance ourselves, so you do not have to supply an unfolded drawing: a 3D model or a drawing
+  that bend allowance ourselves, so you do not have to supply an unfolded drawing: a PDF drawing and a 3D STEP file
   of the finished product is enough. If you do supply a flat pattern, tell us which allowance it was made
   with, otherwise the dimensions will be off.'
 - The sequence matters too. One bend can get in the way of another, and a flange that sits too close to
@@ -35,7 +35,7 @@ body:
   tooling leaves marks, and stainless steel and brass scratch easily. We keep the protective film on up
   to and including the last operation and use adapted tooling where required. There is more on the material
   side on our pages about <a href="/en/plaatwerk/rvs/">stainless steel sheet metal</a> and <a href="/en/plaatwerk/messing/">brass</a>.'
-- 'What we need to assess bending work: a drawing or 3D model of the finished product, the material and
+- 'What we need to assess bending work: a PDF drawing and a 3D STEP file of the finished product, the material and
   sheet thickness, the required bend radius if it is fixed, whether it concerns visible surfaces, and
   the quantity. The maximum length of a single bend with us is 3100 mm; longer parts we build up from
   several pieces or solve another way.'
@@ -62,6 +62,8 @@ specs:
   value: up to 3100 mm
 - label: Drive
   value: servo-electric
+- label: Tolerances
+  value: to ISO 2768
 applications:
 - Enclosures
 - Panels
@@ -74,7 +76,7 @@ faq:
     steel the rolling direction counts. If your radius is fixed, tell us and we will assess whether it
     is achievable before the drawing is finalised.
 - vraag: Do I have to calculate the flat pattern myself?
-  antwoord: No. We calculate the bend allowance ourselves, so a 3D model or a drawing of the finished
+  antwoord: No. We calculate the bend allowance ourselves, so a PDF drawing and a 3D STEP file of the finished
     product is enough. If you do supply a flat pattern, tell us which allowance it was made with, otherwise
     the final dimension will be off.
 - vraag: How long may a single bend be?

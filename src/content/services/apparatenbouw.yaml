@@ -17,7 +17,7 @@ body:
 materials: ["RVS 304", "RVS 316", "Staal", "Aluminium"]
 process:
   - { step: "Engineering", desc: "Meedenken over maakbaarheid en lasvolgorde." }
-  - { step: "Snijden & kanten", desc: "Laser, buislaser en kantpers." }
+  - { step: "Snijden & kanten", desc: "Laser, buislaser en kantbank." }
   - { step: "Lassen & samenstellen", desc: "TIG-, MIG- of laserlassen tot 10 ton." }
   - { step: "Afwerken", desc: "Slijpen, beitsen, passiveren of stralen." }
 applications: ["Gelaste frames", "Omkastingen en behuizingen", "Trechters", "Samenstellingen tot 10 ton"]

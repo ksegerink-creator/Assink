@@ -21,7 +21,7 @@ body:
   die zerspanten Teile anschließend in unsere eigene <a href="/de/plaatwerk/">Blechbearbeitung</a> und
   <a href="/de/constructies/">Konstruktionsarbeit</a> ein. Für den <a href="/de/machinebouw/">Maschinenbau</a>
   bedeutet das eine komplett montierte Baugruppe statt einer Kiste mit Komponenten.
-- 'Was wir für eine Anfrage benötigen: eine Zeichnung oder ein 3D-Modell mit der Bemaßung, den Werkstoff,
+- 'Was wir für eine Anfrage benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung, den Werkstoff,
   die gewünschten Toleranzen und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren
   Baugruppe gehört. Letzteres bestimmt häufig die Reihenfolge, in der wir den Ablauf einplanen.'
 - 'Unsere Werkstatt steht in Hengelo, mitten in der Region Twente, und wir arbeiten für Maschinenbauer
@@ -69,6 +69,6 @@ faq:
     Teile werden bei uns in eine geschweißte Konstruktion oder eine Blechbaugruppe eingebaut, sodass Sie
     ein komplettes Produkt statt einzelner Komponenten erhalten.
 - vraag: Was benötigen Sie für ein Angebot?
-  antwoord: Eine Zeichnung oder ein 3D-Modell mit der Bemaßung, den Werkstoff, die gewünschten Toleranzen
+  antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung, den Werkstoff, die gewünschten Toleranzen
     und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren Baugruppe gehört. Letzteres
     bestimmt häufig die Reihenfolge des Ablaufs.

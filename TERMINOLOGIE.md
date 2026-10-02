@@ -13,8 +13,8 @@ vertaalwerk, zodat teksten en menu's consistent blijven. Gebruikte conventie:
 |---|---|---|
 | plaatwerk | sheet metal work | Blechbearbeitung |
 | precisieplaatwerk | precision sheet metal | Präzisionsblech |
-| kanten & zetten | bending & forming | Kanten & Biegen |
-| zetten (kantpers) | press braking | Abkanten |
+| kanten | bending & forming | Kanten & Biegen |
+| kanten (kantbank) | press braking | Abkanten |
 | lasersnijden | laser cutting | Laserschneiden |
 | buislasersnijden | tube laser cutting | Rohrlaserschneiden |
 | verspaning | machining | Zerspanung |

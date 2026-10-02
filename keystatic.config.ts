@@ -1,4 +1,5 @@
 import { config, singleton, collection, fields } from "@keystatic/core";
+import { UI_GROUPS } from "./src/data/ui-schema";
 
 /**
  * Keystatic — contentbeheer voor Assink & Schipholt.
@@ -514,6 +515,87 @@ const machinesT = vertaalPaar("Machines", "machines", machineVertaling);
 const sectorenT = vertaalPaar("Sectoren", "sectors", sectorVertaling);
 const certsT = vertaalPaar("Certificeringen", "certifications", certVertaling);
 
+
+/**
+ * Interfaceteksten: knoppen, formulierlabels, foutmeldingen, footer en
+ * alt-teksten. Die stonden vast in de code; ze staan nu per taal in
+ * src/data/ui/<taal>.json en zijn hier te bewerken.
+ *
+ * De velden komen uit src/data/ui-schema.ts, zodat de indeling op één plek
+ * staat en het drie keer (NL/EN/DE) hetzelfde formulier oplevert. Boven elk
+ * veld staat de Nederlandse brontekst; bij Engels en Duits is dat meteen de
+ * referentie waartegen je vertaalt.
+ *
+ * Let op bij teksten met een accolade erin, zoals "{van}" en "{tot}" in de
+ * openingstijden: die worden door de site ingevuld. Laat ze staan.
+ */
+const interfaceTeksten = (taal: "nl" | "en" | "de", label: string) =>
+  singleton({
+    label,
+    path: `src/data/ui/${taal}`,
+    format: { data: "json" },
+    schema: Object.fromEntries(
+      UI_GROUPS.map((groep) => [
+        groep.id,
+        fields.object(
+          Object.fromEntries(
+            groep.keys.map((veld) => [
+              veld.key,
+              fields.text({
+                label: veld.label,
+                description: taal === "nl" ? veld.key : `${veld.key} — NL: ${veld.nl}`,
+                multiline: veld.multiline,
+              }),
+            ]),
+          ),
+          { label: groep.label, description: `${groep.keys.length} teksten` },
+        ),
+      ]),
+    ),
+  });
+
+
+/**
+ * Twee losse Nederlandse pagina's die buiten het drieluik NL/EN/DE vallen: de
+ * kennisbank (de artikelen bestaan alleen in het Nederlands) en de
+ * privacyverklaring (noindex, één taal).
+ *
+ * In de privacytekst mag je {bedrijf}, {adres}, {email} en {telefoon}
+ * gebruiken; die worden ingevuld uit Bedrijfsgegevens, zodat een verhuizing of
+ * een nieuw telefoonnummer niet op twee plekken hoeft.
+ */
+const kennisbankPagina = singleton({
+  label: "Kennisbank (overzichtspagina)",
+  path: "src/content/pages/kennisbank",
+  format: { data: "yaml" },
+  schema: {
+    ...seoFields(),
+    kicker: fields.text({ label: "Kicker", description: "Het aantal artikelen wordt er automatisch achter gezet." }),
+    titelRegel1: fields.text({ label: "Titel — regel 1" }),
+    titelRegel2: fields.text({ label: "Titel — regel 2" }),
+    lead: fields.text({ label: "Introzin", multiline: true }),
+  },
+});
+
+const privacyPagina = singleton({
+  label: "Privacyverklaring",
+  path: "src/content/pages/privacy",
+  format: { data: "yaml" },
+  schema: {
+    ...seoFields(),
+    kicker: fields.text({ label: "Kicker" }),
+    titel: fields.text({ label: "Titel (H1)" }),
+    lead: fields.text({ label: "Introzin", multiline: true }),
+    secties: fields.array(
+      fields.object({
+        kop: fields.text({ label: "Kop" }),
+        tekst: fields.text({ label: "Tekst", multiline: true }),
+      }),
+      { label: "Paragrafen", itemLabel: (p) => p.fields.kop.value },
+    ),
+  },
+});
+
 export default config({
   storage: import.meta.env.DEV
     ? { kind: "local" }
@@ -604,6 +686,13 @@ export default config({
         instagram: fields.url({ label: "Instagram-URL", description: "Laat leeg om het icoon te verbergen." }),
       },
     }),
+
+    kennisbank: kennisbankPagina,
+    privacy: privacyPagina,
+
+    interfaceNl: interfaceTeksten("nl", "Interfaceteksten — NL"),
+    interfaceEn: interfaceTeksten("en", "Interfaceteksten — EN"),
+    interfaceDe: interfaceTeksten("de", "Interfaceteksten — DE"),
   },
 
   collections: {

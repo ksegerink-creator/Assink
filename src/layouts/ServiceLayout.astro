@@ -44,31 +44,28 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   trail={trail}
   jsonld={jsonld}
 >
-  <!-- Foto-hero: beeld draagt de pagina, titel op het beeld. Zonder foto in de
-       content-collectie laten we het beeldblok volledig weg (geen zichtbare
-       "Foto benodigd"-notitie op de live site) en valt de sectie terug op een
-       effen navy band. -->
+  <!-- Gesplitste hero: tekstvlak naast het beeld in plaats van eroverheen. De
+       titel ligt op een effen navy vlak, dus hij blijft leesbaar ongeacht wat
+       er op de foto staat en er is geen scrim of tekstschaduw meer nodig. De
+       intro en de knoppen staan in hetzelfde vlak; die vormden eerder een
+       losse sectie eronder. Zonder foto in de content-collectie vervalt de
+       beeldkolom en loopt het vlak over de volle breedte. -->
   <section class:list={["shero", { "shero--no-media": !heroImg }]}>
-    {heroImg && (
-      <div class="shero__media">
-        <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="21/9" priority={true} />
-        <div class="shero__scrim" aria-hidden="true"></div>
+    <div class="shero__grid">
+      <div class="shero__panel">
+        <span class="mono shero__kicker">{s.kicker}</span>
+        <h1>{s.h1}</h1>
+        <p class="shero__lead">{s.intro}</p>
+        <div class="shero__acts">
+          <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
+          <a class="btn ghost" href={nav("contact")}>{t(locale, "talk")}</a>
+        </div>
       </div>
-    )}
-    <div class="wrap shero__inner">
-      <span class="mono shero__kicker">{s.kicker}</span>
-      <h1>{s.h1}</h1>
-    </div>
-  </section>
-
-  <!-- Intro + acties naast elkaar -->
-  <section class="sec tight">
-    <div class="wrap sintro">
-      <p class="sintro__lead rv">{s.intro}</p>
-      <div class="sintro__acts rv">
-        <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
-        <a class="btn ghost" href={nav("contact")}>{t(locale, "talk")}</a>
-      </div>
+      {heroImg && (
+        <div class="shero__media">
+          <IndustrialImage src={heroImg} alt={s.heroPhoto.subject} ratio="4/3" priority={true} />
+        </div>
+      )}
     </div>
   </section>
 
@@ -164,26 +161,36 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
 </PageLayout>
 
 <style>
-  /* hero */
-  .shero { position: relative; background: var(--navy); overflow: clip; }
-  .shero--no-media { min-height: clamp(220px, 30vw, 340px); display: flex; align-items: flex-end; }
-  .shero__media :global(.ii) { border: 0; }
-  .shero__scrim {
-    position: absolute; inset: 0;
-    background: linear-gradient(rgba(4,26,53,.10) 30%, rgba(4,26,53,.78) 100%);
+  /* hero — tekstvlak naast beeld */
+  .shero { background: var(--navy); overflow: clip; }
+  .shero__grid {
+    display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr);
+    align-items: stretch; min-height: clamp(340px, 40vw, 540px);
   }
-  .shero__inner { position: absolute; inset: auto 0 0 0; z-index: 2; padding-bottom: clamp(20px, 3.4vw, 44px); left: 50%; transform: translateX(-50%); }
-  .shero__kicker { color: #9CC3DF; letter-spacing: .14em; }
-  .shero h1 { color: #fff; font-size: clamp(34px, 5.6vw, 76px); margin-top: 8px; max-width: 14em; text-shadow: 0 1px 22px rgba(4,26,53,.4); }
-  @media (max-width: 640px) {
-    .shero__media :global(.ii) { aspect-ratio: 4/3 !important; }
+  .shero--no-media .shero__grid { grid-template-columns: 1fr; min-height: clamp(220px, 26vw, 320px); }
+  .shero__panel {
+    display: flex; flex-direction: column; justify-content: center;
+    gap: clamp(12px, 1.4vw, 20px);
+    padding-block: clamp(36px, 4.6vw, 68px);
+    /* Linkerrand volgt de contentkolom, zodat de titel uitlijnt met de tekst
+       eronder; de band zelf loopt wel door tot de schermrand. */
+    padding-left: max(28px, calc((100vw - var(--w)) / 2));
+    padding-right: clamp(24px, 3.4vw, 56px);
   }
-
-  /* intro */
-  .sintro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .6fr); gap: clamp(20px, 3vw, 48px); align-items: center; }
-  .sintro__lead { font-size: clamp(17px, 1.7vw, 21px); color: var(--ink-2); max-width: 34em; }
-  .sintro__acts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
-  @media (max-width: 780px) { .sintro { grid-template-columns: 1fr; } .sintro__acts { justify-content: flex-start; } }
+  .shero__kicker { color: var(--pale); letter-spacing: .14em; }
+  .shero h1 { color: #fff; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.02; max-width: 12em; }
+  .shero__lead { color: var(--pale); font-size: clamp(16px, 1.5vw, 19px); line-height: 1.55; max-width: 28em; }
+  .shero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
+  .shero__acts .btn { background: var(--blue-2); border-color: var(--blue-2); color: #042034; }
+  .shero__acts .btn:hover { background: transparent; color: var(--blue-2); }
+  .shero__acts .btn.ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.6); }
+  .shero__acts .btn.ghost:hover { background: #fff; color: var(--navy); border-color: #fff; }
+  .shero__media :global(.ii) { border: 0; height: 100%; aspect-ratio: auto !important; }
+  @media (max-width: 860px) {
+    .shero__grid { grid-template-columns: 1fr; min-height: 0; }
+    .shero__panel { padding-inline: 28px; padding-block: 32px 30px; }
+    .shero__media :global(.ii) { aspect-ratio: 4/3 !important; height: auto; }
+  }
 
   /* body */
   .sbody { display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: clamp(20px, 3vw, 48px); }

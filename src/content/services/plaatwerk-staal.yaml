@@ -1,0 +1,88 @@
+title: Staal plaatwerk
+slug: plaatwerk/staal
+template: service
+group: plaatwerk
+order: 21
+kicker: Plaatwerk 1.1
+h1: Staal plaatwerk
+intro: Het werkpaard onder de plaatmaterialen — stijf, goed lasbaar en voordelig. Van losse delen tot
+  gelaste samenstellingen, met of zonder nabewerking.
+heroPhoto:
+  subject: Stalen plaatwerkdeel na het lasersnijden, snijkant in beeld
+  orient: Liggend 16:10
+  crop: Detail op snijkant
+  comp: Stalen plaat met gesneden contour
+body:
+- Staal is bij plaatwerk meestal het uitgangspunt. Het is stijver dan aluminium bij dezelfde dikte, goed
+  lasbaar en aanzienlijk voordeliger dan RVS. Waar geen corrosiebestendigheid of zichtwerk-eis speelt,
+  is staal daarom vrijwel altijd de verstandige keuze.
+- 'Op de Trumpf TruLaser 3040 snijden wij staal van 0,5 tot 25 mm en gegalvaniseerd staal van 0,5 tot
+  10 mm, uit plaat tot 4000 × 2000 mm. Gegalvaniseerd staal vraagt om een andere aanpak: de zinklaag
+  verdampt bij het snijden en het lassen, dus we stemmen de snijparameters daarop af en overleggen vooraf
+  of er na het laswerk nog hersteld moet worden.'
+- Kanten gebeurt op onze servo-elektrische Safan Darley E-Brake 150-3100 T3, met 150 ton perskracht en
+  een werklengte tot 3100 mm. Toleranties houden wij aan volgens ISO 2768; zijn er krappere maten nodig,
+  leg die dan voor aan onze werkvoorbereiding.
+- 'Voor laswerk in staal is MAG het gangbare proces: lassen met actief gas, sneller dan TIG en geschikt
+  voor dikker materiaal en grotere series. TIG zetten we in waar de naad er netjes uit moet zien of het
+  materiaal dun is. Welke methode we kiezen, leest u op onze pagina over <a href="/plaatwerk/lassen/">lassen</a>.'
+- 'Nabewerking is bij staal een keuze, geen vanzelfsprekendheid. Wij ontbramen machinaal op de Timesavers
+  42 Series RB — bij staal niet alleen een kwestie van uiterlijk maar ook van arbeidsveiligheid verderop
+  in de keten. Conserveren doen wij niet zelf: poedercoaten, verzinken en natlakken besteden wij uit aan
+  vaste partners, zodat u één aanspreekpunt houdt.'
+- Gaat het om een gelaste staalconstructie in plaats van losse plaatdelen, dan geldt een ander traject.
+  Wij lassen onder ISO 3834-2 en zijn gecertificeerd volgens EN 1090-1, met een maximaal stukgewicht van
+  10 ton. Kijk daarvoor op onze pagina over <a href="/constructies/">constructies</a>.
+materials:
+- Staal (S235, S355)
+- Gegalvaniseerd staal
+process:
+- step: Lasersnijden
+  desc: Staal 0,5–25 mm, plaat tot 4000 × 2000 mm.
+- step: Kanten
+  desc: Tot 3100 mm, toleranties volgens ISO 2768.
+- step: Lassen
+  desc: MAG voor staal, TIG voor dun en zichtwerk.
+- step: Afwerking
+  desc: Ontbramen doen wij zelf; conserveren besteden wij uit.
+applications:
+- Machinebouw
+- Constructiedelen
+- Frames & ondersteuningen
+- Industriële toepassingen
+related:
+- slug: plaatwerk/lasersnijden
+  label: Lasersnijden
+  desc: Staal 0,5–25 mm.
+- slug: plaatwerk/lassen
+  label: Lassen
+  desc: TIG, MIG/MAG of laser.
+- slug: constructies
+  label: Constructies
+  desc: Gelaste staalconstructies tot 10 ton.
+seo:
+  title: Staal plaatwerk — lasersnijden, kanten en lassen
+  description: 'Stalen plaatwerk uit Hengelo: lasersnijden tot 25 mm uit plaat tot 4000 × 2000 mm, kanten
+    tot 3100 mm en MAG-laswerk. Met of zonder nabewerking.'
+translated:
+- nl
+faq:
+- vraag: Welke plaatdikte staal kunnen jullie lasersnijden?
+  antwoord: Staal van 0,5 tot 25 mm en gegalvaniseerd staal van 0,5 tot 10 mm, op de Trumpf TruLaser 3040,
+    een fiberlaser van 4 kW. De plaat mag tot 4000 × 2000 mm meten.
+- vraag: Wat is het verschil tussen MAG- en MIG-lassen bij staal?
+  antwoord: Allebei zijn het processen met toevoegdraad, het verschil zit in het beschermgas. MAG gebruikt
+    actief gas en is het gangbare proces voor staal; MIG gebruikt inert gas en is bedoeld voor RVS en aluminium.
+    Voor staal lassen wij dus met MAG, of met TIG waar de naad netjes moet zijn.
+- vraag: Verzorgen jullie ook het poedercoaten of verzinken?
+  antwoord: Wij regelen het, maar voeren het niet zelf uit. Poedercoaten, verzinken en natlakken besteden
+    wij uit aan vaste partners. Ontbramen doen wij wel in eigen huis, machinaal op de Timesavers 42 Series
+    RB.
+- vraag: Wanneer kies ik staal en wanneer RVS of aluminium?
+  antwoord: Staal is stijver dan aluminium bij dezelfde dikte en beduidend voordeliger dan RVS, maar het
+    corrodeert zonder conservering. Komt het deel in vocht, buiten of in een omgeving waar gereinigd wordt,
+    dan ligt RVS voor de hand. Telt het gewicht, dan aluminium. Speelt geen van beide, dan staal.
+- vraag: Kunnen jullie gegalvaniseerd staal verwerken?
+  antwoord: 'Ja, van 0,5 tot 10 mm. Wel een aandachtspunt: de zinklaag verdampt bij het snijden en het
+    lassen. Wij stemmen de snijparameters daarop af en overleggen vooraf of de laszones na afloop hersteld
+    moeten worden.'

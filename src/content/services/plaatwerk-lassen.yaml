@@ -5,7 +5,7 @@ group: lastechniek
 order: 41
 kicker: Lastechniek 3.1
 h1: Lassen
-intro: Van handmatig TIG- en MIG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal,
+intro: Van handmatig TIG-, MIG- en MAG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal,
   serie en kwaliteitseis.
 heroPhoto:
   subject: Lasser aan het werk aan RVS-samenstelling
@@ -18,7 +18,8 @@ body:
   series besteden we uit aan een vaste partner; in Hengelo lassen we met de hand en met de laser.
 - Welke lasmethode we kiezen, hangt af van materiaal, plaatdikte en de eis aan de naad. TIG-lassen geeft
   een beheerste warmte-inbreng en een nette naad, en past daarmee bij dun materiaal en zichtwerk in RVS
-  en aluminium. MIG-lassen is sneller en past bij dikker materiaal en grotere series. <a href="/plaatwerk/laserlassen/">Laserlassen</a>
+  en aluminium. MIG- en MAG-lassen zijn sneller en passen bij dikker materiaal en grotere series; MIG
+  met inert gas voor RVS en aluminium, MAG met actief gas voor staal. <a href="/plaatwerk/laserlassen/">Laserlassen</a>
   levert een smalle naad met weinig vervorming.
 - Vervorming is bij lassen het grootste risico voor de maatvoering. Wij beperken die door de warmte-inbreng
   te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen. Na het lassen controleren we de
@@ -42,7 +43,7 @@ process:
 - step: Voorbereiding
   desc: Passend maken en opspannen.
 - step: Lassen
-  desc: TIG / MIG of laser.
+  desc: TIG, MIG/MAG of laser.
 - step: Nabewerking
   desc: Slijpen, beitsen en passiveren waar nodig.
 - step: Controle
@@ -69,9 +70,9 @@ translated:
 - nl
 faq:
 - vraag: Welke lasmethoden hebben jullie in huis?
-  antwoord: Wij lassen met TIG en MIG en beschikken over laserlassen. TIG geeft de meeste controle over
-    de warmte-inbreng en past bij dun materiaal en zichtwerk; MIG is sneller bij dikker materiaal en grotere
-    series. Robotlassen doen wij niet in Hengelo — dat gebeurt binnen de groep bij Baas Metaal.
+  antwoord: Wij lassen met TIG, MIG en MAG en beschikken over laserlassen. TIG geeft de meeste controle
+    over de warmte-inbreng en past bij dun materiaal en zichtwerk. MIG en MAG zijn sneller bij dikker
+    materiaal en grotere series — MIG met inert gas voor RVS en aluminium, MAG met actief gas voor staal. Robotlassen doen wij niet in Hengelo — dat gebeurt binnen de groep bij Baas Metaal.
 - vraag: Zijn jullie gecertificeerd voor laswerk?
   antwoord: Wij werken voor lassen onder ISO 3834-2 en zijn gecertificeerd volgens EN 1090-1. Daarnaast
     is ons kwaliteitssysteem gecertificeerd volgens ISO 9001. Wat dat per opdracht betekent voor vastlegging

@@ -14,7 +14,7 @@ heroPhoto:
   comp: Snijkop, vonken, plaatveld
 body:
 - Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering.
-  Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en zetten.
+  Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en kanten.
 - 'Welke plaatdikte haalbaar is, verschilt per materiaal. Op de Trumpf TruLaser 3040, een fiberlaser van
   4 kW, snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd
   staal van 0,5 tot 10 mm. Aluminium en RVS reflecteren en geleiden warmte anders dan staal, wat het bereik
@@ -23,16 +23,16 @@ body:
 - Lasersnijden is contactloos, dus er staat geen mechanische kracht op het materiaal en het werkstuk vervormt
   niet door de bewerking zelf. Dat maakt fijne contouren, smalle stegen en kleine gaten haalbaar die met
   ponsen of zagen niet lukken. De warmte-beïnvloede zone langs de snede blijft smal, wat vooral telt als
-  er daarna nog gezet of gelast wordt.
+  er daarna nog gekant of gelast wordt.
 - 'Voor het snijden gaat er een stap aan vooraf die de prijs mede bepaalt: het nesten. Door delen slim
   over de plaat te verdelen, benutten wij het materiaal zo goed mogelijk en beperken wij de restplaat.
   Bij series levert dat direct materiaalbesparing op, en bij enkelstuks kunnen wij een deel vaak meenemen
   op een plaat die toch al opengaat.'
 - Na het snijden zit er een braam op de rand. Wij ontbramen machinaal op een Timesavers 42 Series RB,
   zodat de randen veilig en braamvrij zijn voordat er iemand mee verder werkt — dat is niet alleen een
-  kwestie van afwerking maar ook van arbeidsveiligheid bij u op de lijn. Daarna volgt meestal <a href="/plaatwerk/zetten/">zetten</a>,
+  kwestie van afwerking maar ook van arbeidsveiligheid bij u op de lijn. Daarna volgt meestal <a href="/plaatwerk/zetten/">kanten</a>,
   waarbij de snijkant de buitenzijde van de buiging wordt en dus zichtbaar blijft.
-- 'Wat wij nodig hebben om lasersnijwerk te beoordelen: een tekening of 3D-model, het materiaal en de
+- 'Wat wij nodig hebben om lasersnijwerk te beoordelen: een PDF-tekening en een 3D STEP-bestand, het materiaal en de
   plaatdikte, het aantal stuks en of de delen ontbraamd of verder bewerkt moeten worden. Twijfelt u over
   de materiaalkeuze of de dikte, dan denken wij daar graag in mee voordat de tekening definitief is.'
 materials:
@@ -54,6 +54,8 @@ specs:
   value: 2D-lasermachine
 - label: Materialen
   value: staal, RVS, aluminium, gegalvaniseerd staal
+- label: Maximale plaatmaat
+  value: 4000 × 2000 mm
 - label: Plaatdikte staal
   value: 0,5–25 mm
 - label: Plaatdikte RVS
@@ -78,7 +80,7 @@ faq:
 - vraag: Moeten de delen na het snijden ontbraamd worden?
   antwoord: Meestal wel. Na het snijden zit er een braam op de rand, die wij machinaal verwijderen op
     een Timesavers 42 Series RB. Dat maakt de randen veilig om te hanteren en voorkomt problemen bij het
-    zetten en lassen. Geef door of u de delen ontbraamd wilt ontvangen.
+    kanten en lassen. Geef door of u de delen ontbraamd wilt ontvangen.
 - vraag: Kan ik één onderdeel laten snijden of moet het een serie zijn?
   antwoord: Eén onderdeel kan. Er hoeft geen gereedschap gemaakt te worden, dus enkelstuks en prototypes
     zijn goed te doen. Wij nemen een enkel deel vaak mee op een plaat die toch al opengaat, wat de kosten

@@ -1,39 +1,68 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
 import { SITE, CONTACT } from "@data/site";
+import { readPage } from "@utils/content";
+
+/**
+ * Privacyverklaring. Alleen Nederlands en op noindex.
+ *
+ * De tekst komt uit het CMS (src/content/pages/privacy.yaml). Het is een
+ * juridisch document dat zonder tussenkomst van een ontwikkelaar bij te werken
+ * moet zijn; vandaar dat ook de paragrafen een CMS-lijst zijn in plaats van
+ * vaste markup.
+ *
+ * In de teksten mogen {bedrijf}, {adres}, {email} en {telefoon} staan. Die
+ * vullen we hier in uit Bedrijfsgegevens, zodat een nieuw adres of
+ * telefoonnummer niet op twee plekken hoeft te worden bijgewerkt. E-mail en
+ * telefoon worden daarbij een echte link.
+ */
+const pg = await readPage("privacy", "nl");
+
+const escape = (v: string) =>
+  v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+/** Vult de plaatshouders in en maakt van e-mail en telefoon een link. */
+const fill = (tekst: string) =>
+  escape(tekst)
+    .replaceAll("{bedrijf}", escape(SITE.legalName))
+    .replaceAll("{adres}", escape(CONTACT.addr))
+    .replaceAll("{email}", `<a href="mailto:${escape(CONTACT.email)}">${escape(CONTACT.email)}</a>`)
+    .replaceAll("{telefoon}", `<a href="${escape(CONTACT.telHref)}">${escape(CONTACT.tel)}</a>`);
+
+/** De introzin staat buiten de prose-kolom; daar willen we geen links in. */
+const plain = (tekst: string) =>
+  tekst
+    .replaceAll("{bedrijf}", SITE.legalName)
+    .replaceAll("{adres}", CONTACT.addr)
+    .replaceAll("{email}", CONTACT.email)
+    .replaceAll("{telefoon}", CONTACT.tel);
 ---
 <PageLayout
-  title="Privacyverklaring"
-  description="Privacyverklaring van Assink & Schipholt B.V. — hoe wij omgaan met persoonsgegevens."
+  title={pg.seoTitel}
+  description={pg.seoOmschrijving}
   canonicalSlug="privacy"
-  trail={[{ label: "Privacyverklaring", slug: "privacy" }]}
+  trail={[{ label: pg.titel, slug: "privacy" }]}
   noindex={true}
 >
   <section class="sec ov-hero">
     <div class="wrap">
-      <span class="eyebrow mono"><b>Juridisch</b></span>
-      <h1>Privacyverklaring</h1>
-      <p class="lead">Hoe {SITE.legalName} omgaat met persoonsgegevens die via deze website worden verwerkt.</p>
+      <span class="eyebrow mono"><b>{pg.kicker}</b></span>
+      <h1>{pg.titel}</h1>
+      <p class="lead">{plain(pg.lead)}</p>
     </div>
   </section>
 
   <section class="sec tight">
     <div class="wrap-narrow">
       <div class="prose rv">
-        <h3>1. Verwerkingsverantwoordelijke</h3>
-        <p>{SITE.legalName}, {CONTACT.addr}. Contact: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> · <a href={CONTACT.telHref}>{CONTACT.tel}</a>.</p>
-        <h3>2. Welke gegevens</h3>
-        <p>Wij verwerken de gegevens die u zelf aan ons verstrekt via het contact- of offerteformulier (naam, bedrijf, e-mail, telefoon, projectinformatie en eventueel meegestuurde bestanden). Daarnaast gebruiken wij Google Analytics om geanonimiseerd websiteverkeer te meten (zie punt 7).</p>
-        <h3>3. Doel en grondslag</h3>
-        <p>Wij gebruiken uw gegevens om uw aanvraag te beantwoorden, een offerte op te stellen en de opdracht uit te voeren. De grondslag is uw verzoek en/of de uitvoering van een overeenkomst.</p>
-        <h3>4. Bewaartermijn</h3>
-        <p>Wij bewaren gegevens niet langer dan noodzakelijk voor deze doeleinden of dan wettelijk vereist.</p>
-        <h3>5. Delen met derden</h3>
-        <p>Wij delen uw gegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van de opdracht of wettelijk verplicht.</p>
-        <h3>6. Uw rechten</h3>
-        <p>U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op via <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.</p>
-        <h3>7. Cookies en analytics</h3>
-        <p>Deze website gebruikt Google Analytics om te meten hoeveel bezoekers de site bezoeken en welke pagina's zij bekijken. Gegevens worden hiervoor gedeeld met Google.</p>
+        {
+          pg.secties.map((sec) => (
+            <>
+              <h3>{sec.kop}</h3>
+              <p set:html={fill(sec.tekst)} />
+            </>
+          ))
+        }
       </div>
     </div>
   </section>

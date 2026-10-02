@@ -12,18 +12,18 @@ heroPhoto:
   crop: "Product met meetgereedschap"
   comp: "Onderdeel, schuifmaat in beeld"
 body:
-  - "Precisieplaatwerk vraagt om beheerste processen: van lasersnijden en zetten tot afwerken. Door vaste werkinstructies en maatcontrole is stuk duizend even goed als stuk één."
-  - "Voor precisie plaatwerk met krappe toleranties combineren wij lasersnijden met een servo-elektrische kantpers: die geeft een constantere buighoek dan een hydraulische pers, ook bij lange series."
+  - "Precisieplaatwerk vraagt om beheerste processen: van lasersnijden en kanten tot afwerken. Door vaste werkinstructies en maatcontrole is stuk duizend even goed als stuk één."
+  - "Voor precisie plaatwerk met krappe toleranties combineren wij lasersnijden met een servo-elektrische kantbank: die geeft een constantere buighoek dan een hydraulische pers, ook bij lange series."
 materials: ["RVS", "Aluminium", "Messing", "Staal"]
 process:
   - { step: "Werkvoorbereiding", desc: "Uitslag, buiglijnen en toleranties bepalen." }
   - { step: "Lasersnijden", desc: "Maatvast snijden." }
-  - { step: "Zetten", desc: "Herhaalbare buighoeken." }
+  - { step: "Kanten", desc: "Herhaalbare buighoeken." }
   - { step: "Maatcontrole", desc: "Controle tijdens en na productie." }
 applications: ["Machinebouw", "Elektronica", "Apparatenbouw"]
 related:
   - { slug: "plaatwerk/lasersnijden", label: "Lasersnijden", desc: "2D-lasersnijden." }
-  - { slug: "plaatwerk/zetten", label: "Kanten & zetten", desc: "Kantwerk." }
+  - { slug: "plaatwerk/zetten", label: "Kanten", desc: "Kantwerk." }
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "Onze kwaliteitsborging." }
 seo:
   title: "Precisieplaatwerk — maatvast tot op de millimeter"

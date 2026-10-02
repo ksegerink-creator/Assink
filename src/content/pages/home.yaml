@@ -36,7 +36,7 @@ capabilities:
     titel: Plaatwerk
     omschrijving: >-
       Precisieplaatwerk in staal, RVS, aluminium en messing. Lasersnijden,
-      zetten en afwerken — enkelstuks en serie, maatvast tot op de millimeter.
+      kanten en afwerken — enkelstuks en serie, maatvast tot op de millimeter.
     annotatie: Kantbank · ± 0,2 mm
     link: plaatwerk
     foto: /src/assets/uploads/capabilities/0/foto.jpg
@@ -69,7 +69,7 @@ proef:
   quoteFoto: /src/assets/uploads/proef/quoteFoto.jpg
   details:
     - foto: /src/assets/uploads/proef/details/0/foto.jpg
-      bijschrift: Zetwerk · ± 0,2 mm
+      bijschrift: Kantwerk · ± 0,2 mm
     - foto: /src/assets/uploads/proef/details/1/foto.jpg
       bijschrift: Kantwerk
     - foto: /src/assets/uploads/proef/details/2/foto.jpg

@@ -53,13 +53,14 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
 >
   <!-- Hero: pagina opent met de productie -->
   <section class="ahero">
-    <div class="ahero__media">
-      <IndustrialImage src={photo(a.heroFoto)} alt={t(locale, "altProductionHall")} ratio="21/9" priority={true} position="center 40%" />
-      <div class="ahero__scrim" aria-hidden="true"></div>
-    </div>
-    <div class="wrap ahero__inner">
-      <span class="mono ahero__kicker">{a.heroKicker}</span>
-      <h1>{a.heroTitelRegel1}<br />{a.heroTitelRegel2}</h1>
+    <div class="ahero__grid">
+      <div class="ahero__panel">
+        <span class="mono ahero__kicker">{a.heroKicker}</span>
+        <h1>{a.heroTitelRegel1}<br />{a.heroTitelRegel2}</h1>
+      </div>
+      <div class="ahero__media">
+        <IndustrialImage src={photo(a.heroFoto)} alt={t(locale, "altProductionHall")} ratio="4/3" priority={true} position="center 40%" />
+      </div>
     </div>
   </section>
 
@@ -263,13 +264,23 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
 </PageLayout>
 
 <style>
-  .ahero { position: relative; background: var(--navy); overflow: clip; }
-  .ahero__media :global(.ii) { border: 0; }
-  .ahero__scrim { position: absolute; inset: 0; background: linear-gradient(rgba(4,26,53,.12) 30%, rgba(4,26,53,.8) 100%); }
-  .ahero__inner { position: absolute; inset: auto 0 0 0; z-index: 2; padding-bottom: clamp(20px, 3.4vw, 44px); left: 50%; transform: translateX(-50%); }
-  .ahero__kicker { color: #9CC3DF; letter-spacing: .14em; }
-  .ahero h1 { color: #fff; font-size: clamp(32px, 5vw, 68px); margin-top: 8px; text-shadow: 0 1px 22px rgba(4,26,53,.4); }
-  @media (max-width: 640px) { .ahero__media :global(.ii) { aspect-ratio: 4/3 !important; } }
+  /* Gesplitste hero: tekstvlak naast het beeld (zie ServiceLayout). */
+  .ahero { background: var(--navy); overflow: clip; }
+  .ahero__grid { display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); align-items: stretch; min-height: clamp(340px, 40vw, 540px); }
+  .ahero__panel {
+    display: flex; flex-direction: column; justify-content: center; gap: clamp(12px, 1.4vw, 20px);
+    padding-block: clamp(36px, 4.6vw, 68px);
+    padding-left: max(28px, calc((100vw - var(--w)) / 2));
+    padding-right: clamp(24px, 3.4vw, 56px);
+  }
+  .ahero__kicker { color: var(--pale); letter-spacing: .14em; }
+  .ahero h1 { color: #fff; font-size: clamp(32px, 4.2vw, 62px); line-height: 1.02; }
+  .ahero__media :global(.ii) { border: 0; height: 100%; aspect-ratio: auto !important; }
+  @media (max-width: 860px) {
+    .ahero__grid { grid-template-columns: 1fr; min-height: 0; }
+    .ahero__panel { padding-inline: 28px; padding-block: 32px 30px; }
+    .ahero__media :global(.ii) { aspect-ratio: 4/3 !important; height: auto; }
+  }
 
   /* Kop en cijfers links, verhaal rechts over de volle hoogte. Op smalle
      schermen: kop, verhaal, cijfers — de cijfers sluiten dan af. */
