@@ -64,7 +64,7 @@ cards:
   desc: 2D laser cutting of steel, stainless steel and aluminium.
 - slug: plaatwerk/lassen
   label: Welding
-  desc: TIG, MIG and robotic welding.
+  desc: TIG, MIG/MAG and robotic welding.
 - slug: plaatwerk/laserlassen
   label: Laser welding
   desc: Clean, low-distortion welded joints.

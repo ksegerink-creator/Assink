@@ -7,7 +7,7 @@ kicker: "Sector"
 h1: "Plaatwerk en constructies voor apparatenbouw"
 intro: "Apparatenbouwers hebben plaatwerk en gelaste samenstellingen nodig die in één keer passen. Wij maken frames, omkastingen en behuizingen tot 10 ton, van los onderdeel tot afgewerkte samenstelling."
 heroPhoto:
-  subject: "Werk voor de sector apparatenbouw"
+  subject: "Lasser aan de lastafel in de productiehal"
   orient: "Liggend 16:10"
   crop: "Werkstuk of productie"
   comp: "Representatief werk uit deze sector"
@@ -18,7 +18,7 @@ materials: ["RVS 304", "RVS 316", "Staal", "Aluminium"]
 process:
   - { step: "Engineering", desc: "Meedenken over maakbaarheid en lasvolgorde." }
   - { step: "Snijden & kanten", desc: "Laser, buislaser en kantbank." }
-  - { step: "Lassen & samenstellen", desc: "TIG-, MIG- of laserlassen tot 10 ton." }
+  - { step: "Lassen & samenstellen", desc: "TIG-, MIG/MAG- of laserlassen tot 10 ton." }
   - { step: "Afwerken", desc: "Slijpen, beitsen, passiveren of stralen." }
 applications: ["Gelaste frames", "Omkastingen en behuizingen", "Trechters", "Samenstellingen tot 10 ton"]
 related:
