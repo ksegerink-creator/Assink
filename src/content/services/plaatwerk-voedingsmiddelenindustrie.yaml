@@ -4,7 +4,7 @@ template: "service"
 group: "sector"
 order: 60
 kicker: "Sector"
-h1: "Voedingsmiddelenindustrie"
+h1: "Hygiënisch RVS-plaatwerk voor de voedingsmiddelenindustrie"
 intro: "Hygiënisch, corrosiebestendig en reinigbaar plaatwerk in RVS voor de voedingsmiddelenindustrie — waar nauwkeurigheid en afwerking essentieel zijn."
 heroPhoto:
   subject: "RVS-onderdeel voor voedingsmiddelenmachine, hygiënisch afgewerkt"
@@ -33,7 +33,7 @@ translated: ["nl"]
 en:
   title: Food industry
   kicker: Sector
-  h1: Food industry
+  h1: Hygienic stainless steel sheet metal for the food industry
   intro: Hygienic, corrosion-resistant and cleanable stainless steel sheet metal work for the food industry
     — where accuracy and finishing are essential.
   heroPhoto:
@@ -74,7 +74,7 @@ en:
 de:
   title: Lebensmittelindustrie
   kicker: Branche
-  h1: Lebensmittelindustrie
+  h1: Hygienisches Edelstahlblech für die Lebensmittelindustrie
   intro: Hygienische, korrosionsbeständige und reinigbare Blechbearbeitung in Edelstahl für die Lebensmittelindustrie
     — wo Genauigkeit und Verarbeitung entscheidend sind.
   heroPhoto:

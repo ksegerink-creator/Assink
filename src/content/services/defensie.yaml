@@ -1,0 +1,126 @@
+title: "Defensie"
+slug: "defensie"
+template: "service"
+group: "sector"
+order: 95
+kicker: "Sector"
+h1: "Gelaste constructies en plaatwerk voor defensie"
+intro: "Defensietoepassingen vragen om robuuste, maatvaste constructies met vastgelegde lasmethodes. Wij maken frames, behuizingen en gelaste samenstellingen in staal, RVS en aluminium, met maatcontrole en documentatie per order."
+heroPhoto:
+  subject: "TIG-lassen in close-up"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Voor defensietoepassingen maken we frames, behuizingen en gelaste samenstellingen tot 10 ton in staal, RVS en aluminium. Het plaatwerk snijden we op de laser en kanten we op de servo-elektrische kantbank; samenstellen en lassen gebeurt in eigen huis in Hengelo."
+  - "Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we gecertificeerd volgens EN 1090-1. Lasmethodes leggen we vast en maatcontroles registreren we per order, zodat herleidbaar blijft hoe een onderdeel is gemaakt. Oppervlaktebehandeling besteden we uit aan een vaste partner."
+materials: ["Staal", "RVS 304", "RVS 316", "Aluminium"]
+process:
+  - { step: "Engineering", desc: "Beoordeling van tekening, lasvolgorde en maakbaarheid." }
+  - { step: "Snijden & kanten", desc: "Lasersnijden uit plaat en buis, kanten op maat." }
+  - { step: "Lassen & samenstellen", desc: "Hand- en laserlassen volgens vastgelegde methodes." }
+  - { step: "Keuring & documentatie", desc: "Maatcontrole en vastlegging per order." }
+applications: ["Frames", "Behuizingen", "Gelaste samenstellingen tot 10 ton"]
+related:
+  - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk tot 10 ton." }
+  - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendig samenstellen." }
+  - { slug: "kwaliteit", label: "Kwaliteit", desc: "Certificering en keuring." }
+seo:
+  title: "Gelaste constructies voor defensie"
+  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie, in staal, RVS en aluminium. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
+translated: ["nl", "en", "de"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Defence
+  kicker: Industry
+  h1: Welded structures and sheet metal for defence
+  intro: Defence applications call for robust, dimensionally accurate structures with documented welding
+    procedures. We make frames, enclosures and welded assemblies in steel, stainless steel and aluminium,
+    with dimensional inspection and documentation per order.
+  heroPhoto:
+    subject: TIG welding close-up
+  body:
+  - For defence applications we make frames, enclosures and welded assemblies up to 10 tonnes in steel,
+    stainless steel and aluminium. Sheet metal is laser cut and bent on the servo-electric press brake;
+    assembly and welding take place in house in Hengelo.
+  - Our welding falls under ISO 3834-2 and our steel structures are certified to EN 1090-1. Welding
+    procedures are documented and dimensional inspections recorded per order, so it stays traceable how a
+    part was made. Surface treatment is outsourced to a regular partner.
+  materials:
+  - Steel
+  - Stainless steel 304
+  - Stainless steel 316
+  - Aluminium
+  process:
+  - step: Engineering
+    desc: Review of drawing, welding sequence and manufacturability.
+  - step: Cutting & bending
+    desc: Laser cutting from sheet and tube, bending to size.
+  - step: Welding & assembly
+    desc: Manual and laser welding to documented procedures.
+  - step: Inspection & documentation
+    desc: Dimensional inspection and records per order.
+  applications:
+  - Frames
+  - Enclosures
+  - Welded assemblies up to 10 tonnes
+  related:
+  - label: Structures
+    desc: Welded structural work up to 10 tonnes.
+  - label: Stainless steel structures
+    desc: Corrosion-resistant assemblies.
+  - label: Quality
+    desc: Certification and inspection.
+  seo:
+    title: Welded structures for defence
+    description: Frames, enclosures and welded assemblies up to 10 tonnes for defence, in steel, stainless
+      steel and aluminium. Welding under ISO 3834-2, steel structures to EN 1090-1.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Wehrtechnik
+  kicker: Branche
+  h1: Geschweißte Konstruktionen und Blech für die Wehrtechnik
+  intro: Wehrtechnische Anwendungen verlangen robuste, maßhaltige Konstruktionen mit dokumentierten
+    Schweißanweisungen. Wir fertigen Rahmen, Gehäuse und geschweißte Baugruppen aus Stahl, Edelstahl und
+    Aluminium, mit Maßkontrolle und Dokumentation je Auftrag.
+  heroPhoto:
+    subject: WIG-Schweißen in Nahaufnahme
+  body:
+  - Für wehrtechnische Anwendungen fertigen wir Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen
+    aus Stahl, Edelstahl und Aluminium. Das Blech schneiden wir auf dem Laser und kanten es auf der
+    servoelektrischen Abkantpresse; Zusammenbau und Schweißen erfolgen im eigenen Haus in Hengelo.
+  - Unsere Schweißarbeiten fallen unter ISO 3834-2, für Stahlkonstruktionen sind wir nach EN 1090-1
+    zertifiziert. Schweißanweisungen werden festgelegt und Maßkontrollen je Auftrag erfasst, sodass
+    nachvollziehbar bleibt, wie ein Teil gefertigt wurde. Die Oberflächenbehandlung vergeben wir an einen
+    festen Partner.
+  materials:
+  - Stahl
+  - Edelstahl 304
+  - Edelstahl 316
+  - Aluminium
+  process:
+  - step: Engineering
+    desc: Beurteilung von Zeichnung, Schweißfolge und Fertigbarkeit.
+  - step: Schneiden & Kanten
+    desc: Laserschneiden aus Blech und Rohr, Kanten auf Maß.
+  - step: Schweißen & Zusammenbau
+    desc: Hand- und Laserschweißen nach festgelegten Verfahren.
+  - step: Prüfung & Dokumentation
+    desc: Maßkontrolle und Erfassung je Auftrag.
+  applications:
+  - Rahmen
+  - Gehäuse
+  - Geschweißte Baugruppen bis 10 Tonnen
+  related:
+  - label: Konstruktionen
+    desc: Geschweißte Konstruktionen bis 10 Tonnen.
+  - label: Edelstahlkonstruktionen
+    desc: Korrosionsbeständige Baugruppen.
+  - label: Qualität
+    desc: Zertifizierung und Prüfung.
+  seo:
+    title: Schweißkonstruktionen für Wehrtechnik
+    description: Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für die Wehrtechnik, aus Stahl,
+      Edelstahl und Aluminium. Schweißen nach ISO 3834-2, Stahlkonstruktionen nach EN 1090-1.

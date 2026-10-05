@@ -36,7 +36,15 @@ h1, h2, h3, h4 {
      regels loopt zo'n woord buiten zijn kolom — op de hero schoof de titel
      dan over de foto heen. hyphens werkt op de lang-attribuut van <html>,
      dat per taal is gezet; overflow-wrap vangt op wat niet af te breken is. */
-  overflow-wrap: break-word;
+  /*
+   * 'anywhere' in plaats van 'break-word': alleen 'anywhere' telt mee in de
+   * minimale breedte die een element opeist. Met 'break-word' duwde een lange
+   * samenstelling — "Rohrlaserschneiden", "Edelstahlkonstruktionen" — het
+   * tekstvlak van de hero breder dan het scherm, waarna de kop op een telefoon
+   * tegen de rand werd afgekapt. Afbreken gebeurt in beide gevallen pas als het
+   * echt niet past, en met een koppelteken zodra hyphens: auto aanslaat.
+   */
+  overflow-wrap: anywhere;
   hyphens: auto;
 }
 
@@ -83,8 +91,13 @@ main { display: block; min-height: 50vh; }
   display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
   border-top: 1px solid var(--ink); padding-top: 12px;
   margin-bottom: clamp(28px, 4vw, 52px);
+  /* Op smalle schermen paste het bijschrift rechts niet meer naast de kop en
+     stak het tot 11 px buiten het scherm, met horizontaal schuiven tot gevolg.
+     Het zakt nu naar de volgende regel en blijft daar rechts uitgelijnd. */
+  flex-wrap: wrap;
 }
-.rule-head h2 { font-size: clamp(28px, 3.6vw, 46px); }
+.rule-head h2 { font-size: clamp(28px, 3.6vw, 46px); min-width: 0; }
+.rule-head .mono { margin-left: auto; }
 
 /* prose ---------------------------------------------------- */
 .prose { max-width: 42em; display: flex; flex-direction: column; gap: 16px; color: var(--ink-2); font-size: 17px; }

@@ -660,6 +660,11 @@
       "en": "About this operation",
       "de": "Über diese Bearbeitung"
     },
+    "aboutSector": {
+      "nl": "Over deze sector",
+      "en": "About this industry",
+      "de": "Über diese Branche"
+    },
     "materialsLabel": {
       "nl": "Materialen",
       "en": "Materials",
