@@ -186,6 +186,19 @@ async function sendMail(subject: string, text: string) {
   await transporter.sendMail({ from: van, to: naar, subject, text });
 }
 
+/**
+ * Mailt een storingsmelding, maar laat een mislukte mail nooit de
+ * oorspronkelijke fout overschrijven: dan zou je in de logs de verkeerde
+ * oorzaak zien staan.
+ */
+async function meldStil(subject: string, text: string) {
+  try {
+    await sendMail(subject, text);
+  } catch (mailErr) {
+    console.error("[blog-generator] storingsmail kon niet verstuurd worden:", mailErr);
+  }
+}
+
 export const GET: APIRoute = async ({ request }) => {
   // Beveiliging: alleen aanroepbaar met het gedeelde cron-secret, zodat deze
   // (publiek bereikbare) route niet door iemand anders getriggerd kan worden.
@@ -200,6 +213,11 @@ export const GET: APIRoute = async ({ request }) => {
   if (!anthropicKey || !githubToken) {
     const missing = [!anthropicKey && "ANTHROPIC_API_KEY", !githubToken && "GITHUB_TOKEN"].filter(Boolean).join(", ");
     console.error(`[blog-generator] Ontbrekende omgevingsvariabele(n): ${missing}`);
+    await meldStil(
+      "Blogconcept MISLUKT — configuratie ontbreekt",
+      `De blogconceptgenerator kon niet starten omdat deze omgevingsvariabele(n) ontbreken: ${missing}.\n\n` +
+        `Stel ze in bij Vercel → project assink → Settings → Environment Variables en deploy opnieuw.`,
+    );
     return new Response(JSON.stringify({ ok: false, message: `Ontbrekende configuratie: ${missing}` }), { status: 500 });
   }
 
@@ -334,6 +352,18 @@ export const GET: APIRoute = async ({ request }) => {
     return new Response(JSON.stringify({ ok: true, message: `Concept aangemaakt: ${artikel.title}`, slug }), { status: 200 });
   } catch (err) {
     console.error("[blog-generator]", err);
+    // Een mislukte run was hiervoor volledig stil: alleen een regel in de
+    // Vercel-logs en een 500 die niemand ziet. Het enige signaal was dat de
+    // wekelijkse mail uitbleef — niet te onderscheiden van een cron die
+    // helemaal niet draaide. Daarom meldt een fout zichzelf nu ook per mail.
+    await meldStil(
+      "Blogconcept MISLUKT — geen artikel aangemaakt",
+      `De wekelijkse blogconceptgenerator is vastgelopen.\n\n` +
+        `Foutmelding:\n${(err as Error).message}\n\n` +
+        `Er is geen conceptartikel aangemaakt en de wachtrij is niet afgevinkt; ` +
+        `het onderwerp staat dus nog klaar voor de volgende run.\n\n` +
+        `Logs: Vercel → project assink → Logs, filter op /api/cron/blog-generator.`,
+    );
     return new Response(JSON.stringify({ ok: false, message: (err as Error).message }), { status: 500 });
   }
 };
