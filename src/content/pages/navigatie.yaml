@@ -68,7 +68,7 @@ sectoren:
   - label: Machinebouw
     slug: machinebouw
     idx: '1'
-  - label: Voedings- en verpakkingsindustrie
+  - label: Voedingsindustrie
     slug: plaatwerk/voedingsmiddelenindustrie
     idx: '2'
   - label: Elektrotechniek
@@ -161,7 +161,7 @@ en:
   sectoren:
   - label: Machine building
     idx: '1'
-  - label: Food & packaging industry
+  - label: Food industry
     idx: '2'
   - label: Electrical engineering
     idx: '3'
@@ -239,7 +239,7 @@ de:
   sectoren:
   - label: Maschinenbau
     idx: '1'
-  - label: Lebensmittel- & Verpackungsindustrie
+  - label: Lebensmittelindustrie
     idx: '2'
   - label: Elektrotechnik
     idx: '3'

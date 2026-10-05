@@ -1,18 +1,18 @@
-title: "Voedingsmiddelenindustrie"
+title: "Voedingsindustrie"
 slug: "plaatwerk/voedingsmiddelenindustrie"
 template: "service"
 group: "sector"
 order: 60
 kicker: "Sector"
-h1: "Hygiënisch RVS-plaatwerk voor de voedingsmiddelenindustrie"
-intro: "Hygiënisch, corrosiebestendig en reinigbaar plaatwerk in RVS voor de voedingsmiddelenindustrie — waar nauwkeurigheid en afwerking essentieel zijn."
+h1: "Hygiënisch RVS-plaatwerk voor de voedingsindustrie"
+intro: "Hygiënisch, corrosiebestendig en reinigbaar plaatwerk in RVS voor de voedingsindustrie — waar nauwkeurigheid en afwerking essentieel zijn."
 heroPhoto:
   subject: "RVS-onderdeel voor voedingsmiddelenmachine, hygiënisch afgewerkt"
   orient: "Liggend 16:10"
   crop: "Product centraal"
   comp: "Glad, gepassiveerd RVS"
 body:
-  - "Voor de voedingsmiddelenindustrie leveren wij RVS-plaatwerk en constructies met gladde, reinigbare oppervlakken en zorgvuldig afgewerkte lasnaden. Laserlassen en passiveren dragen bij aan de hygiëne en levensduur."
+  - "Voor de voedingsindustrie leveren wij RVS-plaatwerk en constructies met gladde, reinigbare oppervlakken en zorgvuldig afgewerkte lasnaden. Laserlassen en passiveren dragen bij aan de hygiëne en levensduur."
 materials: ["RVS 304", "RVS 316"]
 process:
   - { step: "Ontwerp", desc: "Hygiënisch, reinigbaar detailleren." }
@@ -26,7 +26,7 @@ related:
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
 seo:
   title: Hygiënisch RVS-plaatwerk voor food
-  description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsmiddelenindustrie: corrosiebestendig en representatief afgewerkt."
+  description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsindustrie: corrosiebestendig en representatief afgewerkt."
 translated: ["nl"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
