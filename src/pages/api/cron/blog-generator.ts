@@ -187,6 +187,37 @@ async function sendMail(subject: string, text: string) {
 }
 
 /**
+ * Bepaalt of er vandaag een concept geschreven moet worden.
+ *
+ * De cron draait elke ochtend, maar schrijft hooguit ongeveer één artikel per
+ * week. Reden: met één vaste kans per week — de oude opzet — levert een gemiste
+ * run meteen een week zonder artikel op, en dat merk je pas als je eraan denkt.
+ * Nu is een gemiste maandag een dag vertraging in plaats van een week.
+ *
+ * De regel: er moeten minstens zes dagen tussen zitten, én het is maandag of
+ * het is al acht dagen geleden. Daarmee:
+ *  - draait hij normaal gesproken op maandag;
+ *  - haalt hij een gemiste maandag de dinsdag erna in;
+ *  - pakt hij na zo'n inhaalslag vanzelf de maandag weer op (zes dagen later);
+ *  - doet hij niets als er die week al een artikel is, ook niet wanneer iemand
+ *    de cron handmatig nog eens aanzet.
+ *
+ * De peildatum is de nieuwste `date` uit de kennisbank, concepten meegerekend:
+ * een concept dat nog niet gepubliceerd is, telt als "er ligt al iets klaar".
+ */
+function aanDeBeurt(laatsteDatum: string | null, vandaag: Date): { ja: boolean; reden: string } {
+  if (!laatsteDatum) return { ja: true, reden: "nog geen enkel artikel" };
+  const verschil = Date.parse(`${vandaag.toISOString().slice(0, 10)}T00:00:00Z`) -
+    Date.parse(`${laatsteDatum}T00:00:00Z`);
+  if (Number.isNaN(verschil)) return { ja: true, reden: `datum "${laatsteDatum}" onleesbaar` };
+  const dagen = Math.floor(verschil / 86_400_000);
+  const maandag = vandaag.getUTCDay() === 1;
+  if (dagen < 6) return { ja: false, reden: `laatste artikel is ${dagen} dag(en) oud` };
+  if (!maandag && dagen < 8) return { ja: false, reden: `${dagen} dagen oud, maar het is geen maandag` };
+  return { ja: true, reden: maandag ? `maandag, ${dagen} dagen sinds het laatste artikel` : `inhaalslag, ${dagen} dagen sinds het laatste artikel` };
+}
+
+/**
  * Mailt een storingsmelding, maar laat een mislukte mail nooit de
  * oorspronkelijke fout overschrijven: dan zou je in de logs de verkeerde
  * oorzaak zien staan.
@@ -222,6 +253,24 @@ export const GET: APIRoute = async ({ request }) => {
   }
 
   try {
+    // ── Is er vandaag iets te doen? ────────────────────────────────────────
+    // Dit staat vóór alles wat geld of tijd kost. Zes van de zeven dagen stopt
+    // de functie hier binnen een paar milliseconden, zonder API-aanroep.
+    const alleArtikelen = await getCollection("articles");
+    const laatsteDatum = alleArtikelen
+      .map((a) => a.data.date)
+      .filter((d): d is string => typeof d === "string" && d.length > 0)
+      .sort()
+      .pop() ?? null;
+    const forceren = new URL(request.url).searchParams.get("force") === "1";
+    const beurt = aanDeBeurt(laatsteDatum, new Date());
+    if (!beurt.ja && !forceren) {
+      return new Response(
+        JSON.stringify({ ok: true, overgeslagen: true, message: `Niet aan de beurt: ${beurt.reden}.` }),
+        { status: 200 },
+      );
+    }
+
     // Sorteren op het volgorde-veld: het onderwerp met het laagste nummer gaat
     // als eerste de deur uit. Zonder deze sortering bepaalt de bestandsnaam de
     // planning, en die volgt in Keystatic de titel.

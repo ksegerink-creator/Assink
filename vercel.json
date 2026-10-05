@@ -227,7 +227,7 @@
   "crons": [
     {
       "path": "/api/cron/blog-generator",
-      "schedule": "0 7 * * 1"
+      "schedule": "0 7 * * *"
     }
   ]
 }

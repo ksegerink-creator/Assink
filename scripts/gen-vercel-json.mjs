@@ -91,7 +91,11 @@ const config = {
   // src/pages/api/cron/blog-generator.ts). Elke maandag 07:00 UTC. Vercel
   // stuurt hierbij automatisch "Authorization: Bearer $CRON_SECRET" mee,
   // mits die omgevingsvariabele is ingesteld — zie DEPLOY.md.
-  crons: [{ path: "/api/cron/blog-generator", schedule: "0 7 * * 1" }],
+  // Dagelijks, niet wekelijks. De route bepaalt zelf of hij aan de beurt is
+  // (zie aanDeBeurt() in src/pages/api/cron/blog-generator.ts) en stopt zes van
+  // de zeven ochtenden meteen. Met één vaste kans per week leverde een gemiste
+  // run een week zonder artikel op; nu is dat een dag.
+  crons: [{ path: "/api/cron/blog-generator", schedule: "0 7 * * *" }],
 };
 
 writeFileSync("vercel.json", JSON.stringify(config, null, 2) + "\n");
