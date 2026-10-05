@@ -17,8 +17,6 @@ import asLastafel from "../assets/photos/as-lastafel.jpg";          // lasser aa
 import asLasafdeling from "../assets/photos/as-lasafdeling.jpg";    // lasafdeling breed, twee werkstations (M59A1476)
 import asKantbank from "../assets/photos/as-kantbank.jpg";          // operator aan de kantbank (2T8A9370)
 import asKantenDetail from "../assets/photos/as-kanten-detail.jpg"; // kantbankgereedschap met plaatdeel (M59A1528)
-import asTruLaser from "../assets/uploads/machines/trulaser-3040/foto.jpg";      // Trumpf TruLaser 3040, vlakbedlaser
-import asTruLaserTube from "../assets/uploads/machines/trulaser-tube-3000/foto.webp"; // Trumpf TruLaser Tube 3000, buislaser
 import asBesturing from "../assets/photos/as-besturing.jpg";        // machinebesturing / werkvoorbereiding (DSC_4762)
 import asVakman from "../assets/photos/as-vakman.jpg";              // vakman met stalen profiel, lachend (M59A1503)
 import asPortret from "../assets/photos/as-portret.jpg";            // medewerker in A&S-polo, portret (M59A1482)
@@ -28,6 +26,34 @@ import asHal from "../assets/photos/as-hal.jpg";                    // hal met v
 import asPand from "../assets/photos/as-pand.jpg";                  // bedrijfspand met naam op gevel (2022)
 import asStralen from "../assets/photos/as-stralen.jpg";            // straalcabine met medewerker (2T8A9554)
 import asBoren from "../assets/photos/as-boren.jpg";                // boren/bewerken (M59A1370)
+
+/**
+ * Machinefoto's komen uit het CMS, niet uit de vaste fotobank, en kunnen daar
+ * vervangen worden. Keystatic bewaart het nieuwe bestand onder de extensie van
+ * wat je uploadt: een vervangen .webp kan als .png terugkomen. Een vaste import
+ * op bestandsnaam breekt dan de hele build — dat gebeurde toen de foto van de
+ * buislaser werd vervangen en `foto.webp` niet meer bestond. We zoeken het
+ * beeld daarom op map, ongeacht het bestandstype.
+ */
+const UPLOADS = import.meta.glob<ImageMetadata>(
+  "/src/assets/uploads/**/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG}",
+  { eager: true, import: "default" },
+);
+
+function uploadFoto(map: string): ImageMetadata {
+  const prefix = `/src/assets/uploads/${map}/`;
+  const pad = Object.keys(UPLOADS).filter((k) => k.startsWith(prefix)).sort()[0];
+  if (!pad) {
+    throw new Error(
+      `Geen foto gevonden in src/assets/uploads/${map}/. ` +
+        "Is hij in het CMS verwijderd? Upload er een nieuwe of pas deze verwijzing aan.",
+    );
+  }
+  return UPLOADS[pad];
+}
+
+const asTruLaser = uploadFoto("machines/trulaser-3040");           // Trumpf TruLaser 3040, vlakbedlaser
+const asTruLaserTube = uploadFoto("machines/trulaser-tube-3000");  // Trumpf TruLaser Tube 3000, buislaser
 import asHistorie from "../assets/photos/as-historie.png";          // historisch beeld productiehal (archief)
 
 /** Sleutel → beeld. Elke fotopositie op de site verwijst hiernaar. */
