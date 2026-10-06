@@ -7,6 +7,14 @@ description: >-
 specs:
   - label: Type
     value: buislaser
+  - label: Ronde buis
+    value: tot ø 150 mm
+  - label: Vierkant en rechthoekig profiel
+    value: tot 120 × 120 mm
+  - label: Wanddikte staal
+    value: tot 6 mm
+  - label: Wanddikte RVS
+    value: tot 4 mm
   - label: Materialen
     value: staal · RVS · aluminium
 foto: /src/assets/uploads/machines/trulaser-tube-3000/foto.png
@@ -24,6 +32,14 @@ en:
   specs:
     - label: Type
       value: tube laser
+    - label: Round tube
+      value: up to ø 150 mm
+    - label: Square and rectangular profile
+      value: up to 120 × 120 mm
+    - label: Wall thickness, steel
+      value: up to 6 mm
+    - label: Wall thickness, stainless steel
+      value: up to 4 mm
     - label: Materials
       value: steel · stainless steel · aluminium
   photo:
@@ -37,6 +53,14 @@ de:
   specs:
     - label: Typ
       value: Rohrlaser
+    - label: Rundrohr
+      value: bis ø 150 mm
+    - label: Quadrat- und Rechteckprofil
+      value: bis 120 × 120 mm
+    - label: Wanddicke Stahl
+      value: bis 6 mm
+    - label: Wanddicke Edelstahl
+      value: bis 4 mm
     - label: Werkstoffe
       value: Stahl · Edelstahl · Aluminium
   photo:
