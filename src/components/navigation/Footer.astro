@@ -72,5 +72,8 @@ const year = 2026;
   .addr { display: block; padding: 4px 0; color: #9fb2c9; font-size: 14.5px; }
   .bottom { border-top: 1px solid rgba(255,255,255,.08); padding-block: 18px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #7f93ac; }
   @media (max-width: 860px) { .top { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 520px) { .top { grid-template-columns: 1fr; } }
+  /* Onder elkaar werd de footer 1228px hoog: anderhalf scherm marineblauw aan
+     het eind van elke pagina. Twee kolommen halveren dat. Pas onder 380px,
+     waar het e-mailadres niet meer naast een tweede kolom past, één kolom. */
+  @media (max-width: 380px) { .top { grid-template-columns: 1fr; } }
 </style>
