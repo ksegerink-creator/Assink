@@ -132,16 +132,22 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
    * ondergrond met donkere tekst. Op desktop staat het paneel naast de foto
    * en is de donkere helft juist de rust in de bladspiegel; daar verandert
    * niets.
+   *
+   * Belangrijk: hier staan tokens, geen vaste kleuren. Met een hardgecodeerde
+   * #fff kreeg een telefoon in donkere modus een wit vlak met de lichte
+   * tekstkleur van het donkere thema erop — contrast 1,12:1, onleesbaar. De
+   * tokens draaien per thema mee, dus in donkere modus wordt dit paneel juist
+   * donker en blijft de tekst licht.
    */
   @media (max-width: 860px) {
-    .xhero { background: #fff; }
+    .xhero { background: var(--surface); }
     .xhero__kicker { color: var(--steel); }
     .xhero__lead { color: var(--ink-2); }
     .xhero__panel :global(h1) { color: var(--ink); }
     .xhero__panel :global(p) { color: var(--ink-2); }
     .xhero__panel :global(a:not(.btn)) { color: var(--blue); }
     .xhero__panel :global(.btn.ghost) { color: var(--ink); border-color: var(--ink); }
-    .xhero__panel :global(.btn.ghost:hover) { background: var(--ink); color: #fff; }
+    .xhero__panel :global(.btn.ghost:hover) { background: var(--ink); color: var(--surface); }
     .xhero__panel :global(.info) { border-top-color: var(--ink); }
     .xhero__panel :global(.info > div) { color: var(--ink); border-bottom-color: var(--line); }
     .xhero__panel :global(.info .k) { color: var(--steel); }
