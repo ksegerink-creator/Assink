@@ -5,7 +5,11 @@ description: "Geschikt voor staal, RVS en aluminium. Hoge precisie, minimale tol
 specs:
   - { label: "Type", value: "2D-lasermachine" }
   - { label: "Laserbron", value: "fiberlaser, 4 kW" }
-  - { label: "Materialen", value: "staal · RVS · aluminium" }
+  - { label: "Maximale plaatmaat", value: "4000 × 2000 mm" }
+  - { label: "Plaatdikte staal", value: "0,5–25 mm" }
+  - { label: "Plaatdikte RVS", value: "0,5–20 mm" }
+  - { label: "Plaatdikte aluminium", value: "0,5–15 mm" }
+  - { label: "Plaatdikte gegalvaniseerd staal", value: "0,5–10 mm" }
   - { label: "Aandrijving", value: "lineaire aandrijvingen" }
 foto: /src/assets/uploads/machines/trulaser-3040/foto.jpg
 photo:
@@ -25,8 +29,16 @@ en:
     value: 2D laser machine
   - label: Laser source
     value: fiber laser, 4 kW
-  - label: Materials
-    value: steel · stainless steel · aluminium
+  - label: Maximum sheet size
+    value: 4000 × 2000 mm
+  - label: Sheet thickness, steel
+    value: 0.5–25 mm
+  - label: Sheet thickness, stainless steel
+    value: 0.5–20 mm
+  - label: Sheet thickness, aluminium
+    value: 0.5–15 mm
+  - label: Sheet thickness, galvanised steel
+    value: 0.5–10 mm
   - label: Drive
     value: linear drives
   photo:
@@ -43,8 +55,16 @@ de:
     value: 2D-Lasermaschine
   - label: Laserquelle
     value: Faserlaser, 4 kW
-  - label: Werkstoffe
-    value: Stahl · Edelstahl · Aluminium
+  - label: Maximale Tafelgröße
+    value: 4000 × 2000 mm
+  - label: Blechdicke Stahl
+    value: 0,5–25 mm
+  - label: Blechdicke Edelstahl
+    value: 0,5–20 mm
+  - label: Blechdicke Aluminium
+    value: 0,5–15 mm
+  - label: Blechdicke verzinkter Stahl
+    value: 0,5–10 mm
   - label: Antrieb
     value: Linearantriebe
   photo:
