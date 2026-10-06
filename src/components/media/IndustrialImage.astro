@@ -133,7 +133,9 @@ const altText = alt ?? placeholder;
   .ii__anno {
     position: absolute; left: 14px; top: 12px; z-index: 3;
     font-family: var(--f-mono); font-size: 10px; letter-spacing: .09em; text-transform: uppercase;
-    color: var(--navy); background: color-mix(in srgb, var(--bg) 85%, transparent);
+    /* --ink draait per thema mee, --navy niet: met var(--navy) stond hier in
+       donkere modus donkerblauwe tekst op een donkere chip, 1,23:1. */
+    color: var(--ink); background: color-mix(in srgb, var(--bg) 85%, transparent);
     border-left: 2px solid var(--blue-2); padding: 4px 8px;
   }
   .ii__anno--ph { background: transparent; }

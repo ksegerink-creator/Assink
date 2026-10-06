@@ -64,7 +64,9 @@ h1, h2, h3, h4 {
 .eyebrow::before { content: ""; width: 26px; height: 1px; background: var(--blue); }
 .skip {
   position: absolute; left: -999px; top: 0;
-  background: var(--blue); color: #fff; padding: 10px 14px; z-index: 300;
+  /* Was wit op var(--blue): 2,67:1. Deze twee tokens draaien per thema mee en
+     houden elkaar altijd uit elkaar: 13,4:1 licht, 15,1:1 donker. */
+  background: var(--ink); color: var(--surface); padding: 10px 14px; z-index: 300;
 }
 .skip:focus { left: 8px; top: 8px; }
 

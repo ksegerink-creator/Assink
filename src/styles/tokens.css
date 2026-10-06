@@ -19,7 +19,7 @@
      WCAG 2.2 AA voor gewone tekst vraagt. Het token staat op 46 plaatsen
      (tabelbijschriften, rij-nummers, .info-labels), dus deze 2% scheelt
      overal tegelijk en is met het blote oog niet te zien. */
-  --steel: #6A7889;
+  --steel: #627081;
 
   /* lijnen */
   --line: #C4D4E0;
@@ -61,7 +61,7 @@
     --plate: #0F3050;
     --ink: #EAF3F9;
     --ink-2: #AFC6DB;
-    --steel: #7F93A8;
+    --steel: #8094A9;
     --line: #1F4266;
     --line-2: #16324E;
     --navy: #051F3D;
@@ -82,7 +82,7 @@
   --plate: #0F3050;
   --ink: #EAF3F9;
   --ink-2: #AFC6DB;
-  --steel: #7F93A8;
+  --steel: #8094A9;
   --line: #1F4266;
   --line-2: #16324E;
   --navy: #051F3D;
@@ -102,7 +102,7 @@
   --plate: #DFEEF4;
   --ink: #062E5F;
   --ink-2: #35577F;
-  --steel: #6A7889;
+  --steel: #627081;
   --line: #C4D4E0;
   --line-2: #DFE9F0;
   --navy: #062E5F;
