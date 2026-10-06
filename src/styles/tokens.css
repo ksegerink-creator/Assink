@@ -52,27 +52,18 @@
   --head-h: 68px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #061627;
-    --surface: #0A2440;
-    --surface-2: #0E2C4C;
-    --paper: #081D33;
-    --plate: #0F3050;
-    --ink: #EAF3F9;
-    --ink-2: #AFC6DB;
-    --steel: #8094A9;
-    --line: #1F4266;
-    --line-2: #16324E;
-    --navy: #051F3D;
-    --blue: #37AAD4;
-    --blue-2: #5FBEE0;
-    --sky: #5FBEE0;
-    --pale: #16436B;
-    --sky-bg: #0D2A47;
-    --btn-ink: #051F3D;
-  }
-}
+/*
+ * Het donkere thema volgde de systeeminstelling van de bezoeker. Daardoor was
+ * de site op een telefoon in donkere modus voor 90 tot 97 procent donker, en
+ * dat is niet hoe hij ontworpen is: navy op wit. Er was ook nooit een
+ * schakelaar waarmee iemand dit kon kiezen of terugzetten, en het thema is
+ * nooit nagekeken — er stond tekst in van 1,23:1 en 2,67:1, in de praktijk
+ * onzichtbaar.
+ *
+ * Het blok dat prefers-color-scheme volgde is daarom weg. De regels hieronder
+ * voor [data-theme] blijven staan: zodra er ooit een bewuste schakelaar komt,
+ * werkt die meteen.
+ */
 
 :root[data-theme="dark"] {
   --bg: #061627;

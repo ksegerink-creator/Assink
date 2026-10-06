@@ -245,7 +245,27 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
        egale blauwe vlakte. De kop staat op een telefoon toch onder de foto,
        dus zo zwaar hoeft de sluier niet — hier blijft de hal zichtbaar. */
     .hero__scrim { background: linear-gradient(rgba(4,26,53,.10), rgba(4,26,53,.62)); }
-    .hero__inner { margin-top: -64px; padding-top: 0; }
+    /*
+     * Zelfde behandeling als de dienstpagina's: op een telefoon staat het
+     * tekstvlak niet naast maar onder de foto, en vulde het als marineblauw
+     * vlak het halve scherm. Hier draait het mee met de thematokens.
+     *
+     * De marge van -64px trok de tekst over de onderkant van de foto heen.
+     * Dat kon zolang de tekst wit was; op een licht vlak zou de kicker op de
+     * foto belanden. De tekst begint nu netjes onder het beeld.
+     */
+    .hero { background: var(--surface); }
+    .hero__inner { margin-top: 0; padding-top: 28px; }
+    .hero__kicker { color: var(--steel); }
+    .hero h1 { color: var(--ink); }
+    .hero .dot { color: var(--blue); }
+    .hero__copy { color: var(--ink-2); }
+    .hero__more { color: var(--ink); border-bottom-color: var(--line); }
+    .hero__more:hover { color: var(--blue); border-bottom-color: var(--blue); }
+    /* De rij diensten onder de hero stond in bleekblauw op marineblauw; op
+       het lichte vlak was dat 1,62:1. */
+    .hero__meta { color: var(--ink-2); border-top-color: var(--line); }
+    .hero__meta span:not(:last-child)::after { color: var(--steel); }
     .hform { max-width: none; }
   }
 
