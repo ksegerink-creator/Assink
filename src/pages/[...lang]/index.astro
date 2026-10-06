@@ -234,6 +234,11 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
     .hform { max-width: 520px; }
   }
   @media (max-width: 700px) {
+    /* "CONSTRUCTIEF" is in kapitalen 340px breed; op een 390px-telefoon blijft
+       334px over. Op 44px brak het woord middenin en viel de F op een eigen
+       regel. De kop schaalt hier mee met het scherm tot hij weer op één regel
+       past: 34px op 320px, 41px op 390px, en vanaf 419px weer de volle 44px. */
+    .hero h1 { font-size: clamp(33px, 10.5vw, 44px); }
     .hero__media { position: relative; aspect-ratio: 4/3; }
     .hero__media :global(.ii) { position: absolute; inset: 0; width: 100%; aspect-ratio: auto !important; }
     .hero__scrim { background: linear-gradient(rgba(4,26,53,.15), rgba(4,26,53,.96)); }
