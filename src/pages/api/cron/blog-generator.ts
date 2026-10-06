@@ -36,6 +36,9 @@ const VERIFIED_FACTS = `
   voor aluminium en RVS).
 - Plaatdikte bij lasersnijden (bevestigd door productie, 19 augustus 2026): staal
   0,5-25 mm, RVS 0,5-20 mm, aluminium 0,5-15 mm, gegalvaniseerd staal 0,5-10 mm.
+  De 25 mm in staal is hoger dan de 22 mm die Trumpf voor een standaard 4 kW-machine
+  opgeeft, omdat onze 3040 het dikkeplaatsnijpakket heeft (bevestigd 6 oktober 2026).
+  Corrigeer die 25 mm dus niet naar beneden.
 - Nabehandeling van RVS, in deze volgorde: ontbramen, waar nodig glasparelstralen,
   en na het lassen passiveren. Stralen haalt aanloopkleuren en verontreiniging weg;
   passiveren is de stap die de beschermende oxidelaag herstelt. Noem bij RVS en
@@ -52,8 +55,10 @@ const VERIFIED_FACTS = `
   4000 x 2000 mm.
 - Buislaser (bevestigd door productie, 1 oktober 2026): rond tot diameter 150 mm,
   vierkant en rechthoekig tot 120 x 120 mm, wanddikte tot 6 mm in staal en tot
-  4 mm in RVS. Alleen staal, RVS en aluminium: messing en koper snijden wij NIET
-  op de buislaser. Afwijkende afmetingen gaan via de werkvoorbereiding.
+  4 mm in RVS. Maximale buislengte 6500 mm; het is een fiberlaser met een
+  LoadMaster Tube van 6,5 m (bevestigd 6 oktober 2026). Alleen staal, RVS en
+  aluminium: messing en koper snijden wij NIET op de buislaser. Afwijkende
+  afmetingen gaan via de werkvoorbereiding.
 - Kantwerk: toleranties volgens ISO 2768; noem geen tolerantie in mm.
 - Wij zeggen "kanten" en "kantbank", niet "zetten", "zetwerk" of "kantpers".
 - Lasmethoden in huis: TIG, MIG, MAG en laserlassen. MIG met inert gas voor
@@ -62,7 +67,6 @@ const VERIFIED_FACTS = `
   Schrijf nooit "een tekening of 3D-model" — wij willen allebei.
 - Puntlassen bieden wij aan (bevestigd door productie, 1 oktober 2026).
 - Wij maken GEEN ATEX-gecertificeerde behuizingen; noem ATEX nooit.
-- Nog NIET vastgesteld, dus nooit noemen: de maximale buislengte op de buislaser.
 `.trim();
 
 const SYSTEM_PROMPT = `

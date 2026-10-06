@@ -7,6 +7,8 @@ description: >-
 specs:
   - label: Type
     value: buislaser
+  - label: Laserbron
+    value: fiberlaser
   - label: Ronde buis
     value: tot ø 150 mm
   - label: Vierkant en rechthoekig profiel
@@ -15,6 +17,8 @@ specs:
     value: tot 6 mm
   - label: Wanddikte RVS
     value: tot 4 mm
+  - label: Maximale buislengte
+    value: tot 6500 mm
   - label: Materialen
     value: staal · RVS · aluminium
 foto: /src/assets/uploads/machines/trulaser-tube-3000/foto.png
@@ -32,6 +36,8 @@ en:
   specs:
     - label: Type
       value: tube laser
+    - label: Laser source
+      value: fiber laser
     - label: Round tube
       value: up to ø 150 mm
     - label: Square and rectangular profile
@@ -40,6 +46,8 @@ en:
       value: up to 6 mm
     - label: Wall thickness, stainless steel
       value: up to 4 mm
+    - label: Maximum tube length
+      value: up to 6500 mm
     - label: Materials
       value: steel · stainless steel · aluminium
   photo:
@@ -53,6 +61,8 @@ de:
   specs:
     - label: Typ
       value: Rohrlaser
+    - label: Laserquelle
+      value: Faserlaser
     - label: Rundrohr
       value: bis ø 150 mm
     - label: Quadrat- und Rechteckprofil
@@ -61,6 +71,8 @@ de:
       value: bis 6 mm
     - label: Wanddicke Edelstahl
       value: bis 4 mm
+    - label: Maximale Rohrlänge
+      value: bis 6500 mm
     - label: Werkstoffe
       value: Stahl · Edelstahl · Aluminium
   photo:

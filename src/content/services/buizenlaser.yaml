@@ -34,7 +34,7 @@ body:
 - 'Wat wij nodig hebben voor een beoordeling: een PDF-tekening en een 3D STEP-bestand van het profiel, de profielsoort
   en -maat, het materiaal, de lengtes en het aantal stuks. Ronde buis snijden wij tot ø 150 mm, vierkante
   en rechthoekige profielen tot 120 × 120 mm; de wanddikte gaat tot 6 mm in staal en tot 4 mm in RVS.
-  Valt uw profiel daarbuiten, leg het dan voor aan onze werkvoorbereiding. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
+  Buis en profiel verwerken wij tot een lengte van 6500 mm. Valt uw profiel daarbuiten, leg het dan voor aan onze werkvoorbereiding. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
   we meteen naar de lasvolgorde.'
 materials:
 - Staal
@@ -52,12 +52,16 @@ specs:
   value: Trumpf TruLaser Tube 3000
 - label: Type
   value: buislasersnijsysteem
+- label: Laserbron
+  value: fiberlaser
 - label: Materialen
   value: staal, RVS, aluminium
 - label: Profielmaten
   value: rond tot ø 150 mm · vierkant tot 120 × 120 mm
 - label: Wanddikte
   value: staal tot 6 mm · RVS tot 4 mm
+- label: Maximale buislengte
+  value: tot 6500 mm
 applications:
 - Machinebouw
 - Constructies
@@ -66,8 +70,8 @@ applications:
 faq:
 - vraag: Welke profielmaten en wanddiktes kunnen jullie snijden?
   antwoord: 'Ronde buis tot ø 150 mm en vierkante of rechthoekige profielen tot 120 × 120 mm. De wanddikte
-    gaat tot 6 mm in staal en tot 4 mm in RVS. De haalbare lengte hangt af van het profiel en de opspanning;
-    die beoordelen wij per aanvraag. Valt uw profiel buiten deze maten, neem dan contact op met onze werkvoorbereiding.'
+    gaat tot 6 mm in staal en tot 4 mm in RVS. Buis en profiel verwerken wij tot een lengte van 6500 mm.
+    Valt uw profiel buiten deze maten, neem dan contact op met onze werkvoorbereiding.'
 - vraag: Wat levert buislasersnijden op ten opzichte van zagen en boren?
   antwoord: Vooral pasvorm. Contour, gaten en verbindingsvorm komen in één opspanning uit de machine,
     dus de afwijkingen van afkorten, boren en passend slijpen stapelen zich niet op. Delen vallen in elkaar,
@@ -131,7 +135,7 @@ en:
   - 'What we need to assess a request: a PDF drawing and a 3D STEP file of the profile, the profile type
     and size, the material, the lengths and the quantity. We cut round tube up to ø 150 mm and square or
     rectangular profiles up to 120 × 120 mm; wall thickness goes up to 6 mm in steel and up to 4 mm in stainless
-    steel. If your profile falls outside that, put it to our production engineering. If it concerns a complete
+    steel. We process tube and profile up to a length of 6500 mm. If your profile falls outside that, put it to our production engineering. If it concerns a complete
     structure, send the assembly too and we will look at the welding sequence at the same time.'
   materials:
   - Steel
@@ -149,12 +153,16 @@ en:
     value: Trumpf TruLaser Tube 3000
   - label: Type
     value: tube laser cutting system
+  - label: Laser source
+    value: fiber laser
   - label: Materials
     value: steel, stainless steel, aluminium
   - label: Profile sizes
     value: round up to ø 150 mm · square up to 120 × 120 mm
   - label: Wall thickness
     value: steel up to 6 mm · stainless steel up to 4 mm
+  - label: Maximum tube length
+    value: up to 6500 mm
   applications:
   - Machine building
   - Welded constructions
@@ -163,8 +171,8 @@ en:
   faq:
   - vraag: Which profile sizes and wall thicknesses can you cut?
     antwoord: Round tube up to ø 150 mm and square or rectangular profiles up to 120 × 120 mm. Wall thickness
-      goes up to 6 mm in steel and up to 4 mm in stainless steel. The workable length depends on the profile
-      and the set-up; we assess that per request. If your profile falls outside these dimensions, contact
+      goes up to 6 mm in steel and up to 4 mm in stainless steel. We process tube and profile up to a length
+      of 6500 mm. If your profile falls outside these dimensions, contact
       our production engineering.
   - vraag: What does tube laser cutting gain over sawing and drilling?
     antwoord: Mainly fit. Contour, holes and joint shape come off the machine in a single set-up, so the
@@ -227,6 +235,7 @@ de:
   - 'Was wir für eine Beurteilung benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart
     und -größe, den Werkstoff, die Längen und die Stückzahl. Rundrohr schneiden wir bis ø 150 mm, quadratische
     und rechteckige Profile bis 120 × 120 mm; die Wandstärke geht bis 6 mm in Stahl und bis 4 mm in Edelstahl.
+    Rohre und Profile verarbeiten wir bis zu einer Länge von 6500 mm.
     Liegt Ihr Profil außerhalb dieser Maße, legen Sie es unserer Arbeitsvorbereitung vor. Geht es um eine
     komplette Konstruktion, senden Sie auch die Baugruppe mit, dann prüfen wir gleich die Schweißfolge.'
   materials:
@@ -245,12 +254,16 @@ de:
     value: Trumpf TruLaser Tube 3000
   - label: Typ
     value: Rohrlaserschneidsystem
+  - label: Laserquelle
+    value: Faserlaser
   - label: Materialien
     value: Stahl, Edelstahl, Aluminium
   - label: Profilmaße
     value: rund bis ø 150 mm · quadratisch bis 120 × 120 mm
   - label: Wandstärke
     value: Stahl bis 6 mm · Edelstahl bis 4 mm
+  - label: Maximale Rohrlänge
+    value: bis 6500 mm
   applications:
   - Maschinenbau
   - Konstruktionen
@@ -259,8 +272,8 @@ de:
   faq:
   - vraag: Welche Profilmaße und Wandstärken können Sie schneiden?
     antwoord: Rundrohr bis ø 150 mm und quadratische oder rechteckige Profile bis 120 × 120 mm. Die Wandstärke
-      geht bis 6 mm in Stahl und bis 4 mm in Edelstahl. Die machbare Länge hängt vom Profil und von der
-      Aufspannung ab; das beurteilen wir je Anfrage. Liegt Ihr Profil außerhalb dieser Maße, wenden Sie
+      geht bis 6 mm in Stahl und bis 4 mm in Edelstahl. Rohre und Profile verarbeiten wir bis zu einer
+      Länge von 6500 mm. Liegt Ihr Profil außerhalb dieser Maße, wenden Sie
       sich an unsere Arbeitsvorbereitung.
   - vraag: Was bringt Rohrlaserschneiden gegenüber Sägen und Bohren?
     antwoord: Vor allem Passgenauigkeit. Kontur, Bohrungen und Verbindungsform kommen in einer Aufspannung
