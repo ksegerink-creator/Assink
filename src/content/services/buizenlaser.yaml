@@ -51,7 +51,7 @@ specs:
 - label: Machine
   value: Trumpf TruLaser Tube 3000
 - label: Type
-  value: buislasersnijsysteem
+  value: buislaser
 - label: Laserbron
   value: fiberlaser
 - label: Materialen
@@ -152,7 +152,7 @@ en:
   - label: Machine
     value: Trumpf TruLaser Tube 3000
   - label: Type
-    value: tube laser cutting system
+    value: tube laser
   - label: Laser source
     value: fiber laser
   - label: Materials
@@ -253,7 +253,7 @@ de:
   - label: Maschine
     value: Trumpf TruLaser Tube 3000
   - label: Typ
-    value: Rohrlaserschneidsystem
+    value: Rohrlaser
   - label: Laserquelle
     value: Faserlaser
   - label: Materialien

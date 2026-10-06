@@ -148,7 +148,12 @@ const jaarLabel = jaar || (nummer ? "—" : null);
   .ap__frame:hover .ap__zoom,
   .ap__zoom:focus-visible { opacity: 1; background: var(--blue); }
   .ap__zoom-ico { font-size: 13px; line-height: 1; }
-  @media (max-width: 560px) { .ap__zoom-txt { display: none; } }
+  /* Zonder label bleef er een chip van 33x27 over; te klein om met een duim te
+     raken. De knop houdt daarom zijn volle tikoppervlak. */
+  @media (max-width: 560px) {
+    .ap__zoom-txt { display: none; }
+    .ap__zoom { min-width: 44px; min-height: 44px; justify-content: center; padding: 0; }
+  }
 
   /* Bijschrift ------------------------------------------------- */
   .ap__cap {
