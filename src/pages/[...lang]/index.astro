@@ -241,7 +241,10 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
     .hero h1 { font-size: clamp(33px, 10.5vw, 44px); }
     .hero__media { position: relative; aspect-ratio: 4/3; }
     .hero__media :global(.ii) { position: absolute; inset: 0; width: 100%; aspect-ratio: auto !important; }
-    .hero__scrim { background: linear-gradient(rgba(4,26,53,.15), rgba(4,26,53,.96)); }
+    /* .96 was vrijwel ondoorzichtig: onder de foto liep het beeld over in een
+       egale blauwe vlakte. De kop staat op een telefoon toch onder de foto,
+       dus zo zwaar hoeft de sluier niet — hier blijft de hal zichtbaar. */
+    .hero__scrim { background: linear-gradient(rgba(4,26,53,.10), rgba(4,26,53,.62)); }
     .hero__inner { margin-top: -64px; padding-top: 0; }
     .hform { max-width: none; }
   }

@@ -15,7 +15,11 @@
   /* ink + tekst — diep navy voor typografie */
   --ink: #062E5F;
   --ink-2: #35577F;
-  --steel: #6C7A8C;
+  /* 4,51:1 op wit. Was #6C7A8C en daarmee 4,37:1 — net onder de 4,5 die
+     WCAG 2.2 AA voor gewone tekst vraagt. Het token staat op 46 plaatsen
+     (tabelbijschriften, rij-nummers, .info-labels), dus deze 2% scheelt
+     overal tegelijk en is met het blote oog niet te zien. */
+  --steel: #6A7889;
 
   /* lijnen */
   --line: #C4D4E0;
@@ -98,7 +102,7 @@
   --plate: #DFEEF4;
   --ink: #062E5F;
   --ink-2: #35577F;
-  --steel: #6C7A8C;
+  --steel: #6A7889;
   --line: #C4D4E0;
   --line-2: #DFE9F0;
   --navy: #062E5F;
