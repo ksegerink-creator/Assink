@@ -20,6 +20,12 @@
      (tabelbijschriften, rij-nummers, .info-labels), dus deze 2% scheelt
      overal tegelijk en is met het blote oog niet te zien. */
   --steel: #627081;
+  /* Uitgeschakelde bedienelementen. 3,0:1 op wit: duidelijk zwakker dan
+     --steel (5,1:1) en dus herkenbaar als uitgeschakeld, maar wel te zien.
+     Stond eerder op --line (#C4D4E0) en haalde 1,5:1 — in de praktijk een
+     leeg vakje. WCAG zondert uitgeschakelde elementen uit, dus dit is geen
+     eis maar een leesbaarheidskeuze. */
+  --steel-zwak: #8797A3;
 
   /* lijnen */
   --line: #C4D4E0;
@@ -74,6 +80,7 @@
   --ink: #EAF3F9;
   --ink-2: #AFC6DB;
   --steel: #8094A9;
+  --steel-zwak: #4D7094;
   --line: #1F4266;
   --line-2: #16324E;
   --navy: #051F3D;
@@ -94,6 +101,7 @@
   --ink: #062E5F;
   --ink-2: #35577F;
   --steel: #627081;
+  --steel-zwak: #8797A3;
   --line: #C4D4E0;
   --line-2: #DFE9F0;
   --navy: #062E5F;
