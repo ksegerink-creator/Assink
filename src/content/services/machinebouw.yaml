@@ -2,8 +2,8 @@ title: Machinebouw
 slug: machinebouw
 template: service
 group: samenstellen
-order: 30
-kicker: Sector 4.3
+order: 53
+inFooter: true
 h1: Machinebouw op maat
 intro: Of u nu een complete machineoplossing zoekt of machinebouw op maat nodig heeft voor losse bouwgroepen
   — bij Assink & Schipholt bent u verzekerd van bewezen vakmanschap en technische expertise.
@@ -97,7 +97,6 @@ translated:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Machine building
-  kicker: Sector 4.3
   h1: Custom work in machine building
   intro: Whether you are looking for a complete machine solution or need custom assemblies — at Assink &
     Schipholt you are assured of proven craftsmanship and technical expertise.
@@ -183,7 +182,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Maschinenbau
-  kicker: Sektor 4.3
   h1: Maßarbeit im Maschinenbau
   intro: Ob Sie eine komplette Maschinenlösung suchen oder maßgeschneiderte Baugruppen benötigen — bei Assink
     & Schipholt können Sie auf bewährte Handwerkskunst und technisches Know-how zählen.

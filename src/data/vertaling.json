@@ -9,8 +9,10 @@
     "order",
     "template",
     "group",
+    "groep",
     "open",
-    "translated"
+    "translated",
+    "inFooter"
   ],
   "fotoVeldPatroon": "^(foto|midFoto|.*Foto[0-9]*)$"
 }

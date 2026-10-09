@@ -3,7 +3,7 @@ slug: buizenlaser
 template: service
 group: snijden
 order: 32
-kicker: Snijden 2.2
+inFooter: true
 h1: Buislasersnijden
 intro: Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en
   hoge nauwkeurigheid.
@@ -108,7 +108,6 @@ translated:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Tube laser cutting
-  kicker: Cutting 2.2
   h1: Tube laser cutting
   intro: Precision tube laser cutting for dimensionally stable tubes and profiles, with advanced CNC control
     and high accuracy.
@@ -206,7 +205,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Rohrlaserschneiden
-  kicker: Schneiden 2.2
   h1: Rohrlaserschneiden
   intro: Präzises Rohrlaserschneiden für maßhaltige Rohre und Profile, mit moderner CNC-Steuerung und hoher
     Genauigkeit.

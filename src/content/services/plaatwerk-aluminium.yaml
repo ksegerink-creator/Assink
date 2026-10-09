@@ -1,9 +1,9 @@
 title: Aluminium plaatwerk
+menuLabel: "Aluminium"
 slug: plaatwerk/aluminium
 template: service
 group: plaatwerk
-order: 22
-kicker: Plaatwerk 1.2
+order: 23
 h1: Aluminium plaatwerk
 intro: Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor machinebouw
   en behuizingen.
@@ -85,8 +85,8 @@ faq:
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
+  menuLabel: "Aluminium"
   title: Aluminium sheet metal
-  kicker: Sheet metal work 1.2
   h1: Aluminium sheet metal
   intro: Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building
     and enclosures.
@@ -159,8 +159,8 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
+  menuLabel: "Aluminium"
   title: Aluminium-Blechbearbeitung
-  kicker: Blechbearbeitung 1.2
   h1: Aluminium-Blechbearbeitung
   intro: Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und
     Gehäuse spezialisiert.

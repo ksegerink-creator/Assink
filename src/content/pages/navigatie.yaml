@@ -1,266 +1,37 @@
+# De kolommen van het menu "Mogelijkheden".
+#
+# Alleen de kopjes staan hier. Welke pagina's eronder komen te staan, bepaalt de
+# dienstpagina zelf: het veld "Menugroep" kiest de kolom, "Volgorde" de plek
+# daarbinnen en "Menunaam" de korte naam. Het sectorenmenu komt uit de
+# collectie "Sectoren", en de footer uit het vinkje "In de footer" op de
+# dienstpagina's.
 megaKolommen:
-  - titel: Plaatwerk
-    items:
-      - label: Plaatwerk (overzicht)
-        slug: plaatwerk
-        idx: '1.0'
-      - label: Staal
-        slug: plaatwerk/staal
-        idx: '1.1'
-      - label: RVS
-        slug: plaatwerk/rvs
-        idx: '1.2'
-      - label: Aluminium
-        slug: plaatwerk/aluminium
-        idx: '1.3'
-      - label: Messing
-        slug: plaatwerk/messing
-        idx: '1.4'
-      - label: Kanten
-        slug: plaatwerk/zetten
-        idx: '1.5'
-      - label: Pers- & trekmoeren
-        slug: plaatwerk/persmoeren-trekmoeren
-        idx: '1.6'
-      - label: Precisieplaatwerk
-        slug: plaatwerk/precisieplaatwerk
-        idx: '1.7'
-  - titel: Snijden
-    items:
-      - label: Lasersnijden
-        slug: plaatwerk/lasersnijden
-        idx: '2.1'
-      - label: Buislasersnijden
-        slug: buizenlaser
-        idx: '2.2'
-      - label: Verspaning
-        slug: verspaning
-        idx: '2.3'
-  - titel: Lastechniek
-    items:
-      - label: Lassen
-        slug: plaatwerk/lassen
-        idx: '3.1'
-      - label: Laserlassen
-        slug: plaatwerk/laserlassen
-        idx: '3.2'
-      - label: (Cobot)robotlassen
-        slug: plaatwerk/robotlassen
-        idx: '3.3'
-      - label: Aluminium lassen
-        slug: aluminium-lassen
-        idx: '3.4'
-  - titel: Samenstellen
-    items:
-      - label: Constructies
-        slug: constructies
-        idx: '4.1'
-      - label: RVS-constructies
-        slug: rvs-constructies
-        idx: '4.2'
-      - label: Machinebouw
-        slug: machinebouw
-        idx: '4.3'
-      - label: Industriële behuizing
-        slug: industriele-behuizing
-        idx: '4.4'
-sectoren:
-  - label: Machinebouw
-    slug: machinebouw
-    idx: '1'
-  - label: Voedingsindustrie
-    slug: plaatwerk/voedingsmiddelenindustrie
-    idx: '2'
-  - label: Elektrotechniek
-    slug: elektrotechniek
-    idx: '3'
-  - label: Apparatenbouw
-    slug: apparatenbouw
-    idx: '4'
-  - label: Offshore
-    slug: offshore
-    idx: '5'
-  - label: Infra
-    slug: infra
-    idx: '6'
-  - label: Meet- en regeltechniek
-    slug: meet-en-regeltechniek
-    idx: '7'
-  - label: Mechatronica
-    slug: mechatronica
-    idx: '8'
-  - label: Semicon
-    slug: semicon
-    idx: '9'
-  - label: Defensie
-    slug: defensie
-    idx: '10'
-footerDiensten:
-  - label: Plaatwerk
-    slug: plaatwerk
-  - label: Constructies
-    slug: constructies
-  - label: Machinebouw
-    slug: machinebouw
-  - label: Industriële behuizing
-    slug: industriele-behuizing
-  - label: Buislasersnijden
-    slug: buizenlaser
-  - label: Laserlassen
-    slug: plaatwerk/laserlassen
+  - groep: plaatwerk
+    titel: Plaatwerk
+  - groep: snijden
+    titel: Snijden
+  - groep: lastechniek
+    titel: Lastechniek
+  - groep: samenstellen
+    titel: Samenstellen
 
-# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+# Komt achter de naam van de overzichtspagina bovenaan een kolom.
+overzichtAchtervoegsel: (overzicht)
+
+# Engelse vertaling. Alleen tekst: de groep en de volgorde komen uit het Nederlands hierboven.
 en:
   megaKolommen:
-  - titel: Sheet metal
-    items:
-    - label: Sheet metal (overview)
-      idx: '1.0'
-    - label: Steel
-      idx: '1.1'
-    - label: Stainless steel
-      idx: '1.2'
-    - label: Aluminium
-      idx: '1.3'
-    - label: Brass
-      idx: '1.4'
-    - label: Bending & forming
-      idx: '1.5'
-    - label: Self-clinching & rivet nuts
-      idx: '1.6'
-    - label: Precision sheet metal
-      idx: '1.7'
-  - titel: Cutting
-    items:
-    - label: Laser cutting
-      idx: '2.1'
-    - label: Tube laser cutting
-      idx: '2.2'
-    - label: Machining
-      idx: '2.3'
-  - titel: Welding
-    items:
-    - label: Welding
-      idx: '3.1'
-    - label: Laser welding
-      idx: '3.2'
-    - label: (Cobot) robot welding
-      idx: '3.3'
-    - label: Aluminium welding
-      idx: '3.4'
-  - titel: Assembly
-    items:
-    - label: Welded constructions
-      idx: '4.1'
-    - label: Stainless steel constructions
-      idx: '4.2'
-    - label: Machine building
-      idx: '4.3'
-    - label: Industrial enclosures
-      idx: '4.4'
-  sectoren:
-  - label: Machine building
-    idx: '1'
-  - label: Food industry
-    idx: '2'
-  - label: Electrical engineering
-    idx: '3'
-  - label: Equipment manufacturing
-    idx: '4'
-  - label: Offshore
-    idx: '5'
-  - label: Infrastructure
-    idx: '6'
-  - label: Instrumentation & control
-    idx: '7'
-  - label: Mechatronics
-    idx: '8'
-  - label: Semiconductor
-    idx: '9'
-  - label: Defence
-    idx: '10'
-  footerDiensten:
-  - label: Sheet metal
-  - label: Welded constructions
-  - label: Machine building
-  - label: Industrial enclosures
-  - label: Tube laser cutting
-  - label: Laser welding
+    - titel: Sheet metal
+    - titel: Cutting
+    - titel: Welding
+    - titel: Assembly
+  overzichtAchtervoegsel: (overview)
 
-# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+# Duitse vertaling. Alleen tekst: de groep en de volgorde komen uit het Nederlands hierboven.
 de:
   megaKolommen:
-  - titel: Blechbearbeitung
-    items:
-    - label: Blechbearbeitung (Übersicht)
-      idx: '1.0'
-    - label: Stahl
-      idx: '1.1'
-    - label: Edelstahl
-      idx: '1.2'
-    - label: Aluminium
-      idx: '1.3'
-    - label: Messing
-      idx: '1.4'
-    - label: Kanten & Biegen
-      idx: '1.5'
-    - label: Einpress- & Blindnietmuttern
-      idx: '1.6'
-    - label: Präzisionsblech
-      idx: '1.7'
-  - titel: Schneiden
-    items:
-    - label: Laserschneiden
-      idx: '2.1'
-    - label: Rohrlaserschneiden
-      idx: '2.2'
-    - label: Zerspanung
-      idx: '2.3'
-  - titel: Schweißtechnik
-    items:
-    - label: Schweißen
-      idx: '3.1'
-    - label: Laserschweißen
-      idx: '3.2'
-    - label: (Cobot-)Roboterschweißen
-      idx: '3.3'
-    - label: Aluminiumschweißen
-      idx: '3.4'
-  - titel: Zusammenbau
-    items:
-    - label: Konstruktionen
-      idx: '4.1'
-    - label: Edelstahlkonstruktionen
-      idx: '4.2'
-    - label: Maschinenbau
-      idx: '4.3'
-    - label: Industriegehäuse
-      idx: '4.4'
-  sectoren:
-  - label: Maschinenbau
-    idx: '1'
-  - label: Lebensmittelindustrie
-    idx: '2'
-  - label: Elektrotechnik
-    idx: '3'
-  - label: Apparatebau
-    idx: '4'
-  - label: Offshore
-    idx: '5'
-  - label: Infrastruktur
-    idx: '6'
-  - label: Mess- & Regeltechnik
-    idx: '7'
-  - label: Mechatronik
-    idx: '8'
-  - label: Halbleiterindustrie
-    idx: '9'
-  - label: Wehrtechnik
-    idx: '10'
-  footerDiensten:
-  - label: Blechbearbeitung
-  - label: Konstruktionen
-  - label: Maschinenbau
-  - label: Industriegehäuse
-  - label: Rohrlaserschneiden
-  - label: Laserschweißen
+    - titel: Blechbearbeitung
+    - titel: Schneiden
+    - titel: Schweißtechnik
+    - titel: Zusammenbau
+  overzichtAchtervoegsel: (Übersicht)

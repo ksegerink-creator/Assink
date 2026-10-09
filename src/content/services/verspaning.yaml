@@ -3,7 +3,6 @@ slug: verspaning
 template: service
 group: snijden
 order: 33
-kicker: Snijden 2.3
 h1: Verspaning bij uw plaatwerk en constructies
 intro: Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen.
   Het verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming
@@ -85,7 +84,6 @@ faq:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Machining
-  kicker: Cutting 2.3
   h1: Machining alongside your sheet metal and constructions
   intro: Alongside our own sheet metal and structural work, we also supply turned and milled parts. The
     machining itself is made by a regular partner; we handle the engineering, the coordination and the delivery.
@@ -158,7 +156,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Zerspanung
-  kicker: Schneiden 2.3
   h1: Zerspanung zu Ihrer Blechbearbeitung und Konstruktion
   intro: Neben unserer eigenen Blechbearbeitung und Konstruktionsarbeit liefern wir auch gedrehte und gefräste
     Bauteile. Die Zerspanung selbst lassen wir von einem festen Partner fertigen; wir übernehmen die Konstruktion,

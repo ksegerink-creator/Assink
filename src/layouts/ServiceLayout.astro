@@ -9,6 +9,7 @@ import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
+import { kickerVoor } from "@utils/menu";
 import { SITE } from "@data/site";
 import type { CollectionEntry } from "astro:content";
 
@@ -18,6 +19,8 @@ const locale = toLocale(Astro.currentLocale);
 const site = Astro.site ?? new URL(SITE.url);
 const nav = (slug: string) => localizePath(slug, locale);
 
+// Zonder eigen kicker: de menukolom en het nummer waar deze pagina staat.
+const kicker = await kickerVoor(s.slug, locale, s.kicker);
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
 // Eigen foto uit het CMS gaat voor; zonder upload valt de pagina terug op
 // het standaardbeeld van haar groep in src/data/images.ts.
@@ -53,7 +56,7 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   trail={trail}
   jsonld={jsonld}
 >
-  <SplitHero kicker={s.kicker} title={s.h1} lead={s.intro} image={heroImg} alt={s.heroPhoto.subject}>
+  <SplitHero kicker={kicker} title={s.h1} lead={s.intro} image={heroImg} alt={s.heroPhoto.subject}>
     <div class="shero__acts">
       <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
       <a class="btn ghost" href={nav("contact")}>{t(locale, "talk")}</a>

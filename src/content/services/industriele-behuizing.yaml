@@ -2,8 +2,8 @@ title: Industriële behuizing
 slug: industriele-behuizing
 template: service
 group: samenstellen
-order: 40
-kicker: Sector 4.4
+order: 54
+inFooter: true
 h1: Innovatief in industriële RVS-behuizing
 intro: Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium behuizingen? Dan wordt
   u bij Assink & Schipholt van ontwerp en engineering tot eindproduct ontzorgd.
@@ -94,7 +94,6 @@ faq:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Industrial enclosures
-  kicker: Sector 4.4
   h1: Innovative in industrial stainless steel enclosures
   intro: Do you need custom or series-produced craftsmanship for stainless steel or aluminium enclosures?
     Then Assink & Schipholt takes care of everything, from design and engineering to the finished product.
@@ -177,7 +176,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Industriegehäuse
-  kicker: Sektor 4.4
   h1: Innovativ bei Industriegehäusen aus Edelstahl
   intro: Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus Edelstahl oder Aluminium? Dann
     nimmt Ihnen Assink & Schipholt von Entwurf und Engineering bis zum Endprodukt die Arbeit ab.

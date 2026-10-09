@@ -404,36 +404,45 @@ const algemeenSchema = () => ({
   ctaSubtekst: fields.text({ label: "CTA-balk — subtekst", description: "Telefoon en e-mail worden er automatisch achter gezet." }),
 });
 
+/**
+ * Alleen de kopjes van het menu "Mogelijkheden".
+ *
+ * De pagina's onder een kop staan er niet meer bij. Die bepaalt de
+ * dienstpagina zelf, met de velden "Menugroep", "Volgorde" en "Menunaam".
+ * Zie src/utils/menu.ts voor het waarom: een tweede, met de hand bijgehouden
+ * lijst liep uit de pas met de pagina's die er echt waren.
+ */
+/**
+ * De kolommen van het menu "Mogelijkheden", plus "Sector". Eén lijst, gebruikt
+ * door zowel de navigatie-instelling als het veld Menugroep op een
+ * dienstpagina — anders kun je een pagina in een groep zetten die geen kolom
+ * heeft, en verdwijnt hij stilletjes uit het menu.
+ */
+const MENUGROEPEN = [
+  { label: "Plaatwerk", value: "plaatwerk" },
+  { label: "Snijden", value: "snijden" },
+  { label: "Lastechniek", value: "lastechniek" },
+  { label: "Samenstellen", value: "samenstellen" },
+  { label: "Sector", value: "sector" },
+] as const;
+
 const navigatieSchema = () => ({
   megaKolommen: fields.array(
     fields.object({
+      groep: fields.select({
+        label: "Menugroep",
+        description: "Alle dienstpagina's met deze groep komen in deze kolom, op volgorde van hun veld Volgorde.",
+        options: MENUGROEPEN,
+        defaultValue: "plaatwerk",
+      }),
       titel: fields.text({ label: "Kolomtitel" }),
-      items: fields.array(
-        fields.object({
-          label: fields.text({ label: "Label" }),
-          slug: fields.text({ label: "Link (interne slug)", description: "Zonder schuine strepen ervoor/erna. Bv. plaatwerk/rvs. Moet naar een bestaande pagina wijzen." }),
-          idx: fields.text({ label: "Nummer (optioneel)" }),
-        }),
-        { label: "Items", itemLabel: (p) => p.fields.label.value },
-      ),
     }),
     { label: "Mega-menu kolommen", itemLabel: (p) => p.fields.titel.value },
   ),
-  sectoren: fields.array(
-    fields.object({
-      label: fields.text({ label: "Label" }),
-      slug: fields.text({ label: "Link (interne slug)" }),
-      idx: fields.text({ label: "Nummer (optioneel)" }),
-    }),
-    { label: "Sectoren-menu", itemLabel: (p) => p.fields.label.value },
-  ),
-  footerDiensten: fields.array(
-    fields.object({
-      label: fields.text({ label: "Label" }),
-      slug: fields.text({ label: "Link (interne slug)" }),
-    }),
-    { label: "Footer — diensten", itemLabel: (p) => p.fields.label.value },
-  ),
+  overzichtAchtervoegsel: fields.text({
+    label: "Achtervoegsel overzichtspagina",
+    description: 'Komt achter de naam van de overzichtspagina bovenaan een kolom, bv. "(overzicht)".',
+  }),
 });
 
 /**
@@ -665,6 +674,8 @@ export default config({
       }, "name"),
     }),
 
+    // Deze collectie vult het menu "Sectoren" in de kop van de site: elke
+    // sector hier wordt een regel in dat menu, op volgorde.
     sectoren: collection({
       label: "Sectoren",
       path: "src/content/sectors/*",
@@ -672,7 +683,7 @@ export default config({
       format: { data: "yaml" },
       schema: metVertalingen({
         title: fields.slug({ name: { label: "Titel" } }),
-        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
+        order: fields.number({ label: "Volgorde", description: "Lager staat hoger in het sectorenmenu.", defaultValue: 50 }),
         summary: fields.text({ label: "Samenvatting", multiline: true }),
         link: fields.text({ label: "Link (interne slug)", description: "Naar welke pagina deze sector verwijst." }),
       }, "title"),
@@ -737,25 +748,31 @@ export default config({
           defaultValue: "service",
         }),
         group: fields.select({
-          label: "Groep",
-          options: [
-            { label: "Plaatwerk", value: "plaatwerk" },
-            { label: "Snijden", value: "snijden" },
-            { label: "Lastechniek", value: "lastechniek" },
-            { label: "Samenstellen", value: "samenstellen" },
-            { label: "Sector", value: "sector" },
-            { label: "Hoofd", value: "hoofd" },
-          ],
-          defaultValue: "hoofd",
+          label: "Menugroep",
+          description: "Bepaalt in welke kolom van het menu Mogelijkheden deze pagina komt. Sector zet hem in het sectorenmenu.",
+          options: MENUGROEPEN,
+          defaultValue: "plaatwerk",
         }),
-        order: fields.number({ label: "Volgorde", defaultValue: 50 }),
-        kicker: fields.text({ label: "Kicker" }),
+        order: fields.number({ label: "Volgorde", description: "Lager staat hoger in de menukolom.", defaultValue: 50 }),
+        menuLabel: fields.text({
+          label: "Menunaam (optioneel)",
+          description: 'Korte naam in het menu en de footer. Leeg laten = de gewone titel. Bv. titel "RVS-plaatwerk", menunaam "RVS".',
+        }),
+        inFooter: fields.checkbox({
+          label: "In de footer",
+          description: "Zet deze dienst in het rijtje onder Diensten, onderaan elke pagina.",
+          defaultValue: false,
+        }),
+        kicker: fields.text({
+          label: "Kicker (optioneel)",
+          description: 'Het regeltje boven de titel. Leeg laten = automatisch de menukolom en het nummer, bv. "Plaatwerk 1.2".',
+        }),
         h1: fields.text({ label: "Titel (H1)" }),
         intro: fields.text({ label: "Intro", multiline: true }),
         foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
         midFoto: pageFoto("services")(
           "Foto halverwege de pagina",
-          "Staat naast het processchema. Laat leeg voor de standaardfoto van deze groep pagina's.",
+          "Staat naast het processchema. Laat je dit leeg, dan blijft die sectie zonder foto.",
         ),
         heroPhoto: photoMeta(),
         bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),

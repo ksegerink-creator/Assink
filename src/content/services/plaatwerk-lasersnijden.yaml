@@ -3,7 +3,6 @@ slug: plaatwerk/lasersnijden
 template: service
 group: snijden
 order: 31
-kicker: Snijden 2.1
 h1: Lasersnijden
 intro: 2D-lasersnijden van staal, RVS en aluminium met hoge precisie en minimale toleranties op onze Trumpf
   TruLaser 3040.
@@ -109,7 +108,6 @@ translated:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Laser cutting
-  kicker: Cutting 2.1
   h1: Laser cutting
   intro: 2D laser cutting of steel, stainless steel and aluminium with high precision and minimal tolerances
     on our Trumpf TruLaser 3040.
@@ -208,7 +206,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Laserschneiden
-  kicker: Schneiden 2.1
   h1: Laserschneiden
   intro: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium mit hoher Präzision und minimalen Toleranzen
     auf unserer Trumpf TruLaser 3040.

@@ -1,9 +1,9 @@
 title: Pers- en trekmoeren
+menuLabel: "Pers- & trekmoeren"
 slug: plaatwerk/persmoeren-trekmoeren
 template: service
 group: plaatwerk
 order: 27
-kicker: Plaatwerk 2.7
 h1: Pers- en trekmoeren
 intro: 'Met pers- en trekmoeren maken we plaatwerk montageklaar: betrouwbare schroefdraad, ook in dun
   materiaal.'
@@ -96,8 +96,8 @@ translated:
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
+  menuLabel: "Self-clinching & rivet nuts"
   title: Self-clinching nuts & rivet nuts
-  kicker: Sheet metal work 2.7
   h1: Self-clinching nuts & rivet nuts
   intro: 'With self-clinching nuts and rivet nuts we make sheet metal ready for assembly: dependable threads,
     even in thin material.'
@@ -181,8 +181,8 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
+  menuLabel: "Einpress- & Blindnietmuttern"
   title: Einpress- & Blindnietmuttern
-  kicker: Blechbearbeitung 2.7
   h1: Einpress- & Blindnietmuttern
   intro: 'Mit Einpress- und Blindnietmuttern machen wir Blechteile montagefertig: zuverlässige Gewinde,
     auch in dünnem Material.'

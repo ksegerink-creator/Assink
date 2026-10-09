@@ -3,12 +3,14 @@ import { SITE, CONTACT, CERTS } from "@data/site";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import { readPage } from "@utils/content";
+import { menu } from "@utils/menu";
 import Logo from "./Logo.astro";
 
 const locale = toLocale(Astro.currentLocale);
-const navData = await readPage("navigatie", locale);
 const alg = await readPage("algemeen", locale);
-const FOOTER_SERVICES = navData?.footerDiensten ?? [];
+// De diensten in de footer zijn de dienstpagina's met het vinkje "In de
+// footer"; zie @utils/menu.
+const { footer: FOOTER_SERVICES } = await menu(locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
 // De privacyverklaring bestaat alleen in het Nederlands (juridische tekst);

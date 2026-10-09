@@ -1,9 +1,9 @@
 title: Staal plaatwerk
+menuLabel: "Staal"
 slug: plaatwerk/staal
 template: service
 group: plaatwerk
 order: 21
-kicker: Plaatwerk 1.1
 h1: Staal plaatwerk
 intro: Het werkpaard onder de plaatmaterialen — stijf, goed lasbaar en voordelig. Van losse delen tot
   gelaste samenstellingen, met of zonder nabewerking.
@@ -89,8 +89,8 @@ faq:
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
+  menuLabel: "Steel"
   title: Steel sheet metal work
-  kicker: Sheet metal 1.1
   h1: Steel sheet metal work
   intro: The workhorse among sheet materials — stiff, readily weldable and economical. From individual parts
     to welded assemblies, with or without finishing.
@@ -168,8 +168,8 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
+  menuLabel: "Stahl"
   title: Stahlblech-Bearbeitung
-  kicker: Blechbearbeitung 1.1
   h1: Stahlblech-Bearbeitung
   intro: Das Arbeitstier unter den Blechwerkstoffen — steif, gut schweißbar und günstig. Von Einzelteilen
     bis zu geschweißten Baugruppen, mit oder ohne Nachbearbeitung.
