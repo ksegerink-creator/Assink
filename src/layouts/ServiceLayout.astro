@@ -11,8 +11,7 @@ import { t } from "@data/i18n";
 import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
 import { serviceImageFor } from "@data/images";
-import { photo } from "@utils/photos";
-import { bankFoto } from "@utils/fotobank";
+import { kiesFoto } from "@utils/fotobank";
 import { kickerVoor } from "@utils/menu";
 import { SITE } from "@data/site";
 import type { CollectionEntry } from "astro:content";
@@ -26,7 +25,7 @@ const nav = (slug: string) => localizePath(slug, locale);
 // Zonder eigen kicker: de menukolom en het nummer waar deze pagina staat.
 const kicker = await kickerVoor(s.slug, locale, s.kicker);
 // Eigen upload gaat voor, dan de keuze uit de fotobank, dan het standaardbeeld.
-const heroImg = photo(s.foto) ?? (await bankFoto(s.fotobank)) ?? serviceImageFor(s.slug);
+const heroImg = await kiesFoto(s.foto, s.fotobank, serviceImageFor(s.slug));
 // Eigen foto uit het CMS gaat voor; zonder upload valt de pagina terug op
 // het standaardbeeld van haar groep in src/data/images.ts.
 /*
@@ -35,7 +34,7 @@ const heroImg = photo(s.foto) ?? (await bankFoto(s.fotobank)) ?? serviceImageFor
  * hetzelfde beeld toonden — elk met een andere alt-tekst, dus hoogstens één
  * ervan kon kloppen. Staat er geen foto, dan blijft de sectie zonder beeld.
  */
-const midImg = photo(s.midFoto);
+const midImg = await kiesFoto(s.midFoto, s.midFotoBank);
 // Toon het middenbeeld alleen als het niet hetzelfde beeld is als de hero.
 const showMid = midImg && midImg !== heroImg && s.process.length > 0;
 

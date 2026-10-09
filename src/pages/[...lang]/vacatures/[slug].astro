@@ -8,6 +8,7 @@ import IndustrialImage from "@components/media/IndustrialImage.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
 import { imageFor } from "@data/images";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 import { CONTACT, SITE } from "@data/site";
 import { jobPostingJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
@@ -44,7 +45,7 @@ const VAC_IMG: Record<string, string> = {
   "stage": "vacatures.sfeer.1",
   "vakantiewerk": "vacatures.sfeer.2",
 };
-const vacImage = photo(v.foto) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
+const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
 ---
 <PageLayout
   title={v.title}

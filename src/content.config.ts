@@ -91,6 +91,7 @@ const services = defineCollection({
     // geen van beide, dan valt de pagina terug op het standaardbeeld.
     fotobank: z.string().optional(),
     midFoto: z.string().optional(),
+    midFotoBank: z.string().optional(),
     heroPhoto: photo,
     body: z.array(z.string()).default([]),
     bodyHeading: z.string().optional(),
@@ -148,6 +149,7 @@ const machines = defineCollection({
     description: z.string(),
     specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
     foto: z.string().optional(),
+    fotoBank: z.string().optional(),
     photo,
   })),
 });
@@ -167,6 +169,7 @@ const vacancies = defineCollection({
     requirements: z.array(z.string()).default([]),
     open: z.boolean().default(true),
     foto: z.string().optional(),
+    fotoBank: z.string().optional(),
     photo,
   })),
 });
@@ -180,6 +183,7 @@ const projects = defineCollection({
     sector: z.string(),
     summary: z.string(),
     foto: z.string().optional(),
+    fotoBank: z.string().optional(),
     photo,
   }),
 });
@@ -219,6 +223,7 @@ const articles = defineCollection({
       .default([]),
     faq: z.array(z.object({ vraag: z.string(), antwoord: z.string() })).default([]),
     foto: z.string().optional(),
+    fotoBank: z.string().optional(),
     // Standaard false: automatisch gegenereerde conceptartikelen (zie
     // src/pages/api/cron/blog-generator.ts) staan pas op de site nadat iemand
     // ze in Keystatic heeft nagekeken en dit vinkje heeft aangezet.

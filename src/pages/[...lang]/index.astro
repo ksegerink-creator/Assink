@@ -9,6 +9,7 @@ import { SITE, CONTACT, CERTS } from "@data/site";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 import { readPage } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 
@@ -32,14 +33,22 @@ const home = await readPage("homepage", locale);
 const { hero, intro, capabilities, proef, mensen } = home;
 // Vaste beeldverhoudingen/annotatie-styling per tegel (blijft in code).
 const capRatios = ["3/2", "4/3", "3/2", "4/3"];
+
+// Beelden vooraf oplossen: in de opmaak zelf kan geen await staan.
+const capabilityBeelden = await Promise.all(
+  capabilities.map(async (c) => ({ c, beeld: await kiesFoto(c.foto, c.fotoBank) })),
+);
+const proefBeelden = await Promise.all(
+  proef.details.map(async (d) => ({ d, beeld: await kiesFoto(d.foto, d.fotoBank) })),
+);
 ---
 
-<PageLayout title={home.seoTitel} description={home.seoOmschrijving} canonicalSlug="" altLocales={["nl", "en", "de"]} ogPhoto={photo(hero.foto)}>
+<PageLayout title={home.seoTitel} description={home.seoOmschrijving} canonicalSlug="" altLocales={["nl", "en", "de"]} ogPhoto={await kiesFoto(hero.foto, hero.fotoBank)}>
   <!-- ═══ Hero — full-bleed fotografie met rustige tekstlaag ═══ -->
   <section class="hero">
     <div class="hero__media">
       <IndustrialImage
-        src={photo(hero.foto)}
+        src={await kiesFoto(hero.foto, hero.fotoBank)}
         alt={t(locale, "altWelderHall")}
         ratio="21/10"
         priority={true}
@@ -92,7 +101,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
       </div>
       <figure class="intro__pand rv">
         <IndustrialImage
-          src={photo(intro.pandFoto)}
+          src={await kiesFoto(intro.pandFoto, intro.pandFotoBank)}
           alt={t(locale, "altBuildingStreet")}
           ratio="16/10"
           position="center 32%"
@@ -110,9 +119,9 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
         <span class="mono">{t(locale, "possibilities")}</span>
       </div>
       <div class="mosaic">
-        {capabilities.map((c, i) => (
+        {capabilityBeelden.map(({ c, beeld }, i) => (
           <a class={`tile tile--${i % 4}`} href={nav(c.link)}>
-            <IndustrialImage src={photo(c.foto)} alt={`${c.titel} — Assink & Schipholt`} ratio={capRatios[i % 4]} annotation={c.annotatie} class="tile__img" />
+            <IndustrialImage src={beeld} alt={`${c.titel} — Assink & Schipholt`} ratio={capRatios[i % 4]} annotation={c.annotatie} class="tile__img" />
             <span class="tile__scrim" aria-hidden="true"></span>
             <span class="tile__idx mono" aria-hidden="true">{c.nummer}</span>
             <div class="tile__body">
@@ -130,7 +139,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
   <section class="proof">
     <figure class="proof__wide">
       <IndustrialImage
-        src={photo(proef.quoteFoto)}
+        src={await kiesFoto(proef.quoteFoto, proef.quoteFotoBank)}
         alt={t(locale, "altWelderTable")}
         ratio="21/8"
         position="center 55%"
@@ -140,9 +149,9 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
       </figcaption>
     </figure>
     <div class="wrap proof__row">
-      {proef.details.map((d) => (
+      {proefBeelden.map(({ d, beeld }) => (
         <figure class="rv">
-          <IndustrialImage src={photo(d.foto)} alt={d.bijschrift} ratio="1/1" />
+          <IndustrialImage src={beeld} alt={d.bijschrift} ratio="1/1" />
           <figcaption class="mono">{d.bijschrift}</figcaption>
         </figure>
       ))}
@@ -157,7 +166,7 @@ const capRatios = ["3/2", "4/3", "3/2", "4/3"];
   <section class="sec people">
     <div class="wrap people__grid">
       <figure class="people__photo rv">
-        <IndustrialImage src={photo(mensen.foto)} alt={t(locale, "altCraftsmanProfile")} ratio="4/5" position="center 35%" />
+        <IndustrialImage src={await kiesFoto(mensen.foto, mensen.fotoBank)} alt={t(locale, "altCraftsmanProfile")} ratio="4/5" position="center 35%" />
       </figure>
       <div class="people__text rv">
         <span class="eyebrow mono">{t(locale, "peopleEyebrow")}</span>
