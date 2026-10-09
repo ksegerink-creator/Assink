@@ -1,0 +1,49 @@
+# Verkleint te grote foto's die via Keystatic (of anders) op main belanden.
+# Zie scripts/fotos-verkleinen.mjs voor het waarom.
+#
+# Let op: deze workflow zet zelf een commit op main. Heb je na het uploaden van
+# een foto de pagina nog open in Keystatic, ververs dan eerst (F5) voor je
+# opnieuw opslaat — anders meldt Keystatic "This entry has been updated since
+# it was opened".
+name: Foto's verkleinen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/assets/uploads/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fotos-verkleinen
+  cancel-in-progress: false
+
+jobs:
+  verkleinen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Alleen sharp; de rest van de site is hier niet nodig.
+      - run: npm install --no-save --no-package-lock sharp@0.34.3
+
+      - run: node scripts/fotos-verkleinen.mjs
+
+      - name: Commit verkleinde foto's
+        run: |
+          if git diff --quiet; then
+            echo "Niets te verkleinen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Foto's automatisch verkleind"
+          git pull --rebase origin main
+          git push origin HEAD:main
