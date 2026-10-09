@@ -602,7 +602,15 @@ const dienstSchema = () => metVertalingen({
         }),
         h1: fields.text({ label: "Titel (H1)" }),
         intro: fields.text({ label: "Intro", multiline: true }),
-        foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
+        fotobank: fields.relationship({
+          label: "Hero-foto uit de fotobank",
+          collection: "fotobank",
+          description: "Kies een foto uit de bedrijfsfotografie. Dit is de gewone manier om de hero-foto te wijzigen.",
+        }),
+        foto: pageFoto("services")(
+          "Eigen hero-foto uploaden (optioneel)",
+          "Alleen nodig voor een foto die niet in de fotobank staat. Een upload hier gaat voor op de keuze hierboven.",
+        ),
         midFoto: pageFoto("services")(
           "Foto halverwege de pagina",
           "Staat naast het processchema. Laat je dit leeg, dan blijft die sectie zonder foto.",
@@ -729,7 +737,7 @@ export default config({
       Sectoren: ["dienstenSectoren", "sectoren"],
       Vacatures: ["vacatures"],
       Kennisbank: ["artikelen", "blogOnderwerpen"],
-      "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
+      "Lijsten & referenties": ["fotobank", "machines", "certificeringen", "projecten"],
       "Menu & vaste teksten": [
         "navigatie", "algemeen", "bedrijfsgegevens", "interfaceteksten",
       ],
@@ -819,6 +827,26 @@ export default config({
 
     // Deze collectie vult het menu "Sectoren" in de kop van de site: elke
     // sector hier wordt een regel in dat menu, op volgorde.
+    // De bedrijfsfotografie. Elke foto hier is op elke pagina te kiezen; vervang
+    // je hem hier, dan verandert hij overal waar hij gebruikt wordt.
+    fotobank: collection({
+      label: "Fotobank",
+      path: "src/content/fotos/*",
+      slugField: "naam",
+      columns: ["omschrijving"],
+      format: { data: "yaml" },
+      schema: {
+        naam: fields.slug({
+          name: { label: "Naam", description: "Hoe de foto in de keuzelijst heet. Kort en beschrijvend, bv. kantbank-detail." },
+        }),
+        foto: foto("Foto", "De afbeelding zelf. Vervang je hem hier, dan verandert hij op elke pagina die hem gebruikt."),
+        omschrijving: fields.text({
+          label: "Omschrijving",
+          description: "Wat er te zien is. Wordt gebruikt als alt-tekst voor schermlezers en Google.",
+        }),
+      },
+    }),
+
     sectoren: collection({
       label: "Sectoren",
       path: "src/content/sectors/*",
