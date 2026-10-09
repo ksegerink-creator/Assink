@@ -1,33 +1,37 @@
-name: "Timesavers 42 Series RB (GrindingMaster)"
-category: "Ontbramen / borstelen"
+name: Timesavers 42 Series RB (GrindingMaster)
+category: Ontbramen / borstelen
 order: 40
-description: "Breedband slijp-/schuurmachine voor nabewerking van platte werkstukken na het lasersnijden."
+description: >-
+  Breedband slijp-/schuurmachine voor nabewerking van platte werkstukken na het
+  lasersnijden.
 specs:
-  - { label: "Type", value: "borstel- & afbraammachine" }
+  - label: Type
+    value: borstel- & afbraammachine
+foto: /src/assets/uploads/machines/timesavers-42rb/foto.jpg
 photo:
-  subject: "Timesavers ontbraammachine met plaat op transportband"
-  orient: "Liggend 4:3"
-  crop: "Machine-invoer"
-  comp: "Plaat gaat de machine in"
-
-# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+  subject: Timesavers ontbraammachine met plaat op transportband
+  orient: Liggend 4:3
+  crop: Machine-invoer
+  comp: Plaat gaat de machine in
 en:
   name: Timesavers 42 Series RB (GrindingMaster)
   category: Deburring / brushing
-  description: Wide-belt grinding and sanding machine for finishing flat workpieces after laser cutting.
+  description: >-
+    Wide-belt grinding and sanding machine for finishing flat workpieces after
+    laser cutting.
   specs:
-  - label: Type
-    value: brushing & deburring machine
+    - label: Type
+      value: brushing & deburring machine
   photo:
     subject: Timesavers deburring machine with a sheet on the conveyor belt
-
-# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   name: Timesavers 42 Series RB (GrindingMaster)
   category: Entgraten / Bürsten
-  description: Breitbandschleifmaschine zur Nachbearbeitung flacher Werkstücke nach dem Laserschneiden.
+  description: >-
+    Breitbandschleifmaschine zur Nachbearbeitung flacher Werkstücke nach dem
+    Laserschneiden.
   specs:
-  - label: Typ
-    value: Bürst- & Entgratmaschine
+    - label: Typ
+      value: Bürst- & Entgratmaschine
   photo:
     subject: Timesavers-Entgratmaschine mit Blech auf dem Transportband
