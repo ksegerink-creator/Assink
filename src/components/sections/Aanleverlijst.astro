@@ -1,0 +1,53 @@
+---
+import { t } from "@data/i18n";
+import { localizePath } from "@utils/paths";
+import type { Locale } from "@data/site";
+
+/**
+ * "Wat stuurt u mee" — de gegevens die nodig zijn om een aanvraag te
+ * beoordelen, als afvinklijst naast de offerteknop.
+ *
+ * Stond eerder als slotalinea van zestig woorden onderaan de pagina, precies
+ * waar een bezoeker die wil aanvragen niet meer leest. Een lijst is hier ook
+ * eerlijker: het zijn losse punten, geen betoog.
+ */
+interface Props {
+  items?: string[];
+  locale: Locale;
+  kop?: string;
+}
+const { items = [], locale, kop } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="sec tight">
+    <div class="wrap alv">
+      <div class="alv__kop rv">
+        <h2>{kop || t(locale, "sendAlongHead")}</h2>
+        <a class="btn" href={localizePath("offerte", locale)}>{t(locale, "quote")}</a>
+      </div>
+      <ul class="alv__lijst rv">
+        {items.map((i) => <li>{i}</li>)}
+      </ul>
+    </div>
+  </section>
+)}
+
+<style>
+  .alv { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  .alv__kop h2 { font-size: clamp(22px, 2.4vw, 32px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .alv__kop .btn { margin-top: 18px; }
+  .alv__lijst { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .alv__lijst li {
+    position: relative; padding: 14px 0 14px 34px;
+    border-bottom: 1px solid var(--line); color: var(--ink-2); font-size: 15.5px;
+  }
+  .alv__lijst li::before {
+    content: ""; position: absolute; left: 4px; top: 20px;
+    width: 11px; height: 6px; border-left: 2px solid var(--blue); border-bottom: 2px solid var(--blue);
+    transform: rotate(-45deg);
+  }
+  @media (max-width: 780px) {
+    .alv { grid-template-columns: 1fr; gap: 20px; }
+    .alv__kop .btn { margin-top: 14px; }
+  }
+</style>

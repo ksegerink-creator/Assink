@@ -15,39 +15,58 @@ heroPhoto:
   crop: Breed overzicht
   comp: Werkvloer, machines op afstand
 body:
-- Wij verwerken fijnplaat met een fiberlaser (Trumpf TruLaser 3040, 4 kW), kantbank en in-house afwerking.
-  Van RVS-zichtwerk tot aluminium behuizingen — maatvast en reproduceerbaar.
-- 'Plaatwerk bij Assink & Schipholt gaat verder dan snijden en kanten. Van eerste tekening tot afgewerkt
-  onderdeel begeleiden wij het hele traject: materiaaladvies, engineering, productie en oppervlakteafwerking
-  — onder één dak in Hengelo.'
-- 'Of het gaat om een enkel prototype of een jaarserie: plaatwerk op maat vraagt om precisie die reproduceerbaar
-  blijft. Onze servo-elektrische kantbanken en lasersnijmachines zorgen voor constante maatvoering, ook
-  bij grotere series.'
-- 'Welke plaatdikte haalbaar is, hangt af van het materiaal. Op de Trumpf TruLaser 3040 — een fiberlaser
-  van 4 kW — snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en
-  gegalvaniseerd staal van 0,5 tot 10 mm. Valt uw aanvraag buiten dat bereik, leg hem dan voor: binnen
-  onze groep is vaak meer mogelijk dan op onze eigen machine.'
-- 'Een plaatwerkdeel doorloopt bij ons meestal dezelfde route: lasersnijden, ontbramen, kanten en waar
-  nodig lassen en afwerken. Ontbramen doen wij machinaal op een Timesavers 42 Series RB, zodat de randen
-  braamvrij en veilig zijn voordat er iemand mee verder werkt. Kanten gebeurt op een servo-elektrische
-  Safan Darley E-Brake 150-3100 T3 met 150 ton perskracht en een werklengte tot 3100 mm.'
-- 'Enkelstuks en serie vragen om een andere voorbereiding. Bij een prototype ligt het accent op meedenken
-  over maakbaarheid: een buighoek verplaatsen of een uitsparing anders positioneren scheelt vaak een hele
-  bewerking. Bij serie draait het om herhaalbaarheid — dezelfde opspanning, dezelfde volgorde en dezelfde
-  controlepunten, zodat het honderdste deel gelijk is aan het eerste. Wij doen allebei, op dezelfde machines.'
-- Oppervlakteafwerking hoort er in de meeste gevallen bij. Voor aluminium en RVS hebben wij een eigen
-  straalcabine van 8 × 4 × 3 meter, waarin wij met glasparels van 100–200 μm bij 3,0 bar een egaal mat
-  oppervlak stralen. RVS passiveren wij na het lassen, zodat de beschermende oxidelaag rond de naad wordt
-  hersteld. Poedercoaten en anodiseren verzorgen wij eveneens, zodat u een afgewerkt onderdeel ontvangt
-  in plaats van een halffabricaat.
-- Kwaliteit is bij plaatwerk vooral procesbeheersing. Wij werken onder ISO 9001, voor laswerk onder ISO
-  3834-2 en voor draagconstructies onder EN 1090-1. In de praktijk betekent dat een vaste ingangscontrole
-  op materiaal, vastgelegde lasparameters en een maatcontrole vóór verzending — niet alleen op het eerste
-  stuk.
-- Wilt u plaatwerk laten maken? Stuur een PDF-tekening en een 3D STEP-bestand mee met de materiaalsoort en plaatdikte,
-  het aantal stuks, en of het zichtwerk betreft met de bijbehorende afwerking. Met die gegevens beoordelen
-  wij de maakbaarheid en maken wij een onderbouwde offerte. Twijfelt u over materiaalkeuze of plaatdikte,
-  dan denken wij daar graag in mee voordat de tekening definitief is.
+- 'Van eerste tekening tot afgewerkt onderdeel begeleiden wij het hele traject: materiaaladvies, engineering,
+  productie en oppervlakteafwerking — onder één dak in Hengelo.'
+- 'Enkelstuks en serie doen wij op dezelfde machines, met een andere voorbereiding. Bij een prototype
+  denken wij mee over maakbaarheid: een buighoek verplaatsen of een uitsparing anders positioneren scheelt
+  vaak een hele bewerking. Bij serie draait het om herhaalbaarheid — dezelfde opspanning, dezelfde volgorde
+  en dezelfde controlepunten, zodat het honderdste deel gelijk is aan het eerste.'
+- 'Valt uw aanvraag buiten onderstaand bereik, leg hem dan voor: binnen onze groep is vaak meer mogelijk
+  dan op onze eigen machine.'
+kerncijfers:
+- waarde: 25 mm
+  label: max. plaatdikte staal
+- waarde: 3100 mm
+  label: zetlengte kantbank
+- waarde: 150 ton
+  label: perskracht
+- waarde: 4 kW
+  label: fiberlaser
+process:
+- step: Lasersnijden
+  desc: Op een Trumpf TruLaser 3040, fiberlaser van 4 kW.
+- step: Ontbramen
+  desc: Machinaal op een Timesavers 42 Series RB, zodat de randen braamvrij en veilig zijn voordat er iemand
+    mee verder werkt.
+- step: Kanten
+  desc: Op een servo-elektrische Safan Darley E-Brake 150-3100 T3 met 150 ton perskracht en een werklengte
+    tot 3100 mm.
+- step: Lassen
+  desc: Waar nodig, onder ISO 3834-2 met vastgelegde lasparameters.
+- step: Afwerken
+  desc: Stralen, passiveren, poedercoaten of anodiseren — u ontvangt een afgewerkt onderdeel, geen halffabricaat.
+specs:
+- label: Staal
+  value: 0,5 – 25 mm
+- label: RVS
+  value: 0,5 – 20 mm
+- label: Aluminium
+  value: 0,5 – 15 mm
+- label: Gegalvaniseerd staal
+  value: 0,5 – 10 mm
+- label: Zetlengte
+  value: tot 3100 mm, 150 ton perskracht
+- label: Stralen
+  value: glasparels 100–200 μm bij 3,0 bar, cabine 8 × 4 × 3 m
+- label: Afwerking
+  value: passiveren, poedercoaten, anodiseren
+- label: Certificering
+  value: ISO 9001, ISO 3834-2, EN 1090-1
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Of het zichtwerk betreft, en de gewenste afwerking
 cards:
 - slug: plaatwerk/staal
   label: Staal
@@ -83,7 +102,7 @@ cards:
   label: Pers- & trekmoeren
   desc: Inpersmoeren voor montageklare producten.
 - slug: plaatwerk/voedingsmiddelenindustrie
-  label: Voedingsmiddelenindustrie
+  label: Voedingsindustrie
   desc: Hygiënisch RVS-plaatwerk.
 - slug: industriele-behuizing
   label: RVS-behuizingen & beplating
@@ -127,39 +146,59 @@ en:
   heroPhoto:
     subject: Wide shot of the production floor with sheet metal being processed
   body:
-  - We process thin sheet with a fiber laser (Trumpf TruLaser 3040, 4 kW), press brake and in-house finishing.
-    From stainless steel visible work to aluminium enclosures — dimensionally stable and reproducible.
-  - 'Sheet metal work at Assink & Schipholt goes further than cutting and bending. From the first drawing
-    to the finished part we guide the whole process: material advice, engineering, production and surface
-    finishing — all under one roof in Hengelo.'
-  - 'Whether it is a single prototype or an annual series: custom sheet metal calls for precision that stays
-    reproducible. Our servo-electric press brakes and laser cutting machines ensure consistent dimensions,
-    even for larger series.'
-  - 'Which sheet thickness is feasible depends on the material. On the Trumpf TruLaser 3040 — a 4 kW fibre
-    laser — we cut steel from 0.5 to 25 mm, stainless steel from 0.5 to 20 mm, aluminium from 0.5 to 15
-    mm and galvanised steel from 0.5 to 10 mm. If your request falls outside that range, put it to us: within
-    our group more is often possible than on our own machine.'
-  - 'A sheet metal part usually follows the same route with us: laser cutting, deburring, press braking
-    and, where required, welding and finishing. Deburring is done by machine on a Timesavers 42 Series RB,
-    so that edges are burr-free and safe before anyone handles them. Press braking is done on a servo-electric
-    Safan Darley E-Brake 150-3100 T3 with 150 tonnes of press force and a working length of up to 3100 mm.'
-  - 'One-offs and series call for different preparation. For a prototype the emphasis is on thinking along
-    about manufacturability: moving a bend line or repositioning a cut-out often saves an entire operation.
-    For series it is about repeatability — the same fixturing, the same sequence and the same inspection
-    points, so that the hundredth part matches the first. We do both, on the same machines.'
-  - Surface finishing is part of the job in most cases. For aluminium and stainless steel we have our own
-    blasting cabin of 8 × 4 × 3 metres, in which we blast an even matt surface with glass beads of 100–200
-    μm at 3.0 bar. Stainless steel is passivated after welding, so that the protective oxide layer around
-    the seam is restored. We also arrange powder coating and anodising, so you receive a finished part rather
-    than a semi-finished product.
-  - In sheet metal work, quality is mainly a matter of process control. We work under ISO 9001, for welding
-    under ISO 3834-2 and for load-bearing structures under EN 1090-1. In practice that means a fixed incoming
-    inspection on material, documented welding parameters and a dimensional inspection before dispatch —
-    not only on the first part.
-  - Looking to have sheet metal made? Send a PDF drawing and a 3D STEP file together with the material grade
-    and sheet thickness, the quantity, and whether it concerns visible surfaces and the finishing that requires.
-    With that information we assess manufacturability and prepare a substantiated quotation. If you are
-    unsure about material choice or sheet thickness, we are glad to think along before the drawing is final.
+  - 'From the first drawing to the finished part we guide the whole process: material advice, engineering,
+    production and surface finishing — all under one roof in Hengelo.'
+  - 'One-offs and series run on the same machines, with different preparation. For a prototype the emphasis
+    is on thinking along about manufacturability: moving a bend line or repositioning a cut-out often saves
+    an entire operation. For series it is about repeatability — the same fixturing, the same sequence and
+    the same inspection points, so that the hundredth part matches the first.'
+  - 'If your request falls outside the range below, put it to us: within our group more is often possible
+    than on our own machine.'
+  kerncijfers:
+  - waarde: 25 mm
+    label: max. sheet thickness, steel
+  - waarde: 3100 mm
+    label: press brake length
+  - waarde: 150 t
+    label: press force
+  - waarde: 4 kW
+    label: fibre laser
+  process:
+  - step: Laser cutting
+    desc: On a Trumpf TruLaser 3040, a 4 kW fibre laser.
+  - step: Deburring
+    desc: By machine on a Timesavers 42 Series RB, so that edges are burr-free and safe before anyone handles
+      them.
+  - step: Press braking
+    desc: On a servo-electric Safan Darley E-Brake 150-3100 T3 with 150 tonnes of press force and a working
+      length of up to 3100 mm.
+  - step: Welding
+    desc: Where required, under ISO 3834-2 with documented welding parameters.
+  - step: Finishing
+    desc: Blasting, passivating, powder coating or anodising — you receive a finished part, not a semi-finished
+      one.
+  specs:
+  - label: Steel
+    value: 0.5 – 25 mm
+  - label: Stainless steel
+    value: 0.5 – 20 mm
+  - label: Aluminium
+    value: 0.5 – 15 mm
+  - label: Galvanised steel
+    value: 0.5 – 10 mm
+  - label: Press brake length
+    value: up to 3100 mm, 150 tonnes press force
+  - label: Blasting
+    value: glass beads 100–200 μm at 3.0 bar, cabin 8 × 4 × 3 m
+  - label: Finishing
+    value: passivating, powder coating, anodising
+  - label: Certification
+    value: ISO 9001, ISO 3834-2, EN 1090-1
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Whether it is visible work, and the finish required
   cards:
   - label: Steel
     desc: Stiff, readily weldable and economical — the workhorse.
@@ -224,40 +263,60 @@ de:
   heroPhoto:
     subject: Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung
   body:
-  - Wir bearbeiten Feinblech mit einem Faserlaser (Trumpf TruLaser 3040, 4 kW), Abkantpresse und Veredelung
-    im eigenen Haus. Von Edelstahl-Sichtflächen bis zu Aluminiumgehäusen — maßhaltig und reproduzierbar.
-  - 'Blechbearbeitung bei Assink & Schipholt geht über Schneiden und Kanten hinaus. Von der ersten Zeichnung
-    bis zum fertigen Teil begleiten wir den gesamten Prozess: Materialberatung, Engineering, Produktion
-    und Oberflächenveredelung — unter einem Dach in Hengelo.'
-  - 'Ob einzelnes Prototyp oder Jahresserie: Blecharbeiten nach Maß erfordern Präzision, die reproduzierbar
-    bleibt. Unsere servoelektrischen Abkantpressen und Lasermaschinen sorgen für gleichbleibende Maßhaltigkeit,
-    auch bei größeren Serien.'
-  - 'Welche Blechdicke möglich ist, hängt vom Werkstoff ab. Auf der Trumpf TruLaser 3040 — einem Faserlaser
-    mit 4 kW — schneiden wir Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis 20 mm, Aluminium von 0,5 bis
-    15 mm und verzinkten Stahl von 0,5 bis 10 mm. Liegt Ihre Anfrage außerhalb dieses Bereichs, legen Sie
-    sie uns vor: innerhalb unserer Gruppe ist häufig mehr möglich als auf unserer eigenen Maschine.'
-  - 'Ein Blechteil durchläuft bei uns meist denselben Weg: Laserschneiden, Entgraten, Abkanten und bei Bedarf
-    Schweißen und Oberflächenbehandlung. Entgratet wird maschinell auf einer Timesavers 42 Series RB, damit
-    die Kanten gratfrei und sicher sind, bevor jemand damit weiterarbeitet. Abgekantet wird auf einer servoelektrischen
-    Safan Darley E-Brake 150-3100 T3 mit 150 Tonnen Presskraft und einer Arbeitslänge bis 3100 mm.'
-  - 'Einzelstücke und Serien erfordern eine unterschiedliche Vorbereitung. Beim Prototyp liegt der Schwerpunkt
-    auf der Fertigungsgerechtheit: eine Biegekante zu verschieben oder eine Aussparung anders zu positionieren
-    spart oft einen ganzen Arbeitsgang. Bei der Serie geht es um Wiederholgenauigkeit — dieselbe Aufspannung,
-    dieselbe Reihenfolge und dieselben Prüfpunkte, damit das hundertste Teil dem ersten gleicht. Wir fertigen
-    beides, auf denselben Maschinen.'
-  - Die Oberflächenbehandlung gehört in den meisten Fällen dazu. Für Aluminium und Edelstahl haben wir eine
-    eigene Strahlkabine von 8 × 4 × 3 Metern, in der wir mit Glasperlen von 100–200 μm bei 3,0 bar eine
-    gleichmäßig matte Oberfläche strahlen. Edelstahl passivieren wir nach dem Schweißen, damit die schützende
-    Oxidschicht rund um die Naht wiederhergestellt wird. Pulverbeschichten und Eloxieren organisieren wir
-    ebenfalls, sodass Sie ein fertiges Bauteil erhalten und kein Halbzeug.
-  - Qualität ist in der Blechbearbeitung vor allem Prozesslenkung. Wir arbeiten nach ISO 9001, beim Schweißen
-    nach ISO 3834-2 und bei tragenden Konstruktionen nach EN 1090-1. In der Praxis bedeutet das eine feste
-    Eingangskontrolle des Materials, dokumentierte Schweißparameter und eine Maßkontrolle vor dem Versand
-    — nicht nur am ersten Teil.
-  - Möchten Sie Blechteile fertigen lassen? Senden Sie eine PDF-Zeichnung und eine 3D-STEP-Datei mit Werkstoff
-    und Blechdicke, der Stückzahl sowie der Angabe, ob es sich um Sichtflächen handelt und welche Oberfläche
-    dazugehört. Damit beurteilen wir die Fertigbarkeit und erstellen ein fundiertes Angebot. Sind Sie bei
-    Werkstoff oder Blechdicke unsicher, denken wir gerne mit, bevor die Zeichnung endgültig ist.
+  - 'Von der ersten Zeichnung bis zum fertigen Teil begleiten wir den gesamten Ablauf: Materialberatung,
+    Engineering, Fertigung und Oberflächenbehandlung — unter einem Dach in Hengelo.'
+  - 'Einzelstück und Serie laufen bei uns über dieselben Maschinen, mit unterschiedlicher Vorbereitung.
+    Beim Prototyp liegt der Schwerpunkt auf der Fertigungsgerechtheit: eine Biegekante zu verschieben oder
+    einen Ausschnitt anders zu setzen spart oft einen ganzen Arbeitsgang. Bei Serie zählt Wiederholbarkeit
+    — dieselbe Aufspannung, dieselbe Reihenfolge und dieselben Prüfpunkte, damit das hundertste Teil dem
+    ersten gleicht.'
+  - 'Liegt Ihre Anfrage außerhalb des unten genannten Bereichs, legen Sie sie uns vor: innerhalb unserer
+    Gruppe ist oft mehr möglich als auf unserer eigenen Maschine.'
+  kerncijfers:
+  - waarde: 25 mm
+    label: max. Blechdicke Stahl
+  - waarde: 3100 mm
+    label: Abkantlänge
+  - waarde: 150 t
+    label: Presskraft
+  - waarde: 4 kW
+    label: Faserlaser
+  process:
+  - step: Laserschneiden
+    desc: Auf einer Trumpf TruLaser 3040, Faserlaser mit 4 kW.
+  - step: Entgraten
+    desc: Maschinell auf einer Timesavers 42 Series RB, damit die Kanten gratfrei und sicher sind, bevor
+      jemand damit weiterarbeitet.
+  - step: Abkanten
+    desc: Auf einer servoelektrischen Safan Darley E-Brake 150-3100 T3 mit 150 t Presskraft und einer Arbeitslänge
+      bis 3100 mm.
+  - step: Schweißen
+    desc: Wo erforderlich, nach ISO 3834-2 mit dokumentierten Schweißparametern.
+  - step: Oberfläche
+    desc: Strahlen, Passivieren, Pulverbeschichten oder Eloxieren — Sie erhalten ein fertiges Teil, kein
+      Halbzeug.
+  specs:
+  - label: Stahl
+    value: 0,5 – 25 mm
+  - label: Edelstahl
+    value: 0,5 – 20 mm
+  - label: Aluminium
+    value: 0,5 – 15 mm
+  - label: Verzinkter Stahl
+    value: 0,5 – 10 mm
+  - label: Abkantlänge
+    value: bis 3100 mm, 150 t Presskraft
+  - label: Strahlen
+    value: Glasperlen 100–200 μm bei 3,0 bar, Kabine 8 × 4 × 3 m
+  - label: Oberfläche
+    value: Passivieren, Pulverbeschichten, Eloxieren
+  - label: Zertifizierung
+    value: ISO 9001, ISO 3834-2, EN 1090-1
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Ob es sich um Sichtteile handelt, und die gewünschte Oberfläche
   cards:
   - label: Stahl
     desc: Steif, gut schweißbar und günstig — das Arbeitstier.

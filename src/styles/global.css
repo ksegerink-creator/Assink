@@ -164,7 +164,7 @@ main { display: block; min-height: 50vh; }
 .tbl caption { text-align: left; font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--steel); padding-bottom: 10px; }
 /* overflow-wrap houdt lange samenstellingen binnen de kolom: zonder dit duwde
    één woord als "buislasersnijsysteem" de tabel buiten het scherm. */
-.tbl th, .tbl td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.tbl th, .tbl td { text-align: left; padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: break-word; hyphens: auto; }
 .tbl thead th { font-family: var(--f-disp); text-transform: uppercase; letter-spacing: .03em; font-size: 13px; color: var(--ink); border-bottom: 1px solid var(--ink); }
 .tbl td.spec { font-family: var(--f-mono); font-variant-numeric: tabular-nums; color: var(--ink-2); }
 
@@ -224,3 +224,20 @@ main { display: block; min-height: 50vh; }
 :root.js .rv { opacity: 0; transform: translateY(14px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
 :root.js .rv.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { :root.js .rv { opacity: 1; transform: none; transition: none; } }
+
+/*
+ * Smalle schermen: label boven de waarde in plaats van ernaast.
+ *
+ * Twee kolommen in 390px laten een label als "Gegalvaniseerd staal" of
+ * "Oppervlakteafwerking" middenin woorden breken — "Gegalv aniseer d staal".
+ * Over de volle breedte past het gewoon, en de waarde eronder leest als een
+ * regel in plaats van als een smalle koker.
+ */
+@media (max-width: 560px) {
+  .tbl, .tbl tbody, .tbl tr, .tbl th, .tbl td { display: block; width: 100%; }
+  .tbl tr { border-bottom: 1px solid var(--line); padding-block: 11px; }
+  .tbl tr:last-child { border-bottom: 0; }
+  .tbl th, .tbl td { border-bottom: 0; padding: 2px 0; }
+  .tbl th { font-size: 13.5px; }
+  .tbl td.spec { font-size: 14px; }
+}

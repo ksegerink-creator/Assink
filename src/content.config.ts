@@ -94,6 +94,12 @@ const services = defineCollection({
     materials: z.array(z.string()).default([]),
     process: z.array(z.object({ step: z.string(), desc: z.string() })).default([]),
     specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
+    // De paar getallen waar een werkvoorbereider op zoekt, als strook onder de
+    // hero. Stonden eerder verstopt in lopende tekst.
+    kerncijfers: z.array(z.object({ waarde: z.string(), label: z.string() })).default([]),
+    // Wat een bezoeker moet meesturen voor een offerte, als afvinklijst naast
+    // de knop in plaats van als slotalinea.
+    aanleveren: z.array(z.string()).default([]),
     applications: z.array(z.string()).default([]),
     // Veelgestelde vragen per dienstpagina. Levert FAQPage-structured data op
     // en beantwoordt de vragen die bezoekers stellen maar die niet in de

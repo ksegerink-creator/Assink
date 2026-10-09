@@ -5,6 +5,10 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ServiceLayout from "@layouts/ServiceLayout.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
+import Kerncijfers from "@components/sections/Kerncijfers.astro";
+import ProcessSteps from "@components/sections/ProcessSteps.astro";
+import SpecTable from "@components/sections/SpecTable.astro";
+import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
 import { t } from "@data/i18n";
@@ -73,6 +77,8 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
         </div>
       </SplitHero>
 
+      <Kerncijfers items={s.kerncijfers} />
+
       {s.body.length > 0 && (
         <section class="sec tight">
           <div class="wrap">
@@ -102,6 +108,12 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
         </div>
       </section>
 
+      <ProcessSteps process={s.process} locale={locale} />
+
+      <SpecTable specs={s.specs} locale={locale} />
+
+      <Aanleverlijst items={s.aanleveren} locale={locale} />
+
       <FaqBlock faq={s.faq} />
 
       <CtaBand />
@@ -114,6 +126,19 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
 <style>
   .ohero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 
+  /*
+   * De kaartenlijst had alleen hover- en kindstijlen; het raster zelf ontbrak.
+   * Daardoor stond de lijst live met opsommingstekens en liepen nummer, label
+   * en omschrijving aan elkaar vast: "01STAALStijf, goed lasbaar…". Dat de
+   * mobiele regel hieronder al kolommen opnieuw zet, laat zien dat dit raster
+   * er altijd had moeten staan.
+   */
+  .olist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .olist li { border-bottom: 1px solid var(--line); }
+  .olist a {
+    display: grid; grid-template-columns: 52px minmax(0, .9fr) minmax(0, 1.1fr) auto;
+    gap: 16px; align-items: baseline; padding: 16px 8px; margin-inline: -8px;
+  }
   .olist a:hover { background: var(--sky-bg); }
   .olist__n { color: var(--steel); }
   .olist__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .02em; font-size: clamp(16px, 1.8vw, 21px); color: var(--ink); overflow-wrap: anywhere; }
