@@ -4,9 +4,9 @@ template: service
 group: snijden
 order: 33
 h1: Verspaning bij uw plaatwerk en constructies
-intro: Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen.
-  Het verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming
-  en de levering. Zo bestelt u een compleet product op één adres.
+intro: Naast ons eigen plaatwerk en constructiewerk leveren we ook gedraaide en gefreesde onderdelen. Het
+  verspaningswerk laten we maken door een vaste partner; wij verzorgen de engineering, de afstemming en de
+  levering. Zo bestelt u een compleet product op één adres.
 fotobank: "nabewerken"
 heroPhoto:
   subject: Fijnmechanisch gedraaid en gefreesd onderdeel
@@ -14,216 +14,251 @@ heroPhoto:
   crop: Onderdeel-detail
   comp: Gedraaid deel naast plaatwerk uit eigen productie
 body:
-- Verspaning omvat frezen, draaien, boren en kotteren om nauwkeurige metaaldelen te produceren. Dit werk
-  laten we uitvoeren op CNC-gestuurde machines bij een vaste partner — voor herhaalbare kwaliteit en hoge
-  nauwkeurigheid.
-- Werkbaar in staal, RVS, aluminium, messing en gietaluminium — van prototype tot serie, gecombineerd
-  met ons eigen plaatwerk en constructiewerk voor complete producten uit één hand.
-- 'In de praktijk gaat het om assen, bussen, flenzen en bevestigingsdelen die samen met plaatwerk of een
-  gelaste constructie één product moeten vormen. Juist die combinatie is de reden om het verspaningswerk
-  via ons te laten lopen: u heeft één aanspreekpunt en één levering in plaats van losse onderdelen die
-  u zelf moet samenbrengen.'
-- Wij verzorgen de werkvoorbereiding, de afstemming met de partner en de controle bij binnenkomst, en
-  bouwen de verspaande delen daarna in bij ons eigen <a href="/plaatwerk/">plaatwerk</a> en <a href="/constructies/">constructiewerk</a>.
-  Voor <a href="/machinebouw/">machinebouw</a> betekent dat een compleet samengestelde bouwgroep in plaats
-  van een doos met componenten.
-- 'Wat wij nodig hebben voor een aanvraag: een PDF-tekening en een 3D STEP-bestand met de maatvoering, het materiaal,
-  de gewenste toleranties en oppervlakte-eisen, het aantal stuks, en of het onderdeel deel uitmaakt van
-  een grotere samenstelling. Dat laatste bepaalt vaak de volgorde waarin we het traject inplannen.'
-- 'Onze werkplaats staat in Hengelo, midden in Twente, en wij werken voor machinebouwers en industriële
-  bedrijven in heel Nederland. Voor verspaand werk dat bij een samenstelling hoort, houdt dat de lijnen
-  kort: het onderdeel komt bij ons binnen, wordt gecontroleerd en gaat als onderdeel van het eindproduct
-  de deur uit.'
+  - "In de praktijk gaat het om assen, bussen, flenzen en bevestigingsdelen die samen met plaatwerk of een
+    gelaste constructie één product moeten vormen. Juist die combinatie is de reden om het verspaningswerk via
+    ons te laten lopen: u heeft één aanspreekpunt en één levering in plaats van losse onderdelen die u zelf
+    moet samenbrengen."
+  - Wij verzorgen de werkvoorbereiding, de afstemming met de partner en de controle bij binnenkomst, en bouwen
+    de verspaande delen daarna in bij ons eigen <a href="/plaatwerk/">plaatwerk</a> en <a
+    href="/constructies/">constructiewerk</a>. Voor <a href="/machinebouw/">machinebouw</a> betekent dat een
+    compleet samengestelde bouwgroep in plaats van een doos met componenten.
+  - "Onze werkplaats staat in Hengelo, midden in Twente, en wij werken voor machinebouwers en industriële
+    bedrijven in heel Nederland. Voor verspaand werk dat bij een samenstelling hoort, houdt dat de lijnen
+    kort: het onderdeel komt bij ons binnen, wordt gecontroleerd en gaat als onderdeel van het eindproduct de
+    deur uit."
 materials:
-- Staal
-- RVS
-- Aluminium
-- Messing
-- Gietaluminium
+  - Staal
+  - RVS
+  - Aluminium
+  - Messing
+  - Gietaluminium
 process:
-- step: Frezen
-  desc: Vlakken, contouren en kamers.
-- step: Draaien
-  desc: Rotatiesymmetrische delen.
-- step: Boren & kotteren
-  desc: Nauwkeurige gaten en passingen.
+  - step: Frezen
+    desc: Vlakken, contouren en kamers op CNC-gestuurde machines.
+  - step: Draaien
+    desc: "Rotatiesymmetrische delen: assen, bussen en flenzen."
+  - step: Boren & kotteren
+    desc: Nauwkeurige gaten en passingen, afgestemd op de samenstelling waarin het deel komt.
 applications:
-- Fijnmechanica
-- Machinebouw
-- Assen & bevestigingsdelen
+  - Fijnmechanica
+  - Machinebouw
+  - Assen & bevestigingsdelen
 related:
-- slug: machinebouw
-  label: Machinebouw
-  desc: Complete samenstellingen.
-- slug: constructies
-  label: Constructies
-  desc: Gelast constructiewerk.
+  - slug: machinebouw
+    label: Machinebouw
+    desc: Complete samenstellingen.
+  - slug: constructies
+    label: Constructies
+    desc: Gelast constructiewerk.
 seo:
   title: 'Verspaning: frezen, draaien en boren'
-  description: 'CNC-verspaning van fijnmechanische onderdelen in staal, RVS, aluminium, messing en gietaluminium:
-    van prototype tot serie.'
+  description: 'CNC-verspaning van fijnmechanische onderdelen in staal, RVS, aluminium, messing en
+    gietaluminium: van prototype tot serie.'
 translated:
-- nl
+  - nl
 faq:
-- vraag: Voeren jullie het verspaningswerk zelf uit?
-  antwoord: Nee. Draaien, frezen, boren en kotteren laten wij maken door een vaste partner met CNC-gestuurde
-    machines. Wij verzorgen de werkvoorbereiding, de afstemming, de controle bij binnenkomst en de samenstelling
-    met ons eigen plaatwerk en constructiewerk.
-- vraag: Welke materialen kunnen verspaand worden?
-  antwoord: Staal, RVS, aluminium, messing en gietaluminium, van prototype tot serie. Welke bewerking
-    en welk materiaal het meest voor de hand liggen, hangt af van de functie van het onderdeel en van
-    de vervolgbewerkingen bij ons in de hal.
-- vraag: Kunnen jullie verspaande delen combineren met plaatwerk?
-  antwoord: Ja, dat is juist de reden om het via ons te laten lopen. De gedraaide of gefreesde delen worden
-    bij ons ingebouwd in een gelaste constructie of een plaatwerksamenstelling, zodat u één compleet product
-    ontvangt in plaats van losse componenten.
-- vraag: Wat hebben jullie nodig voor een offerte?
-  antwoord: Een PDF-tekening en een 3D STEP-bestand met de maatvoering, het materiaal, de gewenste toleranties en oppervlakte-eisen,
-    het aantal stuks, en of het onderdeel deel uitmaakt van een grotere samenstelling. Dat laatste bepaalt
-    vaak de volgorde van het traject.
+  - vraag: Voeren jullie het verspaningswerk zelf uit?
+    antwoord: Nee. Draaien, frezen, boren en kotteren laten wij maken door een vaste partner met CNC-gestuurde
+      machines. Wij verzorgen de werkvoorbereiding, de afstemming, de controle bij binnenkomst en de
+      samenstelling met ons eigen plaatwerk en constructiewerk.
+  - vraag: Welke materialen kunnen verspaand worden?
+    antwoord: Staal, RVS, aluminium, messing en gietaluminium, van prototype tot serie. Welke bewerking en welk
+      materiaal het meest voor de hand liggen, hangt af van de functie van het onderdeel en van de
+      vervolgbewerkingen bij ons in de hal.
+  - vraag: Kunnen jullie verspaande delen combineren met plaatwerk?
+    antwoord: Ja, dat is juist de reden om het via ons te laten lopen. De gedraaide of gefreesde delen worden bij
+      ons ingebouwd in een gelaste constructie of een plaatwerksamenstelling, zodat u één compleet product
+      ontvangt in plaats van losse componenten.
+  - vraag: Wat hebben jullie nodig voor een offerte?
+    antwoord: Een PDF-tekening en een 3D STEP-bestand met de maatvoering, het materiaal, de gewenste toleranties
+      en oppervlakte-eisen, het aantal stuks, en of het onderdeel deel uitmaakt van een grotere samenstelling.
+      Dat laatste bepaalt vaak de volgorde van het traject.
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Machining
   h1: Machining alongside your sheet metal and constructions
   intro: Alongside our own sheet metal and structural work, we also supply turned and milled parts. The
-    machining itself is made by a regular partner; we handle the engineering, the coordination and the delivery.
-    That way you order a complete product from one address.
+    machining itself is made by a regular partner; we handle the engineering, the coordination and the
+    delivery. That way you order a complete product from one address.
   heroPhoto:
     subject: Precision-machined turned and milled part
   body:
-  - Machining covers milling, turning, drilling and boring to produce accurate metal parts. We have this
-    work carried out on CNC-controlled machines by a regular partner — for repeatable quality and high accuracy.
-  - Workable in steel, stainless steel, aluminium, brass and cast aluminium — from prototype to series,
-    combined with our own sheet metal and structural work for complete products from a single source.
-  - 'In practice this concerns shafts, bushings, flanges and fasteners that have to form a single product
-    together with sheet metal work or a welded construction. That combination is precisely the reason to
-    route the machining through us: you have one point of contact and one delivery instead of separate parts
-    you have to bring together yourself.'
-  - We handle the work preparation, the coordination with the partner and the incoming inspection, and then
-    build the machined parts into our own <a href="/en/plaatwerk/">sheet metal work</a> and <a href="/en/constructies/">welded
-    constructions</a>. For <a href="/en/machinebouw/">machine building</a> that means a fully assembled
-    sub-assembly rather than a box of components.
-  - 'What we need for a request: a PDF drawing and a 3D STEP file with the dimensions, the material, the
-    required tolerances and surface requirements, the quantity, and whether the part forms part of a larger
-    assembly. That last point often determines the order in which we schedule the work.'
-  - 'Our workshop is in Hengelo, in the Twente region, and we work for machine builders and industrial companies
-    throughout the Netherlands. For machined work that belongs to an assembly, that keeps the lines short:
-    the part arrives with us, is inspected and leaves as part of the finished product.'
+    - "In practice this concerns shafts, bushings, flanges and fasteners that have to form a single product
+      together with sheet metal work or a welded construction. That combination is precisely the reason to
+      route the machining through us: you have one point of contact and one delivery instead of separate parts
+      you have to bring together yourself."
+    - We handle the work preparation, the coordination with the partner and the incoming inspection, and then
+      build the machined parts into our own <a href="/en/plaatwerk/">sheet metal work</a> and <a
+      href="/en/constructies/">welded constructions</a>. For <a href="/en/machinebouw/">machine building</a>
+      that means a fully assembled sub-assembly rather than a box of components.
+    - "Our workshop is in Hengelo, in the Twente region, and we work for machine builders and industrial
+      companies throughout the Netherlands. For machined work that belongs to an assembly, that keeps the
+      lines short: the part arrives with us, is inspected and leaves as part of the finished product."
   materials:
-  - Steel
-  - Stainless steel
-  - Aluminium
-  - Brass
-  - Cast aluminium
+    - Steel
+    - Stainless steel
+    - Aluminium
+    - Brass
+    - Cast aluminium
   process:
-  - step: Milling
-    desc: Faces, contours and pockets.
-  - step: Turning
-    desc: Rotationally symmetrical parts.
-  - step: Drilling & boring
-    desc: Accurate holes and fits.
+    - step: Milling
+      desc: Faces, contours and pockets on CNC-controlled machines.
+    - step: Turning
+      desc: "Rotationally symmetrical parts: shafts, bushings and flanges."
+    - step: Drilling & boring
+      desc: Accurate holes and fits, matched to the assembly the part goes into.
   applications:
-  - Precision engineering
-  - Machine building
-  - Shafts & fasteners
+    - Precision engineering
+    - Machine building
+    - Shafts & fasteners
   related:
-  - label: Machine building
-    desc: Complete assemblies.
-  - label: Welded constructions
-    desc: Welded structural work.
+    - label: Machine building
+      desc: Complete assemblies.
+    - label: Welded constructions
+      desc: Welded structural work.
   seo:
     title: CNC milling, turning and drilling
-    description: 'CNC machining of precision parts in steel, stainless steel, aluminium, brass and cast
-      aluminium: from prototype to series.'
+    description: 'CNC machining of precision parts in steel, stainless steel, aluminium, brass and cast aluminium:
+      from prototype to series.'
   faq:
-  - vraag: Do you carry out the machining yourselves?
-    antwoord: No. Turning, milling, drilling and boring are carried out by a fixed partner with CNC-controlled
-      machines. We handle the work preparation, the coordination, the incoming inspection and the assembly
-      with our own sheet metal and construction work.
-  - vraag: Which materials can be machined?
-    antwoord: Steel, stainless steel, aluminium, brass and cast aluminium, from prototype to series. Which
-      operation and which material make most sense depends on the function of the part and on the subsequent
-      operations in our own workshop.
-  - vraag: Can you combine machined parts with sheet metal work?
-    antwoord: Yes, and that is precisely the reason to route it through us. The turned or milled parts are
-      built into a welded construction or a sheet metal assembly at our workshop, so that you receive one
-      complete product instead of separate components.
-  - vraag: What do you need for a quotation?
-    antwoord: A PDF drawing and a 3D STEP file with the dimensions, the material, the required tolerances
-      and surface requirements, the quantity, and whether the part forms part of a larger assembly. That
-      last point often determines the order of the process.
+    - vraag: Do you carry out the machining yourselves?
+      antwoord: No. Turning, milling, drilling and boring are carried out by a fixed partner with CNC-controlled
+        machines. We handle the work preparation, the coordination, the incoming inspection and the assembly
+        with our own sheet metal and construction work.
+    - vraag: Which materials can be machined?
+      antwoord: Steel, stainless steel, aluminium, brass and cast aluminium, from prototype to series. Which
+        operation and which material make most sense depends on the function of the part and on the subsequent
+        operations in our own workshop.
+    - vraag: Can you combine machined parts with sheet metal work?
+      antwoord: Yes, and that is precisely the reason to route it through us. The turned or milled parts are built
+        into a welded construction or a sheet metal assembly at our workshop, so that you receive one complete
+        product instead of separate components.
+    - vraag: What do you need for a quotation?
+      antwoord: A PDF drawing and a 3D STEP file with the dimensions, the material, the required tolerances and
+        surface requirements, the quantity, and whether the part forms part of a larger assembly. That last
+        point often determines the order of the process.
+  specs:
+    - label: Operations
+      value: milling, turning, drilling and boring
+    - label: Carried out
+      value: on CNC-controlled machines by a regular partner
+    - label: Materials
+      value: steel, stainless steel, aluminium, brass and cast aluminium
+    - label: Scope
+      value: from prototype to series
+    - label: We handle
+      value: work preparation, coordination with the partner and incoming inspection
+    - label: After that
+      value: built into our own sheet metal and structural work
+  aanleveren:
+    - A PDF drawing and a 3D STEP file with the dimensions
+    - Material
+    - The required tolerances and surface requirements
+    - Quantity
+    - Whether the part forms part of a larger assembly — that often determines the scheduling order
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Zerspanung
   h1: Zerspanung zu Ihrer Blechbearbeitung und Konstruktion
   intro: Neben unserer eigenen Blechbearbeitung und Konstruktionsarbeit liefern wir auch gedrehte und gefräste
-    Bauteile. Die Zerspanung selbst lassen wir von einem festen Partner fertigen; wir übernehmen die Konstruktion,
-    die Abstimmung und die Lieferung. So bestellen Sie ein komplettes Produkt an einer Adresse.
+    Bauteile. Die Zerspanung selbst lassen wir von einem festen Partner fertigen; wir übernehmen die
+    Konstruktion, die Abstimmung und die Lieferung. So bestellen Sie ein komplettes Produkt an einer Adresse.
   heroPhoto:
     subject: Feinmechanisch gedrehtes und gefrästes Bauteil
   body:
-  - Die Zerspanung umfasst Fräsen, Drehen, Bohren und Ausspindeln zur Herstellung präziser Metallteile.
-    Diese Arbeiten lassen wir auf CNC-gesteuerten Maschinen bei einem festen Partner ausführen — für wiederholbare
-    Qualität und hohe Genauigkeit.
-  - Bearbeitbar in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss — vom Prototyp bis zur Serie,
-    kombiniert mit unserer eigenen Blechbearbeitung und Konstruktionsarbeit für komplette Produkte aus einer
-    Hand.
-  - 'In der Praxis geht es um Wellen, Buchsen, Flansche und Befestigungsteile, die zusammen mit Blechteilen
-    oder einer geschweißten Konstruktion ein Produkt bilden sollen. Genau diese Kombination ist der Grund,
-    die Zerspanung über uns laufen zu lassen: Sie haben einen Ansprechpartner und eine Lieferung statt einzelner
-    Teile, die Sie selbst zusammenführen müssen.'
-  - Wir übernehmen die Arbeitsvorbereitung, die Abstimmung mit dem Partner und die Eingangsprüfung und bauen
-    die zerspanten Teile anschließend in unsere eigene <a href="/de/plaatwerk/">Blechbearbeitung</a> und
-    <a href="/de/constructies/">Konstruktionsarbeit</a> ein. Für den <a href="/de/machinebouw/">Maschinenbau</a>
-    bedeutet das eine komplett montierte Baugruppe statt einer Kiste mit Komponenten.
-  - 'Was wir für eine Anfrage benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung, den
-    Werkstoff, die gewünschten Toleranzen und Oberflächenanforderungen, die Stückzahl und ob das Teil zu
-    einer größeren Baugruppe gehört. Letzteres bestimmt häufig die Reihenfolge, in der wir den Ablauf einplanen.'
-  - 'Unsere Werkstatt steht in Hengelo, mitten in der Region Twente, und wir arbeiten für Maschinenbauer
-    und Industriebetriebe in den gesamten Niederlanden. Bei zerspanten Teilen, die zu einer Baugruppe gehören,
-    hält das die Wege kurz: Das Teil kommt bei uns an, wird geprüft und verlässt uns als Teil des Endprodukts.'
+    - "In der Praxis geht es um Wellen, Buchsen, Flansche und Befestigungsteile, die zusammen mit Blechteilen
+      oder einer geschweißten Konstruktion ein Produkt bilden sollen. Genau diese Kombination ist der Grund,
+      die Zerspanung über uns laufen zu lassen: Sie haben einen Ansprechpartner und eine Lieferung statt
+      einzelner Teile, die Sie selbst zusammenführen müssen."
+    - Wir übernehmen die Arbeitsvorbereitung, die Abstimmung mit dem Partner und die Eingangsprüfung und bauen
+      die zerspanten Teile anschließend in unsere eigene <a href="/de/plaatwerk/">Blechbearbeitung</a> und <a
+      href="/de/constructies/">Konstruktionsarbeit</a> ein. Für den <a
+      href="/de/machinebouw/">Maschinenbau</a> bedeutet das eine komplett montierte Baugruppe statt einer
+      Kiste mit Komponenten.
+    - "Unsere Werkstatt steht in Hengelo, mitten in der Region Twente, und wir arbeiten für Maschinenbauer und
+      Industriebetriebe in den gesamten Niederlanden. Bei zerspanten Teilen, die zu einer Baugruppe gehören,
+      hält das die Wege kurz: Das Teil kommt bei uns an, wird geprüft und verlässt uns als Teil des
+      Endprodukts."
   materials:
-  - Stahl
-  - Edelstahl
-  - Aluminium
-  - Messing
-  - Aluminiumguss
+    - Stahl
+    - Edelstahl
+    - Aluminium
+    - Messing
+    - Aluminiumguss
   process:
-  - step: Fräsen
-    desc: Flächen, Konturen und Taschen.
-  - step: Drehen
-    desc: Rotationssymmetrische Teile.
-  - step: Bohren & Ausspindeln
-    desc: Präzise Bohrungen und Passungen.
+    - step: Fräsen
+      desc: Flächen, Konturen und Taschen auf CNC-gesteuerten Maschinen.
+    - step: Drehen
+      desc: "Rotationssymmetrische Teile: Wellen, Buchsen und Flansche."
+    - step: Bohren & Ausspindeln
+      desc: Präzise Bohrungen und Passungen, abgestimmt auf die Baugruppe, in die das Teil kommt.
   applications:
-  - Feinmechanik
-  - Maschinenbau
-  - Wellen & Befestigungsteile
+    - Feinmechanik
+    - Maschinenbau
+    - Wellen & Befestigungsteile
   related:
-  - label: Maschinenbau
-    desc: Komplette Baugruppen.
-  - label: Konstruktionen
-    desc: Geschweißte Konstruktionsarbeit.
+    - label: Maschinenbau
+      desc: Komplette Baugruppen.
+    - label: Konstruktionen
+      desc: Geschweißte Konstruktionsarbeit.
   seo:
     title: CNC-Fräsen, -Drehen und -Bohren
-    description: 'CNC-Zerspanung feinmechanischer Bauteile in Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss:
-      vom Prototyp bis zur Serie.'
+    description: 'CNC-Zerspanung feinmechanischer Bauteile in Stahl, Edelstahl, Aluminium, Messing und
+      Aluminiumguss: vom Prototyp bis zur Serie.'
   faq:
-  - vraag: Führen Sie die Zerspanung selbst aus?
-    antwoord: Nein. Drehen, Fräsen, Bohren und Ausspindeln lassen wir von einem festen Partner mit CNC-gesteuerten
-      Maschinen ausführen. Wir übernehmen die Arbeitsvorbereitung, die Abstimmung, die Eingangsprüfung und
-      den Zusammenbau mit unserer eigenen Blech- und Konstruktionsarbeit.
-  - vraag: Welche Werkstoffe können zerspant werden?
-    antwoord: Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss, vom Prototyp bis zur Serie. Welche
-      Bearbeitung und welcher Werkstoff am sinnvollsten sind, hängt von der Funktion des Teils und von den
-      nachfolgenden Bearbeitungen in unserer Halle ab.
-  - vraag: Können Sie zerspante Teile mit Blechbearbeitung kombinieren?
-    antwoord: Ja, und genau das ist der Grund, es über uns laufen zu lassen. Die gedrehten oder gefrästen
-      Teile werden bei uns in eine geschweißte Konstruktion oder eine Blechbaugruppe eingebaut, sodass Sie
-      ein komplettes Produkt statt einzelner Komponenten erhalten.
-  - vraag: Was benötigen Sie für ein Angebot?
-    antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung, den Werkstoff, die gewünschten
-      Toleranzen und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren Baugruppe
-      gehört. Letzteres bestimmt häufig die Reihenfolge des Ablaufs.
+    - vraag: Führen Sie die Zerspanung selbst aus?
+      antwoord: Nein. Drehen, Fräsen, Bohren und Ausspindeln lassen wir von einem festen Partner mit CNC-gesteuerten
+        Maschinen ausführen. Wir übernehmen die Arbeitsvorbereitung, die Abstimmung, die Eingangsprüfung und
+        den Zusammenbau mit unserer eigenen Blech- und Konstruktionsarbeit.
+    - vraag: Welche Werkstoffe können zerspant werden?
+      antwoord: Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss, vom Prototyp bis zur Serie. Welche
+        Bearbeitung und welcher Werkstoff am sinnvollsten sind, hängt von der Funktion des Teils und von den
+        nachfolgenden Bearbeitungen in unserer Halle ab.
+    - vraag: Können Sie zerspante Teile mit Blechbearbeitung kombinieren?
+      antwoord: Ja, und genau das ist der Grund, es über uns laufen zu lassen. Die gedrehten oder gefrästen Teile
+        werden bei uns in eine geschweißte Konstruktion oder eine Blechbaugruppe eingebaut, sodass Sie ein
+        komplettes Produkt statt einzelner Komponenten erhalten.
+    - vraag: Was benötigen Sie für ein Angebot?
+      antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung, den Werkstoff, die gewünschten
+        Toleranzen und Oberflächenanforderungen, die Stückzahl und ob das Teil zu einer größeren Baugruppe
+        gehört. Letzteres bestimmt häufig die Reihenfolge des Ablaufs.
+  specs:
+    - label: Bearbeitungen
+      value: Fräsen, Drehen, Bohren und Ausspindeln
+    - label: Ausführung
+      value: auf CNC-gesteuerten Maschinen bei einem festen Partner
+    - label: Werkstoffe
+      value: Stahl, Edelstahl, Aluminium, Messing und Aluminiumguss
+    - label: Umfang
+      value: vom Prototyp bis zur Serie
+    - label: Wir übernehmen
+      value: Arbeitsvorbereitung, Abstimmung mit dem Partner und Eingangsprüfung
+    - label: Danach
+      value: Einbau in unsere eigene Blechbearbeitung und Konstruktionsarbeit
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei mit der Bemaßung
+    - Werkstoff
+    - Die gewünschten Toleranzen und Oberflächenanforderungen
+    - Stückzahl
+    - Ob das Teil zu einer größeren Baugruppe gehört — das bestimmt häufig die Reihenfolge der Einplanung
+specs:
+  - label: Bewerkingen
+    value: frezen, draaien, boren en kotteren
+  - label: Uitvoering
+    value: op CNC-gestuurde machines bij een vaste partner
+  - label: Materialen
+    value: staal, RVS, aluminium, messing en gietaluminium
+  - label: Omvang
+    value: van prototype tot serie
+  - label: Wij verzorgen
+    value: werkvoorbereiding, afstemming met de partner en de controle bij binnenkomst
+  - label: Daarna
+    value: inbouwen bij ons eigen plaatwerk en constructiewerk
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand met de maatvoering
+  - Materiaal
+  - De gewenste toleranties en oppervlakte-eisen
+  - Aantal stuks
+  - Of het onderdeel deel uitmaakt van een grotere samenstelling — dat bepaalt vaak de volgorde van inplannen

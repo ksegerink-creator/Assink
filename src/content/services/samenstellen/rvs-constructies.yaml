@@ -4,8 +4,8 @@ template: service
 group: samenstellen
 order: 52
 h1: RVS-constructies
-intro: Corrosiebestendig RVS-constructiewerk — van frames tot volledig gelaste samenstellingen, hygiënisch
-  en representatief afgewerkt.
+intro: Corrosiebestendig RVS-constructiewerk — van frames tot volledig gelaste samenstellingen, hygiënisch en
+  representatief afgewerkt.
 fotobank: "lasser-in-de-hal"
 heroPhoto:
   subject: Gelaste RVS-constructie tijdens eindcontrole
@@ -13,182 +13,182 @@ heroPhoto:
   crop: Constructie centraal
   comp: RVS-frame, controlemoment
 body:
-- RVS-constructies combineren sterkte met corrosiebestendigheid. Wij lassen en stellen samen in RVS 304
-  en 316, met afwerking (beitsen, passiveren) afgestemd op de toepassing — bijvoorbeeld in de voedingsmiddelenindustrie.
-- Ons RVS-constructiewerk combineert buislasersnijden voor passklare profielen met TIG- en laserlassen,
-  gevolgd door beitsen en passiveren zodat de corrosiebestendigheid van het materiaal na bewerking behouden
-  blijft.
-- Wilt u een RVS-frame laten maken? Stuur uw PDF-tekening en 3D STEP-bestand mee — wij beoordelen de maakbaarheid en
-  denken mee over profielkeuze en lasvolgorde voordat we aan de productie beginnen.
-- De keuze tussen RVS 304 en RVS 316 bepaalt in veel gevallen de levensduur van de constructie. RVS 316
-  bevat molybdeen en is daardoor beter bestand tegen putcorrosie in omgevingen met chloriden — zeewater,
-  reinigingsmiddelen, pekel. RVS 304 volstaat in drogere en minder agressieve omstandigheden en is voordeliger.
-  De afweging zetten wij uitgebreider op een rij in ons artikel over <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
-  304 of 316</a>.
-- 'Wat RVS-constructiewerk onderscheidt van staal is niet het lassen zelf, maar wat eromheen gebeurt.
-  RVS moet gescheiden blijven van koolstofstaal: eigen gereedschap, eigen borstels, een eigen werkplek.
-  Achterblijvend staalstof roest en trekt roestvlekken op een verder gaaf oppervlak — een fout die pas
-  weken later zichtbaar wordt, als de constructie allang bij de klant staat.'
-- 'Na het lassen zitten er aanloopkleuren rond de naad. Die zijn niet alleen cosmetisch: op die plek is
-  de chroomoxidelaag aangetast en is het materiaal gevoelig voor corrosie. Wij beitsen of stralen die
-  zone en passiveren daarna, zodat de oxidelaag zich herstelt. Voor aluminium en RVS hebben wij daarvoor
-  een eigen straalcabine van 8 × 4 × 3 meter met glasparels van 100–200 μm.'
-- Voor de profielen gebruiken wij de Trumpf TruLaser Tube 3000. Uitsparingen, verstekken en doorvoeren
-  komen direct uit de buislaser, waardoor de delen passen zonder handwerk en de naden gelijkmatig blijven.
-  Dat scheelt lastijd en — belangrijker bij RVS — nabewerking, want elke extra slijpbewerking is een extra
-  plek die weer behandeld moet worden.
-- 'In hygiënische omgevingen gelden extra eisen aan de uitvoering: doorgelaste en gladgeslepen naden in
-  plaats van hechtlassen, geen holle ruimtes waarin vocht blijft staan, en waar mogelijk afgeronde overgangen.
-  Geef bij uw aanvraag door of de constructie gereinigd moet kunnen worden en met welke middelen; dat
-  bepaalt zowel de materiaalkeuze als de naaduitvoering.'
-- Onze constructies gaan tot 10 ton stukgewicht en 8 meter bouwhoogte. Voor het laswerk werken wij onder
-  ISO 3834-2 en voor draagconstructies onder EN 1090-1; ons kwaliteitssysteem is ISO 9001-gecertificeerd.
+  - De keuze tussen RVS 304 en RVS 316 bepaalt in veel gevallen de levensduur van de constructie. RVS 316
+    bevat molybdeen en is daardoor beter bestand tegen putcorrosie in omgevingen met chloriden — zeewater,
+    reinigingsmiddelen, pekel. RVS 304 volstaat in drogere en minder agressieve omstandigheden en is
+    voordeliger. De afweging zetten wij uitgebreider op een rij in ons artikel over <a
+    href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS 304 of 316</a>.
+  - "Wat RVS-constructiewerk onderscheidt van staal is niet het lassen zelf, maar wat eromheen gebeurt. RVS
+    moet gescheiden blijven van koolstofstaal: eigen gereedschap, eigen borstels, een eigen werkplek.
+    Achterblijvend staalstof roest en trekt roestvlekken op een verder gaaf oppervlak — een fout die pas weken
+    later zichtbaar wordt, als de constructie allang bij de klant staat."
+  - "Na het lassen zitten er aanloopkleuren rond de naad. Die zijn niet alleen cosmetisch: op die plek is de
+    chroomoxidelaag aangetast en is het materiaal gevoelig voor corrosie. Wij beitsen of stralen die zone en
+    passiveren daarna, zodat de oxidelaag zich herstelt."
 materials:
-- RVS 304
-- RVS 316
+  - RVS 304
+  - RVS 316
 process:
-- step: Buislasersnijden
-  desc: Passklare buis en profiel.
-- step: Lassen
-  desc: TIG- of laserlassen.
-- step: Afwerking
-  desc: Beitsen en passiveren.
-- step: Controle
-  desc: Maat- en naadcontrole.
+  - step: Buislasersnijden
+    desc: Passklare buis en profiel.
+  - step: Lassen
+    desc: TIG- of laserlassen.
+  - step: Afwerking
+    desc: Beitsen en passiveren.
+  - step: Controle
+    desc: Maat- en naadcontrole.
 applications:
-- Machinebouw
-- Voedingsmiddelenindustrie
-- Apparatenbouw
-- Offshore & maritiem
+  - Machinebouw
+  - Voedingsmiddelenindustrie
+  - Apparatenbouw
+  - Offshore & maritiem
 faq:
-- vraag: RVS 304 of 316 — welke moet ik kiezen voor mijn constructie?
-  antwoord: RVS 316 bevat molybdeen en is beter bestand tegen putcorrosie in omgevingen met chloriden,
-    zoals zeewater, pekel of agressieve reinigingsmiddelen. RVS 304 voldoet in drogere en minder agressieve
-    omstandigheden en is voordeliger. Geef door in welke omgeving de constructie komt te staan, dan adviseren
-    wij daarop.
-- vraag: Waarom is passiveren na het lassen nodig?
-  antwoord: Lassen tast de chroomoxidelaag rond de naad aan; op die plek is het materiaal gevoelig voor
-    corrosie. Wij verwijderen aanloopkleuren door te beitsen of te stralen en passiveren daarna, zodat
-    de beschermende laag zich herstelt. Zonder die stap gaat een RVS-constructie juist bij de las roesten.
-- vraag: Kunnen jullie RVS-constructies leveren voor de voedingsmiddelenindustrie?
-  antwoord: Ja. In hygiënische omgevingen voeren wij naden doorgelast en gladgeslepen uit in plaats van
-    hechtlassen, vermijden wij holle ruimtes waarin vocht blijft staan en werken wij waar mogelijk met
-    afgeronde overgangen. Geef door met welke middelen gereinigd wordt; dat bepaalt de materiaalkeuze
-    mede.
-- vraag: Hoe zwaar mag een RVS-constructie zijn?
-  antwoord: Tot 10 ton stukgewicht en 8 meter bouwhoogte. In de hal hangen vijf bovenloopkranen van 5
-    ton; door in tandem te hijsen verplaatsen wij samenstellingen tot 10 ton.
-- vraag: Verwerken jullie RVS en staal in dezelfde werkplaats?
-  antwoord: Wij houden RVS gescheiden van koolstofstaal, met eigen gereedschap en eigen borstels. Achterblijvend
-    staalstof roest en veroorzaakt roestvlekken op een verder gaaf RVS-oppervlak; dat wordt pas weken
-    later zichtbaar en is dan lastig te herstellen.
+  - vraag: RVS 304 of 316 — welke moet ik kiezen voor mijn constructie?
+    antwoord: RVS 316 bevat molybdeen en is beter bestand tegen putcorrosie in omgevingen met chloriden, zoals
+      zeewater, pekel of agressieve reinigingsmiddelen. RVS 304 voldoet in drogere en minder agressieve
+      omstandigheden en is voordeliger. Geef door in welke omgeving de constructie komt te staan, dan
+      adviseren wij daarop.
+  - vraag: Waarom is passiveren na het lassen nodig?
+    antwoord: Lassen tast de chroomoxidelaag rond de naad aan; op die plek is het materiaal gevoelig voor
+      corrosie. Wij verwijderen aanloopkleuren door te beitsen of te stralen en passiveren daarna, zodat de
+      beschermende laag zich herstelt. Zonder die stap gaat een RVS-constructie juist bij de las roesten.
+  - vraag: Kunnen jullie RVS-constructies leveren voor de voedingsmiddelenindustrie?
+    antwoord: Ja. In hygiënische omgevingen voeren wij naden doorgelast en gladgeslepen uit in plaats van
+      hechtlassen, vermijden wij holle ruimtes waarin vocht blijft staan en werken wij waar mogelijk met
+      afgeronde overgangen. Geef door met welke middelen gereinigd wordt; dat bepaalt de materiaalkeuze mede.
+  - vraag: Hoe zwaar mag een RVS-constructie zijn?
+    antwoord: Tot 10 ton stukgewicht en 8 meter bouwhoogte. In de hal hangen vijf bovenloopkranen van 5 ton; door
+      in tandem te hijsen verplaatsen wij samenstellingen tot 10 ton.
+  - vraag: Verwerken jullie RVS en staal in dezelfde werkplaats?
+    antwoord: Wij houden RVS gescheiden van koolstofstaal, met eigen gereedschap en eigen borstels. Achterblijvend
+      staalstof roest en veroorzaakt roestvlekken op een verder gaaf RVS-oppervlak; dat wordt pas weken later
+      zichtbaar en is dan lastig te herstellen.
 related:
-- slug: constructies
-  label: Constructies
-  desc: Alle constructiewerk.
-- slug: plaatwerk/rvs
-  label: RVS
-  desc: Roestvast plaatwerk.
-- slug: plaatwerk/voedingsmiddelenindustrie
-  label: Voedingsmiddelenindustrie
-  desc: Hygiënische toepassingen.
+  - slug: constructies
+    label: Constructies
+    desc: Alle constructiewerk.
+  - slug: plaatwerk/rvs
+    label: RVS
+    desc: Roestvast plaatwerk.
+  - slug: plaatwerk/voedingsmiddelenindustrie
+    label: Voedingsmiddelenindustrie
+    desc: Hygiënische toepassingen.
 seo:
   title: Gelaste RVS-constructies op maat
-  description: Corrosiebestendige gelaste RVS-constructies en samenstellingen voor machinebouw, voeding
-    en veeleisende omgevingen.
+  description: Corrosiebestendige gelaste RVS-constructies en samenstellingen voor machinebouw, voeding en
+    veeleisende omgevingen.
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Stainless steel constructions
   h1: Stainless steel constructions
-  intro: Corrosion-resistant constructions in stainless steel — from frames to fully welded assemblies,
-    with a hygienic and presentable finish.
+  intro: Corrosion-resistant constructions in stainless steel — from frames to fully welded assemblies, with a
+    hygienic and presentable finish.
   heroPhoto:
     subject: Welded stainless steel structure during final inspection
   body:
-  - Stainless steel constructions combine strength with corrosion resistance. We weld and assemble in stainless
-    steel 304 and 316, with finishing (pickling, passivation) matched to the application — for example in
-    the food industry.
-  - Our stainless steel structural work combines tube laser cutting for ready-to-fit profiles with TIG and
-    laser welding, followed by pickling and passivation so the material's corrosion resistance is preserved
-    after processing.
-  - Would you like a stainless steel frame made? Send us your PDF drawing and 3D STEP file — we assess manufacturability
-    and think along on profile choice and welding sequence before production starts.
-  - The choice between stainless steel 304 and 316 often determines the service life of the structure. Stainless
-    steel 316 contains molybdenum and is therefore more resistant to pitting corrosion in environments with
-    chlorides — seawater, cleaning agents, brine. Stainless steel 304 is sufficient in drier and less aggressive
-    conditions and is more economical. We set out the trade-off in more detail in our article on <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">stainless
-    steel 304 or 316</a> (in Dutch).
-  - 'What sets stainless steel construction work apart from steel is not the welding itself, but what happens
-    around it. Stainless steel has to be kept separate from carbon steel: dedicated tools, dedicated brushes,
-    a dedicated work area. Residual steel dust rusts and draws rust spots onto an otherwise perfect surface
-    — a mistake that only becomes visible weeks later, when the structure has long since been delivered.'
-  - 'After welding there is heat tint around the seam. That is not merely cosmetic: at that spot the chromium
-    oxide layer has been damaged and the material is susceptible to corrosion. We pickle or blast that zone
-    and then passivate, so that the oxide layer restores itself. For aluminium and stainless steel we have
-    our own blasting cabin of 8 × 4 × 3 metres with glass beads of 100–200 μm.'
-  - For the profiles we use the Trumpf TruLaser Tube 3000. Cut-outs, mitres and pass-throughs come straight
-    off the tube laser, so that parts fit without manual work and the seams stay even. That saves welding
-    time and — more importantly with stainless steel — finishing, because every extra grinding operation
-    is another spot that has to be treated again.
-  - 'Hygienic environments impose additional requirements on the execution: fully welded and smoothly ground
-    seams instead of tack welds, no cavities in which moisture can stand, and rounded transitions where
-    possible. Tell us with your request whether the structure has to be cleanable and with which agents;
-    that determines both the material choice and the seam execution.'
-  - Our structures go up to 10 tonnes unit weight and 8 metres in height. For welding we work under ISO
-    3834-2 and for load-bearing structures under EN 1090-1; our quality system is certified to ISO 9001.
+    - The choice between stainless steel 304 and 316 often determines the service life of the structure.
+      Stainless steel 316 contains molybdenum and is therefore more resistant to pitting corrosion in
+      environments with chlorides — seawater, cleaning agents, brine. Stainless steel 304 is sufficient in
+      drier and less aggressive conditions and is more economical. We set out the trade-off in more detail in
+      our article on <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">stainless
+      steel 304 or 316</a> (in Dutch).
+    - "What sets stainless steel construction work apart from steel is not the welding itself, but what
+      happens around it. Stainless steel has to be kept separate from carbon steel: dedicated tools, dedicated
+      brushes, a dedicated work area. Residual steel dust rusts and draws rust spots onto an otherwise perfect
+      surface — a mistake that only becomes visible weeks later, when the structure has long since been
+      delivered."
+    - "After welding there is heat tint around the seam. That is not merely cosmetic: at that spot the
+      chromium oxide layer has been damaged and the material is susceptible to corrosion. We pickle or blast
+      that zone and then passivate, so that the oxide layer restores itself."
   materials:
-  - Stainless steel 304
-  - Stainless steel 316
+    - Stainless steel 304
+    - Stainless steel 316
   process:
-  - step: Tube laser cutting
-    desc: Ready-to-fit tube and profile.
-  - step: Welding
-    desc: TIG or laser welding.
-  - step: Finishing
-    desc: Pickling and passivation.
-  - step: Inspection
-    desc: Dimensional and weld seam inspection.
+    - step: Tube laser cutting
+      desc: Ready-to-fit tube and profile.
+    - step: Welding
+      desc: TIG or laser welding.
+    - step: Finishing
+      desc: Pickling and passivation.
+    - step: Inspection
+      desc: Dimensional and weld seam inspection.
   applications:
-  - Machine building
-  - Food industry
-  - Equipment manufacturing
-  - Offshore & maritime
+    - Machine building
+    - Food industry
+    - Equipment manufacturing
+    - Offshore & maritime
   faq:
-  - vraag: Stainless steel 304 or 316 — which should I choose for my structure?
-    antwoord: Stainless steel 316 contains molybdenum and is more resistant to pitting corrosion in environments
-      with chlorides, such as seawater, brine or aggressive cleaning agents. Stainless steel 304 is adequate
-      in drier and less aggressive conditions and is more economical. Tell us where the structure will be
-      used and we will advise accordingly.
-  - vraag: Why is passivation necessary after welding?
-    antwoord: Welding damages the chromium oxide layer around the seam; at that spot the material becomes
-      susceptible to corrosion. We remove heat tint by pickling or blasting and then passivate, so that
-      the protective layer restores itself. Without that step a stainless steel structure will rust precisely
-      at the weld.
-  - vraag: Can you supply stainless steel structures for the food industry?
-    antwoord: Yes. In hygienic environments we execute seams fully welded and smoothly ground instead of
-      tack welded, avoid cavities in which moisture can stand and use rounded transitions where possible.
-      Tell us which cleaning agents are used; that partly determines the material choice.
-  - vraag: How heavy may a stainless steel structure be?
-    antwoord: Up to 10 tonnes unit weight and 8 metres in height. Five overhead cranes of 5 tonnes are installed
-      in the hall; by lifting in tandem we move assemblies of up to 10 tonnes.
-  - vraag: Do you process stainless steel and carbon steel in the same workshop?
-    antwoord: We keep stainless steel separate from carbon steel, with dedicated tools and dedicated brushes.
-      Residual steel dust rusts and causes rust spots on an otherwise perfect stainless steel surface; that
-      only becomes visible weeks later and is hard to repair by then.
+    - vraag: Stainless steel 304 or 316 — which should I choose for my structure?
+      antwoord: Stainless steel 316 contains molybdenum and is more resistant to pitting corrosion in environments
+        with chlorides, such as seawater, brine or aggressive cleaning agents. Stainless steel 304 is adequate
+        in drier and less aggressive conditions and is more economical. Tell us where the structure will be
+        used and we will advise accordingly.
+    - vraag: Why is passivation necessary after welding?
+      antwoord: Welding damages the chromium oxide layer around the seam; at that spot the material becomes
+        susceptible to corrosion. We remove heat tint by pickling or blasting and then passivate, so that the
+        protective layer restores itself. Without that step a stainless steel structure will rust precisely at
+        the weld.
+    - vraag: Can you supply stainless steel structures for the food industry?
+      antwoord: Yes. In hygienic environments we execute seams fully welded and smoothly ground instead of tack
+        welded, avoid cavities in which moisture can stand and use rounded transitions where possible. Tell us
+        which cleaning agents are used; that partly determines the material choice.
+    - vraag: How heavy may a stainless steel structure be?
+      antwoord: Up to 10 tonnes unit weight and 8 metres in height. Five overhead cranes of 5 tonnes are installed
+        in the hall; by lifting in tandem we move assemblies of up to 10 tonnes.
+    - vraag: Do you process stainless steel and carbon steel in the same workshop?
+      antwoord: We keep stainless steel separate from carbon steel, with dedicated tools and dedicated brushes.
+        Residual steel dust rusts and causes rust spots on an otherwise perfect stainless steel surface; that
+        only becomes visible weeks later and is hard to repair by then.
   related:
-  - label: Welded constructions
-    desc: All construction work.
-  - label: Stainless steel
-    desc: Stainless steel sheet metal work.
-  - label: Food industry
-    desc: Hygienic applications.
+    - label: Welded constructions
+      desc: All construction work.
+    - label: Stainless steel
+      desc: Stainless steel sheet metal work.
+    - label: Food industry
+      desc: Hygienic applications.
   seo:
     title: Welded stainless steel constructions
     description: Corrosion-resistant welded stainless steel constructions and assemblies for machine building,
       food and demanding environments.
+  kerncijfers:
+    - waarde: 10 t
+      label: max. piece weight
+    - waarde: 8 m
+      label: max. build height
+    - waarde: 304 / 316
+      label: stainless grades
+  specs:
+    - label: Grades
+      value: stainless steel 304 and 316
+    - label: Stainless 316
+      value: contains molybdenum; more resistant to pitting with chlorides — seawater, cleaning agents, brine
+    - label: Stainless 304
+      value: sufficient in drier, less aggressive conditions and more economical
+    - label: Kept separate
+      value: from carbon steel — dedicated tools, dedicated brushes, dedicated work area
+    - label: Tube and profile
+      value: Trumpf TruLaser Tube 3000; cut-outs, mitres and pass-throughs straight off the machine
+    - label: Welding
+      value: TIG or laser welding
+    - label: After welding
+      value: pickling or blasting the heat tint, then passivation
+    - label: Blast cabin
+      value: 8 × 4 × 3 m, glass beads 100–200 μm
+    - label: Hygienic environment
+      value: fully welded and ground-smooth seams, no cavities, rounded transitions where possible
+    - label: Capacity
+      value: up to 10 tonnes piece weight and 8 m build height
+    - label: Standards
+      value: welding under ISO 3834-2, load-bearing structures under EN 1090-1, quality system ISO 9001
+  aanleveren:
+    - A PDF drawing and a 3D STEP file
+    - The required stainless grade — 304 or 316
+    - Whether the structure has to be cleanable, and with which agents
+    - That determines both the material choice and the seam execution; we think along about profile choice and
+      welding sequence before production starts
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -199,89 +199,140 @@ de:
   heroPhoto:
     subject: Geschweißte Edelstahlkonstruktion bei der Endkontrolle
   body:
-  - Edelstahlkonstruktionen verbinden Festigkeit mit Korrosionsbeständigkeit. Wir schweißen und montieren
-    in Edelstahl 304 und 316, mit einer Nachbearbeitung (Beizen, Passivieren), die auf die Anwendung abgestimmt
-    ist — zum Beispiel in der Lebensmittelindustrie.
-  - Unsere Edelstahl-Konstruktionsarbeit kombiniert Rohrlaserschneiden für passgenaue Profile mit WIG- und
-    Laserschweißen, gefolgt von Beizen und Passivieren, damit die Korrosionsbeständigkeit des Materials
-    nach der Bearbeitung erhalten bleibt.
-  - Möchten Sie einen Edelstahlrahmen fertigen lassen? Schicken Sie uns Ihre PDF-Zeichnung und 3D-STEP-Datei
-    — wir prüfen die Machbarkeit und denken bei Profilwahl und Schweißreihenfolge mit, bevor die Produktion
-    beginnt.
-  - Die Wahl zwischen Edelstahl 304 und 316 bestimmt in vielen Fällen die Lebensdauer der Konstruktion.
-    Edelstahl 316 enthält Molybdän und ist dadurch widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
-    Umgebungen — Meerwasser, Reinigungsmittel, Streusalz. Edelstahl 304 genügt in trockeneren und weniger
-    aggressiven Bedingungen und ist günstiger. Die Abwägung stellen wir ausführlicher in unserem Artikel
-    über <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">Edelstahl 304 oder
-    316</a> dar (auf Niederländisch).
-  - 'Was die Edelstahlkonstruktion vom Stahlbau unterscheidet, ist nicht das Schweißen selbst, sondern das
-    Drumherum. Edelstahl muss von Kohlenstoffstahl getrennt bleiben: eigenes Werkzeug, eigene Bürsten, ein
-    eigener Arbeitsplatz. Zurückbleibender Stahlstaub rostet und erzeugt Rostflecken auf einer sonst einwandfreien
-    Oberfläche — ein Fehler, der erst Wochen später sichtbar wird, wenn die Konstruktion längst beim Kunden
-    steht.'
-  - 'Nach dem Schweißen befinden sich Anlauffarben rund um die Naht. Diese sind nicht nur kosmetisch: an
-    dieser Stelle ist die Chromoxidschicht angegriffen und das Material korrosionsanfällig. Wir beizen oder
-    strahlen diese Zone und passivieren anschließend, damit sich die Oxidschicht wieder aufbaut. Für Aluminium
-    und Edelstahl haben wir dafür eine eigene Strahlkabine von 8 × 4 × 3 Metern mit Glasperlen von 100–200
-    μm.'
-  - Für die Profile nutzen wir die Trumpf TruLaser Tube 3000. Aussparungen, Gehrungen und Durchführungen
-    kommen direkt aus dem Rohrlaser, sodass die Teile ohne Handarbeit passen und die Nähte gleichmäßig bleiben.
-    Das spart Schweißzeit und — bei Edelstahl noch wichtiger — Nacharbeit, denn jeder zusätzliche Schleifvorgang
-    ist eine weitere Stelle, die erneut behandelt werden muss.
-  - 'In hygienischen Umgebungen gelten zusätzliche Anforderungen an die Ausführung: durchgeschweißte und
-    glattgeschliffene Nähte statt Heftnähte, keine Hohlräume, in denen Feuchtigkeit stehen bleibt, und wo
-    möglich abgerundete Übergänge. Teilen Sie uns bei Ihrer Anfrage mit, ob die Konstruktion gereinigt werden
-    muss und mit welchen Mitteln; das bestimmt sowohl die Werkstoffwahl als auch die Nahtausführung.'
-  - Unsere Konstruktionen gehen bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. Beim Schweißen arbeiten
-    wir nach ISO 3834-2, bei tragenden Konstruktionen nach EN 1090-1; unser Qualitätssystem ist nach ISO
-    9001 zertifiziert.
+    - Die Wahl zwischen Edelstahl 304 und 316 bestimmt in vielen Fällen die Lebensdauer der Konstruktion.
+      Edelstahl 316 enthält Molybdän und ist dadurch widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
+      Umgebungen — Meerwasser, Reinigungsmittel, Streusalz. Edelstahl 304 genügt in trockeneren und weniger
+      aggressiven Bedingungen und ist günstiger. Die Abwägung stellen wir ausführlicher in unserem Artikel
+      über <a href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">Edelstahl 304 oder
+      316</a> dar (auf Niederländisch).
+    - "Was die Edelstahlkonstruktion vom Stahlbau unterscheidet, ist nicht das Schweißen selbst, sondern das
+      Drumherum. Edelstahl muss von Kohlenstoffstahl getrennt bleiben: eigenes Werkzeug, eigene Bürsten, ein
+      eigener Arbeitsplatz. Zurückbleibender Stahlstaub rostet und erzeugt Rostflecken auf einer sonst
+      einwandfreien Oberfläche — ein Fehler, der erst Wochen später sichtbar wird, wenn die Konstruktion
+      längst beim Kunden steht."
+    - "Nach dem Schweißen befinden sich Anlauffarben rund um die Naht. Diese sind nicht nur kosmetisch: an
+      dieser Stelle ist die Chromoxidschicht angegriffen und das Material korrosionsanfällig. Wir beizen oder
+      strahlen diese Zone und passivieren anschließend, damit sich die Oxidschicht wieder aufbaut."
   materials:
-  - Edelstahl 304
-  - Edelstahl 316
+    - Edelstahl 304
+    - Edelstahl 316
   process:
-  - step: Rohrlaserschneiden
-    desc: Passgenaue Rohre und Profile.
-  - step: Schweißen
-    desc: WIG- oder Laserschweißen.
-  - step: Nachbearbeitung
-    desc: Beizen und Passivieren.
-  - step: Prüfung
-    desc: Maß- und Schweißnahtkontrolle.
+    - step: Rohrlaserschneiden
+      desc: Passgenaue Rohre und Profile.
+    - step: Schweißen
+      desc: WIG- oder Laserschweißen.
+    - step: Nachbearbeitung
+      desc: Beizen und Passivieren.
+    - step: Prüfung
+      desc: Maß- und Schweißnahtkontrolle.
   applications:
-  - Maschinenbau
-  - Lebensmittelindustrie
-  - Apparatebau
-  - Offshore & Maritim
+    - Maschinenbau
+    - Lebensmittelindustrie
+    - Apparatebau
+    - Offshore & Maritim
   faq:
-  - vraag: Edelstahl 304 oder 316 — was soll ich für meine Konstruktion wählen?
-    antwoord: Edelstahl 316 enthält Molybdän und ist widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
-      Umgebungen wie Meerwasser, Streusalz oder aggressiven Reinigungsmitteln. Edelstahl 304 genügt in trockeneren
-      und weniger aggressiven Bedingungen und ist günstiger. Nennen Sie uns die Einsatzumgebung, dann beraten
-      wir entsprechend.
-  - vraag: Warum ist das Passivieren nach dem Schweißen notwendig?
-    antwoord: Das Schweißen greift die Chromoxidschicht rund um die Naht an; dort wird das Material korrosionsanfällig.
-      Wir entfernen Anlauffarben durch Beizen oder Strahlen und passivieren anschließend, damit sich die
-      Schutzschicht wieder aufbaut. Ohne diesen Schritt rostet eine Edelstahlkonstruktion gerade an der
-      Schweißnaht.
-  - vraag: Können Sie Edelstahlkonstruktionen für die Lebensmittelindustrie liefern?
-    antwoord: Ja. In hygienischen Umgebungen führen wir Nähte durchgeschweißt und glattgeschliffen aus statt
-      geheftet, vermeiden Hohlräume, in denen Feuchtigkeit stehen bleibt, und arbeiten wo möglich mit abgerundeten
-      Übergängen. Teilen Sie uns mit, womit gereinigt wird; das bestimmt die Werkstoffwahl mit.
-  - vraag: Wie schwer darf eine Edelstahlkonstruktion sein?
-    antwoord: Bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. In der Halle hängen fünf Hallenkrane mit je
-      5 Tonnen; im Tandemhub bewegen wir Baugruppen bis 10 Tonnen.
-  - vraag: Verarbeiten Sie Edelstahl und Stahl in derselben Werkstatt?
-    antwoord: Wir halten Edelstahl von Kohlenstoffstahl getrennt, mit eigenem Werkzeug und eigenen Bürsten.
-      Zurückbleibender Stahlstaub rostet und verursacht Rostflecken auf einer sonst einwandfreien Edelstahloberfläche;
-      das zeigt sich erst Wochen später und ist dann schwer zu beheben.
+    - vraag: Edelstahl 304 oder 316 — was soll ich für meine Konstruktion wählen?
+      antwoord: Edelstahl 316 enthält Molybdän und ist widerstandsfähiger gegen Lochkorrosion in chloridhaltigen
+        Umgebungen wie Meerwasser, Streusalz oder aggressiven Reinigungsmitteln. Edelstahl 304 genügt in
+        trockeneren und weniger aggressiven Bedingungen und ist günstiger. Nennen Sie uns die Einsatzumgebung,
+        dann beraten wir entsprechend.
+    - vraag: Warum ist das Passivieren nach dem Schweißen notwendig?
+      antwoord: Das Schweißen greift die Chromoxidschicht rund um die Naht an; dort wird das Material
+        korrosionsanfällig. Wir entfernen Anlauffarben durch Beizen oder Strahlen und passivieren
+        anschließend, damit sich die Schutzschicht wieder aufbaut. Ohne diesen Schritt rostet eine
+        Edelstahlkonstruktion gerade an der Schweißnaht.
+    - vraag: Können Sie Edelstahlkonstruktionen für die Lebensmittelindustrie liefern?
+      antwoord: Ja. In hygienischen Umgebungen führen wir Nähte durchgeschweißt und glattgeschliffen aus statt
+        geheftet, vermeiden Hohlräume, in denen Feuchtigkeit stehen bleibt, und arbeiten wo möglich mit
+        abgerundeten Übergängen. Teilen Sie uns mit, womit gereinigt wird; das bestimmt die Werkstoffwahl mit.
+    - vraag: Wie schwer darf eine Edelstahlkonstruktion sein?
+      antwoord: Bis 10 Tonnen Stückgewicht und 8 Meter Bauhöhe. In der Halle hängen fünf Hallenkrane mit je 5
+        Tonnen; im Tandemhub bewegen wir Baugruppen bis 10 Tonnen.
+    - vraag: Verarbeiten Sie Edelstahl und Stahl in derselben Werkstatt?
+      antwoord: Wir halten Edelstahl von Kohlenstoffstahl getrennt, mit eigenem Werkzeug und eigenen Bürsten.
+        Zurückbleibender Stahlstaub rostet und verursacht Rostflecken auf einer sonst einwandfreien
+        Edelstahloberfläche; das zeigt sich erst Wochen später und ist dann schwer zu beheben.
   related:
-  - label: Konstruktionen
-    desc: Alle Konstruktionsarbeiten.
-  - label: Edelstahl
-    desc: Blechbearbeitung in Edelstahl.
-  - label: Lebensmittelindustrie
-    desc: Hygienische Anwendungen.
+    - label: Konstruktionen
+      desc: Alle Konstruktionsarbeiten.
+    - label: Edelstahl
+      desc: Blechbearbeitung in Edelstahl.
+    - label: Lebensmittelindustrie
+      desc: Hygienische Anwendungen.
   seo:
     title: Geschweißte Edelstahlkonstruktionen
     description: Korrosionsbeständige geschweißte Edelstahlkonstruktionen und Baugruppen für Maschinenbau,
       Lebensmittel und anspruchsvolle Umgebungen.
+  kerncijfers:
+    - waarde: 10 t
+      label: max. Stückgewicht
+    - waarde: 8 m
+      label: max. Bauhöhe
+    - waarde: 304 / 316
+      label: Edelstahlgüten
+  specs:
+    - label: Güten
+      value: Edelstahl 304 und 316
+    - label: Edelstahl 316
+      value: enthält Molybdän; widerstandsfähiger gegen Lochkorrosion bei Chloriden — Meerwasser, Reinigungsmittel,
+        Streusalz
+    - label: Edelstahl 304
+      value: genügt in trockeneren, weniger aggressiven Bedingungen und ist günstiger
+    - label: Getrennt halten
+      value: von Kohlenstoffstahl — eigenes Werkzeug, eigene Bürsten, eigener Arbeitsplatz
+    - label: Rohr und Profil
+      value: Trumpf TruLaser Tube 3000; Aussparungen, Gehrungen und Durchführungen direkt aus der Maschine
+    - label: Schweißen
+      value: WIG- oder Laserschweißen
+    - label: Nach dem Schweißen
+      value: Beizen oder Strahlen der Anlauffarben, anschließend Passivieren
+    - label: Strahlkabine
+      value: 8 × 4 × 3 m, Glasperlen 100–200 μm
+    - label: Hygienische Umgebung
+      value: durchgeschweißte und glattgeschliffene Nähte, keine Hohlräume, nach Möglichkeit gerundete Übergänge
+    - label: Kapazität
+      value: bis 10 Tonnen Stückgewicht und 8 m Bauhöhe
+    - label: Normen
+      value: Schweißen nach ISO 3834-2, tragende Konstruktionen nach EN 1090-1, Qualitätssystem ISO 9001
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei
+    - Die gewünschte Edelstahlgüte — 304 oder 316
+    - Ob die Konstruktion gereinigt werden muss, und mit welchen Mitteln
+    - Das bestimmt sowohl die Werkstoffwahl als auch die Nahtausführung; wir denken bei Profilwahl und
+      Schweißfolge mit, bevor die Produktion beginnt
+kerncijfers:
+  - waarde: 10 ton
+    label: max. stukgewicht
+  - waarde: 8 m
+    label: max. bouwhoogte
+  - waarde: 304 / 316
+    label: RVS-kwaliteiten
+specs:
+  - label: Kwaliteiten
+    value: RVS 304 en 316
+  - label: RVS 316
+    value: bevat molybdeen; beter bestand tegen putcorrosie bij chloriden — zeewater, reinigingsmiddelen, pekel
+  - label: RVS 304
+    value: volstaat in drogere, minder agressieve omstandigheden en is voordeliger
+  - label: Gescheiden houden
+    value: van koolstofstaal — eigen gereedschap, eigen borstels, eigen werkplek
+  - label: Buis en profiel
+    value: Trumpf TruLaser Tube 3000; uitsparingen, verstekken en doorvoeren direct uit de machine
+  - label: Lassen
+    value: TIG- of laserlassen
+  - label: Na het lassen
+    value: beitsen of stralen van de aanloopkleuren, daarna passiveren
+  - label: Straalcabine
+    value: 8 × 4 × 3 m, glasparels 100–200 μm
+  - label: Hygiënische omgeving
+    value: doorgelaste en gladgeslepen naden, geen holle ruimtes, waar mogelijk afgeronde overgangen
+  - label: Capaciteit
+    value: tot 10 ton stukgewicht en 8 m bouwhoogte
+  - label: Normen
+    value: lassen onder ISO 3834-2, draagconstructies onder EN 1090-1, kwaliteitssysteem ISO 9001
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand
+  - De gewenste RVS-kwaliteit — 304 of 316
+  - Of de constructie gereinigd moet kunnen worden, en met welke middelen
+  - Dat bepaalt zowel de materiaalkeuze als de naaduitvoering; wij denken mee over profielkeuze en lasvolgorde
+    voordat de productie begint

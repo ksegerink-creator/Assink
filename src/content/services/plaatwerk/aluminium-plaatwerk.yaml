@@ -5,8 +5,8 @@ template: service
 group: plaatwerk
 order: 23
 h1: Aluminium plaatwerk
-intro: Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor machinebouw
-  en behuizingen.
+intro: Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor
+  machinebouw en behuizingen.
 fotobank: "kantbank-detail"
 heroPhoto:
   subject: Aluminium plaatwerkdeel met TIG-lasnaad, detail
@@ -14,75 +14,66 @@ heroPhoto:
   crop: Detail op lasnaad
   comp: Mat aluminium, gelijkmatige rups
 body:
-- Aluminium combineert een laag gewicht met goede sterkte en corrosiebestendigheid. Dat maakt het ideaal
-  voor bewegende delen, behuizingen en constructies waar gewicht telt.
-- Ons laswerk in aluminium gebeurt met TIG en MIG, afgestemd op plaatdikte en toepassing.
-- 'Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer
-  terug bij het kanten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
-  gereedschap en lasparameters.'
-- 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij het kanten gedraagt aluminium
-  zich anders dan staal: het veert sterker terug, waardoor de buighoek en de gereedschapkeuze bepalend
-  zijn voor de uiteindelijke maat. Bij een strakke maatvoering nemen we dat mee in de werkvoorbereiding
-  in plaats van het achteraf te corrigeren.'
-- Voor de afwerking beschikken wij over een straalcabine van 8 × 4 × 3 m waarin we met glasparels van
-  100 tot 200 μm stralen. Dat geeft aluminium een egaal mat oppervlak en haalt lichte verontreiniging
-  weg, zonder het materiaal aan te tasten.
-- Aluminium is krasgevoeliger dan staal. Bij zichtwerk laten we de beschermfolie daarom tot en met de
-  laatste bewerking zitten en houden we daar in de volgorde van bewerkingen rekening mee. Gaat het om
-  gelaste samenstellingen, dan leest u meer op onze pagina over <a href="/aluminium-lassen/">aluminium
-  lassen</a>.
-- De keuze voor aluminium in plaats van staal of RVS is meestal een afweging tussen gewicht en belasting.
-  Aluminium is beduidend lichter, wat telt bij bewegende delen, deuren en panelen die met de hand worden
-  gehanteerd, en het corrodeert niet zonder aanvullende bescherming. Staal en RVS zijn stijver bij dezelfde
-  dikte; is stijfheid bepalend, dan compenseren we dat in aluminium met een grotere dikte of met kantflenzen
-  en verstijvingen.
+  - "Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer
+    terug bij het kanten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
+    gereedschap en lasparameters."
+  - "Bij een strakke maatvoering nemen we de terugvering mee in de werkvoorbereiding in plaats van het
+    achteraf te corrigeren. Aluminium is ook krasgevoeliger dan staal: bij zichtwerk laten we de beschermfolie
+    tot en met de laatste bewerking zitten en houden we daar in de volgorde van bewerkingen rekening mee."
+  - De keuze voor aluminium in plaats van staal of RVS is meestal een afweging tussen gewicht en belasting.
+    Aluminium is beduidend lichter, wat telt bij bewegende delen, deuren en panelen die met de hand worden
+    gehanteerd, en het corrodeert niet zonder aanvullende bescherming. Staal en RVS zijn stijver bij dezelfde
+    dikte; is stijfheid bepalend, dan compenseren we dat met een grotere dikte of met kantflenzen en
+    verstijvingen.
+  - Gaat het om gelaste samenstellingen, dan leest u meer op onze pagina over <a
+    href="/aluminium-lassen/">aluminium lassen</a>.
 materials:
-- Aluminium (diverse legeringen)
+  - Aluminium (diverse legeringen)
 process:
-- step: Lasersnijden
-  desc: Snijden van aluminium plaat.
-- step: Kanten
-  desc: Kanten met aandacht voor terugvering.
-- step: Aluminium lassen
-  desc: TIG/MIG-lassen, vervormingsarm.
-- step: Afwerking
-  desc: Stralen doen we zelf; anodiseren en poedercoaten besteden we uit.
+  - step: Lasersnijden
+    desc: Snijden van aluminium plaat.
+  - step: Kanten
+    desc: Kanten met aandacht voor terugvering.
+  - step: Aluminium lassen
+    desc: TIG/MIG-lassen, vervormingsarm.
+  - step: Afwerking
+    desc: Stralen doen we zelf; anodiseren en poedercoaten besteden we uit.
 applications:
-- Machinebouw
-- Behuizingen
-- Transport & lichtgewicht constructies
+  - Machinebouw
+  - Behuizingen
+  - Transport & lichtgewicht constructies
 related:
-- slug: aluminium-lassen
-  label: Aluminium lassen
-  desc: Specialistisch TIG/MIG-laswerk.
-- slug: plaatwerk/zetten
-  label: Kanten
-  desc: Nauwkeurige buighoeken.
-- slug: industriele-behuizing
-  label: Industriële behuizing
-  desc: Aluminium behuizingen.
+  - slug: aluminium-lassen
+    label: Aluminium lassen
+    desc: Specialistisch TIG/MIG-laswerk.
+  - slug: plaatwerk/zetten
+    label: Kanten
+    desc: Nauwkeurige buighoeken.
+  - slug: industriele-behuizing
+    label: Industriële behuizing
+    desc: Aluminium behuizingen.
 seo:
   title: Aluminium plaatwerk op maat
-  description: 'Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht,
-    sterk en corrosiebestendig.'
+  description: 'Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht, sterk
+    en corrosiebestendig.'
 translated:
-- nl
+  - nl
 faq:
-- vraag: Welke plaatdikte aluminium kunnen jullie lasersnijden?
-  antwoord: 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij dunne platen en grote
-    vlakken houden we rekening met vlakheid: dan zijn kantflenzen of verstijvingen vaak verstandiger dan
-    een dikkere plaat.'
-- vraag: Waarom veert aluminium meer terug bij het kanten?
-  antwoord: Aluminium heeft andere materiaaleigenschappen dan staal en veert na het buigen sterker terug.
-    De uiteindelijke hoek hangt daardoor sterker af van de gereedschapkeuze en de instelling. Wij nemen
-    dat mee in de werkvoorbereiding in plaats van het achteraf te corrigeren.
-- vraag: Kunnen jullie aluminium een matte afwerking geven?
-  antwoord: Ja. In onze straalcabine van 8 bij 4 bij 3 meter stralen wij met glasparels van 100 tot 200
-    micrometer. Dat geeft een egaal mat oppervlak en haalt lichte verontreiniging weg, zonder het materiaal
-    aan te tasten.
-- vraag: Lassen jullie aluminium ook zelf?
-  antwoord: Ja, met TIG en MIG. Welke techniek we kiezen hangt af van plaatdikte, naadvorm en de eis aan
-    het uiterlijk. Op onze pagina over aluminium lassen staat uitgebreider waar we bij aluminium op letten.
+  - vraag: Welke plaatdikte aluminium kunnen jullie lasersnijden?
+    antwoord: 'Op de Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm. Bij dunne platen en grote
+      vlakken houden we rekening met vlakheid: dan zijn kantflenzen of verstijvingen vaak verstandiger dan een
+      dikkere plaat.'
+  - vraag: Waarom veert aluminium meer terug bij het kanten?
+    antwoord: Aluminium heeft andere materiaaleigenschappen dan staal en veert na het buigen sterker terug. De
+      uiteindelijke hoek hangt daardoor sterker af van de gereedschapkeuze en de instelling. Wij nemen dat mee
+      in de werkvoorbereiding in plaats van het achteraf te corrigeren.
+  - vraag: Kunnen jullie aluminium een matte afwerking geven?
+    antwoord: Ja. In onze straalcabine van 8 bij 4 bij 3 meter stralen wij met glasparels van 100 tot 200
+      micrometer. Dat geeft een egaal mat oppervlak en haalt lichte verontreiniging weg, zonder het materiaal
+      aan te tasten.
+  - vraag: Lassen jullie aluminium ook zelf?
+    antwoord: Ja, met TIG en MIG. Welke techniek we kiezen hangt af van plaatdikte, naadvorm en de eis aan het
+      uiterlijk. Op onze pagina over aluminium lassen staat uitgebreider waar we bij aluminium op letten.
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
@@ -94,69 +85,87 @@ en:
   heroPhoto:
     subject: Aluminium sheet metal part with TIG weld seam, detail
   body:
-  - Aluminium combines low weight with good strength and corrosion resistance. That makes it ideal for moving
-    parts, enclosures and structures where weight matters.
-  - Our welding work in aluminium is done with TIG and MIG, matched to sheet thickness and application.
-  - 'Aluminium sheet processing calls for different machine settings than steel or stainless steel: aluminium
-    springs back more when bending, and heat dissipates faster when welding. We factor that into flat-pattern
-    development, tooling and welding parameters.'
-  - 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. When press braking, aluminium behaves
-    differently from steel: it springs back more, which makes the bend angle and the choice of tooling decisive
-    for the final dimension. Where tolerances are tight we account for that during work preparation rather
-    than correcting afterwards.'
-  - For finishing we have a blast cabin of 8 × 4 × 3 m in which we blast with glass beads of 100 to 200
-    μm. This gives aluminium an even matt surface and removes light contamination without attacking the
-    material.
-  - Aluminium is more prone to scratching than steel. For visible work we therefore leave the protective
-    film in place through to the final operation and take that into account in the sequence of operations.
-    For welded assemblies, read more on our page about <a href="/en/aluminium-lassen/">aluminium welding</a>.
-  - Choosing aluminium over steel or stainless steel is usually a trade-off between weight and load. Aluminium
-    is considerably lighter, which counts for moving parts, doors and panels that are handled by hand, and
-    it does not corrode without additional protection. Steel and stainless steel are stiffer at the same
-    thickness; where stiffness is decisive, we compensate in aluminium with a greater thickness or with
-    bent flanges and stiffeners.
+    - "Aluminium sheet processing calls for different machine settings than steel or stainless steel:
+      aluminium springs back more when bending, and heat dissipates faster when welding. We factor that into
+      flat-pattern development, tooling and welding parameters."
+    - "Where tolerances are tight we account for springback during work preparation rather than correcting
+      afterwards. Aluminium is also more prone to scratching than steel: for visible work we leave the
+      protective film in place through to the final operation and take that into account in the sequence of
+      operations."
+    - Choosing aluminium over steel or stainless steel is usually a trade-off between weight and load.
+      Aluminium is considerably lighter, which counts for moving parts, doors and panels that are handled by
+      hand, and it does not corrode without additional protection. Steel and stainless steel are stiffer at
+      the same thickness; where stiffness is decisive, we compensate with a greater thickness or with bent
+      flanges and stiffeners.
+    - For welded assemblies, read more on our page about <a href="/en/aluminium-lassen/">aluminium welding</a>.
   materials:
-  - Aluminium (various alloys)
+    - Aluminium (various alloys)
   process:
-  - step: Laser cutting
-    desc: Cutting aluminium sheet.
-  - step: Press braking
-    desc: Bending with attention to springback.
-  - step: Aluminium welding
-    desc: TIG/MIG welding, low distortion.
-  - step: Finishing
-    desc: Blasting in house; anodising and powder coating are outsourced.
+    - step: Laser cutting
+      desc: Cutting aluminium sheet.
+    - step: Press braking
+      desc: Bending with attention to springback.
+    - step: Aluminium welding
+      desc: TIG/MIG welding, low distortion.
+    - step: Finishing
+      desc: Blasting in house; anodising and powder coating are outsourced.
   applications:
-  - Machine building
-  - Enclosures
-  - Transport & lightweight structures
+    - Machine building
+    - Enclosures
+    - Transport & lightweight structures
   related:
-  - label: Aluminium welding
-    desc: Specialist TIG/MIG welding.
-  - label: Bending & forming
-    desc: Precise bend angles.
-  - label: Industrial enclosures
-    desc: Aluminium enclosures.
+    - label: Aluminium welding
+      desc: Specialist TIG/MIG welding.
+    - label: Bending & forming
+      desc: Precise bend angles.
+    - label: Industrial enclosures
+      desc: Aluminium enclosures.
   seo:
     title: Custom aluminium sheet metal
     description: 'Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight,
       strong and corrosion-resistant.'
   faq:
-  - vraag: What sheet thickness in aluminium can you laser cut?
-    antwoord: 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. With thin sheets and large
-      surfaces we take flatness into account: bent flanges or stiffeners are then often more sensible than
-      a thicker sheet.'
-  - vraag: Why does aluminium spring back more when press braking?
-    antwoord: Aluminium has different material properties from steel and springs back more after bending.
-      The final angle therefore depends more heavily on the choice of tooling and the settings. We account
-      for that during work preparation rather than correcting afterwards.
-  - vraag: Can you give aluminium a matt finish?
-    antwoord: Yes. In our blast cabin of 8 by 4 by 3 metres we blast with glass beads of 100 to 200 micrometres.
-      This gives an even matt surface and removes light contamination without attacking the material.
-  - vraag: Do you weld aluminium in house?
-    antwoord: Yes, with TIG and MIG. Which technique we choose depends on sheet thickness, joint shape and
-      the requirements for appearance. Our page on aluminium welding sets out in more detail what we watch
-      for with aluminium.
+    - vraag: What sheet thickness in aluminium can you laser cut?
+      antwoord: 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. With thin sheets and large surfaces
+        we take flatness into account: bent flanges or stiffeners are then often more sensible than a thicker
+        sheet.'
+    - vraag: Why does aluminium spring back more when press braking?
+      antwoord: Aluminium has different material properties from steel and springs back more after bending. The
+        final angle therefore depends more heavily on the choice of tooling and the settings. We account for
+        that during work preparation rather than correcting afterwards.
+    - vraag: Can you give aluminium a matt finish?
+      antwoord: Yes. In our blast cabin of 8 by 4 by 3 metres we blast with glass beads of 100 to 200 micrometres.
+        This gives an even matt surface and removes light contamination without attacking the material.
+    - vraag: Do you weld aluminium in house?
+      antwoord: Yes, with TIG and MIG. Which technique we choose depends on sheet thickness, joint shape and the
+        requirements for appearance. Our page on aluminium welding sets out in more detail what we watch for
+        with aluminium.
+  kerncijfers:
+    - waarde: 0.5 – 15 mm
+      label: aluminium sheet thickness
+    - waarde: 8 × 4 × 3 m
+      label: blast cabin
+    - waarde: 100–200 μm
+      label: glass beads
+  specs:
+    - label: Sheet thickness
+      value: 0.5 – 15 mm on the Trumpf TruLaser 3040
+    - label: Press braking
+      value: springs back more than steel; bend angle and tooling decide the final dimension
+    - label: Welding
+      value: TIG and MIG, matched to sheet thickness and application
+    - label: Heat during welding
+      value: dissipates faster than in steel; welding parameters adjusted for it
+    - label: Blasting
+      value: glass beads 100–200 μm, blast cabin 8 × 4 × 3 m
+    - label: Result of blasting
+      value: even matt surface; removes light contamination without attacking the material
+    - label: Anodising and powder coating
+      value: outsourced
+    - label: Visible work
+      value: more prone to scratching than steel; protective film stays on to the last operation
+    - label: Stiffness
+      value: lower than steel at the same thickness; compensated with thickness, flanges or stiffeners
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -168,67 +177,112 @@ de:
   heroPhoto:
     subject: Aluminium-Blechteil mit WIG-Schweißnaht, Detail
   body:
-  - Aluminium verbindet ein geringes Gewicht mit guter Festigkeit und Korrosionsbeständigkeit. Damit ist
-    es ideal für bewegte Teile, Gehäuse und Konstruktionen, bei denen das Gewicht zählt.
-  - Unsere Schweißarbeiten in Aluminium erfolgen mit WIG und MIG, abgestimmt auf Blechdicke und Anwendung.
-  - 'Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl: Aluminium
-    federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das berücksichtigen
-    wir bei Abwicklung, Werkzeug und Schweißparametern.'
-  - 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Beim Abkanten verhält sich
-    Aluminium anders als Stahl: Es federt stärker zurück, wodurch Biegewinkel und Werkzeugwahl das Endmaß
-    bestimmen. Bei engen Toleranzen berücksichtigen wir das in der Arbeitsvorbereitung, statt es nachträglich
-    zu korrigieren.'
-  - Für die Nachbehandlung verfügen wir über eine Strahlkabine von 8 × 4 × 3 m, in der wir mit Glasperlen
-    von 100 bis 200 μm strahlen. Das verleiht Aluminium eine gleichmäßig matte Oberfläche und entfernt leichte
-    Verunreinigungen, ohne das Material anzugreifen.
-  - Aluminium ist kratzempfindlicher als Stahl. Bei Sichtflächen belassen wir die Schutzfolie daher bis
-    zur letzten Bearbeitung und berücksichtigen das in der Bearbeitungsreihenfolge. Geht es um geschweißte
-    Baugruppen, finden Sie mehr auf unserer Seite über das <a href="/de/aluminium-lassen/">Aluminiumschweißen</a>.
-  - Die Entscheidung für Aluminium statt Stahl oder Edelstahl ist meist eine Abwägung zwischen Gewicht und
-    Belastung. Aluminium ist deutlich leichter, was bei bewegten Teilen, Türen und von Hand gehandhabten
-    Paneelen zählt, und es korrodiert ohne zusätzlichen Schutz nicht. Stahl und Edelstahl sind bei gleicher
-    Dicke steifer; ist die Steifigkeit ausschlaggebend, gleichen wir das in Aluminium durch eine größere
-    Dicke oder durch abgekantete Flansche und Versteifungen aus.
+    - "Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl:
+      Aluminium federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das
+      berücksichtigen wir bei Abwicklung, Werkzeug und Schweißparametern."
+    - "Bei engen Toleranzen berücksichtigen wir die Rückfederung in der Arbeitsvorbereitung, statt sie
+      nachträglich zu korrigieren. Aluminium ist außerdem kratzempfindlicher als Stahl: bei Sichtflächen
+      belassen wir die Schutzfolie bis zur letzten Bearbeitung und berücksichtigen das in der
+      Bearbeitungsreihenfolge."
+    - Die Entscheidung für Aluminium statt Stahl oder Edelstahl ist meist eine Abwägung zwischen Gewicht und
+      Belastung. Aluminium ist deutlich leichter, was bei bewegten Teilen, Türen und von Hand gehandhabten
+      Paneelen zählt, und es korrodiert ohne zusätzlichen Schutz nicht. Stahl und Edelstahl sind bei gleicher
+      Dicke steifer; ist die Steifigkeit ausschlaggebend, gleichen wir das durch eine größere Dicke oder durch
+      abgekantete Flansche und Versteifungen aus.
+    - Geht es um geschweißte Baugruppen, finden Sie mehr auf unserer Seite über das <a
+      href="/de/aluminium-lassen/">Aluminiumschweißen</a>.
   materials:
-  - Aluminium (verschiedene Legierungen)
+    - Aluminium (verschiedene Legierungen)
   process:
-  - step: Laserschneiden
-    desc: Schneiden von Aluminiumblech.
-  - step: Abkanten
-    desc: Kanten mit Rücksicht auf die Rückfederung.
-  - step: Aluminium-Schweißen
-    desc: WIG-/MIG-Schweißen, verzugsarm.
-  - step: Nachbearbeitung
-    desc: Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern.
+    - step: Laserschneiden
+      desc: Schneiden von Aluminiumblech.
+    - step: Abkanten
+      desc: Kanten mit Rücksicht auf die Rückfederung.
+    - step: Aluminium-Schweißen
+      desc: WIG-/MIG-Schweißen, verzugsarm.
+    - step: Nachbearbeitung
+      desc: Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern.
   applications:
-  - Maschinenbau
-  - Gehäuse
-  - Transport & Leichtbaukonstruktionen
+    - Maschinenbau
+    - Gehäuse
+    - Transport & Leichtbaukonstruktionen
   related:
-  - label: Aluminium-Schweißen
-    desc: Spezialisierte WIG-/MIG-Schweißarbeiten.
-  - label: Kanten & Biegen
-    desc: Präzise Biegewinkel.
-  - label: Industriegehäuse
-    desc: Gehäuse aus Aluminium.
+    - label: Aluminium-Schweißen
+      desc: Spezialisierte WIG-/MIG-Schweißarbeiten.
+    - label: Kanten & Biegen
+      desc: Präzise Biegewinkel.
+    - label: Industriegehäuse
+      desc: Gehäuse aus Aluminium.
   seo:
     title: Aluminiumblech nach Maß
     description: 'Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse:
       leicht, fest und korrosionsbeständig.'
   faq:
-  - vraag: Welche Blechdicke in Aluminium können Sie laserschneiden?
-    antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Bei dünnen Blechen
-      und großen Flächen berücksichtigen wir die Ebenheit: Abgekantete Flansche oder Versteifungen sind
-      dann oft sinnvoller als ein dickeres Blech.'
-  - vraag: Warum federt Aluminium beim Abkanten stärker zurück?
-    antwoord: Aluminium hat andere Werkstoffeigenschaften als Stahl und federt nach dem Biegen stärker zurück.
-      Der endgültige Winkel hängt dadurch stärker von Werkzeugwahl und Einstellung ab. Wir berücksichtigen
-      das in der Arbeitsvorbereitung, statt es nachträglich zu korrigieren.
-  - vraag: Können Sie Aluminium eine matte Oberfläche geben?
-    antwoord: Ja. In unserer Strahlkabine von 8 mal 4 mal 3 Metern strahlen wir mit Glasperlen von 100 bis
-      200 Mikrometer. Das ergibt eine gleichmäßig matte Oberfläche und entfernt leichte Verunreinigungen,
-      ohne das Material anzugreifen.
-  - vraag: Schweißen Sie Aluminium auch selbst?
-    antwoord: Ja, mit WIG und MIG. Welches Verfahren wir wählen, hängt von Blechdicke, Nahtform und den
-      Anforderungen an das Aussehen ab. Auf unserer Seite über das Aluminiumschweißen steht ausführlicher,
-      worauf wir bei Aluminium achten.
+    - vraag: Welche Blechdicke in Aluminium können Sie laserschneiden?
+      antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Bei dünnen Blechen und
+        großen Flächen berücksichtigen wir die Ebenheit: Abgekantete Flansche oder Versteifungen sind dann oft
+        sinnvoller als ein dickeres Blech.'
+    - vraag: Warum federt Aluminium beim Abkanten stärker zurück?
+      antwoord: Aluminium hat andere Werkstoffeigenschaften als Stahl und federt nach dem Biegen stärker zurück. Der
+        endgültige Winkel hängt dadurch stärker von Werkzeugwahl und Einstellung ab. Wir berücksichtigen das
+        in der Arbeitsvorbereitung, statt es nachträglich zu korrigieren.
+    - vraag: Können Sie Aluminium eine matte Oberfläche geben?
+      antwoord: Ja. In unserer Strahlkabine von 8 mal 4 mal 3 Metern strahlen wir mit Glasperlen von 100 bis 200
+        Mikrometer. Das ergibt eine gleichmäßig matte Oberfläche und entfernt leichte Verunreinigungen, ohne
+        das Material anzugreifen.
+    - vraag: Schweißen Sie Aluminium auch selbst?
+      antwoord: Ja, mit WIG und MIG. Welches Verfahren wir wählen, hängt von Blechdicke, Nahtform und den
+        Anforderungen an das Aussehen ab. Auf unserer Seite über das Aluminiumschweißen steht ausführlicher,
+        worauf wir bei Aluminium achten.
+  kerncijfers:
+    - waarde: 0,5 – 15 mm
+      label: Blechdicke Aluminium
+    - waarde: 8 × 4 × 3 m
+      label: Strahlkabine
+    - waarde: 100–200 μm
+      label: Glasperlen
+  specs:
+    - label: Blechdicke
+      value: 0,5 – 15 mm auf der Trumpf TruLaser 3040
+    - label: Abkanten
+      value: federt stärker zurück als Stahl; Biegewinkel und Werkzeugwahl bestimmen das Endmaß
+    - label: Schweißen
+      value: WIG und MIG, abgestimmt auf Blechdicke und Anwendung
+    - label: Wärme beim Schweißen
+      value: fließt schneller ab als bei Stahl; Schweißparameter darauf abgestimmt
+    - label: Strahlen
+      value: Glasperlen 100–200 μm, Strahlkabine 8 × 4 × 3 m
+    - label: Ergebnis des Strahlens
+      value: gleichmäßig matte Oberfläche; entfernt leichte Verunreinigungen ohne Angriff auf das Material
+    - label: Eloxieren und Pulverbeschichten
+      value: geben wir extern
+    - label: Sichtflächen
+      value: kratzempfindlicher als Stahl; Schutzfolie bleibt bis zur letzten Bearbeitung
+    - label: Steifigkeit
+      value: geringer als Stahl bei gleicher Dicke; ausgleichbar über Dicke, Flansche oder Versteifungen
+kerncijfers:
+  - waarde: 0,5 – 15 mm
+    label: plaatdikte aluminium
+  - waarde: 8 × 4 × 3 m
+    label: straalcabine
+  - waarde: 100–200 μm
+    label: glasparels
+specs:
+  - label: Plaatdikte
+    value: 0,5 – 15 mm op de Trumpf TruLaser 3040
+  - label: Kanten
+    value: veert sterker terug dan staal; buighoek en gereedschapkeuze bepalen het eindmaat
+  - label: Lassen
+    value: TIG en MIG, afgestemd op plaatdikte en toepassing
+  - label: Warmte bij het lassen
+    value: loopt sneller weg dan bij staal; lasparameters daarop afgestemd
+  - label: Stralen
+    value: glasparels 100–200 μm, straalcabine 8 × 4 × 3 m
+  - label: Resultaat van stralen
+    value: egaal mat oppervlak; haalt lichte verontreiniging weg zonder het materiaal aan te tasten
+  - label: Anodiseren en poedercoaten
+    value: besteden wij uit
+  - label: Zichtwerk
+    value: krasgevoeliger dan staal; beschermfolie blijft tot de laatste bewerking zitten
+  - label: Stijfheid
+    value: lager dan staal bij dezelfde dikte; te compenseren met dikte, kantflenzen of verstijvingen

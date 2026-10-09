@@ -5,8 +5,8 @@ template: service
 group: plaatwerk
 order: 21
 h1: Staal plaatwerk
-intro: Het werkpaard onder de plaatmaterialen — stijf, goed lasbaar en voordelig. Van losse delen tot
-  gelaste samenstellingen, met of zonder nabewerking.
+intro: Het werkpaard onder de plaatmaterialen — stijf, goed lasbaar en voordelig. Van losse delen tot gelaste
+  samenstellingen, met of zonder nabewerking.
 fotobank: "vakman-met-profiel"
 heroPhoto:
   subject: Vakman met een stalen profiel aan de lastafel in Hengelo
@@ -14,234 +14,299 @@ heroPhoto:
   crop: Persoon aan de lastafel
   comp: Stalen profiel in beeld, afzuigarm erboven
 body:
-- Staal is bij plaatwerk meestal het uitgangspunt. Het is stijver dan aluminium bij dezelfde dikte, goed
-  lasbaar en aanzienlijk voordeliger dan RVS. Waar geen corrosiebestendigheid of zichtwerk-eis speelt,
-  is staal daarom vrijwel altijd de verstandige keuze.
-- 'Op de Trumpf TruLaser 3040 snijden wij staal van 0,5 tot 25 mm en gegalvaniseerd staal van 0,5 tot
-  10 mm, uit plaat tot 4000 × 2000 mm. Gegalvaniseerd staal vraagt om een andere aanpak: de zinklaag
-  verdampt bij het snijden en het lassen, dus we stemmen de snijparameters daarop af en overleggen vooraf
-  of er na het laswerk nog hersteld moet worden.'
-- Kanten gebeurt op onze servo-elektrische Safan Darley E-Brake 150-3100 T3, met 150 ton perskracht en
-  een werklengte tot 3100 mm. Toleranties houden wij aan volgens ISO 2768; zijn er krappere maten nodig,
-  leg die dan voor aan onze werkvoorbereiding.
-- 'Voor laswerk in staal is MAG het gangbare proces: lassen met actief gas, sneller dan TIG en geschikt
-  voor dikker materiaal en grotere series. TIG zetten we in waar de naad er netjes uit moet zien of het
-  materiaal dun is. Welke methode we kiezen, leest u op onze pagina over <a href="/plaatwerk/lassen/">lassen</a>.'
-- 'Nabewerking is bij staal een keuze, geen vanzelfsprekendheid. Wij ontbramen machinaal op de Timesavers
-  42 Series RB — bij staal niet alleen een kwestie van uiterlijk maar ook van arbeidsveiligheid verderop
-  in de keten. Conserveren doen wij niet zelf: poedercoaten, verzinken en natlakken besteden wij uit aan
-  vaste partners, zodat u één aanspreekpunt houdt.'
-- Gaat het om een gelaste staalconstructie in plaats van losse plaatdelen, dan geldt een ander traject.
-  Wij lassen onder ISO 3834-2 en zijn gecertificeerd volgens EN 1090-1, met een maximaal stukgewicht van
-  10 ton. Kijk daarvoor op onze pagina over <a href="/constructies/">constructies</a>.
+  - Staal is bij plaatwerk meestal het uitgangspunt. Het is stijver dan aluminium bij dezelfde dikte, goed
+    lasbaar en aanzienlijk voordeliger dan RVS. Waar geen corrosiebestendigheid of zichtwerk-eis speelt, is
+    staal daarom vrijwel altijd de verstandige keuze.
+  - "Gegalvaniseerd staal vraagt om een andere aanpak: de zinklaag verdampt bij het snijden en het lassen. Wij
+    stemmen de snijparameters daarop af en overleggen vooraf of er na het laswerk nog hersteld moet worden."
+  - Nabewerking is bij staal een keuze, geen vanzelfsprekendheid. Ontbramen doen wij zelf — bij staal niet
+    alleen een kwestie van uiterlijk maar ook van arbeidsveiligheid verderop in de keten. Conserveren besteden
+    wij uit aan vaste partners, zodat u één aanspreekpunt houdt.
+  - Gaat het om een gelaste staalconstructie in plaats van losse plaatdelen, dan geldt een ander traject; kijk
+    daarvoor op onze pagina over <a href="/constructies/">constructies</a>. Welke lasmethode wij kiezen, leest
+    u op onze pagina over <a href="/plaatwerk/lassen/">lassen</a>.
 materials:
-- Staal (S235, S355)
-- Gegalvaniseerd staal
+  - Staal (S235, S355)
+  - Gegalvaniseerd staal
 process:
-- step: Lasersnijden
-  desc: Staal 0,5–25 mm, plaat tot 4000 × 2000 mm.
-- step: Kanten
-  desc: Tot 3100 mm, toleranties volgens ISO 2768.
-- step: Lassen
-  desc: MAG voor staal, TIG voor dun en zichtwerk.
-- step: Afwerking
-  desc: Ontbramen doen wij zelf; conserveren besteden wij uit.
+  - step: Lasersnijden
+    desc: Staal 0,5–25 mm, plaat tot 4000 × 2000 mm.
+  - step: Kanten
+    desc: Tot 3100 mm, toleranties volgens ISO 2768.
+  - step: Lassen
+    desc: MAG voor staal, TIG voor dun en zichtwerk.
+  - step: Afwerking
+    desc: Ontbramen doen wij zelf; conserveren besteden wij uit.
 applications:
-- Machinebouw
-- Constructiedelen
-- Frames & ondersteuningen
-- Industriële toepassingen
+  - Machinebouw
+  - Constructiedelen
+  - Frames & ondersteuningen
+  - Industriële toepassingen
 related:
-- slug: plaatwerk/lasersnijden
-  label: Lasersnijden
-  desc: Staal 0,5–25 mm.
-- slug: plaatwerk/lassen
-  label: Lassen
-  desc: TIG, MIG/MAG of laser.
-- slug: constructies
-  label: Constructies
-  desc: Gelaste staalconstructies tot 10 ton.
+  - slug: plaatwerk/lasersnijden
+    label: Lasersnijden
+    desc: Staal 0,5–25 mm.
+  - slug: plaatwerk/lassen
+    label: Lassen
+    desc: TIG, MIG/MAG of laser.
+  - slug: constructies
+    label: Constructies
+    desc: Gelaste staalconstructies tot 10 ton.
 seo:
   title: 'Staal plaatwerk: snijden en kanten'
-  description: 'Stalen plaatwerk uit Hengelo: lasersnijden tot 25 mm uit plaat tot 4000 × 2000 mm, kanten
-    tot 3100 mm en MAG-laswerk. Met of zonder nabewerking.'
+  description: 'Stalen plaatwerk uit Hengelo: lasersnijden tot 25 mm uit plaat tot 4000 × 2000 mm, kanten tot
+    3100 mm en MAG-laswerk. Met of zonder nabewerking.'
 translated:
-- nl
+  - nl
 faq:
-- vraag: Welke plaatdikte staal kunnen jullie lasersnijden?
-  antwoord: Staal van 0,5 tot 25 mm en gegalvaniseerd staal van 0,5 tot 10 mm, op de Trumpf TruLaser 3040,
-    een fiberlaser van 4 kW. De plaat mag tot 4000 × 2000 mm meten.
-- vraag: Wat is het verschil tussen MAG- en MIG-lassen bij staal?
-  antwoord: Allebei zijn het processen met toevoegdraad, het verschil zit in het beschermgas. MAG gebruikt
-    actief gas en is het gangbare proces voor staal; MIG gebruikt inert gas en is bedoeld voor RVS en aluminium.
-    Voor staal lassen wij dus met MAG, of met TIG waar de naad netjes moet zijn.
-- vraag: Verzorgen jullie ook het poedercoaten of verzinken?
-  antwoord: Wij regelen het, maar voeren het niet zelf uit. Poedercoaten, verzinken en natlakken besteden
-    wij uit aan vaste partners. Ontbramen doen wij wel in eigen huis, machinaal op de Timesavers 42 Series
-    RB.
-- vraag: Wanneer kies ik staal en wanneer RVS of aluminium?
-  antwoord: Staal is stijver dan aluminium bij dezelfde dikte en beduidend voordeliger dan RVS, maar het
-    corrodeert zonder conservering. Komt het deel in vocht, buiten of in een omgeving waar gereinigd wordt,
-    dan ligt RVS voor de hand. Telt het gewicht, dan aluminium. Speelt geen van beide, dan staal.
-- vraag: Kunnen jullie gegalvaniseerd staal verwerken?
-  antwoord: 'Ja, van 0,5 tot 10 mm. Wel een aandachtspunt: de zinklaag verdampt bij het snijden en het
-    lassen. Wij stemmen de snijparameters daarop af en overleggen vooraf of de laszones na afloop hersteld
-    moeten worden.'
+  - vraag: Welke plaatdikte staal kunnen jullie lasersnijden?
+    antwoord: Staal van 0,5 tot 25 mm en gegalvaniseerd staal van 0,5 tot 10 mm, op de Trumpf TruLaser 3040, een
+      fiberlaser van 4 kW. De plaat mag tot 4000 × 2000 mm meten.
+  - vraag: Wat is het verschil tussen MAG- en MIG-lassen bij staal?
+    antwoord: Allebei zijn het processen met toevoegdraad, het verschil zit in het beschermgas. MAG gebruikt
+      actief gas en is het gangbare proces voor staal; MIG gebruikt inert gas en is bedoeld voor RVS en
+      aluminium. Voor staal lassen wij dus met MAG, of met TIG waar de naad netjes moet zijn.
+  - vraag: Verzorgen jullie ook het poedercoaten of verzinken?
+    antwoord: Wij regelen het, maar voeren het niet zelf uit. Poedercoaten, verzinken en natlakken besteden wij
+      uit aan vaste partners. Ontbramen doen wij wel in eigen huis, machinaal op de Timesavers 42 Series RB.
+  - vraag: Wanneer kies ik staal en wanneer RVS of aluminium?
+    antwoord: Staal is stijver dan aluminium bij dezelfde dikte en beduidend voordeliger dan RVS, maar het
+      corrodeert zonder conservering. Komt het deel in vocht, buiten of in een omgeving waar gereinigd wordt,
+      dan ligt RVS voor de hand. Telt het gewicht, dan aluminium. Speelt geen van beide, dan staal.
+  - vraag: Kunnen jullie gegalvaniseerd staal verwerken?
+    antwoord: 'Ja, van 0,5 tot 10 mm. Wel een aandachtspunt: de zinklaag verdampt bij het snijden en het lassen.
+      Wij stemmen de snijparameters daarop af en overleggen vooraf of de laszones na afloop hersteld moeten
+      worden.'
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   menuLabel: "Steel"
   title: Steel sheet metal work
   h1: Steel sheet metal work
-  intro: The workhorse among sheet materials — stiff, readily weldable and economical. From individual parts
-    to welded assemblies, with or without finishing.
+  intro: The workhorse among sheet materials — stiff, readily weldable and economical. From individual parts to
+    welded assemblies, with or without finishing.
   heroPhoto:
     subject: Craftsman holding a steel profile at the welding bench in Hengelo
   body:
-  - Steel is usually the starting point in sheet metal work. It is stiffer than aluminium at the same thickness,
-    readily weldable and considerably cheaper than stainless steel. Where there is no corrosion or visible-surface
-    requirement, steel is almost always the sensible choice.
-  - 'On the Trumpf TruLaser 3040 we cut steel from 0.5 to 25 mm and galvanised steel from 0.5 to 10 mm,
-    from sheet up to 4000 × 2000 mm. Galvanised steel calls for a different approach: the zinc layer vaporises
-    during cutting and welding, so we adjust the cutting parameters accordingly and agree in advance whether
-    the weld zones need to be restored afterwards.'
-  - Press braking takes place on our servo-electric Safan Darley E-Brake 150-3100 T3, with 150 tonnes of
-    press force and a working length up to 3100 mm. We hold tolerances to ISO 2768; if you need tighter
-    dimensions, put them to our production engineering.
-  - 'For welding steel, MAG is the usual process: welding with active gas, faster than TIG and suited to
-    thicker material and larger series. We use TIG where the seam has to look clean or the material is thin.
-    Our page on <a href="/en/plaatwerk/lassen/">welding</a> explains how we choose.'
-  - 'Finishing is a choice with steel, not a given. We deburr mechanically on the Timesavers 42 Series RB
-    — with steel that is a matter of workplace safety further down the line, not only of appearance. We
-    do not apply protective coatings ourselves: powder coating, galvanising and wet painting go to regular
-    partners, so you keep a single point of contact.'
-  - If it concerns a welded steel structure rather than individual sheet parts, a different route applies.
-    We weld under ISO 3834-2 and are certified to EN 1090-1, with a maximum piece weight of 10 tonnes. See
-    our page on <a href="/en/constructies/">welded constructions</a>.
+    - Steel is usually the starting point in sheet metal work. It is stiffer than aluminium at the same
+      thickness, readily weldable and considerably cheaper than stainless steel. Where there is no corrosion
+      or visible-surface requirement, steel is almost always the sensible choice.
+    - "Galvanised steel calls for a different approach: the zinc layer vaporises during cutting and welding.
+      We adjust the cutting parameters accordingly and agree in advance whether the weld zones need to be
+      restored afterwards."
+    - Finishing is a choice with steel, not a given. We deburr in house — with steel that is a matter of
+      workplace safety further down the line, not only of appearance. Protective coating goes to regular
+      partners, so you keep a single point of contact.
+    - If it concerns a welded steel structure rather than individual sheet parts, a different route applies;
+      see our page on <a href="/en/constructies/">welded constructions</a>. Our page on <a
+      href="/en/plaatwerk/lassen/">welding</a> explains how we choose the process.
   materials:
-  - Steel (S235, S355)
-  - Galvanised steel
+    - Steel (S235, S355)
+    - Galvanised steel
   process:
-  - step: Laser cutting
-    desc: Steel 0.5–25 mm, sheet up to 4000 × 2000 mm.
-  - step: Press braking
-    desc: Up to 3100 mm, tolerances to ISO 2768.
-  - step: Welding
-    desc: MAG for steel, TIG for thin and visible work.
-  - step: Finishing
-    desc: We deburr in house; coating goes to partners.
+    - step: Laser cutting
+      desc: Steel 0.5–25 mm, sheet up to 4000 × 2000 mm.
+    - step: Press braking
+      desc: Up to 3100 mm, tolerances to ISO 2768.
+    - step: Welding
+      desc: MAG for steel, TIG for thin and visible work.
+    - step: Finishing
+      desc: We deburr in house; coating goes to partners.
   applications:
-  - Machine building
-  - Structural parts
-  - Frames & supports
-  - Industrial applications
+    - Machine building
+    - Structural parts
+    - Frames & supports
+    - Industrial applications
   related:
-  - label: Laser cutting
-    desc: Steel 0.5–25 mm.
-  - label: Welding
-    desc: TIG, MIG/MAG or laser.
-  - label: Welded constructions
-    desc: Welded steel structures up to 10 tonnes.
+    - label: Laser cutting
+      desc: Steel 0.5–25 mm.
+    - label: Welding
+      desc: TIG, MIG/MAG or laser.
+    - label: Welded constructions
+      desc: Welded steel structures up to 10 tonnes.
   seo:
     title: Steel sheet metal — cutting and bending
-    description: 'Steel sheet metal work from Hengelo: laser cutting up to 25 mm from sheet up to 4000 ×
-      2000 mm, press braking up to 3100 mm and MAG welding. With or without finishing.'
+    description: 'Steel sheet metal work from Hengelo: laser cutting up to 25 mm from sheet up to 4000 × 2000 mm,
+      press braking up to 3100 mm and MAG welding. With or without finishing.'
   faq:
-  - vraag: What steel thickness can you laser cut?
-    antwoord: Steel from 0.5 to 25 mm and galvanised steel from 0.5 to 10 mm, on the Trumpf TruLaser 3040,
-      a 4 kW fibre laser. Sheet may measure up to 4000 × 2000 mm.
-  - vraag: What is the difference between MAG and MIG welding on steel?
-    antwoord: Both are processes with filler wire; the difference is the shielding gas. MAG uses active
-      gas and is the usual process for steel; MIG uses inert gas and is intended for stainless steel and
-      aluminium. So for steel we weld with MAG, or with TIG where the seam has to be clean.
-  - vraag: Do you also arrange powder coating or galvanising?
-    antwoord: We arrange it but do not carry it out ourselves. Powder coating, galvanising and wet painting
-      go to regular partners. Deburring we do in house, mechanically on the Timesavers 42 Series RB.
-  - vraag: When do I choose steel and when stainless steel or aluminium?
-    antwoord: Steel is stiffer than aluminium at the same thickness and considerably cheaper than stainless
-      steel, but it corrodes without protection. If the part goes into moisture, outdoors or somewhere that
-      is cleaned, stainless steel is the logical choice. If weight matters, aluminium. If neither applies,
-      steel.
-  - vraag: Can you process galvanised steel?
-    antwoord: 'Yes, from 0.5 to 10 mm. One point to note: the zinc layer vaporises during cutting and welding.
-      We adjust the cutting parameters accordingly and agree in advance whether the weld zones need restoring
-      afterwards.'
+    - vraag: What steel thickness can you laser cut?
+      antwoord: Steel from 0.5 to 25 mm and galvanised steel from 0.5 to 10 mm, on the Trumpf TruLaser 3040, a 4 kW
+        fibre laser. Sheet may measure up to 4000 × 2000 mm.
+    - vraag: What is the difference between MAG and MIG welding on steel?
+      antwoord: Both are processes with filler wire; the difference is the shielding gas. MAG uses active gas and is
+        the usual process for steel; MIG uses inert gas and is intended for stainless steel and aluminium. So
+        for steel we weld with MAG, or with TIG where the seam has to be clean.
+    - vraag: Do you also arrange powder coating or galvanising?
+      antwoord: We arrange it but do not carry it out ourselves. Powder coating, galvanising and wet painting go to
+        regular partners. Deburring we do in house, mechanically on the Timesavers 42 Series RB.
+    - vraag: When do I choose steel and when stainless steel or aluminium?
+      antwoord: Steel is stiffer than aluminium at the same thickness and considerably cheaper than stainless steel,
+        but it corrodes without protection. If the part goes into moisture, outdoors or somewhere that is
+        cleaned, stainless steel is the logical choice. If weight matters, aluminium. If neither applies,
+        steel.
+    - vraag: Can you process galvanised steel?
+      antwoord: 'Yes, from 0.5 to 10 mm. One point to note: the zinc layer vaporises during cutting and welding. We
+        adjust the cutting parameters accordingly and agree in advance whether the weld zones need restoring
+        afterwards.'
+  kerncijfers:
+    - waarde: 25 mm
+      label: max. sheet thickness, steel
+    - waarde: 4000 × 2000 mm
+      label: max. sheet size
+    - waarde: 150 t
+      label: press force
+    - waarde: 3100 mm
+      label: bend length
+  specs:
+    - label: Steel
+      value: 0.5 – 25 mm
+    - label: Galvanised steel
+      value: 0.5 – 10 mm
+    - label: Sheet size
+      value: up to 4000 × 2000 mm
+    - label: Laser cutting
+      value: Trumpf TruLaser 3040
+    - label: Press braking
+      value: Safan Darley E-Brake 150-3100 T3, 150 tonnes, up to 3100 mm
+    - label: Tolerances
+      value: to ISO 2768; put tighter dimensions to our production engineering
+    - label: Welding
+      value: MAG for thicker material and series, TIG for thin and visible work
+    - label: Deburring
+      value: by machine on the Timesavers 42 Series RB
+    - label: Protective coating
+      value: powder coating, galvanising and wet painting via regular partners
+    - label: Welded structures
+      value: ISO 3834-2 and EN 1090-1, up to 10 tonnes piece weight
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   menuLabel: "Stahl"
   title: Stahlblech-Bearbeitung
   h1: Stahlblech-Bearbeitung
-  intro: Das Arbeitstier unter den Blechwerkstoffen — steif, gut schweißbar und günstig. Von Einzelteilen
-    bis zu geschweißten Baugruppen, mit oder ohne Nachbearbeitung.
+  intro: Das Arbeitstier unter den Blechwerkstoffen — steif, gut schweißbar und günstig. Von Einzelteilen bis zu
+    geschweißten Baugruppen, mit oder ohne Nachbearbeitung.
   heroPhoto:
     subject: Facharbeiter mit einem Stahlprofil am Schweißtisch in Hengelo
   body:
-  - Stahl ist in der Blechbearbeitung meist der Ausgangspunkt. Er ist bei gleicher Dicke steifer als Aluminium,
-    gut schweißbar und deutlich günstiger als Edelstahl. Wo keine Korrosionsbeständigkeit und keine Sichtfläche
-    gefordert ist, ist Stahl daher fast immer die sinnvolle Wahl.
-  - 'Auf der Trumpf TruLaser 3040 schneiden wir Stahl von 0,5 bis 25 mm und verzinkten Stahl von 0,5 bis
-    10 mm, aus Tafeln bis 4000 × 2000 mm. Verzinkter Stahl verlangt ein anderes Vorgehen: Die Zinkschicht
-    verdampft beim Schneiden und beim Schweißen, deshalb stimmen wir die Schneidparameter darauf ab und
-    klären vorab, ob die Schweißzonen danach ausgebessert werden müssen.'
-  - Abgekantet wird auf unserer servoelektrischen Safan Darley E-Brake 150-3100 T3 mit 150 Tonnen Presskraft
-    und einer Arbeitslänge bis 3100 mm. Toleranzen halten wir nach ISO 2768 ein; sind engere Maße nötig,
-    legen Sie diese unserer Arbeitsvorbereitung vor.
-  - 'Beim Schweißen von Stahl ist MAG das übliche Verfahren: Schweißen mit aktivem Gas, schneller als WIG
-    und geeignet für dickeres Material und größere Serien. WIG setzen wir ein, wo die Naht sauber aussehen
-    muss oder das Material dünn ist. Wie wir wählen, lesen Sie auf unserer Seite über das <a href="/de/plaatwerk/lassen/">Schweißen</a>.'
-  - 'Die Nachbearbeitung ist bei Stahl eine Entscheidung, keine Selbstverständlichkeit. Wir entgraten maschinell
-    auf der Timesavers 42 Series RB — bei Stahl nicht nur eine Frage des Aussehens, sondern auch der Arbeitssicherheit
-    weiter unten in der Kette. Den Korrosionsschutz führen wir nicht selbst aus: Pulverbeschichten, Verzinken
-    und Nasslackieren vergeben wir an feste Partner, sodass Sie einen Ansprechpartner behalten.'
-  - Geht es um eine geschweißte Stahlkonstruktion statt um einzelne Blechteile, gilt ein anderer Weg. Wir
-    schweißen nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert, bei einem maximalen Stückgewicht von
-    10 Tonnen. Sehen Sie dazu unsere Seite über <a href="/de/constructies/">Konstruktionen</a>.
+    - Stahl ist in der Blechbearbeitung meist der Ausgangspunkt. Er ist bei gleicher Dicke steifer als
+      Aluminium, gut schweißbar und deutlich günstiger als Edelstahl. Wo keine Korrosionsbeständigkeit und
+      keine Sichtfläche gefordert ist, ist Stahl daher fast immer die sinnvolle Wahl.
+    - "Verzinkter Stahl verlangt ein anderes Vorgehen: Die Zinkschicht verdampft beim Schneiden und beim
+      Schweißen. Wir stimmen die Schneidparameter darauf ab und klären vorab, ob die Schweißzonen danach
+      ausgebessert werden müssen."
+    - Die Nachbearbeitung ist bei Stahl eine Entscheidung, keine Selbstverständlichkeit. Entgraten führen wir
+      selbst aus — bei Stahl nicht nur eine Frage des Aussehens, sondern auch der Arbeitssicherheit weiter
+      unten in der Kette. Den Korrosionsschutz vergeben wir an feste Partner, sodass Sie einen Ansprechpartner
+      behalten.
+    - Geht es um eine geschweißte Stahlkonstruktion statt um einzelne Blechteile, gilt ein anderer Weg; sehen
+      Sie dazu unsere Seite über <a href="/de/constructies/">Konstruktionen</a>. Wie wir das Schweißverfahren
+      wählen, lesen Sie auf unserer Seite über das <a href="/de/plaatwerk/lassen/">Schweißen</a>.
   materials:
-  - Stahl (S235, S355)
-  - Verzinkter Stahl
+    - Stahl (S235, S355)
+    - Verzinkter Stahl
   process:
-  - step: Laserschneiden
-    desc: Stahl 0,5–25 mm, Tafeln bis 4000 × 2000 mm.
-  - step: Abkanten
-    desc: Bis 3100 mm, Toleranzen nach ISO 2768.
-  - step: Schweißen
-    desc: MAG für Stahl, WIG für dünn und Sichtflächen.
-  - step: Nachbearbeitung
-    desc: Entgraten im Haus; Beschichten über Partner.
+    - step: Laserschneiden
+      desc: Stahl 0,5–25 mm, Tafeln bis 4000 × 2000 mm.
+    - step: Abkanten
+      desc: Bis 3100 mm, Toleranzen nach ISO 2768.
+    - step: Schweißen
+      desc: MAG für Stahl, WIG für dünn und Sichtflächen.
+    - step: Nachbearbeitung
+      desc: Entgraten im Haus; Beschichten über Partner.
   applications:
-  - Maschinenbau
-  - Konstruktionsteile
-  - Rahmen & Unterkonstruktionen
-  - Industrielle Anwendungen
+    - Maschinenbau
+    - Konstruktionsteile
+    - Rahmen & Unterkonstruktionen
+    - Industrielle Anwendungen
   related:
-  - label: Laserschneiden
-    desc: Stahl 0,5–25 mm.
-  - label: Schweißen
-    desc: WIG, MIG/MAG oder Laser.
-  - label: Konstruktionen
-    desc: Geschweißte Stahlkonstruktionen bis 10 Tonnen.
+    - label: Laserschneiden
+      desc: Stahl 0,5–25 mm.
+    - label: Schweißen
+      desc: WIG, MIG/MAG oder Laser.
+    - label: Konstruktionen
+      desc: Geschweißte Stahlkonstruktionen bis 10 Tonnen.
   seo:
     title: Stahlblech — Schneiden und Abkanten
-    description: 'Stahlblech aus Hengelo: Laserschneiden bis 25 mm aus Tafeln bis 4000 × 2000 mm, Abkanten
-      bis 3100 mm und MAG-Schweißen. Mit oder ohne Nachbearbeitung.'
+    description: 'Stahlblech aus Hengelo: Laserschneiden bis 25 mm aus Tafeln bis 4000 × 2000 mm, Abkanten bis
+      3100 mm und MAG-Schweißen. Mit oder ohne Nachbearbeitung.'
   faq:
-  - vraag: Welche Blechdicke in Stahl können Sie laserschneiden?
-    antwoord: Stahl von 0,5 bis 25 mm und verzinkten Stahl von 0,5 bis 10 mm, auf der Trumpf TruLaser 3040,
-      einem Faserlaser mit 4 kW. Die Tafel darf bis 4000 × 2000 mm messen.
-  - vraag: Was ist der Unterschied zwischen MAG- und MIG-Schweißen bei Stahl?
-    antwoord: Beides sind Verfahren mit Zusatzdraht, der Unterschied liegt im Schutzgas. MAG verwendet aktives
-      Gas und ist das übliche Verfahren für Stahl; MIG verwendet inertes Gas und ist für Edelstahl und Aluminium
-      gedacht. Für Stahl schweißen wir also mit MAG, oder mit WIG, wo die Naht sauber sein muss.
-  - vraag: Übernehmen Sie auch das Pulverbeschichten oder Verzinken?
-    antwoord: Wir organisieren es, führen es aber nicht selbst aus. Pulverbeschichten, Verzinken und Nasslackieren
-      vergeben wir an feste Partner. Das Entgraten erledigen wir im eigenen Haus, maschinell auf der Timesavers
-      42 Series RB.
-  - vraag: Wann wähle ich Stahl und wann Edelstahl oder Aluminium?
-    antwoord: Stahl ist bei gleicher Dicke steifer als Aluminium und deutlich günstiger als Edelstahl, korrodiert
-      aber ohne Schutz. Kommt das Teil in Feuchtigkeit, ins Freie oder in eine Umgebung, in der gereinigt
-      wird, liegt Edelstahl nahe. Zählt das Gewicht, dann Aluminium. Trifft beides nicht zu, dann Stahl.
-  - vraag: Können Sie verzinkten Stahl verarbeiten?
-    antwoord: 'Ja, von 0,5 bis 10 mm. Ein Punkt ist zu beachten: Die Zinkschicht verdampft beim Schneiden
-      und beim Schweißen. Wir stimmen die Schneidparameter darauf ab und klären vorab, ob die Schweißzonen
-      danach ausgebessert werden müssen.'
+    - vraag: Welche Blechdicke in Stahl können Sie laserschneiden?
+      antwoord: Stahl von 0,5 bis 25 mm und verzinkten Stahl von 0,5 bis 10 mm, auf der Trumpf TruLaser 3040, einem
+        Faserlaser mit 4 kW. Die Tafel darf bis 4000 × 2000 mm messen.
+    - vraag: Was ist der Unterschied zwischen MAG- und MIG-Schweißen bei Stahl?
+      antwoord: Beides sind Verfahren mit Zusatzdraht, der Unterschied liegt im Schutzgas. MAG verwendet aktives Gas
+        und ist das übliche Verfahren für Stahl; MIG verwendet inertes Gas und ist für Edelstahl und Aluminium
+        gedacht. Für Stahl schweißen wir also mit MAG, oder mit WIG, wo die Naht sauber sein muss.
+    - vraag: Übernehmen Sie auch das Pulverbeschichten oder Verzinken?
+      antwoord: Wir organisieren es, führen es aber nicht selbst aus. Pulverbeschichten, Verzinken und Nasslackieren
+        vergeben wir an feste Partner. Das Entgraten erledigen wir im eigenen Haus, maschinell auf der
+        Timesavers 42 Series RB.
+    - vraag: Wann wähle ich Stahl und wann Edelstahl oder Aluminium?
+      antwoord: Stahl ist bei gleicher Dicke steifer als Aluminium und deutlich günstiger als Edelstahl, korrodiert
+        aber ohne Schutz. Kommt das Teil in Feuchtigkeit, ins Freie oder in eine Umgebung, in der gereinigt
+        wird, liegt Edelstahl nahe. Zählt das Gewicht, dann Aluminium. Trifft beides nicht zu, dann Stahl.
+    - vraag: Können Sie verzinkten Stahl verarbeiten?
+      antwoord: 'Ja, von 0,5 bis 10 mm. Ein Punkt ist zu beachten: Die Zinkschicht verdampft beim Schneiden und beim
+        Schweißen. Wir stimmen die Schneidparameter darauf ab und klären vorab, ob die Schweißzonen danach
+        ausgebessert werden müssen.'
+  kerncijfers:
+    - waarde: 25 mm
+      label: max. Blechdicke Stahl
+    - waarde: 4000 × 2000 mm
+      label: max. Tafelformat
+    - waarde: 150 t
+      label: Presskraft
+    - waarde: 3100 mm
+      label: Abkantlänge
+  specs:
+    - label: Stahl
+      value: 0,5 – 25 mm
+    - label: Verzinkter Stahl
+      value: 0,5 – 10 mm
+    - label: Tafelformat
+      value: bis 4000 × 2000 mm
+    - label: Laserschneiden
+      value: Trumpf TruLaser 3040
+    - label: Abkanten
+      value: Safan Darley E-Brake 150-3100 T3, 150 Tonnen, bis 3100 mm
+    - label: Toleranzen
+      value: nach ISO 2768; engere Maße der Arbeitsvorbereitung vorlegen
+    - label: Schweißen
+      value: MAG für dickeres Material und Serien, WIG für dünn und Sichtflächen
+    - label: Entgraten
+      value: maschinell auf der Timesavers 42 Series RB
+    - label: Korrosionsschutz
+      value: Pulverbeschichten, Verzinken und Nasslackieren über feste Partner
+    - label: Geschweißte Konstruktionen
+      value: ISO 3834-2 und EN 1090-1, bis 10 Tonnen Stückgewicht
+kerncijfers:
+  - waarde: 25 mm
+    label: max. plaatdikte staal
+  - waarde: 4000 × 2000 mm
+    label: max. plaatmaat
+  - waarde: 150 ton
+    label: perskracht
+  - waarde: 3100 mm
+    label: zetlengte
+specs:
+  - label: Staal
+    value: 0,5 – 25 mm
+  - label: Gegalvaniseerd staal
+    value: 0,5 – 10 mm
+  - label: Plaatmaat
+    value: tot 4000 × 2000 mm
+  - label: Lasersnijden
+    value: Trumpf TruLaser 3040
+  - label: Kanten
+    value: Safan Darley E-Brake 150-3100 T3, 150 ton, tot 3100 mm
+  - label: Toleranties
+    value: volgens ISO 2768; krappere maten voorleggen aan de werkvoorbereiding
+  - label: Lassen
+    value: MAG voor dikker materiaal en series, TIG voor dun en zichtwerk
+  - label: Ontbramen
+    value: machinaal op de Timesavers 42 Series RB
+  - label: Conserveren
+    value: poedercoaten, verzinken en natlakken via vaste partners
+  - label: Gelaste constructies
+    value: ISO 3834-2 en EN 1090-1, tot 10 ton stukgewicht

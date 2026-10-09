@@ -15,301 +15,339 @@ heroPhoto:
   comp: Frame op bok, lasser op achtergrond
 bodyHeading: Specialist in constructiewerk
 body:
-- Assink & Schipholt voert zware en complexe lassamenstellingen uit — van losse onderdelen tot volledig
-  gelaste samenstellingen. Wij werken voor machinebouw, apparatenbouw en infratechniek en verwerken onderdelen
-  tot 10 ton.
-- In de hal hangen vijf bovenloopkranen van 5 ton. Door in tandem te hijsen — met twee kranen aan één
-  last — verplaatsen we samenstellingen tot 10 ton, tot 8 meter hoogte.
-- Wij verzorgen niet alleen las- en constructiewerk, maar ook oppervlaktebehandelingen zoals stralen,
-  poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer. Zo heeft u één aanspreekpunt van
-  engineering tot afwerking.
-- 'Een constructie is meer dan de som van de losse delen. De grootste risico''s zitten in vervorming door
-  warmte-inbreng en in maatafwijkingen die zich door een samenstelling heen opstapelen. Daarom bepalen
-  wij de lasvolgorde in de werkvoorbereiding en niet op de vloer: symmetrisch lassen waar het kan, in
-  stappen waar dat nodig is, en met opspanning op de maten die er echt toe doen.'
-- 'Wij snijden plaat op de fiberlaser en buis en profiel op de Trumpf TruLaser Tube 3000. Dat laatste
-  scheelt in een constructie veel handwerk: uitsparingen, verstekken en pasvormen komen direct uit de
-  machine, waardoor delen in elkaar vallen in plaats van dat ze passend gemaakt moeten worden. Het resultaat
-  is een kortere lastijd en een nauwkeuriger geheel.'
-- Voor het laswerk werken wij onder ISO 3834-2, de norm die kwaliteitseisen stelt aan smeltlassen. Draagconstructies
-  vallen onder EN 1090-1, waarmee wij staal- en aluminiumconstructies CE-conform mogen uitvoeren. In de
-  praktijk betekent dat gekwalificeerde lassers, vastgelegde lasmethodebeschrijvingen en herleidbaar materiaal.
-- Materiaalkeuze is een afweging tussen belasting, omgeving en kosten. Staal is sterk en voordelig, maar
-  heeft een coating nodig. RVS 304 en 316 zijn corrosiebestendig en geschikt voor natte of hygiënische
-  omgevingen — daarover leest u meer op onze pagina over <a href="/rvs-constructies/">RVS-constructies</a>.
-  Aluminium is licht, maar vraagt om een andere lasaanpak en om aandacht voor de sterkte rond de las.
-- 'Wat wij nodig hebben om een constructie te beoordelen: een PDF-tekening en een 3D STEP-bestand van de samenstelling,
-  het materiaal en de gewenste kwaliteit, de eisen aan maatvoering, en de gewenste afwerking. Weet u nog
-  niet welke oppervlaktebehandeling passend is, dan denken wij mee — die keuze bepaalt namelijk mede hoe
-  de constructie gelast en opgehangen moet worden.'
+  - "Een constructie is meer dan de som van de losse delen. De grootste risico's zitten in vervorming door
+    warmte-inbreng en in maatafwijkingen die zich door een samenstelling heen opstapelen. Daarom bepalen wij
+    de lasvolgorde in de werkvoorbereiding en niet op de vloer: symmetrisch lassen waar het kan, in stappen
+    waar dat nodig is, en met opspanning op de maten die er echt toe doen."
+  - "Wij snijden plaat op de fiberlaser en buis en profiel op de Trumpf TruLaser Tube 3000. Dat laatste
+    scheelt in een constructie veel handwerk: uitsparingen, verstekken en pasvormen komen direct uit de
+    machine, waardoor delen in elkaar vallen in plaats van dat ze passend gemaakt moeten worden. Het resultaat
+    is een kortere lastijd en een nauwkeuriger geheel."
+  - Materiaalkeuze is een afweging tussen belasting, omgeving en kosten. Staal is sterk en voordelig, maar
+    heeft een coating nodig. RVS 304 en 316 zijn corrosiebestendig en geschikt voor natte of hygiënische
+    omgevingen — daarover leest u meer op onze pagina over <a href="/rvs-constructies/">RVS-constructies</a>.
+    Aluminium is licht, maar vraagt om een andere lasaanpak en om aandacht voor de sterkte rond de las.
 materials:
-- RVS 304 / 316
-- Aluminium
-- Messing
-- Staal
+  - RVS 304 / 316
+  - Aluminium
+  - Messing
+  - Staal
 process:
-- step: Engineering & werkvoorbereiding
-  desc: Beoordeling van tekening, lasvolgorde en maakbaarheid.
-- step: Snijden & voorbewerken
-  desc: Lasersnijden van plaat en buis, kanten en passend maken.
-- step: Lassen & samenstellen
-  desc: Hand- en laserlassen tot volledige samenstelling.
-- step: Oppervlaktebehandeling
-  desc: Stralen, poedercoaten, anodiseren of passiveren.
-- step: Controle & levering
-  desc: Maatcontrole en visuele keuring, daarna just-in-time levering.
+  - step: Engineering & werkvoorbereiding
+    desc: Beoordeling van tekening, lasvolgorde en maakbaarheid.
+  - step: Snijden & voorbewerken
+    desc: Lasersnijden van plaat en buis, kanten en passend maken.
+  - step: Lassen & samenstellen
+    desc: Hand- en laserlassen tot volledige samenstelling.
+  - step: Oppervlaktebehandeling
+    desc: Stralen, poedercoaten, anodiseren of passiveren.
+  - step: Controle & levering
+    desc: Maatcontrole en visuele keuring, daarna just-in-time levering.
 specs:
-- label: Max. gewicht per stuk
-  value: tot 10 ton
-- label: Max. hoogte constructie
-  value: 8 m
-- label: Hijsmiddelen
-  value: 5 bovenloopkranen van 5 ton; tandem hijsen tot 10 ton
+  - label: Max. gewicht per stuk
+    value: tot 10 ton
+  - label: Max. hoogte constructie
+    value: 8 m
+  - label: Hijsmiddelen
+    value: 5 bovenloopkranen van 5 ton; in tandem hijsen tot 10 ton
+  - label: Plaat snijden
+    value: fiberlaser
+  - label: Buis en profiel
+    value: Trumpf TruLaser Tube 3000 — uitsparingen, verstekken en pasvormen direct uit de machine
+  - label: Laswerk
+    value: onder ISO 3834-2, de norm voor kwaliteitseisen aan smeltlassen
+  - label: Draagconstructies
+    value: EN 1090-1; staal- en aluminiumconstructies CE-conform
+  - label: In de praktijk
+    value: gekwalificeerde lassers, vastgelegde lasmethodebeschrijvingen en herleidbaar materiaal
+  - label: Oppervlaktebehandeling
+    value: stralen, poedercoaten, anodiseren en RVS-passiveren — veel in eigen beheer
+  - label: Sectoren
+    value: machinebouw, apparatenbouw en infratechniek
 applications:
-- Machinebouw (frames, beschermkappen)
-- Apparatenbouw
-- Infratechniek
-- Voedingsmiddelenindustrie
-- Elektrotechniek
-- Mechatronica
+  - Machinebouw (frames, beschermkappen)
+  - Apparatenbouw
+  - Infratechniek
+  - Voedingsmiddelenindustrie
+  - Elektrotechniek
+  - Mechatronica
 faq:
-- vraag: Hoe zwaar en hoe hoog mag een constructie zijn?
-  antwoord: Wij verwerken onderdelen tot 10 ton stukgewicht en constructies tot 8 meter hoogte. In de
-    hal hangen vijf bovenloopkranen van 5 ton; door in tandem te hijsen — twee kranen aan één last — verplaatsen
-    wij samenstellingen tot 10 ton.
-- vraag: Werken jullie volgens EN 1090?
-  antwoord: Ja. Wij zijn gecertificeerd voor EN 1090-1, de norm voor de uitvoering van staal- en aluminiumconstructies
-    met CE-markering. Voor het laswerk zelf werken wij onder ISO 3834-2 en ons kwaliteitssysteem is ISO
-    9001-gecertificeerd.
-- vraag: Verzorgen jullie ook de oppervlaktebehandeling?
-  antwoord: Ja. Stralen, poedercoaten, anodiseren en het passiveren van RVS horen bij het traject, veel
-    daarvan in eigen beheer. Zo heeft u één aanspreekpunt van werkvoorbereiding tot afgewerkte constructie
-    en hoeft u het werk niet zelf tussen partijen te verplaatsen.
-- vraag: In welke materialen lassen jullie constructies?
-  antwoord: Staal, RVS 304 en 316, aluminium en messing. Welk materiaal het beste past hangt af van de
-    belasting, de omgeving en de gewenste afwerking; voor natte of hygiënische omgevingen ligt RVS voor
-    de hand, voor gewichtsgevoelige constructies aluminium.
-- vraag: Kunnen jullie ook op basis van een schets werken?
-  antwoord: Ja. Wij beoordelen dan eerst de maakbaarheid en leggen de uitgangspunten — materiaal, profielkeuze,
-    lasvolgorde en maatvoering — vast voordat de productie begint. Dat voorkomt aanpassingen achteraf,
-    die in een gelaste constructie duur zijn.
+  - vraag: Hoe zwaar en hoe hoog mag een constructie zijn?
+    antwoord: Wij verwerken onderdelen tot 10 ton stukgewicht en constructies tot 8 meter hoogte. In de hal hangen
+      vijf bovenloopkranen van 5 ton; door in tandem te hijsen — twee kranen aan één last — verplaatsen wij
+      samenstellingen tot 10 ton.
+  - vraag: Werken jullie volgens EN 1090?
+    antwoord: Ja. Wij zijn gecertificeerd voor EN 1090-1, de norm voor de uitvoering van staal- en
+      aluminiumconstructies met CE-markering. Voor het laswerk zelf werken wij onder ISO 3834-2 en ons
+      kwaliteitssysteem is ISO 9001-gecertificeerd.
+  - vraag: Verzorgen jullie ook de oppervlaktebehandeling?
+    antwoord: Ja. Stralen, poedercoaten, anodiseren en het passiveren van RVS horen bij het traject, veel daarvan
+      in eigen beheer. Zo heeft u één aanspreekpunt van werkvoorbereiding tot afgewerkte constructie en hoeft
+      u het werk niet zelf tussen partijen te verplaatsen.
+  - vraag: In welke materialen lassen jullie constructies?
+    antwoord: Staal, RVS 304 en 316, aluminium en messing. Welk materiaal het beste past hangt af van de
+      belasting, de omgeving en de gewenste afwerking; voor natte of hygiënische omgevingen ligt RVS voor de
+      hand, voor gewichtsgevoelige constructies aluminium.
+  - vraag: Kunnen jullie ook op basis van een schets werken?
+    antwoord: Ja. Wij beoordelen dan eerst de maakbaarheid en leggen de uitgangspunten — materiaal, profielkeuze,
+      lasvolgorde en maatvoering — vast voordat de productie begint. Dat voorkomt aanpassingen achteraf, die
+      in een gelaste constructie duur zijn.
 related:
-- slug: rvs-constructies
-  label: RVS-constructies
-  desc: Corrosiebestendige constructies in roestvast staal.
-- slug: machinebouw
-  label: Machinebouw
-  desc: Complete machines en bouwgroepen.
-- slug: plaatwerk/robotlassen
-  label: Robotlassen
-  desc: Geautomatiseerd lassen voor series.
+  - slug: rvs-constructies
+    label: RVS-constructies
+    desc: Corrosiebestendige constructies in roestvast staal.
+  - slug: machinebouw
+    label: Machinebouw
+    desc: Complete machines en bouwgroepen.
+  - slug: plaatwerk/robotlassen
+    label: Robotlassen
+    desc: Geautomatiseerd lassen voor series.
 seo:
   title: Gelaste constructies tot 10 ton
   description: Zware en complexe gelaste metaalconstructies tot 10 ton in RVS, aluminium en staal voor
     machinebouw, apparatenbouw en infratechniek — uit Hengelo, Twente.
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Welded constructions
   h1: Constructive in constructions
-  intro: More than 100 years as a specialist in high-quality metal constructions. From individual parts
-    to fully welded assemblies — traditional craftsmanship with modern technology.
+  intro: More than 100 years as a specialist in high-quality metal constructions. From individual parts to fully
+    welded assemblies — traditional craftsmanship with modern technology.
   heroPhoto:
     subject: Welded frame during quality inspection in the structural workshop
   bodyHeading: Specialist in structural work
   body:
-  - Assink & Schipholt carries out heavy and complex welded assemblies — from individual parts to fully
-    welded assemblies. We work for machine building, equipment manufacturing and infrastructure engineering,
-    and handle parts up to 10 tonnes.
-  - The hall has five 5-tonne overhead cranes. By lifting in tandem — two cranes on a single load — we move
-    assemblies of up to 10 tonnes, to a height of 8 metres.
-  - We take care of not only welding and structural work but also surface treatments such as shot blasting,
-    powder coating, anodising and stainless steel passivation — much of it in house. That gives you a single
-    point of contact from engineering to finishing.
-  - 'A welded construction is more than the sum of its parts. The biggest risks lie in distortion caused
-    by heat input and in dimensional deviations that accumulate through an assembly. That is why we determine
-    the welding sequence during production engineering and not on the shop floor: welding symmetrically
-    where possible, in stages where necessary, and with fixturing on the dimensions that really matter.'
-  - 'We cut sheet on the fibre laser and tube and profile on the Trumpf TruLaser Tube 3000. The latter saves
-    a great deal of manual work in a construction: cut-outs, mitres and mating shapes come straight off
-    the machine, so parts fit together instead of having to be made to fit. The result is a shorter welding
-    time and a more accurate whole.'
-  - For welding we work under ISO 3834-2, the standard that sets quality requirements for fusion welding.
-    Load-bearing structures fall under EN 1090-1, which allows us to produce steel and aluminium structures
-    in conformity with CE marking. In practice that means qualified welders, documented welding procedure
-    specifications and traceable material.
-  - Material choice is a trade-off between load, environment and cost. Steel is strong and economical, but
-    needs a coating. Stainless steel 304 and 316 are corrosion-resistant and suited to wet or hygienic environments
-    — you can read more on our page about <a href="/en/rvs-constructies/">stainless steel constructions</a>.
-    Aluminium is light, but calls for a different welding approach and for attention to the strength around
-    the weld.
-  - 'What we need in order to assess a construction: a PDF drawing and a 3D STEP file of the assembly, the
-    material and required grade, the dimensional requirements, and the desired finishing. If you do not
-    yet know which surface treatment is appropriate, we will think along — that choice partly determines
-    how the construction has to be welded and lifted.'
+    - "A welded construction is more than the sum of its parts. The biggest risks lie in distortion caused by
+      heat input and in dimensional deviations that accumulate through an assembly. That is why we determine
+      the welding sequence during production engineering and not on the shop floor: welding symmetrically
+      where possible, in stages where necessary, and with fixturing on the dimensions that really matter."
+    - "We cut sheet on the fibre laser and tube and profile on the Trumpf TruLaser Tube 3000. The latter saves
+      a great deal of manual work in a construction: cut-outs, mitres and mating shapes come straight off the
+      machine, so parts fit together instead of having to be made to fit. The result is a shorter welding time
+      and a more accurate whole."
+    - Material choice is a trade-off between load, environment and cost. Steel is strong and economical, but
+      needs a coating. Stainless steel 304 and 316 are corrosion-resistant and suited to wet or hygienic
+      environments — you can read more on our page about <a href="/en/rvs-constructies/">stainless steel
+      constructions</a>. Aluminium is light, but calls for a different welding approach and for attention to
+      the strength around the weld.
   materials:
-  - Stainless steel 304 / 316
-  - Aluminium
-  - Brass
-  - Steel
+    - Stainless steel 304 / 316
+    - Aluminium
+    - Brass
+    - Steel
   process:
-  - step: Engineering & production engineering
-    desc: Assessment of the drawing, welding sequence and manufacturability.
-  - step: Cutting & preparation
-    desc: Laser cutting of sheet and tube, bending and fitting.
-  - step: Welding & assembly
-    desc: Manual and laser welding through to the complete assembly.
-  - step: Surface treatment
-    desc: Shot blasting, powder coating, anodising or passivation.
-  - step: Inspection & delivery
-    desc: Dimensional inspection and visual inspection, followed by just-in-time delivery.
+    - step: Engineering & production engineering
+      desc: Assessment of the drawing, welding sequence and manufacturability.
+    - step: Cutting & preparation
+      desc: Laser cutting of sheet and tube, bending and fitting.
+    - step: Welding & assembly
+      desc: Manual and laser welding through to the complete assembly.
+    - step: Surface treatment
+      desc: Shot blasting, powder coating, anodising or passivation.
+    - step: Inspection & delivery
+      desc: Dimensional inspection and visual inspection, followed by just-in-time delivery.
   specs:
-  - label: Max. weight per piece
-    value: up to 10 tonnes
-  - label: Max. height of construction
-    value: 8 m
-  - label: Lifting equipment
-    value: 5 overhead cranes of 5 tonnes; tandem lifting up to 10 tonnes
+    - label: Max. weight per piece
+      value: up to 10 tonnes
+    - label: Max. height of construction
+      value: 8 m
+    - label: Lifting equipment
+      value: 5 overhead cranes of 5 tonnes; tandem lifting up to 10 tonnes
+    - label: Sheet cutting
+      value: fibre laser
+    - label: Tube and profile
+      value: Trumpf TruLaser Tube 3000 — cut-outs, mitres and mating shapes straight off the machine
+    - label: Welding
+      value: under ISO 3834-2, the standard for quality requirements in fusion welding
+    - label: Load-bearing structures
+      value: EN 1090-1; steel and aluminium structures CE-compliant
+    - label: In practice
+      value: qualified welders, documented welding procedures and traceable material
+    - label: Surface treatment
+      value: blasting, powder coating, anodising and stainless passivation — much of it in house
+    - label: Sectors
+      value: machine building, equipment manufacturing and infrastructure
   applications:
-  - Machine building (frames, guards)
-  - Equipment manufacturing
-  - Infrastructure engineering
-  - Food industry
-  - Electrical engineering
-  - Mechatronics
+    - Machine building (frames, guards)
+    - Equipment manufacturing
+    - Infrastructure engineering
+    - Food industry
+    - Electrical engineering
+    - Mechatronics
   faq:
-  - vraag: How heavy and how tall may a construction be?
-    antwoord: We handle parts up to 10 tonnes unit weight and constructions up to 8 metres in height. Five
-      overhead cranes of 5 tonnes are installed in the hall; by lifting in tandem — two cranes on one load
-      — we move assemblies of up to 10 tonnes.
-  - vraag: Do you work in accordance with EN 1090?
-    antwoord: Yes. We are certified to EN 1090-1, the standard for the execution of steel and aluminium
-      structures with CE marking. For the welding itself we work under ISO 3834-2, and our quality system
-      is certified to ISO 9001.
-  - vraag: Do you also take care of the surface treatment?
-    antwoord: Yes. Blasting, powder coating, anodising and the passivation of stainless steel are part of
-      the process, much of it in house. That gives you a single point of contact from production engineering
-      through to the finished construction, without having to move the work between suppliers yourself.
-  - vraag: In which materials do you weld constructions?
-    antwoord: Steel, stainless steel 304 and 316, aluminium and brass. Which material suits best depends
-      on the load, the environment and the required finish; stainless steel is the obvious choice for wet
-      or hygienic environments, aluminium for weight-sensitive structures.
-  - vraag: Can you work from a sketch as well?
-    antwoord: Yes. We then first assess manufacturability and record the starting points — material, profile
-      selection, welding sequence and dimensions — before production begins. That avoids changes after the
-      fact, which are expensive in a welded construction.
+    - vraag: How heavy and how tall may a construction be?
+      antwoord: We handle parts up to 10 tonnes unit weight and constructions up to 8 metres in height. Five
+        overhead cranes of 5 tonnes are installed in the hall; by lifting in tandem — two cranes on one load —
+        we move assemblies of up to 10 tonnes.
+    - vraag: Do you work in accordance with EN 1090?
+      antwoord: Yes. We are certified to EN 1090-1, the standard for the execution of steel and aluminium structures
+        with CE marking. For the welding itself we work under ISO 3834-2, and our quality system is certified
+        to ISO 9001.
+    - vraag: Do you also take care of the surface treatment?
+      antwoord: Yes. Blasting, powder coating, anodising and the passivation of stainless steel are part of the
+        process, much of it in house. That gives you a single point of contact from production engineering
+        through to the finished construction, without having to move the work between suppliers yourself.
+    - vraag: In which materials do you weld constructions?
+      antwoord: Steel, stainless steel 304 and 316, aluminium and brass. Which material suits best depends on the
+        load, the environment and the required finish; stainless steel is the obvious choice for wet or
+        hygienic environments, aluminium for weight-sensitive structures.
+    - vraag: Can you work from a sketch as well?
+      antwoord: Yes. We then first assess manufacturability and record the starting points — material, profile
+        selection, welding sequence and dimensions — before production begins. That avoids changes after the
+        fact, which are expensive in a welded construction.
   related:
-  - label: Stainless steel constructions
-    desc: Corrosion-resistant constructions in stainless steel.
-  - label: Machine building
-    desc: Complete machines and assemblies.
-  - label: Robotic welding
-    desc: Automated welding for series production.
+    - label: Stainless steel constructions
+      desc: Corrosion-resistant constructions in stainless steel.
+    - label: Machine building
+      desc: Complete machines and assemblies.
+    - label: Robotic welding
+      desc: Automated welding for series production.
   seo:
     title: Welded constructions up to 10 tonnes
-    description: Heavy and complex welded metal constructions up to 10 tonnes in stainless steel, aluminium
-      and steel for machine building, equipment manufacturing and infrastructure engineering.
+    description: Heavy and complex welded metal constructions up to 10 tonnes in stainless steel, aluminium and
+      steel for machine building, equipment manufacturing and infrastructure engineering.
+  kerncijfers:
+    - waarde: 10 t
+      label: max. piece weight
+    - waarde: 8 m
+      label: max. build height
+    - waarde: 5 × 5 t
+      label: overhead cranes
+  aanleveren:
+    - A PDF drawing and a 3D STEP file of the assembly
+    - Material and the required grade
+    - The dimensional requirements
+    - The required finishing
+    - Not sure which surface treatment fits? That choice partly determines how the structure has to be welded
+      and supported — we are glad to think along
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Konstruktionen
   h1: Konstruktiv in Konstruktionen
-  intro: Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis
-    zu vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik.
+  intro: Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis zu
+    vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik.
   heroPhoto:
     subject: Geschweißter Rahmen bei der Qualitätskontrolle in der Konstruktionshalle
   bodyHeading: Spezialist für Konstruktionsarbeit
   body:
-  - Assink & Schipholt fertigt schwere und komplexe Schweißbaugruppen — von einzelnen Bauteilen bis zu vollständig
-    geschweißten Baugruppen. Wir arbeiten für Maschinenbau, Apparatebau und Infrastrukturtechnik und verarbeiten
-    Bauteile bis 10 Tonnen.
-  - In der Halle hängen fünf Hallenkrane von je 5 Tonnen. Durch Tandemhub — zwei Krane an einer Last — bewegen
-    wir Baugruppen bis 10 Tonnen, bis 8 Meter Höhe.
-  - Wir übernehmen nicht nur Schweiß- und Konstruktionsarbeiten, sondern auch Oberflächenbehandlungen wie
-    Strahlen, Pulverbeschichten, Eloxieren und Edelstahl-Passivieren — vieles davon im eigenen Haus. So
-    haben Sie einen Ansprechpartner von der Konstruktion bis zur Endbearbeitung.
-  - 'Eine Konstruktion ist mehr als die Summe ihrer Teile. Die größten Risiken liegen im Verzug durch Wärmeeinbringung
-    und in Maßabweichungen, die sich über eine Baugruppe hinweg aufsummieren. Deshalb legen wir die Schweißfolge
-    in der Arbeitsvorbereitung fest und nicht in der Werkstatt: symmetrisch schweißen, wo es geht, in Schritten,
-    wo es nötig ist, und mit Aufspannung auf den Maßen, auf die es wirklich ankommt.'
-  - 'Blech schneiden wir auf dem Faserlaser, Rohre und Profile auf der Trumpf TruLaser Tube 3000. Letzteres
-    spart in einer Konstruktion viel Handarbeit: Aussparungen, Gehrungen und Passformen kommen direkt aus
-    der Maschine, sodass die Teile ineinandergreifen, statt passend gemacht werden zu müssen. Das Ergebnis
-    sind kürzere Schweißzeiten und ein genaueres Ganzes.'
-  - Beim Schweißen arbeiten wir nach ISO 3834-2, der Norm für Qualitätsanforderungen an das Schmelzschweißen.
-    Tragende Konstruktionen fallen unter EN 1090-1, wodurch wir Stahl- und Aluminiumkonstruktionen CE-konform
-    ausführen dürfen. In der Praxis bedeutet das qualifizierte Schweißer, dokumentierte Schweißanweisungen
-    und rückverfolgbares Material.
-  - Die Werkstoffwahl ist eine Abwägung zwischen Belastung, Umgebung und Kosten. Stahl ist fest und günstig,
-    benötigt aber eine Beschichtung. Edelstahl 304 und 316 sind korrosionsbeständig und für feuchte oder
-    hygienische Umgebungen geeignet — mehr dazu auf unserer Seite über <a href="/de/rvs-constructies/">Edelstahlkonstruktionen</a>.
-    Aluminium ist leicht, verlangt aber eine andere Schweißstrategie und Aufmerksamkeit für die Festigkeit
-    rund um die Naht.
-  - 'Was wir für die Beurteilung einer Konstruktion benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei
-    der Baugruppe, den Werkstoff und die gewünschte Güte, die Anforderungen an die Maßhaltigkeit sowie die
-    gewünschte Oberfläche. Wissen Sie noch nicht, welche Oberflächenbehandlung passt, denken wir mit — diese
-    Wahl bestimmt nämlich mit, wie die Konstruktion geschweißt und angeschlagen werden muss.'
+    - "Eine Konstruktion ist mehr als die Summe ihrer Teile. Die größten Risiken liegen im Verzug durch
+      Wärmeeinbringung und in Maßabweichungen, die sich über eine Baugruppe hinweg aufsummieren. Deshalb legen
+      wir die Schweißfolge in der Arbeitsvorbereitung fest und nicht in der Werkstatt: symmetrisch schweißen,
+      wo es geht, in Schritten, wo es nötig ist, und mit Aufspannung auf den Maßen, auf die es wirklich
+      ankommt."
+    - "Blech schneiden wir auf dem Faserlaser, Rohre und Profile auf der Trumpf TruLaser Tube 3000. Letzteres
+      spart in einer Konstruktion viel Handarbeit: Aussparungen, Gehrungen und Passformen kommen direkt aus
+      der Maschine, sodass die Teile ineinandergreifen, statt passend gemacht werden zu müssen. Das Ergebnis
+      sind kürzere Schweißzeiten und ein genaueres Ganzes."
+    - Die Werkstoffwahl ist eine Abwägung zwischen Belastung, Umgebung und Kosten. Stahl ist fest und günstig,
+      benötigt aber eine Beschichtung. Edelstahl 304 und 316 sind korrosionsbeständig und für feuchte oder
+      hygienische Umgebungen geeignet — mehr dazu auf unserer Seite über <a
+      href="/de/rvs-constructies/">Edelstahlkonstruktionen</a>. Aluminium ist leicht, verlangt aber eine
+      andere Schweißstrategie und Aufmerksamkeit für die Festigkeit rund um die Naht.
   materials:
-  - Edelstahl 304 / 316
-  - Aluminium
-  - Messing
-  - Stahl
+    - Edelstahl 304 / 316
+    - Aluminium
+    - Messing
+    - Stahl
   process:
-  - step: Engineering & Arbeitsvorbereitung
-    desc: Prüfung von Zeichnung, Schweißfolge und Herstellbarkeit.
-  - step: Schneiden & Vorbereiten
-    desc: Laserschneiden von Blech und Rohr, Kanten und Anpassen.
-  - step: Schweißen & Zusammenbau
-    desc: Hand- und Laserschweißen bis zur vollständigen Baugruppe.
-  - step: Oberflächenbehandlung
-    desc: Strahlen, Pulverbeschichten, Eloxieren oder Passivieren.
-  - step: Prüfung & Lieferung
-    desc: Maßkontrolle und visuelle Prüfung, danach Just-in-time-Lieferung.
+    - step: Engineering & Arbeitsvorbereitung
+      desc: Prüfung von Zeichnung, Schweißfolge und Herstellbarkeit.
+    - step: Schneiden & Vorbereiten
+      desc: Laserschneiden von Blech und Rohr, Kanten und Anpassen.
+    - step: Schweißen & Zusammenbau
+      desc: Hand- und Laserschweißen bis zur vollständigen Baugruppe.
+    - step: Oberflächenbehandlung
+      desc: Strahlen, Pulverbeschichten, Eloxieren oder Passivieren.
+    - step: Prüfung & Lieferung
+      desc: Maßkontrolle und visuelle Prüfung, danach Just-in-time-Lieferung.
   specs:
-  - label: Max. Gewicht pro Stück
-    value: bis 10 Tonnen
-  - label: Max. Höhe der Konstruktion
-    value: 8 m
-  - label: Hebezeuge
-    value: 5 Hallenkrane von je 5 Tonnen; Tandemhub bis 10 Tonnen
+    - label: Max. Gewicht je Stück
+      value: bis 10 Tonnen
+    - label: Max. Höhe der Konstruktion
+      value: 8 m
+    - label: Hebezeuge
+      value: 5 Hallenkrane à 5 Tonnen; Tandemhub bis 10 Tonnen
+    - label: Blech schneiden
+      value: Faserlaser
+    - label: Rohr und Profil
+      value: Trumpf TruLaser Tube 3000 — Aussparungen, Gehrungen und Passformen direkt aus der Maschine
+    - label: Schweißarbeiten
+      value: nach ISO 3834-2, der Norm für Qualitätsanforderungen beim Schmelzschweißen
+    - label: Tragende Konstruktionen
+      value: EN 1090-1; Stahl- und Aluminiumkonstruktionen CE-konform
+    - label: In der Praxis
+      value: qualifizierte Schweißer, dokumentierte Schweißanweisungen und rückverfolgbares Material
+    - label: Oberflächenbehandlung
+      value: Strahlen, Pulverbeschichten, Eloxieren und Edelstahl-Passivieren — vieles im eigenen Haus
+    - label: Branchen
+      value: Maschinenbau, Apparatebau und Infrastruktur
   applications:
-  - Maschinenbau (Rahmen, Schutzhauben)
-  - Apparatebau
-  - Infrastrukturtechnik
-  - Lebensmittelindustrie
-  - Elektrotechnik
-  - Mechatronik
+    - Maschinenbau (Rahmen, Schutzhauben)
+    - Apparatebau
+    - Infrastrukturtechnik
+    - Lebensmittelindustrie
+    - Elektrotechnik
+    - Mechatronik
   faq:
-  - vraag: Wie schwer und wie hoch darf eine Konstruktion sein?
-    antwoord: Wir verarbeiten Bauteile bis 10 Tonnen Stückgewicht und Konstruktionen bis 8 Meter Höhe. In
-      der Halle hängen fünf Hallenkrane mit je 5 Tonnen; im Tandemhub — zwei Krane an einer Last — bewegen
-      wir Baugruppen bis 10 Tonnen.
-  - vraag: Arbeiten Sie nach EN 1090?
-    antwoord: Ja. Wir sind nach EN 1090-1 zertifiziert, der Norm für die Ausführung von Stahl- und Aluminiumkonstruktionen
-      mit CE-Kennzeichnung. Für das Schweißen selbst arbeiten wir nach ISO 3834-2, unser Qualitätssystem
-      ist nach ISO 9001 zertifiziert.
-  - vraag: Übernehmen Sie auch die Oberflächenbehandlung?
-    antwoord: Ja. Strahlen, Pulverbeschichten, Eloxieren und das Passivieren von Edelstahl gehören zum Ablauf,
-      vieles davon in eigener Regie. So haben Sie einen Ansprechpartner von der Arbeitsvorbereitung bis
-      zur fertigen Konstruktion und müssen die Teile nicht selbst zwischen Betrieben hin- und herbewegen.
-  - vraag: In welchen Werkstoffen schweißen Sie Konstruktionen?
-    antwoord: Stahl, Edelstahl 304 und 316, Aluminium und Messing. Welcher Werkstoff am besten passt, hängt
-      von Belastung, Umgebung und gewünschter Oberfläche ab; für feuchte oder hygienische Umgebungen liegt
-      Edelstahl nahe, für gewichtskritische Konstruktionen Aluminium.
-  - vraag: Können Sie auch anhand einer Skizze arbeiten?
-    antwoord: Ja. Wir beurteilen dann zunächst die Fertigbarkeit und halten die Ausgangspunkte — Werkstoff,
-      Profilwahl, Schweißfolge und Maßhaltigkeit — fest, bevor die Produktion beginnt. Das vermeidet nachträgliche
-      Änderungen, die bei einer geschweißten Konstruktion teuer sind.
+    - vraag: Wie schwer und wie hoch darf eine Konstruktion sein?
+      antwoord: Wir verarbeiten Bauteile bis 10 Tonnen Stückgewicht und Konstruktionen bis 8 Meter Höhe. In der
+        Halle hängen fünf Hallenkrane mit je 5 Tonnen; im Tandemhub — zwei Krane an einer Last — bewegen wir
+        Baugruppen bis 10 Tonnen.
+    - vraag: Arbeiten Sie nach EN 1090?
+      antwoord: Ja. Wir sind nach EN 1090-1 zertifiziert, der Norm für die Ausführung von Stahl- und
+        Aluminiumkonstruktionen mit CE-Kennzeichnung. Für das Schweißen selbst arbeiten wir nach ISO 3834-2,
+        unser Qualitätssystem ist nach ISO 9001 zertifiziert.
+    - vraag: Übernehmen Sie auch die Oberflächenbehandlung?
+      antwoord: Ja. Strahlen, Pulverbeschichten, Eloxieren und das Passivieren von Edelstahl gehören zum Ablauf,
+        vieles davon in eigener Regie. So haben Sie einen Ansprechpartner von der Arbeitsvorbereitung bis zur
+        fertigen Konstruktion und müssen die Teile nicht selbst zwischen Betrieben hin- und herbewegen.
+    - vraag: In welchen Werkstoffen schweißen Sie Konstruktionen?
+      antwoord: Stahl, Edelstahl 304 und 316, Aluminium und Messing. Welcher Werkstoff am besten passt, hängt von
+        Belastung, Umgebung und gewünschter Oberfläche ab; für feuchte oder hygienische Umgebungen liegt
+        Edelstahl nahe, für gewichtskritische Konstruktionen Aluminium.
+    - vraag: Können Sie auch anhand einer Skizze arbeiten?
+      antwoord: Ja. Wir beurteilen dann zunächst die Fertigbarkeit und halten die Ausgangspunkte — Werkstoff,
+        Profilwahl, Schweißfolge und Maßhaltigkeit — fest, bevor die Produktion beginnt. Das vermeidet
+        nachträgliche Änderungen, die bei einer geschweißten Konstruktion teuer sind.
   related:
-  - label: Edelstahlkonstruktionen
-    desc: Korrosionsbeständige Konstruktionen aus Edelstahl.
-  - label: Maschinenbau
-    desc: Komplette Maschinen und Baugruppen.
-  - label: Roboterschweißen
-    desc: Automatisiertes Schweißen für Serien.
+    - label: Edelstahlkonstruktionen
+      desc: Korrosionsbeständige Konstruktionen aus Edelstahl.
+    - label: Maschinenbau
+      desc: Komplette Maschinen und Baugruppen.
+    - label: Roboterschweißen
+      desc: Automatisiertes Schweißen für Serien.
   seo:
     title: Geschweißte Baugruppen bis 10 Tonnen
-    description: Schwere und komplexe geschweißte Metallkonstruktionen bis 10 Tonnen in Edelstahl, Aluminium
-      und Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik.
+    description: Schwere und komplexe geschweißte Metallkonstruktionen bis 10 Tonnen in Edelstahl, Aluminium und
+      Stahl für Maschinenbau, Apparatebau und Infrastrukturtechnik.
+  kerncijfers:
+    - waarde: 10 t
+      label: max. Stückgewicht
+    - waarde: 8 m
+      label: max. Bauhöhe
+    - waarde: 5 × 5 t
+      label: Hallenkrane
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei der Baugruppe
+    - Werkstoff und die gewünschte Güte
+    - Die Anforderungen an die Maßhaltigkeit
+    - Die gewünschte Oberflächenbehandlung
+    - Noch unklar, welche Oberflächenbehandlung passt? Diese Wahl bestimmt mit, wie die Konstruktion
+      geschweißt und aufgehängt werden muss — wir denken mit
+kerncijfers:
+  - waarde: 10 ton
+    label: max. stukgewicht
+  - waarde: 8 m
+    label: max. bouwhoogte
+  - waarde: 5 × 5 ton
+    label: bovenloopkranen
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand van de samenstelling
+  - Materiaal en de gewenste kwaliteit
+  - De eisen aan maatvoering
+  - De gewenste afwerking
+  - Weet u nog niet welke oppervlaktebehandeling past? Die keuze bepaalt mede hoe de constructie gelast en
+    opgehangen moet worden — wij denken mee

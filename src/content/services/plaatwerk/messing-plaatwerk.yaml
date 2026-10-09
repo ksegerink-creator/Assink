@@ -14,243 +14,281 @@ heroPhoto:
   crop: Detailcrop
   comp: Strijklicht over messing oppervlak
 body:
-- Messing wordt gewaardeerd om zijn warme kleur en bewerkbaarheid. Wij verwerken messing voor interieurbouw,
-  kunstobjecten en decoratieve technische componenten, met aandacht voor het behoud van de natuurlijke
-  glans.
-- 'Messing is een legering van koper en zink. De verhouding bepaalt het gedrag: meer zink maakt het materiaal
-  sterker en beter vervormbaar, meer koper geeft een warmere, rodere kleur. Voor plaatwerk wordt meestal
-  een goed vervormbare kwaliteit gekozen, zodat het materiaal bij het kanten niet scheurt.'
-- Waar messing zich onderscheidt, is de uitstraling. Het oppervlak heeft een warme, gele glans die met
-  geen enkele coating op RVS te benaderen is. Dat maakt het aantrekkelijk voor zichtwerk in interieurs,
-  voor kunstobjecten en voor decoratieve technische onderdelen — maar het maakt het oppervlak ook het
-  kwetsbaarste deel van het product.
-- Messing verkleurt namelijk. In contact met lucht en vocht vormt zich een donkerder patina, eerst geelbruin
-  en later bruin tot groenig. Voor sommige toepassingen is dat juist gewenst; voor andere niet. Wilt u
-  de glans behouden, dan is een beschermende laklaag nodig — of moet u rekenen op periodiek poetsen. Geef
-  bij uw aanvraag door welke van de twee u wilt, want dat bepaalt de afwerking.
-- 'In de bewerking vraagt messing vooral zorg voor het oppervlak. Het is zachter dan RVS en staal en krast
-  dus makkelijker: wij houden beschermfolie tot en met de laatste bewerking op het materiaal, werken met
-  schoon gereedschap en houden messing gescheiden van staal om ijzerinslag te voorkomen. Bij het kanten
-  letten wij op de walsrichting, omdat een buiging dwars op de vezel eerder scheurt.'
-- 'Welke snijmethode voor uw messing onderdeel het meest geschikt is, bepalen wij per aanvraag: de reflectie
-  en de warmtegeleiding van koperlegeringen maken messing lastiger te snijden dan staal of RVS. Stuur
-  uw tekening mee met de plaatdikte, de gewenste messingkwaliteit en de eis aan het oppervlak; dan geven
-  wij aan wat haalbaar is en welke route wij daarvoor kiezen.'
-- Messing laat zich goed combineren met andere materialen. Zoekt u corrosiebestendig zichtwerk zonder
-  de warme kleur, dan is <a href="/plaatwerk/rvs/">geslepen RVS</a> vaak de logische keuze; is licht gewicht
-  doorslaggevend, dan komt <a href="/plaatwerk/aluminium/">aluminium</a> in beeld. Wij verwerken alle
-  drie, dus de materiaalkeuze hoeft niet door de leverancier bepaald te worden.
+  - Waar messing zich onderscheidt, is de uitstraling. Het oppervlak heeft een warme, gele glans die met geen
+    enkele coating op RVS te benaderen is. Dat maakt het aantrekkelijk voor zichtwerk in interieurs, voor
+    kunstobjecten en voor decoratieve technische onderdelen — maar het maakt het oppervlak ook het
+    kwetsbaarste deel van het product.
+  - Messing verkleurt. In contact met lucht en vocht vormt zich een donkerder patina, eerst geelbruin en later
+    bruin tot groenig. Voor sommige toepassingen is dat juist gewenst; voor andere niet. Geef bij uw aanvraag
+    door welke van de twee u wilt, want dat bepaalt de afwerking.
+  - Messing laat zich goed combineren met andere materialen. Zoekt u corrosiebestendig zichtwerk zonder de
+    warme kleur, dan is <a href="/plaatwerk/rvs/">geslepen RVS</a> vaak de logische keuze; is licht gewicht
+    doorslaggevend, dan komt <a href="/plaatwerk/aluminium/">aluminium</a> in beeld. Wij verwerken alle drie,
+    dus de materiaalkeuze hoeft niet door de leverancier bepaald te worden.
 materials:
-- Messing (koperzink-legering)
+  - Messing (koperzink-legering)
 process:
-- step: Snijden
-  desc: Nauwkeurig uitsnijden van messing plaat.
-- step: Kanten
-  desc: Kanten zonder beschadiging van het oppervlak.
-- step: Afwerking
-  desc: Ontbramen en beschermen van de glans.
+  - step: Snijden
+    desc: "Nauwkeurig uitsnijden van messing plaat. De snijmethode kiezen wij per aanvraag: reflectie en
+      warmtegeleiding maken koperlegeringen lastiger te snijden dan staal of RVS."
+  - step: Kanten
+    desc: Kanten zonder beschadiging van het oppervlak, met aandacht voor de walsrichting — een buiging dwars op
+      de vezel scheurt eerder.
+  - step: Afwerking
+    desc: Ontbramen en beschermen van de glans. De beschermfolie blijft tot en met de laatste bewerking zitten.
 applications:
-- Interieurbouw
-- Kunstobjecten
-- Decoratieve technische componenten
+  - Interieurbouw
+  - Kunstobjecten
+  - Decoratieve technische componenten
 faq:
-- vraag: Welke plaatdiktes messing kunnen jullie verwerken?
-  antwoord: Dat bepalen wij per aanvraag. De snijdiktes die wij op onze fiberlaser bevestigd hebben, gelden
-    voor staal, RVS, aluminium en gegalvaniseerd staal; messing is een koperlegering en gedraagt zich
-    onder de laser anders. Stuur uw tekening met de plaatdikte en de messingkwaliteit mee, dan geven wij
-    aan wat haalbaar is.
-- vraag: Verkleurt messing na verloop van tijd?
-  antwoord: 'Ja. In contact met lucht en vocht vormt zich een patina: eerst geelbruin, later bruin tot
-    groenig. Voor sommige toepassingen is dat juist gewenst. Wilt u de oorspronkelijke glans behouden,
-    dan is een beschermende laklaag nodig of moet er periodiek gepoetst worden.'
-- vraag: Kunnen jullie messing kanten zonder het oppervlak te beschadigen?
-  antwoord: Ja. Messing is zachter dan RVS en staal en krast dus sneller. Wij laten beschermfolie tot
-    en met de laatste bewerking zitten, werken met schoon gereedschap en houden rekening met de walsrichting,
-    omdat een buiging dwars op de vezel eerder scheurt.
-- vraag: Waarvoor wordt messing plaatwerk vooral gebruikt?
-  antwoord: Voor interieurbouw, kunstobjecten en decoratieve technische componenten — toepassingen waarin
-    de warme, gele glans het verschil maakt. Voor puur functionele delen zonder zichteis is RVS of aluminium
-    meestal voordeliger.
-- vraag: Kunnen jullie messing lassen?
-  antwoord: Messing staat bij ons als materiaal voor laserlassen. Wel vraagt het vanwege het zink in de
-    legering om aangepaste parameters en goede afzuiging. Leg uw verbinding voor met de plaatdikte en
-    de naadvorm, dan geven wij aan of lassen, solderen of een mechanische verbinding in uw geval de betere
-    route is.
+  - vraag: Welke plaatdiktes messing kunnen jullie verwerken?
+    antwoord: Dat bepalen wij per aanvraag. De snijdiktes die wij op onze fiberlaser bevestigd hebben, gelden voor
+      staal, RVS, aluminium en gegalvaniseerd staal; messing is een koperlegering en gedraagt zich onder de
+      laser anders. Stuur uw tekening met de plaatdikte en de messingkwaliteit mee, dan geven wij aan wat
+      haalbaar is.
+  - vraag: Verkleurt messing na verloop van tijd?
+    antwoord: 'Ja. In contact met lucht en vocht vormt zich een patina: eerst geelbruin, later bruin tot groenig.
+      Voor sommige toepassingen is dat juist gewenst. Wilt u de oorspronkelijke glans behouden, dan is een
+      beschermende laklaag nodig of moet er periodiek gepoetst worden.'
+  - vraag: Kunnen jullie messing kanten zonder het oppervlak te beschadigen?
+    antwoord: Ja. Messing is zachter dan RVS en staal en krast dus sneller. Wij laten beschermfolie tot en met de
+      laatste bewerking zitten, werken met schoon gereedschap en houden rekening met de walsrichting, omdat
+      een buiging dwars op de vezel eerder scheurt.
+  - vraag: Waarvoor wordt messing plaatwerk vooral gebruikt?
+    antwoord: Voor interieurbouw, kunstobjecten en decoratieve technische componenten — toepassingen waarin de
+      warme, gele glans het verschil maakt. Voor puur functionele delen zonder zichteis is RVS of aluminium
+      meestal voordeliger.
+  - vraag: Kunnen jullie messing lassen?
+    antwoord: Messing staat bij ons als materiaal voor laserlassen. Wel vraagt het vanwege het zink in de legering
+      om aangepaste parameters en goede afzuiging. Leg uw verbinding voor met de plaatdikte en de naadvorm,
+      dan geven wij aan of lassen, solderen of een mechanische verbinding in uw geval de betere route is.
 related:
-- slug: plaatwerk/rvs
-  label: RVS
-  desc: Roestvast zichtwerk.
-- slug: plaatwerk/precisieplaatwerk
-  label: Precisieplaatwerk
-  desc: Maatvast enkelstuks- en seriewerk.
+  - slug: plaatwerk/rvs
+    label: RVS
+    desc: Roestvast zichtwerk.
+  - slug: plaatwerk/precisieplaatwerk
+    label: Precisieplaatwerk
+    desc: Maatvast enkelstuks- en seriewerk.
 seo:
   title: Messing plaatwerk op maat
-  description: Messing plaatwerk met behoud van de natuurlijke glans voor interieurbouw, kunstobjecten
-    en decoratieve technische componenten.
+  description: Messing plaatwerk met behoud van de natuurlijke glans voor interieurbouw, kunstobjecten en
+    decoratieve technische componenten.
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   menuLabel: "Brass"
   title: Brass sheet metal
   h1: Brass sheet metal
-  intro: Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre,
-    for technical and visible applications alike.
+  intro: Brass is a copper-zinc alloy with a warm colour. We process it while preserving its natural lustre, for
+    technical and visible applications alike.
   heroPhoto:
     subject: Brass sheet metal part with a warm sheen, detail
   body:
-  - Brass is valued for its warm colour and its workability. We process brass for interior fit-out, art
-    objects and decorative technical components, with care for preserving its natural lustre.
-  - 'Brass is an alloy of copper and zinc. The ratio determines its behaviour: more zinc makes the material
-    stronger and easier to form, more copper gives a warmer, redder colour. For sheet metal work a readily
-    formable grade is usually chosen, so that the material does not crack during press braking.'
-  - Where brass stands out is its appearance. The surface has a warm, yellow lustre that no coating on stainless
-    steel can match. That makes it attractive for visible work in interiors, for art objects and for decorative
-    technical parts — but it also makes the surface the most vulnerable part of the product.
-  - Brass discolours over time. In contact with air and moisture a darker patina forms, first yellow-brown
-    and later brown to greenish. For some applications that is exactly what is wanted; for others it is
-    not. If you want to keep the lustre, a protective lacquer is needed — or you have to allow for periodic
-    polishing. Tell us which of the two you want, because it determines the finishing.
-  - 'In processing, brass mainly calls for care of the surface. It is softer than stainless steel and steel
-    and therefore scratches more easily: we keep protective film on the material up to and including the
-    last operation, work with clean tooling and keep brass separate from steel to prevent iron contamination.
-    When press braking we take the rolling direction into account, because a bend across the grain is more
-    likely to crack.'
-  - 'Which cutting method suits your brass part best we determine per request: the reflectivity and thermal
-    conductivity of copper alloys make brass harder to cut than steel or stainless steel. Send your drawing
-    with the sheet thickness, the required brass grade and the surface requirement; we will indicate what
-    is feasible and which route we choose for it.'
-  - Brass combines well with other materials. If you are looking for corrosion-resistant visible work without
-    the warm colour, <a href="/en/plaatwerk/rvs/">ground stainless steel</a> is often the logical choice;
-    if low weight is decisive, <a href="/en/plaatwerk/aluminium/">aluminium</a> comes into play. We process
-    all three, so the material choice need not be dictated by the supplier.
+    - Where brass stands out is its appearance. The surface has a warm, yellow lustre that no coating on
+      stainless steel can match. That makes it attractive for visible work in interiors, for art objects and
+      for decorative technical parts — but it also makes the surface the most vulnerable part of the product.
+    - Brass discolours over time. In contact with air and moisture a darker patina forms, first yellow-brown
+      and later brown to greenish. For some applications that is exactly what is wanted; for others it is not.
+      Tell us which of the two you want, because it determines the finishing.
+    - Brass combines well with other materials. If you are looking for corrosion-resistant visible work
+      without the warm colour, <a href="/en/plaatwerk/rvs/">ground stainless steel</a> is often the logical
+      choice; if low weight is decisive, <a href="/en/plaatwerk/aluminium/">aluminium</a> comes into play. We
+      process all three, so the material choice need not be dictated by the supplier.
   materials:
-  - Brass (copper-zinc alloy)
+    - Brass (copper-zinc alloy)
   process:
-  - step: Cutting
-    desc: Precise cutting of brass sheet.
-  - step: Press braking
-    desc: Bending without damaging the surface.
-  - step: Finishing
-    desc: Deburring and protecting the lustre.
+    - step: Cutting
+      desc: "Precise cutting of brass sheet. We choose the cutting method per request: reflectivity and thermal
+        conductivity make copper alloys harder to cut than steel or stainless steel."
+    - step: Press braking
+      desc: Bending without damaging the surface, with attention to the rolling direction — a bend across the grain
+        is more likely to crack.
+    - step: Finishing
+      desc: Deburring and protecting the lustre. The protective film stays on up to and including the last
+        operation.
   applications:
-  - Interior fit-out
-  - Art objects
-  - Decorative technical components
+    - Interior fit-out
+    - Art objects
+    - Decorative technical components
   faq:
-  - vraag: Which brass sheet thicknesses can you process?
-    antwoord: We determine that per request. The cutting thicknesses we have confirmed for our fibre laser
-      apply to steel, stainless steel, aluminium and galvanised steel; brass is a copper alloy and behaves
-      differently under the laser. Send your drawing with the sheet thickness and brass grade and we will
-      indicate what is feasible.
-  - vraag: Does brass discolour over time?
-    antwoord: 'Yes. In contact with air and moisture a patina forms: first yellow-brown, later brown to
-      greenish. For some applications that is exactly what is wanted. If you want to keep the original lustre,
-      a protective lacquer is needed or the part has to be polished periodically.'
-  - vraag: Can you press brake brass without damaging the surface?
-    antwoord: Yes. Brass is softer than stainless steel and steel and therefore scratches more quickly.
-      We keep protective film on up to and including the last operation, work with clean tooling and take
-      the rolling direction into account, because a bend across the grain is more likely to crack.
-  - vraag: What is brass sheet metal mainly used for?
-    antwoord: For interior construction, art objects and decorative technical components — applications
-      in which the warm, yellow lustre makes the difference. For purely functional parts without a visual
-      requirement, stainless steel or aluminium is usually more economical.
-  - vraag: Can you weld brass?
-    antwoord: Brass is listed with us as a material for laser welding. Because of the zinc in the alloy
-      it does call for adapted parameters and good extraction. Put your joint to us with the sheet thickness
-      and the joint geometry and we will indicate whether welding, brazing or a mechanical joint is the
-      better route in your case.
+    - vraag: Which brass sheet thicknesses can you process?
+      antwoord: We determine that per request. The cutting thicknesses we have confirmed for our fibre laser apply
+        to steel, stainless steel, aluminium and galvanised steel; brass is a copper alloy and behaves
+        differently under the laser. Send your drawing with the sheet thickness and brass grade and we will
+        indicate what is feasible.
+    - vraag: Does brass discolour over time?
+      antwoord: 'Yes. In contact with air and moisture a patina forms: first yellow-brown, later brown to greenish.
+        For some applications that is exactly what is wanted. If you want to keep the original lustre, a
+        protective lacquer is needed or the part has to be polished periodically.'
+    - vraag: Can you press brake brass without damaging the surface?
+      antwoord: Yes. Brass is softer than stainless steel and steel and therefore scratches more quickly. We keep
+        protective film on up to and including the last operation, work with clean tooling and take the
+        rolling direction into account, because a bend across the grain is more likely to crack.
+    - vraag: What is brass sheet metal mainly used for?
+      antwoord: For interior construction, art objects and decorative technical components — applications in which
+        the warm, yellow lustre makes the difference. For purely functional parts without a visual
+        requirement, stainless steel or aluminium is usually more economical.
+    - vraag: Can you weld brass?
+      antwoord: Brass is listed with us as a material for laser welding. Because of the zinc in the alloy it does
+        call for adapted parameters and good extraction. Put your joint to us with the sheet thickness and the
+        joint geometry and we will indicate whether welding, brazing or a mechanical joint is the better route
+        in your case.
   related:
-  - label: Stainless steel
-    desc: Corrosion-resistant visible surfaces.
-  - label: Precision sheet metal
-    desc: Dimensionally stable one-offs and series.
+    - label: Stainless steel
+      desc: Corrosion-resistant visible surfaces.
+    - label: Precision sheet metal
+      desc: Dimensionally stable one-offs and series.
   seo:
     title: Custom brass sheet metal
-    description: Brass sheet metal with its natural lustre preserved, for interior fit-out, art objects
-      and decorative technical components.
+    description: Brass sheet metal with its natural lustre preserved, for interior fit-out, art objects and
+      decorative technical components.
+  specs:
+    - label: Alloy
+      value: copper and zinc
+    - label: More zinc
+      value: stronger and easier to form
+    - label: More copper
+      value: warmer, redder colour
+    - label: For sheet metal work
+      value: usually a readily formable grade, so it does not crack during press braking
+    - label: Surface
+      value: warm yellow lustre; softer than stainless steel and steel, so it scratches more easily
+    - label: Patina
+      value: first yellow-brown, later brown to greenish
+    - label: Keeping the lustre
+      value: a protective lacquer, or allowing for periodic polishing
+    - label: Cutting method
+      value: decided per request — reflectivity and thermal conductivity make brass harder than steel
+    - label: When press braking
+      value: rolling direction matters; a bend across the grain cracks sooner
+    - label: In the workshop
+      value: kept separate from steel, to prevent iron contamination
+  aanleveren:
+    - Drawing with the sheet thickness
+    - The required brass grade
+    - The surface requirement
+    - Whether you want to keep the lustre or allow a patina
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   menuLabel: "Messing"
   title: Messing-Blechbearbeitung
   h1: Messing-Blechbearbeitung
-  intro: Messing ist eine Kupfer-Zink-Legierung mit warmer Farbe. Wir verarbeiten es unter Erhalt des natürlichen
-    Glanzes — für technische wie auch für Sichtanwendungen.
+  intro: Messing ist eine Kupfer-Zink-Legierung mit warmer Farbe. Wir verarbeiten es unter Erhalt des
+    natürlichen Glanzes — für technische wie auch für Sichtanwendungen.
   heroPhoto:
     subject: Messing-Blechteil mit warmem Glanz, Detail
   body:
-  - Messing wird für seine warme Farbe und seine gute Bearbeitbarkeit geschätzt. Wir verarbeiten Messing
-    für den Innenausbau, für Kunstobjekte und für dekorative technische Komponenten, mit Sorgfalt für den
-    Erhalt des natürlichen Glanzes.
-  - 'Messing ist eine Legierung aus Kupfer und Zink. Das Verhältnis bestimmt das Verhalten: mehr Zink macht
-    den Werkstoff fester und besser umformbar, mehr Kupfer ergibt eine wärmere, rötlichere Farbe. Für die
-    Blechbearbeitung wird meist eine gut umformbare Güte gewählt, damit das Material beim Abkanten nicht
-    reißt.'
-  - Wo Messing sich abhebt, ist die Ausstrahlung. Die Oberfläche hat einen warmen, gelben Glanz, den keine
-    Beschichtung auf Edelstahl erreicht. Das macht den Werkstoff attraktiv für Sichtflächen im Innenausbau,
-    für Kunstobjekte und für dekorative technische Bauteile — es macht die Oberfläche aber auch zum empfindlichsten
-    Teil des Produkts.
-  - Messing verfärbt sich nämlich. In Kontakt mit Luft und Feuchtigkeit bildet sich eine dunklere Patina,
-    zunächst gelbbraun, später braun bis grünlich. Für manche Anwendungen ist das gerade erwünscht, für
-    andere nicht. Möchten Sie den Glanz erhalten, ist eine Schutzlackierung nötig — oder Sie müssen mit
-    regelmäßigem Polieren rechnen. Teilen Sie uns mit, was Sie wünschen, denn das bestimmt die Oberflächenbehandlung.
-  - 'In der Bearbeitung verlangt Messing vor allem Sorgfalt für die Oberfläche. Es ist weicher als Edelstahl
-    und Stahl und verkratzt daher leichter: wir belassen die Schutzfolie bis einschließlich des letzten
-    Arbeitsgangs auf dem Material, arbeiten mit sauberem Werkzeug und halten Messing von Stahl getrennt,
-    um Eisenkontamination zu vermeiden. Beim Abkanten achten wir auf die Walzrichtung, weil eine Biegung
-    quer zur Faser eher reißt.'
-  - 'Welches Schneidverfahren für Ihr Messingteil am besten passt, entscheiden wir je Anfrage: Reflexion
-    und Wärmeleitfähigkeit von Kupferlegierungen machen Messing schwieriger zu schneiden als Stahl oder
-    Edelstahl. Senden Sie Ihre Zeichnung mit Blechdicke, gewünschter Messinggüte und der Anforderung an
-    die Oberfläche; wir geben an, was machbar ist und welchen Weg wir dafür wählen.'
-  - Messing lässt sich gut mit anderen Werkstoffen kombinieren. Suchen Sie korrosionsbeständige Sichtflächen
-    ohne die warme Farbe, ist <a href="/de/plaatwerk/rvs/">geschliffener Edelstahl</a> oft die naheliegende
-    Wahl; ist geringes Gewicht entscheidend, kommt <a href="/de/plaatwerk/aluminium/">Aluminium</a> ins
-    Spiel. Wir verarbeiten alle drei, die Werkstoffwahl muss also nicht vom Lieferanten bestimmt werden.
+    - Wo Messing sich abhebt, ist die Ausstrahlung. Die Oberfläche hat einen warmen, gelben Glanz, den keine
+      Beschichtung auf Edelstahl erreicht. Das macht den Werkstoff attraktiv für Sichtflächen im Innenausbau,
+      für Kunstobjekte und für dekorative technische Bauteile — es macht die Oberfläche aber auch zum
+      empfindlichsten Teil des Produkts.
+    - Messing verfärbt sich. In Kontakt mit Luft und Feuchtigkeit bildet sich eine dunklere Patina, zunächst
+      gelbbraun, später braun bis grünlich. Für manche Anwendungen ist das gerade erwünscht, für andere nicht.
+      Teilen Sie uns mit, was Sie wünschen, denn das bestimmt die Oberflächenbehandlung.
+    - Messing lässt sich gut mit anderen Werkstoffen kombinieren. Suchen Sie korrosionsbeständige Sichtflächen
+      ohne die warme Farbe, ist <a href="/de/plaatwerk/rvs/">geschliffener Edelstahl</a> oft die naheliegende
+      Wahl; ist geringes Gewicht entscheidend, kommt <a href="/de/plaatwerk/aluminium/">Aluminium</a> ins
+      Spiel. Wir verarbeiten alle drei, die Werkstoffwahl muss also nicht vom Lieferanten bestimmt werden.
   materials:
-  - Messing (Kupfer-Zink-Legierung)
+    - Messing (Kupfer-Zink-Legierung)
   process:
-  - step: Schneiden
-    desc: Präzises Ausschneiden von Messingblech.
-  - step: Abkanten
-    desc: Kanten ohne Beschädigung der Oberfläche.
-  - step: Nachbearbeitung
-    desc: Entgraten und Schutz des Glanzes.
+    - step: Schneiden
+      desc: "Präzises Ausschneiden von Messingblech. Das Schneidverfahren wählen wir je Anfrage: Reflexion und
+        Wärmeleitfähigkeit machen Kupferlegierungen schwieriger als Stahl oder Edelstahl."
+    - step: Abkanten
+      desc: Kanten ohne Beschädigung der Oberfläche, mit Rücksicht auf die Walzrichtung — eine Biegung quer zur
+        Faser reißt eher.
+    - step: Nachbearbeitung
+      desc: Entgraten und Schutz des Glanzes. Die Schutzfolie bleibt bis einschließlich des letzten Arbeitsgangs
+        darauf.
   applications:
-  - Innenausbau
-  - Kunstobjekte
-  - Dekorative technische Komponenten
+    - Innenausbau
+    - Kunstobjekte
+    - Dekorative technische Komponenten
   faq:
-  - vraag: Welche Messing-Blechdicken können Sie verarbeiten?
-    antwoord: Das entscheiden wir je Anfrage. Die für unseren Faserlaser bestätigten Schneiddicken gelten
-      für Stahl, Edelstahl, Aluminium und verzinkten Stahl; Messing ist eine Kupferlegierung und verhält
-      sich unter dem Laser anders. Senden Sie Ihre Zeichnung mit Blechdicke und Messinggüte, dann geben
-      wir an, was machbar ist.
-  - vraag: Verfärbt sich Messing mit der Zeit?
-    antwoord: 'Ja. In Kontakt mit Luft und Feuchtigkeit bildet sich eine Patina: zunächst gelbbraun, später
-      braun bis grünlich. Für manche Anwendungen ist das gerade erwünscht. Möchten Sie den ursprünglichen
-      Glanz erhalten, ist eine Schutzlackierung nötig oder es muss regelmäßig poliert werden.'
-  - vraag: Können Sie Messing abkanten, ohne die Oberfläche zu beschädigen?
-    antwoord: Ja. Messing ist weicher als Edelstahl und Stahl und verkratzt daher schneller. Wir belassen
-      die Schutzfolie bis einschließlich des letzten Arbeitsgangs, arbeiten mit sauberem Werkzeug und berücksichtigen
-      die Walzrichtung, weil eine Biegung quer zur Faser eher reißt.
-  - vraag: Wofür wird Messingblech vor allem eingesetzt?
-    antwoord: Für den Innenausbau, Kunstobjekte und dekorative technische Bauteile — Anwendungen, bei denen
-      der warme, gelbe Glanz den Unterschied macht. Für rein funktionale Teile ohne Sichtanforderung sind
-      Edelstahl oder Aluminium meist günstiger.
-  - vraag: Können Sie Messing schweißen?
-    antwoord: Messing ist bei uns als Werkstoff für das Laserschweißen gelistet. Wegen des Zinks in der
-      Legierung erfordert es allerdings angepasste Parameter und eine gute Absaugung. Legen Sie uns Ihre
-      Verbindung mit Blechdicke und Nahtform vor, dann geben wir an, ob Schweißen, Löten oder eine mechanische
-      Verbindung in Ihrem Fall der bessere Weg ist.
+    - vraag: Welche Messing-Blechdicken können Sie verarbeiten?
+      antwoord: Das entscheiden wir je Anfrage. Die für unseren Faserlaser bestätigten Schneiddicken gelten für
+        Stahl, Edelstahl, Aluminium und verzinkten Stahl; Messing ist eine Kupferlegierung und verhält sich
+        unter dem Laser anders. Senden Sie Ihre Zeichnung mit Blechdicke und Messinggüte, dann geben wir an,
+        was machbar ist.
+    - vraag: Verfärbt sich Messing mit der Zeit?
+      antwoord: 'Ja. In Kontakt mit Luft und Feuchtigkeit bildet sich eine Patina: zunächst gelbbraun, später braun
+        bis grünlich. Für manche Anwendungen ist das gerade erwünscht. Möchten Sie den ursprünglichen Glanz
+        erhalten, ist eine Schutzlackierung nötig oder es muss regelmäßig poliert werden.'
+    - vraag: Können Sie Messing abkanten, ohne die Oberfläche zu beschädigen?
+      antwoord: Ja. Messing ist weicher als Edelstahl und Stahl und verkratzt daher schneller. Wir belassen die
+        Schutzfolie bis einschließlich des letzten Arbeitsgangs, arbeiten mit sauberem Werkzeug und
+        berücksichtigen die Walzrichtung, weil eine Biegung quer zur Faser eher reißt.
+    - vraag: Wofür wird Messingblech vor allem eingesetzt?
+      antwoord: Für den Innenausbau, Kunstobjekte und dekorative technische Bauteile — Anwendungen, bei denen der
+        warme, gelbe Glanz den Unterschied macht. Für rein funktionale Teile ohne Sichtanforderung sind
+        Edelstahl oder Aluminium meist günstiger.
+    - vraag: Können Sie Messing schweißen?
+      antwoord: Messing ist bei uns als Werkstoff für das Laserschweißen gelistet. Wegen des Zinks in der Legierung
+        erfordert es allerdings angepasste Parameter und eine gute Absaugung. Legen Sie uns Ihre Verbindung
+        mit Blechdicke und Nahtform vor, dann geben wir an, ob Schweißen, Löten oder eine mechanische
+        Verbindung in Ihrem Fall der bessere Weg ist.
   related:
-  - label: Edelstahl
-    desc: Rostfreie Sichtflächen.
-  - label: Präzisionsblech
-    desc: Maßhaltige Einzelstücke und Serien.
+    - label: Edelstahl
+      desc: Rostfreie Sichtflächen.
+    - label: Präzisionsblech
+      desc: Maßhaltige Einzelstücke und Serien.
   seo:
     title: Messingblech nach Maß
-    description: Messing-Blechbearbeitung unter Erhalt des natürlichen Glanzes für Innenausbau, Kunstobjekte
-      und dekorative technische Komponenten.
+    description: Messing-Blechbearbeitung unter Erhalt des natürlichen Glanzes für Innenausbau, Kunstobjekte und
+      dekorative technische Komponenten.
+  specs:
+    - label: Legierung
+      value: Kupfer und Zink
+    - label: Mehr Zink
+      value: fester und besser umformbar
+    - label: Mehr Kupfer
+      value: wärmere, rötlichere Farbe
+    - label: Für die Blechbearbeitung
+      value: meist eine gut umformbare Güte, damit sie beim Abkanten nicht reißt
+    - label: Oberfläche
+      value: warmer gelber Glanz; weicher als Edelstahl und Stahl, daher kratzempfindlicher
+    - label: Patina
+      value: zunächst gelbbraun, später braun bis grünlich
+    - label: Glanz erhalten
+      value: eine Schutzlackierung, oder regelmäßiges Polieren einplanen
+    - label: Schneidverfahren
+      value: je Anfrage festgelegt — Reflexion und Wärmeleitfähigkeit machen Messing schwieriger als Stahl
+    - label: Beim Abkanten
+      value: Walzrichtung zählt; quer zur Faser reißt es eher
+    - label: In der Werkstatt
+      value: von Stahl getrennt gehalten, um Eisenkontamination zu vermeiden
+  aanleveren:
+    - Zeichnung mit der Blechdicke
+    - Die gewünschte Messinggüte
+    - Die Anforderung an die Oberfläche
+    - Ob Sie den Glanz erhalten möchten oder eine Patina zulassen
+specs:
+  - label: Legering
+    value: koper en zink
+  - label: Meer zink
+    value: sterker en beter vervormbaar
+  - label: Meer koper
+    value: warmere, rodere kleur
+  - label: Voor plaatwerk
+    value: meestal een goed vervormbare kwaliteit, zodat het bij het kanten niet scheurt
+  - label: Oppervlak
+    value: warme gele glans; zachter dan RVS en staal, dus krasgevoeliger
+  - label: Patina
+    value: eerst geelbruin, later bruin tot groenig
+  - label: Glans behouden
+    value: beschermende laklaag, of rekenen op periodiek poetsen
+  - label: Snijmethode
+    value: per aanvraag bepaald — reflectie en warmtegeleiding maken messing lastiger dan staal
+  - label: Bij het kanten
+    value: walsrichting telt; dwars op de vezel scheurt eerder
+  - label: In de werkplaats
+    value: gescheiden van staal gehouden, om ijzerinslag te voorkomen
+aanleveren:
+  - Tekening met de plaatdikte
+  - De gewenste messingkwaliteit
+  - De eis aan het oppervlak
+  - Of u de glans wilt behouden of patina toestaat

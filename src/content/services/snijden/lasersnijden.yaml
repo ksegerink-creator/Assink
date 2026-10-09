@@ -12,293 +12,320 @@ heroPhoto:
   crop: Machine-detail
   comp: Snijkop, vonken, plaatveld
 body:
-- Op de Trumpf TruLaser 3040 snijden we staal, RVS en aluminium met hoge precisie en constante maatvoering.
-  Lasersnijden vormt vaak de eerste stap in het productieproces, gevolgd door ontbramen en kanten.
-- 'Welke plaatdikte haalbaar is, verschilt per materiaal. Op de Trumpf TruLaser 3040, een fiberlaser van
-  4 kW, snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd
-  staal van 0,5 tot 10 mm. Aluminium en RVS reflecteren en geleiden warmte anders dan staal, wat het bereik
-  aan de bovenkant begrenst. Valt uw aanvraag buiten deze grenzen, leg hem dan voor: binnen onze groep
-  is vaak meer mogelijk dan op onze eigen machine.'
-- Lasersnijden is contactloos, dus er staat geen mechanische kracht op het materiaal en het werkstuk vervormt
-  niet door de bewerking zelf. Dat maakt fijne contouren, smalle stegen en kleine gaten haalbaar die met
-  ponsen of zagen niet lukken. De warmte-beïnvloede zone langs de snede blijft smal, wat vooral telt als
-  er daarna nog gekant of gelast wordt.
-- 'Voor het snijden gaat er een stap aan vooraf die de prijs mede bepaalt: het nesten. Door delen slim
-  over de plaat te verdelen, benutten wij het materiaal zo goed mogelijk en beperken wij de restplaat.
-  Bij series levert dat direct materiaalbesparing op, en bij enkelstuks kunnen wij een deel vaak meenemen
-  op een plaat die toch al opengaat.'
-- Na het snijden zit er een braam op de rand. Wij ontbramen machinaal op een Timesavers 42 Series RB,
-  zodat de randen veilig en braamvrij zijn voordat er iemand mee verder werkt — dat is niet alleen een
-  kwestie van afwerking maar ook van arbeidsveiligheid bij u op de lijn. Daarna volgt meestal <a href="/plaatwerk/zetten/">kanten</a>,
-  waarbij de snijkant de buitenzijde van de buiging wordt en dus zichtbaar blijft.
-- 'Wat wij nodig hebben om lasersnijwerk te beoordelen: een PDF-tekening en een 3D STEP-bestand, het materiaal en de
-  plaatdikte, het aantal stuks en of de delen ontbraamd of verder bewerkt moeten worden. Twijfelt u over
-  de materiaalkeuze of de dikte, dan denken wij daar graag in mee voordat de tekening definitief is.'
+  - Lasersnijden is contactloos, dus er staat geen mechanische kracht op het materiaal en het werkstuk
+    vervormt niet door de bewerking zelf. Dat maakt fijne contouren, smalle stegen en kleine gaten haalbaar
+    die met ponsen of zagen niet lukken. De warmte-beïnvloede zone langs de snede blijft smal, wat vooral telt
+    als er daarna nog gekant of gelast wordt.
+  - "Voor het snijden gaat er een stap aan vooraf die de prijs mede bepaalt: het nesten. Door delen slim over
+    de plaat te verdelen, benutten wij het materiaal zo goed mogelijk en beperken wij de restplaat. Bij series
+    levert dat direct materiaalbesparing op, en bij enkelstuks kunnen wij een deel vaak meenemen op een plaat
+    die toch al opengaat."
+  - Na het snijden volgt meestal <a href="/plaatwerk/zetten/">kanten</a>, waarbij de snijkant de buitenzijde
+    van de buiging wordt en dus zichtbaar blijft. Daar houden wij in de volgorde rekening mee.
 materials:
-- Staal
-- RVS
-- Aluminium
-- Gegalvaniseerd staal
+  - Staal
+  - RVS
+  - Aluminium
+  - Gegalvaniseerd staal
 process:
-- step: Nesten
-  desc: Efficiënte plaatindeling.
-- step: Snijden
-  desc: Contactloos lasersnijden.
-- step: Ontbramen
-  desc: Braamvrije randen.
+  - step: Nesten
+    desc: "Delen slim over de plaat verdelen: dat benut het materiaal en beperkt de restplaat — en bepaalt dus
+      mede de prijs."
+  - step: Snijden
+    desc: Contactloos lasersnijden, zonder mechanische kracht op het materiaal en met een smalle warmte-beïnvloede
+      zone.
+  - step: Ontbramen
+    desc: Machinaal op een Timesavers 42 Series RB, zodat de randen veilig en braamvrij zijn voordat er iemand mee
+      verder werkt.
 specs:
-- label: Machine
-  value: Trumpf TruLaser 3040
-- label: Type
-  value: 2D-lasermachine
-- label: Materialen
-  value: staal, RVS, aluminium, gegalvaniseerd staal
-- label: Maximale plaatmaat
-  value: 4000 × 2000 mm
-- label: Plaatdikte staal
-  value: 0,5–25 mm
-- label: Plaatdikte RVS
-  value: 0,5–20 mm
-- label: Plaatdikte aluminium
-  value: 0,5–15 mm
-- label: Plaatdikte gegalvaniseerd staal
-  value: 0,5–10 mm
+  - label: Machine
+    value: Trumpf TruLaser 3040
+  - label: Type
+    value: 2D-lasermachine
+  - label: Laserbron
+    value: fiberlaser van 4 kW
+  - label: Materialen
+    value: staal, RVS, aluminium, gegalvaniseerd staal
+  - label: Maximale plaatmaat
+    value: 4000 × 2000 mm
+  - label: Plaatdikte staal
+    value: 0,5–25 mm
+  - label: Plaatdikte RVS
+    value: 0,5–20 mm
+  - label: Plaatdikte aluminium
+    value: 0,5–15 mm
+  - label: Plaatdikte gegalvaniseerd staal
+    value: 0,5–10 mm
+  - label: Bovengrens
+    value: aluminium en RVS reflecteren en geleiden warmte anders dan staal, wat het bereik aan de bovenkant
+      begrenst
+  - label: Buiten dit bereik
+    value: voorleggen — binnen onze groep is vaak meer mogelijk dan op onze eigen machine
 applications:
-- Plaatwerk
-- Constructies
-- Precisieonderdelen
+  - Plaatwerk
+  - Constructies
+  - Precisieonderdelen
 faq:
-- vraag: Welke plaatdiktes kunnen jullie lasersnijden?
-  antwoord: 'Staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd
-    staal van 0,5 tot 10 mm, op de Trumpf TruLaser 3040. Ligt uw aanvraag daarbuiten, leg hem dan voor:
-    dan kijken wij wat er binnen onze groep mogelijk is.'
-- vraag: Snijden jullie ook gegalvaniseerd staal?
-  antwoord: Ja, van 0,5 tot 10 mm. Houd er rekening mee dat de zinklaag langs de snede wordt aangetast;
-    wordt het deel daarna gelast of gecoat, geef dat dan door, want het bepaalt mee hoe wij de snede en
-    de nabehandeling inrichten.
-- vraag: Moeten de delen na het snijden ontbraamd worden?
-  antwoord: Meestal wel. Na het snijden zit er een braam op de rand, die wij machinaal verwijderen op
-    een Timesavers 42 Series RB. Dat maakt de randen veilig om te hanteren en voorkomt problemen bij het
-    kanten en lassen. Geef door of u de delen ontbraamd wilt ontvangen.
-- vraag: Kan ik één onderdeel laten snijden of moet het een serie zijn?
-  antwoord: Eén onderdeel kan. Er hoeft geen gereedschap gemaakt te worden, dus enkelstuks en prototypes
-    zijn goed te doen. Wij nemen een enkel deel vaak mee op een plaat die toch al opengaat, wat de kosten
-    drukt.
-- vraag: Wat bepaalt de prijs van lasersnijwerk?
-  antwoord: De snijlengte, het materiaal en de plaatdikte, en hoe goed de delen zich over de plaat laten
-    verdelen. Dat laatste heet nesten en bepaalt hoeveel restplaat overblijft. Bij series levert een efficiënte
-    indeling direct materiaalbesparing op.
+  - vraag: Welke plaatdiktes kunnen jullie lasersnijden?
+    antwoord: 'Staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd staal
+      van 0,5 tot 10 mm, op de Trumpf TruLaser 3040. Ligt uw aanvraag daarbuiten, leg hem dan voor: dan kijken
+      wij wat er binnen onze groep mogelijk is.'
+  - vraag: Snijden jullie ook gegalvaniseerd staal?
+    antwoord: Ja, van 0,5 tot 10 mm. Houd er rekening mee dat de zinklaag langs de snede wordt aangetast; wordt
+      het deel daarna gelast of gecoat, geef dat dan door, want het bepaalt mee hoe wij de snede en de
+      nabehandeling inrichten.
+  - vraag: Moeten de delen na het snijden ontbraamd worden?
+    antwoord: Meestal wel. Na het snijden zit er een braam op de rand, die wij machinaal verwijderen op een
+      Timesavers 42 Series RB. Dat maakt de randen veilig om te hanteren en voorkomt problemen bij het kanten
+      en lassen. Geef door of u de delen ontbraamd wilt ontvangen.
+  - vraag: Kan ik één onderdeel laten snijden of moet het een serie zijn?
+    antwoord: Eén onderdeel kan. Er hoeft geen gereedschap gemaakt te worden, dus enkelstuks en prototypes zijn
+      goed te doen. Wij nemen een enkel deel vaak mee op een plaat die toch al opengaat, wat de kosten drukt.
+  - vraag: Wat bepaalt de prijs van lasersnijwerk?
+    antwoord: De snijlengte, het materiaal en de plaatdikte, en hoe goed de delen zich over de plaat laten
+      verdelen. Dat laatste heet nesten en bepaalt hoeveel restplaat overblijft. Bij series levert een
+      efficiënte indeling direct materiaalbesparing op.
 related:
-- slug: buizenlaser
-  label: Buislasersnijden
-  desc: Snijden van buis en profiel.
-- slug: plaatwerk/ontbramen
-  label: Ontbramen
-  desc: Randafwerking.
-- slug: machinepark
-  label: Machinepark
-  desc: Bekijk de machine.
+  - slug: buizenlaser
+    label: Buislasersnijden
+    desc: Snijden van buis en profiel.
+  - slug: plaatwerk/ontbramen
+    label: Ontbramen
+    desc: Randafwerking.
+  - slug: machinepark
+    label: Machinepark
+    desc: Bekijk de machine.
 seo:
   title: Lasersnijden op de Trumpf TruLaser 3040
-  description: 2D-lasersnijden van staal, RVS en aluminium op de Trumpf TruLaser 3040 met hoge precisie
-    en constante maatvoering. Lasersnijwerk uit Hengelo, Twente.
+  description: 2D-lasersnijden van staal, RVS en aluminium op de Trumpf TruLaser 3040 met hoge precisie en
+    constante maatvoering. Lasersnijwerk uit Hengelo, Twente.
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Laser cutting
   h1: Laser cutting
-  intro: 2D laser cutting of steel, stainless steel and aluminium with high precision and minimal tolerances
-    on our Trumpf TruLaser 3040.
+  intro: 2D laser cutting of steel, stainless steel and aluminium with high precision and minimal tolerances on
+    our Trumpf TruLaser 3040.
   heroPhoto:
     subject: Trumpf TruLaser 3040 with a sheet on the shuttle table
   body:
-  - On the Trumpf TruLaser 3040 we cut steel, stainless steel and aluminium with high precision and consistent
-    dimensioning. Laser cutting is often the first step in the production process, followed by deburring
-    and press braking.
-  - 'Which sheet thickness is feasible differs per material. On the Trumpf TruLaser 3040, a 4 kW fibre laser,
-    we cut steel from 0.5 to 25 mm, stainless steel from 0.5 to 20 mm, aluminium from 0.5 to 15 mm and galvanised
-    steel from 0.5 to 10 mm. Aluminium and stainless steel reflect and conduct heat differently from steel,
-    which limits the range at the upper end. If your request falls outside these limits, put it to us: within
-    our group more is often possible than on our own machine.'
-  - Laser cutting is contactless, so no mechanical force acts on the material and the workpiece is not deformed
-    by the operation itself. That makes fine contours, narrow webs and small holes achievable that punching
-    or sawing cannot manage. The heat-affected zone along the cut stays narrow, which matters especially
-    when bending or welding follows.
-  - 'One step precedes cutting that partly determines the price: nesting. By distributing parts cleverly
-    across the sheet we make the best possible use of the material and limit the remnant. On series that
-    translates directly into material savings, and for one-offs we can often include a part on a sheet that
-    is being opened anyway.'
-  - After cutting there is a burr on the edge. We deburr by machine on a Timesavers 42 Series RB, so that
-    edges are safe and burr-free before anyone handles them — that is not only a matter of finish but of
-    occupational safety on your line. Bending usually follows, in which the cut edge becomes the outside
-    of the bend and therefore stays visible. See our page on <a href="/en/plaatwerk/zetten/">press braking</a>.
-  - 'What we need to assess laser cutting work: a PDF drawing and a 3D STEP file, the material and sheet
-    thickness, the quantity, and whether the parts have to be deburred or processed further. If you are
-    unsure about material choice or thickness, we are glad to think along before the drawing is final.'
+    - Laser cutting is contactless, so no mechanical force acts on the material and the workpiece is not
+      deformed by the operation itself. That makes fine contours, narrow webs and small holes achievable that
+      punching or sawing cannot manage. The heat-affected zone along the cut stays narrow, which matters
+      especially when bending or welding follows.
+    - "One step precedes cutting that partly determines the price: nesting. By distributing parts cleverly
+      across the sheet we make the best possible use of the material and limit the remnant. On series that
+      translates directly into material savings, and for one-offs we can often include a part on a sheet that
+      is being opened anyway."
+    - After cutting, <a href="/en/plaatwerk/zetten/">press braking</a> usually follows, in which the cut edge
+      becomes the outside of the bend and therefore stays visible. We account for that in the sequence.
   materials:
-  - Steel
-  - Stainless steel
-  - Aluminium
-  - Galvanised steel
+    - Steel
+    - Stainless steel
+    - Aluminium
+    - Galvanised steel
   process:
-  - step: Nesting
-    desc: Efficient sheet layout.
-  - step: Cutting
-    desc: Non-contact laser cutting.
-  - step: Deburring
-    desc: Burr-free edges.
+    - step: Nesting
+      desc: "Distributing parts cleverly across the sheet: it makes the best use of the material and limits the
+        remnant — and so partly determines the price."
+    - step: Cutting
+      desc: Contactless laser cutting, without mechanical force on the material and with a narrow heat-affected
+        zone.
+    - step: Deburring
+      desc: By machine on a Timesavers 42 Series RB, so that edges are safe and burr-free before anyone handles
+        them.
   specs:
-  - label: Machine
-    value: Trumpf TruLaser 3040
-  - label: Type
-    value: 2D laser machine
-  - label: Materials
-    value: steel, stainless steel, aluminium, galvanised steel
-  - label: Maximum sheet size
-    value: 4000 × 2000 mm
-  - label: Sheet thickness, steel
-    value: 0.5–25 mm
-  - label: Sheet thickness, stainless steel
-    value: 0.5–20 mm
-  - label: Sheet thickness, aluminium
-    value: 0.5–15 mm
-  - label: Sheet thickness, galvanised steel
-    value: 0.5–10 mm
+    - label: Machine
+      value: Trumpf TruLaser 3040
+    - label: Type
+      value: 2D laser machine
+    - label: Laser source
+      value: 4 kW fibre laser
+    - label: Materials
+      value: steel, stainless steel, aluminium, galvanised steel
+    - label: Maximum sheet size
+      value: 4000 × 2000 mm
+    - label: Sheet thickness, steel
+      value: 0.5–25 mm
+    - label: Sheet thickness, stainless steel
+      value: 0.5–20 mm
+    - label: Sheet thickness, aluminium
+      value: 0.5–15 mm
+    - label: Sheet thickness, galvanised steel
+      value: 0.5–10 mm
+    - label: Upper limit
+      value: aluminium and stainless steel reflect and conduct heat differently from steel, which limits the range
+        at the upper end
+    - label: Outside this range
+      value: put it to us — within our group more is often possible than on our own machine
   applications:
-  - Sheet metal work
-  - Welded constructions
-  - Precision parts
+    - Sheet metal work
+    - Welded constructions
+    - Precision parts
   faq:
-  - vraag: Which sheet thicknesses can you laser cut?
-    antwoord: Steel from 0.5 to 25 mm, stainless steel from 0.5 to 20 mm, aluminium from 0.5 to 15 mm and
-      galvanised steel from 0.5 to 10 mm, on the Trumpf TruLaser 3040. If your request falls outside that,
-      put it to us and we will look at what is possible within our group.
-  - vraag: Do you cut galvanised steel as well?
-    antwoord: Yes, from 0.5 to 10 mm. Bear in mind that the zinc layer is affected along the cut; if the
-      part is welded or coated afterwards, tell us, because it influences how we set up the cut and the
-      subsequent treatment.
-  - vraag: Do the parts have to be deburred after cutting?
-    antwoord: Usually yes. After cutting there is a burr on the edge, which we remove by machine on a Timesavers
-      42 Series RB. That makes the edges safe to handle and prevents problems during bending and welding.
-      Let us know whether you want the parts supplied deburred.
-  - vraag: Can I have a single part cut, or does it have to be a series?
-    antwoord: A single part is fine. No tooling has to be made, so one-offs and prototypes are perfectly
-      workable. We often include a single part on a sheet that is being opened anyway, which keeps the cost
-      down.
-  - vraag: What determines the price of laser cutting?
-    antwoord: The cutting length, the material and sheet thickness, and how well the parts can be distributed
-      across the sheet. That last part is called nesting and determines how much remnant is left. On series,
-      an efficient layout translates directly into material savings.
+    - vraag: Which sheet thicknesses can you laser cut?
+      antwoord: Steel from 0.5 to 25 mm, stainless steel from 0.5 to 20 mm, aluminium from 0.5 to 15 mm and
+        galvanised steel from 0.5 to 10 mm, on the Trumpf TruLaser 3040. If your request falls outside that,
+        put it to us and we will look at what is possible within our group.
+    - vraag: Do you cut galvanised steel as well?
+      antwoord: Yes, from 0.5 to 10 mm. Bear in mind that the zinc layer is affected along the cut; if the part is
+        welded or coated afterwards, tell us, because it influences how we set up the cut and the subsequent
+        treatment.
+    - vraag: Do the parts have to be deburred after cutting?
+      antwoord: Usually yes. After cutting there is a burr on the edge, which we remove by machine on a Timesavers
+        42 Series RB. That makes the edges safe to handle and prevents problems during bending and welding.
+        Let us know whether you want the parts supplied deburred.
+    - vraag: Can I have a single part cut, or does it have to be a series?
+      antwoord: A single part is fine. No tooling has to be made, so one-offs and prototypes are perfectly workable.
+        We often include a single part on a sheet that is being opened anyway, which keeps the cost down.
+    - vraag: What determines the price of laser cutting?
+      antwoord: The cutting length, the material and sheet thickness, and how well the parts can be distributed
+        across the sheet. That last part is called nesting and determines how much remnant is left. On series,
+        an efficient layout translates directly into material savings.
   related:
-  - label: Tube laser cutting
-    desc: Cutting tube and profile.
-  - label: Deburring
-    desc: Edge finishing.
-  - label: Machine park
-    desc: View the machine.
+    - label: Tube laser cutting
+      desc: Cutting tube and profile.
+    - label: Deburring
+      desc: Edge finishing.
+    - label: Machine park
+      desc: View the machine.
   seo:
     title: Laser cutting on a Trumpf TruLaser 3040
-    description: 2D laser cutting of steel, stainless steel and aluminium on the Trumpf TruLaser 3040 with
-      high precision and consistent dimensioning.
+    description: 2D laser cutting of steel, stainless steel and aluminium on the Trumpf TruLaser 3040 with high
+      precision and consistent dimensioning.
+  kerncijfers:
+    - waarde: 4 kW
+      label: fibre laser
+    - waarde: 25 mm
+      label: max. sheet thickness, steel
+    - waarde: 4000 × 2000 mm
+      label: max. sheet size
+  aanleveren:
+    - A PDF drawing and a 3D STEP file
+    - Material and sheet thickness
+    - Quantity
+    - Whether the parts have to be deburred or processed further
+    - Unsure about material choice or thickness? We are glad to think along before the drawing is final
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Laserschneiden
   h1: Laserschneiden
-  intro: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium mit hoher Präzision und minimalen Toleranzen
-    auf unserer Trumpf TruLaser 3040.
+  intro: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium mit hoher Präzision und minimalen Toleranzen auf
+    unserer Trumpf TruLaser 3040.
   heroPhoto:
     subject: Trumpf TruLaser 3040 mit einer Tafel auf dem Wechseltisch
   body:
-  - Auf der Trumpf TruLaser 3040 schneiden wir Stahl, Edelstahl und Aluminium mit hoher Präzision und gleichbleibender
-    Maßhaltigkeit. Das Laserschneiden ist häufig der erste Schritt im Produktionsprozess, gefolgt vom Entgraten
-    und Abkanten.
-  - 'Welche Blechdicke möglich ist, unterscheidet sich je Werkstoff. Auf der Trumpf TruLaser 3040, einem
-    Faserlaser mit 4 kW, schneiden wir Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis 20 mm, Aluminium von
-    0,5 bis 15 mm und verzinkten Stahl von 0,5 bis 10 mm. Aluminium und Edelstahl reflektieren und leiten
-    Wärme anders als Stahl, was den Bereich nach oben begrenzt. Liegt Ihre Anfrage außerhalb dieser Grenzen,
-    legen Sie sie uns vor: innerhalb unserer Gruppe ist oft mehr möglich als auf unserer eigenen Maschine.'
-  - Laserschneiden erfolgt berührungslos, es wirkt also keine mechanische Kraft auf das Material und das
-    Werkstück verformt sich nicht durch die Bearbeitung selbst. Das macht feine Konturen, schmale Stege
-    und kleine Bohrungen machbar, die mit Stanzen oder Sägen nicht gelingen. Die Wärmeeinflusszone entlang
-    des Schnitts bleibt schmal, was besonders zählt, wenn danach noch gekantet oder geschweißt wird.
-  - 'Dem Schneiden geht ein Schritt voraus, der den Preis mitbestimmt: das Schachteln. Indem wir die Teile
-    geschickt über die Tafel verteilen, nutzen wir das Material bestmöglich aus und begrenzen den Verschnitt.
-    Bei Serien bedeutet das unmittelbar Materialersparnis, bei Einzelstücken können wir ein Teil oft auf
-    einer ohnehin geöffneten Tafel mitnehmen.'
-  - Nach dem Schneiden befindet sich ein Grat an der Kante. Wir entgraten maschinell auf einer Timesavers
-    42 Series RB, damit die Kanten sicher und gratfrei sind, bevor jemand damit weiterarbeitet — das ist
-    nicht nur eine Frage der Oberfläche, sondern auch der Arbeitssicherheit bei Ihnen in der Linie. Meist
-    folgt danach das <a href="/de/plaatwerk/zetten/">Abkanten</a>, wobei die Schnittkante zur Außenseite
-    der Biegung wird und damit sichtbar bleibt.
-  - 'Was wir für die Beurteilung von Laserschneidarbeiten benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei,
-    Werkstoff und Blechdicke, die Stückzahl sowie die Angabe, ob die Teile entgratet oder weiterbearbeitet
-    werden sollen. Sind Sie bei Werkstoff oder Dicke unsicher, denken wir gerne mit, bevor die Zeichnung
-    endgültig ist.'
+    - Laserschneiden erfolgt berührungslos, es wirkt also keine mechanische Kraft auf das Material und das
+      Werkstück verformt sich nicht durch die Bearbeitung selbst. Das macht feine Konturen, schmale Stege und
+      kleine Bohrungen machbar, die mit Stanzen oder Sägen nicht gelingen. Die Wärmeeinflusszone entlang des
+      Schnitts bleibt schmal, was besonders zählt, wenn danach noch gekantet oder geschweißt wird.
+    - "Dem Schneiden geht ein Schritt voraus, der den Preis mitbestimmt: das Schachteln. Indem wir die Teile
+      geschickt über die Tafel verteilen, nutzen wir das Material bestmöglich aus und begrenzen den
+      Verschnitt. Bei Serien bedeutet das unmittelbar Materialersparnis, bei Einzelstücken können wir ein Teil
+      oft auf einer ohnehin geöffneten Tafel mitnehmen."
+    - Nach dem Schneiden folgt meist das <a href="/de/plaatwerk/zetten/">Abkanten</a>, wobei die Schnittkante
+      zur Außenseite der Biegung wird und damit sichtbar bleibt. Das berücksichtigen wir in der Reihenfolge.
   materials:
-  - Stahl
-  - Edelstahl
-  - Aluminium
-  - Verzinkter Stahl
+    - Stahl
+    - Edelstahl
+    - Aluminium
+    - Verzinkter Stahl
   process:
-  - step: Schachteln
-    desc: Effiziente Blechbelegung.
-  - step: Schneiden
-    desc: Berührungsloses Laserschneiden.
-  - step: Entgraten
-    desc: Gratfreie Kanten.
+    - step: Schachteln
+      desc: "Teile geschickt über die Tafel verteilen: das nutzt das Material aus und begrenzt den Verschnitt — und
+        bestimmt damit den Preis mit."
+    - step: Schneiden
+      desc: Berührungsloses Laserschneiden, ohne mechanische Kraft auf das Material und mit schmaler
+        Wärmeeinflusszone.
+    - step: Entgraten
+      desc: Maschinell auf einer Timesavers 42 Series RB, damit die Kanten sicher und gratfrei sind, bevor jemand
+        damit weiterarbeitet.
   specs:
-  - label: Maschine
-    value: Trumpf TruLaser 3040
-  - label: Typ
-    value: 2D-Lasermaschine
-  - label: Materialien
-    value: Stahl, Edelstahl, Aluminium, verzinkter Stahl
-  - label: Maximale Blechgröße
-    value: 4000 × 2000 mm
-  - label: Blechdicke Stahl
-    value: 0,5–25 mm
-  - label: Blechdicke Edelstahl
-    value: 0,5–20 mm
-  - label: Blechdicke Aluminium
-    value: 0,5–15 mm
-  - label: Blechdicke verzinkter Stahl
-    value: 0,5–10 mm
+    - label: Maschine
+      value: Trumpf TruLaser 3040
+    - label: Typ
+      value: 2D-Lasermaschine
+    - label: Laserquelle
+      value: Faserlaser mit 4 kW
+    - label: Werkstoffe
+      value: Stahl, Edelstahl, Aluminium, verzinkter Stahl
+    - label: Maximales Tafelformat
+      value: 4000 × 2000 mm
+    - label: Blechdicke Stahl
+      value: 0,5–25 mm
+    - label: Blechdicke Edelstahl
+      value: 0,5–20 mm
+    - label: Blechdicke Aluminium
+      value: 0,5–15 mm
+    - label: Blechdicke verzinkter Stahl
+      value: 0,5–10 mm
+    - label: Obergrenze
+      value: Aluminium und Edelstahl reflektieren und leiten Wärme anders als Stahl, was den Bereich nach oben
+        begrenzt
+    - label: Außerhalb dieses Bereichs
+      value: uns vorlegen — innerhalb unserer Gruppe ist oft mehr möglich als auf unserer eigenen Maschine
   applications:
-  - Blechbearbeitung
-  - Konstruktionen
-  - Präzisionsteile
+    - Blechbearbeitung
+    - Konstruktionen
+    - Präzisionsteile
   faq:
-  - vraag: Welche Blechdicken können Sie laserschneiden?
-    antwoord: Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis 20 mm, Aluminium von 0,5 bis 15 mm und verzinkten
-      Stahl von 0,5 bis 10 mm, auf der Trumpf TruLaser 3040. Liegt Ihre Anfrage außerhalb, legen Sie sie
-      uns vor, dann prüfen wir, was innerhalb unserer Gruppe möglich ist.
-  - vraag: Schneiden Sie auch verzinkten Stahl?
-    antwoord: Ja, von 0,5 bis 10 mm. Beachten Sie, dass die Zinkschicht entlang des Schnitts angegriffen
-      wird; wird das Teil danach geschweißt oder beschichtet, teilen Sie uns das mit, denn es beeinflusst,
-      wie wir Schnitt und Nachbehandlung auslegen.
-  - vraag: Müssen die Teile nach dem Schneiden entgratet werden?
-    antwoord: Meist ja. Nach dem Schneiden befindet sich ein Grat an der Kante, den wir maschinell auf einer
-      Timesavers 42 Series RB entfernen. Das macht die Kanten sicher in der Handhabung und verhindert Probleme
-      beim Abkanten und Schweißen. Teilen Sie uns mit, ob Sie die Teile entgratet erhalten möchten.
-  - vraag: Kann ich ein einzelnes Teil schneiden lassen oder muss es eine Serie sein?
-    antwoord: Ein einzelnes Teil ist möglich. Es muss kein Werkzeug gebaut werden, Einzelstücke und Prototypen
-      sind also gut machbar. Ein einzelnes Teil nehmen wir häufig auf einer ohnehin geöffneten Tafel mit,
-      was die Kosten senkt.
-  - vraag: Was bestimmt den Preis von Laserschneidarbeiten?
-    antwoord: Die Schnittlänge, Werkstoff und Blechdicke sowie die Frage, wie gut sich die Teile über die
-      Tafel verteilen lassen. Letzteres heißt Schachteln und bestimmt, wie viel Verschnitt übrig bleibt.
-      Bei Serien bedeutet eine effiziente Aufteilung unmittelbar Materialersparnis.
+    - vraag: Welche Blechdicken können Sie laserschneiden?
+      antwoord: Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis 20 mm, Aluminium von 0,5 bis 15 mm und verzinkten
+        Stahl von 0,5 bis 10 mm, auf der Trumpf TruLaser 3040. Liegt Ihre Anfrage außerhalb, legen Sie sie uns
+        vor, dann prüfen wir, was innerhalb unserer Gruppe möglich ist.
+    - vraag: Schneiden Sie auch verzinkten Stahl?
+      antwoord: Ja, von 0,5 bis 10 mm. Beachten Sie, dass die Zinkschicht entlang des Schnitts angegriffen wird;
+        wird das Teil danach geschweißt oder beschichtet, teilen Sie uns das mit, denn es beeinflusst, wie wir
+        Schnitt und Nachbehandlung auslegen.
+    - vraag: Müssen die Teile nach dem Schneiden entgratet werden?
+      antwoord: Meist ja. Nach dem Schneiden befindet sich ein Grat an der Kante, den wir maschinell auf einer
+        Timesavers 42 Series RB entfernen. Das macht die Kanten sicher in der Handhabung und verhindert
+        Probleme beim Abkanten und Schweißen. Teilen Sie uns mit, ob Sie die Teile entgratet erhalten möchten.
+    - vraag: Kann ich ein einzelnes Teil schneiden lassen oder muss es eine Serie sein?
+      antwoord: Ein einzelnes Teil ist möglich. Es muss kein Werkzeug gebaut werden, Einzelstücke und Prototypen
+        sind also gut machbar. Ein einzelnes Teil nehmen wir häufig auf einer ohnehin geöffneten Tafel mit,
+        was die Kosten senkt.
+    - vraag: Was bestimmt den Preis von Laserschneidarbeiten?
+      antwoord: Die Schnittlänge, Werkstoff und Blechdicke sowie die Frage, wie gut sich die Teile über die Tafel
+        verteilen lassen. Letzteres heißt Schachteln und bestimmt, wie viel Verschnitt übrig bleibt. Bei
+        Serien bedeutet eine effiziente Aufteilung unmittelbar Materialersparnis.
   related:
-  - label: Rohrlaserschneiden
-    desc: Schneiden von Rohr und Profil.
-  - label: Entgraten
-    desc: Kantenbearbeitung.
-  - label: Maschinenpark
-    desc: Maschine ansehen.
+    - label: Rohrlaserschneiden
+      desc: Schneiden von Rohr und Profil.
+    - label: Entgraten
+      desc: Kantenbearbeitung.
+    - label: Maschinenpark
+      desc: Maschine ansehen.
   seo:
     title: Laserschneiden auf der TruLaser 3040
     description: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium auf der Trumpf TruLaser 3040 mit hoher
       Präzision und gleichbleibender Maßhaltigkeit.
+  kerncijfers:
+    - waarde: 4 kW
+      label: Faserlaser
+    - waarde: 25 mm
+      label: max. Blechdicke Stahl
+    - waarde: 4000 × 2000 mm
+      label: max. Tafelformat
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei
+    - Werkstoff und Blechdicke
+    - Stückzahl
+    - Ob die Teile entgratet oder weiterbearbeitet werden sollen
+    - Unsicher bei Werkstoff oder Dicke? Wir denken gerne mit, bevor die Zeichnung endgültig ist
+kerncijfers:
+  - waarde: 4 kW
+    label: fiberlaser
+  - waarde: 25 mm
+    label: max. plaatdikte staal
+  - waarde: 4000 × 2000 mm
+    label: max. plaatmaat
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand
+  - Materiaal en plaatdikte
+  - Aantal stuks
+  - Of de delen ontbraamd of verder bewerkt moeten worden
+  - Twijfelt u over materiaalkeuze of dikte? Dan denken wij mee voordat de tekening definitief is

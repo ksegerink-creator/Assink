@@ -17,8 +17,8 @@ const { items = [] } = Astro.props;
     <div class="wrap">
       <dl class="kc__rij" data-n={Math.min(items.length, 4)}>
         {items.map((it) => (
-          <div class="kc__cel rv">
-            <dt class="kc__waarde">{it.waarde}</dt>
+          <div class="kc__cel rv" data-lang={it.waarde.length > 9}>
+            <dt class="kc__waarde" data-lang={it.waarde.length > 9}>{it.waarde}</dt>
             <dd class="kc__label mono">{it.label}</dd>
           </div>
         ))}
@@ -39,6 +39,9 @@ const { items = [] } = Astro.props;
     font-size: clamp(26px, 3.4vw, 42px); line-height: 1.05;
     color: var(--ink); letter-spacing: -.01em;
   }
+  /* Een lange waarde als "4000 × 2000 mm" viel anders over twee regels en maakte
+     die ene cel hoger dan de rest. */
+  .kc__waarde[data-lang="true"] { font-size: clamp(20px, 2.3vw, 29px); }
   .kc__label {
     margin: 7px 0 0; font-size: 11.5px; letter-spacing: .09em;
     text-transform: uppercase; color: var(--steel); line-height: 1.5;
@@ -56,6 +59,9 @@ const { items = [] } = Astro.props;
     /* Drie getallen in twee kolommen laat het laatste vak half leeg; laat dat
        er dan over de volle breedte staan. */
     .kc__rij[data-n="3"] .kc__cel:last-child { grid-column: 1 / -1; }
+    /* Een lange waarde past op 390px niet in een halve kolom; geef hem de volle
+       breedte in plaats van hem over twee regels te laten vallen. */
+    .kc__cel[data-lang="true"] { grid-column: 1 / -1; }
   }
   @media (max-width: 360px) {
     .kc__rij { grid-template-columns: minmax(0, 1fr); }
