@@ -15,7 +15,7 @@ const { items = [] } = Astro.props;
 {items.length > 0 && (
   <section class="sec tight kc">
     <div class="wrap">
-      <dl class="kc__rij" style={`--kc-n:${Math.min(items.length, 4)}`}>
+      <dl class="kc__rij" data-n={Math.min(items.length, 4)}>
         {items.map((it) => (
           <div class="kc__cel rv">
             <dt class="kc__waarde">{it.waarde}</dt>
@@ -43,9 +43,19 @@ const { items = [] } = Astro.props;
     margin: 7px 0 0; font-size: 11.5px; letter-spacing: .09em;
     text-transform: uppercase; color: var(--steel); line-height: 1.5;
   }
+  /* Het aantal kolommen volgt het aantal getallen. Met een variabele in
+     repeat() werkt dit niet: repeat() accepteert alleen een vast getal, en met
+     drie kerncijfers bleef er een leeg vak staan. */
+  .kc__rij[data-n="1"] { grid-template-columns: minmax(0, 1fr); }
+  .kc__rij[data-n="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kc__rij[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
   @media (max-width: 760px) {
-    /* Twee naast elkaar, tenzij er maar één is. */
-    .kc__rij { grid-template-columns: repeat(min(var(--kc-n, 4), 2), minmax(0, 1fr)); }
+    .kc__rij, .kc__rij[data-n="3"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .kc__rij[data-n="1"] { grid-template-columns: minmax(0, 1fr); }
+    /* Drie getallen in twee kolommen laat het laatste vak half leeg; laat dat
+       er dan over de volle breedte staan. */
+    .kc__rij[data-n="3"] .kc__cel:last-child { grid-column: 1 / -1; }
   }
   @media (max-width: 360px) {
     .kc__rij { grid-template-columns: minmax(0, 1fr); }

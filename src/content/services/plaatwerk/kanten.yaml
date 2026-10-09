@@ -12,103 +12,98 @@ heroPhoto:
   crop: Machine + hand van operator
   comp: Kantbank, plaat onder de pers
 body:
-- Kanten (ook wel zetten genoemd) bepaalt de vorm van het plaatwerkdeel. Op onze Safan Darley E-Brake 150-3100 T3 zetten
-  we maatvast, met aandacht voor terugvering en buigradius per materiaal.
-- 'RVS kanten vraagt om een andere aanpak dan staal: RVS veert sterker terug en is gevoeliger voor krassen
-  op het zichtoppervlak. Wij passen de buigradius en gereedschapkeuze daarop aan, zodat de hoek klopt
-  en het oppervlak intact blijft.'
-- De buigradius is bij kanten geen bijzaak maar een ontwerpkeuze. Een te krappe radius laat het materiaal
-  aan de buitenzijde scheuren, een ruime radius maakt de hoek moeilijker te beheersen. Als vuistregel
-  houdt men bij staal een binnenradius aan die minstens gelijk is aan de materiaaldikte; bij aluminium
-  ligt dat hoger, omdat het minder rekt, en bij RVS speelt de walsrichting mee. Wij bepalen de radius
-  per aanvraag op basis van materiaal, dikte en het gereedschap dat we inzetten, en geven het door als
-  uw tekening een radius vraagt die niet haalbaar is.
-- Terugvering is de tweede factor. Elk materiaal veert na het kanten een stukje terug, waardoor de gemeten
-  hoek groter uitvalt dan de ingestelde. RVS veert sterker terug dan staal, en hoe dikker en harder het
-  materiaal, hoe groter het verschil. Op een servo-elektrische kantbank is dat goed te compenseren omdat
-  de aandrijving nauwkeurig en herhaalbaar positioneert; wij stellen daarop in en controleren de eerste
-  zetting voordat de serie doorloopt.
-- 'De uitslag is waar het in de werkvoorbereiding om draait. Bij het buigen rekt het materiaal aan de
-  buitenkant en stuikt het aan de binnenkant, waardoor de platte lengte niet simpelweg de som van de benen
-  is. Wij berekenen die buigcompensatie zelf, dus u hoeft geen uitgeslagen tekening aan te leveren: een
-  PDF-tekening en een 3D STEP-bestand van het eindproduct volstaan. Levert u wel een platte uitslag aan, geef dan
-  door met welke compensatie die is gemaakt, anders wijkt de maat af.'
-- Ook de volgorde telt. Een zetting kan een eerdere zetting in de weg zitten, en een flens die te dicht
-  op een gat of uitsparing ligt vervormt de rand. Daarom beoordelen wij de zetvolgorde en de afstand van
-  gaten tot de buiglijn al op tekening, samen met de vraag of het gereedschap er überhaupt bij kan. Dat
-  voorkomt dat een deel pas op de pers onmaakbaar blijkt.
-- 'Bij zichtwerk komt er een laag bij. Het oppervlak is het kwetsbaarste deel van een gekant product: gereedschap
-  laat sporen na en RVS en messing krassen snel. Wij laten de beschermfolie tot en met de laatste bewerking
-  zitten en werken waar nodig met aangepast gereedschap. Meer over de materiaalkant staat op onze pagina''s
-  over <a href="/plaatwerk/rvs/">RVS-plaatwerk</a> en <a href="/plaatwerk/messing/">messing</a>.'
-- 'Wat wij nodig hebben om kantwerk te beoordelen: een PDF-tekening en een 3D STEP-bestand van het eindproduct, het materiaal
-  en de plaatdikte, de gewenste buigradius als die vastligt, of het zichtwerk betreft, en het aantal stuks.
-  De maximale lengte van één zetting is bij ons 3100 mm; langere delen bouwen we op uit meerdere stukken
-  of lossen we anders op.'
+  - De buigradius is bij kanten geen bijzaak maar een ontwerpkeuze. Een te krappe radius laat het materiaal
+    aan de buitenzijde scheuren, een ruime radius maakt de hoek moeilijker te beheersen. Wij bepalen de radius
+    per aanvraag op basis van materiaal, dikte en gereedschap, en geven het door als uw tekening een radius
+    vraagt die niet haalbaar is.
+  - Terugvering is de tweede factor. Elk materiaal veert na het kanten een stukje terug, waardoor de gemeten
+    hoek groter uitvalt dan de ingestelde. Op een servo-elektrische kantbank is dat goed te compenseren omdat
+    de aandrijving nauwkeurig en herhaalbaar positioneert; wij stellen daarop in en controleren de eerste
+    zetting voordat de serie doorloopt.
+  - Ook de volgorde telt. Een zetting kan een eerdere zetting in de weg zitten, en een flens die te dicht op
+    een gat of uitsparing ligt vervormt de rand. Daarom beoordelen wij de zetvolgorde en de afstand van gaten
+    tot de buiglijn al op tekening, samen met de vraag of het gereedschap er überhaupt bij kan. Dat voorkomt
+    dat een deel pas op de pers onmaakbaar blijkt.
+  - "Bij zichtwerk komt er een laag bij. Het oppervlak is het kwetsbaarste deel van een gekant product:
+    gereedschap laat sporen na en RVS en messing krassen snel. Wij laten de beschermfolie tot en met de
+    laatste bewerking zitten en werken waar nodig met aangepast gereedschap. Meer over de materiaalkant staat
+    op onze pagina's over <a href=\"/plaatwerk/rvs/\">RVS-plaatwerk</a> en <a
+    href=\"/plaatwerk/messing/\">messing</a>."
 materials:
-- RVS
-- Aluminium
-- Messing
-- Staal
+  - RVS
+  - Aluminium
+  - Messing
+  - Staal
 process:
-- step: Uitslag bepalen
-  desc: Correcte uitslag inclusief buigcompensatie.
-- step: Instellen
-  desc: Gereedschap en aanslag instellen.
-- step: Kanten
-  desc: Buigen met constante hoeknauwkeurigheid.
-- step: Controle
-  desc: Hoek- en maatcontrole.
+  - step: Uitslag bepalen
+    desc: "Wij berekenen de buigcompensatie zelf: bij het buigen rekt het materiaal aan de buitenkant en stuikt
+      het aan de binnenkant, dus de platte lengte is niet de som van de benen."
+  - step: Instellen
+    desc: Gereedschap en aanslag instellen, met de buigradius en de verwachte terugvering voor dit materiaal.
+  - step: Kanten
+    desc: Buigen met constante hoeknauwkeurigheid, in de volgorde die in de werkvoorbereiding is vastgelegd.
+  - step: Controle
+    desc: Hoek- en maatcontrole, te beginnen bij de eerste zetting voordat de serie doorloopt.
 specs:
-- label: Machine
-  value: Safan Darley E-Brake 150-3100 T3
-- label: Perskracht
-  value: 150 ton
-- label: Werklengte
-  value: tot 3100 mm
-- label: Aandrijving
-  value: servo-elektrisch
-- label: Toleranties
-  value: volgens ISO 2768
+  - label: Machine
+    value: Safan Darley E-Brake 150-3100 T3
+  - label: Aandrijving
+    value: servo-elektrisch
+  - label: Perskracht
+    value: 150 ton
+  - label: Zetlengte
+    value: tot 3100 mm per zetting
+  - label: Toleranties
+    value: volgens ISO 2768
+  - label: Buigradius staal
+    value: binnenradius minstens gelijk aan de materiaaldikte (vuistregel)
+  - label: Buigradius aluminium
+    value: ruimer dan bij staal — aluminium rekt minder
+  - label: Buigradius RVS
+    value: walsrichting speelt mee
+  - label: Terugvering
+    value: RVS veert sterker terug dan staal; neemt toe met dikte en hardheid
+  - label: Uitslag
+    value: buigcompensatie berekenen wij zelf
 applications:
-- Behuizingen
-- Panelen
-- Omkastingen
-- Constructiedelen
+  - Behuizingen
+  - Panelen
+  - Omkastingen
+  - Constructiedelen
 faq:
-- vraag: Welke buigradius kunnen jullie kanten?
-  antwoord: Dat hangt af van materiaal, plaatdikte en gereedschap. Als vuistregel houdt men bij staal
-    een binnenradius aan die minstens gelijk is aan de materiaaldikte; bij aluminium ligt dat hoger en
-    bij RVS telt de walsrichting mee. Ligt uw radius vast, geef hem dan door — dan beoordelen wij of hij
-    haalbaar is voordat de tekening definitief wordt.
-- vraag: Moet ik zelf de uitslag berekenen?
-  antwoord: Nee. Wij berekenen de buigcompensatie zelf, dus een PDF-tekening en een 3D STEP-bestand van het eindproduct
-    zijn genoeg. Levert u wel een platte uitslag aan, geef dan door met welke compensatie die gemaakt is,
-    anders wijkt de eindmaat af.
-- vraag: Hoe lang mag een zetting zijn?
-  antwoord: Tot 3100 mm in één zetting, de werklengte van onze Safan Darley E-Brake 150-3100 T3 met 150
-    ton perskracht. Langere delen bouwen wij op uit meerdere stukken of lossen we in overleg anders op.
-- vraag: Waarom veert RVS sterker terug dan staal?
-  antwoord: RVS heeft een hogere rekgrens en veert daardoor na het kanten verder terug, waardoor de gemeten
-    hoek groter uitvalt dan de ingestelde. Hoe dikker en harder het materiaal, hoe groter het verschil.
-    Wij compenseren daarop bij het instellen en controleren de eerste zetting voordat de serie doorloopt.
-- vraag: Kan er gekant worden zonder krassen op zichtwerk?
-  antwoord: Ja. Wij laten de beschermfolie tot en met de laatste bewerking zitten en werken waar nodig
-    met aangepast gereedschap. Geef bij uw aanvraag door welke zijde de zichtzijde is, dan houden wij
-    daar bij de zetvolgorde rekening mee.
+  - vraag: Welke buigradius kunnen jullie kanten?
+    antwoord: Dat hangt af van materiaal, plaatdikte en gereedschap. Als vuistregel houdt men bij staal een
+      binnenradius aan die minstens gelijk is aan de materiaaldikte; bij aluminium ligt dat hoger en bij RVS
+      telt de walsrichting mee. Ligt uw radius vast, geef hem dan door — dan beoordelen wij of hij haalbaar is
+      voordat de tekening definitief wordt.
+  - vraag: Moet ik zelf de uitslag berekenen?
+    antwoord: Nee. Wij berekenen de buigcompensatie zelf, dus een PDF-tekening en een 3D STEP-bestand van het
+      eindproduct zijn genoeg. Levert u wel een platte uitslag aan, geef dan door met welke compensatie die
+      gemaakt is, anders wijkt de eindmaat af.
+  - vraag: Hoe lang mag een zetting zijn?
+    antwoord: Tot 3100 mm in één zetting, de werklengte van onze Safan Darley E-Brake 150-3100 T3 met 150 ton
+      perskracht. Langere delen bouwen wij op uit meerdere stukken of lossen we in overleg anders op.
+  - vraag: Waarom veert RVS sterker terug dan staal?
+    antwoord: RVS heeft een hogere rekgrens en veert daardoor na het kanten verder terug, waardoor de gemeten hoek
+      groter uitvalt dan de ingestelde. Hoe dikker en harder het materiaal, hoe groter het verschil. Wij
+      compenseren daarop bij het instellen en controleren de eerste zetting voordat de serie doorloopt.
+  - vraag: Kan er gekant worden zonder krassen op zichtwerk?
+    antwoord: Ja. Wij laten de beschermfolie tot en met de laatste bewerking zitten en werken waar nodig met
+      aangepast gereedschap. Geef bij uw aanvraag door welke zijde de zichtzijde is, dan houden wij daar bij
+      de zetvolgorde rekening mee.
 related:
-- slug: machinepark
-  label: Machinepark
-  desc: Bekijk onze kantbank.
-- slug: plaatwerk/lasersnijden
-  label: Lasersnijden
-  desc: Snijden vóór het kanten.
+  - slug: machinepark
+    label: Machinepark
+    desc: Bekijk onze kantbank.
+  - slug: plaatwerk/lasersnijden
+    label: Lasersnijden
+    desc: Snijden vóór het kanten.
 seo:
   title: Kanten op de servo-elektrische kantbank
   description: 'Maatvast kanten op de servo-elektrische Safan Darley E-Brake 150-3100 T3: 150 ton perskracht,
     werklengte tot 3100 mm.'
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
@@ -118,100 +113,109 @@ en:
   heroPhoto:
     subject: Press brake in operation — sheet being bent
   body:
-  - Press braking determines the shape of the sheet metal part. On our Safan Darley E-Brake 150-3100 T3
-    we bend to size, with attention to springback and bend radius for each material.
-  - 'Bending stainless steel calls for a different approach than steel: stainless steel springs back more
-    and is more sensitive to scratches on the visible surface. We adjust the bend radius and tooling accordingly,
-    so the angle is correct and the surface stays intact.'
-  - The bend radius is not a detail but a design choice. Too tight a radius cracks the material on the outside;
-    too generous a radius makes the angle harder to control. As a rule of thumb, an inside radius at least
-    equal to the material thickness is used for steel; for aluminium it is higher, because it stretches
-    less, and with stainless steel the rolling direction plays a part. We determine the radius per request
-    based on material, thickness and the tooling we use, and let you know if your drawing calls for a radius
-    that is not achievable.
-  - Springback is the second factor. Every material springs back a little after bending, so the measured
-    angle ends up larger than the set one. Stainless steel springs back more than steel, and the thicker
-    and harder the material, the bigger the difference. On a servo-electric press brake this can be compensated
-    well because the drive positions accurately and repeatably; we set up for it and check the first bend
-    before the batch runs on.
-  - 'The flat pattern is what production engineering turns on. During bending the material stretches on
-    the outside and compresses on the inside, so the flat length is not simply the sum of the legs. We calculate
-    that bend allowance ourselves, so you do not have to supply an unfolded drawing: a PDF drawing and a
-    3D STEP file of the finished product is enough. If you do supply a flat pattern, tell us which allowance
-    it was made with, otherwise the dimensions will be off.'
-  - The sequence matters too. One bend can get in the way of another, and a flange that sits too close to
-    a hole or cut-out will distort the edge. That is why we assess the bending sequence and the distance
-    from holes to the bend line on the drawing, together with the question of whether the tooling can even
-    reach. That prevents a part turning out to be unmakeable only once it is on the press.
-  - 'With visible work there is an extra layer. The surface is the most vulnerable part of a bent product:
-    tooling leaves marks, and stainless steel and brass scratch easily. We keep the protective film on up
-    to and including the last operation and use adapted tooling where required. There is more on the material
-    side on our pages about <a href="/en/plaatwerk/rvs/">stainless steel sheet metal</a> and <a href="/en/plaatwerk/messing/">brass</a>.'
-  - 'What we need to assess bending work: a PDF drawing and a 3D STEP file of the finished product, the
-    material and sheet thickness, the required bend radius if it is fixed, whether it concerns visible surfaces,
-    and the quantity. The maximum length of a single bend with us is 3100 mm; longer parts we build up from
-    several pieces or solve another way.'
+    - The bend radius is not a detail but a design choice. Too tight a radius cracks the material on the
+      outside; too generous a radius makes the angle harder to control. We determine the radius per request
+      based on material, thickness and tooling, and let you know if your drawing calls for a radius that is
+      not achievable.
+    - Springback is the second factor. Every material springs back a little after bending, so the measured
+      angle ends up larger than the set one. On a servo-electric press brake this can be compensated well
+      because the drive positions accurately and repeatably; we set up for it and check the first bend before
+      the batch runs on.
+    - The sequence matters too. One bend can get in the way of another, and a flange that sits too close to a
+      hole or cut-out will distort the edge. That is why we assess the bending sequence and the distance from
+      holes to the bend line on the drawing, together with the question of whether the tooling can even reach.
+      That prevents a part turning out to be unmakeable only once it is on the press.
+    - 'With visible work there is an extra layer. The surface is the most vulnerable part of a bent product:
+      tooling leaves marks, and stainless steel and brass scratch easily. We keep the protective film on up to
+      and including the last operation and use adapted tooling where required. There is more on the material
+      side on our pages about <a href="/en/plaatwerk/rvs/">stainless steel sheet metal</a> and <a
+      href="/en/plaatwerk/messing/">brass</a>.'
   materials:
-  - Stainless steel
-  - Aluminium
-  - Brass
-  - Steel
+    - Stainless steel
+    - Aluminium
+    - Brass
+    - Steel
   process:
-  - step: Determining the flat pattern
-    desc: Correct flat pattern including bend compensation.
-  - step: Setting up
-    desc: Setting the tooling and back gauge.
-  - step: Press braking
-    desc: Bending with consistent angular accuracy.
-  - step: Inspection
-    desc: Angle and dimensional inspection.
+    - step: Determining the flat pattern
+      desc: "We calculate the bend allowance ourselves: during bending the material stretches on the outside and
+        compresses on the inside, so the flat length is not the sum of the legs."
+    - step: Setting up
+      desc: Setting the tooling and back gauge, with the bend radius and the expected springback for this material.
+    - step: Press braking
+      desc: Bending with consistent angular accuracy, in the sequence fixed during production engineering.
+    - step: Inspection
+      desc: Angle and dimensional inspection, starting with the first bend before the batch runs on.
   specs:
-  - label: Machine
-    value: Safan Darley E-Brake 150-3100 T3
-  - label: Press force
-    value: 150 tonnes
-  - label: Working length
-    value: up to 3100 mm
-  - label: Drive
-    value: servo-electric
-  - label: Tolerances
-    value: to ISO 2768
+    - label: Machine
+      value: Safan Darley E-Brake 150-3100 T3
+    - label: Drive
+      value: servo-electric
+    - label: Press force
+      value: 150 tonnes
+    - label: Bend length
+      value: up to 3100 mm per bend
+    - label: Tolerances
+      value: to ISO 2768
+    - label: Bend radius, steel
+      value: inside radius at least equal to the material thickness (rule of thumb)
+    - label: Bend radius, aluminium
+      value: wider than for steel — aluminium stretches less
+    - label: Bend radius, stainless steel
+      value: rolling direction plays a part
+    - label: Springback
+      value: stainless steel springs back more than steel; increases with thickness and hardness
+    - label: Flat pattern
+      value: we calculate the bend allowance ourselves
   applications:
-  - Enclosures
-  - Panels
-  - Casings
-  - Structural parts
+    - Enclosures
+    - Panels
+    - Casings
+    - Structural parts
   faq:
-  - vraag: Which bend radius can you achieve?
-    antwoord: That depends on material, sheet thickness and tooling. As a rule of thumb, an inside radius
-      at least equal to the material thickness is used for steel; for aluminium it is higher, and with stainless
-      steel the rolling direction counts. If your radius is fixed, tell us and we will assess whether it
-      is achievable before the drawing is finalised.
-  - vraag: Do I have to calculate the flat pattern myself?
-    antwoord: No. We calculate the bend allowance ourselves, so a PDF drawing and a 3D STEP file of the
-      finished product is enough. If you do supply a flat pattern, tell us which allowance it was made with,
-      otherwise the final dimension will be off.
-  - vraag: How long may a single bend be?
-    antwoord: Up to 3100 mm in one bend, the working length of our Safan Darley E-Brake 150-3100 T3 with
-      150 tonnes of press force. Longer parts we build up from several pieces or solve differently in consultation.
-  - vraag: Why does stainless steel spring back more than steel?
-    antwoord: Stainless steel has a higher yield strength and therefore springs back further after bending,
-      so the measured angle ends up larger than the set one. The thicker and harder the material, the bigger
-      the difference. We compensate for this during set-up and check the first bend before the batch runs
-      on.
-  - vraag: Can you bend without scratching visible surfaces?
-    antwoord: Yes. We keep the protective film on up to and including the last operation and use adapted
-      tooling where required. Tell us with your request which side is the visible side, and we will take
-      that into account in the bending sequence.
+    - vraag: Which bend radius can you achieve?
+      antwoord: That depends on material, sheet thickness and tooling. As a rule of thumb, an inside radius at least
+        equal to the material thickness is used for steel; for aluminium it is higher, and with stainless
+        steel the rolling direction counts. If your radius is fixed, tell us and we will assess whether it is
+        achievable before the drawing is finalised.
+    - vraag: Do I have to calculate the flat pattern myself?
+      antwoord: No. We calculate the bend allowance ourselves, so a PDF drawing and a 3D STEP file of the finished
+        product is enough. If you do supply a flat pattern, tell us which allowance it was made with,
+        otherwise the final dimension will be off.
+    - vraag: How long may a single bend be?
+      antwoord: Up to 3100 mm in one bend, the working length of our Safan Darley E-Brake 150-3100 T3 with 150
+        tonnes of press force. Longer parts we build up from several pieces or solve differently in
+        consultation.
+    - vraag: Why does stainless steel spring back more than steel?
+      antwoord: Stainless steel has a higher yield strength and therefore springs back further after bending, so the
+        measured angle ends up larger than the set one. The thicker and harder the material, the bigger the
+        difference. We compensate for this during set-up and check the first bend before the batch runs on.
+    - vraag: Can you bend without scratching visible surfaces?
+      antwoord: Yes. We keep the protective film on up to and including the last operation and use adapted tooling
+        where required. Tell us with your request which side is the visible side, and we will take that into
+        account in the bending sequence.
   related:
-  - label: Machinery
-    desc: See our press brake.
-  - label: Laser cutting
-    desc: Cutting before bending.
+    - label: Machinery
+      desc: See our press brake.
+    - label: Laser cutting
+      desc: Cutting before bending.
   seo:
     title: Press braking and bending
-    description: 'Dimensionally accurate press braking on the servo-electric Safan Darley E-Brake 150-3100
-      T3: 150 tonnes press force, working length up to 3100 mm.'
+    description: 'Dimensionally accurate press braking on the servo-electric Safan Darley E-Brake 150-3100 T3: 150
+      tonnes press force, working length up to 3100 mm.'
+  kerncijfers:
+    - waarde: 150 t
+      label: press force
+    - waarde: 3100 mm
+      label: max. bend length
+    - waarde: ISO 2768
+      label: tolerances
+  aanleveren:
+    - A PDF drawing and a 3D STEP file of the finished product — an unfolded drawing is not needed
+    - Material and sheet thickness
+    - The required bend radius, if it is fixed
+    - Whether it concerns visible surfaces
+    - Quantity
+    - "If you do supply a flat pattern: which bend allowance it was made with"
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -221,99 +225,122 @@ de:
   heroPhoto:
     subject: Abkantpresse in Betrieb — Blech wird gekantet
   body:
-  - Das Abkanten bestimmt die Form des Blechteils. Auf unserer Safan Darley E-Brake 150-3100 T3 kanten wir
-    maßhaltig, mit Rücksicht auf Rückfederung und Biegeradius je Material.
-  - 'Das Kanten von Edelstahl erfordert eine andere Herangehensweise als bei Stahl: Edelstahl federt stärker
-    zurück und ist empfindlicher für Kratzer auf der Sichtfläche. Wir passen Biegeradius und Werkzeugwahl
-    entsprechend an, damit der Winkel stimmt und die Oberfläche intakt bleibt.'
-  - Der Biegeradius ist keine Nebensache, sondern eine Konstruktionsentscheidung. Ein zu enger Radius lässt
-    das Material an der Außenseite reißen, ein großzügiger Radius macht den Winkel schwerer beherrschbar.
-    Als Faustregel gilt bei Stahl ein Innenradius von mindestens der Materialdicke; bei Aluminium liegt
-    er höher, weil es weniger dehnt, und bei Edelstahl spielt die Walzrichtung mit. Wir legen den Radius
-    je Anfrage anhand von Werkstoff, Dicke und eingesetztem Werkzeug fest und melden es, wenn Ihre Zeichnung
-    einen nicht machbaren Radius verlangt.
-  - Die Rückfederung ist der zweite Faktor. Jeder Werkstoff federt nach dem Biegen etwas zurück, sodass
-    der gemessene Winkel größer ausfällt als der eingestellte. Edelstahl federt stärker zurück als Stahl,
-    und je dicker und härter das Material, desto größer der Unterschied. Auf einer servoelektrischen Abkantpresse
-    lässt sich das gut kompensieren, weil der Antrieb genau und wiederholbar positioniert; wir stellen darauf
-    ein und prüfen die erste Biegung, bevor die Serie durchläuft.
-  - 'Die Abwicklung ist der Kern der Arbeitsvorbereitung. Beim Biegen dehnt sich das Material außen und
-    staucht innen, die flache Länge ist also nicht einfach die Summe der Schenkel. Wir berechnen diese Biegekompensation
-    selbst, Sie müssen also keine abgewickelte Zeichnung liefern: eine PDF-Zeichnung und eine 3D-STEP-Datei
-    des Endprodukts genügt. Liefern Sie doch eine Abwicklung, nennen Sie uns die zugrunde gelegte Kompensation,
-    sonst weicht das Maß ab.'
-  - Auch die Reihenfolge zählt. Eine Biegung kann einer früheren im Weg stehen, und ein Schenkel zu nah
-    an einer Bohrung oder Aussparung verformt den Rand. Deshalb beurteilen wir Biegefolge und den Abstand
-    von Bohrungen zur Biegelinie bereits an der Zeichnung, zusammen mit der Frage, ob das Werkzeug überhaupt
-    herankommt. Das verhindert, dass sich ein Teil erst auf der Presse als nicht fertigbar erweist.
-  - 'Bei Sichtflächen kommt eine Ebene hinzu. Die Oberfläche ist der empfindlichste Teil eines gekanteten
-    Produkts: Werkzeuge hinterlassen Spuren, und Edelstahl und Messing verkratzen schnell. Wir belassen
-    die Schutzfolie bis einschließlich des letzten Arbeitsgangs und arbeiten bei Bedarf mit angepasstem
-    Werkzeug. Mehr zur Werkstoffseite auf unseren Seiten über <a href="/de/plaatwerk/rvs/">Edelstahlblech</a>
-    und <a href="/de/plaatwerk/messing/">Messing</a>.'
-  - 'Was wir für die Beurteilung von Abkantarbeit benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des
-    Endprodukts, Werkstoff und Blechdicke, den gewünschten Biegeradius, sofern er feststeht, die Angabe,
-    ob es sich um Sichtflächen handelt, und die Stückzahl. Die maximale Länge einer einzelnen Biegung beträgt
-    bei uns 3100 mm; längere Teile setzen wir aus mehreren Stücken zusammen oder lösen sie anders.'
+    - Der Biegeradius ist keine Nebensache, sondern eine Konstruktionsentscheidung. Ein zu enger Radius lässt
+      das Material an der Außenseite reißen, ein großzügiger Radius macht den Winkel schwerer beherrschbar.
+      Wir legen den Radius je Anfrage anhand von Werkstoff, Dicke und Werkzeug fest und melden es, wenn Ihre
+      Zeichnung einen nicht machbaren Radius verlangt.
+    - Die Rückfederung ist der zweite Faktor. Jeder Werkstoff federt nach dem Biegen etwas zurück, sodass der
+      gemessene Winkel größer ausfällt als der eingestellte. Auf einer servoelektrischen Abkantpresse lässt
+      sich das gut kompensieren, weil der Antrieb genau und wiederholbar positioniert; wir stellen darauf ein
+      und prüfen die erste Biegung, bevor die Serie durchläuft.
+    - Auch die Reihenfolge zählt. Eine Biegung kann einer früheren im Weg stehen, und ein Schenkel zu nah an
+      einer Bohrung oder Aussparung verformt den Rand. Deshalb beurteilen wir Biegefolge und den Abstand von
+      Bohrungen zur Biegelinie bereits an der Zeichnung, zusammen mit der Frage, ob das Werkzeug überhaupt
+      herankommt. Das verhindert, dass sich ein Teil erst auf der Presse als nicht fertigbar erweist.
+    - 'Bei Sichtflächen kommt eine Ebene hinzu. Die Oberfläche ist der empfindlichste Teil eines gekanteten
+      Produkts: Werkzeuge hinterlassen Spuren, und Edelstahl und Messing verkratzen schnell. Wir belassen die
+      Schutzfolie bis einschließlich des letzten Arbeitsgangs und arbeiten bei Bedarf mit angepasstem
+      Werkzeug. Mehr zur Werkstoffseite auf unseren Seiten über <a
+      href="/de/plaatwerk/rvs/">Edelstahlblech</a> und <a href="/de/plaatwerk/messing/">Messing</a>.'
   materials:
-  - Edelstahl
-  - Aluminium
-  - Messing
-  - Stahl
+    - Edelstahl
+    - Aluminium
+    - Messing
+    - Stahl
   process:
-  - step: Abwicklung festlegen
-    desc: Korrekte Abwicklung inklusive Biegekompensation.
-  - step: Einrichten
-    desc: Werkzeug und Anschlag einstellen.
-  - step: Abkanten
-    desc: Biegen mit konstanter Winkelgenauigkeit.
-  - step: Kontrolle
-    desc: Winkel- und Maßkontrolle.
+    - step: Abwicklung festlegen
+      desc: "Die Biegekompensation berechnen wir selbst: beim Biegen dehnt sich das Material außen und staucht
+        innen, die flache Länge ist also nicht die Summe der Schenkel."
+    - step: Einrichten
+      desc: Werkzeug und Anschlag einstellen, mit dem Biegeradius und der erwarteten Rückfederung für diesen
+        Werkstoff.
+    - step: Abkanten
+      desc: Biegen mit konstanter Winkelgenauigkeit, in der in der Arbeitsvorbereitung festgelegten Reihenfolge.
+    - step: Kontrolle
+      desc: Winkel- und Maßkontrolle, beginnend bei der ersten Biegung, bevor die Serie durchläuft.
   specs:
-  - label: Maschine
-    value: Safan Darley E-Brake 150-3100 T3
-  - label: Presskraft
-    value: 150 Tonnen
-  - label: Arbeitslänge
-    value: bis 3100 mm
-  - label: Antrieb
-    value: servoelektrisch
-  - label: Toleranzen
-    value: nach ISO 2768
+    - label: Maschine
+      value: Safan Darley E-Brake 150-3100 T3
+    - label: Antrieb
+      value: servoelektrisch
+    - label: Presskraft
+      value: 150 Tonnen
+    - label: Abkantlänge
+      value: bis 3100 mm je Biegung
+    - label: Toleranzen
+      value: nach ISO 2768
+    - label: Biegeradius Stahl
+      value: Innenradius mindestens gleich der Materialdicke (Faustregel)
+    - label: Biegeradius Aluminium
+      value: größer als bei Stahl — Aluminium dehnt weniger
+    - label: Biegeradius Edelstahl
+      value: Walzrichtung spielt mit
+    - label: Rückfederung
+      value: Edelstahl federt stärker zurück als Stahl; nimmt mit Dicke und Härte zu
+    - label: Abwicklung
+      value: die Biegekompensation berechnen wir selbst
   applications:
-  - Gehäuse
-  - Paneele
-  - Verkleidungen
-  - Konstruktionsteile
+    - Gehäuse
+    - Paneele
+    - Verkleidungen
+    - Konstruktionsteile
   faq:
-  - vraag: Welchen Biegeradius können Sie abkanten?
-    antwoord: Das hängt von Werkstoff, Blechdicke und Werkzeug ab. Als Faustregel gilt bei Stahl ein Innenradius
-      von mindestens der Materialdicke; bei Aluminium liegt er höher, bei Edelstahl zählt die Walzrichtung
-      mit. Steht Ihr Radius fest, nennen Sie ihn uns — dann beurteilen wir die Machbarkeit, bevor die Zeichnung
-      endgültig ist.
-  - vraag: Muss ich die Abwicklung selbst berechnen?
-    antwoord: Nein. Wir berechnen die Biegekompensation selbst, eine PDF-Zeichnung und eine 3D-STEP-Datei
-      des Endprodukts genügt also. Liefern Sie doch eine Abwicklung, nennen Sie uns die zugrunde gelegte
-      Kompensation, sonst weicht das Endmaß ab.
-  - vraag: Wie lang darf eine Biegung sein?
-    antwoord: Bis 3100 mm in einer Biegung, die Arbeitslänge unserer Safan Darley E-Brake 150-3100 T3 mit
-      150 Tonnen Presskraft. Längere Teile setzen wir aus mehreren Stücken zusammen oder lösen sie in Absprache
-      anders.
-  - vraag: Warum federt Edelstahl stärker zurück als Stahl?
-    antwoord: Edelstahl hat eine höhere Streckgrenze und federt nach dem Biegen daher weiter zurück, sodass
-      der gemessene Winkel größer ausfällt als der eingestellte. Je dicker und härter das Material, desto
-      größer der Unterschied. Wir kompensieren das beim Einrichten und prüfen die erste Biegung, bevor die
-      Serie durchläuft.
-  - vraag: Lässt sich ohne Kratzer auf Sichtflächen abkanten?
-    antwoord: Ja. Wir belassen die Schutzfolie bis einschließlich des letzten Arbeitsgangs und arbeiten
-      bei Bedarf mit angepasstem Werkzeug. Teilen Sie uns bei Ihrer Anfrage mit, welche Seite die Sichtseite
-      ist, dann berücksichtigen wir das in der Biegefolge.
+    - vraag: Welchen Biegeradius können Sie abkanten?
+      antwoord: Das hängt von Werkstoff, Blechdicke und Werkzeug ab. Als Faustregel gilt bei Stahl ein Innenradius
+        von mindestens der Materialdicke; bei Aluminium liegt er höher, bei Edelstahl zählt die Walzrichtung
+        mit. Steht Ihr Radius fest, nennen Sie ihn uns — dann beurteilen wir die Machbarkeit, bevor die
+        Zeichnung endgültig ist.
+    - vraag: Muss ich die Abwicklung selbst berechnen?
+      antwoord: Nein. Wir berechnen die Biegekompensation selbst, eine PDF-Zeichnung und eine 3D-STEP-Datei des
+        Endprodukts genügt also. Liefern Sie doch eine Abwicklung, nennen Sie uns die zugrunde gelegte
+        Kompensation, sonst weicht das Endmaß ab.
+    - vraag: Wie lang darf eine Biegung sein?
+      antwoord: Bis 3100 mm in einer Biegung, die Arbeitslänge unserer Safan Darley E-Brake 150-3100 T3 mit 150
+        Tonnen Presskraft. Längere Teile setzen wir aus mehreren Stücken zusammen oder lösen sie in Absprache
+        anders.
+    - vraag: Warum federt Edelstahl stärker zurück als Stahl?
+      antwoord: Edelstahl hat eine höhere Streckgrenze und federt nach dem Biegen daher weiter zurück, sodass der
+        gemessene Winkel größer ausfällt als der eingestellte. Je dicker und härter das Material, desto größer
+        der Unterschied. Wir kompensieren das beim Einrichten und prüfen die erste Biegung, bevor die Serie
+        durchläuft.
+    - vraag: Lässt sich ohne Kratzer auf Sichtflächen abkanten?
+      antwoord: Ja. Wir belassen die Schutzfolie bis einschließlich des letzten Arbeitsgangs und arbeiten bei Bedarf
+        mit angepasstem Werkzeug. Teilen Sie uns bei Ihrer Anfrage mit, welche Seite die Sichtseite ist, dann
+        berücksichtigen wir das in der Biegefolge.
   related:
-  - label: Maschinenpark
-    desc: Sehen Sie unsere Abkantpresse.
-  - label: Laserschneiden
-    desc: Schneiden vor dem Abkanten.
+    - label: Maschinenpark
+      desc: Sehen Sie unsere Abkantpresse.
+    - label: Laserschneiden
+      desc: Schneiden vor dem Abkanten.
   seo:
     title: Abkanten auf der Abkantpresse
     description: 'Maßhaltiges Abkanten auf der servoelektrischen Safan Darley E-Brake 150-3100 T3: 150 Tonnen
       Presskraft, Arbeitslänge bis 3100 mm.'
+  kerncijfers:
+    - waarde: 150 t
+      label: Presskraft
+    - waarde: 3100 mm
+      label: max. Abkantlänge
+    - waarde: ISO 2768
+      label: Toleranzen
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei des Endprodukts — eine abgewickelte Zeichnung ist nicht nötig
+    - Werkstoff und Blechdicke
+    - Den gewünschten Biegeradius, sofern er feststeht
+    - Ob es sich um Sichtflächen handelt
+    - Stückzahl
+    - "Liefern Sie doch eine Abwicklung: mit welcher Biegekompensation sie erstellt wurde"
+kerncijfers:
+  - waarde: 150 ton
+    label: perskracht
+  - waarde: 3100 mm
+    label: max. zetlengte
+  - waarde: ISO 2768
+    label: toleranties
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand van het eindproduct — een uitgeslagen tekening is niet nodig
+  - Materiaal en plaatdikte
+  - De gewenste buigradius, als die vastligt
+  - Of het zichtwerk betreft
+  - Aantal stuks
+  - "Levert u wél een platte uitslag aan: met welke buigcompensatie die is gemaakt"
