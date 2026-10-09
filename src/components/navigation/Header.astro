@@ -1,7 +1,7 @@
 ---
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
-import { readPage } from "@utils/content";
+import { menu } from "@utils/menu";
 import LangSwitcher from "./LangSwitcher.astro";
 import Logo from "./Logo.astro";
 import SocialLinks from "./SocialLinks.astro";
@@ -14,11 +14,9 @@ interface Props {
 const { canonicalSlug, available = ["nl"] } = Astro.props;
 const locale = toLocale(Astro.currentLocale);
 
-// Navigatie komt uit de Keystatic-singleton (bewerkbaar via /keystatic),
-// per taal met terugval op het Nederlands.
-const navData = await readPage("navigatie", locale);
-const MEGA = (navData?.megaKolommen ?? []).map((c) => ({ heading: c.titel, items: c.items }));
-const SECTORS = navData?.sectoren ?? [];
+// Het menu wordt opgebouwd uit de dienstpagina's en de sectorencollectie; de
+// kolomkoppen komen uit de Keystatic-singleton "Navigatie". Zie @utils/menu.
+const { kolommen: MEGA, sectoren: SECTORS } = await menu(locale);
 
 /* Slugs blijven canoniek Nederlands; localizePath zet er de taalprefix voor. */
 const nav = (slug: string) => localizePath(slug, locale);

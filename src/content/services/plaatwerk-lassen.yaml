@@ -3,7 +3,6 @@ slug: plaatwerk/lassen
 template: service
 group: lastechniek
 order: 41
-kicker: Lastechniek 3.1
 h1: Lassen
 intro: Van handmatig TIG-, MIG- en MAG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal,
   serie en kwaliteitseis.
@@ -89,7 +88,6 @@ faq:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Welding
-  kicker: Welding technology 3.1
   h1: Welding
   intro: From manual TIG, MIG and MAG welding to automated and laser welding. We choose the welding method
     that suits the material, the batch size and the quality requirement.
@@ -169,7 +167,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Schweißen
-  kicker: Schweißtechnik 3.1
   h1: Schweißen
   intro: Vom manuellen WIG-, MIG- und MAG-Schweißen bis zum automatisierten Schweißen und Laserschweißen.
     Wir wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt.

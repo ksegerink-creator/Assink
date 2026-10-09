@@ -3,7 +3,6 @@ slug: aluminium-lassen
 template: service
 group: lastechniek
 order: 44
-kicker: Lastechniek 3.4
 h1: Aluminium lassen
 intro: 'Aluminium vraagt om vakmanschap: de juiste warmte-inbreng, voorbewerking en techniek. Wij lassen
   aluminium met TIG en MIG, vervormingsarm en netjes.'
@@ -79,7 +78,6 @@ faq:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Aluminium welding
-  kicker: Welding technology 3.4
   h1: Aluminium welding
   intro: 'Aluminium calls for craftsmanship: the right heat input, preparation and technique. We weld aluminium
     with TIG and MIG, low-distortion and cleanly finished.'
@@ -146,8 +144,7 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
-  title: Aluminium schweißen
-  kicker: Schweißtechnik 3.4
+  title: Aluminiumschweißen
   h1: Aluminium schweißen
   intro: 'Aluminium verlangt Handwerkskunst: die richtige Wärmeeinbringung, Vorbehandlung und Technik. Wir
     schweißen Aluminium mit WIG und MIG, verzugsarm und sauber.'

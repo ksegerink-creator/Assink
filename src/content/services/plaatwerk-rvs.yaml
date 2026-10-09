@@ -1,9 +1,9 @@
 title: RVS-plaatwerk
+menuLabel: "RVS"
 slug: plaatwerk/rvs
 template: service
 group: plaatwerk
-order: 21
-kicker: Plaatwerk 1.1
+order: 22
 h1: RVS-plaatwerk
 intro: 'RVS-plaatwerk met of zonder nabewerking: corrosiebestendig, representatief en maatvast. Onze
   RVS-plaatbewerking omvat lasersnijden en kanten, en desgewenst ontbramen, stralen en passiveren.'
@@ -93,8 +93,8 @@ faq:
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
+  menuLabel: "Stainless steel"
   title: Stainless steel sheet metal
-  kicker: Sheet metal work 1.1
   h1: Stainless steel sheet metal
   intro: 'Stainless steel sheet metal with or without finishing: corrosion-resistant, presentable and dimensionally
     stable. Our stainless steel sheet processing covers laser cutting and press braking, and deburring,
@@ -178,8 +178,8 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
+  menuLabel: "Edelstahl"
   title: Edelstahl-Blechbearbeitung
-  kicker: Blechbearbeitung 1.1
   h1: Edelstahl-Blechbearbeitung
   intro: 'Edelstahlblech mit oder ohne Nachbearbeitung: korrosionsbeständig, repräsentativ und maßhaltig.
     Unsere Edelstahl-Blechbearbeitung umfasst Laserschneiden und Abkanten sowie auf Wunsch Entgraten, Strahlen

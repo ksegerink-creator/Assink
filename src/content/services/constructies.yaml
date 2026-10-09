@@ -2,8 +2,8 @@ title: Constructies
 slug: constructies
 template: service
 group: samenstellen
-order: 20
-kicker: Mogelijkheid 4.1
+order: 51
+inFooter: true
 h1: Constructief in constructies
 intro: Meer dan 100 jaar specialist in hoogwaardige metaalconstructies. Van losse onderdelen tot volledig
   gelaste samenstellingen — traditioneel vakmanschap met moderne techniek.
@@ -112,7 +112,6 @@ translated:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Welded constructions
-  kicker: Capability 4.1
   h1: Constructive in constructions
   intro: More than 100 years as a specialist in high-quality metal constructions. From individual parts
     to fully welded assemblies — traditional craftsmanship with modern technology.
@@ -215,7 +214,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Konstruktionen
-  kicker: Möglichkeit 4.1
   h1: Konstruktiv in Konstruktionen
   intro: Seit über 100 Jahren Spezialist für hochwertige Metallkonstruktionen. Von einzelnen Bauteilen bis
     zu vollständig geschweißten Baugruppen — traditionelle Handwerkskunst mit moderner Technik.

@@ -71,9 +71,19 @@ const services = defineCollection({
     title: z.string(),
     slug: z.string(), // canonical NL route, e.g. "plaatwerk/rvs"
     template: z.enum(["overview", "service"]).default("service"),
-    group: z.enum(["plaatwerk", "snijden", "lastechniek", "samenstellen", "sector", "hoofd"]),
+    // Bepaalt in welke kolom van het menu "Mogelijkheden" deze pagina komt te
+    // staan; `sector` zet hem in het sectorenmenu. Zie src/utils/menu.ts.
+    group: z.enum(["plaatwerk", "snijden", "lastechniek", "samenstellen", "sector"]),
     order: z.number().default(50),
-    kicker: z.string(),
+    // Korte naam in het menu en de footer. Leeg → de gewone titel. Bestaat
+    // omdat een paginatitel vaak langer is dan in een menukolom past
+    // ("RVS-plaatwerk" → "RVS").
+    menuLabel: z.string().optional(),
+    // Staat deze dienst in het rijtje onder "Diensten" in de footer?
+    inFooter: z.boolean().default(false),
+    // Het regeltje boven de titel. Leeg → afgeleid uit de menupositie
+    // ("Plaatwerk 1.2"); zie kickerVoor() in src/utils/menu.ts.
+    kicker: z.string().optional(),
     h1: z.string(),
     intro: z.string(),
     foto: z.string().optional(),

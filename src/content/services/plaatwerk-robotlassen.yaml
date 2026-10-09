@@ -3,7 +3,6 @@ slug: plaatwerk/robotlassen
 template: service
 group: lastechniek
 order: 43
-kicker: Lastechniek 3.3
 h1: (Cobot)robotlassen — geautomatiseerd lassen in serie
 intro: Bij seriematig laswerk is consistentie geen luxe, maar een vereiste. Voor grotere series zetten
   we geautomatiseerd lassen in via een vaste partner, terwijl het plaatwerk, het samenstellen en de nabewerking
@@ -98,7 +97,6 @@ translated:
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: (Cobot) robot welding
-  kicker: Welding technology 3.3
   h1: (Cobot) robot welding — automated welding in series
   intro: For series welding work, consistency is not a luxury but a requirement. For larger series we bring
     in automated welding through a regular partner, while the sheet metal work, assembly and finishing take
@@ -188,7 +186,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: (Cobot-)Roboterschweißen
-  kicker: Schweißtechnik 3.3
   h1: (Cobot-)Roboterschweißen — automatisiertes Schweißen in Serie
   intro: Bei Serienschweißarbeit ist Gleichmäßigkeit kein Luxus, sondern eine Voraussetzung. Für größere
     Serien setzen wir automatisiertes Schweißen über einen festen Partner ein, während Blechbearbeitung,

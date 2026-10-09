@@ -3,7 +3,6 @@ slug: "plaatwerk/ontbramen"
 template: "service"
 group: "plaatwerk"
 order: 26
-kicker: "Plaatwerk 1.7"
 h1: "Ontbramen"
 intro: "Na het lasersnijden worden randen ontbraamd: veilig in gebruik, klaar voor de volgende bewerking en netjes afgewerkt."
 heroPhoto:
@@ -33,7 +32,6 @@ translated: ["nl"]
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Deburring
-  kicker: Sheet metal work 1.7
   h1: Deburring
   intro: 'After laser cutting, edges are deburred: safe to handle, ready for the next operation and neatly
     finished.'
@@ -75,7 +73,6 @@ en:
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Entgraten
-  kicker: Blechbearbeitung 1.7
   h1: Entgraten
   intro: 'Nach dem Laserschneiden werden die Kanten entgratet: sicher in der Handhabung, bereit für den
     nächsten Arbeitsgang und sauber ausgeführt.'

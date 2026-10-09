@@ -13,6 +13,7 @@ import { faqJsonLd } from "@utils/seo";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { localizeEntry } from "@utils/content";
+import { kickerVoor } from "@utils/menu";
 import { LOCALES } from "@utils/locales";
 import type { Locale } from "@data/site";
 
@@ -41,6 +42,7 @@ const s = localizeEntry(entry.data, locale);
 const nav = (slug: string) => localizePath(slug, locale);
 const isOverview = s.template === "overview";
 const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
+const kicker = await kickerVoor(s.slug, locale, s.kicker);
 
 // De overzichtspagina heeft geen Service-schema, maar wel een FAQ-blok als er
 // vragen staan. De ServiceLayout regelt dat voor de detailpagina's zelf.
@@ -59,7 +61,7 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
       jsonld={overviewJsonld}
     >
       <SplitHero
-        kicker={s.kicker}
+        kicker={kicker}
         title={s.h1}
         lead={s.intro}
         image={heroImg}

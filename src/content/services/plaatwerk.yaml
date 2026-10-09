@@ -1,8 +1,10 @@
 title: Plaatwerk
+menuLabel: "Plaatwerk"
 slug: plaatwerk
 template: overview
-group: hoofd
+group: "plaatwerk"
 order: 10
+inFooter: true
 kicker: Mogelijkheid 1.0
 h1: Perfectie in plaatwerk
 intro: Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, kanten en afwerken
@@ -116,6 +118,7 @@ translated:
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
+  menuLabel: "Sheet metal"
   title: Sheet metal work
   kicker: Capability 1.0
   h1: Perfection in sheet metal work
@@ -212,6 +215,7 @@ en:
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
+  menuLabel: "Blechbearbeitung"
   title: Blechbearbeitung
   kicker: Möglichkeit 1.0
   h1: Perfektion in der Blechbearbeitung
