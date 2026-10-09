@@ -12,6 +12,7 @@ import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
 import { serviceImageFor } from "@data/images";
 import { photo } from "@utils/photos";
+import { bankFoto } from "@utils/fotobank";
 import { kickerVoor } from "@utils/menu";
 import { SITE } from "@data/site";
 import type { CollectionEntry } from "astro:content";
@@ -24,7 +25,8 @@ const nav = (slug: string) => localizePath(slug, locale);
 
 // Zonder eigen kicker: de menukolom en het nummer waar deze pagina staat.
 const kicker = await kickerVoor(s.slug, locale, s.kicker);
-const heroImg = photo(s.foto) ?? serviceImageFor(s.slug);
+// Eigen upload gaat voor, dan de keuze uit de fotobank, dan het standaardbeeld.
+const heroImg = photo(s.foto) ?? (await bankFoto(s.fotobank)) ?? serviceImageFor(s.slug);
 // Eigen foto uit het CMS gaat voor; zonder upload valt de pagina terug op
 // het standaardbeeld van haar groep in src/data/images.ts.
 /*

@@ -87,6 +87,9 @@ const services = defineCollection({
     h1: z.string(),
     intro: z.string(),
     foto: z.string().optional(),
+    // Keuze uit de fotobank. De eigen upload hierboven gaat voor; staat er
+    // geen van beide, dan valt de pagina terug op het standaardbeeld.
+    fotobank: z.string().optional(),
     midFoto: z.string().optional(),
     heroPhoto: photo,
     body: z.array(z.string()).default([]),
@@ -116,6 +119,23 @@ const services = defineCollection({
     // Which locales have fully translated copy. NL is always the source of truth.
     translated: z.array(z.enum(["nl", "en", "de"])).default(["nl"]),
   })),
+});
+
+/**
+ * Fotobank: de officiële bedrijfsfotografie als CMS-items.
+ *
+ * Stond eerder als vaste importlijst in src/data/images.ts, waardoor je een
+ * foto alleen kon wijzigen door code aan te passen — en op een dienstpagina
+ * helemaal niet kon kiezen welke het werd. Nu is elke foto een item dat je op
+ * elke pagina kunt aanwijzen, en vervang je hem op één plek voor de hele site.
+ */
+const fotos = defineCollection({
+  loader: glob({ pattern: "*.yaml", base: "./src/content/fotos" }),
+  schema: z.object({
+    naam: z.string(),
+    foto: z.string(),
+    omschrijving: z.string(),
+  }),
 });
 
 /** Machine park */
@@ -235,4 +255,4 @@ const certifications = defineCollection({
   })),
 });
 
-export const collections = { services, machines, vacancies, projects, sectors, certifications, articles, blogQueue };
+export const collections = { services, fotos, machines, vacancies, projects, sectors, certifications, articles, blogQueue };

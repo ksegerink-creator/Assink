@@ -11,21 +11,6 @@ import type { ImageMetadata } from "astro";
  * hieronder importeren en aan de juiste sleutel koppelen — de lay-out van
  * de pagina's hoeft daarvoor niet aangepast te worden.
  */
-import asLasserHal from "../assets/photos/as-lasser-hal.jpg";       // lasser met A&S-trui, serie RVS-delen (2T8A9484)
-import asTigLassen from "../assets/photos/as-tig-lassen.jpg";       // TIG-lassen, blauw zijprofiel (M59A1512)
-import asLastafel from "../assets/photos/as-lastafel.jpg";          // lasser aan lastafel, karakteristiek (M59A1228)
-import asLasafdeling from "../assets/photos/as-lasafdeling.jpg";    // lasafdeling breed, twee werkstations (M59A1476)
-import asKantbank from "../assets/photos/as-kantbank.jpg";          // operator aan de kantbank (2T8A9370)
-import asKantenDetail from "../assets/photos/as-kanten-detail.jpg"; // kantbankgereedschap met plaatdeel (M59A1528)
-import asBesturing from "../assets/photos/as-besturing.jpg";        // machinebesturing / werkvoorbereiding (DSC_4762)
-import asVakman from "../assets/photos/as-vakman.jpg";              // vakman met stalen profiel, lachend (M59A1503)
-import asPortret from "../assets/photos/as-portret.jpg";            // medewerker in A&S-polo, portret (M59A1482)
-import asProductRvs from "../assets/photos/as-product-rvs.jpg";     // gekante RVS-delen, close-up (M59A1653)
-import asAfwerking from "../assets/photos/as-afwerking.jpg";        // nabewerken met vonken, handen (M59A1391)
-import asHal from "../assets/photos/as-hal.jpg";                    // hal met vacuümheffer (M59A1608)
-import asPand from "../assets/photos/as-pand.jpg";                  // bedrijfspand met naam op gevel (2022)
-import asStralen from "../assets/photos/as-stralen.jpg";            // straalcabine met medewerker (2T8A9554)
-import asBoren from "../assets/photos/as-boren.jpg";                // boren/bewerken (M59A1370)
 
 /**
  * Machinefoto's komen uit het CMS, niet uit de vaste fotobank, en kunnen daar
@@ -52,9 +37,46 @@ function uploadFoto(map: string): ImageMetadata {
   return UPLOADS[pad];
 }
 
+/**
+ * Een foto uit de fotobank (src/content/fotos → src/assets/uploads/fotobank).
+ *
+ * Deze lijst bestond uit vaste imports op bestandsnaam. Dat brak zodra iemand
+ * een foto in het CMS verving: Keystatic bewaart een vervangen .webp gerust
+ * als .png, en dan bestond het geïmporteerde pad niet meer. We zoeken daarom
+ * op naam, ongeacht het bestandstype — net als bij de machinefoto's hieronder.
+ */
+function bankBeeld(naam: string): ImageMetadata {
+  const prefix = `/src/assets/uploads/fotobank/${naam}.`;
+  const pad = Object.keys(UPLOADS).find((k) => k.startsWith(prefix));
+  if (!pad) {
+    throw new Error(
+      `Fotobank: geen afbeelding gevonden voor "${naam}" ` +
+        "(verwacht in src/assets/uploads/fotobank/). Is hij in het CMS verwijderd? " +
+        "Upload er een nieuwe bij het item, of haal de verwijzing hier weg.",
+    );
+  }
+  return UPLOADS[pad];
+}
+
+const asLasserHal = bankBeeld("lasser-in-de-hal");
+const asTigLassen = bankBeeld("tig-lassen");
+const asLastafel = bankBeeld("lastafel");
+const asLasafdeling = bankBeeld("lasafdeling");
+const asKantbank = bankBeeld("kantbank");
+const asKantenDetail = bankBeeld("kantbank-detail");
+const asBesturing = bankBeeld("machinebesturing");
+const asVakman = bankBeeld("vakman-met-profiel");
+const asPortret = bankBeeld("portret-medewerker");
+const asProductRvs = bankBeeld("rvs-product");
+const asAfwerking = bankBeeld("nabewerken");
+const asHal = bankBeeld("productiehal");
+const asPand = bankBeeld("bedrijfspand");
+const asStralen = bankBeeld("straalcabine");
+const asBoren = bankBeeld("boren");
+const asHistorie = bankBeeld("historie-productiehal");
+
 const asTruLaser = uploadFoto("machines/trulaser-3040");           // Trumpf TruLaser 3040, vlakbedlaser
 const asTruLaserTube = uploadFoto("machines/trulaser-tube-3000");  // Trumpf TruLaser Tube 3000, buislaser
-import asHistorie from "../assets/photos/as-historie.png";          // historisch beeld productiehal (archief)
 
 /** Sleutel → beeld. Elke fotopositie op de site verwijst hiernaar. */
 export const IMAGES: Record<string, ImageMetadata | undefined> = {
