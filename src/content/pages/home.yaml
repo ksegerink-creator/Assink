@@ -63,12 +63,9 @@ proef:
   quote: 'Kwaliteit zie je in het detail: de lasnaad, de zetting, de maat.'
   quoteFoto: /src/assets/uploads/proef/quoteFoto.jpg
   details:
-    - foto: /src/assets/uploads/proef/details/0/foto.jpg
-      bijschrift: Kantwerk · ± 0,2 mm
-    - foto: /src/assets/uploads/proef/details/1/foto.jpg
-      bijschrift: Kantwerk
+    - foto: /src/assets/uploads/proef/details/0/foto.JPG
+    - foto: /src/assets/uploads/proef/details/1/foto.jpeg
     - foto: /src/assets/uploads/proef/details/2/foto.jpg
-      bijschrift: Afwerking
 mensen:
   kop: Al {jaren} jaar mensenwerk
   tekst: >-
