@@ -1,91 +1,120 @@
-seoTitel: "Werken bij"
-seoOmschrijving: "Vacatures bij Assink & Schipholt in Hengelo: lassers, kanters, werkvoorbereiders, stages en vakantiewerk. Vakmanschap in de metaal sinds 1919."
-heroKicker: "Werken bij · Hengelo (Ov.)"
-heroTitelRegel1: "Vakwerk is"
-heroTitelRegel2: "mensenwerk"
-heroTekst: "Bij Assink & Schipholt maak je met je handen én je hoofd. Van enkelstuks tot serie, van plaat tot compleet gelast frame — met korte lijnen en collega's die hun vak verstaan."
-heroFoto: "/src/assets/uploads/werken-bij/heroFoto.jpg"
+heroKicker: Werken bij · Hengelo (Ov.)
+heroTitelRegel1: Vakwerk is
+heroTitelRegel2: mensenwerk
+heroTekst: >-
+  Bij Assink & Schipholt maak je met je handen én je hoofd. Van enkelstuks tot
+  serie, van plaat tot compleet gelast frame — met korte lijnen en collega's die
+  hun vak verstaan.
+heroFoto: /src/assets/uploads/werken-bij/heroFoto.jpg
 waarom:
-  - { titel: "Echt werk", tekst: "Je maakt producten die je terugziet: frames, behuizingen en machines voor echte klanten — geen anoniem lopende-bandwerk." }
-  - { titel: "Modern machinepark", tekst: "Lasersnijden, buislaser, laserlassen en servo-elektrische kantbanken. Je werkt met goed en actueel gereedschap." }
-  - { titel: "Ruimte om te groeien", tekst: "SBB-erkend leerbedrijf. Wij leiden zelf op — van leerling tot allround vakman of -vrouw, in je eigen tempo." }
-sfeerFoto1: "/src/assets/uploads/werken-bij/sfeerFoto1.jpg"
-sfeerFoto2: "/src/assets/uploads/werken-bij/sfeerFoto2.jpg"
-sfeerFoto3: "/src/assets/uploads/werken-bij/sfeerFoto3.jpg"
-biedenKop: "Wat wij bieden"
+  - titel: Echt werk
+    tekst: >-
+      Je maakt producten die je terugziet: frames, behuizingen en machines voor
+      echte klanten — geen anoniem lopende-bandwerk.
+  - titel: Modern machinepark
+    tekst: >-
+      Lasersnijden, buislaser, laserlassen en servo-elektrische kantbanken. Je
+      werkt met goed en actueel gereedschap.
+  - titel: Ruimte om te groeien
+    tekst: >-
+      SBB-erkend leerbedrijf. Wij leiden zelf op — van leerling tot allround
+      vakman of -vrouw, in je eigen tempo.
+sfeerFoto1: /src/assets/uploads/werken-bij/sfeerFoto1.jpg
+sfeerFoto2: /src/assets/uploads/werken-bij/sfeerFoto2.jpg
+sfeerFoto3: /src/assets/uploads/werken-bij/sfeerFoto3.jpg
+biedenKop: Wat wij bieden
 bieden:
-  - "Marktconforme primaire en secundaire arbeidsvoorwaarden"
-  - "Opleiding- en ontwikkelingsmogelijkheden"
-  - "Afwisselend werk in een enthousiaste en ambitieuze omgeving"
-  - "Vakantiedagen en ADV volgens de CAO Klein Metaal"
-  - "Een goede werksfeer met prima collega's"
-  - "Reiskostenvergoeding"
-vacaturesKop: "Openstaande vacatures"
-ctaKop: "Gewoon eens komen kijken?"
-ctaTekst: "Loop een dag mee op de werkvloer. Bel of mail ons — dan plannen we wat in."
-
-# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+  - Marktconforme primaire en secundaire arbeidsvoorwaarden
+  - Opleiding- en ontwikkelingsmogelijkheden
+  - Afwisselend werk in een enthousiaste en ambitieuze omgeving
+  - Vakantiedagen en ADV volgens de CAO Klein Metaal
+  - Een goede werksfeer met prima collega's
+  - Reiskostenvergoeding
+vacaturesKop: Openstaande vacatures
+ctaKop: Gewoon eens komen kijken?
+ctaTekst: Loop een dag mee op de werkvloer. Bel of mail ons — dan plannen we wat in.
+seoTitel: Werken bij
+seoOmschrijving: >-
+  Vacatures bij Assink & Schipholt in Hengelo: lassers, kanters,
+  werkvoorbereiders, stages en vakantiewerk. Vakmanschap in de metaal sinds
+  1919.
 en:
-  seoTitel: Careers
-  seoOmschrijving: 'Vacancies at Assink & Schipholt in Hengelo: welders, press brake operators, production
-    engineers, internships and holiday work. Craftsmanship in metal since 1919.'
   heroKicker: Careers · Hengelo, the Netherlands
   heroTitelRegel1: Craftsmanship is
   heroTitelRegel2: people's work
-  heroTekst: At Assink & Schipholt you work with your hands and your head. From one-offs to series, from
-    sheet to a fully welded frame — with short lines of communication and colleagues who know their trade.
+  heroTekst: >-
+    At Assink & Schipholt you work with your hands and your head. From one-offs
+    to series, from sheet to a fully welded frame — with short lines of
+    communication and colleagues who know their trade.
   waarom:
-  - titel: Real work
-    tekst: 'You make products you see again: frames, enclosures and machines for real customers — not anonymous
-      production-line work.'
-  - titel: Modern machinery
-    tekst: Laser cutting, tube laser, laser welding and servo-electric press brakes. You work with good,
-      up-to-date equipment.
-  - titel: Room to grow
-    tekst: An SBB-accredited training company. We train our own people — from apprentice to all-round professional,
-      at your own pace.
+    - titel: Real work
+      tekst: >-
+        You make products you see again: frames, enclosures and machines for
+        real customers — not anonymous production-line work.
+    - titel: Modern machinery
+      tekst: >-
+        Laser cutting, tube laser, laser welding and servo-electric press
+        brakes. You work with good, up-to-date equipment.
+    - titel: Room to grow
+      tekst: >-
+        An SBB-accredited training company. We train our own people — from
+        apprentice to all-round professional, at your own pace.
   biedenKop: What we offer
   bieden:
-  - Competitive primary and secondary employment terms
-  - Training and development opportunities
-  - Varied work in an enthusiastic and ambitious environment
-  - Holiday and ADV days in line with the CAO Klein Metaal collective agreement
-  - A good working atmosphere with solid colleagues
-  - Travel allowance
+    - Competitive primary and secondary employment terms
+    - Training and development opportunities
+    - Varied work in an enthusiastic and ambitious environment
+    - >-
+      Holiday and ADV days in line with the CAO Klein Metaal collective
+      agreement
+    - A good working atmosphere with solid colleagues
+    - Travel allowance
   vacaturesKop: Current vacancies
   ctaKop: Fancy coming to take a look?
-  ctaTekst: Spend a day on the shop floor. Call or email us and we will arrange something.
-
-# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+  ctaTekst: >-
+    Spend a day on the shop floor. Call or email us and we will arrange
+    something.
+  seoTitel: Careers
+  seoOmschrijving: >-
+    Vacancies at Assink & Schipholt in Hengelo: welders, press brake operators,
+    production engineers, internships and holiday work. Craftsmanship in metal
+    since 1919.
 de:
-  seoTitel: Karriere
-  seoOmschrijving: 'Offene Stellen bei Assink & Schipholt in Hengelo: Schweißer, Abkanter, Arbeitsvorbereiter,
-    Praktika und Ferienarbeit. Handwerkskunst in Metall seit 1919.'
   heroKicker: Karriere · Hengelo (NL)
   heroTitelRegel1: Handwerk ist
   heroTitelRegel2: Menschenarbeit
-  heroTekst: Bei Assink & Schipholt arbeiten Sie mit den Händen und mit dem Kopf. Von Einzelstücken bis
-    zur Serie, vom Blech bis zum komplett geschweißten Rahmen — mit kurzen Wegen und Kollegen, die ihr Fach
-    beherrschen.
+  heroTekst: >-
+    Bei Assink & Schipholt arbeiten Sie mit den Händen und mit dem Kopf. Von
+    Einzelstücken bis zur Serie, vom Blech bis zum komplett geschweißten Rahmen
+    — mit kurzen Wegen und Kollegen, die ihr Fach beherrschen.
   waarom:
-  - titel: Echte Arbeit
-    tekst: 'Sie fertigen Produkte, die Sie wiedersehen: Rahmen, Gehäuse und Maschinen für echte Kunden —
-      keine anonyme Fließbandarbeit.'
-  - titel: Moderner Maschinenpark
-    tekst: Laserschneiden, Rohrlaser, Laserschweißen und servoelektrische Abkantpressen. Sie arbeiten mit
-      gutem, aktuellem Equipment.
-  - titel: Raum zur Entwicklung
-    tekst: SBB-anerkannter Ausbildungsbetrieb. Wir bilden selbst aus — von der Ausbildung bis zur Allround-Fachkraft,
-      im eigenen Tempo.
+    - titel: Echte Arbeit
+      tekst: >-
+        Sie fertigen Produkte, die Sie wiedersehen: Rahmen, Gehäuse und
+        Maschinen für echte Kunden — keine anonyme Fließbandarbeit.
+    - titel: Moderner Maschinenpark
+      tekst: >-
+        Laserschneiden, Rohrlaser, Laserschweißen und servoelektrische
+        Abkantpressen. Sie arbeiten mit gutem, aktuellem Equipment.
+    - titel: Raum zur Entwicklung
+      tekst: >-
+        SBB-anerkannter Ausbildungsbetrieb. Wir bilden selbst aus — von der
+        Ausbildung bis zur Allround-Fachkraft, im eigenen Tempo.
   biedenKop: Was wir bieten
   bieden:
-  - Marktgerechte Vergütung und Zusatzleistungen
-  - Möglichkeiten zur Aus- und Weiterbildung
-  - Abwechslungsreiche Arbeit in einem engagierten und ambitionierten Umfeld
-  - Urlaubs- und ADV-Tage gemäß Tarifvertrag CAO Klein Metaal
-  - Ein gutes Betriebsklima mit guten Kollegen
-  - Fahrtkostenzuschuss
+    - Marktgerechte Vergütung und Zusatzleistungen
+    - Möglichkeiten zur Aus- und Weiterbildung
+    - Abwechslungsreiche Arbeit in einem engagierten und ambitionierten Umfeld
+    - Urlaubs- und ADV-Tage gemäß Tarifvertrag CAO Klein Metaal
+    - Ein gutes Betriebsklima mit guten Kollegen
+    - Fahrtkostenzuschuss
   vacaturesKop: Offene Stellen
   ctaKop: Einfach mal vorbeikommen?
-  ctaTekst: Verbringen Sie einen Tag in der Produktion. Rufen Sie an oder schreiben Sie uns — dann vereinbaren
-    wir einen Termin.
+  ctaTekst: >-
+    Verbringen Sie einen Tag in der Produktion. Rufen Sie an oder schreiben Sie
+    uns — dann vereinbaren wir einen Termin.
+  seoTitel: Karriere
+  seoOmschrijving: >-
+    Offene Stellen bei Assink & Schipholt in Hengelo: Schweißer, Abkanter,
+    Arbeitsvorbereiter, Praktika und Ferienarbeit. Handwerkskunst in Metall seit
+    1919.
