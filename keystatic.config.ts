@@ -37,6 +37,21 @@ const foto = (label: string, description?: string) =>
     publicPath: "/src/assets/uploads/",
   });
 
+/**
+ * Keuze uit de fotobank, naast elk uploadveld.
+ *
+ * Elk fotoveld op de site had alleen een uploadknop. Je kon dus wel een nieuwe
+ * foto toevoegen, maar niet de fotografie kiezen die er al was — en op de
+ * dienstpagina's was het veld overal leeg, waardoor de getoonde foto in de
+ * code vastlag. Nu staat bij elke foto een keuzelijst.
+ */
+const uitBank = (label: string) =>
+  fields.relationship({
+    label: `${label} — uit de fotobank`,
+    collection: "fotobank",
+    description: "Kies een foto uit de bedrijfsfotografie. Laat leeg om de upload hieronder of het standaardbeeld te gebruiken.",
+  });
+
 // Fotoveld met een eigen submap per pagina (en per taal), zodat gelijknamige
 // velden van verschillende singletons elkaar niet overschrijven.
 const pageFoto =
@@ -196,6 +211,7 @@ const homepageSchema = () => ({
       titelRegel1: fields.text({ label: "Titel — regel 1" }),
       titelRegel2: fields.text({ label: "Titel — regel 2" }),
       copy: fields.text({ label: "Introzin", multiline: true }),
+      fotoBank: uitBank("Hero-foto"),
       foto: foto("Hero-foto", "Breed beeld achter de hero"),
       formulierTitel: fields.text({ label: "Titel offerteformulier" }),
     },
@@ -216,6 +232,7 @@ const homepageSchema = () => ({
           itemLabel: (p) => `${p.fields.waarde.value} — ${p.fields.label.value}`,
         },
       ),
+      pandFotoBank: uitBank("Pandfoto"),
       pandFoto: foto("Pandfoto"),
     },
     { label: "Intro", description: "Verhaal + feiten + pandfoto" },
@@ -228,6 +245,7 @@ const homepageSchema = () => ({
       omschrijving: fields.text({ label: "Omschrijving", multiline: true }),
       annotatie: fields.text({ label: "Technisch label op de foto" }),
       link: fields.text({ label: "Link (interne slug, bv. plaatwerk)" }),
+      fotoBank: uitBank("Foto van de tegel"),
       foto: foto("Foto"),
     }),
     {
@@ -238,9 +256,11 @@ const homepageSchema = () => ({
   proef: fields.object(
     {
       quote: fields.text({ label: "Quote", multiline: true }),
+      quoteFotoBank: uitBank("Achtergrondfoto quote"),
       quoteFoto: foto("Achtergrondfoto quote"),
       details: fields.array(
         fields.object({
+          fotoBank: uitBank("Detailfoto"),
           foto: foto("Detailfoto"),
           bijschrift: fields.text({ label: "Bijschrift" }),
         }),
@@ -253,6 +273,7 @@ const homepageSchema = () => ({
     {
       kop: fields.text({ label: "Kop", multiline: true, description: "Gebruik {jaren} voor het automatische jaartal, bv. 'Al {jaren} jaar mensenwerk'" }),
       tekst: fields.text({ label: "Tekst", multiline: true }),
+      fotoBank: uitBank("Foto"),
       foto: foto("Foto"),
     },
     { label: "Mensen & vakmanschap" },
@@ -264,10 +285,12 @@ const contactSchema = (ns: string) => ({
   kicker: fields.text({ label: "Kicker (bovenregel)" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
+  pandFotoBank: uitBank("Pandfoto"),
   pandFoto: pageFoto(ns)("Pandfoto"),
   pandBijschrift: fields.text({ label: "Bijschrift bij pandfoto" }),
   berichtKop: fields.text({ label: "Kop 'stuur een bericht'" }),
   berichtNote: fields.text({ label: "Toelichting bij formulier", multiline: true }),
+  werkFotoBank: uitBank("Foto bij formulier"),
   werkFoto: pageFoto(ns)("Foto bij formulier"),
   ...seoFields(),
 });
@@ -276,6 +299,7 @@ const overOnsSchema = (ns: string) => ({
   heroKicker: fields.text({ label: "Hero — kicker" }),
   heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
   heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
+  heroFotoBank: uitBank("Hero-foto"),
   heroFoto: pageFoto(ns)("Hero-foto"),
   lead: fields.text({ label: "Kop boven het verhaal", multiline: true, description: "Verschijnt links als H2, in kapitalen. Kort houden: drie regels is het maximum. Gebruik {jaren} voor het automatische jaartal." }),
   feiten: fields.array(
@@ -291,6 +315,7 @@ const overOnsSchema = (ns: string) => ({
   }),
   historieKop1: fields.text({ label: "Geschiedenis — kop regel 1" }),
   historieKop2: fields.text({ label: "Geschiedenis — kop regel 2" }),
+  historieFotoBank: uitBank("Geschiedenis — archieffoto (grote afdruk)"),
   historieFoto: pageFoto(ns)(
     "Geschiedenis — archieffoto (grote afdruk)",
     "Het oudste/mooiste archiefbeeld. Wordt naast de tijdlijn als afdruk getoond.",
@@ -310,6 +335,7 @@ const overOnsSchema = (ns: string) => ({
     fields.object({
       // Geen submap: Keystatic zet uploads van een array-item al in
       // <ns>/archief/<index>/, dus een extra "archief" zou dat verdubbelen.
+      fotoBank: uitBank("Archieffoto"),
       foto: pageFoto(ns)("Archieffoto"),
       jaar: fields.text({ label: "Jaartal of periode", description: "Bv. 1948 of 'jaren 60'. Onbekend? Laat leeg — liever geen jaartal dan een verzonnen jaartal." }),
       bijschrift: fields.text({ label: "Bijschrift", multiline: true, description: "Wat is er te zien? Wordt ook als alt-tekst gebruikt." }),
@@ -323,9 +349,12 @@ const overOnsSchema = (ns: string) => ({
   vakEyebrow: fields.text({ label: "Vakmanschap — eyebrow" }),
   vakKop: fields.text({ label: "Vakmanschap — kop" }),
   vakTekst: fields.text({ label: "Vakmanschap — tekst", multiline: true }),
+  vakFotoBank: uitBank("Vakmanschap — foto"),
   vakFoto: pageFoto(ns)("Vakmanschap — foto"),
+  pandFotoBank: uitBank("Pandfoto (nu)"),
   pandFoto: pageFoto(ns)("Pandfoto (nu)"),
   pandBijschrift: fields.text({ label: "Bijschrift pandfoto" }),
+  pandArchiefFotoBank: uitBank("Pandfoto (toen)"),
   pandArchiefFoto: pageFoto(ns)("Pandfoto (toen)", "Oude foto van het pand of de smederij. Staat er één, dan verschijnt de pandfoto als 'toen & nu'."),
   pandArchiefJaar: fields.text({ label: "Jaartal bij de oude pandfoto" }),
   pandArchiefBijschrift: fields.text({ label: "Bijschrift bij de oude pandfoto", multiline: true }),
@@ -336,6 +365,7 @@ const offerteSchema = (ns: string) => ({
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
+  werkFotoBank: uitBank("Foto"),
   werkFoto: pageFoto(ns)("Foto"),
   stappen: fields.array(
     fields.object({
@@ -351,6 +381,7 @@ const kwaliteitSchema = (ns: string) => ({
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
+  heroFotoBank: uitBank("Hero-foto"),
   heroFoto: pageFoto(ns)("Hero-foto"),
   proces: fields.array(
     fields.object({
@@ -366,6 +397,7 @@ const machineparkSchema = (ns: string) => ({
   kicker: fields.text({ label: "Kicker" }),
   titel: fields.text({ label: "Titel (H1)" }),
   lead: fields.text({ label: "Introzin", multiline: true }),
+  heroFotoBank: uitBank("Hero-foto"),
   heroFoto: pageFoto(ns)("Hero-foto"),
   ...seoFields(),
 });
@@ -375,6 +407,7 @@ const werkenBijSchema = (ns: string) => ({
   heroTitelRegel1: fields.text({ label: "Hero — titel regel 1" }),
   heroTitelRegel2: fields.text({ label: "Hero — titel regel 2" }),
   heroTekst: fields.text({ label: "Hero — tekst", multiline: true }),
+  heroFotoBank: uitBank("Hero-foto"),
   heroFoto: pageFoto(ns)("Hero-foto"),
   waarom: fields.array(
     fields.object({
@@ -383,8 +416,11 @@ const werkenBijSchema = (ns: string) => ({
     }),
     { label: "Waarom hier (blokken)", itemLabel: (p) => p.fields.titel.value },
   ),
+  sfeerFoto1Bank: uitBank("Sfeerfoto 1 (breed)"),
   sfeerFoto1: pageFoto(ns)("Sfeerfoto 1 (breed)"),
+  sfeerFoto2Bank: uitBank("Sfeerfoto 2"),
   sfeerFoto2: pageFoto(ns)("Sfeerfoto 2"),
+  sfeerFoto3Bank: uitBank("Sfeerfoto 3"),
   sfeerFoto3: pageFoto(ns)("Sfeerfoto 3"),
   biedenKop: fields.text({ label: "Arbeidsvoorwaarden — kop" }),
   bieden: fields.array(fields.text({ label: "Voorwaarde" }), {
@@ -607,10 +643,12 @@ const dienstSchema = () => metVertalingen({
           collection: "fotobank",
           description: "Kies een foto uit de bedrijfsfotografie. Dit is de gewone manier om de hero-foto te wijzigen.",
         }),
+        fotoBank: uitBank("Hero-foto"),
         foto: pageFoto("services")(
           "Eigen hero-foto uploaden (optioneel)",
           "Alleen nodig voor een foto die niet in de fotobank staat. Een upload hier gaat voor op de keuze hierboven.",
         ),
+        midFotoBank: uitBank("Foto halverwege de pagina"),
         midFoto: pageFoto("services")(
           "Foto halverwege de pagina",
           "Staat naast het processchema. Laat je dit leeg, dan blijft die sectie zonder foto.",
@@ -820,6 +858,7 @@ export default config({
           }),
           { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
         ),
+        fotoBank: uitBank("Foto van de machine"),
         foto: pageFoto("machines")("Foto", "Laat leeg voor de standaardfoto van deze machine."),
         photo: photoMeta(),
       }, "name"),
@@ -870,6 +909,7 @@ export default config({
         order: fields.number({ label: "Volgorde", defaultValue: 50 }),
         sector: fields.text({ label: "Sector" }),
         summary: fields.text({ label: "Samenvatting", multiline: true }),
+        fotoBank: uitBank("Foto van het project"),
         foto: pageFoto("projecten")("Foto", "Laat leeg voor de standaardfoto van dit project."),
         photo: photoMeta(),
       },
@@ -897,6 +937,7 @@ export default config({
           itemLabel: (p) => (p.value || "").slice(0, 45),
         }),
         open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
+        fotoBank: uitBank("Foto bij de vacature"),
         foto: pageFoto("vacatures")("Foto", "Laat leeg voor de standaardfoto bij deze vacature."),
         photo: photoMeta(),
       }, "title"),
@@ -939,6 +980,7 @@ export default config({
           }),
           { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
         ),
+        fotoBank: uitBank("Foto bij het artikel"),
         foto: pageFoto("artikelen")("Foto (optioneel)"),
         gepubliceerd: fields.checkbox({
           label: "Gepubliceerd",

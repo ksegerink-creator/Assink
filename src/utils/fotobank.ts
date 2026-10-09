@@ -46,3 +46,16 @@ export async function bankAlt(naam: string | null | undefined): Promise<string |
   if (!naam) return undefined;
   return (await laad()).get(naam)?.omschrijving;
 }
+
+/**
+ * Het beeld voor één fotopositie: eigen upload gaat voor, dan de keuze uit de
+ * fotobank, dan het standaardbeeld. Eén plek, zodat elke pagina dezelfde
+ * volgorde aanhoudt.
+ */
+export async function kiesFoto(
+  upload: string | null | undefined,
+  bank: string | null | undefined,
+  terugval?: ImageMetadata,
+): Promise<ImageMetadata | undefined> {
+  return photo(upload) ?? (await bankFoto(bank)) ?? terugval;
+}

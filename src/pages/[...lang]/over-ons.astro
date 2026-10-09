@@ -12,6 +12,7 @@ import { localizePath, toLocale } from "@utils/paths";
 import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 
 export function getStaticPaths() {
   return LOCALE_PATHS;
@@ -31,14 +32,20 @@ const fill = (s: string | null | undefined) => (s ?? "").replaceAll("{jaren}", S
    galerij "Uit het archief" en de oude pandfoto in het toen-&-nu-blok. Alle
    drie zijn optioneel: zonder foto verdwijnt het onderdeel in plaats van dat
    er een lege plek of ontwikkelplaceholder op de live site komt te staan. */
-const histFoto = photo(a.historieFoto);
+const histFoto = await kiesFoto(a.historieFoto, a.historieFotoBank);
 /* Alleen archieffoto's waarvan het beeld ook echt in de repo staat komen op de
    pagina. Zo kan een bijschrift al klaarstaan voordat de scan is geüpload,
    zonder dat er een ontwikkelplaceholder op de live site verschijnt. */
-const archief = (a.archief ?? [])
-  .map((p) => ({ ...p, beeld: photo(p.foto) }))
-  .filter((p) => Boolean(p.beeld));
-const pandToen = photo(a.pandArchiefFoto);
+const archief = (
+  await Promise.all(
+    (a.archief ?? []).map(async (p) => ({ ...p, beeld: await kiesFoto(p.foto, p.fotoBank) })),
+  )
+).filter((p) => Boolean(p.beeld));
+const pandToen = await kiesFoto(a.pandArchiefFoto, a.pandArchiefFotoBank);
+// Beelden vooraf oplossen: in de opmaak zelf kan geen await staan.
+const projectBeelden = await Promise.all(
+  projects.map(async (p) => ({ p, beeld: await kiesFoto(p.data.foto, p.data.fotoBank) })),
+);
 const archiefAlt = t(locale, "altArchive");
 const zoomLabel = t(locale, "archiveEnlarge");
 /* De lightbox hoeft alleen mee zodra er ook echt iets te vergroten valt. */
@@ -50,12 +57,12 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
   canonicalSlug="over-ons"
   trail={[{ label: t(locale, "about"), slug: "over-ons" }]}
   altLocales={["nl", "en", "de"]}
-  ogPhoto={photo(a.heroFoto)}
+  ogPhoto={await kiesFoto(a.heroFoto, a.heroFotoBank)}
 >
   <!-- Hero: pagina opent met de productie -->
   <SplitHero
     kicker={a.heroKicker}
-    image={photo(a.heroFoto)}
+    image={await kiesFoto(a.heroFoto, a.heroFotoBank)}
     alt={t(locale, "altProductionHall")}
     position="center 40%"
   >
@@ -159,7 +166,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
   <section class="sec">
     <div class="wrap acraft">
       <figure class="acraft__photo rv">
-        <IndustrialImage src={photo(a.vakFoto)} alt={t(locale, "altWelderTable")} ratio="4/5" position="55% center" />
+        <IndustrialImage src={await kiesFoto(a.vakFoto, a.vakFotoBank)} alt={t(locale, "altWelderTable")} ratio="4/5" position="55% center" />
       </figure>
       <div class="rv">
         <span class="eyebrow mono">{a.vakEyebrow}</span>
@@ -205,9 +212,9 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
           <span class="mono">{t(locale, "references")}</span>
         </div>
         <div class="aproj">
-          {projects.map((p) => (
+          {projectBeelden.map(({ p, beeld }) => (
             <figure class="rv">
-              <IndustrialImage src={photo(p.data.foto)} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
+              <IndustrialImage src={beeld} alt={p.data.photo.subject} ratio="4/3" placeholder={`Foto benodigd — ${p.data.photo.subject}`} />
               <figcaption>
                 <span class="mono">{p.data.sector}</span>
                 <h3>{p.data.title}</h3>
@@ -240,7 +247,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
           <div class="apand__col">
             <span class="mono apand__tag">{t(locale, "archiveNow")}</span>
             <figure class="apand__now">
-              <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="4/3" />
+              <IndustrialImage src={await kiesFoto(a.pandFoto, a.pandFotoBank)} alt={t(locale, "altBuilding")} ratio="4/3" />
               <figcaption class="mono">{a.pandBijschrift}</figcaption>
             </figure>
           </div>
@@ -248,7 +255,7 @@ const heeftZoom = Boolean(histFoto) || archief.length > 0 || Boolean(pandToen);
       ) : (
         <div class="apand rv">
           <figure>
-            <IndustrialImage src={photo(a.pandFoto)} alt={t(locale, "altBuilding")} ratio="21/9" />
+            <IndustrialImage src={await kiesFoto(a.pandFoto, a.pandFotoBank)} alt={t(locale, "altBuilding")} ratio="21/9" />
             <figcaption class="mono">{a.pandBijschrift}</figcaption>
           </figure>
         </div>

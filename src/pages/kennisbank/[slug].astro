@@ -5,6 +5,7 @@ import { getImage } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 import { imageFor } from "@data/images";
 import { articleJsonLd } from "@utils/seo";
 import { SITE } from "@data/site";
@@ -34,7 +35,7 @@ const datum = (iso: string) =>
 
 // Deelafbeelding: eigen artikelfoto als die is ingesteld, anders een passende
 // sfeerfoto uit de vaste beeldregistratie.
-const ogPhoto = photo(a.foto) ?? imageFor("home.detail.zetwerk");
+const ogPhoto = await kiesFoto(a.foto, a.fotoBank) ?? imageFor("home.detail.zetwerk");
 
 const site = Astro.site ?? new URL(SITE.url);
 const articleImgSrc = (await getImage({ src: ogPhoto, width: 1200, height: 630, format: "jpeg", fit: "cover" })).src;

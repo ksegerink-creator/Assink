@@ -14,5 +14,5 @@
     "translated",
     "inFooter"
   ],
-  "fotoVeldPatroon": "^(foto|midFoto|.*Foto[0-9]*)$"
+  "fotoVeldPatroon": "^(foto|midFoto|fotobank|.*Foto[0-9]*|.*Bank)$"
 }

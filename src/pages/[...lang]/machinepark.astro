@@ -11,6 +11,7 @@ import IndustrialImage from "@components/media/IndustrialImage.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 
 export function getStaticPaths() {
   return LOCALE_PATHS;
@@ -20,6 +21,11 @@ const locale = toLocale(Astro.params.lang);
 const m0 = await readPage("machinepark", locale);
 
 const machines = localizeEntries((await getCollection("machines")).sort((a, b) => a.data.order - b.data.order), locale);
+
+// Beelden vooraf oplossen: in de opmaak zelf kan geen await staan.
+const machineBeelden = await Promise.all(
+  machines.map(async (m) => ({ m, machineImg: (await kiesFoto(m.data.foto, m.data.fotoBank)) ?? machineImageFor(m.id) })),
+);
 ---
 <PageLayout
   title={m0.seoTitel}
@@ -27,13 +33,13 @@ const machines = localizeEntries((await getCollection("machines")).sort((a, b) =
   canonicalSlug="machinepark"
   trail={[{ label: t(locale, "machinepark"), slug: "machinepark" }]}
   altLocales={["nl", "en", "de"]}
-  ogPhoto={photo(m0.heroFoto)}
+  ogPhoto={await kiesFoto(m0.heroFoto, m0.heroFotoBank)}
 >
   <SplitHero
     kicker={m0.kicker}
     title={m0.titel}
     lead={m0.lead}
-    image={photo(m0.heroFoto)}
+    image={await kiesFoto(m0.heroFoto, m0.heroFotoBank)}
     alt={t(locale, "altHallOverview")}
   />
 
@@ -41,8 +47,7 @@ const machines = localizeEntries((await getCollection("machines")).sort((a, b) =
     <div class="wrap">
       <SectionHead title={t(locale, "machinesHead")} index={`${machines.length} ${t(locale, "machinesIndex")}`} />
       <div class="mp rv">
-        {machines.map((m, i) => {
-          const machineImg = photo(m.data.foto) ?? machineImageFor(m.id);
+        {machineBeelden.map(({ m, machineImg }, i) => {
           return (
           <article class:list={["mp__row", { "mp__row--no-media": !machineImg }]}>
             {machineImg && (

@@ -9,6 +9,7 @@ import { localizePath, toLocale } from "@utils/paths";
 import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 
 export function getStaticPaths() {
   return LOCALE_PATHS;
@@ -27,13 +28,13 @@ const open = vacancies.filter((v) => v.data.open);
   canonicalSlug="vacatures"
   trail={[{ label: t(locale, "careers"), slug: "vacatures" }]}
   altLocales={["nl", "en", "de"]}
-  ogPhoto={photo(w.heroFoto)}
+  ogPhoto={await kiesFoto(w.heroFoto, w.heroFotoBank)}
 >
   <!-- Hero: portret + tekst naast elkaar, geen kaart-layout -->
   <SplitHero
     kicker={w.heroKicker}
     lead={w.heroTekst}
-    image={photo(w.heroFoto)}
+    image={await kiesFoto(w.heroFoto, w.heroFotoBank)}
     alt={t(locale, "altWeldingDeptEmployee")}
     position="center 30%"
   >
@@ -62,9 +63,9 @@ const open = vacancies.filter((v) => v.data.open);
   <!-- Fotostrip: de werkvloer -->
   <section class="vstrip">
     <div class="wrap vstrip__grid rv">
-      <figure><IndustrialImage src={photo(w.sfeerFoto1)} alt={t(locale, "altWeldingDept")} ratio="16/10" /></figure>
-      <figure><IndustrialImage src={photo(w.sfeerFoto2)} alt={t(locale, "altTigCloseup")} ratio="1/1" /></figure>
-      <figure><IndustrialImage src={photo(w.sfeerFoto3)} alt={t(locale, "altBlasting")} ratio="1/1" /></figure>
+      <figure><IndustrialImage src={await kiesFoto(w.sfeerFoto1, w.sfeerFoto1Bank)} alt={t(locale, "altWeldingDept")} ratio="16/10" /></figure>
+      <figure><IndustrialImage src={await kiesFoto(w.sfeerFoto2, w.sfeerFoto2Bank)} alt={t(locale, "altTigCloseup")} ratio="1/1" /></figure>
+      <figure><IndustrialImage src={await kiesFoto(w.sfeerFoto3, w.sfeerFoto3Bank)} alt={t(locale, "altBlasting")} ratio="1/1" /></figure>
     </div>
   </section>
 

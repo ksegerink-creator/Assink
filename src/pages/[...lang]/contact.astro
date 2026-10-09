@@ -10,6 +10,7 @@ import SplitHero from "@components/sections/SplitHero.astro";
 import SocialSection from "@components/sections/SocialSection.astro";
 import { CONTACT } from "@data/site";
 import { photo } from "@utils/photos";
+import { kiesFoto } from "@utils/fotobank";
 
 export function getStaticPaths() {
   return LOCALE_PATHS;
@@ -25,14 +26,14 @@ const nav = (slug: string) => localizePath(slug, locale);
   canonicalSlug="contact"
   trail={[{ label: t(locale, "contact"), slug: "contact" }]}
   altLocales={["nl", "en", "de"]}
-  ogPhoto={photo(c.pandFoto)}
+  ogPhoto={await kiesFoto(c.pandFoto, c.pandFotoBank)}
 >
   <!-- Kop + gegevens + pand in één compacte compositie -->
   <SplitHero
     kicker={c.kicker}
     title={c.titel}
     lead={c.lead}
-    image={photo(c.pandFoto)}
+    image={await kiesFoto(c.pandFoto, c.pandFotoBank)}
     alt={t(locale, "altBuilding")}
   >
     <div class="info">
@@ -55,7 +56,7 @@ const nav = (slug: string) => localizePath(slug, locale);
         <h2>{c.berichtKop}</h2>
         <p class="cform__note">{c.berichtNote}</p>
         <figure class="cform__photo">
-          <IndustrialImage src={photo(c.werkFoto)} alt={t(locale, "altPressTool")} ratio="4/3" />
+          <IndustrialImage src={await kiesFoto(c.werkFoto, c.werkFotoBank)} alt={t(locale, "altPressTool")} ratio="4/3" />
         </figure>
       </div>
       <form class="form rv" method="post" action="/api/aanvraag">
