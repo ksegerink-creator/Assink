@@ -66,7 +66,7 @@ function vertaalbaar<T extends z.ZodRawShape>(shape: T) {
 
 /** Services (plaatwerk, constructies, machinebouw, materials, sectors…) */
 const services = defineCollection({
-  loader: glob({ pattern: "*.yaml", base: "./src/content/services" }),
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/services" }),
   schema: z.object(vertaalbaar({
     title: z.string(),
     slug: z.string(), // canonical NL route, e.g. "plaatwerk/rvs"

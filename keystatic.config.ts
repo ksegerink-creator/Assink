@@ -564,6 +564,132 @@ const privacyPagina = singleton({
   },
 });
 
+/**
+ * Het formulier van een dienstpagina. Alle vijf de menukolommen delen hetzelfde
+ * formulier; alleen de map waarin de pagina staat verschilt. Zo zie je in de
+ * zijbalk dezelfde indeling als in het menu op de site.
+ */
+const dienstSchema = () => metVertalingen({
+        title: fields.slug({ name: { label: "Titel" } }),
+        slug: fields.text({ label: "URL-slug", description: "Canonieke route, bv. plaatwerk/rvs. Bepaalt de link en URL." }),
+        template: fields.select({
+          label: "Type pagina",
+          options: [
+            { label: "Detailpagina", value: "service" },
+            { label: "Overzichtspagina (met kaarten)", value: "overview" },
+          ],
+          defaultValue: "service",
+        }),
+        group: fields.select({
+          label: "Menugroep",
+          description: "Bepaalt in welke kolom van het menu Mogelijkheden deze pagina komt. Sector zet hem in het sectorenmenu.",
+          options: MENUGROEPEN,
+          defaultValue: "plaatwerk",
+        }),
+        order: fields.number({ label: "Volgorde", description: "Lager staat hoger in de menukolom.", defaultValue: 50 }),
+        menuLabel: fields.text({
+          label: "Menunaam (optioneel)",
+          description: 'Korte naam in het menu en de footer. Leeg laten = de gewone titel. Bv. titel "RVS-plaatwerk", menunaam "RVS".',
+        }),
+        inFooter: fields.checkbox({
+          label: "In de footer",
+          description: "Zet deze dienst in het rijtje onder Diensten, onderaan elke pagina.",
+          defaultValue: false,
+        }),
+        kicker: fields.text({
+          label: "Kicker (optioneel)",
+          description: 'Het regeltje boven de titel. Leeg laten = automatisch de menukolom en het nummer, bv. "Plaatwerk 1.2".',
+        }),
+        h1: fields.text({ label: "Titel (H1)" }),
+        intro: fields.text({ label: "Intro", multiline: true }),
+        foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
+        midFoto: pageFoto("services")(
+          "Foto halverwege de pagina",
+          "Staat naast het processchema. Laat je dit leeg, dan blijft die sectie zonder foto.",
+        ),
+        heroPhoto: photoMeta(),
+        bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
+        body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
+          label: "Tekst",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        materials: fields.array(fields.text({ label: "Materiaal" }), {
+          label: "Materialen",
+          itemLabel: (p) => p.value,
+        }),
+        process: fields.array(
+          fields.object({
+            step: fields.text({ label: "Stap" }),
+            desc: fields.text({ label: "Toelichting", multiline: true }),
+          }),
+          { label: "Proces", itemLabel: (p) => p.fields.step.value },
+        ),
+        specs: fields.array(
+          fields.object({
+            label: fields.text({ label: "Kenmerk" }),
+            value: fields.text({ label: "Waarde" }),
+          }),
+          { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
+        ),
+        applications: fields.array(fields.text({ label: "Toepassing" }), {
+          label: "Toepassingen",
+          itemLabel: (p) => p.value,
+        }),
+        faq: fields.array(
+          fields.object({
+            vraag: fields.text({ label: "Vraag" }),
+            antwoord: fields.text({ label: "Antwoord", multiline: true, description: "Kort en concreet: 40 tot 60 woorden werkt het best." }),
+          }),
+          { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
+        ),
+        related: fields.array(
+          fields.object({
+            slug: fields.text({ label: "Link (interne slug)" }),
+            label: fields.text({ label: "Label" }),
+            desc: fields.text({ label: "Omschrijving (optioneel)" }),
+          }),
+          { label: "Gerelateerde pagina's", itemLabel: (p) => p.fields.label.value },
+        ),
+        cards: fields.array(
+          fields.object({
+            slug: fields.text({ label: "Link (interne slug)" }),
+            label: fields.text({ label: "Label" }),
+            desc: fields.text({ label: "Omschrijving" }),
+          }),
+          { label: "Overzichtskaarten", itemLabel: (p) => p.fields.label.value },
+        ),
+        seo: fields.object(
+          {
+            title: fields.text({ label: "SEO-titel" }),
+            description: fields.text({ label: "SEO-omschrijving", multiline: true }),
+          },
+          { label: "SEO (optioneel)" },
+        ),
+        translated: fields.multiselect({
+          label: "Vertaald in",
+          options: [
+            { label: "Nederlands", value: "nl" },
+            { label: "Engels", value: "en" },
+            { label: "Duits", value: "de" },
+          ],
+          defaultValue: ["nl"],
+        }),
+}, "title");
+
+/**
+ * Eén map met dienstpagina's, als eigen ingang in de zijbalk. De kolommen
+ * tonen meteen de titel, de plek in het menu en of de pagina in de footer staat.
+ */
+const dienstenIn = (label: string, map: string) =>
+  collection({
+    label,
+    path: `src/content/services/${map}/*`,
+    slugField: "title",
+    columns: ["title", "order", "inFooter"],
+    format: { data: "yaml" },
+    schema: dienstSchema(),
+  });
+
 export default config({
   storage: import.meta.env.DEV
     ? { kind: "local" }
@@ -583,7 +709,8 @@ export default config({
         "homepage", "overOns", "kwaliteit", "machinepark", "contact",
         "offerte", "werkenBij", "kennisbank", "privacy",
       ],
-      Diensten: ["services", "sectoren"],
+      Mogelijkheden: ["dienstenPlaatwerk", "dienstenSnijden", "dienstenLastechniek", "dienstenSamenstellen"],
+      Sectoren: ["dienstenSectoren", "sectoren"],
       Vacatures: ["vacatures"],
       Kennisbank: ["artikelen", "blogOnderwerpen"],
       "Lijsten & referenties": ["machines", "certificeringen", "projecten"],
@@ -731,118 +858,11 @@ export default config({
       }, "title"),
     }),
 
-    services: collection({
-      label: "Servicepagina's",
-      path: "src/content/services/*",
-      slugField: "title",
-      format: { data: "yaml" },
-      schema: metVertalingen({
-        title: fields.slug({ name: { label: "Titel" } }),
-        slug: fields.text({ label: "URL-slug", description: "Canonieke route, bv. plaatwerk/rvs. Bepaalt de link en URL." }),
-        template: fields.select({
-          label: "Type pagina",
-          options: [
-            { label: "Detailpagina", value: "service" },
-            { label: "Overzichtspagina (met kaarten)", value: "overview" },
-          ],
-          defaultValue: "service",
-        }),
-        group: fields.select({
-          label: "Menugroep",
-          description: "Bepaalt in welke kolom van het menu Mogelijkheden deze pagina komt. Sector zet hem in het sectorenmenu.",
-          options: MENUGROEPEN,
-          defaultValue: "plaatwerk",
-        }),
-        order: fields.number({ label: "Volgorde", description: "Lager staat hoger in de menukolom.", defaultValue: 50 }),
-        menuLabel: fields.text({
-          label: "Menunaam (optioneel)",
-          description: 'Korte naam in het menu en de footer. Leeg laten = de gewone titel. Bv. titel "RVS-plaatwerk", menunaam "RVS".',
-        }),
-        inFooter: fields.checkbox({
-          label: "In de footer",
-          description: "Zet deze dienst in het rijtje onder Diensten, onderaan elke pagina.",
-          defaultValue: false,
-        }),
-        kicker: fields.text({
-          label: "Kicker (optioneel)",
-          description: 'Het regeltje boven de titel. Leeg laten = automatisch de menukolom en het nummer, bv. "Plaatwerk 1.2".',
-        }),
-        h1: fields.text({ label: "Titel (H1)" }),
-        intro: fields.text({ label: "Intro", multiline: true }),
-        foto: pageFoto("services")("Hero-foto", "Laat leeg voor de standaardfoto van deze pagina."),
-        midFoto: pageFoto("services")(
-          "Foto halverwege de pagina",
-          "Staat naast het processchema. Laat je dit leeg, dan blijft die sectie zonder foto.",
-        ),
-        heroPhoto: photoMeta(),
-        bodyHeading: fields.text({ label: "Kop tekstblok (optioneel)" }),
-        body: fields.array(fields.text({ label: "Alinea", multiline: true }), {
-          label: "Tekst",
-          itemLabel: (p) => (p.value || "").slice(0, 45),
-        }),
-        materials: fields.array(fields.text({ label: "Materiaal" }), {
-          label: "Materialen",
-          itemLabel: (p) => p.value,
-        }),
-        process: fields.array(
-          fields.object({
-            step: fields.text({ label: "Stap" }),
-            desc: fields.text({ label: "Toelichting", multiline: true }),
-          }),
-          { label: "Proces", itemLabel: (p) => p.fields.step.value },
-        ),
-        specs: fields.array(
-          fields.object({
-            label: fields.text({ label: "Kenmerk" }),
-            value: fields.text({ label: "Waarde" }),
-          }),
-          { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
-        ),
-        applications: fields.array(fields.text({ label: "Toepassing" }), {
-          label: "Toepassingen",
-          itemLabel: (p) => p.value,
-        }),
-        faq: fields.array(
-          fields.object({
-            vraag: fields.text({ label: "Vraag" }),
-            antwoord: fields.text({ label: "Antwoord", multiline: true, description: "Kort en concreet: 40 tot 60 woorden werkt het best." }),
-          }),
-          { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
-        ),
-        related: fields.array(
-          fields.object({
-            slug: fields.text({ label: "Link (interne slug)" }),
-            label: fields.text({ label: "Label" }),
-            desc: fields.text({ label: "Omschrijving (optioneel)" }),
-          }),
-          { label: "Gerelateerde pagina's", itemLabel: (p) => p.fields.label.value },
-        ),
-        cards: fields.array(
-          fields.object({
-            slug: fields.text({ label: "Link (interne slug)" }),
-            label: fields.text({ label: "Label" }),
-            desc: fields.text({ label: "Omschrijving" }),
-          }),
-          { label: "Overzichtskaarten", itemLabel: (p) => p.fields.label.value },
-        ),
-        seo: fields.object(
-          {
-            title: fields.text({ label: "SEO-titel" }),
-            description: fields.text({ label: "SEO-omschrijving", multiline: true }),
-          },
-          { label: "SEO (optioneel)" },
-        ),
-        translated: fields.multiselect({
-          label: "Vertaald in",
-          options: [
-            { label: "Nederlands", value: "nl" },
-            { label: "Engels", value: "en" },
-            { label: "Duits", value: "de" },
-          ],
-          defaultValue: ["nl"],
-        }),
-      }, "title"),
-    }),
+    dienstenPlaatwerk: dienstenIn("Plaatwerk", "plaatwerk"),
+    dienstenSnijden: dienstenIn("Snijden", "snijden"),
+    dienstenLastechniek: dienstenIn("Lastechniek", "lastechniek"),
+    dienstenSamenstellen: dienstenIn("Samenstellen", "samenstellen"),
+    dienstenSectoren: dienstenIn("Sectorpagina's", "sectoren"),
 
     artikelen: collection({
       label: "Kennisbank-artikelen",
