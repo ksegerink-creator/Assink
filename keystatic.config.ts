@@ -631,6 +631,22 @@ const dienstSchema = () => metVertalingen({
           }),
           { label: "Specificaties", itemLabel: (p) => `${p.fields.label.value}: ${p.fields.value.value}` },
         ),
+        kerncijfers: fields.array(
+          fields.object({
+            waarde: fields.text({ label: "Getal", description: 'Kort, mét eenheid. Bv. "25 mm" of "150 ton".' }),
+            label: fields.text({ label: "Waar het over gaat", description: 'Bv. "max. plaatdikte staal".' }),
+          }),
+          {
+            label: "Kerncijfers",
+            description: "Een strook met de paar getallen waar een bezoeker op zoekt, direct onder de hero. Vier werkt het best.",
+            itemLabel: (p) => `${p.fields.waarde.value} — ${p.fields.label.value}`,
+          },
+        ),
+        aanleveren: fields.array(fields.text({ label: "Gegeven" }), {
+          label: "Wat stuurt u mee",
+          description: "Afvinklijst naast de offerteknop: wat er nodig is om een aanvraag te beoordelen.",
+          itemLabel: (p) => p.value,
+        }),
         applications: fields.array(fields.text({ label: "Toepassing" }), {
           label: "Toepassingen",
           itemLabel: (p) => p.value,

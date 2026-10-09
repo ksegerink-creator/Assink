@@ -1,0 +1,63 @@
+---
+import IndustrialImage from "@components/media/IndustrialImage.astro";
+import { t } from "@data/i18n";
+import type { Locale } from "@data/site";
+import type { ImageMetadata } from "astro";
+
+/**
+ * De route die een werkstuk aflegt, als genummerde stappen. Stond eerder
+ * alleen in ServiceLayout; overzichtspagina's beschreven hun route daardoor in
+ * een alinea ("lasersnijden, ontbramen, kanten en waar nodig lassen"). Nu
+ * gebruiken beide dezelfde component.
+ */
+interface Props {
+  process?: { step: string; desc: string }[];
+  locale: Locale;
+  /** Foto naast de stappen; weglaten laat de kolom leeg. */
+  image?: ImageMetadata;
+  imageAlt?: string;
+}
+const { process = [], locale, image, imageAlt } = Astro.props;
+const [kop1, kop2] = t(locale, "drawingToDelivery").split("|");
+---
+{process.length > 0 && (
+  <section class="sec tight">
+    <div class="wrap sproc">
+      <div class="sproc__side rv">
+        <h2>{kop1}<br />{kop2}</h2>
+        {image && (
+          <figure class="sproc__img">
+            <IndustrialImage src={image} alt={imageAlt ?? ""} ratio="4/5" />
+          </figure>
+        )}
+      </div>
+      <ol class="sproc__list">
+        {process.map((p, i) => (
+          <li class="rv">
+            <span class="mono">{String(i + 1).padStart(2, "0")}</span>
+            <div>
+              <h3>{p.step}</h3>
+              <p>{p.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+)}
+
+<style>
+  .sproc { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  .sproc__side h2 { font-size: clamp(24px, 2.8vw, 38px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .sproc__img { margin: 22px 0 0; max-width: 380px; }
+  .sproc__list { list-style: none; margin: 0; padding: 0; }
+  .sproc__list li {
+    display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: baseline;
+    padding-block: 18px; border-bottom: 1px solid var(--line);
+  }
+  .sproc__list li:first-child { padding-top: 4px; }
+  .sproc__list .mono { color: var(--blue); }
+  .sproc__list h3 { font-size: clamp(17px, 1.8vw, 22px); }
+  .sproc__list p { color: var(--ink-2); font-size: 15px; margin-top: 6px; max-width: 44em; }
+  @media (max-width: 780px) { .sproc { grid-template-columns: 1fr; } .sproc__img { display: none; } }
+</style>

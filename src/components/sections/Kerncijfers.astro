@@ -1,0 +1,52 @@
+---
+/**
+ * Kerncijfers: een strook met de paar getallen waar een bezoeker op zoekt.
+ *
+ * Bestaat omdat de capaciteit van de werkplaats in lopende tekst stond —
+ * "snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm …" — waar een
+ * werkvoorbereider die moest opzoeken in plaats van zien. Hier staat het
+ * belangrijkste cijfer direct onder de hero.
+ */
+interface Props {
+  items?: { waarde: string; label: string }[];
+}
+const { items = [] } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="sec tight kc">
+    <div class="wrap">
+      <dl class="kc__rij">
+        {items.map((it) => (
+          <div class="kc__cel rv">
+            <dt class="kc__waarde">{it.waarde}</dt>
+            <dd class="kc__label mono">{it.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+)}
+
+<style>
+  .kc__rij {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px; margin: 0; background: var(--line);
+    border-block: 1px solid var(--line);
+  }
+  .kc__cel { background: var(--bg); padding: 22px clamp(14px, 2vw, 26px) 20px; }
+  .kc__waarde {
+    font-family: var(--f-disp); font-weight: 700;
+    font-size: clamp(26px, 3.4vw, 42px); line-height: 1.05;
+    color: var(--ink); letter-spacing: -.01em;
+  }
+  .kc__label {
+    margin: 7px 0 0; font-size: 11.5px; letter-spacing: .09em;
+    text-transform: uppercase; color: var(--steel); line-height: 1.5;
+  }
+  @media (max-width: 760px) {
+    .kc__rij { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 360px) {
+    .kc__rij { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

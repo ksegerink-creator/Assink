@@ -10,6 +10,11 @@
       "en": "Request a quote",
       "de": "Angebot anfragen"
     },
+    "sendAlongHead": {
+      "nl": "Wat stuurt u mee",
+      "en": "What to send us",
+      "de": "Was Sie mitschicken"
+    },
     "quoteShort": {
       "nl": "Offerte aanvragen",
       "en": "Request a quote",

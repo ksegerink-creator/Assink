@@ -1,7 +1,10 @@
 ---
 import PageLayout from "./PageLayout.astro";
-import IndustrialImage from "@components/media/IndustrialImage.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
+import Kerncijfers from "@components/sections/Kerncijfers.astro";
+import ProcessSteps from "@components/sections/ProcessSteps.astro";
+import SpecTable from "@components/sections/SpecTable.astro";
+import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
 import { t } from "@data/i18n";
@@ -63,6 +66,8 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
     </div>
   </SplitHero>
 
+  <Kerncijfers items={s.kerncijfers} />
+
   {s.body.length > 0 && (
     <section class="sec tight">
       <div class="wrap sbody">
@@ -77,49 +82,10 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
     </section>
   )}
 
-  {s.process.length > 0 && (
-    <section class="sec tight">
-      <div class="wrap sproc">
-        <div class="sproc__side rv">
-          <h2>{t(locale, "drawingToDelivery").split("|")[0]}<br />{t(locale, "drawingToDelivery").split("|")[1]}</h2>
-          {showMid && (
-            <figure class="sproc__img">
-              <IndustrialImage src={midImg} alt={`${s.title} — productie in de werkplaats`} ratio="4/5" />
-            </figure>
-          )}
-        </div>
-        <ol class="sproc__list">
-          {s.process.map((p, i) => (
-            <li class="rv">
-              <span class="mono">{String(i + 1).padStart(2, "0")}</span>
-              <div>
-                <h3>{p.step}</h3>
-                <p>{p.desc}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </section>
-  )}
+  <ProcessSteps process={s.process} locale={locale} image={showMid ? midImg : undefined}
+    imageAlt={`${s.title} — productie in de werkplaats`} />
 
-  {s.specs.length > 0 && (
-    <section class="sec tight">
-      <div class="wrap sspec">
-        <h2 class="rv">{t(locale, "specsHead")}</h2>
-        <div class="tbl-wrap rv">
-          <table class="tbl">
-            <caption>{t(locale, "specsCaption")}</caption>
-            <tbody>
-              {s.specs.map((r) => (
-                <tr><th scope="row">{r.label}</th><td class="spec">{r.value}</td></tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  )}
+  <SpecTable specs={s.specs} locale={locale} />
 
   {s.applications.length > 0 && (
     <section class="sec tight">
@@ -129,6 +95,8 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
       </div>
     </section>
   )}
+
+  <Aanleverlijst items={s.aanleveren} locale={locale} />
 
   <FaqBlock faq={s.faq} />
 
@@ -165,24 +133,9 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   .smat b { color: var(--ink); font-weight: 600; }
   @media (max-width: 780px) { .sbody { grid-template-columns: 1fr; } }
 
-  /* proces */
-  .sproc { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
-  .sproc__side h2 { font-size: clamp(24px, 2.8vw, 38px); border-top: 1px solid var(--ink); padding-top: 14px; }
-  .sproc__img { margin: 22px 0 0; max-width: 380px; }
-  .sproc__list { list-style: none; margin: 0; padding: 0; }
-  .sproc__list li {
-    display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: baseline;
-    padding-block: 18px; border-bottom: 1px solid var(--line);
-  }
-  .sproc__list li:first-child { padding-top: 4px; }
-  .sproc__list .mono { color: var(--blue); }
-  .sproc__list h3 { font-size: clamp(17px, 1.8vw, 22px); }
-  .sproc__list p { color: var(--ink-2); font-size: 15px; margin-top: 6px; max-width: 44em; }
-  @media (max-width: 780px) { .sproc { grid-template-columns: 1fr; } .sproc__img { display: none; } }
 
-  /* specificaties / toepassingen / gerelateerd */
-  .sspec h2, .sapp h2, .srel h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
-  .sspec .tbl { max-width: 720px; }
+  /* toepassingen / gerelateerd */
+  .sapp h2, .srel h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
   .sapp p { color: var(--ink-2); max-width: 52em; font-size: 16px; line-height: 1.9; }
   .srel__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: 760px; }
   .srel__list li { border-bottom: 1px solid var(--line); }

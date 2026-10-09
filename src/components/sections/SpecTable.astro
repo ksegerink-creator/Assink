@@ -1,0 +1,46 @@
+---
+import { t } from "@data/i18n";
+import type { Locale } from "@data/site";
+
+/**
+ * Specificatietabel. Stond eerder alleen in ServiceLayout; de
+ * overzichtspagina's konden hem daardoor niet tonen en hielden hun cijfers in
+ * lopende tekst. Nu gebruiken beide dezelfde component.
+ */
+interface Props {
+  specs?: { label: string; value: string }[];
+  locale: Locale;
+  kop?: string;
+}
+const { specs = [], locale, kop } = Astro.props;
+---
+{specs.length > 0 && (
+  <section class="sec tight">
+    <div class="wrap sspec">
+      <div class="sspec__side rv">
+        <h2>{kop || t(locale, "specsHead")}</h2>
+      </div>
+      <div class="tbl-wrap rv">
+        <table class="tbl">
+          <caption>{t(locale, "specsCaption")}</caption>
+          <tbody>
+            {specs.map((r) => (
+              <tr><th scope="row">{r.label}</th><td class="spec">{r.value}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  /* Kop links, tabel rechts — hetzelfde ritme als het processblok en de
+     aanleverlijst, zodat de pagina één opbouw houdt in plaats van drie. */
+  .sspec { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  .sspec__side h2 { font-size: clamp(22px, 2.4vw, 32px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  @media (max-width: 780px) {
+    .sspec { grid-template-columns: 1fr; gap: 18px; }
+    .sspec__side h2 { font-size: clamp(20px, 2.2vw, 28px); }
+  }
+</style>
