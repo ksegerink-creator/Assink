@@ -18,6 +18,7 @@
     "i18n:check": "node scripts/i18n-check.mjs",
     "menu:check": "node scripts/menu-check.mjs",
     "fotos:check": "node scripts/foto-check.mjs",
+    "fotos:verkleinen": "node scripts/fotos-verkleinen.mjs",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
