@@ -5,9 +5,12 @@ group: samenstellen
 order: 54
 inFooter: true
 h1: Innovatief in industriële RVS-behuizing
-intro: Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium behuizingen? Dan wordt u bij
-  Assink & Schipholt van ontwerp en engineering tot eindproduct ontzorgd.
-fotobank: "kantbank"
+intro: >-
+  Heeft u behoefte aan maatwerk of seriematig vakwerk voor RVS- of aluminium
+  behuizingen? Dan wordt u bij Assink & Schipholt van ontwerp en engineering tot
+  eindproduct ontzorgd.
+fotobank: kantbank
+foto: /src/assets/uploads/services/industriele-behuizing/foto.jpg
 heroPhoto:
   subject: Afgewerkte RVS machineomkasting, montageklaar
   orient: Liggend 16:10
@@ -15,21 +18,33 @@ heroPhoto:
   comp: Behuizing op neutrale ondergrond
 bodyHeading: Over RVS-behuizingen
 body:
-  - "Bij een behuizing bepaalt de maatvoering of het geheel klopt: deuren en panelen moeten vlak blijven,
-    uitsparingen moeten op de millimeter passen en sluitingen moeten na montage nog soepel werken. Wij kanten
-    op een servo-elektrische kantbank met een werklengte tot 3100 mm, zodat lange panelen in één keer gekant
-    kunnen worden in plaats van uit delen te worden samengesteld."
-  - De materiaalkeuze volgt uit de omgeving. <a href="/plaatwerk/rvs/">RVS</a> in kwaliteit 304 of 316 is de
-    logische keuze bij vocht, reiniging of buitenopstelling; <a href="/plaatwerk/aluminium/">aluminium</a> is
-    aanmerkelijk lichter en daarmee prettiger bij deuren en panelen die met de hand worden gehanteerd. Bij
-    twijfel kijken we naar de belasting en de reinigingsmethode.
-  - "Staat de behuizing buiten, dan verschuiven de eisen. Bij een kiosk, een laadpaal of een installatie in de
-    infrastructuur telt vooral hoe het water eruit blijft: overlappende naden, een afwaterende bovenzijde en
-    doordachte kabeldoorvoeren doen meer dan een zwaardere plaatdikte. In die omgevingen ligt RVS 316 voor de
-    hand vanwege strooizout en regen."
-  - In ons kennisbankartikel over <a
-    href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">industriële behuizingen op maat</a> gaan
-    we dieper in op de afwegingen.
+  - >-
+    Bij een behuizing bepaalt de maatvoering of het geheel klopt: deuren en
+    panelen moeten vlak blijven, uitsparingen moeten op de millimeter passen en
+    sluitingen moeten na montage nog soepel werken. Wij kanten op een
+    servo-elektrische kantbank met een werklengte tot 3100 mm, zodat lange
+    panelen in één keer gekant kunnen worden in plaats van uit delen te worden
+    samengesteld.
+  - >-
+    De materiaalkeuze volgt uit de omgeving. <a href="/plaatwerk/rvs/">RVS</a>
+    in kwaliteit 304 of 316 is de logische keuze bij vocht, reiniging of
+    buitenopstelling; <a href="/plaatwerk/aluminium/">aluminium</a> is
+    aanmerkelijk lichter en daarmee prettiger bij deuren en panelen die met de
+    hand worden gehanteerd. Bij twijfel kijken we naar de belasting en de
+    reinigingsmethode.
+  - >-
+    Staat de behuizing buiten, dan verschuiven de eisen. Bij een kiosk, een
+    laadpaal of een installatie in de infrastructuur telt vooral hoe het water
+    eruit blijft: overlappende naden, een afwaterende bovenzijde en doordachte
+    kabeldoorvoeren doen meer dan een zwaardere plaatdikte. In die omgevingen
+    ligt RVS 316 voor de hand vanwege strooizout en regen.
+  - >-
+    In ons kennisbankartikel over <a
+    href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">industriële
+    behuizingen op maat</a> gaan we dieper in op de afwegingen.
+materials:
+  - RVS 304 / 316
+  - Aluminium
 process:
   - step: RVS besturingskasten op maat
     desc: Bestand tegen vocht, stof en chemicaliën.
@@ -37,15 +52,76 @@ process:
     desc: Voor besturingssystemen, machinebouw, offshore en maritiem.
   - step: Advies
     desc: Materiaalkeuze, bevestiging en componentintegratie.
-materials:
-  - RVS 304 / 316
-  - Aluminium
+specs:
+  - label: Kanten
+    value: servo-elektrische kantbank, werklengte tot 3100 mm
+  - label: Materialen
+    value: RVS 304 en 316, aluminium
+  - label: RVS
+    value: bij vocht, reiniging of buitenopstelling
+  - label: Aluminium
+    value: >-
+      aanmerkelijk lichter — prettiger bij deuren en panelen die met de hand
+      worden gehanteerd
+  - label: Buiten opgesteld
+    value: RVS 316 vanwege strooizout en regen
+  - label: Water buiten houden
+    value: >-
+      overlappende naden, afwaterende bovenzijde en doordachte kabeldoorvoeren —
+      meer dan een zwaardere plaatdikte
+  - label: Componentintegratie
+    value: >-
+      uitsparingen voor wartels, displays en koeling worden meegesneden op de
+      laser
+  - label: Montagepunten
+    value: pers- en trekmoeren, dus geen losse bewerkingen achteraf
+  - label: Machinebeplating
+    value: >-
+      demontabel voor onderhoud, niet resonerend, en na het coaten nog passend
+      op het frame
+  - label: Toepassingen
+    value: besturingssystemen, machinebouw, offshore en maritiem
+kerncijfers:
+  - waarde: 3100 mm
+    label: zetlengte — lange panelen in één keer
+  - waarde: 304 / 316
+    label: RVS-kwaliteiten
+aanleveren:
+  - De buitenmaten
+  - De posities van uitsparingen en montagepunten
+  - Het materiaal
+  - Of het om zichtwerk gaat en welke afwerking daarbij hoort
+  - Het aantal
+  - >-
+    Of de behuizing in de buitenlucht komt te staan — dat bepaalt zowel de
+    materiaalkeuze als de naaduitvoering
 applications:
   - Industriële besturingssystemen
   - Machinebouw
   - Voedingsmiddelenindustrie
   - Offshore & maritiem
   - Procesindustrie & chemie
+faq:
+  - vraag: In welke materialen maken jullie behuizingen?
+    antwoord: >-
+      In RVS 304 en 316 en in aluminium. RVS is de logische keuze bij vocht,
+      reiniging of buitenopstelling; aluminium is aanmerkelijk lichter en
+      daarmee prettiger bij deuren en panelen die met de hand worden gehanteerd.
+  - vraag: Kunnen jullie uitsparingen en montagepunten meenemen?
+    antwoord: >-
+      Ja. Uitsparingen voor wartels, displays en koeling worden meegesneden op
+      de laser, en voor montagepunten werken wij met pers- en trekmoeren. Dat
+      scheelt losse bewerkingen achteraf en houdt de maatvoering onder controle.
+  - vraag: Leveren jullie enkelstuks of alleen series?
+    antwoord: >-
+      Beide. Van een enkele besturingskast tot seriematige productie van
+      dezelfde behuizing. Bij series letten we er extra op dat de afwerking en
+      de korrelrichting over alle exemplaren gelijk blijven.
+  - vraag: Hoe wordt een behuizing afgewerkt?
+    antwoord: >-
+      Dat hangt af van materiaal en toepassing. RVS-zichtwerk leveren wij
+      geslepen, en na laswerk verwijderen wij aanloopkleuren en passiveren wij.
+      Aluminium kan glasparelgestraald worden voor een egaal mat oppervlak.
 related:
   - slug: machinebouw
     label: Machinebouw
@@ -56,54 +132,52 @@ related:
   - slug: plaatwerk/laserlassen
     label: Laserlassen
     desc: Strakke naden voor zichtwerk.
+cards: []
 seo:
   title: Industriële RVS-behuizingen op maat
-  description: Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines en veeleisende
-    omgevingen. Maatwerk en serie.
+  description: >-
+    Hoogwaardige RVS- en aluminium behuizingen voor besturingssystemen, machines
+    en veeleisende omgevingen. Maatwerk en serie.
 translated:
   - nl
-faq:
-  - vraag: In welke materialen maken jullie behuizingen?
-    antwoord: In RVS 304 en 316 en in aluminium. RVS is de logische keuze bij vocht, reiniging of
-      buitenopstelling; aluminium is aanmerkelijk lichter en daarmee prettiger bij deuren en panelen die met
-      de hand worden gehanteerd.
-  - vraag: Kunnen jullie uitsparingen en montagepunten meenemen?
-    antwoord: Ja. Uitsparingen voor wartels, displays en koeling worden meegesneden op de laser, en voor
-      montagepunten werken wij met pers- en trekmoeren. Dat scheelt losse bewerkingen achteraf en houdt de
-      maatvoering onder controle.
-  - vraag: Leveren jullie enkelstuks of alleen series?
-    antwoord: Beide. Van een enkele besturingskast tot seriematige productie van dezelfde behuizing. Bij series
-      letten we er extra op dat de afwerking en de korrelrichting over alle exemplaren gelijk blijven.
-  - vraag: Hoe wordt een behuizing afgewerkt?
-    antwoord: Dat hangt af van materiaal en toepassing. RVS-zichtwerk leveren wij geslepen, en na laswerk
-      verwijderen wij aanloopkleuren en passiveren wij. Aluminium kan glasparelgestraald worden voor een egaal
-      mat oppervlak.
-
-# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Industrial enclosures
   h1: Innovative in industrial stainless steel enclosures
-  intro: Do you need custom or series-produced craftsmanship for stainless steel or aluminium enclosures? Then
-    Assink & Schipholt takes care of everything, from design and engineering to the finished product.
+  intro: >-
+    Do you need custom or series-produced craftsmanship for stainless steel or
+    aluminium enclosures? Then Assink & Schipholt takes care of everything, from
+    design and engineering to the finished product.
   heroPhoto:
     subject: Finished stainless steel machine enclosure, ready for assembly
   bodyHeading: About stainless steel enclosures
   body:
-    - "With an enclosure, the dimensions determine whether the whole thing works: doors and panels have to
-      stay flat, cut-outs have to fit to the millimetre and latches have to operate smoothly after assembly.
-      We bend on a servo-electric press brake with a working length of up to 3100 mm, so that long panels can
-      be formed in one go rather than assembled from parts."
-    - The choice of material follows from the environment. <a href="/en/plaatwerk/rvs/">Stainless steel</a> in
-      grade 304 or 316 is the logical choice where there is moisture, cleaning or outdoor exposure; <a
-      href="/en/plaatwerk/aluminium/">aluminium</a> is considerably lighter and therefore more pleasant for
-      doors and panels handled by hand. Where there is doubt, we look at the load and the cleaning method.
-    - "Once the enclosure stands outdoors, the requirements shift. For a kiosk, a charging point or an
-      installation in infrastructure, what counts most is keeping water out: overlapping seams, a sloping top
-      and well-considered cable glands do more than a heavier sheet thickness. Stainless steel 316 is the
-      obvious choice in those environments because of road salt and rain."
-    - Our knowledge base article on <a
-      href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">custom industrial enclosures</a> goes
-      into the trade-offs in more depth (in Dutch).
+    - >-
+      With an enclosure, the dimensions determine whether the whole thing works:
+      doors and panels have to stay flat, cut-outs have to fit to the millimetre
+      and latches have to operate smoothly after assembly. We bend on a
+      servo-electric press brake with a working length of up to 3100 mm, so that
+      long panels can be formed in one go rather than assembled from parts.
+    - >-
+      The choice of material follows from the environment. <a
+      href="/en/plaatwerk/rvs/">Stainless steel</a> in grade 304 or 316 is the
+      logical choice where there is moisture, cleaning or outdoor exposure; <a
+      href="/en/plaatwerk/aluminium/">aluminium</a> is considerably lighter and
+      therefore more pleasant for doors and panels handled by hand. Where there
+      is doubt, we look at the load and the cleaning method.
+    - >-
+      Once the enclosure stands outdoors, the requirements shift. For a kiosk, a
+      charging point or an installation in infrastructure, what counts most is
+      keeping water out: overlapping seams, a sloping top and well-considered
+      cable glands do more than a heavier sheet thickness. Stainless steel 316
+      is the obvious choice in those environments because of road salt and rain.
+    - >-
+      Our knowledge base article on <a
+      href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">custom
+      industrial enclosures</a> goes into the trade-offs in more depth (in
+      Dutch).
+  materials:
+    - Stainless steel 304 / 316
+    - Aluminium
   process:
     - step: Custom stainless steel control cabinets
       desc: Resistant to moisture, dust and chemicals.
@@ -111,47 +185,6 @@ en:
       desc: For control systems, machine building, offshore and maritime.
     - step: Advice
       desc: Material selection, fastening and component integration.
-  materials:
-    - Stainless steel 304 / 316
-    - Aluminium
-  applications:
-    - Industrial control systems
-    - Machine building
-    - Food industry
-    - Offshore & maritime
-    - Process industry & chemicals
-  related:
-    - label: Machine building
-      desc: Complete machines and assemblies.
-    - label: Stainless steel
-      desc: Stainless sheet metal work and visible work.
-    - label: Laser welding
-      desc: Clean seams for visible work.
-  seo:
-    title: Custom industrial enclosures
-    description: High-quality stainless steel and aluminium enclosures for control systems, machines and demanding
-      environments. Custom work and series.
-  faq:
-    - vraag: In which materials do you make enclosures?
-      antwoord: In stainless steel 304 and 316 and in aluminium. Stainless steel is the logical choice where there
-        is moisture, cleaning or outdoor exposure; aluminium is considerably lighter and therefore more
-        pleasant for doors and panels handled by hand.
-    - vraag: Can you include cut-outs and mounting points?
-      antwoord: Yes. Cut-outs for glands, displays and cooling are cut on the laser, and for mounting points we work
-        with self-clinching and rivet nuts. That saves separate operations afterwards and keeps the dimensions
-        under control.
-    - vraag: Do you supply one-offs or only series?
-      antwoord: Both. From a single control cabinet to series production of the same enclosure. With series we pay
-        extra attention to keeping the finish and the grain direction identical across all units.
-    - vraag: How is an enclosure finished?
-      antwoord: That depends on the material and the application. Visible stainless steel is supplied ground, and
-        after welding we remove heat tint and passivate. Aluminium can be glass-bead blasted for an even matt
-        surface.
-  kerncijfers:
-    - waarde: 3100 mm
-      label: bend length — long panels in one go
-    - waarde: 304 / 316
-      label: stainless grades
   specs:
     - label: Press braking
       value: servo-electric press brake, working length up to 3100 mm
@@ -160,54 +193,123 @@ en:
     - label: Stainless steel
       value: where there is moisture, cleaning or outdoor exposure
     - label: Aluminium
-      value: considerably lighter — more pleasant for doors and panels handled by hand
+      value: >-
+        considerably lighter — more pleasant for doors and panels handled by
+        hand
     - label: Installed outdoors
       value: stainless steel 316 because of road salt and rain
     - label: Keeping water out
-      value: overlapping seams, a sloping top and well-considered cable glands — more than a heavier sheet thickness
+      value: >-
+        overlapping seams, a sloping top and well-considered cable glands — more
+        than a heavier sheet thickness
     - label: Component integration
-      value: cut-outs for glands, displays and cooling are cut on the laser in the same pass
+      value: >-
+        cut-outs for glands, displays and cooling are cut on the laser in the
+        same pass
     - label: Mounting points
       value: self-clinching and rivet nuts, so no separate operations afterwards
     - label: Machine cladding
-      value: demountable for maintenance, non-resonant, and still fitting the frame after coating
+      value: >-
+        demountable for maintenance, non-resonant, and still fitting the frame
+        after coating
     - label: Applications
       value: control systems, machine building, offshore and marine
+  kerncijfers:
+    - waarde: 3100 mm
+      label: bend length — long panels in one go
+    - waarde: 304 / 316
+      label: stainless grades
   aanleveren:
     - The outer dimensions
     - The positions of cut-outs and mounting points
     - The material
     - Whether it concerns visible work and which finishing that requires
     - The quantity
-    - Whether the enclosure will stand outdoors — that determines both the material choice and the seam
-      execution
-
-# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+    - >-
+      Whether the enclosure will stand outdoors — that determines both the
+      material choice and the seam execution
+  applications:
+    - Industrial control systems
+    - Machine building
+    - Food industry
+    - Offshore & maritime
+    - Process industry & chemicals
+  faq:
+    - vraag: In which materials do you make enclosures?
+      antwoord: >-
+        In stainless steel 304 and 316 and in aluminium. Stainless steel is the
+        logical choice where there is moisture, cleaning or outdoor exposure;
+        aluminium is considerably lighter and therefore more pleasant for doors
+        and panels handled by hand.
+    - vraag: Can you include cut-outs and mounting points?
+      antwoord: >-
+        Yes. Cut-outs for glands, displays and cooling are cut on the laser, and
+        for mounting points we work with self-clinching and rivet nuts. That
+        saves separate operations afterwards and keeps the dimensions under
+        control.
+    - vraag: Do you supply one-offs or only series?
+      antwoord: >-
+        Both. From a single control cabinet to series production of the same
+        enclosure. With series we pay extra attention to keeping the finish and
+        the grain direction identical across all units.
+    - vraag: How is an enclosure finished?
+      antwoord: >-
+        That depends on the material and the application. Visible stainless
+        steel is supplied ground, and after welding we remove heat tint and
+        passivate. Aluminium can be glass-bead blasted for an even matt surface.
+  related:
+    - label: Machine building
+      desc: Complete machines and assemblies.
+    - label: Stainless steel
+      desc: Stainless sheet metal work and visible work.
+    - label: Laser welding
+      desc: Clean seams for visible work.
+  cards: []
+  seo:
+    title: Custom industrial enclosures
+    description: >-
+      High-quality stainless steel and aluminium enclosures for control systems,
+      machines and demanding environments. Custom work and series.
 de:
   title: Industriegehäuse
   h1: Innovativ bei Industriegehäusen aus Edelstahl
-  intro: Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus Edelstahl oder Aluminium? Dann
-    nimmt Ihnen Assink & Schipholt von Entwurf und Engineering bis zum Endprodukt die Arbeit ab.
+  intro: >-
+    Benötigen Sie Einzelanfertigungen oder Serienarbeit für Gehäuse aus
+    Edelstahl oder Aluminium? Dann nimmt Ihnen Assink & Schipholt von Entwurf
+    und Engineering bis zum Endprodukt die Arbeit ab.
   heroPhoto:
     subject: Fertiges Edelstahl-Maschinengehäuse, montagefertig
   bodyHeading: Über Edelstahlgehäuse
   body:
-    - "Bei einem Gehäuse entscheidet die Bemaßung, ob das Ganze stimmt: Türen und Paneele müssen eben bleiben,
-      Ausschnitte müssen auf den Millimeter passen und Verschlüsse müssen nach der Montage noch leichtgängig
-      sein. Wir kanten auf einer servoelektrischen Abkantpresse mit einer Arbeitslänge bis 3100 mm, sodass
-      lange Paneele in einem Zug gekantet werden können, statt aus Teilen zusammengesetzt zu werden."
-    - Die Werkstoffwahl ergibt sich aus der Umgebung. <a href="/de/plaatwerk/rvs/">Edelstahl</a> in der Güte
-      304 oder 316 ist die logische Wahl bei Feuchtigkeit, Reinigung oder Außenaufstellung; <a
-      href="/de/plaatwerk/aluminium/">Aluminium</a> ist deutlich leichter und damit angenehmer bei Türen und
-      Paneelen, die von Hand gehandhabt werden. Im Zweifel betrachten wir die Belastung und die
-      Reinigungsmethode.
-    - "Steht das Gehäuse im Freien, verschieben sich die Anforderungen. Bei einem Kiosk, einer Ladesäule oder
-      einer Anlage in der Infrastruktur zählt vor allem, wie das Wasser draußen bleibt: überlappende Nähte,
-      eine abfallende Oberseite und durchdachte Kabeldurchführungen bewirken mehr als eine höhere Blechdicke.
-      In solchen Umgebungen liegt Edelstahl 316 wegen Streusalz und Regen nahe."
-    - In unserem Wissensartikel über <a
-      href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">maßgefertigte Industriegehäuse</a>
-      gehen wir ausführlicher auf die Abwägungen ein (auf Niederländisch).
+    - >-
+      Bei einem Gehäuse entscheidet die Bemaßung, ob das Ganze stimmt: Türen und
+      Paneele müssen eben bleiben, Ausschnitte müssen auf den Millimeter passen
+      und Verschlüsse müssen nach der Montage noch leichtgängig sein. Wir kanten
+      auf einer servoelektrischen Abkantpresse mit einer Arbeitslänge bis 3100
+      mm, sodass lange Paneele in einem Zug gekantet werden können, statt aus
+      Teilen zusammengesetzt zu werden.
+    - >-
+      Die Werkstoffwahl ergibt sich aus der Umgebung. <a
+      href="/de/plaatwerk/rvs/">Edelstahl</a> in der Güte 304 oder 316 ist die
+      logische Wahl bei Feuchtigkeit, Reinigung oder Außenaufstellung; <a
+      href="/de/plaatwerk/aluminium/">Aluminium</a> ist deutlich leichter und
+      damit angenehmer bei Türen und Paneelen, die von Hand gehandhabt werden.
+      Im Zweifel betrachten wir die Belastung und die Reinigungsmethode.
+    - >-
+      Steht das Gehäuse im Freien, verschieben sich die Anforderungen. Bei einem
+      Kiosk, einer Ladesäule oder einer Anlage in der Infrastruktur zählt vor
+      allem, wie das Wasser draußen bleibt: überlappende Nähte, eine abfallende
+      Oberseite und durchdachte Kabeldurchführungen bewirken mehr als eine
+      höhere Blechdicke. In solchen Umgebungen liegt Edelstahl 316 wegen
+      Streusalz und Regen nahe.
+    - >-
+      In unserem Wissensartikel über <a
+      href="/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/">maßgefertigte
+      Industriegehäuse</a> gehen wir ausführlicher auf die Abwägungen ein (auf
+      Niederländisch).
+  materials:
+    - Edelstahl 304 / 316
+    - Aluminium
   process:
     - step: Edelstahl-Schaltschränke nach Maß
       desc: Widerstandsfähig gegen Feuchtigkeit, Staub und Chemikalien.
@@ -215,47 +317,6 @@ de:
       desc: Für Steuerungssysteme, Maschinenbau, Offshore und Maritim.
     - step: Beratung
       desc: Materialwahl, Befestigung und Komponentenintegration.
-  materials:
-    - Edelstahl 304 / 316
-    - Aluminium
-  applications:
-    - Industrielle Steuerungssysteme
-    - Maschinenbau
-    - Lebensmittelindustrie
-    - Offshore & Maritim
-    - Prozessindustrie & Chemie
-  related:
-    - label: Maschinenbau
-      desc: Komplette Maschinen und Baugruppen.
-    - label: Edelstahl
-      desc: Edelstahlblech und Sichtflächen.
-    - label: Laserschweißen
-      desc: Saubere Nähte für Sichtflächen.
-  seo:
-    title: Industriegehäuse nach Maß
-    description: Hochwertige Gehäuse aus Edelstahl und Aluminium für Steuerungssysteme, Maschinen und
-      anspruchsvolle Umgebungen. Maßarbeit und Serie.
-  faq:
-    - vraag: In welchen Werkstoffen fertigen Sie Gehäuse?
-      antwoord: In Edelstahl 304 und 316 sowie in Aluminium. Edelstahl ist die logische Wahl bei Feuchtigkeit,
-        Reinigung oder Außenaufstellung; Aluminium ist deutlich leichter und damit angenehmer bei Türen und
-        Paneelen, die von Hand gehandhabt werden.
-    - vraag: Können Sie Ausschnitte und Montagepunkte mit ausführen?
-      antwoord: Ja. Ausschnitte für Verschraubungen, Displays und Kühlung werden auf dem Laser mitgeschnitten, und
-        für Montagepunkte arbeiten wir mit Einpress- und Blindnietmuttern. Das erspart separate Arbeitsgänge
-        im Nachhinein und hält die Maßhaltigkeit unter Kontrolle.
-    - vraag: Liefern Sie Einzelstücke oder nur Serien?
-      antwoord: Beides. Vom einzelnen Schaltschrank bis zur Serienfertigung desselben Gehäuses. Bei Serien achten
-        wir besonders darauf, dass Oberfläche und Schliffrichtung über alle Exemplare gleich bleiben.
-    - vraag: Wie wird ein Gehäuse nachbehandelt?
-      antwoord: Das hängt von Werkstoff und Anwendung ab. Edelstahl-Sichtflächen liefern wir geschliffen, und nach
-        dem Schweißen entfernen wir Anlauffarben und passivieren. Aluminium kann glasperlgestrahlt werden für
-        eine gleichmäßig matte Oberfläche.
-  kerncijfers:
-    - waarde: 3100 mm
-      label: Abkantlänge — lange Paneele in einem Zug
-    - waarde: 304 / 316
-      label: Edelstahlgüten
   specs:
     - label: Abkanten
       value: servoelektrische Abkantpresse, Arbeitslänge bis 3100 mm
@@ -264,59 +325,83 @@ de:
     - label: Edelstahl
       value: bei Feuchtigkeit, Reinigung oder Außenaufstellung
     - label: Aluminium
-      value: deutlich leichter — angenehmer bei Türen und Paneelen, die von Hand gehandhabt werden
+      value: >-
+        deutlich leichter — angenehmer bei Türen und Paneelen, die von Hand
+        gehandhabt werden
     - label: Außen aufgestellt
       value: Edelstahl 316 wegen Streusalz und Regen
     - label: Wasser draußen halten
-      value: überlappende Nähte, abfallende Oberseite und durchdachte Kabeldurchführungen — mehr als eine höhere
-        Blechdicke
+      value: >-
+        überlappende Nähte, abfallende Oberseite und durchdachte
+        Kabeldurchführungen — mehr als eine höhere Blechdicke
     - label: Komponentenintegration
-      value: Ausschnitte für Verschraubungen, Displays und Kühlung werden auf dem Laser mitgeschnitten
+      value: >-
+        Ausschnitte für Verschraubungen, Displays und Kühlung werden auf dem
+        Laser mitgeschnitten
     - label: Montagepunkte
-      value: Einpress- und Blindnietmuttern, also keine separaten Arbeitsgänge im Nachhinein
+      value: >-
+        Einpress- und Blindnietmuttern, also keine separaten Arbeitsgänge im
+        Nachhinein
     - label: Maschinenverkleidung
-      value: demontierbar für die Wartung, nicht resonierend und nach dem Beschichten noch passend auf dem Rahmen
+      value: >-
+        demontierbar für die Wartung, nicht resonierend und nach dem Beschichten
+        noch passend auf dem Rahmen
     - label: Anwendungen
       value: Steuerungssysteme, Maschinenbau, Offshore und Marine
+  kerncijfers:
+    - waarde: 3100 mm
+      label: Abkantlänge — lange Paneele in einem Zug
+    - waarde: 304 / 316
+      label: Edelstahlgüten
   aanleveren:
     - Die Außenmaße
     - Die Positionen von Ausschnitten und Montagepunkten
     - Den Werkstoff
     - Ob es sich um Sichtflächen handelt und welche Oberfläche dazugehört
     - Die Stückzahl
-    - Ob das Gehäuse im Freien aufgestellt wird — das bestimmt sowohl die Werkstoffwahl als auch die
-      Nahtausführung
-kerncijfers:
-  - waarde: 3100 mm
-    label: zetlengte — lange panelen in één keer
-  - waarde: 304 / 316
-    label: RVS-kwaliteiten
-specs:
-  - label: Kanten
-    value: servo-elektrische kantbank, werklengte tot 3100 mm
-  - label: Materialen
-    value: RVS 304 en 316, aluminium
-  - label: RVS
-    value: bij vocht, reiniging of buitenopstelling
-  - label: Aluminium
-    value: aanmerkelijk lichter — prettiger bij deuren en panelen die met de hand worden gehanteerd
-  - label: Buiten opgesteld
-    value: RVS 316 vanwege strooizout en regen
-  - label: Water buiten houden
-    value: overlappende naden, afwaterende bovenzijde en doordachte kabeldoorvoeren — meer dan een zwaardere
-      plaatdikte
-  - label: Componentintegratie
-    value: uitsparingen voor wartels, displays en koeling worden meegesneden op de laser
-  - label: Montagepunten
-    value: pers- en trekmoeren, dus geen losse bewerkingen achteraf
-  - label: Machinebeplating
-    value: demontabel voor onderhoud, niet resonerend, en na het coaten nog passend op het frame
-  - label: Toepassingen
-    value: besturingssystemen, machinebouw, offshore en maritiem
-aanleveren:
-  - De buitenmaten
-  - De posities van uitsparingen en montagepunten
-  - Het materiaal
-  - Of het om zichtwerk gaat en welke afwerking daarbij hoort
-  - Het aantal
-  - Of de behuizing in de buitenlucht komt te staan — dat bepaalt zowel de materiaalkeuze als de naaduitvoering
+    - >-
+      Ob das Gehäuse im Freien aufgestellt wird — das bestimmt sowohl die
+      Werkstoffwahl als auch die Nahtausführung
+  applications:
+    - Industrielle Steuerungssysteme
+    - Maschinenbau
+    - Lebensmittelindustrie
+    - Offshore & Maritim
+    - Prozessindustrie & Chemie
+  faq:
+    - vraag: In welchen Werkstoffen fertigen Sie Gehäuse?
+      antwoord: >-
+        In Edelstahl 304 und 316 sowie in Aluminium. Edelstahl ist die logische
+        Wahl bei Feuchtigkeit, Reinigung oder Außenaufstellung; Aluminium ist
+        deutlich leichter und damit angenehmer bei Türen und Paneelen, die von
+        Hand gehandhabt werden.
+    - vraag: Können Sie Ausschnitte und Montagepunkte mit ausführen?
+      antwoord: >-
+        Ja. Ausschnitte für Verschraubungen, Displays und Kühlung werden auf dem
+        Laser mitgeschnitten, und für Montagepunkte arbeiten wir mit Einpress-
+        und Blindnietmuttern. Das erspart separate Arbeitsgänge im Nachhinein
+        und hält die Maßhaltigkeit unter Kontrolle.
+    - vraag: Liefern Sie Einzelstücke oder nur Serien?
+      antwoord: >-
+        Beides. Vom einzelnen Schaltschrank bis zur Serienfertigung desselben
+        Gehäuses. Bei Serien achten wir besonders darauf, dass Oberfläche und
+        Schliffrichtung über alle Exemplare gleich bleiben.
+    - vraag: Wie wird ein Gehäuse nachbehandelt?
+      antwoord: >-
+        Das hängt von Werkstoff und Anwendung ab. Edelstahl-Sichtflächen liefern
+        wir geschliffen, und nach dem Schweißen entfernen wir Anlauffarben und
+        passivieren. Aluminium kann glasperlgestrahlt werden für eine
+        gleichmäßig matte Oberfläche.
+  related:
+    - label: Maschinenbau
+      desc: Komplette Maschinen und Baugruppen.
+    - label: Edelstahl
+      desc: Edelstahlblech und Sichtflächen.
+    - label: Laserschweißen
+      desc: Saubere Nähte für Sichtflächen.
+  cards: []
+  seo:
+    title: Industriegehäuse nach Maß
+    description: >-
+      Hochwertige Gehäuse aus Edelstahl und Aluminium für Steuerungssysteme,
+      Maschinen und anspruchsvolle Umgebungen. Maßarbeit und Serie.
