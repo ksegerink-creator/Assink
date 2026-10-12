@@ -61,6 +61,9 @@ export default defineConfig({
     react(),
     keystatic(),
     sitemap({
+      // Pagina's met noindex horen niet in de sitemap: Search Console meldt
+      // die combinatie als fout ("Uitgesloten door tag noindex").
+      filter: (page) => !/\/(bedankt|privacy)\/?$/.test(new URL(page).pathname),
       i18n: {
         defaultLocale: "nl",
         locales: { nl: "nl-NL", en: "en-GB", de: "de-DE" },
