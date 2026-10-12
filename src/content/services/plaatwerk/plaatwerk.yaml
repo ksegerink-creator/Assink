@@ -1,372 +1,447 @@
 title: Plaatwerk
-menuLabel: "Plaatwerk"
 slug: plaatwerk
 template: overview
-group: "plaatwerk"
+group: plaatwerk
 order: 10
+menuLabel: Plaatwerk
 inFooter: true
 kicker: Mogelijkheid 1.0
 h1: Perfectie in plaatwerk
-intro: Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in snijden, kanten en afwerken
-  van fijnplaatmateriaal — enkelstuks én serie, uit Hengelo.
-fotobank: "productiehal"
+intro: >-
+  Plaatwerk op maat met nauwkeurigheid tot op de millimeter. Maatwerk in
+  snijden, kanten en afwerken van fijnplaatmateriaal — enkelstuks én serie, uit
+  Hengelo.
+fotobank: productiehal
+foto: /src/assets/uploads/services/plaatwerk/foto.jpg
 heroPhoto:
   subject: Breedbeeld productievloer met plaatwerk in bewerking
   orient: Liggend 16:10
   crop: Breed overzicht
   comp: Werkvloer, machines op afstand
 body:
-- 'Van eerste tekening tot afgewerkt onderdeel begeleiden wij het hele traject: materiaaladvies, engineering,
-  productie en oppervlakteafwerking — onder één dak in Hengelo.'
-- 'Enkelstuks en serie doen wij op dezelfde machines, met een andere voorbereiding. Bij een prototype
-  denken wij mee over maakbaarheid: een buighoek verplaatsen of een uitsparing anders positioneren scheelt
-  vaak een hele bewerking. Bij serie draait het om herhaalbaarheid — dezelfde opspanning, dezelfde volgorde
-  en dezelfde controlepunten, zodat het honderdste deel gelijk is aan het eerste.'
-- 'Valt uw aanvraag buiten onderstaand bereik, leg hem dan voor: binnen onze groep is vaak meer mogelijk
-  dan op onze eigen machine.'
-kerncijfers:
-- waarde: 25 mm
-  label: max. plaatdikte staal
-- waarde: 3100 mm
-  label: zetlengte kantbank
-- waarde: 150 ton
-  label: perskracht
-- waarde: 4 kW
-  label: fiberlaser
+  - >-
+    Van eerste tekening tot afgewerkt onderdeel begeleiden wij het hele traject:
+    materiaaladvies, engineering, productie en oppervlakteafwerking — onder één
+    dak in Hengelo.
+  - >-
+    Enkelstuks en serie doen wij op dezelfde machines, met een andere
+    voorbereiding. Bij een prototype denken wij mee over maakbaarheid: een
+    buighoek verplaatsen of een uitsparing anders positioneren scheelt vaak een
+    hele bewerking. Bij serie draait het om herhaalbaarheid — dezelfde
+    opspanning, dezelfde volgorde en dezelfde controlepunten, zodat het
+    honderdste deel gelijk is aan het eerste.
+  - >-
+    Valt uw aanvraag buiten onderstaand bereik, leg hem dan voor: binnen onze
+    groep is vaak meer mogelijk dan op onze eigen machine.
+materials: []
 process:
-- step: Lasersnijden
-  desc: Op een Trumpf TruLaser 3040, fiberlaser van 4 kW.
-- step: Ontbramen
-  desc: Machinaal op een Timesavers 42 Series RB, zodat de randen braamvrij en veilig zijn voordat er iemand
-    mee verder werkt.
-- step: Kanten
-  desc: Op een servo-elektrische Safan Darley E-Brake 150-3100 T3 met 150 ton perskracht en een werklengte
-    tot 3100 mm.
-- step: Lassen
-  desc: Waar nodig, onder ISO 3834-2 met vastgelegde lasparameters.
-- step: Afwerken
-  desc: Stralen, passiveren, poedercoaten of anodiseren — u ontvangt een afgewerkt onderdeel, geen halffabricaat.
+  - step: Lasersnijden
+    desc: Op een Trumpf TruLaser 3040, fiberlaser van 4 kW.
+  - step: Ontbramen
+    desc: >-
+      Machinaal op een Timesavers 42 Series RB, zodat de randen braamvrij en
+      veilig zijn voordat er iemand mee verder werkt.
+  - step: Kanten
+    desc: >-
+      Op een servo-elektrische Safan Darley E-Brake 150-3100 T3 met 150 ton
+      perskracht en een werklengte tot 3100 mm.
+  - step: Lassen
+    desc: Waar nodig, onder ISO 3834-2 met vastgelegde lasparameters.
+  - step: Afwerken
+    desc: >-
+      Stralen, passiveren, poedercoaten of anodiseren — u ontvangt een afgewerkt
+      onderdeel, geen halffabricaat.
 specs:
-- label: Staal
-  value: 0,5 – 25 mm
-- label: RVS
-  value: 0,5 – 20 mm
-- label: Aluminium
-  value: 0,5 – 15 mm
-- label: Gegalvaniseerd staal
-  value: 0,5 – 10 mm
-- label: Zetlengte
-  value: tot 3100 mm, 150 ton perskracht
-- label: Stralen
-  value: glasparels 100–200 μm bij 3,0 bar, cabine 8 × 4 × 3 m
-- label: Afwerking
-  value: passiveren, poedercoaten, anodiseren
-- label: Certificering
-  value: ISO 9001, ISO 3834-2, EN 1090-1
-aanleveren:
-- PDF-tekening en een 3D STEP-bestand
-- Materiaalsoort en plaatdikte
-- Aantal stuks
-- Of het zichtwerk betreft, en de gewenste afwerking
-cards:
-- slug: plaatwerk/staal
-  label: Staal
-  desc: Stijf, goed lasbaar en voordelig — het werkpaard.
-- slug: plaatwerk/rvs
-  label: RVS
-  desc: Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk.
-- slug: plaatwerk/aluminium
-  label: Aluminium
-  desc: Lichtgewicht en sterk, incl. TIG- en MIG-laswerk.
-- slug: plaatwerk/messing
-  label: Messing
-  desc: Warme koperzink-legering voor techniek en interieur.
-- slug: plaatwerk/precisieplaatwerk
-  label: Precisieplaatwerk
-  desc: Maatvast enkelstuks- en seriewerk.
-- slug: plaatwerk/zetten
-  label: Kanten
-  desc: Nauwkeurige buighoeken op de servo-elektrische kantbank.
-- slug: plaatwerk/lasersnijden
-  label: Lasersnijden
-  desc: 2D-lasersnijden van staal, RVS en aluminium.
-- slug: plaatwerk/lassen
-  label: Lassen
-  desc: TIG, MIG/MAG en gerobotiseerd lassen.
-- slug: plaatwerk/laserlassen
-  label: Laserlassen
-  desc: Strakke, vervormingsarme lasverbindingen.
-- slug: plaatwerk/ontbramen
-  label: Ontbramen
-  desc: Braamvrije randen na het snijden.
-- slug: plaatwerk/persmoeren-trekmoeren
-  label: Pers- & trekmoeren
-  desc: Inpersmoeren voor montageklare producten.
-- slug: plaatwerk/voedingsmiddelenindustrie
-  label: Voedingsindustrie
-  desc: Hygiënisch RVS-plaatwerk.
-- slug: industriele-behuizing
-  label: RVS-behuizingen & beplating
-  desc: Machinebeplating en omkastingen.
-faq:
-- vraag: Welke plaatdiktes kunnen jullie lasersnijden?
-  antwoord: 'Op de Trumpf TruLaser 3040 snijden wij staal van 0,5 tot 25 mm, RVS van 0,5 tot 20 mm, aluminium
-    van 0,5 tot 15 mm en gegalvaniseerd staal van 0,5 tot 10 mm. Ligt uw aanvraag buiten dat bereik, leg
-    hem dan voor: dan kijken we wat er binnen onze groep mogelijk is.'
-- vraag: Maken jullie ook enkelstuks, of alleen series?
-  antwoord: Allebei, op dezelfde machines. Bij enkelstuks en prototypes ligt het accent op meedenken over
-    maakbaarheid; bij serie op herhaalbaarheid van maatvoering en afwerking, zodat het laatste deel gelijk
-    is aan het eerste.
-- vraag: Welke materialen verwerken jullie in plaatwerk?
-  antwoord: RVS 304 en 316, aluminium, messing en staal, waaronder gegalvaniseerd staal. Welk materiaal
-    het beste past hangt af van de belasting, de omgeving en of het onderdeel zichtwerk is — daar denken
-    wij graag in mee voordat de tekening definitief is.
-- vraag: Leveren jullie plaatwerk afgewerkt en montageklaar?
-  antwoord: Ja. Ontbramen, glasparelstralen, passiveren, poedercoaten en het inpersen van pers- en trekmoeren
-    horen bij het traject. U ontvangt een montageklaar deel in plaats van een halffabricaat dat elders
-    nog bewerkt moet worden.
-- vraag: Wat hebben jullie nodig om een offerte te maken?
-  antwoord: Een PDF-tekening en een 3D STEP-bestand, de materiaalsoort en plaatdikte, het aantal stuks, en of het zichtwerk
-    betreft met de bijbehorende afwerking. Ontbreken er gegevens, dan nemen wij contact op voordat we
-    een prijs afgeven.
-seo:
-  title: Plaatwerk op maat in RVS en aluminium
-  description: 'Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, kanten, lassen en afwerken
-    tot op de millimeter. Enkelstuks en serie uit Hengelo, Twente.'
-translated:
-- nl
-
-# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
-en:
-  menuLabel: "Sheet metal"
-  title: Sheet metal work
-  kicker: Capability 1.0
-  h1: Perfection in sheet metal work
-  intro: Precision sheet metal with accuracy down to the millimetre. Custom cutting, press braking and finishing
-    of thin sheet material — one-offs as well as series.
-  heroPhoto:
-    subject: Wide shot of the production floor with sheet metal being processed
-  body:
-  - 'From the first drawing to the finished part we guide the whole process: material advice, engineering,
-    production and surface finishing — all under one roof in Hengelo.'
-  - 'One-offs and series run on the same machines, with different preparation. For a prototype the emphasis
-    is on thinking along about manufacturability: moving a bend line or repositioning a cut-out often saves
-    an entire operation. For series it is about repeatability — the same fixturing, the same sequence and
-    the same inspection points, so that the hundredth part matches the first.'
-  - 'If your request falls outside the range below, put it to us: within our group more is often possible
-    than on our own machine.'
-  kerncijfers:
-  - waarde: 25 mm
-    label: max. sheet thickness, steel
-  - waarde: 3100 mm
-    label: press brake length
-  - waarde: 150 t
-    label: press force
-  - waarde: 4 kW
-    label: fibre laser
-  process:
-  - step: Laser cutting
-    desc: On a Trumpf TruLaser 3040, a 4 kW fibre laser.
-  - step: Deburring
-    desc: By machine on a Timesavers 42 Series RB, so that edges are burr-free and safe before anyone handles
-      them.
-  - step: Press braking
-    desc: On a servo-electric Safan Darley E-Brake 150-3100 T3 with 150 tonnes of press force and a working
-      length of up to 3100 mm.
-  - step: Welding
-    desc: Where required, under ISO 3834-2 with documented welding parameters.
-  - step: Finishing
-    desc: Blasting, passivating, powder coating or anodising — you receive a finished part, not a semi-finished
-      one.
-  specs:
-  - label: Steel
-    value: 0.5 – 25 mm
-  - label: Stainless steel
-    value: 0.5 – 20 mm
-  - label: Aluminium
-    value: 0.5 – 15 mm
-  - label: Galvanised steel
-    value: 0.5 – 10 mm
-  - label: Press brake length
-    value: up to 3100 mm, 150 tonnes press force
-  - label: Blasting
-    value: glass beads 100–200 μm at 3.0 bar, cabin 8 × 4 × 3 m
-  - label: Finishing
-    value: passivating, powder coating, anodising
-  - label: Certification
-    value: ISO 9001, ISO 3834-2, EN 1090-1
-  aanleveren:
-  - PDF drawing and a 3D STEP file
-  - Material and sheet thickness
-  - Number of parts
-  - Whether it is visible work, and the finish required
-  cards:
-  - label: Steel
-    desc: Stiff, readily weldable and economical — the workhorse.
-  - label: Stainless steel
-    desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.
-  - label: Aluminium
-    desc: Lightweight and strong, including TIG and MIG welding.
-  - label: Brass
-    desc: Warm copper-zinc alloy for engineering and interiors.
-  - label: Precision sheet metal
-    desc: Dimensionally stable one-offs and series work.
-  - label: Bending & forming
-    desc: Accurate bending angles on the servo-electric press brake.
-  - label: Laser cutting
-    desc: 2D laser cutting of steel, stainless steel and aluminium.
-  - label: Welding
-    desc: TIG, MIG/MAG and robotic welding.
-  - label: Laser welding
-    desc: Clean, low-distortion welded joints.
-  - label: Deburring
-    desc: Burr-free edges after cutting.
-  - label: Self-clinching nuts & rivet nuts
-    desc: Self-clinching nuts for assembly-ready products.
-  - label: Food industry
-    desc: Hygienic stainless steel sheet metal work.
-  - label: Stainless steel enclosures & cladding
-    desc: Machine cladding and housings.
-  faq:
-  - vraag: Which sheet thicknesses can you laser cut?
-    antwoord: 'On the Trumpf TruLaser 3040 we cut steel from 0.5 to 25 mm, stainless steel from 0.5 to 20
-      mm, aluminium from 0.5 to 15 mm and galvanised steel from 0.5 to 10 mm. If your request falls outside
-      that range, put it to us: we will then look at what is possible within our group.'
-  - vraag: Do you also make one-offs, or only series?
-    antwoord: Both, on the same machines. For one-offs and prototypes the emphasis is on thinking along
-      about manufacturability; for series it is on repeatability of dimensions and finishing, so that the
-      last part matches the first.
-  - vraag: Which materials do you process in sheet metal work?
-    antwoord: Stainless steel 304 and 316, aluminium, brass and steel, including galvanised steel. Which
-      material suits best depends on the load, the environment and whether the part is a visible surface
-      — we are glad to advise before the drawing is final.
-  - vraag: Do you supply sheet metal finished and ready for assembly?
-    antwoord: Yes. Deburring, glass bead blasting, passivation, powder coating and the insertion of self-clinching
-      and rivet nuts are all part of the process. You receive a part ready for assembly rather than a semi-finished
-      product that still needs work elsewhere.
-  - vraag: What do you need in order to prepare a quotation?
-    antwoord: A PDF drawing and a 3D STEP file, the material grade and sheet thickness, the quantity, and
-      whether it concerns visible surfaces with the associated finishing. If information is missing we contact
-      you before quoting a price.
-  seo:
-    title: Custom sheet metal work
-    description: 'Precision sheet metal in stainless steel, aluminium and brass: laser cutting, press braking,
-      welding and finishing down to the millimetre. One-offs and series from Hengelo.'
-
-# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
-de:
-  menuLabel: "Blechbearbeitung"
-  title: Blechbearbeitung
-  kicker: Möglichkeit 1.0
-  h1: Perfektion in der Blechbearbeitung
-  intro: Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim Schneiden, Abkanten und
-    Veredeln von Feinblech — Einzelstücke und Serien.
-  heroPhoto:
-    subject: Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung
-  body:
-  - 'Von der ersten Zeichnung bis zum fertigen Teil begleiten wir den gesamten Ablauf: Materialberatung,
-    Engineering, Fertigung und Oberflächenbehandlung — unter einem Dach in Hengelo.'
-  - 'Einzelstück und Serie laufen bei uns über dieselben Maschinen, mit unterschiedlicher Vorbereitung.
-    Beim Prototyp liegt der Schwerpunkt auf der Fertigungsgerechtheit: eine Biegekante zu verschieben oder
-    einen Ausschnitt anders zu setzen spart oft einen ganzen Arbeitsgang. Bei Serie zählt Wiederholbarkeit
-    — dieselbe Aufspannung, dieselbe Reihenfolge und dieselben Prüfpunkte, damit das hundertste Teil dem
-    ersten gleicht.'
-  - 'Liegt Ihre Anfrage außerhalb des unten genannten Bereichs, legen Sie sie uns vor: innerhalb unserer
-    Gruppe ist oft mehr möglich als auf unserer eigenen Maschine.'
-  kerncijfers:
-  - waarde: 25 mm
-    label: max. Blechdicke Stahl
-  - waarde: 3100 mm
-    label: Abkantlänge
-  - waarde: 150 t
-    label: Presskraft
-  - waarde: 4 kW
-    label: Faserlaser
-  process:
-  - step: Laserschneiden
-    desc: Auf einer Trumpf TruLaser 3040, Faserlaser mit 4 kW.
-  - step: Entgraten
-    desc: Maschinell auf einer Timesavers 42 Series RB, damit die Kanten gratfrei und sicher sind, bevor
-      jemand damit weiterarbeitet.
-  - step: Abkanten
-    desc: Auf einer servoelektrischen Safan Darley E-Brake 150-3100 T3 mit 150 t Presskraft und einer Arbeitslänge
-      bis 3100 mm.
-  - step: Schweißen
-    desc: Wo erforderlich, nach ISO 3834-2 mit dokumentierten Schweißparametern.
-  - step: Oberfläche
-    desc: Strahlen, Passivieren, Pulverbeschichten oder Eloxieren — Sie erhalten ein fertiges Teil, kein
-      Halbzeug.
-  specs:
-  - label: Stahl
+  - label: Staal
     value: 0,5 – 25 mm
-  - label: Edelstahl
+  - label: RVS
     value: 0,5 – 20 mm
   - label: Aluminium
     value: 0,5 – 15 mm
-  - label: Verzinkter Stahl
+  - label: Gegalvaniseerd staal
     value: 0,5 – 10 mm
-  - label: Abkantlänge
-    value: bis 3100 mm, 150 t Presskraft
-  - label: Strahlen
-    value: Glasperlen 100–200 μm bei 3,0 bar, Kabine 8 × 4 × 3 m
-  - label: Oberfläche
-    value: Passivieren, Pulverbeschichten, Eloxieren
-  - label: Zertifizierung
+  - label: Zetlengte
+    value: tot 3100 mm, 150 ton perskracht
+  - label: Stralen
+    value: glasparels 100–200 μm bij 3,0 bar, cabine 8 × 4 × 3 m
+  - label: Afwerking
+    value: passiveren, poedercoaten, anodiseren
+  - label: Certificering
     value: ISO 9001, ISO 3834-2, EN 1090-1
+kerncijfers:
+  - waarde: 25 mm
+    label: max. plaatdikte staal
+  - waarde: 3100 mm
+    label: zetlengte kantbank
+  - waarde: 150 ton
+    label: perskracht
+  - waarde: 4 kW
+    label: fiberlaser
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand
+  - Materiaalsoort en plaatdikte
+  - Aantal stuks
+  - Of het zichtwerk betreft, en de gewenste afwerking
+applications: []
+faq:
+  - vraag: Welke plaatdiktes kunnen jullie lasersnijden?
+    antwoord: >-
+      Op de Trumpf TruLaser 3040 snijden wij staal van 0,5 tot 25 mm, RVS van
+      0,5 tot 20 mm, aluminium van 0,5 tot 15 mm en gegalvaniseerd staal van 0,5
+      tot 10 mm. Ligt uw aanvraag buiten dat bereik, leg hem dan voor: dan
+      kijken we wat er binnen onze groep mogelijk is.
+  - vraag: Maken jullie ook enkelstuks, of alleen series?
+    antwoord: >-
+      Allebei, op dezelfde machines. Bij enkelstuks en prototypes ligt het
+      accent op meedenken over maakbaarheid; bij serie op herhaalbaarheid van
+      maatvoering en afwerking, zodat het laatste deel gelijk is aan het eerste.
+  - vraag: Welke materialen verwerken jullie in plaatwerk?
+    antwoord: >-
+      RVS 304 en 316, aluminium, messing en staal, waaronder gegalvaniseerd
+      staal. Welk materiaal het beste past hangt af van de belasting, de
+      omgeving en of het onderdeel zichtwerk is — daar denken wij graag in mee
+      voordat de tekening definitief is.
+  - vraag: Leveren jullie plaatwerk afgewerkt en montageklaar?
+    antwoord: >-
+      Ja. Ontbramen, glasparelstralen, passiveren, poedercoaten en het inpersen
+      van pers- en trekmoeren horen bij het traject. U ontvangt een montageklaar
+      deel in plaats van een halffabricaat dat elders nog bewerkt moet worden.
+  - vraag: Wat hebben jullie nodig om een offerte te maken?
+    antwoord: >-
+      Een PDF-tekening en een 3D STEP-bestand, de materiaalsoort en plaatdikte,
+      het aantal stuks, en of het zichtwerk betreft met de bijbehorende
+      afwerking. Ontbreken er gegevens, dan nemen wij contact op voordat we een
+      prijs afgeven.
+related: []
+cards:
+  - slug: plaatwerk/staal
+    label: Staal
+    desc: Stijf, goed lasbaar en voordelig — het werkpaard.
+  - slug: plaatwerk/rvs
+    label: RVS
+    desc: Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk.
+  - slug: plaatwerk/aluminium
+    label: Aluminium
+    desc: Lichtgewicht en sterk, incl. TIG- en MIG-laswerk.
+  - slug: plaatwerk/messing
+    label: Messing
+    desc: Warme koperzink-legering voor techniek en interieur.
+  - slug: plaatwerk/precisieplaatwerk
+    label: Precisieplaatwerk
+    desc: Maatvast enkelstuks- en seriewerk.
+  - slug: plaatwerk/zetten
+    label: Kanten
+    desc: Nauwkeurige buighoeken op de servo-elektrische kantbank.
+  - slug: plaatwerk/lasersnijden
+    label: Lasersnijden
+    desc: 2D-lasersnijden van staal, RVS en aluminium.
+  - slug: plaatwerk/lassen
+    label: Lassen
+    desc: TIG, MIG/MAG en gerobotiseerd lassen.
+  - slug: plaatwerk/laserlassen
+    label: Laserlassen
+    desc: Strakke, vervormingsarme lasverbindingen.
+  - slug: plaatwerk/ontbramen
+    label: Ontbramen
+    desc: Braamvrije randen na het snijden.
+  - slug: plaatwerk/persmoeren-trekmoeren
+    label: Pers- & trekmoeren
+    desc: Inpersmoeren voor montageklare producten.
+  - slug: plaatwerk/voedingsmiddelenindustrie
+    label: Voedingsindustrie
+    desc: Hygiënisch RVS-plaatwerk.
+  - slug: industriele-behuizing
+    label: RVS-behuizingen & beplating
+    desc: Machinebeplating en omkastingen.
+seo:
+  title: Plaatwerk op maat in RVS en aluminium
+  description: >-
+    Precisieplaatwerk in RVS, aluminium en messing: lasersnijden, kanten, lassen
+    en afwerken tot op de millimeter. Enkelstuks en serie uit Hengelo, Twente.
+translated:
+  - nl
+en:
+  title: Sheet metal work
+  menuLabel: Sheet metal
+  kicker: Capability 1.0
+  h1: Perfection in sheet metal work
+  intro: >-
+    Precision sheet metal with accuracy down to the millimetre. Custom cutting,
+    press braking and finishing of thin sheet material — one-offs as well as
+    series.
+  heroPhoto:
+    subject: Wide shot of the production floor with sheet metal being processed
+  body:
+    - >-
+      From the first drawing to the finished part we guide the whole process:
+      material advice, engineering, production and surface finishing — all under
+      one roof in Hengelo.
+    - >-
+      One-offs and series run on the same machines, with different preparation.
+      For a prototype the emphasis is on thinking along about manufacturability:
+      moving a bend line or repositioning a cut-out often saves an entire
+      operation. For series it is about repeatability — the same fixturing, the
+      same sequence and the same inspection points, so that the hundredth part
+      matches the first.
+    - >-
+      If your request falls outside the range below, put it to us: within our
+      group more is often possible than on our own machine.
+  materials: []
+  process:
+    - step: Laser cutting
+      desc: On a Trumpf TruLaser 3040, a 4 kW fibre laser.
+    - step: Deburring
+      desc: >-
+        By machine on a Timesavers 42 Series RB, so that edges are burr-free and
+        safe before anyone handles them.
+    - step: Press braking
+      desc: >-
+        On a servo-electric Safan Darley E-Brake 150-3100 T3 with 150 tonnes of
+        press force and a working length of up to 3100 mm.
+    - step: Welding
+      desc: Where required, under ISO 3834-2 with documented welding parameters.
+    - step: Finishing
+      desc: >-
+        Blasting, passivating, powder coating or anodising — you receive a
+        finished part, not a semi-finished one.
+  specs:
+    - label: Steel
+      value: 0.5 – 25 mm
+    - label: Stainless steel
+      value: 0.5 – 20 mm
+    - label: Aluminium
+      value: 0.5 – 15 mm
+    - label: Galvanised steel
+      value: 0.5 – 10 mm
+    - label: Press brake length
+      value: up to 3100 mm, 150 tonnes press force
+    - label: Blasting
+      value: glass beads 100–200 μm at 3.0 bar, cabin 8 × 4 × 3 m
+    - label: Finishing
+      value: passivating, powder coating, anodising
+    - label: Certification
+      value: ISO 9001, ISO 3834-2, EN 1090-1
+  kerncijfers:
+    - waarde: 25 mm
+      label: max. sheet thickness, steel
+    - waarde: 3100 mm
+      label: press brake length
+    - waarde: 150 t
+      label: press force
+    - waarde: 4 kW
+      label: fibre laser
   aanleveren:
-  - PDF-Zeichnung und eine 3D-STEP-Datei
-  - Werkstoff und Blechdicke
-  - Stückzahl
-  - Ob es sich um Sichtteile handelt, und die gewünschte Oberfläche
-  cards:
-  - label: Stahl
-    desc: Steif, gut schweißbar und günstig — das Arbeitstier.
-  - label: Edelstahl
-    desc: Geschliffener Edelstahl 304 und 316 für korrosionsbeständige Sichtflächen.
-  - label: Aluminium
-    desc: Leicht und stabil, inkl. WIG- und MIG-Schweißen.
-  - label: Messing
-    desc: Warme Kupfer-Zink-Legierung für Technik und Interieur.
-  - label: Präzisionsblech
-    desc: Maßhaltige Einzelstücke und Serienteile.
-  - label: Kanten & Biegen
-    desc: Präzise Biegewinkel auf der servoelektrischen Abkantpresse.
-  - label: Laserschneiden
-    desc: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium.
-  - label: Schweißen
-    desc: WIG-, MIG/MAG- und Roboterschweißen.
-  - label: Laserschweißen
-    desc: Saubere, verzugsarme Schweißverbindungen.
-  - label: Entgraten
-    desc: Gratfreie Kanten nach dem Schneiden.
-  - label: Einpress- & Blindnietmuttern
-    desc: Einpressmuttern für montagefertige Produkte.
-  - label: Lebensmittelindustrie
-    desc: Hygienische Edelstahl-Blechbearbeitung.
-  - label: Edelstahlgehäuse & Verkleidung
-    desc: Maschinenverkleidungen und Gehäuse.
+    - PDF drawing and a 3D STEP file
+    - Material and sheet thickness
+    - Number of parts
+    - Whether it is visible work, and the finish required
+  applications: []
   faq:
-  - vraag: Welche Blechdicken können Sie laserschneiden?
-    antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Stahl von 0,5 bis 25 mm, Edelstahl von 0,5 bis
-      20 mm, Aluminium von 0,5 bis 15 mm und verzinkten Stahl von 0,5 bis 10 mm. Liegt Ihre Anfrage außerhalb
-      dieses Bereichs, legen Sie sie uns vor: dann prüfen wir, was innerhalb unserer Gruppe möglich ist.'
-  - vraag: Fertigen Sie auch Einzelstücke oder nur Serien?
-    antwoord: Beides, auf denselben Maschinen. Bei Einzelstücken und Prototypen liegt der Schwerpunkt auf
-      der Fertigungsgerechtheit, bei Serien auf der Wiederholgenauigkeit von Maßhaltigkeit und Oberfläche,
-      damit das letzte Teil dem ersten gleicht.
-  - vraag: Welche Werkstoffe verarbeiten Sie in der Blechbearbeitung?
-    antwoord: Edelstahl 304 und 316, Aluminium, Messing und Stahl, einschließlich verzinktem Stahl. Welcher
-      Werkstoff am besten passt, hängt von der Belastung, der Umgebung und davon ab, ob das Bauteil eine
-      Sichtfläche ist — dazu beraten wir gerne, bevor die Zeichnung endgültig ist.
-  - vraag: Liefern Sie Blechteile fertig bearbeitet und montagefertig?
-    antwoord: Ja. Entgraten, Glasperlstrahlen, Passivieren, Pulverbeschichten und das Einpressen von Einpress-
-      und Blindnietmuttern gehören zum Ablauf. Sie erhalten ein montagefertiges Teil und kein Halbzeug,
-      das anderswo noch bearbeitet werden muss.
-  - vraag: Was benötigen Sie für ein Angebot?
-    antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei, Werkstoff und Blechdicke, die Stückzahl sowie die
-      Angabe, ob es sich um Sichtflächen handelt und welche Oberfläche dazugehört. Fehlen Angaben, melden
-      wir uns, bevor wir einen Preis nennen.
+    - vraag: Which sheet thicknesses can you laser cut?
+      antwoord: >-
+        On the Trumpf TruLaser 3040 we cut steel from 0.5 to 25 mm, stainless
+        steel from 0.5 to 20 mm, aluminium from 0.5 to 15 mm and galvanised
+        steel from 0.5 to 10 mm. If your request falls outside that range, put
+        it to us: we will then look at what is possible within our group.
+    - vraag: Do you also make one-offs, or only series?
+      antwoord: >-
+        Both, on the same machines. For one-offs and prototypes the emphasis is
+        on thinking along about manufacturability; for series it is on
+        repeatability of dimensions and finishing, so that the last part matches
+        the first.
+    - vraag: Which materials do you process in sheet metal work?
+      antwoord: >-
+        Stainless steel 304 and 316, aluminium, brass and steel, including
+        galvanised steel. Which material suits best depends on the load, the
+        environment and whether the part is a visible surface — we are glad to
+        advise before the drawing is final.
+    - vraag: Do you supply sheet metal finished and ready for assembly?
+      antwoord: >-
+        Yes. Deburring, glass bead blasting, passivation, powder coating and the
+        insertion of self-clinching and rivet nuts are all part of the process.
+        You receive a part ready for assembly rather than a semi-finished
+        product that still needs work elsewhere.
+    - vraag: What do you need in order to prepare a quotation?
+      antwoord: >-
+        A PDF drawing and a 3D STEP file, the material grade and sheet
+        thickness, the quantity, and whether it concerns visible surfaces with
+        the associated finishing. If information is missing we contact you
+        before quoting a price.
+  related: []
+  cards:
+    - label: Steel
+      desc: Stiff, readily weldable and economical — the workhorse.
+    - label: Stainless steel
+      desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.
+    - label: Aluminium
+      desc: Lightweight and strong, including TIG and MIG welding.
+    - label: Brass
+      desc: Warm copper-zinc alloy for engineering and interiors.
+    - label: Precision sheet metal
+      desc: Dimensionally stable one-offs and series work.
+    - label: Bending & forming
+      desc: Accurate bending angles on the servo-electric press brake.
+    - label: Laser cutting
+      desc: 2D laser cutting of steel, stainless steel and aluminium.
+    - label: Welding
+      desc: TIG, MIG/MAG and robotic welding.
+    - label: Laser welding
+      desc: Clean, low-distortion welded joints.
+    - label: Deburring
+      desc: Burr-free edges after cutting.
+    - label: Self-clinching nuts & rivet nuts
+      desc: Self-clinching nuts for assembly-ready products.
+    - label: Food industry
+      desc: Hygienic stainless steel sheet metal work.
+    - label: Stainless steel enclosures & cladding
+      desc: Machine cladding and housings.
+  seo:
+    title: Custom sheet metal work
+    description: >-
+      Precision sheet metal in stainless steel, aluminium and brass: laser
+      cutting, press braking, welding and finishing down to the millimetre.
+      One-offs and series from Hengelo.
+de:
+  title: Blechbearbeitung
+  menuLabel: Blechbearbeitung
+  kicker: Möglichkeit 1.0
+  h1: Perfektion in der Blechbearbeitung
+  intro: >-
+    Präzisionsblech mit Genauigkeit bis auf den Millimeter. Maßarbeit beim
+    Schneiden, Abkanten und Veredeln von Feinblech — Einzelstücke und Serien.
+  heroPhoto:
+    subject: Breitbildaufnahme der Produktionshalle mit Blecharbeiten in Bearbeitung
+  body:
+    - >-
+      Von der ersten Zeichnung bis zum fertigen Teil begleiten wir den gesamten
+      Ablauf: Materialberatung, Engineering, Fertigung und Oberflächenbehandlung
+      — unter einem Dach in Hengelo.
+    - >-
+      Einzelstück und Serie laufen bei uns über dieselben Maschinen, mit
+      unterschiedlicher Vorbereitung. Beim Prototyp liegt der Schwerpunkt auf
+      der Fertigungsgerechtheit: eine Biegekante zu verschieben oder einen
+      Ausschnitt anders zu setzen spart oft einen ganzen Arbeitsgang. Bei Serie
+      zählt Wiederholbarkeit — dieselbe Aufspannung, dieselbe Reihenfolge und
+      dieselben Prüfpunkte, damit das hundertste Teil dem ersten gleicht.
+    - >-
+      Liegt Ihre Anfrage außerhalb des unten genannten Bereichs, legen Sie sie
+      uns vor: innerhalb unserer Gruppe ist oft mehr möglich als auf unserer
+      eigenen Maschine.
+  materials: []
+  process:
+    - step: Laserschneiden
+      desc: Auf einer Trumpf TruLaser 3040, Faserlaser mit 4 kW.
+    - step: Entgraten
+      desc: >-
+        Maschinell auf einer Timesavers 42 Series RB, damit die Kanten gratfrei
+        und sicher sind, bevor jemand damit weiterarbeitet.
+    - step: Abkanten
+      desc: >-
+        Auf einer servoelektrischen Safan Darley E-Brake 150-3100 T3 mit 150 t
+        Presskraft und einer Arbeitslänge bis 3100 mm.
+    - step: Schweißen
+      desc: Wo erforderlich, nach ISO 3834-2 mit dokumentierten Schweißparametern.
+    - step: Oberfläche
+      desc: >-
+        Strahlen, Passivieren, Pulverbeschichten oder Eloxieren — Sie erhalten
+        ein fertiges Teil, kein Halbzeug.
+  specs:
+    - label: Stahl
+      value: 0,5 – 25 mm
+    - label: Edelstahl
+      value: 0,5 – 20 mm
+    - label: Aluminium
+      value: 0,5 – 15 mm
+    - label: Verzinkter Stahl
+      value: 0,5 – 10 mm
+    - label: Abkantlänge
+      value: bis 3100 mm, 150 t Presskraft
+    - label: Strahlen
+      value: Glasperlen 100–200 μm bei 3,0 bar, Kabine 8 × 4 × 3 m
+    - label: Oberfläche
+      value: Passivieren, Pulverbeschichten, Eloxieren
+    - label: Zertifizierung
+      value: ISO 9001, ISO 3834-2, EN 1090-1
+  kerncijfers:
+    - waarde: 25 mm
+      label: max. Blechdicke Stahl
+    - waarde: 3100 mm
+      label: Abkantlänge
+    - waarde: 150 t
+      label: Presskraft
+    - waarde: 4 kW
+      label: Faserlaser
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei
+    - Werkstoff und Blechdicke
+    - Stückzahl
+    - Ob es sich um Sichtteile handelt, und die gewünschte Oberfläche
+  applications: []
+  faq:
+    - vraag: Welche Blechdicken können Sie laserschneiden?
+      antwoord: >-
+        Auf der Trumpf TruLaser 3040 schneiden wir Stahl von 0,5 bis 25 mm,
+        Edelstahl von 0,5 bis 20 mm, Aluminium von 0,5 bis 15 mm und verzinkten
+        Stahl von 0,5 bis 10 mm. Liegt Ihre Anfrage außerhalb dieses Bereichs,
+        legen Sie sie uns vor: dann prüfen wir, was innerhalb unserer Gruppe
+        möglich ist.
+    - vraag: Fertigen Sie auch Einzelstücke oder nur Serien?
+      antwoord: >-
+        Beides, auf denselben Maschinen. Bei Einzelstücken und Prototypen liegt
+        der Schwerpunkt auf der Fertigungsgerechtheit, bei Serien auf der
+        Wiederholgenauigkeit von Maßhaltigkeit und Oberfläche, damit das letzte
+        Teil dem ersten gleicht.
+    - vraag: Welche Werkstoffe verarbeiten Sie in der Blechbearbeitung?
+      antwoord: >-
+        Edelstahl 304 und 316, Aluminium, Messing und Stahl, einschließlich
+        verzinktem Stahl. Welcher Werkstoff am besten passt, hängt von der
+        Belastung, der Umgebung und davon ab, ob das Bauteil eine Sichtfläche
+        ist — dazu beraten wir gerne, bevor die Zeichnung endgültig ist.
+    - vraag: Liefern Sie Blechteile fertig bearbeitet und montagefertig?
+      antwoord: >-
+        Ja. Entgraten, Glasperlstrahlen, Passivieren, Pulverbeschichten und das
+        Einpressen von Einpress- und Blindnietmuttern gehören zum Ablauf. Sie
+        erhalten ein montagefertiges Teil und kein Halbzeug, das anderswo noch
+        bearbeitet werden muss.
+    - vraag: Was benötigen Sie für ein Angebot?
+      antwoord: >-
+        Eine PDF-Zeichnung und eine 3D-STEP-Datei, Werkstoff und Blechdicke, die
+        Stückzahl sowie die Angabe, ob es sich um Sichtflächen handelt und
+        welche Oberfläche dazugehört. Fehlen Angaben, melden wir uns, bevor wir
+        einen Preis nennen.
+  related: []
+  cards:
+    - label: Stahl
+      desc: Steif, gut schweißbar und günstig — das Arbeitstier.
+    - label: Edelstahl
+      desc: >-
+        Geschliffener Edelstahl 304 und 316 für korrosionsbeständige
+        Sichtflächen.
+    - label: Aluminium
+      desc: Leicht und stabil, inkl. WIG- und MIG-Schweißen.
+    - label: Messing
+      desc: Warme Kupfer-Zink-Legierung für Technik und Interieur.
+    - label: Präzisionsblech
+      desc: Maßhaltige Einzelstücke und Serienteile.
+    - label: Kanten & Biegen
+      desc: Präzise Biegewinkel auf der servoelektrischen Abkantpresse.
+    - label: Laserschneiden
+      desc: 2D-Laserschneiden von Stahl, Edelstahl und Aluminium.
+    - label: Schweißen
+      desc: WIG-, MIG/MAG- und Roboterschweißen.
+    - label: Laserschweißen
+      desc: Saubere, verzugsarme Schweißverbindungen.
+    - label: Entgraten
+      desc: Gratfreie Kanten nach dem Schneiden.
+    - label: Einpress- & Blindnietmuttern
+      desc: Einpressmuttern für montagefertige Produkte.
+    - label: Lebensmittelindustrie
+      desc: Hygienische Edelstahl-Blechbearbeitung.
+    - label: Edelstahlgehäuse & Verkleidung
+      desc: Maschinenverkleidungen und Gehäuse.
   seo:
     title: Blechbearbeitung nach Maß
-    description: 'Präzisionsblech in Edelstahl, Aluminium und Messing: Laserschneiden, Abkanten, Schweißen
-      und Veredeln bis auf den Millimeter. Einzelstücke und Serien aus Hengelo.'
+    description: >-
+      Präzisionsblech in Edelstahl, Aluminium und Messing: Laserschneiden,
+      Abkanten, Schweißen und Veredeln bis auf den Millimeter. Einzelstücke und
+      Serien aus Hengelo.
