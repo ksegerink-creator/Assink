@@ -20,8 +20,9 @@ export const REDIRECTS: Record<string, string> = {
   "/wat-maakt-een-buislaser-uniek": "/kennisbank/wat-maakt-een-buislaser-uniek/",
   "/industriele-behuizingen-op-maat-rvs-aluminium":
     "/kennisbank/industriele-behuizingen-op-maat-rvs-aluminium/",
-  "/metaalbewerking-voedingsmiddelenindustrie":
-    "/kennisbank/metaalbewerking-voedingsmiddelenindustrie/",
+  // Dit artikel is op 12 oktober 2026 opgegaan in de sectorpagina; direct
+  // daarheen, zodat er geen redirectketen ontstaat.
+  "/metaalbewerking-voedingsmiddelenindustrie": "/plaatwerk/voedingsmiddelenindustrie/",
   "/machinebouw-uitbesteden-ervaren-metaalpartner":
     "/kennisbank/machinebouw-uitbesteden-ervaren-metaalpartner/",
   "/lassen-hengelo-staal-rvs-aluminium": "/plaatwerk/lassen/",
@@ -86,6 +87,13 @@ export const REDIRECTS: Record<string, string> = {
   "/plaatwerk/precisieplaatwerk": "/plaatwerk/",
   "/en/plaatwerk/precisieplaatwerk": "/en/plaatwerk/",
   "/de/plaatwerk/precisieplaatwerk": "/de/plaatwerk/",
+  // Kennisbankartikel over de voedingsmiddelenindustrie (12 oktober 2026):
+  // ging over hetzelfde onderwerp als de sectorpagina, die met 60 woorden de
+  // dunnere van de twee was. De inhoud (hygiënisch ontwerp, laserlassen,
+  // nabewerken, EU 1935/2004, FAQ) staat nu op de sectorpagina, zodat het
+  // zoekverkeer uitkomt op de pagina met de offerteknop.
+  "/kennisbank/metaalbewerking-voedingsmiddelenindustrie":
+    "/plaatwerk/voedingsmiddelenindustrie/",
 };
 
 /**
