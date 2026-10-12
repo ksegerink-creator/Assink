@@ -165,6 +165,8 @@ const vacancies = defineCollection({
     hours: z.string().optional(),
     education: z.string().optional(),
     intro: z.string(),
+    // Meta-omschrijving voor Google. Leeg → de intro, die vaak te kort is.
+    seoOmschrijving: z.string().optional(),
     responsibilities: z.array(z.string()).default([]),
     requirements: z.array(z.string()).default([]),
     open: z.boolean().default(true),

@@ -53,7 +53,7 @@ faq:
     aluminium en RVS in eigen huis doen.
 seo:
   title: "Gelaste constructies voor defensie"
-  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie, in staal, RVS en aluminium. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
+  description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie in staal, RVS en aluminium. Laswerk onder ISO 3834-2, EN 1090-1 gecertificeerd."
 translated: ["nl", "en", "de"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
@@ -125,8 +125,7 @@ en:
       steel can be done in house.
   seo:
     title: Welded structures for defence
-    description: Frames, enclosures and welded assemblies up to 10 tonnes for defence, in steel, stainless
-      steel and aluminium. Welding under ISO 3834-2, steel structures to EN 1090-1.
+    description: Frames, enclosures and welded assemblies up to 10 tonnes for defence in steel, stainless steel and aluminium. Welding under ISO 3834-2, EN 1090-1 certified.
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -198,5 +197,4 @@ de:
       können wir im eigenen Haus erledigen.
   seo:
     title: Schweißkonstruktionen für Wehrtechnik
-    description: Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für die Wehrtechnik, aus Stahl,
-      Edelstahl und Aluminium. Schweißen nach ISO 3834-2, Stahlkonstruktionen nach EN 1090-1.
+    description: Rahmen, Gehäuse und Schweißbaugruppen bis 10 t für die Wehrtechnik in Stahl, Edelstahl und Aluminium. Schweißen nach ISO 3834-2, EN 1090-1 zertifiziert.

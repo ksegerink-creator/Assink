@@ -122,8 +122,7 @@ en:
       State on the drawing which dimensions are critical and we will focus our inspection on them.
   seo:
     title: Sheet metal for instrumentation
-    description: Instrument enclosures, mounting plates and panels for instrumentation and control in stainless
-      steel and aluminium. Laser cutting and bending to ± 0.2 mm, also in small series.
+    description: Instrument enclosures, mounting plates and panels for instrumentation in stainless steel and aluminium. Laser cutting and bending to ± 0.2 mm, small series too.
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -194,5 +193,4 @@ de:
       aus.
   seo:
     title: Blech für die Mess- und Regeltechnik
-    description: Instrumentengehäuse, Montageplatten und Paneele für die Mess- und Regeltechnik in Edelstahl
-      und Aluminium. Laserschneiden und Abkanten bis ± 0,2 mm, auch in kleinen Serien.
+    description: Instrumentengehäuse, Montageplatten und Paneele für die Mess- und Regeltechnik in Edelstahl und Aluminium. Abkanten bis ± 0,2 mm, auch in kleinen Serien.

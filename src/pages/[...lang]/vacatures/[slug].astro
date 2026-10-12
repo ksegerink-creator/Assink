@@ -49,7 +49,7 @@ const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] 
 ---
 <PageLayout
   title={v.title}
-  description={v.intro}
+  description={v.seoOmschrijving || v.intro}
   canonicalSlug={`vacatures/${v.slug}`}
   altLocales={["nl", "en", "de"]}
   trail={[{ label: t(locale, "careers"), slug: "vacatures" }, { label: v.title, slug: `vacatures/${v.slug}` }]}
