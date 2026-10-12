@@ -142,7 +142,13 @@ export function articleJsonLd(
 /** JobPosting schema for a vacancy. */
 export function jobPostingJsonLd(
   site: URL | string,
-  job: { title: string; description: string; employmentType?: string; datePosted?: string },
+  job: {
+    title: string;
+    description: string;
+    employmentType?: string;
+    datePosted?: string;
+    validThrough?: string;
+  },
 ) {
   const base = (typeof site === "string" ? site : site.href).replace(/\/+$/, "");
   return {
@@ -152,6 +158,7 @@ export function jobPostingJsonLd(
     description: job.description,
     employmentType: job.employmentType ?? "FULL_TIME",
     datePosted: job.datePosted ?? String(SITE.founded),
+    ...(job.validThrough ? { validThrough: job.validThrough } : {}),
     hiringOrganization: { "@id": `${base}/#organization` },
     jobLocation: {
       "@type": "Place",
