@@ -4,8 +4,8 @@ template: service
 group: lastechniek
 order: 41
 h1: Lassen
-intro: Van handmatig TIG-, MIG- en MAG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij materiaal,
-  serie en kwaliteitseis.
+intro: Van handmatig TIG-, MIG- en MAG-lassen tot laserlassen. Wij kiezen de lasmethode die past bij
+  materiaal, serie en kwaliteitseis.
 fotobank: "tig-lassen"
 heroPhoto:
   subject: Lasser aan het werk aan RVS-samenstelling
@@ -13,234 +13,270 @@ heroPhoto:
   crop: Persoon centraal
   comp: Lasvlam, vonken, beschermkleding
 body:
-- Lassen is kernvakmanschap bij Assink & Schipholt. Afhankelijk van de toepassing zetten we hand- of laserlassen
-  in — altijd met aandacht voor inbranding, vervorming en naadkwaliteit. Geautomatiseerd lassen voor grotere
-  series besteden we uit aan een vaste partner; in Hengelo lassen we met de hand en met de laser.
-- Welke lasmethode we kiezen, hangt af van materiaal, plaatdikte en de eis aan de naad. TIG-lassen geeft
-  een beheerste warmte-inbreng en een nette naad, en past daarmee bij dun materiaal en zichtwerk in RVS
-  en aluminium. MIG- en MAG-lassen zijn sneller en passen bij dikker materiaal en grotere series; MIG
-  met inert gas voor RVS en aluminium, MAG met actief gas voor staal. <a href="/plaatwerk/laserlassen/">Laserlassen</a>
-  levert een smalle naad met weinig vervorming.
-- Vervorming is bij lassen het grootste risico voor de maatvoering. Wij beperken die door de warmte-inbreng
-  te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen. Na het lassen controleren we de
-  maten, zodat een afwijking niet pas bij de montage aan het licht komt.
-- De nabehandeling verschilt per materiaal. Bij RVS verwijderen we aanloopkleuren en passiveren we, zodat
-  de corrosiebestendigheid rond de naad behouden blijft — <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom
-  dat nodig is</a> leggen we apart uit. Aluminium en staal worden ontbraamd en waar nodig gestraald in
-  onze straalcabine.
-- Voor lassen werken wij onder ISO 3834-2 en wij zijn gecertificeerd volgens EN 1090-1. Wat dat betekent
-  voor vastlegging en controle per opdracht, staat op onze <a href="/kwaliteit/">kwaliteitspagina</a>.
-  Robotlassen doen wij niet in eigen huis; dat gebeurt binnen de groep bij Baas Metaal.
-- 'Wat wij bij een lasaanvraag graag meekrijgen: de tekening met de gewenste naadvorm, het materiaal en
-  de plaatdikte, welke maten kritisch zijn, of er zichteisen aan de naad zijn, en of er documentatie bij
-  de levering hoort. Hoe eerder die eisen bekend zijn, hoe beter we de lasvolgorde en de nabehandeling
-  erop kunnen inrichten — achteraf rechttrekken kost altijd meer tijd dan vooraf plannen.'
+  - Welke lasmethode we kiezen, hangt af van materiaal, plaatdikte en de eis aan de naad. De tabel hieronder
+    zet de vier op een rij; de afweging maken wij per opdracht.
+  - Vervorming is bij lassen het grootste risico voor de maatvoering. Wij beperken die door de warmte-inbreng
+    te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen. Na het lassen controleren we de
+    maten, zodat een afwijking niet pas bij de montage aan het licht komt.
+  - De nabehandeling verschilt per materiaal. Bij RVS verwijderen we aanloopkleuren en passiveren we, zodat de
+    corrosiebestendigheid rond de naad behouden blijft — <a
+    href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom dat nodig is</a> leggen we apart uit.
+    Aluminium en staal worden ontbraamd en waar nodig gestraald in onze straalcabine.
 materials:
-- RVS
-- Aluminium
-- Staal
+  - RVS
+  - Aluminium
+  - Staal
 process:
-- step: Voorbereiding
-  desc: Passend maken en opspannen.
-- step: Lassen
-  desc: TIG, MIG/MAG of laser.
-- step: Nabewerking
-  desc: Slijpen, beitsen en passiveren waar nodig.
-- step: Controle
-  desc: Visuele controle van de lasnaden.
+  - step: Voorbereiding
+    desc: Passend maken en opspannen.
+  - step: Lassen
+    desc: TIG, MIG/MAG of laser.
+  - step: Nabewerking
+    desc: Slijpen, beitsen en passiveren waar nodig.
+  - step: Controle
+    desc: Visuele controle van de lasnaden.
 applications:
-- Constructies
-- Behuizingen
-- Machinedelen
+  - Constructies
+  - Behuizingen
+  - Machinedelen
 related:
-- slug: plaatwerk/laserlassen
-  label: Laserlassen
-  desc: Vervormingsarme naden.
-- slug: plaatwerk/robotlassen
-  label: Robotlassen
-  desc: Constante seriekwaliteit.
-- slug: aluminium-lassen
-  label: Aluminium lassen
-  desc: TIG/MIG in aluminium.
+  - slug: plaatwerk/laserlassen
+    label: Laserlassen
+    desc: Vervormingsarme naden.
+  - slug: plaatwerk/robotlassen
+    label: Robotlassen
+    desc: Constante seriekwaliteit.
+  - slug: aluminium-lassen
+    label: Aluminium lassen
+    desc: TIG/MIG in aluminium.
 seo:
   title: Lassen — hand- en laserlassen
   description: 'Hand- en laserlassen in RVS, aluminium en staal: van enkelstuks tot series, met constante
     lasnaadkwaliteit.'
 translated:
-- nl
+  - nl
 faq:
-- vraag: Welke lasmethoden hebben jullie in huis?
-  antwoord: Wij lassen met TIG, MIG en MAG en beschikken over laserlassen. TIG geeft de meeste controle
-    over de warmte-inbreng en past bij dun materiaal en zichtwerk. MIG en MAG zijn sneller bij dikker
-    materiaal en grotere series — MIG met inert gas voor RVS en aluminium, MAG met actief gas voor staal. Robotlassen doen wij niet in Hengelo — dat gebeurt binnen de groep bij Baas Metaal.
-- vraag: Zijn jullie gecertificeerd voor laswerk?
-  antwoord: Wij werken voor lassen onder ISO 3834-2 en zijn gecertificeerd volgens EN 1090-1. Daarnaast
-    is ons kwaliteitssysteem gecertificeerd volgens ISO 9001. Wat dat per opdracht betekent voor vastlegging
-    en controle, leest u op onze kwaliteitspagina.
-- vraag: Hoe voorkomen jullie vervorming bij het lassen?
-  antwoord: Door de warmte-inbreng te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen.
-    Na het lassen controleren wij de maten, zodat een afwijking niet pas bij de montage aan het licht
-    komt. Achteraf rechttrekken kost altijd meer tijd dan vooraf plannen.
-- vraag: Welke materialen lassen jullie?
-  antwoord: 'Staal, RVS in de kwaliteiten 304 en 316, en aluminium. De lasmethode en de nabehandeling
-    stemmen wij af op het materiaal: bij RVS verwijderen wij aanloopkleuren en passiveren wij, aluminium
-    en staal worden ontbraamd en waar nodig gestraald.'
+  - vraag: Welke lasmethoden hebben jullie in huis?
+    antwoord: Wij lassen met TIG, MIG en MAG en beschikken over laserlassen. TIG geeft de meeste controle over de
+      warmte-inbreng en past bij dun materiaal en zichtwerk. MIG en MAG zijn sneller bij dikker materiaal en
+      grotere series — MIG met inert gas voor RVS en aluminium, MAG met actief gas voor staal. Robotlassen
+      doen wij niet in Hengelo — dat gebeurt binnen de groep bij Baas Metaal.
+  - vraag: Zijn jullie gecertificeerd voor laswerk?
+    antwoord: Wij werken voor lassen onder ISO 3834-2 en zijn gecertificeerd volgens EN 1090-1. Daarnaast is ons
+      kwaliteitssysteem gecertificeerd volgens ISO 9001. Wat dat per opdracht betekent voor vastlegging en
+      controle, leest u op onze kwaliteitspagina.
+  - vraag: Hoe voorkomen jullie vervorming bij het lassen?
+    antwoord: Door de warmte-inbreng te doseren, delen op te spannen en de lasvolgorde vooraf te bepalen. Na het
+      lassen controleren wij de maten, zodat een afwijking niet pas bij de montage aan het licht komt.
+      Achteraf rechttrekken kost altijd meer tijd dan vooraf plannen.
+  - vraag: Welke materialen lassen jullie?
+    antwoord: 'Staal, RVS in de kwaliteiten 304 en 316, en aluminium. De lasmethode en de nabehandeling stemmen
+      wij af op het materiaal: bij RVS verwijderen wij aanloopkleuren en passiveren wij, aluminium en staal
+      worden ontbraamd en waar nodig gestraald.'
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Welding
   h1: Welding
-  intro: From manual TIG, MIG and MAG welding to automated and laser welding. We choose the welding method
-    that suits the material, the batch size and the quality requirement.
+  intro: From manual TIG, MIG and MAG welding to automated and laser welding. We choose the welding method that
+    suits the material, the batch size and the quality requirement.
   heroPhoto:
     subject: Welder at work on a stainless steel assembly
   body:
-  - Welding is core craftsmanship at Assink & Schipholt. Depending on the application we use manual or laser
-    welding — always with attention to penetration, distortion and seam quality. Automated welding for larger
-    series is outsourced to a regular partner; in Hengelo we weld manually and by laser.
-  - Which welding method we choose depends on the material, the sheet thickness and the requirements for
-    the seam. TIG welding gives controlled heat input and a clean seam, which suits thin material and visible
-    work in stainless steel and aluminium. MIG and MAG welding are faster and suit thicker material and
-    larger series — MIG with inert gas for stainless steel and aluminium, MAG with active gas for steel.
-    <a href="/en/plaatwerk/laserlassen/">Laser welding</a> produces a narrow seam with little distortion.
-  - Distortion is the greatest risk to dimensional accuracy when welding. We limit it by metering the heat
-    input, clamping parts and determining the welding sequence in advance. After welding we check the dimensions,
-    so that a deviation does not first come to light during assembly.
-  - Finishing differs per material. On stainless steel we remove heat tint and passivate, so that corrosion
-    resistance around the seam is retained — we explain <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">why
-    that is necessary</a> separately (in Dutch). Aluminium and steel are deburred and, where required, blasted
-    in our blast cabin.
-  - For welding we work under ISO 3834-2 and we are certified to EN 1090-1. What that means for documentation
-    and inspection per order is set out on our <a href="/en/kwaliteit/">quality page</a>. We do not carry
-    out robot welding in house; that takes place within the group at Baas Metaal.
-  - 'What we like to receive with a welding request: the drawing with the required joint shape, the material
-    and sheet thickness, which dimensions are critical, whether there are appearance requirements for the
-    seam, and whether documentation is part of the delivery. The earlier those requirements are known, the
-    better we can set up the welding sequence and the finishing — straightening afterwards always costs
-    more time than planning up front.'
+    - Which welding process we choose depends on material, sheet thickness and the requirement for the seam.
+      The table below sets out the four; we make the call per order.
+    - Distortion is the greatest risk to dimensional accuracy when welding. We limit it by metering the heat
+      input, clamping parts and determining the welding sequence in advance. After welding we check the
+      dimensions, so that a deviation does not first come to light during assembly.
+    - Finishing differs per material. On stainless steel we remove heat tint and passivate, so that corrosion
+      resistance around the seam is retained — we explain <a
+      href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">why that is necessary</a> separately (in Dutch).
+      Aluminium and steel are deburred and, where required, blasted in our blast cabin.
   materials:
-  - Stainless steel
-  - Aluminium
-  - Steel
+    - Stainless steel
+    - Aluminium
+    - Steel
   process:
-  - step: Preparation
-    desc: Fitting up and fixturing.
-  - step: Welding
-    desc: TIG, MIG/MAG or laser.
-  - step: Finishing
-    desc: Grinding, pickling and passivating where required.
-  - step: Inspection
-    desc: Visual inspection of the weld seams.
+    - step: Preparation
+      desc: Fitting up and fixturing.
+    - step: Welding
+      desc: TIG, MIG/MAG or laser.
+    - step: Finishing
+      desc: Grinding, pickling and passivating where required.
+    - step: Inspection
+      desc: Visual inspection of the weld seams.
   applications:
-  - Welded constructions
-  - Enclosures
-  - Machine parts
+    - Welded constructions
+    - Enclosures
+    - Machine parts
   related:
-  - label: Laser welding
-    desc: Low-distortion seams.
-  - label: Robot welding
-    desc: Consistent quality in series.
-  - label: Aluminium welding
-    desc: TIG/MIG in aluminium.
+    - label: Laser welding
+      desc: Low-distortion seams.
+    - label: Robot welding
+      desc: Consistent quality in series.
+    - label: Aluminium welding
+      desc: TIG/MIG in aluminium.
   seo:
     title: Welding — manual and laser welding
-    description: 'Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series,
-      with consistent weld seam quality.'
+    description: 'Manual and laser welding in stainless steel, aluminium and steel: from one-offs to series, with
+      consistent weld seam quality.'
   faq:
-  - vraag: Which welding methods do you have in house?
-    antwoord: We weld with TIG, MIG and MAG and have laser welding available. TIG gives the most control
-      over heat input and suits thin material and visible work; MIG and MAG are faster for thicker material
-      and larger series. We do not carry out robot welding in Hengelo — that takes place within the group
-      at Baas Metaal.
-  - vraag: Are you certified for welding work?
-    antwoord: For welding we work under ISO 3834-2 and we are certified to EN 1090-1. In addition, our quality
-      system is certified to ISO 9001. What that means per order for documentation and inspection is set
-      out on our quality page.
-  - vraag: How do you prevent distortion when welding?
-    antwoord: By metering the heat input, clamping parts and determining the welding sequence in advance.
-      After welding we check the dimensions, so that a deviation does not first come to light during assembly.
-      Straightening afterwards always costs more time than planning up front.
-  - vraag: Which materials do you weld?
-    antwoord: 'Steel, stainless steel in grades 304 and 316, and aluminium. We match the welding method
-      and the finishing to the material: on stainless steel we remove heat tint and passivate, while aluminium
-      and steel are deburred and, where required, blasted.'
+    - vraag: Which welding methods do you have in house?
+      antwoord: We weld with TIG, MIG and MAG and have laser welding available. TIG gives the most control over heat
+        input and suits thin material and visible work; MIG and MAG are faster for thicker material and larger
+        series. We do not carry out robot welding in Hengelo — that takes place within the group at Baas
+        Metaal.
+    - vraag: Are you certified for welding work?
+      antwoord: For welding we work under ISO 3834-2 and we are certified to EN 1090-1. In addition, our quality
+        system is certified to ISO 9001. What that means per order for documentation and inspection is set out
+        on our quality page.
+    - vraag: How do you prevent distortion when welding?
+      antwoord: By metering the heat input, clamping parts and determining the welding sequence in advance. After
+        welding we check the dimensions, so that a deviation does not first come to light during assembly.
+        Straightening afterwards always costs more time than planning up front.
+    - vraag: Which materials do you weld?
+      antwoord: 'Steel, stainless steel in grades 304 and 316, and aluminium. We match the welding method and the
+        finishing to the material: on stainless steel we remove heat tint and passivate, while aluminium and
+        steel are deburred and, where required, blasted.'
+  specs:
+    - label: TIG
+      value: controlled heat input and a clean seam — thin material and visible work in stainless steel and
+        aluminium
+    - label: MIG
+      value: inert gas, faster — stainless steel and aluminium, thicker material and larger series
+    - label: MAG
+      value: active gas, faster — steel, thicker material and larger series
+    - label: Laser welding
+      value: narrow seam with little distortion
+    - label: Standards
+      value: welding under ISO 3834-2, certified to EN 1090-1
+    - label: Finishing, stainless steel
+      value: remove heat tint and passivate
+    - label: Finishing, aluminium and steel
+      value: deburring and, where required, blasting
+    - label: Robot welding
+      value: not in house; within the group at Baas Metaal
+  aanleveren:
+    - The drawing with the required joint shape
+    - Material and sheet thickness
+    - Which dimensions are critical
+    - Whether there are appearance requirements for the seam
+    - Whether documentation is part of the delivery
+    - The earlier those requirements are known, the better we can set up the welding sequence and finishing —
+      straightening afterwards always costs more time
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Schweißen
   h1: Schweißen
-  intro: Vom manuellen WIG-, MIG- und MAG-Schweißen bis zum automatisierten Schweißen und Laserschweißen.
-    Wir wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt.
+  intro: Vom manuellen WIG-, MIG- und MAG-Schweißen bis zum automatisierten Schweißen und Laserschweißen. Wir
+    wählen das Schweißverfahren, das zu Material, Serie und Qualitätsanforderung passt.
   heroPhoto:
     subject: Schweißer bei der Arbeit an einer Edelstahl-Baugruppe
   body:
-  - Schweißen ist Kernhandwerk bei Assink & Schipholt. Je nach Anwendung setzen wir Hand- oder Laserschweißen
-    ein — immer mit Augenmerk auf Einbrand, Verzug und Nahtqualität. Automatisiertes Schweißen für größere
-    Serien geben wir an einen festen Partner; in Hengelo schweißen wir von Hand und mit dem Laser.
-  - Welches Schweißverfahren wir wählen, hängt vom Werkstoff, der Blechdicke und den Anforderungen an die
-    Naht ab. WIG-Schweißen bietet eine kontrollierte Wärmeeinbringung und eine saubere Naht und eignet sich
-    damit für dünnes Material und Sichtflächen in Edelstahl und Aluminium. MIG- und MAG-Schweißen sind schneller
-    — MIG mit inertem Gas für Edelstahl und Aluminium, MAG mit aktivem Gas für Stahl — und passt zu dickerem
-    Material und größeren Serien. <a href="/de/plaatwerk/laserlassen/">Laserschweißen</a> liefert eine schmale
-    Naht mit geringem Verzug.
-  - Verzug ist beim Schweißen das größte Risiko für die Maßhaltigkeit. Wir begrenzen ihn, indem wir die
-    Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen. Nach dem Schweißen
-    prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
-  - Die Nachbehandlung unterscheidet sich je nach Werkstoff. Bei Edelstahl entfernen wir Anlauffarben und
-    passivieren, damit die Korrosionsbeständigkeit rund um die Naht erhalten bleibt — <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">warum
-    das nötig ist</a>, erläutern wir gesondert (niederländisch). Aluminium und Stahl werden entgratet und
-    bei Bedarf in unserer Strahlkabine gestrahlt.
-  - Für das Schweißen arbeiten wir nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert. Was das für Dokumentation
-    und Prüfung pro Auftrag bedeutet, steht auf unserer <a href="/de/kwaliteit/">Qualitätsseite</a>. Roboterschweißen
-    führen wir nicht im eigenen Haus aus; das geschieht innerhalb der Gruppe bei Baas Metaal.
-  - 'Was wir bei einer Schweißanfrage gerne mitbekommen: die Zeichnung mit der gewünschten Nahtform, den
-    Werkstoff und die Blechdicke, welche Maße kritisch sind, ob es Sichtanforderungen an die Naht gibt und
-    ob Dokumentation zur Lieferung gehört. Je früher diese Anforderungen bekannt sind, desto besser können
-    wir Schweißfolge und Nachbehandlung darauf abstimmen — nachträgliches Richten kostet immer mehr Zeit
-    als vorausschauende Planung.'
+    - Welches Schweißverfahren wir wählen, hängt von Werkstoff, Blechdicke und der Anforderung an die Naht ab.
+      Die Tabelle unten stellt die vier gegenüber; die Abwägung treffen wir je Auftrag.
+    - Verzug ist beim Schweißen das größte Risiko für die Maßhaltigkeit. Wir begrenzen ihn, indem wir die
+      Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen. Nach dem Schweißen
+      prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
+    - Die Nachbehandlung unterscheidet sich je nach Werkstoff. Bei Edelstahl entfernen wir Anlauffarben und
+      passivieren, damit die Korrosionsbeständigkeit rund um die Naht erhalten bleibt — <a
+      href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">warum das nötig ist</a>, erläutern wir gesondert
+      (niederländisch). Aluminium und Stahl werden entgratet und bei Bedarf in unserer Strahlkabine gestrahlt.
   materials:
-  - Edelstahl
-  - Aluminium
-  - Stahl
+    - Edelstahl
+    - Aluminium
+    - Stahl
   process:
-  - step: Vorbereitung
-    desc: Anpassen und Aufspannen.
-  - step: Schweißen
-    desc: WIG, MIG/MAG oder Laser.
-  - step: Nachbearbeitung
-    desc: Schleifen, Beizen und Passivieren, wo erforderlich.
-  - step: Kontrolle
-    desc: Visuelle Prüfung der Schweißnähte.
+    - step: Vorbereitung
+      desc: Anpassen und Aufspannen.
+    - step: Schweißen
+      desc: WIG, MIG/MAG oder Laser.
+    - step: Nachbearbeitung
+      desc: Schleifen, Beizen und Passivieren, wo erforderlich.
+    - step: Kontrolle
+      desc: Visuelle Prüfung der Schweißnähte.
   applications:
-  - Konstruktionen
-  - Gehäuse
-  - Maschinenteile
+    - Konstruktionen
+    - Gehäuse
+    - Maschinenteile
   related:
-  - label: Laserschweißen
-    desc: Verzugsarme Nähte.
-  - label: Roboterschweißen
-    desc: Gleichbleibende Serienqualität.
-  - label: Aluminium schweißen
-    desc: WIG/MIG in Aluminium.
+    - label: Laserschweißen
+      desc: Verzugsarme Nähte.
+    - label: Roboterschweißen
+      desc: Gleichbleibende Serienqualität.
+    - label: Aluminium schweißen
+      desc: WIG/MIG in Aluminium.
   seo:
     title: Schweißen — Hand- und Laserschweißen
-    description: 'Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien,
-      mit gleichbleibender Schweißnahtqualität.'
+    description: 'Hand- und Laserschweißen in Edelstahl, Aluminium und Stahl: von Einzelstücken bis zu Serien, mit
+      gleichbleibender Schweißnahtqualität.'
   faq:
-  - vraag: Welche Schweißverfahren haben Sie im Haus?
-    antwoord: Wir schweißen mit WIG, MIG und MAG und verfügen über das Laserschweißen. WIG bietet die größte
-      Kontrolle über die Wärmeeinbringung und eignet sich für dünnes Material und Sichtflächen; MIG ist
-      schneller bei dickerem Material und größeren Serien. Roboterschweißen führen wir nicht in Hengelo
-      aus — das geschieht innerhalb der Gruppe bei Baas Metaal.
-  - vraag: Sind Sie für Schweißarbeiten zertifiziert?
-    antwoord: Für das Schweißen arbeiten wir nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert. Darüber
-      hinaus ist unser Qualitätssystem nach ISO 9001 zertifiziert. Was das pro Auftrag für Dokumentation
-      und Prüfung bedeutet, lesen Sie auf unserer Qualitätsseite.
-  - vraag: Wie vermeiden Sie Verzug beim Schweißen?
-    antwoord: Indem wir die Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen.
-      Nach dem Schweißen prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
-      Nachträgliches Richten kostet immer mehr Zeit als vorausschauende Planung.
-  - vraag: Welche Werkstoffe schweißen Sie?
-    antwoord: 'Stahl, Edelstahl in den Güten 304 und 316 sowie Aluminium. Schweißverfahren und Nachbehandlung
-      stimmen wir auf den Werkstoff ab: Bei Edelstahl entfernen wir Anlauffarben und passivieren, Aluminium
-      und Stahl werden entgratet und bei Bedarf gestrahlt.'
+    - vraag: Welche Schweißverfahren haben Sie im Haus?
+      antwoord: Wir schweißen mit WIG, MIG und MAG und verfügen über das Laserschweißen. WIG bietet die größte
+        Kontrolle über die Wärmeeinbringung und eignet sich für dünnes Material und Sichtflächen; MIG ist
+        schneller bei dickerem Material und größeren Serien. Roboterschweißen führen wir nicht in Hengelo aus
+        — das geschieht innerhalb der Gruppe bei Baas Metaal.
+    - vraag: Sind Sie für Schweißarbeiten zertifiziert?
+      antwoord: Für das Schweißen arbeiten wir nach ISO 3834-2 und sind nach EN 1090-1 zertifiziert. Darüber hinaus
+        ist unser Qualitätssystem nach ISO 9001 zertifiziert. Was das pro Auftrag für Dokumentation und
+        Prüfung bedeutet, lesen Sie auf unserer Qualitätsseite.
+    - vraag: Wie vermeiden Sie Verzug beim Schweißen?
+      antwoord: Indem wir die Wärmeeinbringung dosieren, Teile aufspannen und die Schweißfolge vorab festlegen. Nach
+        dem Schweißen prüfen wir die Maße, damit eine Abweichung nicht erst bei der Montage auffällt.
+        Nachträgliches Richten kostet immer mehr Zeit als vorausschauende Planung.
+    - vraag: Welche Werkstoffe schweißen Sie?
+      antwoord: 'Stahl, Edelstahl in den Güten 304 und 316 sowie Aluminium. Schweißverfahren und Nachbehandlung
+        stimmen wir auf den Werkstoff ab: Bei Edelstahl entfernen wir Anlauffarben und passivieren, Aluminium
+        und Stahl werden entgratet und bei Bedarf gestrahlt.'
+  specs:
+    - label: WIG
+      value: kontrollierte Wärmeeinbringung und saubere Naht — dünnes Material und Sichtflächen in Edelstahl und
+        Aluminium
+    - label: MIG
+      value: inertes Gas, schneller — Edelstahl und Aluminium, dickeres Material und größere Serien
+    - label: MAG
+      value: aktives Gas, schneller — Stahl, dickeres Material und größere Serien
+    - label: Laserschweißen
+      value: schmale Naht mit wenig Verzug
+    - label: Normen
+      value: Schweißen nach ISO 3834-2, zertifiziert nach EN 1090-1
+    - label: Nachbehandlung Edelstahl
+      value: Anlauffarben entfernen und passivieren
+    - label: Nachbehandlung Aluminium und Stahl
+      value: Entgraten und bei Bedarf Strahlen
+    - label: Roboterschweißen
+      value: nicht im eigenen Haus; innerhalb der Gruppe bei Baas Metaal
+  aanleveren:
+    - Die Zeichnung mit der gewünschten Nahtform
+    - Werkstoff und Blechdicke
+    - Welche Maße kritisch sind
+    - Ob es Sichtanforderungen an die Naht gibt
+    - Ob Dokumentation zur Lieferung gehört
+    - Je früher diese Anforderungen bekannt sind, desto besser stimmen wir Schweißfolge und Nachbehandlung
+      darauf ab — nachträgliches Richten kostet immer mehr Zeit
+specs:
+  - label: TIG
+    value: beheerste warmte-inbreng en een nette naad — dun materiaal en zichtwerk in RVS en aluminium
+  - label: MIG
+    value: inert gas, sneller — RVS en aluminium, dikker materiaal en grotere series
+  - label: MAG
+    value: actief gas, sneller — staal, dikker materiaal en grotere series
+  - label: Laserlassen
+    value: smalle naad met weinig vervorming
+  - label: Normen
+    value: lassen onder ISO 3834-2, gecertificeerd volgens EN 1090-1
+  - label: Nabehandeling RVS
+    value: aanloopkleuren verwijderen en passiveren
+  - label: Nabehandeling aluminium en staal
+    value: ontbramen en waar nodig stralen
+  - label: Robotlassen
+    value: niet in eigen huis; binnen de groep bij Baas Metaal
+aanleveren:
+  - De tekening met de gewenste naadvorm
+  - Materiaal en plaatdikte
+  - Welke maten kritisch zijn
+  - Of er zichteisen aan de naad zijn
+  - Of er documentatie bij de levering hoort
+  - Hoe eerder die eisen bekend zijn, hoe beter wij lasvolgorde en nabehandeling erop inrichten — achteraf
+    rechttrekken kost altijd meer tijd

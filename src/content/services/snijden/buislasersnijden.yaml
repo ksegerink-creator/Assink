@@ -5,202 +5,199 @@ group: snijden
 order: 32
 inFooter: true
 h1: Buislasersnijden
-intro: Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en
-  hoge nauwkeurigheid.
+intro: Precisie buislasersnijwerk voor maatvaste buizen en profielen, met geavanceerde CNC-besturing en hoge
+  nauwkeurigheid.
 heroPhoto:
   subject: Operator bedient de Trumpf TruLaser Tube 3000
   orient: Liggend 16:10
   crop: Machine + buis
   comp: Roterende buis onder snijkop
 body:
-- Wij werken met een Trumpf buislaser voor staal, RVS en aluminium — geschikt voor complexe
-  contouren, gaten en verbindingen in één bewerking.
-- Dankzij contactloos lasersnijden ontstaat een zeer hoge maatvastheid en reproduceerbaarheid, minder
-  nabewerking en kortere doorlooptijden. Ideaal voor zowel enkelstuks als seriewerk. Complexe verbindingen
-  komen uit één bewerking — minder passen, sneller lassen.
-- Het verschil met zagen en boren zit niet in de snelheid maar in de pasvorm. Bij de klassieke route wordt
-  een profiel afgekort, daarna geboord, daarna passend geslepen — en elke stap voegt een afwijking toe
-  die zich door de constructie heen opstapelt. Op de buislaser komen de contour, de gaten en de verbindingsvorm
-  in één opspanning uit de machine, waardoor die opeenstapeling wegvalt.
-- Dat werkt door in het laswerk. Delen die in elkaar vallen hoeven niet passend gemaakt te worden, de
-  spleet blijft klein en gelijkmatig, en de lasser hoeft minder te overbruggen. Minder lastijd, minder
-  warmte-inbreng en dus minder vervorming in het geheel. In een frame met tientallen verbindingen is dat
-  het verschil tussen een constructie die klopt en een die achteraf gericht moet worden.
-- Wij combineren buislasersnijden met <a href="/plaatwerk/lasersnijden/">2D-lasersnijden van plaat</a>
-  en met het lassen en samenstellen in dezelfde hal in Hengelo. Voor een frame met plaatwerkdelen betekent
-  dat één werkvoorbereiding, één planning en één aanspreekpunt, in plaats van afstemming tussen een buisleverancier,
-  een plaatleverancier en een lasbedrijf. Voor klanten in Twente en de rest van Overijssel scheelt dat
-  bovendien transportbewegingen.
-- 'Wat wij nodig hebben voor een beoordeling: een PDF-tekening en een 3D STEP-bestand van het profiel, de profielsoort
-  en -maat, het materiaal, de lengtes en het aantal stuks. Ronde buis snijden wij tot ø 150 mm, vierkante
-  en rechthoekige profielen tot 120 × 120 mm; de wanddikte gaat tot 6 mm in staal en tot 4 mm in RVS.
-  Buis en profiel verwerken wij tot een lengte van 6500 mm. Valt uw profiel daarbuiten, leg het dan voor aan onze werkvoorbereiding. Gaat het om een complete constructie, stuur dan ook het samenstel mee, dan kijken
-  we meteen naar de lasvolgorde.'
+  - Het verschil met zagen en boren zit niet in de snelheid maar in de pasvorm. Bij de klassieke route wordt
+    een profiel afgekort, daarna geboord, daarna passend geslepen — en elke stap voegt een afwijking toe die
+    zich door de constructie heen opstapelt. Op de buislaser komen de contour, de gaten en de verbindingsvorm
+    in één opspanning uit de machine, waardoor die opeenstapeling wegvalt.
+  - Dat werkt door in het laswerk. Delen die in elkaar vallen hoeven niet passend gemaakt te worden, de spleet
+    blijft klein en gelijkmatig, en de lasser hoeft minder te overbruggen. Minder lastijd, minder
+    warmte-inbreng en dus minder vervorming in het geheel. In een frame met tientallen verbindingen is dat het
+    verschil tussen een constructie die klopt en een die achteraf gericht moet worden.
+  - Wij combineren buislasersnijden met <a href="/plaatwerk/lasersnijden/">2D-lasersnijden van plaat</a> en
+    met het lassen en samenstellen in dezelfde hal in Hengelo. Voor een frame met plaatwerkdelen betekent dat
+    één werkvoorbereiding, één planning en één aanspreekpunt, in plaats van afstemming tussen een
+    buisleverancier, een plaatleverancier en een lasbedrijf.
 materials:
-- Staal
-- RVS
-- Aluminium
+  - Staal
+  - RVS
+  - Aluminium
 process:
-- step: Programmeren
-  desc: Contouren en verbindingen uit de tekening.
-- step: Buislasersnijden
-  desc: Snijden van buis en profiel.
-- step: Samenstellen
-  desc: Passklare delen voor lassen.
+  - step: Programmeren
+    desc: Contouren en verbindingen uit de tekening, zodat ze in één opspanning uit de machine komen.
+  - step: Buislasersnijden
+    desc: Contactloos snijden van buis en profiel, met hoge maatvastheid en reproduceerbaarheid.
+  - step: Samenstellen
+    desc: "Passklare delen voor het lassen: de spleet blijft klein en gelijkmatig, dus minder lastijd en minder
+      vervorming."
 specs:
-- label: Machine
-  value: Trumpf TruLaser Tube 3000
-- label: Type
-  value: buislaser
-- label: Laserbron
-  value: fiberlaser
-- label: Materialen
-  value: staal, RVS, aluminium
-- label: Profielmaten
-  value: rond tot ø 150 mm · vierkant tot 120 × 120 mm
-- label: Wanddikte
-  value: staal tot 6 mm · RVS tot 4 mm
-- label: Maximale buislengte
-  value: tot 6500 mm
+  - label: Machine
+    value: Trumpf TruLaser Tube 3000
+  - label: Type
+    value: buislaser
+  - label: Laserbron
+    value: fiberlaser
+  - label: Materialen
+    value: staal, RVS, aluminium
+  - label: Profielmaten
+    value: rond tot ø 150 mm · vierkant en rechthoekig tot 120 × 120 mm
+  - label: Wanddikte
+    value: staal tot 6 mm · RVS tot 4 mm
+  - label: Maximale buislengte
+    value: tot 6500 mm
+  - label: Buiten deze maten
+    value: voorleggen aan onze werkvoorbereiding
 applications:
-- Machinebouw
-- Constructies
-- Interieurbouw
-- Industriële toepassingen
+  - Machinebouw
+  - Constructies
+  - Interieurbouw
+  - Industriële toepassingen
 faq:
-- vraag: Welke profielmaten en wanddiktes kunnen jullie snijden?
-  antwoord: 'Ronde buis tot ø 150 mm en vierkante of rechthoekige profielen tot 120 × 120 mm. De wanddikte
-    gaat tot 6 mm in staal en tot 4 mm in RVS. Buis en profiel verwerken wij tot een lengte van 6500 mm.
-    Valt uw profiel buiten deze maten, neem dan contact op met onze werkvoorbereiding.'
-- vraag: Wat levert buislasersnijden op ten opzichte van zagen en boren?
-  antwoord: Vooral pasvorm. Contour, gaten en verbindingsvorm komen in één opspanning uit de machine,
-    dus de afwijkingen van afkorten, boren en passend slijpen stapelen zich niet op. Delen vallen in elkaar,
-    de lasspleet blijft klein en gelijkmatig, en dat scheelt lastijd, warmte-inbreng en vervorming.
-- vraag: Kunnen jullie na het snijden ook lassen en samenstellen?
-  antwoord: Ja, in dezelfde hal in Hengelo. Buislasersnijden, plaatwerk, lassen en afwerking zitten bij
-    ons onder één dak, dus voor een frame is er één werkvoorbereiding en één aanspreekpunt. Zie ook onze
-    pagina's over <a href="/constructies/">constructies</a> en <a href="/rvs-constructies/">RVS-constructies</a>.
-- vraag: Doen jullie ook enkelstuks of alleen series?
-  antwoord: Allebei. Omdat het programma uit het 3D-model komt en er geen gereedschap gemaakt hoeft te
-    worden, is ook een enkel profiel of een kleine serie goed te doen. Bij grotere series ligt het accent
-    meer op het nesten en de doorlooptijd.
-- vraag: Wat heeft u nodig om een offerte te maken?
-  antwoord: Een PDF-tekening en een 3D STEP-bestand van het profiel, de profielsoort en -maat, het materiaal, de lengtes
-    en het aantal stuks. Gaat het om een complete constructie, stuur dan ook het samenstel mee; dan beoordelen
-    wij meteen de lasvolgorde en de maakbaarheid van het geheel.
+  - vraag: Welke profielmaten en wanddiktes kunnen jullie snijden?
+    antwoord: 'Ronde buis tot ø 150 mm en vierkante of rechthoekige profielen tot 120 × 120 mm. De wanddikte gaat
+      tot 6 mm in staal en tot 4 mm in RVS. Buis en profiel verwerken wij tot een lengte van 6500 mm. Valt uw
+      profiel buiten deze maten, neem dan contact op met onze werkvoorbereiding.'
+  - vraag: Wat levert buislasersnijden op ten opzichte van zagen en boren?
+    antwoord: Vooral pasvorm. Contour, gaten en verbindingsvorm komen in één opspanning uit de machine, dus de
+      afwijkingen van afkorten, boren en passend slijpen stapelen zich niet op. Delen vallen in elkaar, de
+      lasspleet blijft klein en gelijkmatig, en dat scheelt lastijd, warmte-inbreng en vervorming.
+  - vraag: Kunnen jullie na het snijden ook lassen en samenstellen?
+    antwoord: Ja, in dezelfde hal in Hengelo. Buislasersnijden, plaatwerk, lassen en afwerking zitten bij ons
+      onder één dak, dus voor een frame is er één werkvoorbereiding en één aanspreekpunt. Zie ook onze
+      pagina's over <a href="/constructies/">constructies</a> en <a
+      href="/rvs-constructies/">RVS-constructies</a>.
+  - vraag: Doen jullie ook enkelstuks of alleen series?
+    antwoord: Allebei. Omdat het programma uit het 3D-model komt en er geen gereedschap gemaakt hoeft te worden,
+      is ook een enkel profiel of een kleine serie goed te doen. Bij grotere series ligt het accent meer op
+      het nesten en de doorlooptijd.
+  - vraag: Wat heeft u nodig om een offerte te maken?
+    antwoord: Een PDF-tekening en een 3D STEP-bestand van het profiel, de profielsoort en -maat, het materiaal, de
+      lengtes en het aantal stuks. Gaat het om een complete constructie, stuur dan ook het samenstel mee; dan
+      beoordelen wij meteen de lasvolgorde en de maakbaarheid van het geheel.
 related:
-- slug: plaatwerk/lasersnijden
-  label: Lasersnijden
-  desc: 2D-plaatsnijden.
-- slug: constructies
-  label: Constructies
-  desc: Gelaste framebouw.
-- slug: rvs-constructies
-  label: RVS-constructies
-  desc: Gelaste RVS-samenstellingen.
+  - slug: plaatwerk/lasersnijden
+    label: Lasersnijden
+    desc: 2D-plaatsnijden.
+  - slug: constructies
+    label: Constructies
+    desc: Gelaste framebouw.
+  - slug: rvs-constructies
+    label: RVS-constructies
+    desc: Gelaste RVS-samenstellingen.
 seo:
   title: Buislasersnijden — Trumpf buislaser
-  description: 'Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel
-    in één bewerking, in staal, RVS en aluminium.'
+  description: 'Precisie buislasersnijwerk: complexe contouren, gaten en verbindingen in buis en profiel in één
+    bewerking, in staal, RVS en aluminium.'
 translated:
-- nl
+  - nl
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Tube laser cutting
   h1: Tube laser cutting
-  intro: Precision tube laser cutting for dimensionally stable tubes and profiles, with advanced CNC control
-    and high accuracy.
+  intro: Precision tube laser cutting for dimensionally stable tubes and profiles, with advanced CNC control and
+    high accuracy.
   heroPhoto:
     subject: Operator working the Trumpf TruLaser Tube 3000
   body:
-  - We work with a Trumpf tube laser for steel, stainless steel and aluminium — suitable for complex contours,
-    holes and joints in a single operation.
-  - Contactless laser cutting delivers very high dimensional stability and reproducibility, less post-processing
-    and shorter lead times. Ideal for one-offs as well as series work. Complex joints come out of a single
-    operation — less fitting, faster welding.
-  - The difference from sawing and drilling lies not in speed but in fit. On the classic route a profile
-    is cut to length, then drilled, then ground to fit — and every step adds a deviation that accumulates
-    through the structure. On the tube laser the contour, the holes and the joint shape come off the machine
-    in a single set-up, which removes that accumulation.
-  - That carries through into the welding. Parts that drop into place do not have to be made to fit, the
-    gap stays small and even, and the welder has less to bridge. Less welding time, less heat input and
-    therefore less distortion in the whole. In a frame with dozens of joints, that is the difference between
-    a structure that is right and one that has to be straightened afterwards.
-  - We combine tube laser cutting with <a href="/en/plaatwerk/lasersnijden/">2D laser cutting of sheet</a>
-    and with welding and assembly in the same hall in Hengelo. For a frame with sheet metal parts that means
-    one production engineering pass, one schedule and one point of contact, instead of coordination between
-    a tube supplier, a sheet supplier and a welding shop.
-  - 'What we need to assess a request: a PDF drawing and a 3D STEP file of the profile, the profile type
-    and size, the material, the lengths and the quantity. We cut round tube up to ø 150 mm and square or
-    rectangular profiles up to 120 × 120 mm; wall thickness goes up to 6 mm in steel and up to 4 mm in stainless
-    steel. We process tube and profile up to a length of 6500 mm. If your profile falls outside that, put it to our production engineering. If it concerns a complete
-    structure, send the assembly too and we will look at the welding sequence at the same time.'
+    - The difference from sawing and drilling lies not in speed but in fit. On the classic route a profile is
+      cut to length, then drilled, then ground to fit — and every step adds a deviation that accumulates
+      through the structure. On the tube laser the contour, the holes and the joint shape come off the machine
+      in a single set-up, which removes that accumulation.
+    - That carries through into the welding. Parts that drop into place do not have to be made to fit, the gap
+      stays small and even, and the welder has less to bridge. Less welding time, less heat input and
+      therefore less distortion in the whole. In a frame with dozens of joints, that is the difference between
+      a structure that is right and one that has to be straightened afterwards.
+    - We combine tube laser cutting with <a href="/en/plaatwerk/lasersnijden/">2D laser cutting of sheet</a>
+      and with welding and assembly in the same hall in Hengelo. For a frame with sheet metal parts that means
+      one production engineering pass, one schedule and one point of contact, instead of coordination between
+      a tube supplier, a sheet supplier and a welding shop.
   materials:
-  - Steel
-  - Stainless steel
-  - Aluminium
+    - Steel
+    - Stainless steel
+    - Aluminium
   process:
-  - step: Programming
-    desc: Contours and joints taken from the drawing.
-  - step: Tube laser cutting
-    desc: Cutting tube and profile.
-  - step: Assembly
-    desc: Ready-to-fit parts for welding.
+    - step: Programming
+      desc: Contours and joints from the drawing, so they come off the machine in a single set-up.
+    - step: Tube laser cutting
+      desc: Contactless cutting of tube and profile, with high dimensional stability and reproducibility.
+    - step: Assembly
+      desc: "Parts ready to fit for welding: the gap stays small and even, so less welding time and less
+        distortion."
   specs:
-  - label: Machine
-    value: Trumpf TruLaser Tube 3000
-  - label: Type
-    value: tube laser
-  - label: Laser source
-    value: fiber laser
-  - label: Materials
-    value: steel, stainless steel, aluminium
-  - label: Profile sizes
-    value: round up to ø 150 mm · square up to 120 × 120 mm
-  - label: Wall thickness
-    value: steel up to 6 mm · stainless steel up to 4 mm
-  - label: Maximum tube length
-    value: up to 6500 mm
+    - label: Machine
+      value: Trumpf TruLaser Tube 3000
+    - label: Type
+      value: tube laser
+    - label: Laser source
+      value: fibre laser
+    - label: Materials
+      value: steel, stainless steel, aluminium
+    - label: Profile sizes
+      value: round up to ø 150 mm · square and rectangular up to 120 × 120 mm
+    - label: Wall thickness
+      value: steel up to 6 mm · stainless steel up to 4 mm
+    - label: Maximum tube length
+      value: up to 6500 mm
+    - label: Outside these sizes
+      value: put it to our production engineering
   applications:
-  - Machine building
-  - Welded constructions
-  - Interior construction
-  - Industrial applications
+    - Machine building
+    - Welded constructions
+    - Interior construction
+    - Industrial applications
   faq:
-  - vraag: Which profile sizes and wall thicknesses can you cut?
-    antwoord: Round tube up to ø 150 mm and square or rectangular profiles up to 120 × 120 mm. Wall thickness
-      goes up to 6 mm in steel and up to 4 mm in stainless steel. We process tube and profile up to a length
-      of 6500 mm. If your profile falls outside these dimensions, contact
-      our production engineering.
-  - vraag: What does tube laser cutting gain over sawing and drilling?
-    antwoord: Mainly fit. Contour, holes and joint shape come off the machine in a single set-up, so the
-      deviations from cutting to length, drilling and grinding to fit do not accumulate. Parts drop into
-      place, the weld gap stays small and even, and that saves welding time, heat input and distortion.
-  - vraag: Can you also weld and assemble after cutting?
-    antwoord: Yes, in the same hall in Hengelo. Tube laser cutting, sheet metal work, welding and finishing
-      are all under one roof, so a frame has one production engineering pass and one point of contact. See
-      also our pages on <a href="/en/constructies/">welded constructions</a> and <a href="/en/rvs-constructies/">stainless
-      steel constructions</a>.
-  - vraag: Do you do one-offs as well as series?
-    antwoord: Both. Because the program comes from the 3D model and no tooling has to be made, a single
-      profile or a small batch is perfectly workable. For larger series the emphasis shifts to nesting and
-      lead time.
-  - vraag: What do you need to prepare a quotation?
-    antwoord: A PDF drawing and a 3D STEP file of the profile, the profile type and size, the material,
-      the lengths and the quantity. If it concerns a complete structure, send the assembly as well; we will
-      then assess the welding sequence and the manufacturability of the whole at the same time.
+    - vraag: Which profile sizes and wall thicknesses can you cut?
+      antwoord: Round tube up to ø 150 mm and square or rectangular profiles up to 120 × 120 mm. Wall thickness goes
+        up to 6 mm in steel and up to 4 mm in stainless steel. We process tube and profile up to a length of
+        6500 mm. If your profile falls outside these dimensions, contact our production engineering.
+    - vraag: What does tube laser cutting gain over sawing and drilling?
+      antwoord: Mainly fit. Contour, holes and joint shape come off the machine in a single set-up, so the
+        deviations from cutting to length, drilling and grinding to fit do not accumulate. Parts drop into
+        place, the weld gap stays small and even, and that saves welding time, heat input and distortion.
+    - vraag: Can you also weld and assemble after cutting?
+      antwoord: Yes, in the same hall in Hengelo. Tube laser cutting, sheet metal work, welding and finishing are
+        all under one roof, so a frame has one production engineering pass and one point of contact. See also
+        our pages on <a href="/en/constructies/">welded constructions</a> and <a
+        href="/en/rvs-constructies/">stainless steel constructions</a>.
+    - vraag: Do you do one-offs as well as series?
+      antwoord: Both. Because the program comes from the 3D model and no tooling has to be made, a single profile or
+        a small batch is perfectly workable. For larger series the emphasis shifts to nesting and lead time.
+    - vraag: What do you need to prepare a quotation?
+      antwoord: A PDF drawing and a 3D STEP file of the profile, the profile type and size, the material, the
+        lengths and the quantity. If it concerns a complete structure, send the assembly as well; we will then
+        assess the welding sequence and the manufacturability of the whole at the same time.
   related:
-  - label: Laser cutting
-    desc: 2D sheet cutting.
-  - label: Welded constructions
-    desc: Welded frame construction.
-  - label: Stainless steel constructions
-    desc: Welded stainless steel assemblies.
+    - label: Laser cutting
+      desc: 2D sheet cutting.
+    - label: Welded constructions
+      desc: Welded frame construction.
+    - label: Stainless steel constructions
+      desc: Welded stainless steel assemblies.
   seo:
     title: Tube laser cutting — Trumpf tube laser
-    description: 'Precision tube laser cutting: complex contours, holes and joints in tube and profile in
-      a single operation, in steel, stainless steel and aluminium.'
+    description: 'Precision tube laser cutting: complex contours, holes and joints in tube and profile in a single
+      operation, in steel, stainless steel and aluminium.'
+  kerncijfers:
+    - waarde: ø 150 mm
+      label: max. round tube
+    - waarde: 120 × 120 mm
+      label: max. box section
+    - waarde: 6500 mm
+      label: max. tube length
+  aanleveren:
+    - A PDF drawing and a 3D STEP file of the profile
+    - Profile type and size
+    - Material
+    - The lengths and the quantity
+    - A complete structure? Send the assembly too and we will look at the welding sequence at the same time
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -211,94 +208,111 @@ de:
   heroPhoto:
     subject: Bediener an der Trumpf TruLaser Tube 3000
   body:
-  - Wir arbeiten mit einem Trumpf-Rohrlaser für Stahl, Edelstahl und Aluminium — geeignet für komplexe Konturen,
-    Bohrungen und Verbindungen in einem Arbeitsgang.
-  - Durch das berührungslose Laserschneiden entstehen eine sehr hohe Maßhaltigkeit und Reproduzierbarkeit,
-    weniger Nacharbeit und kürzere Durchlaufzeiten. Ideal für Einzelstücke wie auch für Serienteile. Komplexe
-    Verbindungen entstehen in einem Arbeitsgang — weniger Anpassen, schnelleres Schweißen.
-  - Der Unterschied zum Sägen und Bohren liegt nicht in der Geschwindigkeit, sondern in der Passgenauigkeit.
-    Auf dem klassischen Weg wird ein Profil abgelängt, dann gebohrt, dann passend geschliffen — und jeder
-    Schritt fügt eine Abweichung hinzu, die sich durch die Konstruktion hindurch aufsummiert. Auf dem Rohrlaser
-    kommen Kontur, Bohrungen und Verbindungsform in einer Aufspannung aus der Maschine, wodurch diese Aufsummierung
-    entfällt.
-  - Das wirkt sich auf das Schweißen aus. Teile, die ineinandergreifen, müssen nicht passend gemacht werden,
-    der Spalt bleibt klein und gleichmäßig, und der Schweißer muss weniger überbrücken. Weniger Schweißzeit,
-    weniger Wärmeeinbringung und damit weniger Verzug im Ganzen. Bei einem Rahmen mit Dutzenden Verbindungen
-    ist das der Unterschied zwischen einer stimmigen Konstruktion und einer, die nachträglich gerichtet
-    werden muss.
-  - Wir kombinieren das Rohrlaserschneiden mit dem <a href="/de/plaatwerk/lasersnijden/">2D-Laserschneiden
-    von Blech</a> sowie mit Schweißen und Montage in derselben Halle in Hengelo. Für einen Rahmen mit Blechteilen
-    bedeutet das eine Arbeitsvorbereitung, eine Planung und einen Ansprechpartner statt Abstimmung zwischen
-    Rohrlieferant, Blechlieferant und Schweißbetrieb.
-  - 'Was wir für eine Beurteilung benötigen: eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart
-    und -größe, den Werkstoff, die Längen und die Stückzahl. Rundrohr schneiden wir bis ø 150 mm, quadratische
-    und rechteckige Profile bis 120 × 120 mm; die Wandstärke geht bis 6 mm in Stahl und bis 4 mm in Edelstahl.
-    Rohre und Profile verarbeiten wir bis zu einer Länge von 6500 mm.
-    Liegt Ihr Profil außerhalb dieser Maße, legen Sie es unserer Arbeitsvorbereitung vor. Geht es um eine
-    komplette Konstruktion, senden Sie auch die Baugruppe mit, dann prüfen wir gleich die Schweißfolge.'
+    - Der Unterschied zum Sägen und Bohren liegt nicht in der Geschwindigkeit, sondern in der Passgenauigkeit.
+      Auf dem klassischen Weg wird ein Profil abgelängt, dann gebohrt, dann passend geschliffen — und jeder
+      Schritt fügt eine Abweichung hinzu, die sich durch die Konstruktion hindurch aufsummiert. Auf dem
+      Rohrlaser kommen Kontur, Bohrungen und Verbindungsform in einer Aufspannung aus der Maschine, wodurch
+      diese Aufsummierung entfällt.
+    - Das wirkt sich auf das Schweißen aus. Teile, die ineinandergreifen, müssen nicht passend gemacht werden,
+      der Spalt bleibt klein und gleichmäßig, und der Schweißer muss weniger überbrücken. Weniger Schweißzeit,
+      weniger Wärmeeinbringung und damit weniger Verzug im Ganzen. Bei einem Rahmen mit Dutzenden Verbindungen
+      ist das der Unterschied zwischen einer stimmigen Konstruktion und einer, die nachträglich gerichtet
+      werden muss.
+    - Wir kombinieren das Rohrlaserschneiden mit dem <a href="/de/plaatwerk/lasersnijden/">2D-Laserschneiden
+      von Blech</a> sowie mit Schweißen und Montage in derselben Halle in Hengelo. Für einen Rahmen mit
+      Blechteilen bedeutet das eine Arbeitsvorbereitung, eine Planung und einen Ansprechpartner statt
+      Abstimmung zwischen Rohrlieferant, Blechlieferant und Schweißbetrieb.
   materials:
-  - Stahl
-  - Edelstahl
-  - Aluminium
+    - Stahl
+    - Edelstahl
+    - Aluminium
   process:
-  - step: Programmieren
-    desc: Konturen und Verbindungen aus der Zeichnung.
-  - step: Rohrlaserschneiden
-    desc: Schneiden von Rohr und Profil.
-  - step: Zusammenbau
-    desc: Passgenaue Teile zum Schweißen.
+    - step: Programmieren
+      desc: Konturen und Verbindungen aus der Zeichnung, sodass sie in einer Aufspannung aus der Maschine kommen.
+    - step: Rohrlaserschneiden
+      desc: Berührungsloses Schneiden von Rohr und Profil, mit hoher Maßhaltigkeit und Reproduzierbarkeit.
+    - step: Zusammenbauen
+      desc: "Passfertige Teile zum Schweißen: der Spalt bleibt klein und gleichmäßig, also weniger Schweißzeit und
+        weniger Verzug."
   specs:
-  - label: Maschine
-    value: Trumpf TruLaser Tube 3000
-  - label: Typ
-    value: Rohrlaser
-  - label: Laserquelle
-    value: Faserlaser
-  - label: Materialien
-    value: Stahl, Edelstahl, Aluminium
-  - label: Profilmaße
-    value: rund bis ø 150 mm · quadratisch bis 120 × 120 mm
-  - label: Wandstärke
-    value: Stahl bis 6 mm · Edelstahl bis 4 mm
-  - label: Maximale Rohrlänge
-    value: bis 6500 mm
+    - label: Maschine
+      value: Trumpf TruLaser Tube 3000
+    - label: Typ
+      value: Rohrlaser
+    - label: Laserquelle
+      value: Faserlaser
+    - label: Werkstoffe
+      value: Stahl, Edelstahl, Aluminium
+    - label: Profilmaße
+      value: rund bis ø 150 mm · quadratisch und rechteckig bis 120 × 120 mm
+    - label: Wandstärke
+      value: Stahl bis 6 mm · Edelstahl bis 4 mm
+    - label: Maximale Rohrlänge
+      value: bis 6500 mm
+    - label: Außerhalb dieser Maße
+      value: unserer Arbeitsvorbereitung vorlegen
   applications:
-  - Maschinenbau
-  - Konstruktionen
-  - Innenausbau
-  - Industrielle Anwendungen
+    - Maschinenbau
+    - Konstruktionen
+    - Innenausbau
+    - Industrielle Anwendungen
   faq:
-  - vraag: Welche Profilmaße und Wandstärken können Sie schneiden?
-    antwoord: Rundrohr bis ø 150 mm und quadratische oder rechteckige Profile bis 120 × 120 mm. Die Wandstärke
-      geht bis 6 mm in Stahl und bis 4 mm in Edelstahl. Rohre und Profile verarbeiten wir bis zu einer
-      Länge von 6500 mm. Liegt Ihr Profil außerhalb dieser Maße, wenden Sie
-      sich an unsere Arbeitsvorbereitung.
-  - vraag: Was bringt Rohrlaserschneiden gegenüber Sägen und Bohren?
-    antwoord: Vor allem Passgenauigkeit. Kontur, Bohrungen und Verbindungsform kommen in einer Aufspannung
-      aus der Maschine, die Abweichungen von Ablängen, Bohren und Passschleifen summieren sich also nicht
-      auf. Teile greifen ineinander, der Schweißspalt bleibt klein und gleichmäßig, was Schweißzeit, Wärmeeinbringung
-      und Verzug spart.
-  - vraag: Können Sie nach dem Schneiden auch schweißen und montieren?
-    antwoord: Ja, in derselben Halle in Hengelo. Rohrlaserschneiden, Blechbearbeitung, Schweißen und Oberfläche
-      liegen bei uns unter einem Dach, für einen Rahmen gibt es also eine Arbeitsvorbereitung und einen
-      Ansprechpartner. Siehe auch unsere Seiten über <a href="/de/constructies/">Konstruktionen</a> und
-      <a href="/de/rvs-constructies/">Edelstahlkonstruktionen</a>.
-  - vraag: Fertigen Sie auch Einzelstücke oder nur Serien?
-    antwoord: Beides. Da das Programm aus dem 3D-Modell kommt und kein Werkzeug gebaut werden muss, ist
-      auch ein einzelnes Profil oder eine kleine Serie gut machbar. Bei größeren Serien verschiebt sich
-      der Schwerpunkt auf Schachtelung und Durchlaufzeit.
-  - vraag: Was benötigen Sie für ein Angebot?
-    antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und -größe, den Werkstoff,
-      die Längen und die Stückzahl. Geht es um eine komplette Konstruktion, senden Sie auch die Baugruppe
-      mit; dann beurteilen wir gleich Schweißfolge und Fertigbarkeit des Ganzen.
+    - vraag: Welche Profilmaße und Wandstärken können Sie schneiden?
+      antwoord: Rundrohr bis ø 150 mm und quadratische oder rechteckige Profile bis 120 × 120 mm. Die Wandstärke
+        geht bis 6 mm in Stahl und bis 4 mm in Edelstahl. Rohre und Profile verarbeiten wir bis zu einer Länge
+        von 6500 mm. Liegt Ihr Profil außerhalb dieser Maße, wenden Sie sich an unsere Arbeitsvorbereitung.
+    - vraag: Was bringt Rohrlaserschneiden gegenüber Sägen und Bohren?
+      antwoord: Vor allem Passgenauigkeit. Kontur, Bohrungen und Verbindungsform kommen in einer Aufspannung aus der
+        Maschine, die Abweichungen von Ablängen, Bohren und Passschleifen summieren sich also nicht auf. Teile
+        greifen ineinander, der Schweißspalt bleibt klein und gleichmäßig, was Schweißzeit, Wärmeeinbringung
+        und Verzug spart.
+    - vraag: Können Sie nach dem Schneiden auch schweißen und montieren?
+      antwoord: Ja, in derselben Halle in Hengelo. Rohrlaserschneiden, Blechbearbeitung, Schweißen und Oberfläche
+        liegen bei uns unter einem Dach, für einen Rahmen gibt es also eine Arbeitsvorbereitung und einen
+        Ansprechpartner. Siehe auch unsere Seiten über <a href="/de/constructies/">Konstruktionen</a> und <a
+        href="/de/rvs-constructies/">Edelstahlkonstruktionen</a>.
+    - vraag: Fertigen Sie auch Einzelstücke oder nur Serien?
+      antwoord: Beides. Da das Programm aus dem 3D-Modell kommt und kein Werkzeug gebaut werden muss, ist auch ein
+        einzelnes Profil oder eine kleine Serie gut machbar. Bei größeren Serien verschiebt sich der
+        Schwerpunkt auf Schachtelung und Durchlaufzeit.
+    - vraag: Was benötigen Sie für ein Angebot?
+      antwoord: Eine PDF-Zeichnung und eine 3D-STEP-Datei des Profils, Profilart und -größe, den Werkstoff, die
+        Längen und die Stückzahl. Geht es um eine komplette Konstruktion, senden Sie auch die Baugruppe mit;
+        dann beurteilen wir gleich Schweißfolge und Fertigbarkeit des Ganzen.
   related:
-  - label: Laserschneiden
-    desc: 2D-Blechschneiden.
-  - label: Konstruktionen
-    desc: Geschweißter Rahmenbau.
-  - label: Edelstahlkonstruktionen
-    desc: Geschweißte Edelstahl-Baugruppen.
+    - label: Laserschneiden
+      desc: 2D-Blechschneiden.
+    - label: Konstruktionen
+      desc: Geschweißter Rahmenbau.
+    - label: Edelstahlkonstruktionen
+      desc: Geschweißte Edelstahl-Baugruppen.
   seo:
     title: Rohrlaserschneiden — Trumpf-Rohrlaser
-    description: 'Präzises Rohrlaserschneiden: komplexe Konturen, Bohrungen und Verbindungen in Rohr und
-      Profil in einem Arbeitsgang, in Stahl, Edelstahl und Aluminium.'
+    description: 'Präzises Rohrlaserschneiden: komplexe Konturen, Bohrungen und Verbindungen in Rohr und Profil in
+      einem Arbeitsgang, in Stahl, Edelstahl und Aluminium.'
+  kerncijfers:
+    - waarde: ø 150 mm
+      label: max. Rundrohr
+    - waarde: 120 × 120 mm
+      label: max. Hohlprofil
+    - waarde: 6500 mm
+      label: max. Rohrlänge
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei des Profils
+    - Profilart und -größe
+    - Werkstoff
+    - Die Längen und die Stückzahl
+    - Eine komplette Konstruktion? Senden Sie die Baugruppe mit, dann prüfen wir gleich die Schweißfolge
+kerncijfers:
+  - waarde: ø 150 mm
+    label: max. ronde buis
+  - waarde: 120 × 120 mm
+    label: max. koker
+  - waarde: 6500 mm
+    label: max. buislengte
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand van het profiel
+  - Profielsoort en -maat
+  - Materiaal
+  - De lengtes en het aantal stuks
+  - Gaat het om een complete constructie? Stuur het samenstel mee, dan kijken we meteen naar de lasvolgorde
