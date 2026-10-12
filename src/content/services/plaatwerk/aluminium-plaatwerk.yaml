@@ -5,18 +5,19 @@ template: service
 group: plaatwerk
 order: 23
 h1: Aluminium plaatwerk
-intro: Lichtgewicht, sterk en corrosiebestendig. Wij zijn gespecialiseerd in aluminium laswerk voor
-  machinebouw en behuizingen.
+intro: Lasersnijden, kanten en afwerken van aluminium plaat van 0,5 tot 15 mm — lichtgewicht, corrosiebestendig
+  en op maat voor machinebouw en behuizingen.
 fotobank: "kantbank-detail"
 heroPhoto:
-  subject: Aluminium plaatwerkdeel met TIG-lasnaad, detail
+  subject: Gekant aluminium plaatdeel bij de kantbank, detail
   orient: Liggend 16:10
-  crop: Detail op lasnaad
-  comp: Mat aluminium, gelijkmatige rups
+  crop: Detail op de buiging
+  comp: Mat aluminium, strakke kantlijn
 body:
-  - "Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS: aluminium veert meer
-    terug bij het kanten en warmte loopt sneller weg bij het lassen. Wij houden daar rekening mee in uitslag,
-    gereedschap en lasparameters."
+  - "Aluminium plaatbewerking vraagt om andere machine-instellingen dan staal of RVS. Wij snijden aluminium
+    van 0,5 tot 15 mm op de Trumpf TruLaser 3040, ontbramen machinaal en kanten op de servo-elektrische
+    kantbank. Aluminium veert bij het kanten sterker terug dan staal; daar houden wij rekening mee in de
+    uitslag en de gereedschapskeuze."
   - "Bij een strakke maatvoering nemen we de terugvering mee in de werkvoorbereiding in plaats van het
     achteraf te corrigeren. Aluminium is ook krasgevoeliger dan staal: bij zichtwerk laten we de beschermfolie
     tot en met de laatste bewerking zitten en houden we daar in de volgorde van bewerkingen rekening mee."
@@ -25,17 +26,18 @@ body:
     gehanteerd, en het corrodeert niet zonder aanvullende bescherming. Staal en RVS zijn stijver bij dezelfde
     dikte; is stijfheid bepalend, dan compenseren we dat met een grotere dikte of met kantflenzen en
     verstijvingen.
-  - Gaat het om gelaste samenstellingen, dan leest u meer op onze pagina over <a
+  - Moeten de delen daarna gelast worden tot een samenstelling, dan doen wij dat ook in eigen huis. Waar
+    wij bij het lassen van aluminium op letten, leest u op onze pagina over <a
     href="/aluminium-lassen/">aluminium lassen</a>.
 materials:
   - Aluminium (diverse legeringen)
 process:
   - step: Lasersnijden
-    desc: Snijden van aluminium plaat.
+    desc: Aluminium van 0,5 tot 15 mm op de Trumpf TruLaser 3040.
+  - step: Ontbramen
+    desc: Machinaal op de Timesavers 42 Series RB, vóór het kanten.
   - step: Kanten
-    desc: Kanten met aandacht voor terugvering.
-  - step: Aluminium lassen
-    desc: TIG/MIG-lassen, vervormingsarm.
+    desc: Op de servo-elektrische kantbank, met de terugvering verwerkt in de uitslag.
   - step: Afwerking
     desc: Stralen doen we zelf; anodiseren en poedercoaten besteden we uit.
 applications:
@@ -53,9 +55,9 @@ related:
     label: Industriële behuizing
     desc: Aluminium behuizingen.
 seo:
-  title: Aluminium plaatwerk op maat
-  description: 'Aluminium plaatwerk met TIG- en MIG-laswerk voor machinebouw en behuizingen: lichtgewicht, sterk
-    en corrosiebestendig.'
+  title: Aluminium plaatwerk snijden en kanten
+  description: 'Aluminium plaatwerk op maat: lasersnijden van 0,5 tot 15 mm, kanten tot 3100 mm met aandacht
+    voor terugvering, en glasparelstralen. Uit Hengelo.'
 translated:
   - nl
 faq:
@@ -80,14 +82,15 @@ en:
   menuLabel: "Aluminium"
   title: Aluminium sheet metal
   h1: Aluminium sheet metal
-  intro: Lightweight, strong and corrosion-resistant. We specialise in aluminium welding for machine building
-    and enclosures.
+  intro: Laser cutting, press braking and finishing of aluminium sheet from 0.5 to 15 mm — lightweight,
+    corrosion-resistant and made to measure for machine building and enclosures.
   heroPhoto:
-    subject: Aluminium sheet metal part with TIG weld seam, detail
+    subject: Bent aluminium sheet metal part at the press brake, detail
   body:
-    - "Aluminium sheet processing calls for different machine settings than steel or stainless steel:
-      aluminium springs back more when bending, and heat dissipates faster when welding. We factor that into
-      flat-pattern development, tooling and welding parameters."
+    - "Aluminium sheet processing calls for different machine settings than steel or stainless steel. We
+      cut aluminium from 0.5 to 15 mm on the Trumpf TruLaser 3040, deburr by machine and bend on the
+      servo-electric press brake. Aluminium springs back more than steel when bending; we factor that into
+      the flat pattern and the choice of tooling."
     - "Where tolerances are tight we account for springback during work preparation rather than correcting
       afterwards. Aluminium is also more prone to scratching than steel: for visible work we leave the
       protective film in place through to the final operation and take that into account in the sequence of
@@ -97,16 +100,17 @@ en:
       hand, and it does not corrode without additional protection. Steel and stainless steel are stiffer at
       the same thickness; where stiffness is decisive, we compensate with a greater thickness or with bent
       flanges and stiffeners.
-    - For welded assemblies, read more on our page about <a href="/en/aluminium-lassen/">aluminium welding</a>.
+    - If the parts then need to be welded into an assembly, we do that in house as well. What we watch for
+      when welding aluminium is explained on our page about <a href="/en/aluminium-lassen/">aluminium welding</a>.
   materials:
     - Aluminium (various alloys)
   process:
     - step: Laser cutting
-      desc: Cutting aluminium sheet.
+      desc: Aluminium from 0.5 to 15 mm on the Trumpf TruLaser 3040.
+    - step: Deburring
+      desc: By machine on the Timesavers 42 Series RB, before bending.
     - step: Press braking
-      desc: Bending with attention to springback.
-    - step: Aluminium welding
-      desc: TIG/MIG welding, low distortion.
+      desc: On the servo-electric press brake, with springback built into the flat pattern.
     - step: Finishing
       desc: Blasting in house; anodising and powder coating are outsourced.
   applications:
@@ -121,9 +125,9 @@ en:
     - label: Industrial enclosures
       desc: Aluminium enclosures.
   seo:
-    title: Custom aluminium sheet metal
-    description: 'Aluminium sheet metal with TIG and MIG welding for machine building and enclosures: lightweight,
-      strong and corrosion-resistant.'
+    title: Aluminium sheet cutting and bending
+    description: 'Custom aluminium sheet metal: laser cutting from 0.5 to 15 mm, press braking up to 3100 mm
+      with attention to springback, and glass bead blasting. From Hengelo.'
   faq:
     - vraag: What sheet thickness in aluminium can you laser cut?
       antwoord: 'On the Trumpf TruLaser 3040 we cut aluminium from 0.5 to 15 mm. With thin sheets and large surfaces
@@ -145,17 +149,17 @@ en:
       label: aluminium sheet thickness
     - waarde: 8 × 4 × 3 m
       label: blast cabin
-    - waarde: 100–200 μm
-      label: glass beads
+    - waarde: 3100 mm
+      label: press brake length
   specs:
     - label: Sheet thickness
       value: 0.5 – 15 mm on the Trumpf TruLaser 3040
     - label: Press braking
       value: springs back more than steel; bend angle and tooling decide the final dimension
-    - label: Welding
-      value: TIG and MIG, matched to sheet thickness and application
-    - label: Heat during welding
-      value: dissipates faster than in steel; welding parameters adjusted for it
+    - label: Press brake length
+      value: up to 3100 mm, 150 tonnes press force
+    - label: Deburring
+      value: by machine on the Timesavers 42 Series RB
     - label: Blasting
       value: glass beads 100–200 μm, blast cabin 8 × 4 × 3 m
     - label: Result of blasting
@@ -172,14 +176,15 @@ de:
   menuLabel: "Aluminium"
   title: Aluminium-Blechbearbeitung
   h1: Aluminium-Blechbearbeitung
-  intro: Leicht, fest und korrosionsbeständig. Wir sind auf Aluminium-Schweißarbeiten für Maschinenbau und
-    Gehäuse spezialisiert.
+  intro: Laserschneiden, Abkanten und Veredeln von Aluminiumblech von 0,5 bis 15 mm — leicht,
+    korrosionsbeständig und nach Maß für Maschinenbau und Gehäuse.
   heroPhoto:
-    subject: Aluminium-Blechteil mit WIG-Schweißnaht, Detail
+    subject: Abgekantetes Aluminium-Blechteil an der Abkantpresse, Detail
   body:
-    - "Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl:
-      Aluminium federt beim Kanten stärker zurück, und beim Schweißen fließt die Wärme schneller ab. Das
-      berücksichtigen wir bei Abwicklung, Werkzeug und Schweißparametern."
+    - "Die Aluminium-Blechbearbeitung erfordert andere Maschineneinstellungen als Stahl oder Edelstahl. Wir
+      schneiden Aluminium von 0,5 bis 15 mm auf der Trumpf TruLaser 3040, entgraten maschinell und kanten
+      auf der servoelektrischen Abkantpresse. Aluminium federt beim Abkanten stärker zurück als Stahl; das
+      berücksichtigen wir bei der Abwicklung und der Werkzeugwahl."
     - "Bei engen Toleranzen berücksichtigen wir die Rückfederung in der Arbeitsvorbereitung, statt sie
       nachträglich zu korrigieren. Aluminium ist außerdem kratzempfindlicher als Stahl: bei Sichtflächen
       belassen wir die Schutzfolie bis zur letzten Bearbeitung und berücksichtigen das in der
@@ -189,17 +194,18 @@ de:
       Paneelen zählt, und es korrodiert ohne zusätzlichen Schutz nicht. Stahl und Edelstahl sind bei gleicher
       Dicke steifer; ist die Steifigkeit ausschlaggebend, gleichen wir das durch eine größere Dicke oder durch
       abgekantete Flansche und Versteifungen aus.
-    - Geht es um geschweißte Baugruppen, finden Sie mehr auf unserer Seite über das <a
+    - Müssen die Teile anschließend zu einer Baugruppe geschweißt werden, erledigen wir das ebenfalls im
+      eigenen Haus. Worauf wir beim Schweißen von Aluminium achten, lesen Sie auf unserer Seite über das <a
       href="/de/aluminium-lassen/">Aluminiumschweißen</a>.
   materials:
     - Aluminium (verschiedene Legierungen)
   process:
     - step: Laserschneiden
-      desc: Schneiden von Aluminiumblech.
+      desc: Aluminium von 0,5 bis 15 mm auf der Trumpf TruLaser 3040.
+    - step: Entgraten
+      desc: Maschinell auf der Timesavers 42 Series RB, vor dem Abkanten.
     - step: Abkanten
-      desc: Kanten mit Rücksicht auf die Rückfederung.
-    - step: Aluminium-Schweißen
-      desc: WIG-/MIG-Schweißen, verzugsarm.
+      desc: Auf der servoelektrischen Abkantpresse, mit der Rückfederung in der Abwicklung berücksichtigt.
     - step: Nachbearbeitung
       desc: Strahlen im eigenen Haus; Eloxieren und Pulverbeschichten geben wir extern.
   applications:
@@ -214,9 +220,9 @@ de:
     - label: Industriegehäuse
       desc: Gehäuse aus Aluminium.
   seo:
-    title: Aluminiumblech nach Maß
-    description: 'Aluminium-Blechbearbeitung mit WIG- und MIG-Schweißarbeiten für Maschinenbau und Gehäuse:
-      leicht, fest und korrosionsbeständig.'
+    title: Aluminiumblech schneiden und abkanten
+    description: 'Aluminium-Blechbearbeitung nach Maß: Laserschneiden von 0,5 bis 15 mm, Abkanten bis 3100 mm
+      mit Rücksicht auf die Rückfederung und Glasperlstrahlen. Aus Hengelo.'
   faq:
     - vraag: Welche Blechdicke in Aluminium können Sie laserschneiden?
       antwoord: 'Auf der Trumpf TruLaser 3040 schneiden wir Aluminium von 0,5 bis 15 mm. Bei dünnen Blechen und
@@ -239,17 +245,17 @@ de:
       label: Blechdicke Aluminium
     - waarde: 8 × 4 × 3 m
       label: Strahlkabine
-    - waarde: 100–200 μm
-      label: Glasperlen
+    - waarde: 3100 mm
+      label: Abkantlänge
   specs:
     - label: Blechdicke
       value: 0,5 – 15 mm auf der Trumpf TruLaser 3040
     - label: Abkanten
       value: federt stärker zurück als Stahl; Biegewinkel und Werkzeugwahl bestimmen das Endmaß
-    - label: Schweißen
-      value: WIG und MIG, abgestimmt auf Blechdicke und Anwendung
-    - label: Wärme beim Schweißen
-      value: fließt schneller ab als bei Stahl; Schweißparameter darauf abgestimmt
+    - label: Abkantlänge
+      value: bis 3100 mm, 150 t Presskraft
+    - label: Entgraten
+      value: maschinell auf der Timesavers 42 Series RB
     - label: Strahlen
       value: Glasperlen 100–200 μm, Strahlkabine 8 × 4 × 3 m
     - label: Ergebnis des Strahlens
@@ -265,17 +271,17 @@ kerncijfers:
     label: plaatdikte aluminium
   - waarde: 8 × 4 × 3 m
     label: straalcabine
-  - waarde: 100–200 μm
-    label: glasparels
+  - waarde: 3100 mm
+    label: zetlengte kantbank
 specs:
   - label: Plaatdikte
     value: 0,5 – 15 mm op de Trumpf TruLaser 3040
   - label: Kanten
     value: veert sterker terug dan staal; buighoek en gereedschapkeuze bepalen het eindmaat
-  - label: Lassen
-    value: TIG en MIG, afgestemd op plaatdikte en toepassing
-  - label: Warmte bij het lassen
-    value: loopt sneller weg dan bij staal; lasparameters daarop afgestemd
+  - label: Zetlengte
+    value: tot 3100 mm, 150 ton perskracht
+  - label: Ontbramen
+    value: machinaal op de Timesavers 42 Series RB
   - label: Stralen
     value: glasparels 100–200 μm, straalcabine 8 × 4 × 3 m
   - label: Resultaat van stralen

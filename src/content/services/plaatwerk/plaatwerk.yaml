@@ -128,7 +128,7 @@ cards:
     desc: Geslepen RVS 304 en 316 voor corrosiebestendig zichtwerk.
   - slug: plaatwerk/aluminium
     label: Aluminium
-    desc: Lichtgewicht en sterk, incl. TIG- en MIG-laswerk.
+    desc: Lichtgewicht plaatwerk, gesneden en gekant met oog voor terugvering.
   - slug: plaatwerk/messing
     label: Messing
     desc: Warme koperzink-legering voor techniek en interieur.
@@ -283,7 +283,7 @@ en:
     - label: Stainless steel
       desc: Ground stainless steel 304 and 316 for corrosion-resistant visible work.
     - label: Aluminium
-      desc: Lightweight and strong, including TIG and MIG welding.
+      desc: Lightweight sheet metal, cut and bent with attention to springback.
     - label: Brass
       desc: Warm copper-zinc alloy for engineering and interiors.
     - label: Bending & forming
@@ -431,7 +431,7 @@ de:
         Geschliffener Edelstahl 304 und 316 für korrosionsbeständige
         Sichtflächen.
     - label: Aluminium
-      desc: Leicht und stabil, inkl. WIG- und MIG-Schweißen.
+      desc: Leichtes Blech, geschnitten und abgekantet mit Blick auf die Rückfederung.
     - label: Messing
       desc: Warme Kupfer-Zink-Legierung für Technik und Interieur.
     - label: Kanten & Biegen
