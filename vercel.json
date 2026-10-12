@@ -222,6 +222,21 @@
       "source": "/de/plaatwerk/rvs-plaatwerk-voor-machinebouw(/?)",
       "destination": "/de/plaatwerk/rvs/",
       "permanent": true
+    },
+    {
+      "source": "/plaatwerk/precisieplaatwerk(/?)",
+      "destination": "/plaatwerk/",
+      "permanent": true
+    },
+    {
+      "source": "/en/plaatwerk/precisieplaatwerk(/?)",
+      "destination": "/en/plaatwerk/",
+      "permanent": true
+    },
+    {
+      "source": "/de/plaatwerk/precisieplaatwerk(/?)",
+      "destination": "/de/plaatwerk/",
+      "permanent": true
     }
   ],
   "crons": [

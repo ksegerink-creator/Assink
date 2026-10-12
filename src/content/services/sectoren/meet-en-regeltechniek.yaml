@@ -23,7 +23,7 @@ process:
   - { step: "Afwerken", desc: "Ontbramen, slijpen of stralen." }
 applications: ["Instrumentbehuizingen", "Montageplaten en beugels", "Panelen", "Kleine series"]
 related:
-  - { slug: "plaatwerk/precisieplaatwerk", label: "Precisieplaatwerk", desc: "Krappe toleranties." }
+  - { slug: "plaatwerk", label: "Plaatwerk", desc: "Krappe toleranties." }
   - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Bevestiging in dun plaatwerk." }
   - { slug: "plaatwerk/zetten", label: "Kanten", desc: "Maatvast kantwerk." }
 seo:
@@ -68,7 +68,7 @@ en:
   - Panels
   - Small series
   related:
-  - label: Precision sheet metal
+  - label: Sheet metal work
     desc: Tight tolerances.
   - label: Self-clinching & rivet nuts
     desc: Fixings in thin sheet.
@@ -116,7 +116,7 @@ de:
   - Paneele
   - Kleine Serien
   related:
-  - label: Präzisionsblech
+  - label: Blechbearbeitung
     desc: Enge Toleranzen.
   - label: Einpress- & Blindnietmuttern
     desc: Befestigung in dünnem Blech.

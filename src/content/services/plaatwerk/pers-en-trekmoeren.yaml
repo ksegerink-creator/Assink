@@ -120,9 +120,9 @@ faq:
       welke nabehandeling het deel krijgt, dan leggen wij de volgorde daarop
       vast.
 related:
-  - slug: plaatwerk/precisieplaatwerk
-    label: Precisieplaatwerk
-    desc: Maatvast plaatwerk.
+  - slug: plaatwerk
+    label: Plaatwerk
+    desc: Maatvast plaatwerk, enkelstuks en serie.
   - slug: plaatwerk/zetten
     label: Kanten
     desc: Kantwerk.
@@ -250,8 +250,8 @@ en:
         otherwise the coating runs into the thread. Tell us which finishing the
         part receives and we will set the sequence accordingly.
   related:
-    - label: Precision sheet metal
-      desc: Dimensionally stable sheet metal.
+    - label: Sheet metal work
+      desc: Dimensionally stable sheet metal, one-offs and series.
     - label: Bending & forming
       desc: Press brake work.
   cards: []
@@ -377,8 +377,8 @@ de:
         Sie uns mit, welche Nachbehandlung das Teil erhält, dann legen wir die
         Reihenfolge entsprechend fest.
   related:
-    - label: Präzisionsblech
-      desc: Maßhaltige Blechteile.
+    - label: Blechbearbeitung
+      desc: Maßhaltige Blechteile, Einzelstücke und Serien.
     - label: Kanten & Biegen
       desc: Kantarbeiten.
   cards: []
