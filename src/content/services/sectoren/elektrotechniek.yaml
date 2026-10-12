@@ -43,14 +43,33 @@ process:
   - step: Afwerken
     desc: Ontbramen, stralen of passiveren.
 specs: []
-kerncijfers: []
-aanleveren: []
+kerncijfers:
+  - waarde: ± 0,2 mm
+    label: kantnauwkeurigheid
+  - waarde: 3100 mm
+    label: zetlengte
+  - waarde: 4000 × 2000 mm
+    label: max. plaatmaat
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand
+  - Materiaalsoort en plaatdikte
+  - Aantal stuks
+  - Posities van uitsparingen en montagepunten
 applications:
   - Besturingskasten
   - Montageplaten
   - Frontpanelen
   - Industriële behuizingen
-faq: []
+faq:
+  - vraag: Kunnen jullie uitsparingen voor wartels en displays meesnijden?
+    antwoord: Ja. Uitsparingen voor wartels, displays, koeling en ventilatie snijden we mee op de laser, zodat er
+      achteraf niets bijgewerkt hoeft te worden. Zet ze op de tekening of in het STEP-bestand.
+  - vraag: Hoe worden montagepunten in een kast aangebracht?
+    antwoord: Met pers- en trekmoeren die we in eigen huis inzetten, dus zonder losse bewerkingen achteraf. Wordt
+      de kast gepoedercoat, dan moet de schroefdraad worden afgedekt of nabewerkt; dat nemen we mee in de planning.
+  - vraag: Hoe zorgen jullie dat een kastdeur goed sluit?
+    antwoord: 'Door maatvast te kanten: onze servo-elektrische kantbank haalt ± 0,2 mm, en lange panelen tot 3100
+      mm kanten we in één keer. Na het kanten ontbramen we de randen machinaal.'
 related:
   - slug: industriele-behuizing
     label: Industriële behuizing
@@ -106,14 +125,34 @@ en:
     - step: Finishing
       desc: Deburring, blasting or passivation.
   specs: []
-  kerncijfers: []
-  aanleveren: []
+  kerncijfers:
+    - waarde: ± 0.2 mm
+      label: bending accuracy
+    - waarde: 3100 mm
+      label: press brake length
+    - waarde: 4000 × 2000 mm
+      label: max. sheet size
+  aanleveren:
+    - PDF drawing and a 3D STEP file
+    - Material and sheet thickness
+    - Number of parts
+    - Positions of cut-outs and mounting points
   applications:
     - Control cabinets
     - Mounting plates
     - Front panels
     - Industrial enclosures
-  faq: []
+  faq:
+    - vraag: Can you cut cut-outs for cable glands and displays at the same time?
+      antwoord: Yes. Cut-outs for cable glands, displays, cooling and ventilation are cut on the laser in the same operation,
+        so nothing needs reworking afterwards. Show them on the drawing or in the STEP file.
+    - vraag: How are mounting points added to a cabinet?
+      antwoord: With self-clinching and rivet nuts that we insert in house, so without separate operations afterwards.
+        If the cabinet is powder coated, the threads have to be masked or reworked; we take that into account in the
+        planning.
+    - vraag: How do you make sure a cabinet door closes properly?
+      antwoord: 'By bending accurately: our servo-electric press brake achieves ± 0.2 mm, and long panels up to 3100
+        mm are bent in one go. After bending we deburr the edges by machine.'
   related:
     - label: Industrial enclosures
       desc: Enclosures made to measure.
@@ -165,14 +204,35 @@ de:
     - step: Nachbearbeitung
       desc: Entgraten, Strahlen oder Passivieren.
   specs: []
-  kerncijfers: []
-  aanleveren: []
+  kerncijfers:
+    - waarde: ± 0,2 mm
+      label: Abkantgenauigkeit
+    - waarde: 3100 mm
+      label: Abkantlänge
+    - waarde: 4000 × 2000 mm
+      label: max. Blechformat
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei
+    - Werkstoff und Blechdicke
+    - Stückzahl
+    - Positionen von Ausschnitten und Montagepunkten
   applications:
     - Schaltschränke
     - Montageplatten
     - Frontpaneele
     - Industriegehäuse
-  faq: []
+  faq:
+    - vraag: Können Sie Ausschnitte für Kabelverschraubungen und Displays mitschneiden?
+      antwoord: Ja. Ausschnitte für Kabelverschraubungen, Displays, Kühlung und Lüftung schneiden wir auf dem Laser
+        mit, sodass nachträglich nichts nachgearbeitet werden muss. Tragen Sie sie in die Zeichnung oder die STEP-Datei
+        ein.
+    - vraag: Wie werden Montagepunkte in einem Schrank angebracht?
+      antwoord: Mit Einpress- und Blindnietmuttern, die wir im eigenen Haus setzen, also ohne separate Arbeitsgänge
+        im Nachhinein. Wird der Schrank pulverbeschichtet, muss das Gewinde abgedeckt oder nachgearbeitet werden; das
+        berücksichtigen wir in der Planung.
+    - vraag: Wie sorgen Sie dafür, dass eine Schranktür gut schließt?
+      antwoord: 'Durch maßhaltiges Abkanten: Unsere servoelektrische Abkantpresse erreicht ± 0,2 mm, und lange Paneele
+        bis 3100 mm kanten wir in einem Zug. Nach dem Abkanten entgraten wir die Kanten maschinell.'
   related:
     - label: Industriegehäuse
       desc: Gehäuse nach Maß.

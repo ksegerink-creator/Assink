@@ -26,6 +26,31 @@ related:
   - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk tot 10 ton." }
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendig samenstellen." }
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "Certificering en keuring." }
+kerncijfers:
+- waarde: 10 ton
+  label: max. stukgewicht
+- waarde: 8 m
+  label: max. bouwhoogte
+- waarde: ISO 3834-2
+  label: laswerk
+- waarde: EN 1090-1
+  label: staalconstructies
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Welke documentatie en keuring vereist zijn
+faq:
+- vraag: Onder welke normen werken jullie?
+  antwoord: Wij werken onder ISO 9001. Ons laswerk valt onder ISO 3834-2, en voor staalconstructies zijn we gecertificeerd
+    volgens EN 1090-1. Stelt uw project aanvullende eisen, geef die dan vooraf aan, dan beoordelen we of en hoe
+    we daaraan kunnen voldoen.
+- vraag: Is herleidbaar hoe een onderdeel gemaakt is?
+  antwoord: Ja. Lasmethodes leggen we vast, materiaalcertificaten controleren we bij binnenkomst en maatcontroles
+    registreren we per order. Zo blijft herleidbaar welk materiaal en welke las in een onderdeel zitten.
+- vraag: Verzorgen jullie ook de oppervlaktebehandeling?
+  antwoord: Oppervlaktebehandeling besteden wij uit aan een vaste partner. Stralen met glasparels kunnen we voor
+    aluminium en RVS in eigen huis doen.
 seo:
   title: "Gelaste constructies voor defensie"
   description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie, in staal, RVS en aluminium. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
@@ -73,6 +98,31 @@ en:
     desc: Corrosion-resistant assemblies.
   - label: Quality
     desc: Certification and inspection.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. piece weight
+  - waarde: 8 m
+    label: max. build height
+  - waarde: ISO 3834-2
+    label: welding
+  - waarde: EN 1090-1
+    label: steel structures
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Which documentation and inspection are required
+  faq:
+  - vraag: Which standards do you work to?
+    antwoord: We work under ISO 9001. Our welding falls under ISO 3834-2, and for steel structures we are certified
+      to EN 1090-1. If your project has additional requirements, state them in advance and we will assess whether
+      and how we can meet them.
+  - vraag: Is it traceable how a part was made?
+    antwoord: Yes. We document welding procedures, check material certificates on arrival and record dimensional inspections
+      per order. That keeps it traceable which material and which weld are in a part.
+  - vraag: Do you also take care of surface treatment?
+    antwoord: Surface treatment is outsourced to a regular partner. Glass bead blasting of aluminium and stainless
+      steel can be done in house.
   seo:
     title: Welded structures for defence
     description: Frames, enclosures and welded assemblies up to 10 tonnes for defence, in steel, stainless
@@ -121,6 +171,31 @@ de:
     desc: Korrosionsbeständige Baugruppen.
   - label: Qualität
     desc: Zertifizierung und Prüfung.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. Stückgewicht
+  - waarde: 8 m
+    label: max. Bauhöhe
+  - waarde: ISO 3834-2
+    label: Schweißen
+  - waarde: EN 1090-1
+    label: Stahlkonstruktionen
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Welche Dokumentation und Prüfung erforderlich sind
+  faq:
+  - vraag: Nach welchen Normen arbeiten Sie?
+    antwoord: Wir arbeiten nach ISO 9001. Unsere Schweißarbeiten fallen unter ISO 3834-2, und für Stahlkonstruktionen
+      sind wir nach EN 1090-1 zertifiziert. Stellt Ihr Projekt zusätzliche Anforderungen, geben Sie diese vorab an,
+      dann prüfen wir, ob und wie wir sie erfüllen können.
+  - vraag: Ist nachvollziehbar, wie ein Teil hergestellt wurde?
+    antwoord: Ja. Schweißverfahren legen wir fest, Werkstoffzeugnisse prüfen wir bei Eingang und Maßkontrollen dokumentieren
+      wir je Auftrag. So bleibt nachvollziehbar, welcher Werkstoff und welche Schweißnaht in einem Teil stecken.
+  - vraag: Übernehmen Sie auch die Oberflächenbehandlung?
+    antwoord: Die Oberflächenbehandlung vergeben wir an einen festen Partner. Glasperlstrahlen von Aluminium und Edelstahl
+      können wir im eigenen Haus erledigen.
   seo:
     title: Schweißkonstruktionen für Wehrtechnik
     description: Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für die Wehrtechnik, aus Stahl,

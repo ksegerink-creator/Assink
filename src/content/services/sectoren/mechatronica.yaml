@@ -26,6 +26,32 @@ related:
   - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Profielen in één bewerking." }
   - { slug: "machinebouw", label: "Machinebouw", desc: "Complete bouwgroepen." }
   - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
+kerncijfers:
+- waarde: ± 0,2 mm
+  label: kantnauwkeurigheid
+- waarde: ø 150 mm
+  label: max. ronde buis
+- waarde: 120 × 120 mm
+  label: max. koker
+- waarde: 6500 mm
+  label: max. buislengte
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Welke maten kritisch zijn voor de opbouw
+faq:
+- vraag: Welke profielen kunnen jullie buislasersnijden?
+  antwoord: Op de Trumpf TruLaser Tube 3000 snijden wij ronde buis tot ø 150 mm en vierkant en rechthoekig profiel
+    tot 120 × 120 mm, met een buislengte tot 6500 mm. De wanddikte gaat tot 6 mm in staal en tot 4 mm in RVS. Ligt
+    uw profiel daarbuiten, leg het dan voor aan onze werkvoorbereiding.
+- vraag: Hoe houden jullie een gelast frame maatvast?
+  antwoord: Uitsparingen, gaten en verstekken komen al uit de buislaser, zodat delen bij het hechten op hun plek
+    vallen. Wij lassen vervormingsarm met TIG of laser en controleren de maten na het lassen, omdat warmte-inbreng
+    een samenstelling kan laten werken.
+- vraag: Leveren jullie ook verspaande delen mee?
+  antwoord: Verspaande delen betrekken wij van een vaste partner. Zo kunt u een frame met bijbehorende delen bij
+    één aanspreekpunt bestellen.
 seo:
   title: Plaatwerk voor mechatronica
   description: "Maatvaste machineframes, montagebeugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm en vervormingsarm lassen."
@@ -72,6 +98,32 @@ en:
     desc: Complete sub-assemblies.
   - label: Laser welding
     desc: Low-distortion seams.
+  kerncijfers:
+  - waarde: ± 0.2 mm
+    label: bending accuracy
+  - waarde: ø 150 mm
+    label: max. round tube
+  - waarde: 120 × 120 mm
+    label: max. box section
+  - waarde: 6500 mm
+    label: max. tube length
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Which dimensions are critical for the assembly
+  faq:
+  - vraag: Which profiles can you tube laser cut?
+    antwoord: On the Trumpf TruLaser Tube 3000 we cut round tube up to ø 150 mm and square and rectangular sections
+      up to 120 × 120 mm, with a tube length of up to 6500 mm. Wall thickness goes up to 6 mm in steel and up to 4
+      mm in stainless steel. If your profile falls outside that range, put it to our production engineering team.
+  - vraag: How do you keep a welded frame dimensionally accurate?
+    antwoord: Cut-outs, holes and mitres already come off the tube laser, so parts fall into place when tacking. We
+      weld with low distortion using TIG or laser and check the dimensions after welding, because heat input can make
+      an assembly move.
+  - vraag: Do you also supply machined parts?
+    antwoord: Machined parts are sourced from a regular partner. That way you can order a frame and its associated
+      parts through a single point of contact.
   seo:
     title: Sheet metal for mechatronics
     description: Dimensionally stable machine frames, mounting brackets and guard panels for mechatronics
@@ -120,6 +172,32 @@ de:
     desc: Komplette Baugruppen.
   - label: Laserschweißen
     desc: Verzugsarme Nähte.
+  kerncijfers:
+  - waarde: ± 0,2 mm
+    label: Abkantgenauigkeit
+  - waarde: ø 150 mm
+    label: max. Rundrohr
+  - waarde: 120 × 120 mm
+    label: max. Vierkantprofil
+  - waarde: 6500 mm
+    label: max. Rohrlänge
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Welche Maße für den Aufbau kritisch sind
+  faq:
+  - vraag: Welche Profile können Sie rohrlaserschneiden?
+    antwoord: Auf der Trumpf TruLaser Tube 3000 schneiden wir Rundrohr bis ø 150 mm sowie Vierkant- und Rechteckprofil
+      bis 120 × 120 mm bei einer Rohrlänge bis 6500 mm. Die Wanddicke reicht bis 6 mm in Stahl und bis 4 mm in Edelstahl.
+      Liegt Ihr Profil außerhalb dieses Bereichs, legen Sie es unserer Arbeitsvorbereitung vor.
+  - vraag: Wie halten Sie einen geschweißten Rahmen maßhaltig?
+    antwoord: Ausschnitte, Bohrungen und Gehrungen kommen bereits aus dem Rohrlaser, sodass die Teile beim Heften
+      an ihren Platz fallen. Wir schweißen verzugsarm mit WIG oder Laser und kontrollieren die Maße nach dem Schweißen,
+      weil der Wärmeeintrag eine Baugruppe arbeiten lassen kann.
+  - vraag: Liefern Sie auch zerspante Teile mit?
+    antwoord: Zerspante Teile beziehen wir von einem festen Partner. So können Sie einen Rahmen mit den zugehörigen
+      Teilen bei einem Ansprechpartner bestellen.
   seo:
     title: Blech für die Mechatronik
     description: Maßhaltige Maschinenrahmen, Montagewinkel und Schutzpaneele für die Mechatronik in Aluminium,

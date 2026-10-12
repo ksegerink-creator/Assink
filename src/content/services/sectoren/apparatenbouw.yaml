@@ -26,6 +26,30 @@ related:
   - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk." }
   - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Corrosiebestendig plaatwerk." }
   - { slug: "industriele-behuizing", label: "Industriële behuizing", desc: "Behuizingen op maat." }
+kerncijfers:
+- waarde: 10 ton
+  label: max. stukgewicht
+- waarde: 8 m
+  label: max. bouwhoogte
+- waarde: 4000 × 2000 mm
+  label: max. plaatmaat
+- waarde: 3100 mm
+  label: zetlengte
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Of delen in contact komen met product of reinigingsmiddelen
+faq:
+- vraag: Wat is het voordeel van alles onder één dak?
+  antwoord: Lasersnijden, buislasersnijden, kanten en lassen staan bij ons in dezelfde hal. Dat houdt de doorlooptijd
+    kort, en als er een maatafwijking is, is die snel terug te leiden naar de bewerking waar hij ontstond.
+- vraag: Hoe groot mag een samenstelling zijn?
+  antwoord: Tot 10 ton per stuk en 8 meter bouwhoogte. Met vijf bovenloopkranen van 5 ton verplaatsen we zware delen;
+    boven 5 ton hijsen we in tandem met twee kranen.
+- vraag: Welke afwerking doen jullie zelf?
+  antwoord: Slijpen, glasparelstralen, beitsen en passiveren doen wij in eigen huis. Poedercoaten besteden wij uit
+    aan een vaste partner, zodat u één aanspreekpunt houdt.
 seo:
   title: Plaatwerk voor apparatenbouw
   description: "Frames, omkastingen en behuizingen voor apparatenbouw in RVS, staal en aluminium. Lasersnijden, kanten en lassen tot 10 ton onder één dak."
@@ -72,6 +96,31 @@ en:
     desc: Corrosion-resistant sheet metal.
   - label: Industrial enclosures
     desc: Enclosures made to measure.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. piece weight
+  - waarde: 8 m
+    label: max. build height
+  - waarde: 4000 × 2000 mm
+    label: max. sheet size
+  - waarde: 3100 mm
+    label: press brake length
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Whether parts come into contact with product or cleaning agents
+  faq:
+  - vraag: What is the advantage of everything under one roof?
+    antwoord: Laser cutting, tube laser cutting, press braking and welding are all in the same hall. That keeps lead
+      times short, and if there is a dimensional deviation it can quickly be traced back to the operation where it
+      arose.
+  - vraag: How large can an assembly be?
+    antwoord: Up to 10 tonnes per piece and 8 metres build height. We move heavy parts with five 5-tonne overhead
+      cranes; above 5 tonnes we lift in tandem with two cranes.
+  - vraag: Which finishing do you do yourselves?
+    antwoord: Grinding, glass bead blasting, pickling and passivation are done in house. Powder coating is outsourced
+      to a regular partner, so you keep a single point of contact.
   seo:
     title: Sheet metal for equipment manufacturing
     description: Frames, casings and enclosures for equipment manufacturing in stainless steel, steel and
@@ -119,6 +168,31 @@ de:
     desc: Korrosionsbeständiges Blech.
   - label: Industriegehäuse
     desc: Gehäuse nach Maß.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. Stückgewicht
+  - waarde: 8 m
+    label: max. Bauhöhe
+  - waarde: 4000 × 2000 mm
+    label: max. Blechformat
+  - waarde: 3100 mm
+    label: Abkantlänge
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Ob Teile mit Produkt oder Reinigungsmitteln in Berührung kommen
+  faq:
+  - vraag: Was ist der Vorteil von allem unter einem Dach?
+    antwoord: Laserschneiden, Rohrlaserschneiden, Abkanten und Schweißen stehen bei uns in derselben Halle. Das hält
+      die Durchlaufzeit kurz, und eine Maßabweichung lässt sich schnell auf den Arbeitsgang zurückführen, in dem sie
+      entstanden ist.
+  - vraag: Wie groß darf eine Baugruppe sein?
+    antwoord: Bis 10 Tonnen pro Stück und 8 Meter Bauhöhe. Schwere Teile bewegen wir mit fünf Brückenkranen à 5 Tonnen;
+      über 5 Tonnen heben wir im Tandem mit zwei Kranen.
+  - vraag: Welche Oberflächenbehandlung machen Sie selbst?
+    antwoord: Schleifen, Glasperlstrahlen, Beizen und Passivieren erledigen wir im eigenen Haus. Pulverbeschichten
+      vergeben wir an einen festen Partner, damit Sie einen Ansprechpartner behalten.
   seo:
     title: Blechbearbeitung für den Apparatebau
     description: Rahmen, Einhausungen und Gehäuse für den Apparatebau in Edelstahl, Stahl und Aluminium.
