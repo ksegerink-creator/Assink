@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+# CMS-beheer en serverroutes horen niet in Google. /api/cron geeft zonder
+# geheim een 401, wat Search Console als 4xx-fout meldt.
+Disallow: /keystatic
+Disallow: /api/
 
 Sitemap: https://assinkschipholt.nl/sitemap-index.xml
