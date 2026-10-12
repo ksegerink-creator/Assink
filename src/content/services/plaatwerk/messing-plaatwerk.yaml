@@ -123,8 +123,8 @@ related:
   - slug: plaatwerk/rvs
     label: RVS
     desc: Roestvast zichtwerk.
-  - slug: plaatwerk/precisieplaatwerk
-    label: Precisieplaatwerk
+  - slug: plaatwerk
+    label: Plaatwerk
     desc: Maatvast enkelstuks- en seriewerk.
 cards: []
 seo:
@@ -253,7 +253,7 @@ en:
   related:
     - label: Stainless steel
       desc: Corrosion-resistant visible surfaces.
-    - label: Precision sheet metal
+    - label: Sheet metal work
       desc: Dimensionally stable one-offs and series.
   cards: []
   seo:
@@ -378,7 +378,7 @@ de:
   related:
     - label: Edelstahl
       desc: Rostfreie Sichtflächen.
-    - label: Präzisionsblech
+    - label: Blechbearbeitung
       desc: Maßhaltige Einzelstücke und Serien.
   cards: []
   seo:

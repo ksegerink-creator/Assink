@@ -31,6 +31,12 @@ body:
     opspanning, dezelfde volgorde en dezelfde controlepunten, zodat het
     honderdste deel gelijk is aan het eerste.
   - >-
+    Voor precisieplaatwerk met krappe toleranties combineren wij lasersnijden
+    met een servo-elektrische kantbank: die geeft een constantere buighoek dan
+    een hydraulische pers, ook bij lange series. Met vaste werkinstructies en
+    maatcontrole tijdens en na productie blijft de maatvoering reproduceerbaar,
+    ook bij herhaalorders.
+  - >-
     Valt uw aanvraag buiten onderstaand bereik, leg hem dan voor: binnen onze
     groep is vaak meer mogelijk dan op onze eigen machine.
 materials: []
@@ -126,9 +132,6 @@ cards:
   - slug: plaatwerk/messing
     label: Messing
     desc: Warme koperzink-legering voor techniek en interieur.
-  - slug: plaatwerk/precisieplaatwerk
-    label: Precisieplaatwerk
-    desc: Maatvast enkelstuks- en seriewerk.
   - slug: plaatwerk/zetten
     label: Kanten
     desc: Nauwkeurige buighoeken op de servo-elektrische kantbank.
@@ -183,6 +186,12 @@ en:
       operation. For series it is about repeatability — the same fixturing, the
       same sequence and the same inspection points, so that the hundredth part
       matches the first.
+    - >-
+      For precision sheet metal with tight tolerances we combine laser cutting
+      with a servo-electric press brake: this gives a more consistent bend angle
+      than a hydraulic press, even over long series. Fixed work instructions and
+      dimensional inspection during and after production keep dimensions
+      reproducible, including on repeat orders.
     - >-
       If your request falls outside the range below, put it to us: within our
       group more is often possible than on our own machine.
@@ -277,8 +286,6 @@ en:
       desc: Lightweight and strong, including TIG and MIG welding.
     - label: Brass
       desc: Warm copper-zinc alloy for engineering and interiors.
-    - label: Precision sheet metal
-      desc: Dimensionally stable one-offs and series work.
     - label: Bending & forming
       desc: Accurate bending angles on the servo-electric press brake.
     - label: Laser cutting
@@ -323,6 +330,12 @@ de:
       Ausschnitt anders zu setzen spart oft einen ganzen Arbeitsgang. Bei Serie
       zählt Wiederholbarkeit — dieselbe Aufspannung, dieselbe Reihenfolge und
       dieselben Prüfpunkte, damit das hundertste Teil dem ersten gleicht.
+    - >-
+      Für Präzisionsblech mit engen Toleranzen kombinieren wir Laserschneiden
+      mit einer servoelektrischen Abkantpresse: Diese liefert einen
+      gleichmäßigeren Biegewinkel als eine hydraulische Presse, auch bei langen
+      Serien. Feste Arbeitsanweisungen und Maßkontrolle während und nach der
+      Produktion halten die Maße reproduzierbar, auch bei Wiederholaufträgen.
     - >-
       Liegt Ihre Anfrage außerhalb des unten genannten Bereichs, legen Sie sie
       uns vor: innerhalb unserer Gruppe ist oft mehr möglich als auf unserer
@@ -421,8 +434,6 @@ de:
       desc: Leicht und stabil, inkl. WIG- und MIG-Schweißen.
     - label: Messing
       desc: Warme Kupfer-Zink-Legierung für Technik und Interieur.
-    - label: Präzisionsblech
-      desc: Maßhaltige Einzelstücke und Serienteile.
     - label: Kanten & Biegen
       desc: Präzise Biegewinkel auf der servoelektrischen Abkantpresse.
     - label: Laserschneiden

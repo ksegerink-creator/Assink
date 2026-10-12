@@ -78,6 +78,14 @@ export const REDIRECTS: Record<string, string> = {
   "/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/plaatwerk/rvs/",
   "/en/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/en/plaatwerk/rvs/",
   "/de/plaatwerk/rvs-plaatwerk-voor-machinebouw": "/de/plaatwerk/rvs/",
+  // Precisieplaatwerk (12 oktober 2026): richtte zich op hetzelfde zoekwoord
+  // als /plaatwerk/ (dat "precisieplaatwerk" al in intro en meta draagt) en
+  // had geen eigen inhoud die daar niet al stond. Het unieke deel —
+  // servo-elektrische kantbank vs. hydraulisch, maatcontrole — staat nu op
+  // /plaatwerk/.
+  "/plaatwerk/precisieplaatwerk": "/plaatwerk/",
+  "/en/plaatwerk/precisieplaatwerk": "/en/plaatwerk/",
+  "/de/plaatwerk/precisieplaatwerk": "/de/plaatwerk/",
 };
 
 /**

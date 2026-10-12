@@ -133,7 +133,6 @@ const SERVICE_IMAGES: Record<string, ImageMetadata> = {
   "plaatwerk/rvs": asProductRvs,
   "plaatwerk/aluminium": asKantenDetail,
   "plaatwerk/messing": asBoren,
-  "plaatwerk/precisieplaatwerk": asKantenDetail,
   "plaatwerk/zetten": asKantbank,
   "plaatwerk/ontbramen": asAfwerking,
   "plaatwerk/persmoeren-trekmoeren": asBoren,
