@@ -12,7 +12,8 @@
     "groep",
     "open",
     "translated",
-    "inFooter"
+    "inFooter",
+    "geplaatst"
   ],
   "fotoVeldPatroon": "^(foto|midFoto|fotobank|.*Foto[0-9]*|.*Bank)$"
 }

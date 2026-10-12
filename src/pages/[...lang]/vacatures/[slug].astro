@@ -32,8 +32,22 @@ const locale = toLocale(Astro.params.lang);
 const v = localizeEntry(entry.data, locale);
 const nav = (slug: string) => localizePath(slug, locale);
 const site = Astro.site ?? new URL(SITE.url);
+// Google for Jobs toont een vacature zonder einddatum korter. De site is
+// statisch: validThrough ligt 3 maanden na de build, en elke publicatie (CMS,
+// blog-cron) schuift hem op. Zolang een vacature open staat, blijft hij dus
+// staan; gaat hij dicht, dan verdwijnt de pagina.
+const vandaag = new Date();
+const totEn = new Date(vandaag);
+totEn.setMonth(totEn.getMonth() + 3);
+const isoDatum = (d: Date) => d.toISOString().slice(0, 10);
 const jsonld = [
-  jobPostingJsonLd(site, { title: v.title, description: v.intro, employmentType: v.employmentType }),
+  jobPostingJsonLd(site, {
+    title: v.title,
+    description: v.intro,
+    employmentType: v.employmentType,
+    datePosted: v.geplaatst ?? isoDatum(vandaag),
+    validThrough: isoDatum(totEn),
+  }),
 ];
 
 // Tijdelijk sfeerbeeld per vacature (officiële fotografie volgt).

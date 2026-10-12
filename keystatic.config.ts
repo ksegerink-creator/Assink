@@ -942,6 +942,10 @@ export default config({
           itemLabel: (p) => (p.value || "").slice(0, 45),
         }),
         open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
+        geplaatst: fields.date({
+          label: "Geplaatst op",
+          description: "Voor Google for Jobs. De vacature blijft daar tot 3 maanden na de laatste publicatie van de site zichtbaar.",
+        }),
         fotoBank: uitBank("Foto bij de vacature"),
         foto: pageFoto("vacatures")("Foto", "Laat leeg voor de standaardfoto bij deze vacature."),
         photo: photoMeta(),

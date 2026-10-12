@@ -170,6 +170,12 @@ const vacancies = defineCollection({
     responsibilities: z.array(z.string()).default([]),
     requirements: z.array(z.string()).default([]),
     open: z.boolean().default(true),
+    // Plaatsingsdatum (JJJJ-MM-DD) voor de JobPosting-data. YAML leest een
+    // kale datum als Date; Keystatic schrijft hem zo weg, dus beide vormen.
+    geplaatst: z
+      .union([z.string(), z.date()])
+      .transform((d) => (d instanceof Date ? d.toISOString().slice(0, 10) : d))
+      .optional(),
     foto: z.string().optional(),
     fotoBank: z.string().optional(),
     photo,
