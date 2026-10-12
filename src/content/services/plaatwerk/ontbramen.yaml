@@ -6,8 +6,9 @@ order: 26
 inFooter: false
 h1: Ontbramen
 intro: >-
-  Na het lasersnijden worden randen ontbraamd: veilig in gebruik, klaar voor de
-  volgende bewerking en netjes afgewerkt.
+  Na het lasersnijden zit er een braam op de snijrand. Wij verwijderen die
+  machinaal, zodat uw plaatdelen veilig te hanteren zijn en zonder problemen
+  door kanten, lassen en afwerken gaan.
 fotobank: nabewerken
 foto: /src/assets/uploads/services/ontbramen/foto.png
 heroPhoto:
@@ -17,36 +18,93 @@ heroPhoto:
   comp: Plaat op transportband in machine
 body:
   - >-
-    Bramen ontstaan bij het snijden en kunnen scherp of hinderlijk zijn bij
-    montage en afwerking. Op onze Timesavers 42 Series RB ontbramen en borstelen
-    we platte werkstukken na het lasersnijden.
+    Bij het lasersnijden stolt een klein deel van het gesmolten materiaal aan
+    de onderkant van de snijrand. Die braam is scherp genoeg om je aan te
+    snijden en zit in de weg bij de volgende bewerkingen: een deel met braam
+    ligt niet vlak tegen de aanslag van de kantbank, een lasnaad sluit minder
+    goed aan en een poedercoatlaag hecht slechter op een scherpe rand.
+  - >-
+    Wij ontbramen in eigen huis op een Timesavers 42 Series RB, een
+    breedbandmachine voor platte werkstukken. De plaatdelen gaan na het snijden
+    op de transportband door de machine, die de braam verwijdert, de randen
+    licht afrondt en het oppervlak egaliseert. Omdat dit machinaal gebeurt, is
+    het resultaat gelijk over de hele serie — ook bij honderden delen.
+  - >-
+    Ontbramen gebeurt vóór het kanten, zolang het deel nog vlak is. Dat is
+    ook de reden dat het direct na het lasersnijden in onze route zit: een
+    gekant deel past niet meer plat door de machine.
+  - >-
+    Per materiaal ligt het accent anders. Bij staal gaat het naast uiterlijk
+    vooral om arbeidsveiligheid verderop in de keten. Bij RVS volgt na het
+    ontbramen waar nodig glasparelstralen en, na het lassen, passiveren. Bij
+    aluminium volstaan ontbramen en een visuele controle als de rand uit het
+    zicht blijft. Bij zichtwerk in messing blijft de beschermfolie zo lang
+    mogelijk zitten.
 materials:
   - Staal
   - RVS
   - Aluminium
+  - Messing
 process:
-  - step: Snijden
-    desc: Lasersnijden van het deel.
+  - step: Lasersnijden
+    desc: Het deel wordt gesneden; aan de onderkant van de rand ontstaat een braam.
   - step: Ontbramen
-    desc: Braamverwijdering en randafronding.
-  - step: Borstelen
-    desc: Egaliseren van het oppervlak.
+    desc: Machinaal op de Timesavers 42 Series RB, terwijl het deel nog vlak is.
+  - step: Randen afronden en borstelen
+    desc: Scherpe randen licht afronden en het oppervlak egaliseren.
+  - step: Verder in de route
+    desc: Kanten, lassen of afwerken met een braamvrij deel.
 specs:
   - label: Machine
-    value: Timesavers 42 Series RB
+    value: Timesavers 42 Series RB (GrindingMaster)
   - label: Type
-    value: borstel- en afbraammachine
+    value: breedband borstel- en afbraammachine
+  - label: Werkstukken
+    value: platte plaatdelen, vóór het kanten
+  - label: Materialen
+    value: staal, RVS, aluminium, messing
 kerncijfers: []
-aanleveren: []
+aanleveren:
+  - PDF-tekening en een 3D STEP-bestand
+  - Materiaalsoort en plaatdikte
+  - Aantal stuks
+  - Of de delen ontbraamd moeten worden, en of het zichtwerk betreft
 applications:
-  - Plaatwerk
+  - Plaatdelen voor kanten en lassen
   - Zichtwerk
   - Montageklare delen
-faq: []
+  - Delen voor poedercoaten
+faq:
+  - vraag: Waarom moeten lasergesneden delen ontbraamd worden?
+    antwoord: >-
+      Een braam is scherp en maakt een deel onveilig om te hanteren. Daarnaast
+      zit hij in de weg bij de volgende bewerkingen: het deel ligt niet vlak
+      tegen de aanslag van de kantbank, lasnaden sluiten minder goed aan en
+      een coating hecht slechter op een scherpe rand.
+  - vraag: Kunnen jullie ook gekante delen ontbramen?
+    antwoord: >-
+      Onze Timesavers is een machine voor platte werkstukken. Daarom ontbramen
+      wij direct na het lasersnijden, vóór het kanten. Levert u zelf al gekante
+      delen aan die nog ontbraamd moeten worden, neem dan contact op, dan
+      kijken we per geval wat mogelijk is.
+  - vraag: Is ontbramen standaard bij jullie plaatwerk?
+    antwoord: >-
+      Bij plaatwerk dat bij ons verder gekant, gelast of afgewerkt wordt, hoort
+      het bij de route. Bestelt u alleen gesneden delen, geef dan in uw
+      aanvraag door of u ze ontbraamd wilt ontvangen.
+  - vraag: Wat is het verschil tussen ontbramen en stralen?
+    antwoord: >-
+      Ontbramen verwijdert de braam en rondt de randen af. Glasparelstralen is
+      een oppervlaktebehandeling die onder meer aanloopkleuren en
+      verontreiniging na het lassen verwijdert en een egaal mat oppervlak
+      geeft. Bij RVS volgen ze vaak na elkaar.
 related:
   - slug: plaatwerk/lasersnijden
     label: Lasersnijden
     desc: Bewerking vóór het ontbramen.
+  - slug: plaatwerk/zetten
+    label: Kanten
+    desc: Kanten met braamvrije delen.
   - slug: machinepark
     label: Machinepark
     desc: Bekijk de machine.
@@ -54,101 +112,224 @@ cards: []
 seo:
   title: Ontbramen — braamvrije, veilige randen
   description: >-
-    Ontbramen en borstelen na het lasersnijden op de Timesavers 42 Series RB:
-    veilige, montageklare randen.
+    Machinaal ontbramen na het lasersnijden op de Timesavers 42 Series RB:
+    braamvrije, licht afgeronde randen in staal, RVS, aluminium en messing,
+    klaar voor kanten, lassen en coaten.
 translated:
   - nl
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   title: Deburring
   h1: Deburring
   intro: >-
-    After laser cutting, edges are deburred: safe to handle, ready for the next
-    operation and neatly finished.
+    Laser cutting leaves a burr on the cut edge. We remove it by machine, so
+    that your sheet metal parts are safe to handle and go through bending,
+    welding and finishing without problems.
   heroPhoto:
     subject: Sheet metal part passing through the deburring/brushing machine
   body:
     - >-
-      Burrs arise during cutting and can be sharp or a nuisance during assembly
-      and finishing. On our Timesavers 42 Series RB we deburr and brush flat
-      workpieces after laser cutting.
+      During laser cutting a small amount of molten material solidifies on the
+      underside of the cut edge. That burr is sharp enough to cut yourself on
+      and gets in the way of subsequent operations: a part with a burr does not
+      sit flat against the press brake backgauge, a weld seam fits up less
+      well and a powder coating adheres less well to a sharp edge.
+    - >-
+      We deburr in house on a Timesavers 42 Series RB, a wide-belt machine for
+      flat workpieces. After cutting, the parts travel on the conveyor through
+      the machine, which removes the burr, lightly rounds the edges and evens
+      out the surface. Because this is done by machine, the result is
+      consistent across the whole series — even with hundreds of parts.
+    - >-
+      Deburring is done before bending, while the part is still flat. That is
+      also why it comes directly after laser cutting in our routing: a bent
+      part no longer passes flat through the machine.
+    - >-
+      The emphasis differs per material. With steel it is not only about
+      appearance but above all about safety further down the chain. With
+      stainless steel, deburring is followed where necessary by glass bead
+      blasting and, after welding, passivation. With aluminium, deburring and
+      a visual check are sufficient if the edge is out of sight. For visible
+      brass parts the protective film stays on as long as possible.
   materials:
     - Steel
     - Stainless steel
     - Aluminium
+    - Brass
   process:
-    - step: Cutting
-      desc: Laser cutting of the part.
+    - step: Laser cutting
+      desc: The part is cut; a burr forms on the underside of the edge.
     - step: Deburring
-      desc: Burr removal and edge rounding.
-    - step: Brushing
-      desc: Levelling out the surface.
+      desc: By machine on the Timesavers 42 Series RB, while the part is still flat.
+    - step: Edge rounding and brushing
+      desc: Lightly rounding sharp edges and evening out the surface.
+    - step: Next in the routing
+      desc: Bending, welding or finishing with a burr-free part.
   specs:
     - label: Machine
-      value: Timesavers 42 Series RB
+      value: Timesavers 42 Series RB (GrindingMaster)
     - label: Type
-      value: brushing and deburring machine
+      value: wide-belt brushing and deburring machine
+    - label: Workpieces
+      value: flat sheet metal parts, before bending
+    - label: Materials
+      value: steel, stainless steel, aluminium, brass
   kerncijfers: []
-  aanleveren: []
+  aanleveren:
+    - PDF drawing and a 3D STEP file
+    - Material and sheet thickness
+    - Number of parts
+    - Whether the parts need deburring, and whether it is visible work
   applications:
-    - Sheet metal work
+    - Parts for bending and welding
     - Visible surfaces
     - Assembly-ready parts
-  faq: []
+    - Parts for powder coating
+  faq:
+    - vraag: Why do laser-cut parts need deburring?
+      antwoord: >-
+        A burr is sharp and makes a part unsafe to handle. It also gets in the
+        way of subsequent operations: the part does not sit flat against the
+        press brake backgauge, weld seams fit up less well and a coating
+        adheres less well to a sharp edge.
+    - vraag: Can you also deburr bent parts?
+      antwoord: >-
+        Our Timesavers is a machine for flat workpieces. That is why we deburr
+        directly after laser cutting, before bending. If you supply parts that
+        are already bent and still need deburring, please contact us and we
+        will look at what is possible case by case.
+    - vraag: Is deburring standard in your sheet metal work?
+      antwoord: >-
+        For sheet metal that we go on to bend, weld or finish, it is part of
+        the routing. If you only order cut parts, please state in your request
+        whether you want them deburred.
+    - vraag: What is the difference between deburring and blasting?
+      antwoord: >-
+        Deburring removes the burr and rounds the edges. Glass bead blasting is
+        a surface treatment that removes, among other things, heat tint and
+        contamination after welding and gives an even matt surface. With
+        stainless steel they often follow one another.
   related:
     - label: Laser cutting
       desc: The operation before deburring.
+    - label: Bending & forming
+      desc: Bending with burr-free parts.
     - label: Machine park
       desc: View the machine.
   cards: []
   seo:
     title: Deburring — burr-free, safe edges
     description: >-
-      Deburring and brushing after laser cutting on the Timesavers 42 Series RB:
-      safe, assembly-ready edges.
+      Machine deburring after laser cutting on the Timesavers 42 Series RB:
+      burr-free, lightly rounded edges in steel, stainless steel, aluminium
+      and brass, ready for bending, welding and coating.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   title: Entgraten
   h1: Entgraten
   intro: >-
-    Nach dem Laserschneiden werden die Kanten entgratet: sicher in der
-    Handhabung, bereit für den nächsten Arbeitsgang und sauber ausgeführt.
+    Beim Laserschneiden entsteht ein Grat an der Schnittkante. Wir entfernen
+    ihn maschinell, damit Ihre Blechteile sicher zu handhaben sind und
+    problemlos durch Abkanten, Schweißen und Oberflächenbehandlung gehen.
   heroPhoto:
     subject: Blechteil durchläuft die Entgrat-/Bürstmaschine
   body:
     - >-
-      Grate entstehen beim Schneiden und können scharf oder bei Montage und
-      Endbearbeitung störend sein. Auf unserer Timesavers 42 Series RB entgraten
-      und bürsten wir flache Werkstücke nach dem Laserschneiden.
+      Beim Laserschneiden erstarrt ein kleiner Teil des geschmolzenen
+      Materials an der Unterseite der Schnittkante. Dieser Grat ist scharf
+      genug, um sich daran zu schneiden, und stört bei den folgenden
+      Arbeitsgängen: Ein Teil mit Grat liegt nicht plan am Anschlag der
+      Abkantpresse, eine Schweißnaht passt schlechter an und eine
+      Pulverbeschichtung haftet schlechter auf einer scharfen Kante.
+    - >-
+      Wir entgraten im eigenen Haus auf einer Timesavers 42 Series RB, einer
+      Breitbandmaschine für flache Werkstücke. Nach dem Schneiden laufen die
+      Teile auf dem Förderband durch die Maschine, die den Grat entfernt, die
+      Kanten leicht verrundet und die Oberfläche vereinheitlicht. Weil das
+      maschinell geschieht, ist das Ergebnis über die ganze Serie gleich —
+      auch bei Hunderten von Teilen.
+    - >-
+      Entgratet wird vor dem Abkanten, solange das Teil noch flach ist. Darum
+      steht dieser Schritt in unserem Ablauf direkt nach dem Laserschneiden:
+      Ein abgekantetes Teil läuft nicht mehr flach durch die Maschine.
+    - >-
+      Je nach Werkstoff liegt der Schwerpunkt anders. Bei Stahl geht es neben
+      dem Aussehen vor allem um Arbeitssicherheit in der weiteren Kette. Bei
+      Edelstahl folgen nach dem Entgraten bei Bedarf Glasperlstrahlen und nach
+      dem Schweißen Passivieren. Bei Aluminium genügen Entgraten und eine
+      Sichtkontrolle, wenn die Kante nicht sichtbar ist. Bei Sichtteilen aus
+      Messing bleibt die Schutzfolie so lange wie möglich darauf.
   materials:
     - Stahl
     - Edelstahl
     - Aluminium
+    - Messing
   process:
-    - step: Schneiden
-      desc: Laserschneiden des Teils.
+    - step: Laserschneiden
+      desc: Das Teil wird geschnitten; an der Unterseite der Kante entsteht ein Grat.
     - step: Entgraten
-      desc: Gratentfernung und Kantenverrundung.
-    - step: Bürsten
-      desc: Vereinheitlichen der Oberfläche.
+      desc: Maschinell auf der Timesavers 42 Series RB, solange das Teil noch flach ist.
+    - step: Kantenverrundung und Bürsten
+      desc: Scharfe Kanten leicht verrunden und die Oberfläche vereinheitlichen.
+    - step: Weiter im Ablauf
+      desc: Abkanten, Schweißen oder Oberflächenbehandlung mit einem gratfreien Teil.
   specs:
     - label: Maschine
-      value: Timesavers 42 Series RB
+      value: Timesavers 42 Series RB (GrindingMaster)
     - label: Typ
-      value: Bürst- und Entgratmaschine
+      value: Breitband-Bürst- und Entgratmaschine
+    - label: Werkstücke
+      value: flache Blechteile, vor dem Abkanten
+    - label: Werkstoffe
+      value: Stahl, Edelstahl, Aluminium, Messing
   kerncijfers: []
-  aanleveren: []
+  aanleveren:
+    - PDF-Zeichnung und eine 3D-STEP-Datei
+    - Werkstoff und Blechdicke
+    - Stückzahl
+    - Ob die Teile entgratet werden sollen und ob es sich um Sichtteile handelt
   applications:
-    - Blechbearbeitung
+    - Teile zum Abkanten und Schweißen
     - Sichtflächen
     - Montagefertige Teile
-  faq: []
+    - Teile zum Pulverbeschichten
+  faq:
+    - vraag: Warum müssen lasergeschnittene Teile entgratet werden?
+      antwoord: >-
+        Ein Grat ist scharf und macht ein Teil unsicher in der Handhabung.
+        Außerdem stört er bei den folgenden Arbeitsgängen: Das Teil liegt nicht
+        plan am Anschlag der Abkantpresse, Schweißnähte passen schlechter an
+        und eine Beschichtung haftet schlechter auf einer scharfen Kante.
+    - vraag: Können Sie auch abgekantete Teile entgraten?
+      antwoord: >-
+        Unsere Timesavers ist eine Maschine für flache Werkstücke. Darum
+        entgraten wir direkt nach dem Laserschneiden, vor dem Abkanten. Liefern
+        Sie bereits abgekantete Teile an, die noch entgratet werden müssen,
+        sprechen Sie uns an, dann prüfen wir im Einzelfall, was möglich ist.
+    - vraag: Ist Entgraten bei Ihrer Blechbearbeitung Standard?
+      antwoord: >-
+        Bei Blechteilen, die wir weiter abkanten, schweißen oder veredeln,
+        gehört es zum Ablauf. Bestellen Sie nur geschnittene Teile, geben Sie
+        bitte in Ihrer Anfrage an, ob Sie sie entgratet erhalten möchten.
+    - vraag: Was ist der Unterschied zwischen Entgraten und Strahlen?
+      antwoord: >-
+        Entgraten entfernt den Grat und verrundet die Kanten. Glasperlstrahlen
+        ist eine Oberflächenbehandlung, die unter anderem Anlauffarben und
+        Verunreinigungen nach dem Schweißen entfernt und eine gleichmäßig matte
+        Oberfläche ergibt. Bei Edelstahl folgen beide oft aufeinander.
   related:
     - label: Laserschneiden
       desc: Arbeitsgang vor dem Entgraten.
+    - label: Kanten & Biegen
+      desc: Abkanten mit gratfreien Teilen.
     - label: Maschinenpark
       desc: Maschine ansehen.
   cards: []
   seo:
     title: Entgraten — gratfreie, sichere Kanten
     description: >-
-      Entgraten und Bürsten nach dem Laserschneiden auf der Timesavers 42 Series
-      RB: sichere, montagefertige Kanten.
+      Maschinelles Entgraten nach dem Laserschneiden auf der Timesavers 42
+      Series RB: gratfreie, leicht verrundete Kanten in Stahl, Edelstahl,
+      Aluminium und Messing, bereit zum Abkanten, Schweißen und Beschichten.
