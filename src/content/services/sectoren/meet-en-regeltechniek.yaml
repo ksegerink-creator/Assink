@@ -26,6 +26,29 @@ related:
   - { slug: "plaatwerk", label: "Plaatwerk", desc: "Krappe toleranties." }
   - { slug: "plaatwerk/persmoeren-trekmoeren", label: "Pers- & trekmoeren", desc: "Bevestiging in dun plaatwerk." }
   - { slug: "plaatwerk/zetten", label: "Kanten", desc: "Maatvast kantwerk." }
+kerncijfers:
+- waarde: ± 0,2 mm
+  label: kantnauwkeurigheid
+- waarde: 0,5 mm
+  label: min. plaatdikte
+- waarde: 3100 mm
+  label: zetlengte
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Welke maten kritisch zijn, en of het zichtwerk betreft
+faq:
+- vraag: Maken jullie ook kleine series?
+  antwoord: Ja. Enkelstuks en kleine series lopen bij ons over dezelfde machines als grotere series. Bij kleine
+    aantallen ligt het accent op meedenken over maakbaarheid, zodat een behuizing in één keer goed is.
+- vraag: Hoe bevestigen jullie componenten in dun plaatwerk?
+  antwoord: Met pers- of trekmoeren, die wij in eigen huis inzetten. Een persmoer geeft de sterkste en vlakste verbinding;
+    een trekmoer kiezen we als de achterzijde niet bereikbaar is. In RVS-plaatwerk gebruiken we RVS-moeren, tegen
+    contactcorrosie.
+- vraag: Welke nauwkeurigheid halen jullie bij het kanten?
+  antwoord: Op onze servo-elektrische kantbank kanten wij met een nauwkeurigheid van ± 0,2 mm, met toleranties volgens
+    ISO 2768. Vermeld op de tekening welke maten kritisch zijn, dan richten we de controle daarop in.
 seo:
   title: Plaatwerk voor meet- en regeltechniek
   description: "Instrumentbehuizingen, montageplaten en panelen voor meet- en regeltechniek in RVS en aluminium. Lasersnijden en kanten tot ± 0,2 mm, ook in kleine series."
@@ -74,6 +97,29 @@ en:
     desc: Fixings in thin sheet.
   - label: Bending & forming
     desc: Dimensionally stable bending.
+  kerncijfers:
+  - waarde: ± 0.2 mm
+    label: bending accuracy
+  - waarde: 0.5 mm
+    label: min. sheet thickness
+  - waarde: 3100 mm
+    label: press brake length
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Which dimensions are critical, and whether it is visible work
+  faq:
+  - vraag: Do you also make small series?
+    antwoord: Yes. One-offs and small series run on the same machines as larger series. With small quantities the
+      emphasis is on thinking along about manufacturability, so that an enclosure is right first time.
+  - vraag: How do you fasten components in thin sheet metal?
+    antwoord: With self-clinching or rivet nuts, which we insert in house. A self-clinching nut gives the strongest
+      and flattest connection; we choose a rivet nut when the back is not accessible. In stainless steel sheet metal
+      we use stainless steel nuts, to prevent contact corrosion.
+  - vraag: What accuracy do you achieve when bending?
+    antwoord: On our servo-electric press brake we bend with an accuracy of ± 0.2 mm, with tolerances to ISO 2768.
+      State on the drawing which dimensions are critical and we will focus our inspection on them.
   seo:
     title: Sheet metal for instrumentation
     description: Instrument enclosures, mounting plates and panels for instrumentation and control in stainless
@@ -122,6 +168,30 @@ de:
     desc: Befestigung in dünnem Blech.
   - label: Kanten & Biegen
     desc: Maßhaltiges Abkanten.
+  kerncijfers:
+  - waarde: ± 0,2 mm
+    label: Abkantgenauigkeit
+  - waarde: 0,5 mm
+    label: min. Blechdicke
+  - waarde: 3100 mm
+    label: Abkantlänge
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Welche Maße kritisch sind und ob es sich um Sichtteile handelt
+  faq:
+  - vraag: Fertigen Sie auch kleine Serien?
+    antwoord: Ja. Einzelstücke und kleine Serien laufen über dieselben Maschinen wie größere Serien. Bei kleinen Stückzahlen
+      liegt der Schwerpunkt auf der Fertigungsgerechtheit, damit ein Gehäuse auf Anhieb stimmt.
+  - vraag: Wie befestigen Sie Komponenten in dünnem Blech?
+    antwoord: Mit Einpress- oder Blindnietmuttern, die wir im eigenen Haus setzen. Eine Einpressmutter ergibt die
+      stärkste und flachste Verbindung; eine Blindnietmutter wählen wir, wenn die Rückseite nicht zugänglich ist.
+      In Edelstahlblech verwenden wir Edelstahlmuttern, gegen Kontaktkorrosion.
+  - vraag: Welche Genauigkeit erreichen Sie beim Abkanten?
+    antwoord: Auf unserer servoelektrischen Abkantpresse kanten wir mit einer Genauigkeit von ± 0,2 mm, Toleranzen
+      nach ISO 2768. Geben Sie auf der Zeichnung an, welche Maße kritisch sind, dann richten wir die Kontrolle darauf
+      aus.
   seo:
     title: Blech für die Mess- und Regeltechnik
     description: Instrumentengehäuse, Montageplatten und Paneele für die Mess- und Regeltechnik in Edelstahl

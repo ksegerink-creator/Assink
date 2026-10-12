@@ -26,6 +26,32 @@ related:
   - { slug: "constructies", label: "Constructies", desc: "Zwaar gelast constructiewerk." }
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "EN 1090-1 en ISO 3834-2." }
   - { slug: "buizenlaser", label: "Buislasersnijden", desc: "Profielen op maat." }
+kerncijfers:
+- waarde: 10 ton
+  label: max. stukgewicht
+- waarde: 8 m
+  label: max. bouwhoogte
+- waarde: 5 × 5 ton
+  label: bovenloopkranen
+- waarde: EN 1090-1
+  label: gecertificeerd
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Welke documentatie en keuring de opdrachtgever verlangt
+faq:
+- vraag: Wat betekent EN 1090-1 voor mijn constructie?
+  antwoord: EN 1090-1 regelt de uitvoering van staal- en aluminiumconstructies met CE-markering. Wij zijn volgens
+    deze norm gecertificeerd, zodat draagconstructies CE-conform geleverd kunnen worden. De lasprocessen vallen
+    daarnaast onder ISO 3834-2.
+- vraag: Welke documentatie leveren jullie mee?
+  antwoord: 'Van ingangscontrole tot eindkeuring leggen we de stappen vast: materiaalcertificaten bij binnenkomst,
+    gekwalificeerde lasprocessen, maatcontrole en vrijgave. Geef in de aanvraag aan welke documentatie uw opdrachtgever
+    verlangt.'
+- vraag: Hoe groot en zwaar kan een constructie zijn?
+  antwoord: Tot 10 ton per stuk en 8 meter hoogte, in onze eigen hal. Met vijf bovenloopkranen van 5 ton verplaatsen
+    we de delen veilig; boven 5 ton hijsen we in tandem met twee kranen.
 seo:
   title: Staalconstructies volgens EN 1090-1
   description: "Staalconstructies, frames en behuizingen voor infratechniek. Gecertificeerd volgens EN 1090-1 en ISO 3834-2, met documentatie van ingangscontrole tot eindkeuring."
@@ -72,6 +98,32 @@ en:
     desc: EN 1090-1 and ISO 3834-2.
   - label: Tube laser cutting
     desc: Profiles cut to size.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. piece weight
+  - waarde: 8 m
+    label: max. build height
+  - waarde: 5 × 5 t
+    label: overhead cranes
+  - waarde: EN 1090-1
+    label: certified
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Which documentation and inspection the client requires
+  faq:
+  - vraag: What does EN 1090-1 mean for my structure?
+    antwoord: EN 1090-1 governs the execution of steel and aluminium structures with CE marking. We are certified
+      to this standard, so load-bearing structures can be supplied CE-compliant. The welding processes also fall under
+      ISO 3834-2.
+  - vraag: What documentation do you supply?
+    antwoord: 'From incoming inspection to final inspection we record the steps: material certificates on arrival,
+      qualified welding processes, dimensional inspection and release. State in your request which documentation your
+      client requires.'
+  - vraag: How large and heavy can a structure be?
+    antwoord: Up to 10 tonnes per piece and 8 metres high, in our own hall. We move the parts safely with five 5-tonne
+      overhead cranes; above 5 tonnes we lift in tandem with two cranes.
   seo:
     title: Steel structures to EN 1090-1
     description: Steel structures, frames and enclosures for infrastructure engineering. Certified to EN
@@ -120,6 +172,32 @@ de:
     desc: EN 1090-1 und ISO 3834-2.
   - label: Rohrlaserschneiden
     desc: Profile nach Maß.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. Stückgewicht
+  - waarde: 8 m
+    label: max. Bauhöhe
+  - waarde: 5 × 5 t
+    label: Brückenkrane
+  - waarde: EN 1090-1
+    label: zertifiziert
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Welche Dokumentation und Prüfung der Auftraggeber verlangt
+  faq:
+  - vraag: Was bedeutet EN 1090-1 für meine Konstruktion?
+    antwoord: EN 1090-1 regelt die Ausführung von Stahl- und Aluminiumkonstruktionen mit CE-Kennzeichnung. Wir sind
+      nach dieser Norm zertifiziert, sodass tragende Konstruktionen CE-konform geliefert werden können. Die Schweißprozesse
+      fallen zudem unter ISO 3834-2.
+  - vraag: Welche Dokumentation liefern Sie mit?
+    antwoord: 'Von der Eingangskontrolle bis zur Endprüfung halten wir die Schritte fest: Werkstoffzeugnisse bei Eingang,
+      qualifizierte Schweißprozesse, Maßkontrolle und Freigabe. Geben Sie in der Anfrage an, welche Dokumentation
+      Ihr Auftraggeber verlangt.'
+  - vraag: Wie groß und schwer darf eine Konstruktion sein?
+    antwoord: Bis 10 Tonnen pro Stück und 8 Meter Höhe, in unserer eigenen Halle. Mit fünf Brückenkranen à 5 Tonnen
+      bewegen wir die Teile sicher; über 5 Tonnen heben wir im Tandem mit zwei Kranen.
   seo:
     title: Stahlkonstruktionen nach EN 1090-1
     description: Stahlkonstruktionen, Rahmen und Gehäuse für die Infrastrukturtechnik. Zertifiziert nach

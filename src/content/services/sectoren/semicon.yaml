@@ -26,6 +26,30 @@ related:
   - { slug: "plaatwerk", label: "Plaatwerk", desc: "Krappe toleranties." }
   - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Geslepen RVS voor zichtwerk." }
   - { slug: "plaatwerk/aluminium", label: "Aluminium", desc: "Lichtgewicht plaatwerk." }
+kerncijfers:
+- waarde: ± 0,2 mm
+  label: kantnauwkeurigheid
+- waarde: 8 × 4 × 3 m
+  label: straalcabine
+- waarde: 100–200 μm
+  label: glasparels
+- waarde: 304 / 316
+  label: RVS-kwaliteiten
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Gewenste oppervlakteafwerking per deel
+faq:
+- vraag: Assembleren jullie in een cleanroom?
+  antwoord: Nee. Assemblage in een cleanroom hoort niet bij ons werk. Wij leveren de delen en samenstellingen aan,
+    met de afwerking die u voorschrijft.
+- vraag: Welke oppervlakteafwerkingen leveren jullie?
+  antwoord: Geslepen RVS met een consistente korrel, en glasparelgestraald RVS en aluminium in onze straalcabine
+    van 8 × 4 × 3 meter, met glasparels van 100 tot 200 μm. Waar nodig passiveren we RVS na het lassen.
+- vraag: Blijft de afwerking gelijk over meerdere series?
+  antwoord: 'Daar sturen we op: iedere batch krijgt dezelfde korrel en dezelfde toleranties, en bij samenstellingen
+    loopt de korrelrichting door over de losse delen.'
 seo:
   title: Precisieplaatwerk voor de semicon
   description: "Precisieplaatwerk, frames en afschermpanelen voor de semiconindustrie in RVS en aluminium. Kanten tot ± 0,2 mm, machinaal ontbramen en een gelijkmatige oppervlakteafwerking."
@@ -72,6 +96,31 @@ en:
     desc: Ground stainless steel for visible surfaces.
   - label: Aluminium
     desc: Lightweight sheet metal.
+  kerncijfers:
+  - waarde: ± 0.2 mm
+    label: bending accuracy
+  - waarde: 8 × 4 × 3 m
+    label: blast cabin
+  - waarde: 100–200 μm
+    label: glass beads
+  - waarde: 304 / 316
+    label: stainless steel grades
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Required surface finish per part
+  faq:
+  - vraag: Do you assemble in a cleanroom?
+    antwoord: No. Cleanroom assembly is not part of our work. We supply the parts and assemblies with the finish you
+      specify.
+  - vraag: Which surface finishes do you supply?
+    antwoord: Ground stainless steel with a consistent grain, and glass bead blasted stainless steel and aluminium
+      in our 8 × 4 × 3 metre blast cabin, using glass beads of 100 to 200 μm. Where necessary we passivate stainless
+      steel after welding.
+  - vraag: Does the finish stay the same across several series?
+    antwoord: 'That is what we aim for: every batch gets the same grain and the same tolerances, and in assemblies
+      the grain direction runs continuously across the individual parts.'
   seo:
     title: Precision sheet metal for semiconductor
     description: Precision sheet metal, frames and guard panels for the semiconductor industry in stainless
@@ -118,6 +167,31 @@ de:
     desc: Geschliffener Edelstahl für Sichtflächen.
   - label: Aluminium
     desc: Leichte Blechbearbeitung.
+  kerncijfers:
+  - waarde: ± 0,2 mm
+    label: Abkantgenauigkeit
+  - waarde: 8 × 4 × 3 m
+    label: Strahlkabine
+  - waarde: 100–200 μm
+    label: Glasperlen
+  - waarde: 304 / 316
+    label: Edelstahlgüten
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Gewünschte Oberfläche je Teil
+  faq:
+  - vraag: Montieren Sie im Reinraum?
+    antwoord: Nein. Die Montage im Reinraum gehört nicht zu unserer Arbeit. Wir liefern die Teile und Baugruppen mit
+      der von Ihnen vorgeschriebenen Oberfläche.
+  - vraag: Welche Oberflächen liefern Sie?
+    antwoord: Geschliffenen Edelstahl mit gleichmäßigem Schliff sowie glasperlgestrahlten Edelstahl und Aluminium
+      aus unserer Strahlkabine von 8 × 4 × 3 Metern mit Glasperlen von 100 bis 200 μm. Bei Bedarf passivieren wir
+      Edelstahl nach dem Schweißen.
+  - vraag: Bleibt die Oberfläche über mehrere Serien gleich?
+    antwoord: 'Darauf achten wir: Jede Charge erhält denselben Schliff und dieselben Toleranzen, und bei Baugruppen
+      läuft die Schliffrichtung über die einzelnen Teile durch.'
   seo:
     title: Präzisionsblech für Halbleitertechnik
     description: Präzisionsblech, Rahmen und Schutzpaneele für die Halbleiterindustrie in Edelstahl und

@@ -26,6 +26,30 @@ related:
   - { slug: "constructies", label: "Constructies", desc: "Gelast constructiewerk tot 10 ton." }
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Corrosiebestendig samenstellen." }
   - { slug: "kwaliteit", label: "Kwaliteit", desc: "Certificering en keuring." }
+kerncijfers:
+- waarde: 10 ton
+  label: max. stukgewicht
+- waarde: RVS 316
+  label: bij zeewater
+- waarde: ISO 3834-2
+  label: laswerk
+- waarde: EN 1090-1
+  label: staalconstructies
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- De omgeving van het onderdeel en de gewenste documentatie
+faq:
+- vraag: RVS 304 of 316 voor offshore?
+  antwoord: Waar zeewater bij komt, adviseren we RVS 316 in plaats van 304. De materiaalkeuze bepaalt in een zoute
+    omgeving grotendeels de levensduur; daar denken we graag in mee voordat de tekening definitief is.
+- vraag: Welke certificering hebben jullie voor laswerk?
+  antwoord: Ons laswerk valt onder ISO 3834-2, en voor staalconstructies zijn we gecertificeerd volgens EN 1090-1.
+    Daarnaast werken we onder ISO 9001.
+- vraag: Verzorgen jullie ook het conserveren en coaten?
+  antwoord: Conserveren en coaten besteden wij uit aan een vaste partner. U houdt één aanspreekpunt; wij leveren
+    het werk compleet af.
 seo:
   title: Plaatwerk en constructies voor offshore
   description: "Frames, behuizingen en gelaste samenstellingen tot 10 ton voor offshore, in RVS 316 en staal. Laswerk onder ISO 3834-2, staalconstructies volgens EN 1090-1."
@@ -73,6 +97,30 @@ en:
     desc: Corrosion-resistant assembly.
   - label: Quality
     desc: Certification and inspection.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. piece weight
+  - waarde: '316'
+    label: stainless steel for seawater
+  - waarde: ISO 3834-2
+    label: welding
+  - waarde: EN 1090-1
+    label: steel structures
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - The environment of the part and the documentation required
+  faq:
+  - vraag: Stainless steel 304 or 316 for offshore?
+    antwoord: Where seawater is involved, we recommend 316 rather than 304. In a salty environment the choice of material
+      largely determines service life; we are glad to advise before the drawing is final.
+  - vraag: Which certification do you hold for welding?
+    antwoord: Our welding falls under ISO 3834-2, and for steel structures we are certified to EN 1090-1. We also
+      work under ISO 9001.
+  - vraag: Do you also take care of preservation and coating?
+    antwoord: Preservation and coating are outsourced to a regular partner. You keep a single point of contact; we
+      deliver the work complete.
   seo:
     title: Offshore sheet metal and constructions
     description: Frames, enclosures and welded assemblies up to 10 tonnes for offshore, in stainless steel
@@ -120,6 +168,30 @@ de:
     desc: Korrosionsbeständiger Zusammenbau.
   - label: Qualität
     desc: Zertifizierung und Prüfung.
+  kerncijfers:
+  - waarde: 10 t
+    label: max. Stückgewicht
+  - waarde: '316'
+    label: Edelstahl bei Meerwasser
+  - waarde: ISO 3834-2
+    label: Schweißen
+  - waarde: EN 1090-1
+    label: Stahlkonstruktionen
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Die Umgebung des Bauteils und die gewünschte Dokumentation
+  faq:
+  - vraag: Edelstahl 304 oder 316 für Offshore?
+    antwoord: Wo Meerwasser ins Spiel kommt, empfehlen wir 316 statt 304. In salzhaltiger Umgebung bestimmt die Werkstoffwahl
+      weitgehend die Lebensdauer; dazu beraten wir gerne, bevor die Zeichnung endgültig ist.
+  - vraag: Welche Zertifizierung haben Sie für Schweißarbeiten?
+    antwoord: Unsere Schweißarbeiten fallen unter ISO 3834-2, und für Stahlkonstruktionen sind wir nach EN 1090-1
+      zertifiziert. Außerdem arbeiten wir nach ISO 9001.
+  - vraag: Übernehmen Sie auch Konservierung und Beschichtung?
+    antwoord: Konservieren und Beschichten vergeben wir an einen festen Partner. Sie behalten einen Ansprechpartner;
+      wir liefern die Arbeit komplett ab.
   seo:
     title: Offshore — Konstruktionen und Blech
     description: Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen für Offshore, in Edelstahl 316
