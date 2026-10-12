@@ -13,21 +13,32 @@ heroPhoto:
   crop: "Product centraal"
   comp: "Glad, gepassiveerd RVS"
 body:
-  - "Voor de voedingsindustrie leveren wij RVS-plaatwerk en constructies met gladde, reinigbare oppervlakken en zorgvuldig afgewerkte lasnaden. Laserlassen en passiveren dragen bij aan de hygiëne en levensduur."
+  - "Voor de voedingsindustrie leveren wij RVS-plaatwerk en constructies met gladde, reinigbare oppervlakken en zorgvuldig afgewerkte lasnaden: transportbandschermen, omkappingsplaten, behuizingen en frames voor procesapparatuur. RVS vormt een harde, niet-absorberende oppervlaktelaag die bestand is tegen chemische schoonmaakmiddelen — mits de afwerking klopt. Krassen, oneffenheden en lasresten maken een oppervlak lastiger te reinigen."
+  - "Reinigbaarheid begint in het ontwerp. Afgeschuinde randen, afgeronde hoeken en zo min mogelijk horizontale vlakken voorkomen dat voedselresten achterblijven. Toleranties kiezen we zo dat naden en kieren klein blijven. Bij behuizingen nemen we in de engineering al toegangspunten, uitneembare panelen en condensafvoer mee, zodat installatie en onderhoud eenvoudig blijven."
+  - "Laserlassen geeft smalle, schone naden met weinig spatten en minimale vervorming. Daarna verwijderen we lasoxiden, bramen, scherpe randen en lasdruppels, en passiveren we het RVS voor de corrosiebestendigheid. Geautomatiseerd lassen voor serieproductie besteden we uit aan een vaste partner."
+  - "Welke certificering nodig is verschilt per klant, maar richtlijnen zoals de Europese verordening voor levensmiddelencontactmaterialen (EU 1935/2004) spelen vaak mee. Wij documenteren materiaalkeuzes en processen zo dat ze daaraan kunnen bijdragen. Heeft u traceerbaarheid van RVS-kwaliteiten en lasmaterialen nodig voor audits, geef dat dan vooraf aan bij de aanvraag."
 materials: ["RVS 304", "RVS 316"]
 process:
-  - { step: "Ontwerp", desc: "Hygiënisch, reinigbaar detailleren." }
-  - { step: "Lasersnijden & kanten", desc: "Maatvaste delen." }
-  - { step: "Laserlassen", desc: "Strakke, gladde naden." }
-  - { step: "Passiveren", desc: "Corrosiebescherming." }
-applications: ["Voedingsmiddelenmachines", "Procesapparatuur", "Behuizingen"]
+  - { step: "Ontwerp", desc: "Hygiënisch detailleren: afgeronde hoeken, weinig kieren, geen horizontale vlakken." }
+  - { step: "Lasersnijden & kanten", desc: "Maatvaste delen, zodat naden klein blijven." }
+  - { step: "Laserlassen", desc: "Smalle, schone naden met minimale vervorming." }
+  - { step: "Nabewerken", desc: "Lasoxiden, bramen en lasdruppels verwijderen." }
+  - { step: "Passiveren", desc: "Corrosiebescherming van het RVS." }
+applications: ["Voedingsmiddelenmachines", "Procesapparatuur", "Transportbandschermen", "Behuizingen"]
+faq:
+  - vraag: "Waarom is RVS een voorkeursmateriaal in de voedingsmiddelenindustrie?"
+    antwoord: "RVS is corrosiebestendig en relatief eenvoudig te reinigen, waardoor het de groei van micro-organismen beperkt. Het reageert niet met voedingsmiddelen en is bestand tegen chemische schoonmaakmiddelen."
+  - vraag: "Welke oppervlakteafwerking is het meest geschikt?"
+    antwoord: "Vaak een gladde, fijn geslepen tot mat gepolijste afwerking met een lage ruwheidswaarde. Die voorkomt ophoping van voedselresten en maakt reinigen eenvoudiger. Welke afwerking past, stemmen we af op het product en het reinigingsproces."
+  - vraag: "Hoe draagt maatwerk bij aan de reinigbaarheid van machineonderdelen?"
+    antwoord: "Met maatwerk kan het ontwerp worden afgestemd op schoonmaakgemak: kieren en naden minimaliseren, scherpe hoeken vermijden en inspectie- en onderhoudspunten goed bereikbaar maken. Dat beperkt het risico op contaminatie."
 related:
   - { slug: "plaatwerk/rvs", label: "RVS", desc: "Roestvast plaatwerk." }
   - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Hygiënische naden." }
   - { slug: "rvs-constructies", label: "RVS-constructies", desc: "Gelaste RVS-samenstellingen." }
 seo:
   title: Hygiënisch RVS-plaatwerk voor food
-  description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsindustrie: corrosiebestendig en representatief afgewerkt."
+  description: "Hygiënisch, reinigbaar RVS-plaatwerk en constructies voor de voedingsindustrie: hygiënisch ontwerp, laserlassen, passiveren en documentatie voor audits."
 translated: ["nl"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
@@ -40,25 +51,53 @@ en:
   heroPhoto:
     subject: Stainless steel part for food-processing machinery, hygienically finished
   body:
-  - For the food industry we supply stainless steel sheet metal parts and welded constructions with smooth,
-    cleanable surfaces and carefully finished weld seams. Laser welding and passivation contribute to hygiene
-    and service life.
+  - 'For the food industry we supply stainless steel sheet metal parts and welded constructions with smooth,
+    cleanable surfaces and carefully finished weld seams: conveyor guards, cover plates, enclosures and frames
+    for process equipment. Stainless steel forms a hard, non-absorbent surface that resists chemical cleaning
+    agents — provided the finish is right. Scratches, unevenness and weld residue make a surface harder
+    to clean.'
+  - Cleanability starts in the design. Chamfered edges, rounded corners and as few horizontal surfaces as
+    possible prevent food residue from collecting. We choose tolerances so that seams and gaps stay small.
+    For enclosures we include access points, removable panels and condensate drainage at the engineering
+    stage, so that installation and maintenance stay simple.
+  - Laser welding produces narrow, clean seams with little spatter and minimal distortion. We then remove
+    weld oxides, burrs, sharp edges and weld spatter, and passivate the stainless steel for corrosion resistance.
+    Automated welding for series production is outsourced to a regular partner.
+  - Which certification is required differs per customer, but regulations such as the European regulation
+    on food contact materials (EU 1935/2004) often play a role. We document material choices and processes
+    so that they can contribute to meeting them. If you need traceability of stainless steel grades and
+    welding consumables for audits, please state this in your request.
   materials:
   - Stainless steel 304
   - Stainless steel 316
   process:
   - step: Design
-    desc: Hygienic, cleanable detailing.
+    desc: 'Hygienic detailing: rounded corners, few gaps, no horizontal surfaces.'
   - step: Laser cutting & bending
-    desc: Dimensionally stable parts.
+    desc: Dimensionally accurate parts, so that seams stay small.
   - step: Laser welding
-    desc: Tight, smooth seams.
+    desc: Narrow, clean seams with minimal distortion.
+  - step: Post-processing
+    desc: Removing weld oxides, burrs and weld spatter.
   - step: Passivation
-    desc: Corrosion protection.
+    desc: Corrosion protection of the stainless steel.
   applications:
   - Food processing machinery
   - Process equipment
+  - Conveyor guards
   - Enclosures
+  faq:
+  - vraag: Why is stainless steel the preferred material in the food industry?
+    antwoord: Stainless steel is corrosion-resistant and relatively easy to clean, which limits the growth
+      of micro-organisms. It does not react with food and resists chemical cleaning agents.
+  - vraag: Which surface finish is most suitable?
+    antwoord: Often a smooth, finely ground to matt polished finish with a low roughness value. It prevents
+      food residue from building up and makes cleaning easier. We match the finish to the product and the
+      cleaning process.
+  - vraag: How does custom work improve the cleanability of machine parts?
+    antwoord: 'Custom work lets the design be tailored to ease of cleaning: minimising gaps and seams, avoiding
+      sharp corners and keeping inspection and maintenance points easy to reach. This reduces the risk of
+      contamination.'
   related:
   - label: Stainless steel
     desc: Stainless steel sheet metal work.
@@ -69,7 +108,7 @@ en:
   seo:
     title: Hygienic stainless sheet for food
     description: 'Hygienic, cleanable stainless steel sheet metal work and welded constructions for the
-      food industry: corrosion-resistant and with a presentable finish.'
+      food industry: hygienic design, laser welding, passivation and documentation for audits.'
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -81,25 +120,53 @@ de:
   heroPhoto:
     subject: Edelstahlteil für eine Lebensmittelmaschine, hygienisch ausgeführt
   body:
-  - Für die Lebensmittelindustrie liefern wir Blechteile und Konstruktionen aus Edelstahl mit glatten, reinigbaren
-    Oberflächen und sorgfältig ausgearbeiteten Schweißnähten. Laserschweißen und Passivieren tragen zur
-    Hygiene und zur Lebensdauer bei.
+  - 'Für die Lebensmittelindustrie liefern wir Blechteile und Konstruktionen aus Edelstahl mit glatten, reinigbaren
+    Oberflächen und sorgfältig ausgearbeiteten Schweißnähten: Förderbandabdeckungen, Verkleidungsbleche,
+    Gehäuse und Rahmen für Prozessanlagen. Edelstahl bildet eine harte, nicht saugende Oberfläche, die
+    chemischen Reinigungsmitteln standhält — vorausgesetzt, die Oberfläche stimmt. Kratzer, Unebenheiten
+    und Schweißrückstände erschweren die Reinigung.'
+  - Reinigbarkeit beginnt in der Konstruktion. Angefaste Kanten, abgerundete Ecken und möglichst wenige
+    waagerechte Flächen verhindern, dass Lebensmittelreste zurückbleiben. Toleranzen wählen wir so, dass
+    Nähte und Spalten klein bleiben. Bei Gehäusen berücksichtigen wir schon im Engineering Zugänge, herausnehmbare
+    Paneele und Kondensatablauf, damit Montage und Wartung einfach bleiben.
+  - Laserschweißen ergibt schmale, saubere Nähte mit wenig Spritzern und minimalem Verzug. Danach entfernen
+    wir Anlauffarben, Grate, scharfe Kanten und Schweißspritzer und passivieren den Edelstahl für die Korrosionsbeständigkeit.
+    Automatisiertes Schweißen für die Serienfertigung vergeben wir an einen festen Partner.
+  - Welche Zertifizierung nötig ist, ist von Kunde zu Kunde verschieden, doch Vorschriften wie die europäische
+    Verordnung über Lebensmittelkontaktmaterialien (EU 1935/2004) spielen oft eine Rolle. Wir dokumentieren
+    Werkstoffwahl und Prozesse so, dass sie dazu beitragen können. Benötigen Sie für Audits die Rückverfolgbarkeit
+    von Edelstahlgüten und Schweißzusätzen, geben Sie das bitte bei der Anfrage an.
   materials:
   - Edelstahl 304
   - Edelstahl 316
   process:
   - step: Konstruktion
-    desc: Hygienische, reinigbare Detaillierung.
+    desc: 'Hygienische Detaillierung: abgerundete Ecken, wenige Spalten, keine waagerechten Flächen.'
   - step: Laserschneiden & Abkanten
-    desc: Maßhaltige Teile.
+    desc: Maßhaltige Teile, damit Nähte klein bleiben.
   - step: Laserschweißen
-    desc: Saubere, glatte Nähte.
+    desc: Schmale, saubere Nähte mit minimalem Verzug.
+  - step: Nachbearbeitung
+    desc: Anlauffarben, Grate und Schweißspritzer entfernen.
   - step: Passivieren
-    desc: Korrosionsschutz.
+    desc: Korrosionsschutz des Edelstahls.
   applications:
   - Lebensmittelmaschinen
   - Prozessanlagen
+  - Förderbandabdeckungen
   - Gehäuse
+  faq:
+  - vraag: Warum ist Edelstahl in der Lebensmittelindustrie der bevorzugte Werkstoff?
+    antwoord: Edelstahl ist korrosionsbeständig und relativ leicht zu reinigen, was das Wachstum von Mikroorganismen
+      begrenzt. Er reagiert nicht mit Lebensmitteln und ist beständig gegen chemische Reinigungsmittel.
+  - vraag: Welche Oberfläche ist am besten geeignet?
+    antwoord: Häufig eine glatte, fein geschliffene bis matt polierte Oberfläche mit niedrigem Rauheitswert.
+      Sie verhindert Ablagerungen von Lebensmittelresten und erleichtert die Reinigung. Die passende Oberfläche
+      stimmen wir auf Produkt und Reinigungsprozess ab.
+  - vraag: Wie trägt Maßarbeit zur Reinigbarkeit von Maschinenteilen bei?
+    antwoord: 'Mit Maßarbeit lässt sich die Konstruktion auf leichte Reinigung auslegen: Spalten und Nähte
+      minimieren, scharfe Ecken vermeiden und Inspektions- und Wartungspunkte gut zugänglich machen. Das
+      verringert das Kontaminationsrisiko.'
   related:
   - label: Edelstahl
     desc: Blechbearbeitung in Edelstahl.
@@ -110,4 +177,4 @@ de:
   seo:
     title: Hygienisches Edelstahlblech für Food
     description: 'Hygienische, reinigbare Blechbearbeitung und Konstruktionen aus Edelstahl für die Lebensmittelindustrie:
-      korrosionsbeständig und repräsentativ ausgeführt.'
+      hygienische Konstruktion, Laserschweißen, Passivieren und Dokumentation für Audits.'

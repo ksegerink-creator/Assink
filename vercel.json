@@ -40,7 +40,7 @@
     },
     {
       "source": "/metaalbewerking-voedingsmiddelenindustrie(/?)",
-      "destination": "/kennisbank/metaalbewerking-voedingsmiddelenindustrie/",
+      "destination": "/plaatwerk/voedingsmiddelenindustrie/",
       "permanent": true
     },
     {
@@ -236,6 +236,11 @@
     {
       "source": "/de/plaatwerk/precisieplaatwerk(/?)",
       "destination": "/de/plaatwerk/",
+      "permanent": true
+    },
+    {
+      "source": "/kennisbank/metaalbewerking-voedingsmiddelenindustrie(/?)",
+      "destination": "/plaatwerk/voedingsmiddelenindustrie/",
       "permanent": true
     }
   ],
