@@ -140,6 +140,37 @@ export function articleJsonLd(
 }
 
 /** JobPosting schema for a vacancy. */
+/**
+ * Google for Jobs accepteert alleen vaste waarden voor employmentType. In het
+ * CMS staat leesbare tekst per taal ("Fulltime", "Vollzeit", "Oproepkracht");
+ * die zetten we hier om. Onbekend → OTHER, zodat de data geldig blijft.
+ */
+const DIENSTVERBAND: Record<string, string> = {
+  fulltime: "FULL_TIME",
+  vollzeit: "FULL_TIME",
+  parttime: "PART_TIME",
+  deeltijd: "PART_TIME",
+  teilzeit: "PART_TIME",
+  stage: "INTERN",
+  internship: "INTERN",
+  praktikum: "INTERN",
+  oproepkracht: "TEMPORARY",
+  oncall: "TEMPORARY",
+  aushilfe: "TEMPORARY",
+  vakantiewerk: "TEMPORARY",
+  tijdelijk: "TEMPORARY",
+  temporary: "TEMPORARY",
+  befristet: "TEMPORARY",
+  freelance: "CONTRACTOR",
+  zzp: "CONTRACTOR",
+};
+
+export function googleDienstverband(tekst?: string): string {
+  if (!tekst) return "FULL_TIME";
+  const sleutel = tekst.toLowerCase().replace(/[^a-z]/g, "");
+  return DIENSTVERBAND[sleutel] ?? "OTHER";
+}
+
 export function jobPostingJsonLd(
   site: URL | string,
   job: {
@@ -156,7 +187,7 @@ export function jobPostingJsonLd(
     "@type": "JobPosting",
     title: job.title,
     description: job.description,
-    employmentType: job.employmentType ?? "FULL_TIME",
+    employmentType: googleDienstverband(job.employmentType),
     datePosted: job.datePosted ?? String(SITE.founded),
     ...(job.validThrough ? { validThrough: job.validThrough } : {}),
     hiringOrganization: { "@id": `${base}/#organization` },
