@@ -4,6 +4,7 @@ order: 40
 employmentType: "Oproepkracht"
 hours: "In overleg"
 intro: "In de vakantieperiode zoeken wij oproepkrachten voor uiteenlopende fabriekswerkzaamheden."
+seoOmschrijving: "Vakantiewerk bij Assink & Schipholt in Hengelo: als oproepkracht meewerken aan uiteenlopende productietaken in onze metaalbewerking. Uren in overleg."
 responsibilities:
   - "Boren, tappen en verzinken"
   - "Eenvoudig kantwerk"
@@ -24,6 +25,7 @@ en:
   employmentType: On-call
   hours: By arrangement
   intro: During the holiday season we are looking for on-call staff for a variety of production tasks.
+  seoOmschrijving: "Holiday work at Assink & Schipholt in Hengelo: help out as on-call staff with a variety of production tasks in our metalworking shop. Hours by arrangement."
   responsibilities:
   - Drilling, tapping and countersinking
   - Simple bending work
@@ -40,6 +42,7 @@ de:
   employmentType: Aushilfe
   hours: Nach Absprache
   intro: In der Ferienzeit suchen wir Aushilfen für unterschiedliche Produktionstätigkeiten.
+  seoOmschrijving: "Ferienjob bei Assink & Schipholt in Hengelo: als Aushilfe bei unterschiedlichen Produktionsaufgaben in der Metallbearbeitung mitarbeiten. Zeiten nach Absprache."
   responsibilities:
   - Bohren, Gewindeschneiden und Senken
   - Einfache Abkantarbeiten

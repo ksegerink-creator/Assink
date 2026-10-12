@@ -928,6 +928,11 @@ export default config({
         hours: fields.text({ label: "Uren (optioneel)" }),
         education: fields.text({ label: "Opleiding (optioneel)" }),
         intro: fields.text({ label: "Intro", multiline: true }),
+        seoOmschrijving: fields.text({
+          label: "SEO — meta-omschrijving",
+          description: "Tekst onder de link in Google, 120–160 tekens. Laat leeg om de intro te gebruiken.",
+          multiline: true,
+        }),
         responsibilities: fields.array(fields.text({ label: "Taak" }), {
           label: "Wat je doet",
           itemLabel: (p) => (p.value || "").slice(0, 45),

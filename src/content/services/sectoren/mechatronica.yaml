@@ -54,7 +54,7 @@ faq:
     één aanspreekpunt bestellen.
 seo:
   title: Plaatwerk voor mechatronica
-  description: "Maatvaste machineframes, montagebeugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm en vervormingsarm lassen."
+  description: "Maatvaste machineframes, beugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm, vervormingsarm lassen."
 translated: ["nl"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
@@ -126,9 +126,7 @@ en:
       parts through a single point of contact.
   seo:
     title: Sheet metal for mechatronics
-    description: Dimensionally stable machine frames, mounting brackets and guard panels for mechatronics
-      in aluminium, steel and stainless steel. Tube laser cutting, bending to ± 0.2 mm and low-distortion
-      welding.
+    description: Accurate machine frames, brackets and guard panels for mechatronics in aluminium, steel and stainless steel. Tube laser cutting and bending to ± 0.2 mm.
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -200,5 +198,4 @@ de:
       Teilen bei einem Ansprechpartner bestellen.
   seo:
     title: Blech für die Mechatronik
-    description: Maßhaltige Maschinenrahmen, Montagewinkel und Schutzpaneele für die Mechatronik in Aluminium,
-      Stahl und Edelstahl. Rohrlaserschneiden, Abkanten bis ± 0,2 mm und verzugsarmes Schweißen.
+    description: Maßhaltige Maschinenrahmen, Winkel und Schutzpaneele für die Mechatronik in Aluminium, Stahl und Edelstahl. Rohrlaserschneiden und Abkanten bis ± 0,2 mm.

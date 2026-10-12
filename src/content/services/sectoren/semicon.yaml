@@ -52,7 +52,7 @@ faq:
     loopt de korrelrichting door over de losse delen.'
 seo:
   title: Precisieplaatwerk voor de semicon
-  description: "Precisieplaatwerk, frames en afschermpanelen voor de semiconindustrie in RVS en aluminium. Kanten tot ± 0,2 mm, machinaal ontbramen en een gelijkmatige oppervlakteafwerking."
+  description: "Precisieplaatwerk, frames en afschermpanelen voor de semicon in RVS en aluminium. Kanten tot ± 0,2 mm, machinaal ontbramen en een gelijkmatige afwerking."
 translated: ["nl"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
@@ -123,8 +123,7 @@ en:
       the grain direction runs continuously across the individual parts.'
   seo:
     title: Precision sheet metal for semiconductor
-    description: Precision sheet metal, frames and guard panels for the semiconductor industry in stainless
-      steel and aluminium. Bending to ± 0.2 mm, machine deburring and an even surface finish.
+    description: Precision sheet metal, frames and guard panels for semiconductor equipment in stainless steel and aluminium. Bending to ± 0.2 mm and an even surface finish.
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -194,5 +193,4 @@ de:
       läuft die Schliffrichtung über die einzelnen Teile durch.'
   seo:
     title: Präzisionsblech für Halbleitertechnik
-    description: Präzisionsblech, Rahmen und Schutzpaneele für die Halbleiterindustrie in Edelstahl und
-      Aluminium. Abkanten bis ± 0,2 mm, maschinelles Entgraten und gleichmäßige Oberflächenqualität.
+    description: Präzisionsblech, Rahmen und Schutzpaneele für die Halbleiterindustrie in Edelstahl und Aluminium. Abkanten bis ± 0,2 mm und gleichmäßige Oberflächen.
