@@ -1,4 +1,4 @@
-import { SITE, CONTACT, CERTS, SOCIAL } from "@data/site";
+import { SITE, CONTACT, CERTS, SOCIAL, GROEP } from "@data/site";
 import { absUrl, localizePath } from "./paths";
 import type { Locale } from "@data/site";
 
@@ -60,6 +60,7 @@ export function organizationJsonLd(site: URL | string) {
     ],
     hasCredential: CERTS.filter((c) => c.startsWith("ISO") || c.startsWith("EN ")),
     sameAs: [SOCIAL.linkedin, SOCIAL.facebook, SOCIAL.instagram].filter(Boolean),
+    parentOrganization: { "@type": "Organization", name: GROEP.naam },
   };
 }
 

@@ -605,6 +605,11 @@
       "en": "Or call",
       "de": "Oder rufen Sie an:"
     },
+    "footerGroup": {
+      "nl": "Onderdeel van",
+      "en": "Part of",
+      "de": "Teil der"
+    },
     "footerBottom": {
       "nl": "Hengelo (Ov.) · NL / EN / DE",
       "en": "Hengelo, the Netherlands · NL / EN / DE",
