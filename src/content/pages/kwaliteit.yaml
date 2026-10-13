@@ -10,6 +10,24 @@ proces:
   - { stap: "Maatcontrole", tekst: "Meetgereedschap en visuele keuring tijdens en na productie." }
   - { stap: "Eindkeuring & vrijgave", tekst: "Documentatie en vrijgave vóór just-in-time levering." }
 
+faq:
+- vraag: Welke certificeringen heeft Assink & Schipholt?
+  antwoord: Wij zijn gecertificeerd volgens ISO 9001 voor ons kwaliteitsmanagementsysteem, ISO 3834-2 voor de kwaliteitseisen
+    aan smeltlassen, en EN 1090-1 voor de uitvoering van staal- en aluminiumconstructies met CE-markering.
+- vraag: Wat betekent ISO 3834-2 in de praktijk?
+  antwoord: 'Dat ons laswerk aantoonbaar beheerst is: gekwalificeerde lassers, vastgelegde lasmethodebeschrijvingen
+    en herleidbaar materiaal. Zo is per order terug te vinden hoe een las is gemaakt.'
+- vraag: Wanneer heb ik EN 1090-1 nodig?
+  antwoord: Bij dragende staal- en aluminiumconstructies die met CE-markering geleverd moeten worden, bijvoorbeeld
+    in de infra en de bouw. Omdat wij volgens EN 1090-1 zijn gecertificeerd, kunnen we zulke constructies CE-conform
+    leveren.
+- vraag: Welke documentatie leveren jullie mee?
+  antwoord: 'Van ingangscontrole tot eindkeuring leggen we de stappen vast: materiaalcertificaten bij binnenkomst,
+    gekwalificeerde lasprocessen, maatcontrole en vrijgave. Geef in uw aanvraag aan welke documentatie u of uw opdrachtgever
+    verlangt.'
+- vraag: Hoe controleren jullie de maatvoering?
+  antwoord: Met meetgereedschap en visuele keuring, tijdens en na de productie. Bij het kanten werken we met toleranties
+    volgens ISO 2768. Vermeld op de tekening welke maten kritisch zijn, dan richten we de controle daarop in.
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 en:
   seoTitel: Quality & certification
@@ -28,6 +46,24 @@ en:
   - stap: Final inspection & release
     tekst: Documentation and release prior to just-in-time delivery.
 
+  faq:
+  - vraag: Which certifications does Assink & Schipholt hold?
+    antwoord: We are certified to ISO 9001 for our quality management system, ISO 3834-2 for the quality requirements
+      of fusion welding, and EN 1090-1 for the execution of steel and aluminium structures with CE marking.
+  - vraag: What does ISO 3834-2 mean in practice?
+    antwoord: 'That our welding is demonstrably under control: qualified welders, documented welding procedure specifications
+      and traceable material. For every order it can be traced how a weld was made.'
+  - vraag: When do I need EN 1090-1?
+    antwoord: For load-bearing steel and aluminium structures that must be supplied with CE marking, for example in
+      infrastructure and construction. Because we are certified to EN 1090-1, we can supply such structures CE-compliant.
+  - vraag: What documentation do you supply?
+    antwoord: 'From incoming inspection to final inspection we record the steps: material certificates on arrival,
+      qualified welding processes, dimensional inspection and release. State in your request which documentation you
+      or your client require.'
+  - vraag: How do you check dimensions?
+    antwoord: With measuring equipment and visual inspection, during and after production. For press braking we work
+      to tolerances according to ISO 2768. State on the drawing which dimensions are critical and we will focus our
+      inspection on them.
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
   seoTitel: Qualität & Zertifizierung
@@ -45,3 +81,22 @@ de:
     tekst: Messmittel und Sichtprüfung während und nach der Fertigung.
   - stap: Endprüfung & Freigabe
     tekst: Dokumentation und Freigabe vor der Just-in-time-Lieferung.
+  faq:
+  - vraag: Welche Zertifizierungen hat Assink & Schipholt?
+    antwoord: Wir sind nach ISO 9001 für unser Qualitätsmanagementsystem zertifiziert, nach ISO 3834-2 für die Qualitätsanforderungen
+      an das Schmelzschweißen und nach EN 1090-1 für die Ausführung von Stahl- und Aluminiumtragwerken mit CE-Kennzeichnung.
+  - vraag: Was bedeutet ISO 3834-2 in der Praxis?
+    antwoord: 'Dass unsere Schweißarbeiten nachweislich beherrscht sind: qualifizierte Schweißer, dokumentierte Schweißanweisungen
+      und rückverfolgbares Material. So ist je Auftrag nachvollziehbar, wie eine Naht entstanden ist.'
+  - vraag: Wann brauche ich EN 1090-1?
+    antwoord: Bei tragenden Stahl- und Aluminiumkonstruktionen, die mit CE-Kennzeichnung geliefert werden müssen,
+      etwa in Infrastruktur und Bau. Da wir nach EN 1090-1 zertifiziert sind, können wir solche Konstruktionen CE-konform
+      liefern.
+  - vraag: Welche Dokumentation liefern Sie mit?
+    antwoord: 'Von der Eingangskontrolle bis zur Endprüfung halten wir die Schritte fest: Werkstoffzeugnisse bei Eingang,
+      qualifizierte Schweißprozesse, Maßkontrolle und Freigabe. Geben Sie in Ihrer Anfrage an, welche Dokumentation
+      Sie oder Ihr Auftraggeber verlangen.'
+  - vraag: Wie prüfen Sie die Maßhaltigkeit?
+    antwoord: Mit Messmitteln und Sichtprüfung, während und nach der Fertigung. Beim Abkanten arbeiten wir mit Toleranzen
+      nach ISO 2768. Geben Sie auf der Zeichnung an, welche Maße kritisch sind, dann richten wir die Kontrolle darauf
+      aus.

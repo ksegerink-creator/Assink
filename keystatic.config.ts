@@ -390,6 +390,13 @@ const kwaliteitSchema = (ns: string) => ({
     }),
     { label: "Kwaliteitsproces", itemLabel: (p) => p.fields.stap.value },
   ),
+  faq: fields.array(
+    fields.object({
+      vraag: fields.text({ label: "Vraag" }),
+      antwoord: fields.text({ label: "Antwoord", multiline: true }),
+    }),
+    { label: "Veelgestelde vragen", itemLabel: (p) => p.fields.vraag.value },
+  ),
   ...seoFields(),
 });
 

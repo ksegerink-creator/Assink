@@ -735,6 +735,16 @@
       "en": "02 / Profile",
       "de": "02 / Profil"
     },
+    "vacancyOffer": {
+      "nl": "Wat wij bieden",
+      "en": "What we offer",
+      "de": "Was wir bieten"
+    },
+    "vacancyOfferIdx": {
+      "nl": "03 / Aanbod",
+      "en": "03 / Offer",
+      "de": "03 / Angebot"
+    },
     "vacancyInterest": {
       "nl": "Interesse?",
       "en": "Interested?",

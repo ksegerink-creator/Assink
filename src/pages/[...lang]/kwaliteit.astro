@@ -9,6 +9,8 @@ import SectionHead from "@components/sections/SectionHead.astro";
 import IndustrialImage from "@components/media/IndustrialImage.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
+import FaqBlock from "@components/sections/FaqBlock.astro";
+import { faqJsonLd } from "@utils/seo";
 import { photo } from "@utils/photos";
 
 export function getStaticPaths() {
@@ -18,6 +20,7 @@ export function getStaticPaths() {
 const locale = toLocale(Astro.params.lang);
 const q = await readPage("kwaliteit", locale);
 
+const faq = (q.faq ?? []).filter((f) => f.vraag && f.antwoord);
 const certs = localizeEntries((await getCollection("certifications")).sort((a, b) => a.data.order - b.data.order), locale);
 ---
 <PageLayout
@@ -27,6 +30,7 @@ const certs = localizeEntries((await getCollection("certifications")).sort((a, b
   trail={[{ label: t(locale, "quality"), slug: "kwaliteit" }]}
   altLocales={["nl", "en", "de"]}
   ogPhoto={photo(q.heroFoto)}
+  jsonld={faq.length > 0 ? [faqJsonLd(faq)] : []}
 >
   <SplitHero
     kicker={q.kicker}
@@ -69,6 +73,7 @@ const certs = localizeEntries((await getCollection("certifications")).sort((a, b
     </div>
   </section>
 
+  <FaqBlock faq={faq} />
   <CtaBand />
 </PageLayout>
 

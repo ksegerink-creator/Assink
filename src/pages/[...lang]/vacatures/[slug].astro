@@ -10,9 +10,9 @@ import { imageFor } from "@data/images";
 import { photo } from "@utils/photos";
 import { kiesFoto } from "@utils/fotobank";
 import { CONTACT, SITE } from "@data/site";
-import { jobPostingJsonLd } from "@utils/seo";
+import { jobPostingJsonLd, googleDienstverband } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
-import { localizeEntry } from "@utils/content";
+import { localizeEntry, readPage } from "@utils/content";
 import { LOCALES } from "@utils/locales";
 
 export async function getStaticPaths() {
@@ -59,6 +59,13 @@ const VAC_IMG: Record<string, string> = {
   "stage": "vacatures.sfeer.1",
   "vakantiewerk": "vacatures.sfeer.2",
 };
+// Arbeidsvoorwaarden staan één keer op de pagina Werken bij en gelden voor
+// medewerkers in dienst. Bij stage en vakantiewerk tonen we ze niet: daar
+// gelden niet automatisch dezelfde voorwaarden (CAO, ADV).
+const werkenBij = await readPage("werkenBij", locale);
+const inDienst = ["FULL_TIME", "PART_TIME"].includes(googleDienstverband(v.employmentType));
+const bieden = inDienst ? (werkenBij.bieden ?? []).filter(Boolean) : [];
+
 const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
 ---
 <PageLayout
@@ -107,6 +114,17 @@ const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] 
         <SectionHead title={t(locale, "vacancyProfile")} index={t(locale, "vacancyProfileIdx")} />
         <ul class="ticklist prose rv">
           {v.requirements.map((r) => <li>{r}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {bieden.length > 0 && (
+    <section class="sec tight">
+      <div class="wrap">
+        <SectionHead title={werkenBij.biedenKop || t(locale, "vacancyOffer")} index={t(locale, "vacancyOfferIdx")} />
+        <ul class="ticklist prose rv">
+          {bieden.map((b) => <li>{b}</li>)}
         </ul>
       </div>
     </section>
