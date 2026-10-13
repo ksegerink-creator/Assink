@@ -7,6 +7,7 @@ import SpecTable from "@components/sections/SpecTable.astro";
 import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
+import Kennisbanklinks from "@components/sections/Kennisbanklinks.astro";
 import { t } from "@data/i18n";
 import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
@@ -100,6 +101,8 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   <Aanleverlijst items={s.aanleveren} locale={locale} />
 
   <FaqBlock faq={s.faq} />
+
+  <Kennisbanklinks slug={s.slug} />
 
   {s.related.length > 0 && (
     <section class="sec tight">

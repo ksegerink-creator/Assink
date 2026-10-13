@@ -91,6 +91,10 @@ faq:
       ISO 3834-2 en EN 1090-1. Neem contact met ons op om de mogelijkheden voor
       uw specifieke RVS project te bespreken.
 gepubliceerd: true
+diensten:
+  - plaatwerk/rvs
+  - rvs-constructies
+  - plaatwerk/voedingsmiddelenindustrie
 seo:
   title: RVS passiveren na het lassen
   description: >-

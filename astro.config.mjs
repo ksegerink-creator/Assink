@@ -1,6 +1,29 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { readFileSync, readdirSync } from "node:fs";
+import { parse as parseYaml } from "yaml";
+
+/**
+ * Publicatiedatum per kennisbankartikel, voor <lastmod> in de sitemap. Alleen
+ * artikelen: die hebben een echte datum. Voor de overige pagina's is er geen
+ * betrouwbare wijzigingsdatum (Vercel bouwt zonder volledige git-historie), en
+ * een verkeerde lastmod is slechter dan geen: Google negeert dan het veld voor
+ * de hele sitemap.
+ */
+function artikelDatums() {
+  const dir = "./src/content/articles";
+  const datums = new Map();
+  for (const bestand of readdirSync(dir).filter((f) => f.endsWith(".yaml"))) {
+    const a = parseYaml(readFileSync(`${dir}/${bestand}`, "utf8"));
+    if (a?.gepubliceerd && a.slug && /^\d{4}-\d{2}-\d{2}$/.test(String(a.date))) {
+      datums.set(`/kennisbank/${a.slug}/`, String(a.date));
+    }
+  }
+  return datums;
+}
+const ARTIKEL_DATUMS = artikelDatums();
+const NIEUWSTE_ARTIKEL = [...ARTIKEL_DATUMS.values()].sort().pop();
 import react from "@astrojs/react";
 import vercel from "@astrojs/vercel";
 import keystatic from "@keystatic/astro";
@@ -64,6 +87,12 @@ export default defineConfig({
       // Pagina's met noindex horen niet in de sitemap: Search Console meldt
       // die combinatie als fout ("Uitgesloten door tag noindex").
       filter: (page) => !/\/(bedankt|privacy)\/?$/.test(new URL(page).pathname),
+      serialize(item) {
+        const pad = new URL(item.url).pathname;
+        const datum = pad === "/kennisbank/" ? NIEUWSTE_ARTIKEL : ARTIKEL_DATUMS.get(pad);
+        if (datum) item.lastmod = datum;
+        return item;
+      },
       i18n: {
         defaultLocale: "nl",
         locales: { nl: "nl-NL", en: "en-GB", de: "de-DE" },

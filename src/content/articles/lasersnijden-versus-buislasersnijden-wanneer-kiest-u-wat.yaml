@@ -82,6 +82,9 @@ faq:
       uitlijning kan verminderen. Of dit voordeliger is dan een plaatoplossing
       hangt af van de specifieke constructie en wordt per aanvraag beoordeeld.
 gepubliceerd: true
+diensten:
+  - plaatwerk/lasersnijden
+  - buizenlaser
 seo:
   title: Buislasersnijden of lasersnijden?
   description: Uitleg over wanneer 2D-lasersnijden (plaat) of buislasersnijden

@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import { t } from "@data/i18n";
+import { toLocale } from "@utils/paths";
+
+/**
+ * "Verder lezen in de kennisbank" onderaan een dienstpagina: de gepubliceerde
+ * artikelen die in Keystatic aan deze dienst zijn gekoppeld (veld `diensten`).
+ * Zonder deze koppeling werden de meeste artikelen alleen vanaf het
+ * kennisbankoverzicht gelinkt. De kennisbank is Nederlandstalig, dus het blok
+ * verschijnt alleen op de Nederlandse pagina's.
+ */
+interface Props { slug: string; max?: number }
+const { slug, max = 3 } = Astro.props;
+const locale = toLocale(Astro.currentLocale);
+const artikelen =
+  locale === "nl"
+    ? (await getCollection("articles", ({ data }) => data.gepubliceerd && data.diensten.includes(slug)))
+        .sort((a, b) => b.data.date.localeCompare(a.data.date))
+        .slice(0, max)
+    : [];
+---
+{artikelen.length > 0 && (
+  <section class="sec tight">
+    <div class="wrap kbl">
+      <h2 class="rv">{t(locale, "readMoreKb")}</h2>
+      <ul class="kbl__list rv">
+        {artikelen.map((a) => (
+          <li>
+            <a href={`/kennisbank/${a.data.slug}/`}>
+              <span class="kbl__title">{a.data.title}</span>
+              <span class="mono kbl__arr">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
+<style>
+  .kbl h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
+  .kbl__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: 760px; }
+  .kbl__list li { border-bottom: 1px solid var(--line); }
+  .kbl__list a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: baseline; padding: 15px 2px; }
+  .kbl__title { font-family: var(--f-disp); font-weight: 600; font-size: 16px; color: var(--ink); }
+  .kbl__arr { color: var(--blue); }
+  .kbl__list a:hover .kbl__title { color: var(--blue); }
+</style>

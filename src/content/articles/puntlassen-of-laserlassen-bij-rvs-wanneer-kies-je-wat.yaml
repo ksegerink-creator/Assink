@@ -133,6 +133,9 @@ faq:
       eventueel stralen, en is nodig om de corrosiebestendigheid van de gelaste
       zone te waarborgen.
 gepubliceerd: true
+diensten:
+  - plaatwerk/laserlassen
+  - plaatwerk/lassen
 seo:
   title: Puntlassen of laserlassen bij RVS
   description: >-

@@ -236,6 +236,9 @@ const articles = defineCollection({
     // src/pages/api/cron/blog-generator.ts) staan pas op de site nadat iemand
     // ze in Keystatic heeft nagekeken en dit vinkje heeft aangezet.
     gepubliceerd: z.boolean().default(false),
+    // Dienstpagina's (canonieke NL-slug, bv. "plaatwerk/rvs") waar dit artikel
+    // onder "Verder lezen in de kennisbank" verschijnt.
+    diensten: z.array(z.string()).default([]),
     seo,
   }),
 });

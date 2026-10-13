@@ -156,6 +156,10 @@ faq:
       beoordelingscriteria op het gebied van certificering, capaciteit en
       kwaliteitsvastlegging blijven echter hetzelfde, ongeacht de regio.
 gepubliceerd: true
+diensten:
+  - plaatwerk
+  - constructies
+  - machinebouw
 seo:
   title: 'Metaalbedrijf kiezen als inkoper'
   description: >-

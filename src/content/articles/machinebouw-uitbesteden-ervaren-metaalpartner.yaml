@@ -38,3 +38,6 @@ seo:
   description: "Machinebouw en bouwgroepen uitbesteden in Hengelo: RVS-plaatwerk, framebouw, laserlassen en buislasersnijden, met engineering die vroeg meedenkt."
 
 gepubliceerd: true
+diensten:
+  - machinebouw
+  - mechatronica
