@@ -20,8 +20,12 @@ const home = localizePath("", locale);
   )}
 </a>
 <style>
-  .logo { display: inline-flex; align-items: center; }
+  /* flex-shrink: 0 — anders drukt het menu het logo rond 1280 px samen tot
+     een smalle streep (de hoogte ligt vast, de breedte gaf mee). */
+  .logo { display: inline-flex; align-items: center; flex-shrink: 0; }
   .logo--default img { height: 44px; width: auto; }
   .logo--footer img { height: 96px; width: auto; }
   @media (max-width: 680px) { .logo--default img { height: 38px; } }
+  /* Smalle telefoons (360–400 px): anders past de offerteknop er niet naast. */
+  @media (max-width: 400px) { .logo--default img { height: 30px; } }
 </style>
