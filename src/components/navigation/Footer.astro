@@ -1,5 +1,5 @@
 ---
-import { SITE, CONTACT, CERTS } from "@data/site";
+import { SITE, CONTACT, CERTS, GROEP } from "@data/site";
 import { t } from "@data/i18n";
 import { localizePath, toLocale } from "@utils/paths";
 import { readPage } from "@utils/content";
@@ -58,6 +58,12 @@ const year = 2026;
     <div class="bottom">
       <span>© {SITE.founded}–{year} {SITE.legalName}</span>
       <span>{t(locale, "footerBottom")}</span>
+      <span class="groep">
+        {t(locale, "footerGroup")} {GROEP.naam}:{" "}
+        {GROEP.bedrijven.map((b, i) => (
+          <>{i > 0 && " · "}<a href={b.url} rel="noopener" target="_blank">{b.naam}</a></>
+        ))}
+      </span>
     </div>
   </div>
 </footer>
@@ -72,6 +78,9 @@ const year = 2026;
   .brand .badges { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
   .brand .badge { background: transparent; border: 1px solid rgba(255,255,255,.15); color: #c3d2e4; padding: 8px 13px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; }
   .addr { display: block; padding: 4px 0; color: #9fb2c9; font-size: 14.5px; }
+  .bottom .groep { flex-basis: 100%; }
+  .bottom .groep a { color: #8498b1; text-decoration: none; }
+  .bottom .groep a:hover { color: var(--sky); }
   .bottom { border-top: 1px solid rgba(255,255,255,.08); padding-block: 18px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #8498b1; }
   @media (max-width: 860px) { .top { grid-template-columns: 1fr 1fr; } }
   /* Onder elkaar werd de footer 1228px hoog: anderhalf scherm marineblauw aan

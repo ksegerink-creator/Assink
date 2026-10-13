@@ -164,6 +164,24 @@ export const CERTS = [
   "SBB-erkend leerbedrijf",
 ] as const;
 
+/**
+ * HARMAX Groep: de zusterbedrijven, onderaan elke pagina gelinkt en als
+ * parentOrganization in de structured data. Alleen bedrijven die passen bij
+ * wat een bezoeker van een metaalbedrijf zoekt; Twentekracht (werving) en
+ * Bamboosa (kleding) staan er bewust niet in. URL's zijn de eindbestemming,
+ * zodat er geen redirect tussen zit.
+ */
+export const GROEP = {
+  naam: "HARMAX Groep",
+  bedrijven: [
+    { naam: "Baas Metaal", url: "https://baas-metaal.nl/" },
+    { naam: "Bateq", url: "https://bateq.nl/" },
+    { naam: "Mako", url: "https://mako.nl/" },
+    { naam: "Audacious", url: "https://www.audacious.com/" },
+    { naam: "Plaatweb", url: "https://plaatweb.online/" },
+  ],
+} as const;
+
 export const SOCIAL = {
   linkedin: _c.linkedin,
   facebook: _c.facebook,
