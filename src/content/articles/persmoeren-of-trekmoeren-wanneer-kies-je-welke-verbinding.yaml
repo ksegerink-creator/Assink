@@ -119,6 +119,9 @@ faq:
       Een PDF-tekening en een 3D STEP-bestand geven ons voldoende inzicht in
       plaatdikte, locatie en bereikbaarheid om een onderbouwd advies te geven.
 gepubliceerd: true
+diensten:
+  - plaatwerk/persmoeren-trekmoeren
+  - meet-en-regeltechniek
 seo:
   title: 'Persmoer of trekmoer: welke kiest u?'
   description: >-

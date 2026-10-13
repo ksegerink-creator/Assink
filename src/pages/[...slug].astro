@@ -11,6 +11,7 @@ import SpecTable from "@components/sections/SpecTable.astro";
 import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
+import Kennisbanklinks from "@components/sections/Kennisbanklinks.astro";
 import { t } from "@data/i18n";
 import { localizePath } from "@utils/paths";
 import { faqJsonLd } from "@utils/seo";
@@ -116,6 +117,7 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
       <Aanleverlijst items={s.aanleveren} locale={locale} />
 
       <FaqBlock faq={s.faq} />
+      <Kennisbanklinks slug={s.slug} />
 
       <CtaBand />
     </PageLayout>

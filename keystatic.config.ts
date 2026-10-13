@@ -1003,6 +1003,11 @@ export default config({
           description: "Vink aan om dit artikel live te zetten op de site. Automatisch gegenereerde concepten staan hier standaard uit.",
           defaultValue: false,
         }),
+        diensten: fields.array(fields.text({ label: "Slug van de dienstpagina" }), {
+          label: "Hoort bij dienstpagina's",
+          description: "Het artikel verschijnt onderaan deze pagina's onder 'Verder lezen in de kennisbank'. Gebruik de URL zonder slashes ervoor en erna, bv. plaatwerk/rvs of buizenlaser.",
+          itemLabel: (p) => p.value,
+        }),
         seo: fields.object(
           {
             title: fields.text({ label: "SEO-titel" }),
