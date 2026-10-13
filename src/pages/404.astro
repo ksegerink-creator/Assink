@@ -1,0 +1,63 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import { CONTACT } from "@data/site";
+
+/**
+ * Eigen 404-pagina. Zonder dit bestand toont Vercel een kale tekst
+ * "404: NOT_FOUND" zonder menu of uitweg. Eén pagina voor alle talen
+ * (Vercel serveert één 404.html), dus Nederlands met een korte regel in het
+ * Engels en Duits. Op noindex: hoort niet in Google.
+ */
+const links = [
+  { href: "/plaatwerk/", label: "Plaatwerk" },
+  { href: "/constructies/", label: "Constructies" },
+  { href: "/machinebouw/", label: "Machinebouw" },
+  { href: "/machinepark/", label: "Machinepark" },
+  { href: "/kennisbank/", label: "Kennisbank" },
+  { href: "/vacatures/", label: "Vacatures" },
+];
+---
+<PageLayout
+  title="Pagina niet gevonden"
+  description="Deze pagina bestaat niet (meer). Ga naar de homepage of bekijk onze diensten."
+  canonicalSlug="404"
+  noindex={true}
+>
+  <section class="sec nf">
+    <div class="wrap nf__inner">
+      <span class="mono nf__code" aria-hidden="true">404</span>
+      <h1>Deze pagina bestaat niet (meer)</h1>
+      <p class="nf__lead">
+        Misschien is de link verouderd of zit er een typfout in het adres.
+        Hieronder vindt u de belangrijkste pagina's, of neem direct contact op.
+      </p>
+      <p class="nf__alt">
+        <span lang="en">Page not found — <a href="/en/">go to the English homepage</a>.</span>
+        <span lang="de">Seite nicht gefunden — <a href="/de/">zur deutschen Startseite</a>.</span>
+      </p>
+      <div class="nf__acts">
+        <a class="btn" href="/">Naar de homepage</a>
+        <a class="btn ghost" href="/offerte/">Offerte aanvragen</a>
+        <a class="btn ghost" href={CONTACT.telHref}>{CONTACT.tel}</a>
+      </div>
+      <ul class="nf__links">
+        {links.map((l) => <li><a href={l.href}>{l.label} <span class="mono">→</span></a></li>)}
+      </ul>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .nf { padding-block: clamp(48px, 9vw, 120px); }
+  .nf__inner { max-width: 40em; }
+  .nf__code { display: inline-block; color: var(--blue); font-size: 14px; letter-spacing: .12em; margin-bottom: 1rem; }
+  .nf h1 { font-size: clamp(30px, 4.6vw, 58px); }
+  .nf__lead { margin-top: 18px; color: var(--ink-2); font-size: clamp(16px, 1.5vw, 19px); }
+  .nf__alt { margin-top: 12px; color: var(--steel); font-size: 14px; display: grid; gap: 4px; }
+  .nf__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .nf__links { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+  .nf__links li { border-bottom: 1px solid var(--line); }
+  .nf__links a { display: flex; justify-content: space-between; padding: 14px 2px; font-family: var(--f-disp); font-weight: 600; color: var(--ink); }
+  .nf__links a:hover { color: var(--blue); }
+  @media (max-width: 520px) { .nf__links { grid-template-columns: 1fr; } }
+</style>

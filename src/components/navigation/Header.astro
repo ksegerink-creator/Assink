@@ -162,7 +162,13 @@ const home = localizePath("", locale);
   .sub a { padding: 8px 2px; color: var(--ink-2); font-size: 15.5px; }
   .sub .m { font-family: var(--f-mono); font-size: 10px; color: var(--steel); margin-right: 8px; }
 
-  @media (max-width: 1040px) {
+  /* Het volledige menu (logo + menu + taal + knop) heeft ±1250 px nodig, met
+     de social-icoontjes erbij ±1345 px — meer dan de maximale breedte van de
+     balk (1320 px). Daardoor schoof alles in elkaar en werd het logo een smalle
+     streep. De social-icoontjes staan daarom alleen in footer en drawer; onder
+     1280 px volgt het hamburgermenu. */
+  .tools :global(.hdr-soc) { display: none; }
+  @media (max-width: 1279px) {
     .main { display: none; }
     .burger { display: flex; }
     .tools :global(.hdr-soc) { display: none; }
@@ -173,7 +179,7 @@ const home = localizePath("", locale);
     .tools :global(.lang) { display: none; }
     .tools :global(.btn.sm) { padding: 9px 12px; font-size: 12px; }
   }
-  @media (min-width: 1041px) { .drawer { display: none !important; } }
+  @media (min-width: 1280px) { .drawer { display: none !important; } }
 </style>
 
 <script>
