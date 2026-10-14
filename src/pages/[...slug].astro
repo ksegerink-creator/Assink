@@ -12,6 +12,7 @@ import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
 import Kennisbanklinks from "@components/sections/Kennisbanklinks.astro";
+import BodyText from "@components/sections/BodyText.astro";
 import { t } from "@data/i18n";
 import { localizePath } from "@utils/paths";
 import { faqJsonLd } from "@utils/seo";
@@ -81,19 +82,13 @@ const overviewJsonld = isOverview && s.faq.length > 0 ? [faqJsonLd(s.faq)] : [];
 
       <Kerncijfers items={s.kerncijfers} />
 
-      {s.body.length > 0 && (
-        <section class="sec tight">
-          <div class="wrap">
-            <div class="prose rv">{s.body.map((p) => <p set:html={p} />)}</div>
-          </div>
-        </section>
-      )}
+      <BodyText body={s.body} locale={locale} />
 
       <section class="sec tight">
         <div class="wrap">
           <div class="rule-head rv">
             <h2>{t(locale, "possibilities")}</h2>
-            <span class="mono">{s.cards.length} {t(locale, "operationsCount")}</span>
+            <span class="mono">{`${s.cards.length} ${t(locale, "operationsCount")}`}</span>
           </div>
           <ul class="olist">
             {s.cards.map((c, i) => (

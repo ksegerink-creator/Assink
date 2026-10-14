@@ -800,6 +800,11 @@
       "en": "Or send us a message",
       "de": "Oder schreiben Sie uns"
     },
+    "readOn": {
+      "nl": "Lees verder",
+      "en": "Read more",
+      "de": "Weiterlesen"
+    },
     "vacancyMailUs": {
       "nl": "Mail ons",
       "en": "Email us",

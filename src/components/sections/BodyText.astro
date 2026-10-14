@@ -1,0 +1,84 @@
+---
+import { t } from "@data/i18n";
+import { vetteEersteZin } from "@utils/tekst";
+import type { Locale } from "@data/site";
+
+/**
+ * De lopende tekst van een dienst- of overzichtspagina.
+ *
+ * Stond eerder als één blok van drie à vier alinea's (150–230 woorden) in
+ * dezelfde opmaak, wat op mobiel ruim 1000px ononderbroken tekst gaf. Nu:
+ * - de eerste zin van elke alinea vet, zodat de pagina scanbaar is;
+ * - alleen de eerste twee alinea's open, de rest achter "Lees verder"
+ *   (<details>: de tekst staat wel in de HTML, dus blijft vindbaar);
+ * - materialen en toepassingen als labels in de zijkolom, in plaats van een
+ *   regel eronder en een los blok verderop.
+ */
+interface Props {
+  body: string[];
+  locale: Locale;
+  kop?: string;
+  materials?: string[];
+  toepassingen?: string[];
+  /** Aantal alinea's dat open staat. */
+  open?: number;
+}
+const { body, locale, kop, materials = [], toepassingen = [], open = 2 } = Astro.props;
+const alineas = body.filter(Boolean).map(vetteEersteZin);
+// Eén alinea achter "Lees verder" is het klikken niet waard.
+const zichtbaar = alineas.length - open <= 1 ? alineas : alineas.slice(0, open);
+const verborgen = alineas.slice(zichtbaar.length);
+---
+{alineas.length > 0 && (
+  <section class="sec tight">
+    <div class={`wrap tbody ${kop ? "" : "tbody--solo"}`}>
+      {kop && (
+        <div class="tbody__side rv">
+          <h2>{kop}</h2>
+          {materials.length > 0 && (
+            <div class="tbody__mat">
+              <span class="mono">{t(locale, "materialsLabel")}</span>
+              <ul class="chips">{materials.map((m) => <li>{m}</li>)}</ul>
+            </div>
+          )}
+          {toepassingen.length > 0 && (
+            <div class="tbody__mat">
+              <span class="mono">{t(locale, "applicationsHead")}</span>
+              <ul class="chips">{toepassingen.map((m) => <li>{m}</li>)}</ul>
+            </div>
+          )}
+        </div>
+      )}
+      <div class="tbody__main rv">
+        <div class="prose tbody__prose">{zichtbaar.map((p) => <p set:html={p} />)}</div>
+        {verborgen.length > 0 && (
+          <details class="tbody__more">
+            <summary><span>{t(locale, "readOn")}</span><span class="tbody__plus" aria-hidden="true">+</span></summary>
+            <div class="prose tbody__prose">{verborgen.map((p) => <p set:html={p} />)}</div>
+          </details>
+        )}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .tbody { display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: clamp(20px, 3vw, 56px); align-items: start; }
+  .tbody--solo { grid-template-columns: minmax(0, 1fr); }
+  .tbody__side h2 { font-size: clamp(22px, 2.4vw, 32px); border-top: 1px solid var(--ink); padding-top: 14px; }
+  .tbody__mat { margin-top: 22px; display: grid; gap: 10px; }
+  .tbody__mat .mono { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--steel); }
+  .tbody__prose { max-width: 38em; gap: 20px; line-height: 1.7; }
+  .tbody__prose :global(strong) { color: var(--ink); font-weight: 600; }
+  .tbody__more { max-width: 38em; margin-top: 20px; }
+  .tbody__more summary {
+    list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px;
+    font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; font-size: 14px;
+    color: var(--blue); padding: 10px 0; border-bottom: 1px solid currentColor;
+  }
+  .tbody__more summary::-webkit-details-marker { display: none; }
+  .tbody__plus { font-family: var(--f-mono); font-size: 18px; line-height: 1; transition: transform .2s var(--ease); }
+  .tbody__more[open] summary { display: none; }
+  .tbody__more[open] .tbody__prose { margin-top: 0; }
+  @media (max-width: 780px) { .tbody { grid-template-columns: 1fr; } }
+</style>
