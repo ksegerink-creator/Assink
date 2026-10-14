@@ -220,16 +220,17 @@ const proefBeelden = await Promise.all(
     box-shadow: 0 30px 70px -30px rgba(4, 26, 53, .55);
   }
   .hform__h { font-size: 19px; letter-spacing: .02em; }
-  .hform label { display: grid; gap: 6px; font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--steel); }
+  .hform label { display: grid; gap: 6px; font-family: var(--f-mono); font-size: 12px; letter-spacing: .07em; text-transform: uppercase; color: var(--steel); }
   .hform input, .hform textarea {
-    font-family: var(--f-body); font-size: 15px; color: var(--ink); background: var(--surface);
+    /* 16px: kleiner laat iOS bij het aantikken inzoomen. */
+    font-family: var(--f-body); font-size: 16px; color: var(--ink); background: var(--surface);
     border: 1px solid var(--line); padding: 10px 12px; width: 100%;
   }
   .hform input:focus, .hform textarea:focus { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
   .hform textarea { resize: vertical; }
   .hform__row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .hform__btn { justify-content: center; }
-  .hform__hint { color: var(--steel); font-size: 10px; letter-spacing: .05em; line-height: 1.8; text-transform: none; }
+  .hform__hint { color: var(--steel); font-size: 11.5px; letter-spacing: .05em; line-height: 1.8; text-transform: none; }
   .hform__hint a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
   .hero__meta {
     position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 10px 0;
@@ -304,7 +305,8 @@ const proefBeelden = await Promise.all(
   .tile :global(.ii img) { height: 100%; }
   .tile__scrim {
     position: absolute; inset: 0; z-index: 2;
-    background: linear-gradient(rgba(4,26,53,.06) 40%, rgba(4,26,53,.82) 100%);
+    /* Onderkant iets donkerder: op lichte foto's (plaatwerkhal) viel de tekst weg. */
+    background: linear-gradient(rgba(4,26,53,.06) 35%, rgba(4,26,53,.9) 100%);
     transition: background .3s var(--ease);
   }
   .tile__idx {
@@ -319,11 +321,11 @@ const proefBeelden = await Promise.all(
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
   .tile__go {
-    display: inline-block; margin-top: 12px; color: var(--sky); font-size: 11px; letter-spacing: .1em;
+    display: inline-block; margin-top: 12px; color: #fff; font-size: 12px; letter-spacing: .1em;
   }
   .tile__go .arr { display: inline-block; transition: transform .25s var(--ease); }
   .tile:hover .tile__go .arr { transform: translateX(6px); }
-  .tile:hover .tile__scrim { background: linear-gradient(rgba(4,26,53,.02) 40%, rgba(4,26,53,.9) 100%); }
+  .tile:hover .tile__scrim { background: linear-gradient(rgba(4,26,53,.02) 35%, rgba(4,26,53,.95) 100%); }
   .tile :global(.ii__anno) { z-index: 3; }
 
   @media (max-width: 860px) {
