@@ -8,6 +8,7 @@ import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
 import CtaBand from "@components/sections/CtaBand.astro";
 import FaqBlock from "@components/sections/FaqBlock.astro";
 import Kennisbanklinks from "@components/sections/Kennisbanklinks.astro";
+import BodyText from "@components/sections/BodyText.astro";
 import { t } from "@data/i18n";
 import { serviceJsonLd, faqJsonLd } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
@@ -70,33 +71,18 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
 
   <Kerncijfers items={s.kerncijfers} />
 
-  {s.body.length > 0 && (
-    <section class="sec tight">
-      <div class="wrap sbody">
-        <h2 class="sbody__h rv">{s.bodyHeading || t(locale, s.group === "sector" ? "aboutSector" : "aboutOperation")}</h2>
-        <div class="prose rv">
-          {s.body.map((p) => <p set:html={p} />)}
-          {s.materials.length > 0 && (
-            <p class="smat mono">{t(locale, "materialsLabel")}: <b>{s.materials.join(" · ")}</b></p>
-          )}
-        </div>
-      </div>
-    </section>
-  )}
+  <BodyText
+    body={s.body}
+    locale={locale}
+    kop={s.bodyHeading || t(locale, s.group === "sector" ? "aboutSector" : "aboutOperation")}
+    materials={s.materials}
+    toepassingen={s.applications}
+  />
 
   <ProcessSteps process={s.process} locale={locale} image={showMid ? midImg : undefined}
     imageAlt={`${s.title} — productie in de werkplaats`} />
 
   <SpecTable specs={s.specs} locale={locale} />
-
-  {s.applications.length > 0 && (
-    <section class="sec tight">
-      <div class="wrap sapp rv">
-        <h2>{t(locale, "applicationsHead")}</h2>
-        <p>{s.applications.join(" · ")}</p>
-      </div>
-    </section>
-  )}
 
   <Aanleverlijst items={s.aanleveren} locale={locale} />
 
@@ -130,23 +116,19 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
   .shero__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 
 
-  /* body */
-  .sbody { display: grid; grid-template-columns: minmax(0, .55fr) minmax(0, 1.45fr); gap: clamp(20px, 3vw, 48px); }
-  .sbody__h { font-size: clamp(22px, 2.4vw, 32px); border-top: 1px solid var(--ink); padding-top: 14px; }
-  .smat { margin-top: 8px; color: var(--steel); }
-  .smat b { color: var(--ink); font-weight: 600; }
-  @media (max-width: 780px) { .sbody { grid-template-columns: 1fr; } }
-
-
   /* toepassingen / gerelateerd */
-  .sapp h2, .srel h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
-  .sapp p { color: var(--ink-2); max-width: 52em; font-size: 16px; line-height: 1.9; }
-  .srel__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: 760px; }
-  .srel__list li { border-bottom: 1px solid var(--line); }
-  .srel__list a { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr) auto; gap: 16px; align-items: baseline; padding: 15px 2px; }
-  .srel__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; font-size: 16px; color: var(--ink); }
-  .srel__desc { color: var(--steel); font-size: 14px; }
-  .srel__arr { color: var(--blue); }
+  .srel h2 { font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 18px; }
+  /* Gerelateerd als kaarten: een duidelijke volgende stap in plaats van een
+     dunne lijst onderaan. */
+  .srel__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .srel__list a {
+    display: grid; grid-template-rows: auto 1fr auto; gap: 6px; height: 100%;
+    border: 1px solid var(--line); background: var(--surface); padding: 18px 20px;
+    transition: border-color .2s var(--ease), background .2s var(--ease);
+  }
+  .srel__list a:hover { border-color: var(--blue); background: var(--sky-bg); }
+  .srel__label { font-family: var(--f-disp); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; font-size: 17px; color: var(--ink); }
+  .srel__desc { color: var(--ink-2); font-size: 14.5px; }
+  .srel__arr { color: var(--blue); margin-top: 6px; }
   .srel__list a:hover .srel__label { color: var(--blue); }
-  @media (max-width: 640px) { .srel__list a { grid-template-columns: 1fr auto; } .srel__desc { display: none; } }
 </style>
