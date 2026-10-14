@@ -64,8 +64,11 @@ proef:
   quoteFoto: /src/assets/uploads/proef/quoteFoto.jpg
   details:
     - foto: /src/assets/uploads/proef/details/0/foto.JPG
+      bijschrift: Buislasersnijden · TruLaser Tube 3000
     - foto: /src/assets/uploads/proef/details/1/foto.jpeg
+      bijschrift: Lasersnijden · TruLaser 3040
     - foto: /src/assets/uploads/proef/details/2/foto.jpg
+      bijschrift: Stralen · straalcabine 8 × 4 × 3 m
 mensen:
   kop: Al {jaren} jaar mensenwerk
   tekst: >-
@@ -135,9 +138,9 @@ en:
   proef:
     quote: 'Quality shows in the detail: the weld seam, the bend, the dimension.'
     details:
-      - bijschrift: Bending · ± 0.2 mm
-      - bijschrift: Press braking
-      - bijschrift: Finishing
+      - bijschrift: Tube laser cutting · TruLaser Tube 3000
+      - bijschrift: Laser cutting · TruLaser 3040
+      - bijschrift: Blasting · 8 × 4 × 3 m blast booth
   mensen:
     kop: '{jaren} years of people at work'
     tekst: >-
@@ -207,9 +210,9 @@ de:
   proef:
     quote: 'Qualität zeigt sich im Detail: in der Schweißnaht, der Biegung, dem Maß.'
     details:
-      - bijschrift: Biegen · ± 0,2 mm
-      - bijschrift: Abkanten
-      - bijschrift: Nachbearbeitung
+      - bijschrift: Rohrlaserschneiden · TruLaser Tube 3000
+      - bijschrift: Laserschneiden · TruLaser 3040
+      - bijschrift: Strahlen · Strahlkabine 8 × 4 × 3 m
   mensen:
     kop: Seit {jaren} Jahren Menschenarbeit
     tekst: >-
