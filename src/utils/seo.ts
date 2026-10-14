@@ -180,6 +180,7 @@ export function jobPostingJsonLd(
     employmentType?: string;
     datePosted?: string;
     validThrough?: string;
+    salaris?: { min?: number; max?: number; per: "maand" | "uur" };
   },
 ) {
   const base = (typeof site === "string" ? site : site.href).replace(/\/+$/, "");
@@ -191,6 +192,20 @@ export function jobPostingJsonLd(
     employmentType: googleDienstverband(job.employmentType),
     datePosted: job.datePosted ?? String(SITE.founded),
     ...(job.validThrough ? { validThrough: job.validThrough } : {}),
+    ...(job.salaris && (job.salaris.min || job.salaris.max)
+      ? {
+          baseSalary: {
+            "@type": "MonetaryAmount",
+            currency: "EUR",
+            value: {
+              "@type": "QuantitativeValue",
+              ...(job.salaris.min ? { minValue: job.salaris.min } : {}),
+              ...(job.salaris.max ? { maxValue: job.salaris.max } : {}),
+              unitText: job.salaris.per === "uur" ? "HOUR" : "MONTH",
+            },
+          },
+        }
+      : {}),
     hiringOrganization: { "@id": `${base}/#organization` },
     jobLocation: {
       "@type": "Place",

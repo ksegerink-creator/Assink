@@ -949,6 +949,22 @@ export default config({
           itemLabel: (p) => (p.value || "").slice(0, 45),
         }),
         open: fields.checkbox({ label: "Openstaand", defaultValue: true }),
+        salarisMin: fields.integer({ label: "Salaris vanaf (bruto, €)", description: "Laat leeg als er geen salaris genoemd wordt." }),
+        salarisMax: fields.integer({ label: "Salaris tot (bruto, €)" }),
+        salarisPer: fields.select({
+          label: "Salaris per",
+          options: [{ label: "Maand", value: "maand" }, { label: "Uur", value: "uur" }],
+          defaultValue: "maand",
+        }),
+        aanbod: fields.array(fields.text({ label: "Voorwaarde" }), {
+          label: "Wat wij bieden",
+          description: "Leeg → bij banen in dienst het algemene blok van de pagina Werken bij.",
+          itemLabel: (p) => (p.value || "").slice(0, 45),
+        }),
+        sollicitatieLink: fields.url({
+          label: "Sollicitatielink (optioneel)",
+          description: "Bv. de vacature op twentekracht.nl. Leeg → solliciteren per e-mail.",
+        }),
         geplaatst: fields.date({
           label: "Geplaatst op",
           description: "Voor Google for Jobs. De vacature blijft daar tot 3 maanden na de laatste publicatie van de site zichtbaar.",

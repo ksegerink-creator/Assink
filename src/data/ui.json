@@ -775,6 +775,21 @@
       "en": "Apply by email",
       "de": "Per E-Mail bewerben"
     },
+    "vacancySalaryMonth": {
+      "nl": "bruto per maand",
+      "en": "gross per month",
+      "de": "brutto pro Monat"
+    },
+    "vacancySalaryHour": {
+      "nl": "bruto per uur",
+      "en": "gross per hour",
+      "de": "brutto pro Stunde"
+    },
+    "vacancyApplyLink": {
+      "nl": "Solliciteer direct",
+      "en": "Apply now",
+      "de": "Jetzt bewerben"
+    },
     "vacancyMailUs": {
       "nl": "Mail ons",
       "en": "Email us",

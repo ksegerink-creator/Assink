@@ -47,6 +47,7 @@ const jsonld = [
     employmentType: v.employmentType,
     datePosted: v.geplaatst ?? isoDatum(vandaag),
     validThrough: isoDatum(totEn),
+    salaris: { min: v.salarisMin, max: v.salarisMax, per: v.salarisPer },
   }),
 ];
 
@@ -58,13 +59,31 @@ const VAC_IMG: Record<string, string> = {
   "werkvoorbereider-tekenaar": "contact.werk",
   "stage": "vacatures.sfeer.1",
   "vakantiewerk": "vacatures.sfeer.2",
+  "constructiebankwerker-lasser-junior": "vacatures.detail",
+  "constructiebankwerker-lasser-senior": "vacatures.detail",
+  "constructiebankwerker-lasser-bbl": "vacatures.sfeer.1",
+  "gepensioneerde-chauffeur": "vacatures.sfeer.2",
 };
 // Arbeidsvoorwaarden staan één keer op de pagina Werken bij en gelden voor
 // medewerkers in dienst. Bij stage en vakantiewerk tonen we ze niet: daar
 // gelden niet automatisch dezelfde voorwaarden (CAO, ADV).
 const werkenBij = await readPage("werkenBij", locale);
+// Heeft de vacature eigen voorwaarden, dan gaan die vóór het algemene blok.
 const inDienst = ["FULL_TIME", "PART_TIME"].includes(googleDienstverband(v.employmentType));
-const bieden = inDienst ? (werkenBij.bieden ?? []).filter(Boolean) : [];
+const eigenAanbod = v.aanbod.filter(Boolean);
+const bieden = eigenAanbod.length ? eigenAanbod : inDienst ? (werkenBij.bieden ?? []).filter(Boolean) : [];
+const biedenKop = eigenAanbod.length ? t(locale, "vacancyOffer") : werkenBij.biedenKop || t(locale, "vacancyOffer");
+
+// "€ 2.400 – € 3.500 bruto per maand", in de notatie van de taal.
+const euro = new Intl.NumberFormat({ nl: "nl-NL", en: "en-GB", de: "de-DE" }[locale], {
+  style: "currency", currency: "EUR", maximumFractionDigits: 0,
+});
+const bedragen = [v.salarisMin, v.salarisMax].filter((b): b is number => !!b).map((b) => euro.format(b));
+const salaris = bedragen.length
+  ? `${bedragen.join(" – ")} ${t(locale, v.salarisPer === "uur" ? "vacancySalaryHour" : "vacancySalaryMonth")}`
+  : undefined;
+
+const mailHref = `mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`;
 
 const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] ?? "vacatures.sfeer.1");
 ---
@@ -89,10 +108,13 @@ const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] 
       <span class="badge"><b>◆</b> {v.employmentType}</span>
       {v.hours && <span class="badge">{v.hours}</span>}
       {v.education && <span class="badge">{v.education}</span>}
+      {salaris && <span class="badge">{salaris}</span>}
       {!v.open && <span class="badge">{t(locale, "vacancyClosed")}</span>}
     </div>
     <div class="vd-acts">
-      <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyApplyMail")}</a>
+      {v.sollicitatieLink
+        ? <a class="btn" href={v.sollicitatieLink} rel="noopener">{t(locale, "vacancyApplyLink")}</a>
+        : <a class="btn" href={mailHref}>{t(locale, "vacancyApplyMail")}</a>}
       <a class="btn ghost" href={CONTACT.telHref}>{t(locale, "callVerb")} {CONTACT.tel}</a>
     </div>
   </SplitHero>
@@ -122,7 +144,7 @@ const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] 
   {bieden.length > 0 && (
     <section class="sec tight">
       <div class="wrap">
-        <SectionHead title={werkenBij.biedenKop || t(locale, "vacancyOffer")} index={t(locale, "vacancyOfferIdx")} />
+        <SectionHead title={biedenKop} index={t(locale, "vacancyOfferIdx")} />
         <ul class="ticklist prose rv">
           {bieden.map((b) => <li>{b}</li>)}
         </ul>
@@ -137,7 +159,9 @@ const vacImage = await kiesFoto(v.foto, v.fotoBank) ?? imageFor(VAC_IMG[v.slug] 
         <h2>{t(locale, "vacancyApplyHead")}<br /><span class="alt">{t(locale, "vacancyApplyAt")}</span></h2>
       </div>
       <div class="acts">
-        <a class="btn" href={`mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`}>{t(locale, "vacancyMailUs")}</a>
+        {v.sollicitatieLink
+          ? <a class="btn" href={v.sollicitatieLink} rel="noopener">{t(locale, "vacancyApplyLink")}</a>
+          : <a class="btn" href={mailHref}>{t(locale, "vacancyMailUs")}</a>}
         <a class="btn ghost" href={nav("contact")}>{t(locale, "contact")}</a>
       </div>
     </div>

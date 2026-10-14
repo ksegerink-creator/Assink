@@ -13,7 +13,11 @@
     "open",
     "translated",
     "inFooter",
-    "geplaatst"
+    "geplaatst",
+    "salarisMin",
+    "salarisMax",
+    "salarisPer",
+    "sollicitatieLink"
   ],
   "fotoVeldPatroon": "^(foto|midFoto|fotobank|.*Foto[0-9]*|.*Bank)$"
 }
