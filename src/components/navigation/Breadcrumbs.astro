@@ -30,9 +30,12 @@ const items = [home, ...trail];
   </div>
 </nav>
 <style>
-  .crumbs { padding-block: 14px; border-bottom: 1px solid var(--line-2); }
+  /* Links krijgen zelf de verticale ruimte: zo is het klikvlak ±24px hoog
+     (was 14px, te klein voor een duim) zonder dat de balk hoger oogt. */
+  .crumbs { padding-block: 9px; border-bottom: 1px solid var(--line-2); }
+  .crumbs a { display: inline-block; padding-block: 5px; }
   .crumbs ol {
-    list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0;
+    list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 0 8px; margin: 0; padding: 0;
     font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel);
   }
   .crumbs a:hover { color: var(--blue); }

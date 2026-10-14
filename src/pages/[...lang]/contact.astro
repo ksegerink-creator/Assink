@@ -47,10 +47,11 @@ const nav = (slug: string) => localizePath(slug, locale);
       <a class="btn" href={nav("offerte")}>{t(locale, "quote")}</a>
       {CONTACT.maps && <a class="btn ghost" href={CONTACT.maps} target="_blank" rel="noopener noreferrer">{t(locale, "routeMap")}</a>}
     </div>
+    <a class="chead__jump" href="#bericht">{t(locale, "messageJump")} <span aria-hidden="true">↓</span></a>
   </SplitHero>
 
   <!-- Bericht sturen -->
-  <section class="sec tight cform">
+  <section class="sec tight cform" id="bericht">
     <div class="wrap cform__grid">
       <div class="rv">
         <h2>{c.berichtKop}</h2>
@@ -80,6 +81,8 @@ const nav = (slug: string) => localizePath(slug, locale);
   .chead { padding-block: clamp(28px, 4vw, 56px) clamp(36px, 5vw, 64px); }
   .chead__acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 
+  .chead__jump { display: inline-block; margin-top: 14px; padding: 6px 0; color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+  #bericht { scroll-margin-top: var(--head-h); }
   .cform { background: var(--surface-2); padding-block: clamp(40px, 6vw, 80px); }
   .cform__grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 4.5vw, 72px); align-items: start; }
   .cform h2 { font-size: clamp(24px, 2.8vw, 36px); }
@@ -88,7 +91,7 @@ const nav = (slug: string) => localizePath(slug, locale);
   .cform__photo { margin: 26px 0 0; max-width: 380px; }
   .form { display: grid; gap: 18px; }
   .form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  .form label { display: grid; gap: 7px; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel); }
+  .form label { display: grid; gap: 7px; font-family: var(--f-mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--steel); }
   .form input, .form textarea {
     font-family: var(--f-body); font-size: 16px; color: var(--ink); background: var(--surface);
     border: 1px solid var(--line); padding: 12px 14px; width: 100%;
@@ -96,6 +99,6 @@ const nav = (slug: string) => localizePath(slug, locale);
   .form input:focus, .form textarea:focus { outline: 2px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
   .form textarea { resize: vertical; }
   .form .btn { justify-self: start; }
-  .form__hint { color: var(--steel); font-size: 10.5px; letter-spacing: .08em; }
+  .form__hint { color: var(--steel); font-size: 11.5px; letter-spacing: .08em; }
   @media (max-width: 780px) { .cform__grid, .form__grid { grid-template-columns: 1fr; } .cform__photo { display: none; } }
 </style>

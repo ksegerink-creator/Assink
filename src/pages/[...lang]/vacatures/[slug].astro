@@ -14,6 +14,7 @@ import { jobPostingJsonLd, googleDienstverband } from "@utils/seo";
 import { toLocale, localizePath } from "@utils/paths";
 import { localizeEntry, readPage } from "@utils/content";
 import { LOCALES } from "@utils/locales";
+import { salarisTekst } from "@utils/salaris";
 
 export async function getStaticPaths() {
   const vacancies = await getCollection("vacancies");
@@ -74,14 +75,7 @@ const eigenAanbod = v.aanbod.filter(Boolean);
 const bieden = eigenAanbod.length ? eigenAanbod : inDienst ? (werkenBij.bieden ?? []).filter(Boolean) : [];
 const biedenKop = eigenAanbod.length ? t(locale, "vacancyOffer") : werkenBij.biedenKop || t(locale, "vacancyOffer");
 
-// "€ 2.400 – € 3.500 bruto per maand", in de notatie van de taal.
-const euro = new Intl.NumberFormat({ nl: "nl-NL", en: "en-GB", de: "de-DE" }[locale], {
-  style: "currency", currency: "EUR", maximumFractionDigits: 0,
-});
-const bedragen = [v.salarisMin, v.salarisMax].filter((b): b is number => !!b).map((b) => euro.format(b));
-const salaris = bedragen.length
-  ? `${bedragen.join(" – ")} ${t(locale, v.salarisPer === "uur" ? "vacancySalaryHour" : "vacancySalaryMonth")}`
-  : undefined;
+const salaris = salarisTekst(locale, v);
 
 const mailHref = `mailto:${CONTACT.sollicitatieEmail}?subject=${encodeURIComponent(t(locale, "applySubject") + " " + v.title)}`;
 

@@ -790,6 +790,16 @@
       "en": "Apply now",
       "de": "Jetzt bewerben"
     },
+    "formJump": {
+      "nl": "Naar het formulier",
+      "en": "Go to the form",
+      "de": "Zum Formular"
+    },
+    "messageJump": {
+      "nl": "Of stuur ons een bericht",
+      "en": "Or send us a message",
+      "de": "Oder schreiben Sie uns"
+    },
     "vacancyMailUs": {
       "nl": "Mail ons",
       "en": "Email us",

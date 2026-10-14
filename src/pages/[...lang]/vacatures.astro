@@ -10,6 +10,7 @@ import { readPage, localizeEntries } from "@utils/content";
 import { LOCALE_PATHS } from "@utils/locales";
 import { photo } from "@utils/photos";
 import { kiesFoto } from "@utils/fotobank";
+import { salarisTekst } from "@utils/salaris";
 
 export function getStaticPaths() {
   return LOCALE_PATHS;
@@ -98,6 +99,7 @@ const open = vacancies.filter((v) => v.data.open);
                   <span class="mono vlist__meta">
                     {v.data.employmentType}{v.data.hours ? ` · ${v.data.hours}` : ""}{v.data.education ? ` · ${v.data.education}` : ""}
                   </span>
+                  {salarisTekst(locale, v.data) && <span class="vlist__sal">{salarisTekst(locale, v.data)}</span>}
                 </div>
                 <p>{v.data.intro}</p>
                 <span class="mono vlist__arr">→</span>
@@ -165,6 +167,7 @@ const open = vacancies.filter((v) => v.data.open);
   .vlist h3 { font-size: clamp(19px, 2.1vw, 27px); }
   .vlist a:hover h3 { color: var(--blue); }
   .vlist__meta { display: block; margin-top: 7px; color: var(--blue); }
+  .vlist__sal { display: block; margin-top: 4px; font-size: 14px; font-weight: 600; color: var(--ink); }
   .vlist p { color: var(--ink-2); font-size: 15px; max-width: 44em; }
   .vlist__arr { color: var(--blue); }
   @media (max-width: 680px) { .vlist a { grid-template-columns: 1fr; gap: 8px; } .vlist__arr { display: none; } }
