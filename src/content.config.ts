@@ -170,6 +170,16 @@ const vacancies = defineCollection({
     responsibilities: z.array(z.string()).default([]),
     requirements: z.array(z.string()).default([]),
     open: z.boolean().default(true),
+    // Bruto salaris (bedragen in euro's). Getoond op de vacature en als
+    // baseSalary in de JobPosting-data; Google for Jobs toont dat prominent.
+    salarisMin: z.number().optional(),
+    salarisMax: z.number().optional(),
+    salarisPer: z.enum(["maand", "uur"]).default("maand"),
+    // Arbeidsvoorwaarden van déze vacature. Leeg → bij banen in dienst het
+    // algemene blok van de pagina Werken bij.
+    aanbod: z.array(z.string()).default([]),
+    // Solliciteren loopt via een andere site (bv. Twentekracht). Leeg → mail.
+    sollicitatieLink: z.string().url().optional(),
     // Plaatsingsdatum (JJJJ-MM-DD) voor de JobPosting-data. YAML leest een
     // kale datum als Date; Keystatic schrijft hem zo weg, dus beide vormen.
     geplaatst: z
