@@ -214,6 +214,8 @@ export function jobPostingJsonLd(
         streetAddress: CONTACT.street,
         postalCode: CONTACT.postalCode,
         addressLocality: CONTACT.city,
+        // Google for Jobs meldt het ontbreken als probleem in Search Console.
+        ...(CONTACT.region ? { addressRegion: CONTACT.region } : {}),
         addressCountry: CONTACT.country,
       },
     },
