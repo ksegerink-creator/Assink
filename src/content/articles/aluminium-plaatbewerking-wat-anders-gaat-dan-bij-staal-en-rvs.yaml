@@ -1,0 +1,92 @@
+title: "Aluminium plaatbewerking: wat anders gaat dan bij staal en RVS"
+slug: aluminium-plaatbewerking-wat-anders-gaat-dan-bij-staal-en-rvs
+date: "2026-10-19"
+intro: Aluminium gedraagt zich in de plaatbewerking anders dan staal en RVS. Het
+  materiaal veert sterker terug bij het kanten, is gevoeliger voor krassen bij
+  zichtwerk en vraagt andere instellingen op de lasersnijmachine en andere
+  nabehandeling. Voor wie plaatwerk uitbesteedt is het goed om te weten waar die
+  verschillen zitten, zodat de tekening en de verwachtingen aansluiten op wat
+  het materiaal toelaat. Dit artikel zet de belangrijkste aandachtspunten op een
+  rij.
+secties:
+  - kop: "Lasersnijden: andere instellingen per dikte"
+    alineas:
+      - Aluminium snijden wij op onze Trumpf TruLaser 3040, een fiberlaser van 4
+        kW die ook staal, RVS en gegalvaniseerd staal verwerkt. Bij aluminium
+        liggen vermogen, snijgassnelheid en focus anders dan bij staal of RVS,
+        omdat het materiaal warmte snel afvoert en reflectie geeft die bij de
+        instelling van de machine meegenomen moet worden.
+      - Bij ons ligt de dikterange voor aluminium bij lasersnijden tussen 0,5 en
+        15 mm. Dat is smaller dan bij staal, waar de dikte tot 25 mm kan oplopen
+        dankzij het dikkeplaatsnijpakket op onze 3040. Bij het ontwerp van een
+        plaatonderdeel is het dus verstandig om vooraf te checken of de gewenste
+        dikte in aluminium haalbaar is, in plaats van dat als vanzelfsprekend
+        aan te nemen vanuit een staalontwerp.
+  - kop: Terugvering bij het kanten
+    alineas:
+      - Aluminium veert na het kanten sterker terug dan staal en RVS. Dat
+        betekent dat de kantbank een grotere overbuighoek moet aanhouden om
+        dezelfde eindhoek te bereiken. Op onze Safan Darley E-Brake 150-3100,
+        een servo-elektrische kantbank met 150 ton perskracht en een werklengte
+        tot 3100 mm, wordt die terugvering per materiaal en dikte ingeregeld.
+      - Voor de eindtolerantie houden wij ISO 2768 aan. Bij aluminium is het,
+        meer nog dan bij staal of RVS, van belang dat de werkvoorbereiding weet
+        welke legering en dikte het betreft, omdat terugvering per situatie
+        verschilt. Gegevens daarover horen dus altijd in de aanvraag thuis.
+  - kop: Krasgevoeligheid bij zichtwerk
+    alineas:
+      - Aluminium is zachter dan staal en RVS en laat daardoor sneller krassen
+        en afdrukken achter tijdens transport, bewerking en montage. Bij
+        zichtwerk in aluminium is het daarom belangrijk om dat vooraf te
+        benoemen, zodat er in de productie en verpakking rekening mee wordt
+        gehouden.
+      - Dit speelt ook mee bij de keuze van beschermfolie en bij de manier van
+        stapelen en vastzetten tijdens transport. Een onderdeel dat er bij staal
+        nauwelijks toe doet, kan bij aluminium zichtbaar schade opleveren.
+  - kop: "Ontbramen en stralen: andere aanpak"
+    alineas:
+      - Na het lasersnijden en kanten gaat aluminium door ontbramen, net als
+        staal en RVS. Op onze Timesavers 42 Series RB wordt dat afgestemd op het
+        zachtere materiaal, zodat bramen verdwijnen zonder dat het oppervlak
+        onnodig beschadigt.
+      - Waar nodig stralen wij aluminium in onze straalcabine van 8 bij 4 bij 3
+        meter, met glasparels van 100 tot 200 μm bij 3,0 bar. Dat geeft een
+        gelijkmatig mat oppervlak en is geschikt voor aluminium en RVS. Bij
+        aluminium wordt de instelling bewust gekozen om het oppervlak niet te
+        hard te beschadigen, iets wat bij staal minder kritisch is.
+      - Wordt aluminium plaatwerk gelast, dan speelt ook warmte-inbreng een rol
+        voor de maatvastheid. Meer daarover leest u in <a
+        href="/kennisbank/aluminium-lassen-waarom-warmte-inbreng-bepaalt-of-het-maatvast-blijft/">ons
+        artikel over aluminium lassen</a>.
+  - kop: Wat dit betekent voor uw aanvraag
+    alineas:
+      - Voor aluminium plaatbewerking vragen wij, net als bij staal en RVS, een
+        PDF-tekening en een 3D STEP-bestand. Zo kan de werkvoorbereiding direct
+        beoordelen welke dikte, afmeting en afwerking haalbaar zijn en of er
+        specifieke eisen zijn voor zichtwerk of terugvering.
+      - Meer over de machines, materialen en mogelijkheden voor aluminium
+        plaatwerk vindt u op <a href="/plaatwerk/aluminium/">onze pagina over
+        aluminium plaatwerk</a>.
+faq:
+  - vraag: Waarom veert aluminium meer terug dan staal bij het kanten?
+    antwoord: Aluminium heeft andere mechanische eigenschappen dan staal en RVS,
+      waardoor het na het buigen sterker terugveert naar zijn oorspronkelijke
+      vorm. Op de kantbank wordt hiervoor een grotere overbuighoek aangehouden,
+      afgestemd op de dikte en de toepassing.
+  - vraag: Tot welke dikte kunnen jullie aluminium lasersnijden?
+    antwoord: Op onze Trumpf TruLaser 3040 snijden wij aluminium van 0,5 tot 15 mm.
+      Dat is smaller dan de range voor staal, waar wij tot 25 mm gaan.
+  - vraag: Kunnen jullie aluminium stralen zoals RVS?
+    antwoord: Ja, onze straalcabine met glasparels is geschikt voor zowel RVS als
+      aluminium. Bij aluminium wordt de instelling aangepast aan het zachtere
+      materiaal, zodat het oppervlak niet beschadigt.
+  - vraag: Wat hebben jullie nodig om een offerte te maken voor aluminium plaatwerk?
+    antwoord: Wij werken met een PDF-tekening in combinatie met een 3D STEP-bestand.
+      Op basis daarvan kunnen wij dikte, afmeting en gewenste afwerking
+      beoordelen.
+gepubliceerd: false
+seo:
+  title: "Aluminium plaatbewerking: verschillen met staal en RVS"
+  description: Aluminium veert meer terug bij kanten, is krasgevoeliger en vraagt
+    andere machine-instellingen dan staal en RVS. Lees de belangrijkste
+    verschillen.
