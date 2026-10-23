@@ -1,0 +1,14 @@
+title: "Medische industrie"
+order: 25
+summary: "RVS-plaatwerk, frames en behuizingen voor medische apparatuur, met glad afgewerkte naden."
+link: "medische-industrie"
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Medical industry
+  summary: Stainless steel sheet metal, frames and enclosures for medical equipment, with smoothly finished seams.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Medizintechnik
+  summary: Edelstahlblech, Rahmen und Gehäuse für medizinische Geräte, mit glatt ausgearbeiteten Nähten.
