@@ -13,7 +13,7 @@ intro: >-
 fotobank: straalcabine
 foto: /src/assets/uploads/services/semicon/foto.png
 heroPhoto:
-  subject: Medewerker bij de straalcabine
+  subject: Semicon kast
   orient: Liggend 16:10
   crop: Werkstuk of productie
   comp: Representatief werk uit deze sector
