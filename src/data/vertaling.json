@@ -17,7 +17,8 @@
     "salarisMin",
     "salarisMax",
     "salarisPer",
-    "sollicitatieLink"
+    "sollicitatieLink",
+    "icoon"
   ],
   "fotoVeldPatroon": "^(foto|midFoto|fotobank|.*Foto[0-9]*|.*Bank)$"
 }
