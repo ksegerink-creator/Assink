@@ -2,6 +2,7 @@
 import PageLayout from "./PageLayout.astro";
 import SplitHero from "@components/sections/SplitHero.astro";
 import Kerncijfers from "@components/sections/Kerncijfers.astro";
+import Kenmerken from "@components/sections/Kenmerken.astro";
 import ProcessSteps from "@components/sections/ProcessSteps.astro";
 import SpecTable from "@components/sections/SpecTable.astro";
 import Aanleverlijst from "@components/sections/Aanleverlijst.astro";
@@ -69,6 +70,7 @@ if (s.faq.length > 0) jsonld.push(faqJsonLd(s.faq) as never);
     </div>
   </SplitHero>
 
+  <Kenmerken items={s.kenmerken} />
   <Kerncijfers items={s.kerncijfers} />
 
   <BodyText

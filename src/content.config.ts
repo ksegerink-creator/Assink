@@ -101,6 +101,12 @@ const services = defineCollection({
     // De paar getallen waar een werkvoorbereider op zoekt, als strook onder de
     // hero. Stonden eerder verstopt in lopende tekst.
     kerncijfers: z.array(z.object({ waarde: z.string(), label: z.string() })).default([]),
+    // Een paar kernpunten als kaarten met icoon onder de hero ("Complex
+    // maatwerk", "Gecertificeerd laswerk"…). Voor pagina's waar het verhaal
+    // meer zegt dan losse getallen; zie src/components/sections/Kenmerken.astro.
+    kenmerken: z
+      .array(z.object({ icoon: z.enum(["gereedschap", "schild", "gewicht", "checklist", "laser", "las"]).default("gereedschap"), titel: z.string(), tekst: z.string() }))
+      .default([]),
     // Wat een bezoeker moet meesturen voor een offerte, als afvinklijst naast
     // de knop in plaats van als slotalinea.
     aanleveren: z.array(z.string()).default([]),

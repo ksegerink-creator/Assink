@@ -695,6 +695,29 @@ const dienstSchema = () => metVertalingen({
             itemLabel: (p) => `${p.fields.waarde.value} — ${p.fields.label.value}`,
           },
         ),
+        kenmerken: fields.array(
+          fields.object({
+            icoon: fields.select({
+              label: "Icoon",
+              options: [
+                { label: "Gereedschap (maatwerk)", value: "gereedschap" },
+                { label: "Schild (certificering)", value: "schild" },
+                { label: "Gewicht (zwaar werk)", value: "gewicht" },
+                { label: "Checklist (kwaliteit)", value: "checklist" },
+                { label: "Laser (snijden)", value: "laser" },
+                { label: "Lasnaad (lassen)", value: "las" },
+              ],
+              defaultValue: "gereedschap",
+            }),
+            titel: fields.text({ label: "Titel", description: 'Kort. Bv. "Gecertificeerd laswerk".' }),
+            tekst: fields.text({ label: "Tekst", description: "Eén regel." }),
+          }),
+          {
+            label: "Kenmerken",
+            description: "Kaarten met icoon direct onder de hero. Vier werkt het best. Gebruik dit óf kerncijfers, niet allebei.",
+            itemLabel: (p) => p.fields.titel.value || "Kenmerk",
+          },
+        ),
         aanleveren: fields.array(fields.text({ label: "Gegeven" }), {
           label: "Wat stuurt u mee",
           description: "Afvinklijst naast de offerteknop: wat er nodig is om een aanvraag te beoordelen.",
