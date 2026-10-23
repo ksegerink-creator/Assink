@@ -1,0 +1,205 @@
+title: "Medische industrie"
+slug: "medische-industrie"
+template: "service"
+group: "sector"
+order: 61
+kicker: "Sector"
+h1: "Plaatwerk en laswerk voor de medische industrie"
+intro: "Bouwers van medische apparatuur vragen om maatvaste onderdelen met een strakke, reinigbare afwerking. Wij maken RVS-plaatwerk, frames en behuizingen op maat, van los onderdeel tot gelaste samenstelling."
+fotobank: "rvs-product"
+heroPhoto:
+  subject: "Afgewerkt RVS-product uit de werkplaats"
+  orient: "Liggend 16:10"
+  crop: "Werkstuk of productie"
+  comp: "Representatief werk uit deze sector"
+body:
+  - "Voor bouwers van medische apparatuur en laboratoriumapparatuur maken we frames, onderstellen, omkastingen, panelen en behuizingen. Het gaat om de constructie en de buitenkant van de apparatuur: implantaten en instrumenten die in het lichaam komen maken wij niet."
+  - "Apparatuur in een medische omgeving wordt vaak gereinigd en gedesinfecteerd. Daarom werken we meestal in RVS 304 of 316, lassen we met TIG en werken we naden en randen glad af. Na het lassen passiveren we, zodat de beschermende oxidelaag zich herstelt; waar een egaal oppervlak gewenst is, stralen we met glasparels."
+  - "Lasersnijden, kanten, lassen en nabewerken gebeuren onder één dak in Hengelo. Kanten doen we volgens ISO 2768 en het laswerk valt onder ISO 3834-2, met maatcontrole voordat een serie doorloopt."
+  - "Wij zijn niet gecertificeerd volgens ISO 13485 en assembleren niet in een cleanroom. Wij leveren de metalen delen en samenstellingen aan; de eindassemblage en de medische registratie liggen bij de fabrikant van het apparaat."
+materials: ["RVS 304", "RVS 316", "Aluminium"]
+process:
+  - { step: "Engineering", desc: "Meedenken over maakbaarheid, lasvolgorde en reinigbaarheid." }
+  - { step: "Snijden & kanten", desc: "Lasersnijden en kanten volgens ISO 2768." }
+  - { step: "Lassen", desc: "TIG-lassen onder ISO 3834-2, naden glad afgewerkt." }
+  - { step: "Afwerken", desc: "Ontbramen, glasparelstralen en passiveren." }
+applications: ["Frames en onderstellen", "Omkastingen en behuizingen", "Panelen", "Gelaste samenstellingen"]
+related:
+  - { slug: "plaatwerk/rvs", label: "RVS-plaatwerk", desc: "Corrosiebestendig plaatwerk." }
+  - { slug: "plaatwerk/lassen", label: "Lassen", desc: "TIG, MIG/MAG en laserlassen." }
+  - { slug: "plaatwerk/voedingsmiddelenindustrie", label: "Voedingsindustrie", desc: "Hygiënisch RVS-plaatwerk." }
+kerncijfers:
+- waarde: 304 / 316
+  label: RVS-kwaliteiten
+- waarde: ISO 3834-2
+  label: lassen
+- waarde: ISO 2768
+  label: kanttoleranties
+- waarde: 100–200 μm
+  label: glasparels
+aanleveren:
+- PDF-tekening en een 3D STEP-bestand
+- Materiaalsoort en plaatdikte
+- Aantal stuks
+- Gewenste oppervlakteafwerking per deel
+faq:
+- vraag: Zijn jullie gecertificeerd volgens ISO 13485?
+  antwoord: Nee. Wij zijn gecertificeerd volgens ISO 9001, ISO 3834-2 en EN 1090-1. ISO 13485 geldt voor de fabrikant van
+    het medische hulpmiddel; wij leveren de metalen delen en samenstellingen volgens uw tekening en specificatie.
+- vraag: Welke afwerking leveren jullie voor medische apparatuur?
+  antwoord: Meestal RVS 304 of 316 met glad afgewerkte lasnaden. Na het lassen passiveren we; waar een egaal oppervlak
+    gewenst is, stralen we met glasparels van 100 tot 200 μm in onze straalcabine.
+- vraag: Assembleren jullie in een cleanroom?
+  antwoord: Nee. Wij leveren de delen en samenstellingen aan, met de afwerking die u voorschrijft. De eindassemblage
+    gebeurt bij u of uw assemblagepartner.
+seo:
+  title: Plaatwerk voor de medische industrie
+  description: "RVS-plaatwerk, frames en behuizingen voor medische apparatuur. TIG-lassen onder ISO 3834-2, glad afgewerkte naden, passiveren en glasparelstralen."
+translated: ["nl"]
+
+# Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+en:
+  title: Medical industry
+  kicker: Sector
+  h1: Sheet metal and welding for the medical industry
+  intro: Builders of medical equipment need dimensionally accurate parts with a smooth, cleanable finish. We make
+    custom stainless steel sheet metal, frames and enclosures, from single part to welded assembly.
+  heroPhoto:
+    subject: Finished stainless steel product from the workshop
+  body:
+  - "For builders of medical and laboratory equipment we make frames, bases, housings, panels and enclosures. This
+    concerns the structure and outer shell of the equipment: we do not make implants or instruments that enter the
+    body."
+  - Equipment in a medical environment is cleaned and disinfected often. That is why we usually work in stainless
+    steel 304 or 316, weld with TIG and finish seams and edges smooth. After welding we passivate, so the protective
+    oxide layer recovers; where an even surface is required, we glass-bead blast.
+  - Laser cutting, bending, welding and finishing take place under one roof in Hengelo. Bending follows ISO 2768,
+    welding falls under ISO 3834-2, and dimensions are checked before a series runs.
+  - We are not certified to ISO 13485 and do not assemble in a cleanroom. We supply the metal parts and assemblies;
+    final assembly and medical registration remain with the manufacturer of the device.
+  materials:
+  - Stainless steel 304
+  - Stainless steel 316
+  - Aluminium
+  process:
+  - step: Engineering
+    desc: Advice on manufacturability, welding sequence and cleanability.
+  - step: Cutting & bending
+    desc: Laser cutting and bending to ISO 2768.
+  - step: Welding
+    desc: TIG welding under ISO 3834-2, seams finished smooth.
+  - step: Finishing
+    desc: Deburring, glass-bead blasting and passivation.
+  applications:
+  - Frames and bases
+  - Housings and enclosures
+  - Panels
+  - Welded assemblies
+  related:
+  - label: Stainless steel sheet metal
+    desc: Corrosion-resistant sheet metal.
+  - label: Welding
+    desc: TIG, MIG/MAG and laser welding.
+  - label: Food industry
+    desc: Hygienic stainless steel sheet metal.
+  kerncijfers:
+  - waarde: 304 / 316
+    label: stainless steel grades
+  - waarde: ISO 3834-2
+    label: welding
+  - waarde: ISO 2768
+    label: bending tolerances
+  - waarde: 100–200 μm
+    label: glass beads
+  aanleveren:
+  - PDF drawing and a 3D STEP file
+  - Material and sheet thickness
+  - Number of parts
+  - Required surface finish per part
+  faq:
+  - vraag: Are you certified to ISO 13485?
+    antwoord: No. We are certified to ISO 9001, ISO 3834-2 and EN 1090-1. ISO 13485 applies to the manufacturer of the
+      medical device; we supply the metal parts and assemblies to your drawing and specification.
+  - vraag: Which finish do you supply for medical equipment?
+    antwoord: Usually stainless steel 304 or 316 with smoothly finished weld seams. After welding we passivate; where an
+      even surface is required, we blast with glass beads of 100 to 200 μm in our blast cabin.
+  - vraag: Do you assemble in a cleanroom?
+    antwoord: No. We supply the parts and assemblies with the finish you specify. Final assembly takes place at your
+      site or at your assembly partner.
+  seo:
+    title: Sheet metal for the medical industry
+    description: Stainless steel sheet metal, frames and enclosures for medical equipment. TIG welding under ISO 3834-2, smooth seams, passivation and glass-bead blasting.
+
+# Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
+de:
+  title: Medizintechnik
+  kicker: Branche
+  h1: Blechbearbeitung und Schweißen für die Medizintechnik
+  intro: Hersteller medizinischer Geräte brauchen maßhaltige Teile mit einer glatten, reinigbaren Oberfläche. Wir
+    fertigen Edelstahlblech, Rahmen und Gehäuse nach Maß, vom Einzelteil bis zur geschweißten Baugruppe.
+  heroPhoto:
+    subject: Fertiges Edelstahlprodukt aus der Werkstatt
+  body:
+  - Für Hersteller medizinischer Geräte und Laborgeräte fertigen wir Rahmen, Untergestelle, Verkleidungen, Paneele
+    und Gehäuse. Es geht um die Konstruktion und die Außenhülle der Geräte; Implantate und Instrumente, die in den
+    Körper gelangen, fertigen wir nicht.
+  - Geräte im medizinischen Umfeld werden häufig gereinigt und desinfiziert. Deshalb arbeiten wir meist in Edelstahl
+    304 oder 316, schweißen WIG und arbeiten Nähte und Kanten glatt aus. Nach dem Schweißen passivieren wir, damit
+    sich die schützende Oxidschicht wieder bildet; wo eine gleichmäßige Oberfläche gewünscht ist, strahlen wir mit
+    Glasperlen.
+  - Laserschneiden, Abkanten, Schweißen und Nachbearbeitung erfolgen unter einem Dach in Hengelo. Abgekantet wird
+    nach ISO 2768, das Schweißen erfolgt nach ISO 3834-2, und vor dem Serienlauf prüfen wir die Maße.
+  - Wir sind nicht nach ISO 13485 zertifiziert und montieren nicht im Reinraum. Wir liefern die Metallteile und
+    Baugruppen; Endmontage und Zulassung liegen beim Hersteller des Geräts.
+  materials:
+  - Edelstahl 304
+  - Edelstahl 316
+  - Aluminium
+  process:
+  - step: Engineering
+    desc: Beratung zu Fertigbarkeit, Schweißfolge und Reinigbarkeit.
+  - step: Schneiden & Abkanten
+    desc: Laserschneiden und Abkanten nach ISO 2768.
+  - step: Schweißen
+    desc: WIG-Schweißen nach ISO 3834-2, Nähte glatt ausgearbeitet.
+  - step: Nachbearbeitung
+    desc: Entgraten, Glasperlstrahlen und Passivieren.
+  applications:
+  - Rahmen und Untergestelle
+  - Verkleidungen und Gehäuse
+  - Paneele
+  - Geschweißte Baugruppen
+  related:
+  - label: Edelstahl-Blechbearbeitung
+    desc: Korrosionsbeständige Blechteile.
+  - label: Schweißen
+    desc: WIG, MIG/MAG und Laserschweißen.
+  - label: Lebensmittelindustrie
+    desc: Hygienische Edelstahlbleche.
+  kerncijfers:
+  - waarde: 304 / 316
+    label: Edelstahlgüten
+  - waarde: ISO 3834-2
+    label: Schweißen
+  - waarde: ISO 2768
+    label: Abkanttoleranzen
+  - waarde: 100–200 μm
+    label: Glasperlen
+  aanleveren:
+  - PDF-Zeichnung und eine 3D-STEP-Datei
+  - Werkstoff und Blechdicke
+  - Stückzahl
+  - Gewünschte Oberfläche je Teil
+  faq:
+  - vraag: Sind Sie nach ISO 13485 zertifiziert?
+    antwoord: Nein. Wir sind nach ISO 9001, ISO 3834-2 und EN 1090-1 zertifiziert. ISO 13485 gilt für den Hersteller des
+      Medizinprodukts; wir liefern die Metallteile und Baugruppen nach Ihrer Zeichnung und Spezifikation.
+  - vraag: Welche Oberfläche liefern Sie für medizinische Geräte?
+    antwoord: Meist Edelstahl 304 oder 316 mit glatt ausgearbeiteten Schweißnähten. Nach dem Schweißen passivieren wir;
+      wo eine gleichmäßige Oberfläche gewünscht ist, strahlen wir mit Glasperlen von 100 bis 200 μm in unserer Strahlkabine.
+  - vraag: Montieren Sie im Reinraum?
+    antwoord: Nein. Wir liefern die Teile und Baugruppen mit der von Ihnen vorgeschriebenen Oberfläche. Die Endmontage
+      erfolgt bei Ihnen oder Ihrem Montagepartner.
+  seo:
+    title: Blechbearbeitung für die Medizintechnik
+    description: Edelstahlblech, Rahmen und Gehäuse für medizinische Geräte. WIG-Schweißen nach ISO 3834-2, glatte Nähte, Passivieren und Glasperlstrahlen.
