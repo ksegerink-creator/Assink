@@ -7,13 +7,12 @@ inFooter: false
 kicker: Sector
 h1: Als het écht moet kloppen.
 intro: >-
-  Complexe constructies, hoge kwaliteitseisen en technische uitdagingen. Juist
-  dan komt het vakmanschap van Assink & Schipholt tot zijn recht.
+  Complexe constructies, hoge kwaliteitseisen en technische uitdagingen. Juist dan komt het vakmanschap van
+  Assink & Schipholt tot zijn recht.
 
-  Van robuuste frames en behuizingen tot complexe gelaste samenstellingen in
-  staal, RVS en aluminium. Wij denken mee over de maakbaarheid en combineren
-  specialistische kennis met nauwkeurige productie, gecontroleerde lasprocessen
-  en aantoonbare kwaliteit.
+  Van robuuste frames en behuizingen tot complexe gelaste samenstellingen in staal, RVS en aluminium. Wij
+  denken mee over de maakbaarheid en combineren specialistische kennis met nauwkeurige productie,
+  gecontroleerde lasprocessen en aantoonbare kwaliteit.
 fotobank: tig-lassen
 foto: /src/assets/uploads/services/defensie/foto.png
 heroPhoto:
@@ -23,16 +22,13 @@ heroPhoto:
   comp: Representatief werk uit deze sector
 body:
   - >-
-    Voor defensietoepassingen maken we frames, behuizingen en gelaste
-    samenstellingen tot 10 ton in staal, RVS en aluminium. Het plaatwerk snijden
-    we op de laser en kanten we op de servo-elektrische kantbank; samenstellen
-    en lassen gebeurt in eigen huis in Hengelo.
+    Voor defensietoepassingen maken we frames, behuizingen en gelaste samenstellingen tot 10 ton in staal, RVS
+    en aluminium. Het plaatwerk snijden we op de laser en kanten we op de servo-elektrische kantbank;
+    samenstellen en lassen gebeurt in eigen huis in Hengelo.
   - >-
-    Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we
-    gecertificeerd volgens EN 1090-1. Lasmethodes leggen we vast en
-    maatcontroles registreren we per order, zodat herleidbaar blijft hoe een
-    onderdeel is gemaakt. Oppervlaktebehandeling besteden we uit aan een vaste
-    partner.
+    Ons laswerk valt onder ISO 3834-2 en voor staalconstructies zijn we gecertificeerd volgens EN 1090-1.
+    Lasmethodes leggen we vast en maatcontroles registreren we per order, zodat herleidbaar blijft hoe een
+    onderdeel is gemaakt. Oppervlaktebehandeling besteden we uit aan een vaste partner.
 materials:
   - Staal
   - RVS 304
@@ -48,16 +44,20 @@ process:
   - step: Keuring & documentatie
     desc: Maatcontrole en vastlegging per order.
 specs: []
-kerncijfers:
-  - waarde: 10 ton
-    label: max. stukgewicht
-  - waarde: 8 m
-    label: max. bouwhoogte
-  - waarde: ISO 3834-2
-    label: laswerk
-  - waarde: EN 1090-1
-    label: staalconstructies
-kenmerken: []
+kerncijfers: []
+kenmerken:
+  - icoon: gereedschap
+    titel: Complex maatwerk
+    tekst: Van technisch vraagstuk tot maakbare constructie.
+  - icoon: schild
+    titel: Gecertificeerd laswerk
+    tekst: Kwaliteitsborging volgens ISO 3834-2.
+  - icoon: gewicht
+    titel: Tot 10 ton
+    tekst: Frames, behuizingen en complete samenstellingen.
+  - icoon: checklist
+    titel: Aantoonbare kwaliteit
+    tekst: Maatcontrole en documentatie per order.
 aanleveren:
   - PDF-tekening en een 3D STEP-bestand
   - Materiaalsoort en plaatdikte
@@ -70,19 +70,17 @@ applications:
 faq:
   - vraag: Onder welke normen werken jullie?
     antwoord: >-
-      Wij werken onder ISO 9001. Ons laswerk valt onder ISO 3834-2, en voor
-      staalconstructies zijn we gecertificeerd volgens EN 1090-1. Stelt uw
-      project aanvullende eisen, geef die dan vooraf aan, dan beoordelen we of
-      en hoe we daaraan kunnen voldoen.
+      Wij werken onder ISO 9001. Ons laswerk valt onder ISO 3834-2, en voor staalconstructies zijn we
+      gecertificeerd volgens EN 1090-1. Stelt uw project aanvullende eisen, geef die dan vooraf aan, dan
+      beoordelen we of en hoe we daaraan kunnen voldoen.
   - vraag: Is herleidbaar hoe een onderdeel gemaakt is?
     antwoord: >-
-      Ja. Lasmethodes leggen we vast, materiaalcertificaten controleren we bij
-      binnenkomst en maatcontroles registreren we per order. Zo blijft
-      herleidbaar welk materiaal en welke las in een onderdeel zitten.
+      Ja. Lasmethodes leggen we vast, materiaalcertificaten controleren we bij binnenkomst en maatcontroles
+      registreren we per order. Zo blijft herleidbaar welk materiaal en welke las in een onderdeel zitten.
   - vraag: Verzorgen jullie ook de oppervlaktebehandeling?
     antwoord: >-
-      Oppervlaktebehandeling besteden wij uit aan een vaste partner. Stralen met
-      glasparels kunnen we voor aluminium en RVS in eigen huis doen.
+      Oppervlaktebehandeling besteden wij uit aan een vaste partner. Stralen met glasparels kunnen we voor
+      aluminium en RVS in eigen huis doen.
 related:
   - slug: constructies
     label: Constructies
@@ -97,8 +95,8 @@ cards: []
 seo:
   title: Gelaste constructies voor defensie
   description: >-
-    Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie in
-    staal, RVS en aluminium. Laswerk onder ISO 3834-2, EN 1090-1 gecertificeerd.
+    Frames, behuizingen en gelaste samenstellingen tot 10 ton voor defensie in staal, RVS en aluminium.
+    Laswerk onder ISO 3834-2, EN 1090-1 gecertificeerd.
 translated:
   - nl
   - en
@@ -106,25 +104,25 @@ translated:
 en:
   title: Defence
   kicker: Industry
-  h1: Welded structures and sheet metal for defence
+  h1: When it really has to be right.
   intro: >-
-    Defence applications call for robust, dimensionally accurate structures with
-    documented welding procedures. We make frames, enclosures and welded
-    assemblies in steel, stainless steel and aluminium, with dimensional
-    inspection and documentation per order.
+    Complex structures, demanding quality requirements and technical challenges. That is exactly where the
+    craftsmanship of Assink & Schipholt comes into its own.
+
+    From robust frames and enclosures to complex welded assemblies in steel, stainless steel and aluminium. We
+    think along about manufacturability and combine specialist knowledge with accurate production, controlled
+    welding processes and demonstrable quality.
   heroPhoto:
     subject: TIG welding close-up
   body:
     - >-
-      For defence applications we make frames, enclosures and welded assemblies
-      up to 10 tonnes in steel, stainless steel and aluminium. Sheet metal is
-      laser cut and bent on the servo-electric press brake; assembly and welding
-      take place in house in Hengelo.
+      For defence applications we make frames, enclosures and welded assemblies up to 10 tonnes in steel,
+      stainless steel and aluminium. Sheet metal is laser cut and bent on the servo-electric press brake;
+      assembly and welding take place in house in Hengelo.
     - >-
-      Our welding falls under ISO 3834-2 and our steel structures are certified
-      to EN 1090-1. Welding procedures are documented and dimensional
-      inspections recorded per order, so it stays traceable how a part was made.
-      Surface treatment is outsourced to a regular partner.
+      Our welding falls under ISO 3834-2 and our steel structures are certified to EN 1090-1. Welding
+      procedures are documented and dimensional inspections recorded per order, so it stays traceable how a
+      part was made. Surface treatment is outsourced to a regular partner.
   materials:
     - Steel
     - Stainless steel 304
@@ -140,16 +138,16 @@ en:
     - step: Inspection & documentation
       desc: Dimensional inspection and records per order.
   specs: []
-  kerncijfers:
-    - waarde: 10 t
-      label: max. piece weight
-    - waarde: 8 m
-      label: max. build height
-    - waarde: ISO 3834-2
-      label: welding
-    - waarde: EN 1090-1
-      label: steel structures
-  kenmerken: []
+  kerncijfers: []
+  kenmerken:
+    - titel: Complex custom work
+      tekst: From technical question to buildable structure.
+    - titel: Certified welding
+      tekst: Quality assurance to ISO 3834-2.
+    - titel: Up to 10 tonnes
+      tekst: Frames, enclosures and complete assemblies.
+    - titel: Demonstrable quality
+      tekst: Dimensional inspection and documentation per order.
   aanleveren:
     - PDF drawing and a 3D STEP file
     - Material and sheet thickness
@@ -162,19 +160,17 @@ en:
   faq:
     - vraag: Which standards do you work to?
       antwoord: >-
-        We work under ISO 9001. Our welding falls under ISO 3834-2, and for
-        steel structures we are certified to EN 1090-1. If your project has
-        additional requirements, state them in advance and we will assess
+        We work under ISO 9001. Our welding falls under ISO 3834-2, and for steel structures we are certified
+        to EN 1090-1. If your project has additional requirements, state them in advance and we will assess
         whether and how we can meet them.
     - vraag: Is it traceable how a part was made?
       antwoord: >-
-        Yes. We document welding procedures, check material certificates on
-        arrival and record dimensional inspections per order. That keeps it
-        traceable which material and which weld are in a part.
+        Yes. We document welding procedures, check material certificates on arrival and record dimensional
+        inspections per order. That keeps it traceable which material and which weld are in a part.
     - vraag: Do you also take care of surface treatment?
       antwoord: >-
-        Surface treatment is outsourced to a regular partner. Glass bead
-        blasting of aluminium and stainless steel can be done in house.
+        Surface treatment is outsourced to a regular partner. Glass bead blasting of aluminium and stainless
+        steel can be done in house.
   related:
     - label: Structures
       desc: Welded structural work up to 10 tonnes.
@@ -186,32 +182,30 @@ en:
   seo:
     title: Welded structures for defence
     description: >-
-      Frames, enclosures and welded assemblies up to 10 tonnes for defence in
-      steel, stainless steel and aluminium. Welding under ISO 3834-2, EN 1090-1
-      certified.
+      Frames, enclosures and welded assemblies up to 10 tonnes for defence in steel, stainless steel and
+      aluminium. Welding under ISO 3834-2, EN 1090-1 certified.
 de:
   title: Wehrtechnik
   kicker: Branche
-  h1: Geschweißte Konstruktionen und Blech für die Wehrtechnik
+  h1: Wenn es wirklich stimmen muss.
   intro: >-
-    Wehrtechnische Anwendungen verlangen robuste, maßhaltige Konstruktionen mit
-    dokumentierten Schweißanweisungen. Wir fertigen Rahmen, Gehäuse und
-    geschweißte Baugruppen aus Stahl, Edelstahl und Aluminium, mit Maßkontrolle
-    und Dokumentation je Auftrag.
+    Komplexe Konstruktionen, hohe Qualitätsanforderungen und technische Herausforderungen. Genau dann zeigt
+    sich das Handwerk von Assink & Schipholt.
+
+    Von robusten Rahmen und Gehäusen bis zu komplexen Schweißbaugruppen in Stahl, Edelstahl und Aluminium. Wir
+    denken bei der Fertigbarkeit mit und verbinden Fachwissen mit präziser Fertigung, kontrollierten
+    Schweißprozessen und nachweisbarer Qualität.
   heroPhoto:
     subject: WIG-Schweißen in Nahaufnahme
   body:
     - >-
-      Für wehrtechnische Anwendungen fertigen wir Rahmen, Gehäuse und
-      geschweißte Baugruppen bis 10 Tonnen aus Stahl, Edelstahl und Aluminium.
-      Das Blech schneiden wir auf dem Laser und kanten es auf der
-      servoelektrischen Abkantpresse; Zusammenbau und Schweißen erfolgen im
-      eigenen Haus in Hengelo.
+      Für wehrtechnische Anwendungen fertigen wir Rahmen, Gehäuse und geschweißte Baugruppen bis 10 Tonnen aus
+      Stahl, Edelstahl und Aluminium. Das Blech schneiden wir auf dem Laser und kanten es auf der
+      servoelektrischen Abkantpresse; Zusammenbau und Schweißen erfolgen im eigenen Haus in Hengelo.
     - >-
-      Unsere Schweißarbeiten fallen unter ISO 3834-2, für Stahlkonstruktionen
-      sind wir nach EN 1090-1 zertifiziert. Schweißanweisungen werden festgelegt
-      und Maßkontrollen je Auftrag erfasst, sodass nachvollziehbar bleibt, wie
-      ein Teil gefertigt wurde. Die Oberflächenbehandlung vergeben wir an einen
+      Unsere Schweißarbeiten fallen unter ISO 3834-2, für Stahlkonstruktionen sind wir nach EN 1090-1
+      zertifiziert. Schweißanweisungen werden festgelegt und Maßkontrollen je Auftrag erfasst, sodass
+      nachvollziehbar bleibt, wie ein Teil gefertigt wurde. Die Oberflächenbehandlung vergeben wir an einen
       festen Partner.
   materials:
     - Stahl
@@ -228,16 +222,16 @@ de:
     - step: Prüfung & Dokumentation
       desc: Maßkontrolle und Erfassung je Auftrag.
   specs: []
-  kerncijfers:
-    - waarde: 10 t
-      label: max. Stückgewicht
-    - waarde: 8 m
-      label: max. Bauhöhe
-    - waarde: ISO 3834-2
-      label: Schweißen
-    - waarde: EN 1090-1
-      label: Stahlkonstruktionen
-  kenmerken: []
+  kerncijfers: []
+  kenmerken:
+    - titel: Komplexe Sonderanfertigung
+      tekst: Von der technischen Frage zur fertigbaren Konstruktion.
+    - titel: Zertifiziertes Schweißen
+      tekst: Qualitätssicherung nach ISO 3834-2.
+    - titel: Bis 10 Tonnen
+      tekst: Rahmen, Gehäuse und komplette Baugruppen.
+    - titel: Nachweisbare Qualität
+      tekst: Maßkontrolle und Dokumentation je Auftrag.
   aanleveren:
     - PDF-Zeichnung und eine 3D-STEP-Datei
     - Werkstoff und Blechdicke
@@ -250,21 +244,18 @@ de:
   faq:
     - vraag: Nach welchen Normen arbeiten Sie?
       antwoord: >-
-        Wir arbeiten nach ISO 9001. Unsere Schweißarbeiten fallen unter ISO
-        3834-2, und für Stahlkonstruktionen sind wir nach EN 1090-1
-        zertifiziert. Stellt Ihr Projekt zusätzliche Anforderungen, geben Sie
-        diese vorab an, dann prüfen wir, ob und wie wir sie erfüllen können.
+        Wir arbeiten nach ISO 9001. Unsere Schweißarbeiten fallen unter ISO 3834-2, und für
+        Stahlkonstruktionen sind wir nach EN 1090-1 zertifiziert. Stellt Ihr Projekt zusätzliche
+        Anforderungen, geben Sie diese vorab an, dann prüfen wir, ob und wie wir sie erfüllen können.
     - vraag: Ist nachvollziehbar, wie ein Teil hergestellt wurde?
       antwoord: >-
-        Ja. Schweißverfahren legen wir fest, Werkstoffzeugnisse prüfen wir bei
-        Eingang und Maßkontrollen dokumentieren wir je Auftrag. So bleibt
-        nachvollziehbar, welcher Werkstoff und welche Schweißnaht in einem Teil
-        stecken.
+        Ja. Schweißverfahren legen wir fest, Werkstoffzeugnisse prüfen wir bei Eingang und Maßkontrollen
+        dokumentieren wir je Auftrag. So bleibt nachvollziehbar, welcher Werkstoff und welche Schweißnaht in
+        einem Teil stecken.
     - vraag: Übernehmen Sie auch die Oberflächenbehandlung?
       antwoord: >-
-        Die Oberflächenbehandlung vergeben wir an einen festen Partner.
-        Glasperlstrahlen von Aluminium und Edelstahl können wir im eigenen Haus
-        erledigen.
+        Die Oberflächenbehandlung vergeben wir an einen festen Partner. Glasperlstrahlen von Aluminium und
+        Edelstahl können wir im eigenen Haus erledigen.
   related:
     - label: Konstruktionen
       desc: Geschweißte Konstruktionen bis 10 Tonnen.
@@ -276,6 +267,5 @@ de:
   seo:
     title: Schweißkonstruktionen für Wehrtechnik
     description: >-
-      Rahmen, Gehäuse und Schweißbaugruppen bis 10 t für die Wehrtechnik in
-      Stahl, Edelstahl und Aluminium. Schweißen nach ISO 3834-2, EN 1090-1
-      zertifiziert.
+      Rahmen, Gehäuse und Schweißbaugruppen bis 10 t für die Wehrtechnik in Stahl, Edelstahl und Aluminium.
+      Schweißen nach ISO 3834-2, EN 1090-1 zertifiziert.
