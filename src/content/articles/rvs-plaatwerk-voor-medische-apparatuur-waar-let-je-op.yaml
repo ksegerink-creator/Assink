@@ -1,0 +1,111 @@
+title: 'RVS-plaatwerk voor medische apparatuur: waar let je op?'
+slug: rvs-plaatwerk-voor-medische-apparatuur-waar-let-je-op
+date: '2026-10-26'
+intro: >-
+  Medische en laboratoriumapparatuur wordt vaak gereinigd en gedesinfecteerd.
+  Dat stelt eisen aan het metaal waar de apparatuur van gemaakt is: aan de
+  materiaalkeuze, aan de lasnaden en aan de afwerking van het oppervlak. In dit
+  artikel zetten we op een rij waar een engineer of inkoper op let bij frames,
+  onderstellen, omkastingen en behuizingen in RVS, en wat je van een
+  plaatwerkpartner mag verwachten.
+secties:
+  - kop: Het gaat om de constructie en de buitenkant
+    alineas:
+      - >-
+        Bij medische apparatuur denken veel mensen meteen aan instrumenten en
+        implantaten. Het plaatwerk zit ergens anders: in het frame dat de
+        apparatuur draagt, het onderstel waarop hij staat, en de omkasting,
+        panelen en behuizingen die de techniek afschermen. Die delen komen niet
+        in het lichaam, maar wel in een omgeving waar ze vaak schoongemaakt
+        worden.
+      - >-
+        Voor dat werk is een plaatwerkbedrijf de juiste partner. Implantaten en
+        instrumenten die in het lichaam komen, vallen buiten wat wij maken.
+    lijst: []
+  - kop: 'Materiaalkeuze: RVS 304 of 316'
+    alineas:
+      - >-
+        Omdat de apparatuur vaak gereinigd en gedesinfecteerd wordt, is RVS
+        meestal de voor de hand liggende keuze. RVS 304 volstaat voor veel
+        toepassingen. RVS 316 bevat molybdeen en is beter bestand tegen
+        chloriden, bijvoorbeeld uit bepaalde reinigings- en desinfectiemiddelen.
+      - >-
+        Welke kwaliteit past, hangt af van de omgeving en van de middelen
+        waarmee het apparaat schoongemaakt wordt. Zet de gewenste kwaliteit op
+        de tekening; twijfel je, bespreek het dan vooraf. Waar gewicht telt,
+        kan aluminium een alternatief zijn voor delen die niet direct met
+        reinigingsmiddelen in aanraking komen.
+    lijst: []
+  - kop: Lasnaden en randen glad afwerken
+    alineas:
+      - >-
+        Op plekken waar vuil kan blijven zitten, is reinigen lastiger. Daarom
+        lassen we RVS voor dit soort apparatuur met TIG, wat een fijne,
+        gecontroleerde lasnaad geeft, en werken we naden en randen glad af.
+        Na het lasersnijden ontbramen we de randen machinaal, zodat er geen
+        scherpe kanten overblijven.
+      - >-
+        Geef op de tekening aan welke naden in het zicht of in het
+        reinigingsgebied liggen. Dan weet de werkvoorbereiding waar de
+        afwerking het zwaarst weegt.
+    lijst: []
+  - kop: 'Na het lassen: passiveren en eventueel stralen'
+    alineas:
+      - >-
+        Door het lassen verliest RVS rond de lasnaad een deel van zijn
+        beschermende oxidelaag. Passiveren herstelt die laag, en daarmee de
+        corrosiebestendigheid. Bij RVS dat gelast is, hoort passiveren dus
+        standaard bij de afwerking. Meer daarover lees je in ons artikel
+        <a href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom RVS
+        passiveren na het lassen</a>.
+      - >-
+        Waar een egaal, mat oppervlak gewenst is, stralen we met glasparels van
+        100 tot 200 μm in onze straalcabine van 8 × 4 × 3 meter. Stralen haalt
+        aanloopkleuren en verontreiniging weg, maar vervangt het passiveren
+        niet: bij gelast RVS doe je het allebei.
+    lijst: []
+  - kop: Wat je van een plaatwerkpartner mag verwachten
+    alineas:
+      - >-
+        Lasersnijden, kanten, lassen en nabewerken gebeuren bij ons onder één
+        dak in Hengelo. Kanten doen we volgens ISO 2768 en ons laswerk valt
+        onder ISO 3834-2; we zijn daarnaast gecertificeerd volgens ISO 9001 en
+        EN 1090-1. Voordat een serie doorloopt, controleren we de maten.
+      - >-
+        Twee dingen doen wij niet, en dat is goed om vooraf te weten: wij zijn
+        niet gecertificeerd volgens ISO 13485, en wij assembleren niet in een
+        cleanroom. Wij leveren de metalen delen en samenstellingen aan; de
+        eindassemblage en de medische registratie liggen bij de fabrikant van
+        het apparaat. Meer over ons werk voor deze sector vind je op de pagina
+        <a href="/medische-industrie/">medische industrie</a>.
+    lijst:
+      - Een PDF-tekening en een 3D STEP-bestand
+      - De RVS-kwaliteit (304 of 316) en de plaatdikte
+      - Welke naden en vlakken in het zicht of in het reinigingsgebied liggen
+      - De gewenste afwerking per deel, en het aantal stuks
+faq:
+  - vraag: Is RVS 304 voldoende voor medische apparatuur?
+    antwoord: >-
+      Voor veel frames, omkastingen en panelen wel. Komt het apparaat in
+      aanraking met chloridehoudende reinigings- of desinfectiemiddelen, dan is
+      RVS 316 vaak de betere keuze. De omgeving en de reinigingsmethode bepalen
+      wat past; bespreek het vooraf als je twijfelt.
+  - vraag: Moet RVS na het lassen gepassiveerd worden?
+    antwoord: >-
+      Ja. Lassen tast de beschermende oxidelaag rond de lasnaad aan; passiveren
+      herstelt die. Glasparelstralen geeft een egaal oppervlak, maar vervangt
+      het passiveren niet.
+  - vraag: Zijn jullie gecertificeerd volgens ISO 13485?
+    antwoord: >-
+      Nee. Wij zijn gecertificeerd volgens ISO 9001, ISO 3834-2 en EN 1090-1.
+      ISO 13485 geldt voor de fabrikant van het medische hulpmiddel; wij leveren
+      de metalen delen en samenstellingen volgens tekening en specificatie.
+gepubliceerd: true
+diensten:
+  - medische-industrie
+  - plaatwerk/rvs
+seo:
+  title: RVS-plaatwerk voor medische apparatuur
+  description: >-
+    Waar let je op bij RVS-frames, omkastingen en behuizingen voor medische
+    apparatuur? Over RVS 304 of 316, gladde lasnaden, passiveren en stralen.
