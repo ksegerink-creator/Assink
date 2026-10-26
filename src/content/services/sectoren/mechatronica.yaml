@@ -14,11 +14,11 @@ heroPhoto:
   comp: "Representatief werk uit deze sector"
 body:
   - "Wij maken machineframes, montagebeugels, kabelgoten en afschermpanelen — in staal, RVS en aluminium. Buislasersnijden is hier vaak de snelste route: uitsparingen, gaten en verstekken zitten al in het profiel voordat er gelast wordt."
-  - "Voor de opbouw is maatvastheid bepalend. We kanten op ± 0,2 mm en controleren de maten na het lassen, omdat warmte-inbreng een samenstelling kan laten werken. Verspaande delen betrekken we van een vaste partner."
+  - "Voor de opbouw is maatvastheid bepalend. We kanten volgens ISO 2768 en controleren de maten na het lassen, omdat warmte-inbreng een samenstelling kan laten werken. Verspaande delen betrekken we van een vaste partner."
 materials: ["Aluminium", "Staal", "RVS 304", "RVS 316"]
 process:
   - { step: "Buislasersnijden", desc: "Profielen met uitsparingen en verstekken." }
-  - { step: "Kanten", desc: "Maatvaste panelen en beugels, ± 0,2 mm." }
+  - { step: "Kanten", desc: "Maatvaste panelen en beugels, ISO 2768." }
   - { step: "Lassen", desc: "Vervormingsarm TIG- of laserlassen." }
   - { step: "Maatcontrole", desc: "Meten na het lassen." }
 applications: ["Machineframes", "Montagebeugels", "Afschermpanelen", "Kabelgoten"]
@@ -27,8 +27,8 @@ related:
   - { slug: "machinebouw", label: "Machinebouw", desc: "Complete bouwgroepen." }
   - { slug: "plaatwerk/laserlassen", label: "Laserlassen", desc: "Vervormingsarme naden." }
 kerncijfers:
-- waarde: ± 0,2 mm
-  label: kantnauwkeurigheid
+- waarde: ISO 2768
+  label: kanttoleranties
 - waarde: ø 150 mm
   label: max. ronde buis
 - waarde: 120 × 120 mm
@@ -54,7 +54,7 @@ faq:
     één aanspreekpunt bestellen.
 seo:
   title: Plaatwerk voor mechatronica
-  description: "Maatvaste machineframes, beugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten tot ± 0,2 mm, vervormingsarm lassen."
+  description: "Maatvaste frames, beugels en afschermpanelen voor mechatronica in aluminium, staal en RVS. Buislasersnijden, kanten volgens ISO 2768, vervormingsarm lassen."
 translated: ["nl"]
 
 # Engelse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
@@ -70,7 +70,7 @@ en:
   - 'We make machine frames, mounting brackets, cable trays and guard panels — in steel, stainless steel
     and aluminium. Tube laser cutting is often the fastest route here: cut-outs, holes and mitres are already
     in the profile before any welding starts.'
-  - For the build-up, dimensional stability is decisive. We bend to ± 0.2 mm and check dimensions after
+  - For the build-up, dimensional stability is decisive. We bend to ISO 2768 tolerances and check dimensions after
     welding, because heat input can make an assembly move. Machined parts are sourced from a regular partner.
   materials:
   - Aluminium
@@ -81,7 +81,7 @@ en:
   - step: Tube laser cutting
     desc: Profiles with cut-outs and mitres.
   - step: Bending
-    desc: Dimensionally stable panels and brackets, ± 0.2 mm.
+    desc: Dimensionally stable panels and brackets, ISO 2768.
   - step: Welding
     desc: Low-distortion TIG or laser welding.
   - step: Dimensional check
@@ -99,8 +99,8 @@ en:
   - label: Laser welding
     desc: Low-distortion seams.
   kerncijfers:
-  - waarde: ± 0.2 mm
-    label: bending accuracy
+  - waarde: ISO 2768
+    label: bending tolerances
   - waarde: ø 150 mm
     label: max. round tube
   - waarde: 120 × 120 mm
@@ -126,7 +126,7 @@ en:
       parts through a single point of contact.
   seo:
     title: Sheet metal for mechatronics
-    description: Accurate machine frames, brackets and guard panels for mechatronics in aluminium, steel and stainless steel. Tube laser cutting and bending to ± 0.2 mm.
+    description: Accurate machine frames, brackets and guard panels for mechatronics in aluminium, steel and stainless steel. Tube laser cutting and bending to ISO 2768.
 
 # Duitse vertaling. Alleen tekst: foto's, slug en volgorde komen uit het Nederlands hierboven.
 de:
@@ -141,7 +141,7 @@ de:
   - 'Wir fertigen Maschinenrahmen, Montagewinkel, Kabelkanäle und Schutzpaneele — in Stahl, Edelstahl und
     Aluminium. Rohrlaserschneiden ist hier oft der schnellste Weg: Ausschnitte, Bohrungen und Gehrungen
     sitzen bereits im Profil, bevor geschweißt wird.'
-  - Für den Aufbau ist Maßhaltigkeit entscheidend. Wir kanten auf ± 0,2 mm und prüfen die Maße nach dem
+  - Für den Aufbau ist Maßhaltigkeit entscheidend. Wir kanten nach ISO 2768 und prüfen die Maße nach dem
     Schweißen, weil die Wärmeeinbringung eine Baugruppe arbeiten lassen kann. Zerspante Teile beziehen wir
     von einem festen Partner.
   materials:
@@ -153,7 +153,7 @@ de:
   - step: Rohrlaserschneiden
     desc: Profile mit Ausschnitten und Gehrungen.
   - step: Abkanten
-    desc: Maßhaltige Paneele und Winkel, ± 0,2 mm.
+    desc: Maßhaltige Paneele und Winkel, ISO 2768.
   - step: Schweißen
     desc: Verzugsarmes WIG- oder Laserschweißen.
   - step: Maßkontrolle
@@ -171,8 +171,8 @@ de:
   - label: Laserschweißen
     desc: Verzugsarme Nähte.
   kerncijfers:
-  - waarde: ± 0,2 mm
-    label: Abkantgenauigkeit
+  - waarde: ISO 2768
+    label: Abkanttoleranzen
   - waarde: ø 150 mm
     label: max. Rundrohr
   - waarde: 120 × 120 mm
@@ -198,4 +198,4 @@ de:
       Teilen bei einem Ansprechpartner bestellen.
   seo:
     title: Blech für die Mechatronik
-    description: Maßhaltige Maschinenrahmen, Winkel und Schutzpaneele für die Mechatronik in Aluminium, Stahl und Edelstahl. Rohrlaserschneiden und Abkanten bis ± 0,2 mm.
+    description: Maßhaltige Maschinenrahmen, Winkel und Schutzpaneele für die Mechatronik in Aluminium, Stahl und Edelstahl. Rohrlaserschneiden und Abkanten nach ISO 2768.
