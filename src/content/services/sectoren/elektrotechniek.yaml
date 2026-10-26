@@ -26,7 +26,7 @@ body:
   - >-
     Maatvastheid is hier belangrijker dan snelheid: een kast die een halve
     millimeter uit het lood staat, sluit niet. Onze kantbank werkt
-    servo-elektrisch met een nauwkeurigheid van ± 0,2 mm, en na het kanten
+    servo-elektrisch met toleranties volgens ISO 2768, en na het kanten
     ontbramen we de randen machinaal.
 materials:
   - Staal
@@ -37,15 +37,15 @@ process:
   - step: Lasersnijden
     desc: Uitsparingen voor wartels, displays en ventilatie.
   - step: Kanten
-    desc: Maatvaste kastdelen, ± 0,2 mm.
+    desc: Maatvaste kastdelen, ISO 2768.
   - step: Lassen & samenstellen
     desc: TIG-, MIG- of laserlassen tot complete behuizing.
   - step: Afwerken
     desc: Ontbramen, stralen of passiveren.
 specs: []
 kerncijfers:
-  - waarde: ± 0,2 mm
-    label: kantnauwkeurigheid
+  - waarde: ISO 2768
+    label: kanttoleranties
   - waarde: 3100 mm
     label: zetlengte
   - waarde: 4000 × 2000 mm
@@ -68,7 +68,7 @@ faq:
     antwoord: Met pers- en trekmoeren die we in eigen huis inzetten, dus zonder losse bewerkingen achteraf. Wordt
       de kast gepoedercoat, dan moet de schroefdraad worden afgedekt of nabewerkt; dat nemen we mee in de planning.
   - vraag: Hoe zorgen jullie dat een kastdeur goed sluit?
-    antwoord: 'Door maatvast te kanten: onze servo-elektrische kantbank haalt ± 0,2 mm, en lange panelen tot 3100
+    antwoord: 'Door maatvast te kanten: onze servo-elektrische kantbank kant volgens ISO 2768, en lange panelen tot 3100
       mm kanten we in één keer. Na het kanten ontbramen we de randen machinaal.'
 related:
   - slug: industriele-behuizing
@@ -84,9 +84,8 @@ cards: []
 seo:
   title: Plaatwerk voor de elektrotechniek
   description: >-
-    Maatvaste kastdelen, montageplaten en behuizingen voor de elektrotechniek in
-    staal, RVS en aluminium. Lasersnijden, kanten tot ± 0,2 mm en lassen in
-    eigen huis.
+    Maatvaste kastdelen, montageplaten en behuizingen voor elektrotechniek in
+    staal, RVS en aluminium. Lasersnijden, kanten volgens ISO 2768 en lassen in huis.
 translated:
   - nl
 en:
@@ -108,7 +107,7 @@ en:
     - >-
       Dimensional accuracy matters more here than speed: a cabinet half a
       millimetre out of true will not close. Our press brake is servo-electric
-      with an accuracy of ± 0.2 mm, and after bending we deburr the edges by
+      with tolerances to ISO 2768, and after bending we deburr the edges by
       machine.
   materials:
     - Steel
@@ -119,15 +118,15 @@ en:
     - step: Laser cutting
       desc: Cut-outs for glands, displays and ventilation.
     - step: Bending
-      desc: Dimensionally stable cabinet parts, ± 0.2 mm.
+      desc: Dimensionally stable cabinet parts, ISO 2768.
     - step: Welding & assembly
       desc: TIG, MIG or laser welding through to the complete enclosure.
     - step: Finishing
       desc: Deburring, blasting or passivation.
   specs: []
   kerncijfers:
-    - waarde: ± 0.2 mm
-      label: bending accuracy
+    - waarde: ISO 2768
+      label: bending tolerances
     - waarde: 3100 mm
       label: press brake length
     - waarde: 4000 × 2000 mm
@@ -151,7 +150,7 @@ en:
         If the cabinet is powder coated, the threads have to be masked or reworked; we take that into account in the
         planning.
     - vraag: How do you make sure a cabinet door closes properly?
-      antwoord: 'By bending accurately: our servo-electric press brake achieves ± 0.2 mm, and long panels up to 3100
+      antwoord: 'By bending accurately: our servo-electric press brake bends to ISO 2768 tolerances, and long panels up to 3100
         mm are bent in one go. After bending we deburr the edges by machine.'
   related:
     - label: Industrial enclosures
@@ -164,7 +163,7 @@ en:
   seo:
     title: Sheet metal for electrical engineering
     description: >-
-      Accurate cabinet parts, mounting plates and enclosures for electrical engineering in steel, stainless and aluminium. Laser cutting and bending to ± 0.2 mm.
+      Accurate cabinet parts, mounting plates and enclosures for electrical engineering in steel, stainless and aluminium. Laser cutting and bending to ISO 2768.
 de:
   title: Elektrotechnik
   kicker: Branche
@@ -185,7 +184,7 @@ de:
     - >-
       Maßhaltigkeit ist hier wichtiger als Geschwindigkeit: Ein Schrank, der
       einen halben Millimeter aus dem Lot steht, schließt nicht. Unsere
-      Abkantpresse arbeitet servoelektrisch mit einer Genauigkeit von ± 0,2 mm,
+      Abkantpresse arbeitet servoelektrisch mit Toleranzen nach ISO 2768,
       und nach dem Kanten entgraten wir die Kanten maschinell.
   materials:
     - Stahl
@@ -196,15 +195,15 @@ de:
     - step: Laserschneiden
       desc: Ausschnitte für Verschraubungen, Displays und Belüftung.
     - step: Abkanten
-      desc: Maßhaltige Schrankteile, ± 0,2 mm.
+      desc: Maßhaltige Schrankteile, ISO 2768.
     - step: Schweißen & Zusammenbau
       desc: WIG-, MIG- oder Laserschweißen bis zum kompletten Gehäuse.
     - step: Nachbearbeitung
       desc: Entgraten, Strahlen oder Passivieren.
   specs: []
   kerncijfers:
-    - waarde: ± 0,2 mm
-      label: Abkantgenauigkeit
+    - waarde: ISO 2768
+      label: Abkanttoleranzen
     - waarde: 3100 mm
       label: Abkantlänge
     - waarde: 4000 × 2000 mm
@@ -229,7 +228,7 @@ de:
         im Nachhinein. Wird der Schrank pulverbeschichtet, muss das Gewinde abgedeckt oder nachgearbeitet werden; das
         berücksichtigen wir in der Planung.
     - vraag: Wie sorgen Sie dafür, dass eine Schranktür gut schließt?
-      antwoord: 'Durch maßhaltiges Abkanten: Unsere servoelektrische Abkantpresse erreicht ± 0,2 mm, und lange Paneele
+      antwoord: 'Durch maßhaltiges Abkanten: Unsere servoelektrische Abkantpresse kantet nach ISO 2768, und lange Paneele
         bis 3100 mm kanten wir in einem Zug. Nach dem Abkanten entgraten wir die Kanten maschinell.'
   related:
     - label: Industriegehäuse
@@ -242,4 +241,4 @@ de:
   seo:
     title: Blechbearbeitung für die Elektrotechnik
     description: >-
-      Maßhaltige Schrankteile, Montageplatten und Gehäuse für die Elektrotechnik in Stahl, Edelstahl und Aluminium. Laserschneiden und Abkanten bis ± 0,2 mm.
+      Maßhaltige Schrankteile, Montageplatten und Gehäuse für die Elektrotechnik in Stahl, Edelstahl und Aluminium. Laserschneiden und Abkanten nach ISO 2768.

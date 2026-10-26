@@ -32,7 +32,7 @@ capabilities:
     omschrijving: >-
       Precisieplaatwerk in staal, RVS, aluminium en messing. Lasersnijden,
       kanten en afwerken — enkelstuks en serie, maatvast tot op de millimeter.
-    annotatie: Kantbank · ± 0,2 mm
+    annotatie: Kantbank · ISO 2768
     link: plaatwerk
     foto: /src/assets/uploads/capabilities/0/foto.jpeg
   - nummer: '02'
@@ -116,7 +116,7 @@ en:
         Precision sheet metal in steel, stainless steel, aluminium and brass.
         Laser cutting, bending and finishing — one-offs and series,
         dimensionally accurate to the millimetre.
-      annotatie: Press brake · ± 0.2 mm
+      annotatie: Press brake · ISO 2768
     - nummer: '02'
       titel: Constructions & welding
       omschrijving: >-
@@ -187,7 +187,7 @@ de:
         Präzisionsblech in Stahl, Edelstahl, Aluminium und Messing.
         Laserschneiden, Abkanten und Nachbearbeiten — Einzelstücke und Serien,
         maßhaltig bis auf den Millimeter.
-      annotatie: Abkantpresse · ± 0,2 mm
+      annotatie: Abkantpresse · ISO 2768
     - nummer: '02'
       titel: Konstruktionen & Schweißen
       omschrijving: >-

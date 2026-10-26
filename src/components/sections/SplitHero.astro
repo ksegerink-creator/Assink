@@ -42,7 +42,8 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
     <div class="xhero__panel">
       {kicker && <span class="mono xhero__kicker">{kicker}</span>}
       <slot name="title">{title && <h1>{title}</h1>}</slot>
-      {lead && <p class="xhero__lead">{lead}</p>}
+      {/* Een witregel in de intro (Keystatic) wordt een nieuwe alinea. */}
+      {lead && lead.split(/\n+/).filter((r) => r.trim()).map((r) => <p class="xhero__lead">{r}</p>)}
       <slot />
     </div>
     {
@@ -79,6 +80,7 @@ const { kicker, title, lead, image, alt, position = "center", placeholder, prior
   }
   .xhero__kicker { color: var(--pale); letter-spacing: .14em; }
   .xhero__lead { color: var(--pale); font-size: clamp(16px, 1.5vw, 19px); line-height: 1.55; max-width: 28em; }
+  .xhero__lead + .xhero__lead { margin-top: 12px; }
 
   /* Titel en slot-inhoud komen uit de ouder: die hebben een andere scope. */
   /*
