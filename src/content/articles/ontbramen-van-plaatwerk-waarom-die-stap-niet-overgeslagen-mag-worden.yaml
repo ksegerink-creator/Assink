@@ -1,87 +1,106 @@
-title: "Ontbramen van plaatwerk: waarom die stap niet overgeslagen mag worden"
+title: 'Ontbramen van plaatwerk: waarom die stap niet overgeslagen mag worden'
 slug: ontbramen-van-plaatwerk-waarom-die-stap-niet-overgeslagen-mag-worden
-date: "2026-11-02"
-intro: "Na het lasersnijden zit er aan de snijrand van een plaatwerk onderdeel
-  vrijwel altijd een braam: een scherpe, opstaande rand die tijdens het
-  snijproces ontstaat. Die braam lijkt een cosmetisch detail, maar heeft directe
-  gevolgen voor veiligheid, verdere bewerking en eindkwaliteit. In dit artikel
-  leggen we uit wat een braam precies is, waarom plaatwerk ontbramen een vaste
-  stap in het proces is, en hoe wij dat machinaal doen."
+date: '2026-11-02'
+intro: >-
+  Na het lasersnijden zit er aan de snijrand van een plaatwerk onderdeel vrijwel
+  altijd een braam: een scherpe, opstaande rand die tijdens het snijproces
+  ontstaat. Die braam lijkt een cosmetisch detail, maar heeft directe gevolgen
+  voor veiligheid, verdere bewerking en eindkwaliteit. In dit artikel leggen we
+  uit wat een braam precies is, waarom plaatwerk ontbramen een vaste stap in het
+  proces is, en hoe wij dat machinaal doen.
 secties:
   - kop: Wat is een braam en hoe ontstaat die?
     alineas:
-      - "Bij het lasersnijden smelt en verdampt de laser het materiaal langs de
+      - >-
+        Bij het lasersnijden smelt en verdampt de laser het materiaal langs de
         snijlijn. Aan de onderzijde van de plaat kan hierbij gesmolten materiaal
         opnieuw stollen tot een dunne, scherpe rand: de braam. Hoe uitgesproken
         die braam is, hangt af van het materiaal, de plaatdikte en de ingestelde
         snijparameters. Een braam is in de praktijk niet volledig te voorkomen;
-        het is een normaal gevolg van het snijproces zelf."
+        het is een normaal gevolg van het snijproces zelf.
+    lijst: []
   - kop: Waarom moet de braam eraf?
     alineas:
-      - Een onbehandelde braam levert op meerdere plekken in het proces
+      - >-
+        Een onbehandelde braam levert op meerdere plekken in het proces
         problemen op.
-      - Bij het verder verwerken van een onderdeel telt de braam mee. Tijdens
+      - >-
+        Bij het verder verwerken van een onderdeel telt de braam mee. Tijdens
         kanten kan een braam de aanleg tegen de kantbank verstoren, wat ten
         koste gaat van de maatvoering. Bij lassen zit de braam vaak precies op
         de plek waar de lasnaad komt, wat de hechting en het aanzicht van de las
         negatief beïnvloedt. Bij coaten of poedercoaten zorgt een scherpe rand
         voor een dunnere laagdikte op die plek, waardoor de deklaag daar sneller
         faalt.
-      - Daarnaast is een braam een reëel veiligheidsrisico. Scherpe randen aan
+      - >-
+        Daarnaast is een braam een reëel veiligheidsrisico. Scherpe randen aan
         plaatwerk onderdelen leveren snijwonden op bij handmatige hantering,
         zowel bij ons in productie als later bij montage bij de klant. Dat maakt
         ontbramen ook een kwestie van arbeidsveiligheid, niet alleen van
         esthetiek of maatvoering.
+    lijst: []
   - kop: Machinaal ontbramen met de Timesavers 42 Series RB
     alineas:
-      - Voor het ontbramen van plaatwerk zetten wij de Timesavers 42 Series RB
+      - >-
+        Voor het ontbramen van plaatwerk zetten wij de Timesavers 42 Series RB
         in, een borstel- en afbraammachine. Onderdelen worden door de machine
         gevoerd, waarbij borstels en schuurelementen de scherpe snijranden
         verwijderen en de oppervlakken gelijkmatig afwerken. Machinaal ontbramen
         zorgt voor een consistent resultaat over de hele batch, in tegenstelling
         tot handmatig afbramen waar de uitkomst sterk afhankelijk is van de
         uitvoerende persoon.
-      - 'Deze machinale stap is onderdeel van onze standaard nabehandeling en
+      - >-
+        Deze machinale stap is onderdeel van onze standaard nabehandeling en
         wordt ingezet voor diverse materialen, waaronder staal, RVS en
         aluminium. Bij RVS is ontbramen de eerste stap in een vaste volgorde:
         eerst ontbramen, waar nodig aansluitend glasparelstralen, en na het
         lassen passiveren om de beschermende oxidelaag te herstellen. Meer over
         die laatste stap leest u in ons artikel over <a
         href="/kennisbank/waarom-rvs-passiveren-na-het-lassen/">waarom RVS
-        passiveren na het lassen</a> nodig is.'
+        passiveren na het lassen</a> nodig is.
+    lijst: []
   - kop: Geef bij uw aanvraag aan of delen ontbraamd geleverd moeten worden
     alineas:
-      - Niet elk onderdeel heeft dezelfde eisen aan de afwerking. Een paneel dat
+      - >-
+        Niet elk onderdeel heeft dezelfde eisen aan de afwerking. Een paneel dat
         zichtbaar blijft in een eindproduct of met de hand gemonteerd wordt,
         vraagt om een andere afwerkingsgraad dan een onderdeel dat verder
         wegvalt in een constructie. Door bij uw aanvraag expliciet aan te geven
         of onderdelen ontbraamd geleverd moeten worden, voorkomt u discussie
         achteraf over de geleverde kwaliteit en kunnen wij de juiste
         bewerkingsstap meteen in het proces meenemen.
-      - Meer informatie over onze werkwijze rond deze nabehandelingsstap vindt u
+      - >-
+        Meer informatie over onze werkwijze rond deze nabehandelingsstap vindt u
         op <a href="/plaatwerk/ontbramen/">onze pagina over plaatwerk
         ontbramen</a>.
+    lijst: []
 faq:
   - vraag: Is ontbramen bij elk materiaal nodig?
-    antwoord: "Bij vrijwel elk lasergesneden materiaal ontstaat een braam, of het nu
+    antwoord: >-
+      Bij vrijwel elk lasergesneden materiaal ontstaat een braam, of het nu
       staal, RVS of aluminium betreft. De noodzaak om te ontbramen hangt af van
       de vervolgstap: wordt het onderdeel gekant, gelast, gecoat of handmatig
-      gemonteerd, dan is ontbramen aan te raden."
+      gemonteerd, dan is ontbramen aan te raden.
   - vraag: Kan ontbramen ook handmatig?
-    antwoord: Handmatig afbramen is mogelijk, maar levert een minder consistent
+    antwoord: >-
+      Handmatig afbramen is mogelijk, maar levert een minder consistent
       resultaat op dan machinaal ontbramen. Bij grotere series geeft een
       borstel- en afbraammachine een gelijkmatiger resultaat over alle
       onderdelen.
   - vraag: Wordt ontbramen standaard toegepast, of moet ik dit apart aangeven?
-    antwoord: Geef dit bij uw aanvraag aan, zodat wij de juiste afwerkingsgraad voor
-      uw onderdelen kunnen vastleggen en meenemen in het proces.
+    antwoord: >-
+      Geef dit bij uw aanvraag aan, zodat wij de juiste afwerkingsgraad voor uw
+      onderdelen kunnen vastleggen en meenemen in het proces.
   - vraag: Heeft ontbramen invloed op de maatvoering van het onderdeel?
-    antwoord: Ontbramen richt zich op het verwijderen van de scherpe snijrand en
-      heeft geen noemenswaardige invloed op de hoofdafmetingen van het
-      onderdeel. Het draagt juist bij aan een betrouwbare aanleg bij
-      vervolgstappen zoals kanten en lassen.
-gepubliceerd: false
+    antwoord: >-
+      Ontbramen richt zich op het verwijderen van de scherpe snijrand en heeft
+      geen noemenswaardige invloed op de hoofdafmetingen van het onderdeel. Het
+      draagt juist bij aan een betrouwbare aanleg bij vervolgstappen zoals
+      kanten en lassen.
+gepubliceerd: true
+diensten: []
 seo:
-  title: "Plaatwerk ontbramen: waarom deze stap belangrijk is"
-  description: Waarom plaatwerk ontbramen na lasersnijden nodig is voor
-    veiligheid, kanten, lassen en coaten, en hoe wij dit machinaal uitvoeren.
+  title: 'Plaatwerk ontbramen: waarom deze stap belangrijk is'
+  description: >-
+    Waarom plaatwerk ontbramen na lasersnijden nodig is voor veiligheid, kanten,
+    lassen en coaten, en hoe wij dit machinaal uitvoeren.
