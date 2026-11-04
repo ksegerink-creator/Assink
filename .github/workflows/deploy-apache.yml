@@ -1,0 +1,152 @@
+# Bouwt de Apache-versie van de site en zet die bij elke push naar main op de
+# DirectAdmin-server (62.84.247.85, gebruiker assink). Een opslag in Keystatic
+# (= commit op main), een gemergede pull request of een concept van de
+# bloggenerator gaat zo live zonder dat iemand iets met de hand uploadt.
+#
+# Wat dit op de server raakt: alleen de root van het FTP-account, en dat is
+# domains/assinkschipholt.nl/public_html/. private/config.php (de geheimen van
+# het formulier) staat daarnaast, buiten die root, en is voor deze workflow
+# onbereikbaar.
+#
+# Secrets (Settings → Secrets and variables → Actions), met de hand in te vullen:
+#   FTP_SERVER    srv.baas-metaal.nl (de naam op het certificaat van de
+#                 FTP-dienst; niet het IP, zie apache/README.md)
+#   FTP_USERNAME  deploy@assinkschipholt.nl
+#   FTP_PASSWORD  uit de wachtwoordmanager
+
+name: Deploy naar DirectAdmin
+
+on:
+  push:
+    branches: [main]
+  # Commits van een andere workflow (met GITHUB_TOKEN) starten geen nieuwe
+  # push-run. "Foto's verkleinen" zet zo'n commit op main; daarna dus opnieuw.
+  workflow_run:
+    workflows: ["Foto's verkleinen"]
+    types: [completed]
+  workflow_dispatch:
+
+# Nooit twee uploads tegelijk: de tweede zou een half geschreven sync-status lezen.
+concurrency:
+  group: deploy-apache
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  SERVER_IP: 62.84.247.85
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Controleer of de FTP-secrets zijn ingesteld
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          missing=0
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Secret $name ontbreekt. Zet hem onder Settings → Secrets and variables → Actions."
+              missing=1
+            fi
+          done
+          exit $missing
+
+      - uses: actions/checkout@v4
+        with:
+          # Bij workflow_run de nieuwste stand van main, inclusief de verkleinde foto's.
+          ref: main
+
+      # Zelfde versie als package.json → engines en als Vercel.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installeren
+        run: npm ci
+
+      # PUBLIC_SITE_LIVE staat in build:apache standaard aan. Het GA4-meet-ID is
+      # openbaar (het staat in elke pagina); het is hetzelfde als PUBLIC_GA_ID op
+      # Vercel. Wijzigen? Hier én in Vercel aanpassen.
+      - name: Apache-versie bouwen
+        env:
+          PUBLIC_GA_ID: G-RT6CSTJ45W
+        run: npm run build:apache
+
+      - name: Build controleren
+        run: |
+          test -f dist-apache/public_html/.htaccess
+          test -f dist-apache/public_html/_form/aanvraag.php
+          test -f dist-apache/public_html/_form/.user.ini
+          test -f dist-apache/public_html/404.html
+          grep -q 'G-RT6CSTJ45W' dist-apache/public_html/index.html
+          if grep -q 'name="robots" content="noindex' dist-apache/public_html/index.html; then
+            echo "::error::De homepage heeft noindex; PUBLIC_SITE_LIVE staat niet aan."; exit 1
+          fi
+
+      # De FTP-server stuurt zijn certificaat zonder de tussencertificaten van
+      # Let's Encrypt, en Node weigert dat ("unable to verify the first
+      # certificate"). Haal ze op zoals een browser dat doet; de uploadstap
+      # controleert daarna nog steeds de hele keten en de servernaam.
+      - name: Certificaatketen van de FTP-server aanvullen
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        run: |
+          openssl s_client -starttls ftp -connect "$FTP_SERVER:21" -servername "$FTP_SERVER" </dev/null 2>/dev/null \
+            | openssl x509 -out "$RUNNER_TEMP/ftp-server.pem"
+          openssl x509 -in "$RUNNER_TEMP/ftp-server.pem" -noout -subject -issuer -enddate
+          bash scripts/fetch-cert-chain.sh "$RUNNER_TEMP/ftp-server.pem" > "$RUNNER_TEMP/ftp-chain.pem"
+
+      # Uploadt alleen wat sinds de vorige run is veranderd; de stand staat in
+      # .ftp-deploy-sync-state.json op de server (de .htaccess serveert dat
+      # bestand niet). Verborgen bestanden (.htaccess, _form/.user.ini) gaan
+      # mee. Geen clean-slate: wat je zelf op de server zet, blijft staan;
+      # alleen bestanden die uit de build verdwijnen, haalt de action weg.
+      #
+      # TLS 1.2 alleen voor deze stap: elke FTPS-dataverbinding moet de
+      # TLS-sessie van de controleverbinding hergebruiken, en onder TLS 1.3
+      # lukt dat deze action niet op tijd ("read ECONNRESET (data socket)").
+      # Ervaring van baas-metaal.nl op dezelfde server.
+      - name: Uploaden naar de server (FTPS)
+        uses: SamKirkland/FTP-Deploy-Action@8e83cea8672e3fbcbb9fdafff34debf6ae4c5f65 # v4.3.5
+        env:
+          NODE_EXTRA_CA_CERTS: ${{ runner.temp }}/ftp-chain.pem
+          NODE_OPTIONS: --tls-max-v1.2
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          security: strict
+          local-dir: ./dist-apache/public_html/
+          server-dir: ./
+          state-name: .ftp-deploy-sync-state.json
+          log-level: standard
+
+      # Zelfde controle als vóór de livegang, tegen de echte server. Verstuurt
+      # geen bericht. Zolang de DNS nog naar Vercel wijst, wordt de server
+      # rechtstreeks op zijn IP gecontroleerd (zonder certificaatcontrole) en
+      # maakt een fout de run niet rood.
+      - name: DNS bekijken
+        id: dns
+        run: |
+          ip="$(getent ahostsv4 assinkschipholt.nl | awk 'NR==1{print $1}')"
+          echo "assinkschipholt.nl → $ip"
+          if [ "$ip" = "$SERVER_IP" ]; then echo "live=true" >> "$GITHUB_OUTPUT"; else echo "live=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Live site controleren
+        if: steps.dns.outputs.live == 'true'
+        run: node scripts/check-apache.mjs
+
+      - name: Server controleren (DNS nog niet omgezet)
+        if: steps.dns.outputs.live != 'true'
+        continue-on-error: true
+        run: node scripts/check-apache.mjs --ip "$SERVER_IP" -k

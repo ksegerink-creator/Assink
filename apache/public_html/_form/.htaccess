@@ -1,0 +1,7 @@
+# Alleen aanvraag.php is bereikbaar, en alleen via de rewrite van /api/aanvraag
+# in de root-.htaccess. De klassen, settings.json en schema.sql in deze map
+# worden nooit rechtstreeks geserveerd.
+Require all denied
+<Files "aanvraag.php">
+    Require all granted
+</Files>

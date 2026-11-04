@@ -36,6 +36,28 @@ import { astroRedirects } from "./src/data/redirects.ts";
  */
 const SITE = process.env.SITE_URL || "https://assinkschipholt.nl";
 
+/**
+ * `npm run build:apache` bouwt dezelfde site voor de DirectAdmin-server
+ * (Apache + PHP, geen Node). Wat op Vercel als serverless function draait,
+ * valt dan weg of wordt vervangen:
+ *  - /api/aanvraag → PHP-verwerker in apache/public_html/_form/;
+ *  - /api/cron/*   → blijft op Vercel (wordt hier wel gerenderd, maar door
+ *                    scripts/build-apache.mjs weer verwijderd);
+ *  - Keystatic     → blijft op Vercel (GitHub-modus); wordt niet meegebouwd.
+ * Zonder BUILD_TARGET verandert er niets aan de Vercel-build.
+ */
+const APACHE = process.env.BUILD_TARGET === "apache";
+
+/** Rendert in de Apache-build ook de routes die op Vercel on-demand zijn. */
+const prerenderVoorApache = {
+  name: "assink-apache-prerender",
+  hooks: {
+    "astro:route:setup": ({ route }) => {
+      route.prerender = true;
+    },
+  },
+};
+
 export default defineConfig({
   site: SITE,
   /**
@@ -46,7 +68,7 @@ export default defineConfig({
    * (bv. @astrojs/netlify) — de rest van de config blijft gelijk.
    */
   output: "static",
-  adapter: vercel(),
+  ...(APACHE ? {} : { adapter: vercel() }),
   /**
    * Vertrouwde domeinen voor Astro's host-/origin-controle. Twee dingen
    * hangen hiervan af:
@@ -81,8 +103,8 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false, redirectToDefaultLocale: false },
   },
   integrations: [
-    react(),
-    keystatic(),
+    // React is er alleen voor de Keystatic-beheeromgeving.
+    ...(APACHE ? [prerenderVoorApache] : [react(), keystatic()]),
     sitemap({
       // Pagina's met noindex horen niet in de sitemap: Search Console meldt
       // die combinatie als fout ("Uitgesloten door tag noindex").
