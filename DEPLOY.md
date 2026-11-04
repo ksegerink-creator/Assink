@@ -1,5 +1,13 @@
 # Deploy — Assink & Schipholt (Vercel + Keystatic GitHub-modus)
 
+> **November 2026: de site verhuist naar de eigen DirectAdmin-server.**
+> De website en de formulieren draaien daar als Apache-build
+> (`npm run build:apache`, automatisch via `.github/workflows/deploy-apache.yml`).
+> Vercel blijft alleen voor Keystatic en de bloggenerator. Het draaiboek,
+> `private/config.php` en de testlijst staan in **`apache/README.md`**.
+> Wat hieronder over domeinen, formulieren (SMTP/Resend) en livegang op
+> Vercel staat, is de situatie vóór de verhuizing en dient nog als noodplan.
+
 Doel: de site op een (staging-)URL zetten zodat het marketingteam via de browser
 teksten en foto's kan bewerken. De code is hiervoor al voorbereid:
 

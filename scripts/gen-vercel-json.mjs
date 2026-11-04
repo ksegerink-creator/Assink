@@ -11,76 +11,34 @@
  * Eén bron van waarheid: de mapping staat uitsluitend in src/data/redirects.ts.
  * Draai `npm run gen:redirects` na elke wijziging daar.
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { writeFileSync } from "node:fs";
+import { CANONIEK_DOMEIN, SECURITY_HEADERS, leesRedirects } from "./lib/site-regels.mjs";
 
-// redirects.ts is TypeScript; we lezen het als tekst en halen het object eruit
-// met een kleine parser, zodat dit script geen build-stap nodig heeft.
-const src = readFileSync("src/data/redirects.ts", "utf8");
-const body = src.slice(
-  src.indexOf("export const REDIRECTS"),
-  src.indexOf("export const astroRedirects"),
-);
-
-const pairs = [...body.matchAll(/"([^"]+)":\s*\n?\s*"([^"]+)"/g)].map(([, from, to]) => ({
-  from: from.replace(/\/+$/, ""),
-  to,
-}));
-
-if (pairs.length === 0) {
-  console.error("Geen redirects gevonden in src/data/redirects.ts — vercel.json niet aangepast.");
+// De parser en de security headers staan in scripts/lib/site-regels.mjs; de
+// Apache-build (scripts/build-apache.mjs) gebruikt dezelfde bron.
+let pairs;
+try {
+  pairs = leesRedirects();
+} catch (e) {
+  console.error(`${e.message} vercel.json niet aangepast.`);
   process.exit(1);
 }
 
-/**
- * Security headers voor elke respons.
- *
- * De CSP staat bewust in Report-Only: hij blokkeert nog niets, maar meldt wat
- * hij zou blokkeren. Zet hem pas op "Content-Security-Policy" als je in de
- * browserconsole hebt gezien dat er niets stukgaat.
- *
- * Let op de grens van deze CSP: de site heeft alleen inline scripts (JSON-LD,
- * de GA-config en twee kleine progressive-enhancement-scripts), dus
- * 'unsafe-inline' is nodig. Daarmee stopt deze CSP GEEN geinjecteerd inline
- * script. Wil je die bescherming echt, dan is een nonce- of hash-gebaseerde CSP
- * nodig (Astro heeft daar experimentele ondersteuning voor). De escape in
- * BaseLayout.astro is daarom de eigenlijke bescherming, niet deze regel.
- *
- * De Google-hosts staan erin zodat Analytics blijft werken zodra PUBLIC_GA_ID
- * is ingesteld.
- */
-const CSP = [
-  "default-src 'self'",
-  "base-uri 'self'",
-  "object-src 'none'",
-  "frame-ancestors 'self'",
-  "frame-src 'none'",
-  "form-action 'self'",
-  "img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
-  "style-src 'self' 'unsafe-inline'",
-  "font-src 'self' data:",
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
-  "upgrade-insecure-requests",
-].join("; ");
-
-const SECURITY_HEADERS = [
-  // Geen MIME-sniffing: de browser volgt het content-type dat wij sturen.
-  { key: "X-Content-Type-Options", value: "nosniff" },
-  // Clickjacking: de site mag niet in een frame van een andere site staan.
-  { key: "X-Frame-Options", value: "SAMEORIGIN" },
-  // Bij uitgaande links alleen het domein meesturen, niet het volledige pad.
-  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  // Browser-API's die deze site niet gebruikt, expliciet uitzetten.
-  {
-    key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=()",
-  },
-  { key: "Content-Security-Policy-Report-Only", value: CSP },
-];
-
 const config = {
   $schema: "https://openapi.vercel.sh/vercel.json",
-  headers: [{ source: "/(.*)", headers: SECURITY_HEADERS }],
+  headers: [
+    { source: "/(.*)", headers: SECURITY_HEADERS },
+    // Sinds de verhuizing naar de eigen server (november 2026) draait op
+    // Vercel alleen nog Keystatic. Elke host behalve het echte domein — dus de
+    // *.vercel.app-URL — krijgt noindex, zodat die kopie niet als tweede site
+    // in Google komt. Zolang het domein nog op Vercel staat, verandert er
+    // voor assinkschipholt.nl niets.
+    {
+      source: "/(.*)",
+      missing: [{ type: "host", value: CANONIEK_DOMEIN }],
+      headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+    },
+  ],
   // Zie de toelichting bovenaan dit script: (/?) dekt zowel /pad als /pad/.
   redirects: pairs.map(({ from, to }) => ({
     source: `${from}(/?)`,

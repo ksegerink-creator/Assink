@@ -114,7 +114,10 @@ export const POST: APIRoute = async ({ request }) => {
 
   // ── Bijlagen ──────────────────────────────────────────────────────────────
   const bijlagen: { filename: string; content: Buffer }[] = [];
-  const bestanden = data.getAll("tekeningen").filter((b): b is File => b instanceof File && b.size > 0);
+  // "tekeningen[]": met de haken ontvangt PHP (eigen server) alle bestanden
+  // i.p.v. alleen het laatste. "tekeningen" blijft geaccepteerd voor een
+  // pagina die nog uit een oudere build in de cache staat.
+  const bestanden = [...data.getAll("tekeningen[]"), ...data.getAll("tekeningen")].filter((b): b is File => b instanceof File && b.size > 0);
   if (bestanden.length > MAX_BESTANDEN) {
     return antwoord(request, 422, false, `Maximaal ${MAX_BESTANDEN} bestanden per aanvraag.`, terug, taal);
   }

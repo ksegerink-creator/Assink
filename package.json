@@ -11,6 +11,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:apache": "node scripts/build-apache.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "astro": "astro",
@@ -19,7 +20,9 @@
     "menu:check": "node scripts/menu-check.mjs",
     "fotos:check": "node scripts/foto-check.mjs",
     "fotos:verkleinen": "node scripts/fotos-verkleinen.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "urls:lijst": "node scripts/url-lijst.mjs",
+    "check:apache": "node scripts/check-apache.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
