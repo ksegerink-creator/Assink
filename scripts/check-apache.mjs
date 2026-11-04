@@ -157,7 +157,7 @@ for (const pad of ["/robots.txt", "/sitemap-index.xml", "/sitemap-0.xml", "/Bing
   if (r.status === 200) ok();
   else fout(`${pad} gaf ${r.status}`);
 }
-for (const pad of ["/_form/settings.json", "/_form/lib/Store.php", "/_form/lib/schema.sql", "/_form/.user.ini", "/.htaccess", "/.ftp-deploy-sync-state.json"]) {
+for (const pad of ["/_form/settings.json", "/_form/lib/Store.php", "/_form/lib/schema.sql", "/_form/.user.ini", "/.htaccess", "/.ftp-deploy-sync-state.json", "/.ftp-deploy-sync-state.json.tmp"]) {
   const r = curl(BASE + pad);
   if (r.status === 403 || r.status === 404) ok();
   else fout(`${pad} is bereikbaar (${r.status}); hoort afgeschermd te zijn`);
