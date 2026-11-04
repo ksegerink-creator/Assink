@@ -45,7 +45,11 @@ Verborgen bestanden die mee moeten: `public_html/.htaccess`,
    - verplaats de inhoud van `dist-apache/public_html/` naar `public_html/`
      (verwijder eerst de standaard `index.html` van DirectAdmin);
    - verplaats `dist-apache/private/` naar `domains/assinkschipholt.nl/private/`.
-3. Maak `private/config.php` (zie §3) en zet de rechten op `600` of `640`.
+3. Maak `private/config.php` (zie §3) en zet de rechten op **`640`** (eigenaar
+   lezen/schrijven, groep lezen, anderen niets). Zo werkt het ook bij
+   baas-metaal.nl op deze server. Gebruik geen `600`: dan is het niet zeker
+   dat PHP het bestand kan lezen, en meldt het formulier dat het niet kan
+   versturen.
 4. Daarna doet de GitHub Action het; zie §5.
 
 ## 3. `private/config.php`
@@ -135,18 +139,24 @@ Fouten bij de upload (zelfde server als baas-metaal.nl, zie ook die repo):
 
 1. **GitHub App van Keystatic** (github.com/settings/apps → de Keystatic-app →
    General): voeg bij *Callback URL* een **extra** regel toe en laat de
-   bestaande staan: `https://<vercel-url van project assink>/api/keystatic/github/oauth/callback`.
+   bestaande staan: `https://assink.vercel.app/api/keystatic/github/oauth/callback`.
 2. Vercel-variabelen blijven zoals ze zijn (`KEYSTATIC_*`, `PUBLIC_SITE_LIVE=true`,
    `PUBLIC_GA_ID`, cron-variabelen).
 3. Elke host behalve `assinkschipholt.nl` krijgt op Vercel `X-Robots-Tag:
-   noindex, nofollow` (`vercel.json`, uit `scripts/gen-vercel-json.mjs`). De
-   vercel.app-kopie komt dus niet in Google; canonicals wijzen naar het echte
-   domein.
+   noindex, nofollow`. De regel staat in `vercel.json` (gegenereerd door
+   `scripts/gen-vercel-json.mjs`) als header met de voorwaarde
+   `"missing": [{ "type": "host", "value": "assinkschipholt.nl" }]`: Vercel
+   zet de header op elke aanvraag waarvan de Host **niet** `assinkschipholt.nl`
+   is. Voor `assink.vercel.app` (en elke preview-URL) is dat altijd zo, vóór
+   én na de DNS-omzetting; na de omzetting komt er zelfs helemaal geen verkeer
+   met Host `assinkschipholt.nl` meer bij Vercel. Controle:
+   `curl -sI https://assink.vercel.app/ | grep -i x-robots` moet
+   `noindex, nofollow` tonen. Canonicals wijzen bovendien naar het echte domein.
 4. **Pas ná de DNS-omzetting**: Vercel → project `assink` → Settings → Domains
    → `assinkschipholt.nl` en `www.assinkschipholt.nl` verwijderen. Het
    project zelf **niet** verwijderen.
 
-Werken met Keystatic: open `/keystatic` op de vercel.app-URL, log in met
+Werken met Keystatic: open `https://assink.vercel.app/keystatic`, log in met
 GitHub, pas aan, *Opslaan*. Keystatic maakt een commit op `main`; de GitHub
 Action zet het binnen enkele minuten live op assinkschipholt.nl.
 
