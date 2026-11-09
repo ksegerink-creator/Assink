@@ -16,6 +16,10 @@ export const prerender = false;
 
 const GITHUB_REPO = "ksegerink-creator/Assink";
 const GITHUB_BRANCH = "main";
+// Keystatic draait niet op het productiedomein: sinds de verhuizing naar de
+// eigen Apache-server (november 2026) is assinkschipholt.nl statisch en geeft
+// /keystatic daar een 404. Het CMS staat op de Vercel-kopie; zie apache/README.md.
+const KEYSTATIC_URL = (import.meta.env.KEYSTATIC_URL || "https://assink.vercel.app").replace(/\/+$/, "");
 const MODEL = "claude-sonnet-5";
 
 /**
@@ -285,7 +289,7 @@ export const GET: APIRoute = async ({ request }) => {
       await sendMail(
         "Blog-wachtrij is leeg",
         "De automatische blogconceptgenerator vond geen openstaande onderwerpen meer.\n\n" +
-          "Voeg nieuwe onderwerpen toe via Keystatic → Kennisbank → Blog-onderwerpen (wachtrij).",
+          `Voeg nieuwe onderwerpen toe via Keystatic → Kennisbank → Blog-onderwerpen (wachtrij):\n${KEYSTATIC_URL}/keystatic/branch/${GITHUB_BRANCH}/collection/blogOnderwerpen`,
       );
       return new Response(JSON.stringify({ ok: true, message: "Wachtrij leeg — mail verstuurd." }), { status: 200 });
     }
@@ -398,7 +402,7 @@ export const GET: APIRoute = async ({ request }) => {
       `Er staat een nieuw conceptartikel klaar in Keystatic:\n\n"${artikel.title}"\n\n` +
         // In GitHub-modus (productie) heeft Keystatic een /branch/<naam>/-segment
         // nodig in de URL; zonder dat geeft de link "Not found".
-        `Bekijk en publiceer het (of pas het aan) via:\n${SITE.url}/keystatic/branch/${GITHUB_BRANCH}/collection/artikelen/item/${slug}\n\n` +
+        `Bekijk en publiceer het (of pas het aan) via:\n${KEYSTATIC_URL}/keystatic/branch/${GITHUB_BRANCH}/collection/artikelen/item/${slug}\n\n` +
         `Het artikel is NIET live totdat je in Keystatic het vinkje "Gepubliceerd" aanzet en opslaat.`,
     );
 
