@@ -17,8 +17,8 @@ interface Props {
 }
 const { soort } = Astro.props;
 const locale = toLocale(Astro.currentLocale);
-// De privacyverklaring bestaat alleen in het Nederlands.
-const privacy = localizePath("privacy", "nl");
+// Privacyverklaring in de taal van de pagina.
+const privacy = localizePath("privacy", locale);
 /**
  * Op de eigen server (Apache-build) kan het formulier een Cloudflare
  * Turnstile-controle vragen. Of dat zo is en met welke site-sleutel, staat in

@@ -13,9 +13,8 @@ const alg = await readPage("algemeen", locale);
 const { footer: FOOTER_SERVICES } = await menu(locale);
 
 const nav = (slug: string) => localizePath(slug, locale);
-// De privacyverklaring bestaat alleen in het Nederlands (juridische tekst);
-// vanuit elke taal verwijzen we naar die ene versie.
-const privacyHref = localizePath("privacy", "nl");
+// De privacyverklaring bestaat in alle drie de talen.
+const privacyHref = localizePath("privacy", locale);
 const year = 2026;
 ---
 <footer class="ft">

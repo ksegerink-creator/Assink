@@ -31,3 +31,71 @@ secties:
     tekst: "U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op via {email}."
   - kop: "8. Cookies en analytics"
     tekst: "Deze website gebruikt Google Analytics om te meten hoeveel bezoekers de site bezoeken en welke pagina's zij bekijken. Gegevens worden hiervoor gedeeld met Google."
+en:
+  seoTitel: "Privacy statement"
+  seoOmschrijving: "Privacy statement of Assink & Schipholt B.V. — how we handle personal data."
+  kicker: "Legal"
+  titel: "Privacy statement"
+  lead: "How {bedrijf} handles personal data processed through this website."
+  secties:
+    - kop: "1. Controller"
+      tekst: "{bedrijf}, {adres}. Contact: {email} · {telefoon}."
+    - kop: "2. What data"
+      tekst: "We process the data you provide to us yourself through the contact or quotation form (name, company, email, telephone, project information and any files you send). We also use Google Analytics to measure website traffic anonymously (see section 8)."
+    - kop: "3. Purpose and legal basis"
+      tekst: "We use your data to answer your request, prepare a quotation and carry out the order. The legal basis is your request and/or the performance of a contract."
+    - kop: "4. Retention period"
+      tekst: "We do not keep data longer than necessary for these purposes or than required by law."
+    - kop: "5. Sharing with third parties"
+      tekst: "We do not share your data with third parties, unless this is necessary to carry out the order or required by law."
+    - kop: "6. The contact and quotation form"
+      tekst: |-
+        If you fill in the contact or quotation form, we process the details you enter: name, company, email, telephone, your description or message, the required operation, the quantity and your explanation. We also record which form you used, in which language, and when.
+
+        We use these details to answer your request and to prepare a quotation. The legal basis is your request and/or the performance of a contract.
+
+        Your request is sent to us by email and also stored in a database on our web server in the Netherlands. Of attached files, we store only the file name and size in the database. The files themselves are only sent with the email.
+
+        We keep requests in the database for no longer than [BEWAARTERMIJN] after receipt.
+
+        To prevent abuse, we limit the number of messages per connection. We do not store your IP address for this; we only keep a hashed version of it, for no longer than 10 minutes. We also use Cloudflare Turnstile to check that the form is filled in by a person. Turnstile is only loaded when you use the form. For this, Cloudflare processes technical data from your browser and device, such as your IP address and browser characteristics, and may also process it outside the European Union.
+
+        We work with the following processors for this: Flexwebhosting (hosting of the web server, the Netherlands), Microsoft (Microsoft 365, for sending and receiving the email) and Cloudflare (Turnstile).
+    - kop: "7. Your rights"
+      tekst: "You have the right to access, correct and delete your data. Please contact us at {email}."
+    - kop: "8. Cookies and analytics"
+      tekst: "This website uses Google Analytics to measure how many people visit the site and which pages they view. Data is shared with Google for this purpose."
+de:
+  seoTitel: "Datenschutzerklärung"
+  seoOmschrijving: "Datenschutzerklärung der Assink & Schipholt B.V. — wie wir mit personenbezogenen Daten umgehen."
+  kicker: "Rechtliches"
+  titel: "Datenschutzerklärung"
+  lead: "Wie {bedrijf} mit personenbezogenen Daten umgeht, die über diese Website verarbeitet werden."
+  secties:
+    - kop: "1. Verantwortlicher"
+      tekst: "{bedrijf}, {adres}. Kontakt: {email} · {telefoon}."
+    - kop: "2. Welche Daten"
+      tekst: "Wir verarbeiten die Daten, die Sie uns selbst über das Kontakt- oder Angebotsformular mitteilen (Name, Firma, E-Mail, Telefon, Projektinformationen und gegebenenfalls mitgesendete Dateien). Außerdem verwenden wir Google Analytics, um den Websiteverkehr anonymisiert zu messen (siehe Punkt 8)."
+    - kop: "3. Zweck und Rechtsgrundlage"
+      tekst: "Wir verwenden Ihre Daten, um Ihre Anfrage zu beantworten, ein Angebot zu erstellen und den Auftrag auszuführen. Rechtsgrundlage ist Ihre Anfrage und/oder die Erfüllung eines Vertrags."
+    - kop: "4. Speicherdauer"
+      tekst: "Wir speichern Daten nicht länger, als es für diese Zwecke erforderlich oder gesetzlich vorgeschrieben ist."
+    - kop: "5. Weitergabe an Dritte"
+      tekst: "Wir geben Ihre Daten nicht an Dritte weiter, es sei denn, dies ist für die Ausführung des Auftrags erforderlich oder gesetzlich vorgeschrieben."
+    - kop: "6. Das Kontakt- und Angebotsformular"
+      tekst: |-
+        Wenn Sie das Kontakt- oder Angebotsformular ausfüllen, verarbeiten wir die Angaben, die Sie dort machen: Name, Firma, E-Mail, Telefon, Ihre Beschreibung oder Nachricht, die gewünschte Bearbeitung, die Stückzahl und Ihre Erläuterung. Außerdem erfassen wir, über welches Formular und in welcher Sprache Sie die Anfrage gestellt haben und wann.
+
+        Wir verwenden diese Angaben, um Ihre Anfrage zu beantworten und ein Angebot zu erstellen. Rechtsgrundlage ist Ihre Anfrage und/oder die Erfüllung eines Vertrags.
+
+        Ihre Anfrage wird uns per E-Mail zugesandt und zusätzlich in einer Datenbank auf unserem Webserver in den Niederlanden gespeichert. Von mitgesendeten Dateien speichern wir in der Datenbank nur den Dateinamen und die Größe. Die Dateien selbst werden nur mit der E-Mail versendet.
+
+        Wir speichern Anfragen in der Datenbank höchstens [BEWAARTERMIJN] nach Eingang.
+
+        Um Missbrauch zu verhindern, begrenzen wir die Anzahl der Nachrichten pro Verbindung. Ihre IP-Adresse speichern wir dafür nicht; wir speichern nur eine gehashte Version davon, höchstens 10 Minuten lang. Außerdem verwenden wir Cloudflare Turnstile, um zu prüfen, ob das Formular von einem Menschen ausgefüllt wird. Turnstile wird erst geladen, wenn Sie das Formular verwenden. Cloudflare verarbeitet dafür technische Daten Ihres Browsers und Geräts, etwa Ihre IP-Adresse und Browsermerkmale, und kann diese auch außerhalb der Europäischen Union verarbeiten.
+
+        Dabei arbeiten wir mit folgenden Auftragsverarbeitern: Flexwebhosting (Hosting des Webservers, Niederlande), Microsoft (Microsoft 365, für das Senden und Empfangen der E-Mail) und Cloudflare (Turnstile).
+    - kop: "7. Ihre Rechte"
+      tekst: "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Wenden Sie sich dazu an {email}."
+    - kop: "8. Cookies und Analyse"
+      tekst: "Diese Website verwendet Google Analytics, um zu messen, wie viele Besucher die Website besuchen und welche Seiten sie aufrufen. Dafür werden Daten an Google weitergegeben."

@@ -36,8 +36,7 @@ export const REDIRECTS: Record<string, string> = {
   "/en/about-us": "/en/over-ons/",
   "/en/contact-2": "/en/contact/",
   "/en/working-at-assink-schiphol": "/en/vacatures/",
-  // De privacyverklaring bestaat alleen in het Nederlands.
-  "/en/privacy-statement": "/privacy/",
+  "/en/privacy-statement": "/en/privacy/",
   "/en/404-page": "/en/",
 
   // ── 2b. Oude Duitse pagina's ───────────────────────────────────────────
@@ -51,7 +50,7 @@ export const REDIRECTS: Record<string, string> = {
   "/de/ueber-ons": "/de/over-ons/",
   "/de/kontakt": "/de/contact/",
   "/de/arbeiten-bei-assink-schiphol": "/de/vacatures/",
-  "/de/datenschutzerklaerung": "/privacy/",
+  "/de/datenschutzerklaerung": "/de/privacy/",
   "/de/404-seite": "/de/",
 
   // ── 3. WordPress-restanten ─────────────────────────────────────────────

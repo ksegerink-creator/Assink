@@ -567,9 +567,9 @@ const interfaceTeksten = singleton({
 
 
 /**
- * Twee losse Nederlandse pagina's die buiten het drieluik NL/EN/DE vallen: de
- * kennisbank (de artikelen bestaan alleen in het Nederlands) en de
- * privacyverklaring (noindex, één taal).
+ * Twee losse pagina's: de kennisbank (alleen Nederlands; de artikelen bestaan
+ * alleen in het Nederlands) en de privacyverklaring (noindex, NL/EN/DE; de
+ * Engelse en Duitse tekst staan in hetzelfde scherm, onder de Nederlandse).
  *
  * In de privacytekst mag je {bedrijf}, {adres}, {email} en {telefoon}
  * gebruiken; die worden ingevuld uit Bedrijfsgegevens, zodat een verhuizing of
@@ -592,7 +592,7 @@ const privacyPagina = singleton({
   label: "Privacyverklaring",
   path: "src/content/pages/privacy",
   format: { data: "yaml" },
-  schema: {
+  schema: metVertalingen({
     kicker: fields.text({ label: "Kicker" }),
     titel: fields.text({ label: "Titel (H1)" }),
     lead: fields.text({ label: "Introzin", multiline: true }),
@@ -604,7 +604,7 @@ const privacyPagina = singleton({
       { label: "Paragrafen", itemLabel: (p) => p.fields.kop.value },
     ),
     ...seoFields(),
-  },
+  }),
 });
 
 /**
