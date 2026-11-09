@@ -131,19 +131,9 @@ De drie formulieren (hero-offerte, contact, offerte) posten naar
 een externe formulierdienst — klanten sturen tekeningen mee en die horen niet
 door een derde partij te lopen.
 
-**Gekozen route: Resend.** De Microsoft 365-route (SMTP AUTH op `info@`) viel
-destijds af. Resend biedt gewone SMTP, dus de code hoeft niet aangepast te worden.
-
-> **Correctie (november 2026):** hier stond dat het beheer van de
-> `assinkschipholt.nl`-tenant buiten ons bereik lag. Dat klopt niet:
-> `assinkschipholt.nl` zit in dezelfde Microsoft 365-tenant als
-> `baas-metaal.nl` en `twentekracht.nl` ("Metaalbedrijf Baas B.V."), beheerd
-> door Detec. Te controleren via
-> `https://login.microsoftonline.com/assinkschipholt.nl/v2.0/.well-known/openid-configuration`:
-> de tenant-ID in `issuer` is voor alle drie de domeinen gelijk. Op de eigen
-> server verstuurt het formulier daarom via Microsoft 365 (Graph-API), met een
-> app-registratie in die tenant; zie `apache/README.md`. Deze Resend-route
-> geldt alleen nog voor het formulier op Vercel (noodplan).
+**Gekozen route: Resend.** De Microsoft 365-route (SMTP AUTH op `info@`) viel af
+omdat het beheer van de `assinkschipholt.nl`-tenant buiten ons bereik ligt.
+Resend biedt gewone SMTP, dus de code hoeft niet aangepast te worden.
 
 **1. Account en domein.** Maak een account op resend.com en voeg onder
 **Domains** het subdomein `send.assinkschipholt.nl` toe (niet het rootdomein).
