@@ -7,14 +7,27 @@ secties:
   - kop: "1. Verwerkingsverantwoordelijke"
     tekst: "{bedrijf}, {adres}. Contact: {email} · {telefoon}."
   - kop: "2. Welke gegevens"
-    tekst: "Wij verwerken de gegevens die u zelf aan ons verstrekt via het contact- of offerteformulier (naam, bedrijf, e-mail, telefoon, projectinformatie en eventueel meegestuurde bestanden). Daarnaast gebruiken wij Google Analytics om geanonimiseerd websiteverkeer te meten (zie punt 7)."
+    tekst: "Wij verwerken de gegevens die u zelf aan ons verstrekt via het contact- of offerteformulier (naam, bedrijf, e-mail, telefoon, projectinformatie en eventueel meegestuurde bestanden). Daarnaast gebruiken wij Google Analytics om geanonimiseerd websiteverkeer te meten (zie punt 8)."
   - kop: "3. Doel en grondslag"
     tekst: "Wij gebruiken uw gegevens om uw aanvraag te beantwoorden, een offerte op te stellen en de opdracht uit te voeren. De grondslag is uw verzoek en/of de uitvoering van een overeenkomst."
   - kop: "4. Bewaartermijn"
     tekst: "Wij bewaren gegevens niet langer dan noodzakelijk voor deze doeleinden of dan wettelijk vereist."
   - kop: "5. Delen met derden"
     tekst: "Wij delen uw gegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van de opdracht of wettelijk verplicht."
-  - kop: "6. Uw rechten"
+  - kop: "6. Het contact- en offerteformulier"
+    tekst: |-
+      Als u het contact- of offerteformulier invult, verwerken wij de gegevens die u daarin opgeeft: naam, bedrijf, e-mail, telefoon, uw omschrijving of bericht, de gewenste bewerking, het aantal en uw toelichting. Daarnaast leggen wij vast via welk formulier en in welke taal u de aanvraag deed, en wanneer.
+
+      Wij gebruiken deze gegevens om uw aanvraag te beantwoorden en een offerte op te stellen. De grondslag is uw verzoek en/of de uitvoering van een overeenkomst.
+
+      Uw aanvraag wordt per e-mail naar ons verstuurd en daarnaast bewaard in een database op onze webserver in Nederland. Van meegestuurde bestanden bewaren wij in de database alleen de bestandsnaam en de grootte. De bestanden zelf gaan alleen met de e-mail mee.
+
+      Wij bewaren aanvragen in de database maximaal [BEWAARTERMIJN] na ontvangst.
+
+      Om misbruik tegen te gaan, beperken wij het aantal berichten per verbinding. Uw IP-adres slaan wij daarvoor niet op; wij bewaren alleen een gehashte versie ervan, en maximaal 10 minuten. Daarnaast gebruiken wij Cloudflare Turnstile om te controleren of het formulier door een mens wordt ingevuld. Turnstile wordt pas geladen als u het formulier gebruikt. Cloudflare verwerkt daarvoor technische gegevens van uw browser en apparaat, zoals uw IP-adres en browserkenmerken, en kan deze ook buiten de Europese Unie verwerken.
+
+      Hierbij werken wij met de volgende verwerkers: Flexwebhosting (hosting van de webserver, Nederland), Microsoft (Microsoft 365, voor het versturen en ontvangen van de e-mail) en Cloudflare (Turnstile).
+  - kop: "7. Uw rechten"
     tekst: "U heeft recht op inzage, correctie en verwijdering van uw gegevens. Neem hiervoor contact met ons op via {email}."
-  - kop: "7. Cookies en analytics"
+  - kop: "8. Cookies en analytics"
     tekst: "Deze website gebruikt Google Analytics om te meten hoeveel bezoekers de site bezoeken en welke pagina's zij bekijken. Gegevens worden hiervoor gedeeld met Google."

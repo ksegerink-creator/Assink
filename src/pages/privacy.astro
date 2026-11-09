@@ -29,6 +29,17 @@ const fill = (tekst: string) =>
     .replaceAll("{email}", `<a href="mailto:${escape(CONTACT.email)}">${escape(CONTACT.email)}</a>`)
     .replaceAll("{telefoon}", `<a href="${escape(CONTACT.telHref)}">${escape(CONTACT.tel)}</a>`);
 
+/**
+ * Een lege regel in het CMS-tekstveld begint een nieuwe alinea. Zo kan een
+ * langere paragraaf (zoals die over het formulier) leesbaar blijven zonder
+ * extra koppen.
+ */
+const alineas = (tekst: string) =>
+  tekst
+    .split(/\n\s*\n/)
+    .map((a) => a.trim())
+    .filter(Boolean);
+
 /** De introzin staat buiten de prose-kolom; daar willen we geen links in. */
 const plain = (tekst: string) =>
   tekst
@@ -59,7 +70,7 @@ const plain = (tekst: string) =>
           pg.secties.map((sec) => (
             <>
               <h3>{sec.kop}</h3>
-              <p set:html={fill(sec.tekst)} />
+              {alineas(sec.tekst).map((alinea) => <p set:html={fill(alinea)} />)}
             </>
           ))
         }
