@@ -22,7 +22,7 @@ secties:
 
       Uw aanvraag wordt per e-mail naar ons verstuurd en daarnaast bewaard in een database op onze webserver in Nederland. Van meegestuurde bestanden bewaren wij in de database alleen de bestandsnaam en de grootte. De bestanden zelf gaan alleen met de e-mail mee.
 
-      Wij bewaren aanvragen in de database maximaal [BEWAARTERMIJN] na ontvangst.
+      Wij bewaren aanvragen in de database maximaal 12 maanden na ontvangst.
 
       Om misbruik tegen te gaan, beperken wij het aantal berichten per verbinding. Uw IP-adres slaan wij daarvoor niet op; wij bewaren alleen een gehashte versie ervan, en maximaal 10 minuten. Daarnaast gebruiken wij Cloudflare Turnstile om te controleren of het formulier door een mens wordt ingevuld. Turnstile wordt pas geladen als u het formulier gebruikt. Cloudflare verwerkt daarvoor technische gegevens van uw browser en apparaat, zoals uw IP-adres en browserkenmerken, en kan deze ook buiten de Europese Unie verwerken.
 
@@ -56,7 +56,7 @@ en:
 
         Your request is sent to us by email and also stored in a database on our web server in the Netherlands. Of attached files, we store only the file name and size in the database. The files themselves are only sent with the email.
 
-        We keep requests in the database for no longer than [BEWAARTERMIJN] after receipt.
+        We keep requests in the database for no longer than 12 months after receipt.
 
         To prevent abuse, we limit the number of messages per connection. We do not store your IP address for this; we only keep a hashed version of it, for no longer than 10 minutes. We also use Cloudflare Turnstile to check that the form is filled in by a person. Turnstile is only loaded when you use the form. For this, Cloudflare processes technical data from your browser and device, such as your IP address and browser characteristics, and may also process it outside the European Union.
 
@@ -90,7 +90,7 @@ de:
 
         Ihre Anfrage wird uns per E-Mail zugesandt und zusätzlich in einer Datenbank auf unserem Webserver in den Niederlanden gespeichert. Von mitgesendeten Dateien speichern wir in der Datenbank nur den Dateinamen und die Größe. Die Dateien selbst werden nur mit der E-Mail versendet.
 
-        Wir speichern Anfragen in der Datenbank höchstens [BEWAARTERMIJN] nach Eingang.
+        Wir speichern Anfragen in der Datenbank höchstens 12 Monate nach Eingang.
 
         Um Missbrauch zu verhindern, begrenzen wir die Anzahl der Nachrichten pro Verbindung. Ihre IP-Adresse speichern wir dafür nicht; wir speichern nur eine gehashte Version davon, höchstens 10 Minuten lang. Außerdem verwenden wir Cloudflare Turnstile, um zu prüfen, ob das Formular von einem Menschen ausgefüllt wird. Turnstile wird erst geladen, wenn Sie das Formular verwenden. Cloudflare verarbeitet dafür technische Daten Ihres Browsers und Geräts, etwa Ihre IP-Adresse und Browsermerkmale, und kann diese auch außerhalb der Europäischen Union verarbeiten.
 
