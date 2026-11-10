@@ -110,7 +110,7 @@
     },
     {
       "source": "/en/privacy-statement(/?)",
-      "destination": "/privacy/",
+      "destination": "/en/privacy/",
       "permanent": true
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "source": "/de/datenschutzerklaerung(/?)",
-      "destination": "/privacy/",
+      "destination": "/de/privacy/",
       "permanent": true
     },
     {

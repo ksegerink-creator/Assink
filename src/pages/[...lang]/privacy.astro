@@ -2,9 +2,13 @@
 import PageLayout from "@layouts/PageLayout.astro";
 import { SITE, CONTACT } from "@data/site";
 import { readPage } from "@utils/content";
+import { toLocale } from "@utils/paths";
+import { LOCALE_PATHS } from "@utils/locales";
 
 /**
- * Privacyverklaring. Alleen Nederlands en op noindex.
+ * Privacyverklaring in NL, EN en DE, op noindex. Nederlands is de bron; de
+ * Engelse en Duitse tekst staan in hetzelfde CMS-scherm (blok "Engelse/Duitse
+ * vertaling") en vallen per veld terug op het Nederlands.
  *
  * De tekst komt uit het CMS (src/content/pages/privacy.yaml). Het is een
  * juridisch document dat zonder tussenkomst van een ontwikkelaar bij te werken
@@ -16,7 +20,12 @@ import { readPage } from "@utils/content";
  * telefoonnummer niet op twee plekken hoeft te worden bijgewerkt. E-mail en
  * telefoon worden daarbij een echte link.
  */
-const pg = await readPage("privacy", "nl");
+export function getStaticPaths() {
+  return LOCALE_PATHS;
+}
+
+const locale = toLocale(Astro.params.lang);
+const pg = await readPage("privacy", locale);
 
 const escape = (v: string) =>
   v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -28,6 +37,17 @@ const fill = (tekst: string) =>
     .replaceAll("{adres}", escape(CONTACT.addr))
     .replaceAll("{email}", `<a href="mailto:${escape(CONTACT.email)}">${escape(CONTACT.email)}</a>`)
     .replaceAll("{telefoon}", `<a href="${escape(CONTACT.telHref)}">${escape(CONTACT.tel)}</a>`);
+
+/**
+ * Een lege regel in het CMS-tekstveld begint een nieuwe alinea. Zo kan een
+ * langere paragraaf (zoals die over het formulier) leesbaar blijven zonder
+ * extra koppen.
+ */
+const alineas = (tekst: string) =>
+  tekst
+    .split(/\n\s*\n/)
+    .map((a) => a.trim())
+    .filter(Boolean);
 
 /** De introzin staat buiten de prose-kolom; daar willen we geen links in. */
 const plain = (tekst: string) =>
@@ -41,6 +61,7 @@ const plain = (tekst: string) =>
   title={pg.seoTitel}
   description={pg.seoOmschrijving}
   canonicalSlug="privacy"
+  altLocales={["nl", "en", "de"]}
   trail={[{ label: pg.titel, slug: "privacy" }]}
   noindex={true}
 >
@@ -59,7 +80,7 @@ const plain = (tekst: string) =>
           pg.secties.map((sec) => (
             <>
               <h3>{sec.kop}</h3>
-              <p set:html={fill(sec.tekst)} />
+              {alineas(sec.tekst).map((alinea) => <p set:html={fill(alinea)} />)}
             </>
           ))
         }
