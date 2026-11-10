@@ -110,6 +110,11 @@ $mailer = GraphMailer::fromConfig($config);
 $turnstile = Turnstile::fromConfig($config);
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
+// Aanvragen ouder dan de bewaartermijn verwijderen (hooguit één keer per dag).
+// De dagelijkse workflow .github/workflows/opschonen.yml roept GET /api/aanvraag
+// aan, zodat dit ook gebeurt als er een tijd niemand het formulier gebruikt.
+Store::cleanupIfDue($config);
+
 if ($method === 'GET' || $method === 'HEAD') {
     header('Content-Type: application/json; charset=utf-8');
     header('Cache-Control: no-store');

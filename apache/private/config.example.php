@@ -43,6 +43,12 @@ return [
         'password' => '',
     ],
 
+    // Bewaartermijn van aanvragen in de database, in maanden. Moet gelijk zijn
+    // aan paragraaf 6 van de privacyverklaring (nu 12 maanden). Oudere
+    // aanvragen worden automatisch verwijderd, hooguit één keer per dag.
+    // Weglaten = 12.
+    'retention_months' => 12,
+
     // Willekeurige tekst van minstens 32 tekens (bv. `openssl rand -hex 32`).
     // Wordt gebruikt om IP-adressen te hashen voor de limiet van
     // 10 berichten per 10 minuten per verbinding.
