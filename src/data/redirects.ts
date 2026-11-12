@@ -63,6 +63,27 @@ export const REDIRECTS: Record<string, string> = {
   // Oude 404-pagina's waren echte, indexeerbare pagina's.
   "/404-pagina": "/",
 
+  // ── 3b. Vervallen vacatures (12 november 2026) ────────────────────────
+  // Deze vacatures zijn door de klant ingetrokken. De URL's stonden live en
+  // waren geïndexeerd, dus ze gaan naar het vacatureoverzicht in plaats van
+  // naar een 404 — daar staat wat er wél open is.
+  "/vacatures/vakantiewerk": "/vacatures/",
+  "/vacatures/junior-laser-operator": "/vacatures/",
+  "/vacatures/constructiebankwerker-lasser-bbl": "/vacatures/",
+  "/vacatures/constructiebankwerker-lasser-junior": "/vacatures/",
+  "/vacatures/constructiebankwerker-lasser-senior": "/vacatures/",
+  // En dezelfde in de Engelse en Duitse taalprefix.
+  "/en/vacatures/vakantiewerk": "/en/vacatures/",
+  "/en/vacatures/junior-laser-operator": "/en/vacatures/",
+  "/en/vacatures/constructiebankwerker-lasser-bbl": "/en/vacatures/",
+  "/en/vacatures/constructiebankwerker-lasser-junior": "/en/vacatures/",
+  "/en/vacatures/constructiebankwerker-lasser-senior": "/en/vacatures/",
+  "/de/vacatures/vakantiewerk": "/de/vacatures/",
+  "/de/vacatures/junior-laser-operator": "/de/vacatures/",
+  "/de/vacatures/constructiebankwerker-lasser-bbl": "/de/vacatures/",
+  "/de/vacatures/constructiebankwerker-lasser-junior": "/de/vacatures/",
+  "/de/vacatures/constructiebankwerker-lasser-senior": "/de/vacatures/",
+
   // ── 4. Samengevoegde dunne pagina's (30 september 2026) ────────────────
   // Drie dienstpagina's die hun eigen onderwerp niet droegen. De eerste
   // concurreerde met /industriele-behuizing/ op exact dezelfde zoektermen en

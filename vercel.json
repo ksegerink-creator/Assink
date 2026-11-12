@@ -194,6 +194,81 @@
       "permanent": true
     },
     {
+      "source": "/vacatures/vakantiewerk(/?)",
+      "destination": "/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/vacatures/junior-laser-operator(/?)",
+      "destination": "/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/vacatures/constructiebankwerker-lasser-bbl(/?)",
+      "destination": "/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/vacatures/constructiebankwerker-lasser-junior(/?)",
+      "destination": "/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/vacatures/constructiebankwerker-lasser-senior(/?)",
+      "destination": "/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/vacatures/vakantiewerk(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/vacatures/junior-laser-operator(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/vacatures/constructiebankwerker-lasser-bbl(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/vacatures/constructiebankwerker-lasser-junior(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/en/vacatures/constructiebankwerker-lasser-senior(/?)",
+      "destination": "/en/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/vacatures/vakantiewerk(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/vacatures/junior-laser-operator(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/vacatures/constructiebankwerker-lasser-bbl(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/vacatures/constructiebankwerker-lasser-junior(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
+      "source": "/de/vacatures/constructiebankwerker-lasser-senior(/?)",
+      "destination": "/de/vacatures/",
+      "permanent": true
+    },
+    {
       "source": "/plaatwerk/rvs-behuizingen-machinebeplating(/?)",
       "destination": "/industriele-behuizing/",
       "permanent": true
