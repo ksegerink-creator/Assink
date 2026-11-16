@@ -20,6 +20,10 @@ final class Store
 {
     private const WINDOW_SECONDS = 600;
     private const MAX_PER_WINDOW = 10;
+    /** Bewaartermijn zoals in de privacyverklaring (paragraaf 6). */
+    private const DEFAULT_RETENTION_MONTHS = 12;
+    /** Hooguit één opschoonronde per dag. */
+    private const CLEANUP_INTERVAL_SECONDS = 86400;
 
     private function __construct(private ?PDO $pdo, private string $salt)
     {
@@ -46,6 +50,56 @@ final class Store
             // Een bezoeker wordt nooit tegengehouden door de database; de mail gaat gewoon.
             error_log('[aanvraag] database niet beschikbaar: ' . $error->getMessage());
             return new self(null, $salt);
+        }
+    }
+
+    /**
+     * Verwijdert aanvragen die ouder zijn dan de bewaartermijn
+     * (`retention_months` in config.php, standaard 12 maanden, zoals de
+     * privacyverklaring belooft). Draait hooguit één keer per dag: een klein
+     * tijdstempelbestand in de tijdelijke map houdt bij wanneer het laatst
+     * gebeurde. Zonder database doet dit niets. Een fout wordt gelogd en houdt
+     * de bezoeker nooit tegen.
+     *
+     * @param array<string, mixed> $config
+     * @return int|null aantal verwijderde aanvragen, of null als er niet is opgeschoond
+     */
+    public static function cleanupIfDue(array $config, ?int $now = null): ?int
+    {
+        $dsn = trim((string) ($config['database']['dsn'] ?? ''));
+        if ($dsn === '') {
+            return null;
+        }
+        $now ??= time();
+        $stamp = sys_get_temp_dir() . '/assink-form-opschoning-' . substr(hash('sha256', $dsn), 0, 16);
+        $last = @filemtime($stamp);
+        if ($last !== false && $now - $last < self::CLEANUP_INTERVAL_SECONDS) {
+            return null;
+        }
+        // Eerst het tijdstempel, zodat gelijktijdige aanvragen niet allemaal gaan opschonen.
+        @touch($stamp, $now);
+
+        $months = (int) ($config['retention_months'] ?? self::DEFAULT_RETENTION_MONTHS);
+        if ($months < 1) {
+            $months = self::DEFAULT_RETENTION_MONTHS;
+        }
+        $store = self::fromConfig($config);
+        if ($store->pdo === null) {
+            return null;
+        }
+        try {
+            $statement = $store->pdo->prepare(
+                'DELETE FROM aanvragen WHERE ontvangen_op < UTC_TIMESTAMP() - INTERVAL ? MONTH',
+            );
+            $statement->execute([$months]);
+            $deleted = $statement->rowCount();
+            if ($deleted > 0) {
+                error_log('[aanvraag] opschoning: ' . $deleted . ' aanvraag/aanvragen ouder dan ' . $months . ' maanden verwijderd.');
+            }
+            return $deleted;
+        } catch (Throwable $error) {
+            error_log('[aanvraag] opschoning mislukt: ' . $error->getMessage());
+            return null;
         }
     }
 

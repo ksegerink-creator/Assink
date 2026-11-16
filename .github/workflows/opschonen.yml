@@ -1,0 +1,26 @@
+# Zorgt dat oude aanvragen ook uit de database verdwijnen als er een tijd
+# niemand het formulier gebruikt. De PHP-verwerker ruimt bij elke aanvraag naar
+# /api/aanvraag aanvragen ouder dan de bewaartermijn op (hooguit één keer per
+# dag, zie apache/public_html/_form/lib/Store.php); deze workflow doet elke dag
+# zo'n aanvraag. Hij verstuurt niets en wijzigt niets aan de site.
+
+name: Aanvragen opschonen
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  opschonen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: GET /api/aanvraag
+        run: |
+          antwoord="$(curl -fsS --max-time 30 -H 'Accept: application/json' https://assinkschipholt.nl/api/aanvraag)"
+          echo "$antwoord"
+          echo "$antwoord" | grep -q '"captcha"'

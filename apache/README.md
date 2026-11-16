@@ -99,9 +99,15 @@ uitvoeren in phpMyAdmin.
 Een aanvraag wordt opgeslagen vóórdat de mail vertrekt. Valt de mail uit, dan
 staat de aanvraag er met `verzonden = 0`.
 
-**Privacy:** de privacyverklaring noemt nu alleen verwerking via de mail. Laat
-die aanvullen voor de database (wat, waarom, hoe lang). Er is nog geen
-automatische opschoning; die kan erbij zodra de bewaartermijn bekend is.
+**Bewaartermijn en opschoning:** de privacyverklaring (paragraaf 6, NL/EN/DE)
+belooft dat aanvragen maximaal **12 maanden** in de database blijven. De
+verwerker verwijdert oudere aanvragen automatisch, hooguit één keer per dag, bij
+een aanvraag naar `/api/aanvraag`. De workflow `.github/workflows/opschonen.yml`
+doet die aanvraag elke nacht (03:17 UTC), zodat het ook gebeurt als er een tijd
+niemand het formulier gebruikt. Wat er is verwijderd, staat in de PHP-foutlog
+(`[aanvraag] opschoning: …`). Andere termijn? Pas `retention_months` in
+`private/config.php` aan **en** de tekst van de privacyverklaring in Keystatic,
+in alle drie de talen.
 
 ## 5. Automatisch live na een wijziging
 
