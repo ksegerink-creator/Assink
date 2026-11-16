@@ -1,0 +1,87 @@
+title: "Tekening aanleveren voor plaatwerk: wat moet erop staan?"
+slug: tekening-aanleveren-voor-plaatwerk-wat-moet-erop-staan
+date: "2026-11-16"
+intro: Een snelle en juiste offerte voor plaatwerk staat of valt met de
+  aanlevering van de juiste gegevens. Ontbreekt er informatie, dan moeten wij
+  terugvragen en dat kost tijd aan beide kanten. In dit artikel zetten we op een
+  rij wat wij nodig hebben om een aanvraag voor plaatwerk zonder omwegen te
+  kunnen beoordelen en doorrekenen.
+secties:
+  - kop: PDF-tekening én 3D STEP-bestand
+    alineas:
+      - "Bij een aanvraag voor plaatwerk vragen wij altijd zowel een
+        PDF-tekening als een 3D STEP-bestand aan. Dit is geen kwestie van
+        voorkeur voor het één óf het ander: beide bestanden vervullen een eigen
+        functie. Het STEP-bestand gebruiken wij om de geometrie direct in te
+        lezen voor het lasersnijden en kanten, zodat er geen interpretatiefouten
+        ontstaan bij het overtekenen van vormen of buigingen."
+      - "De PDF-tekening is nodig omdat daarin de informatie staat die niet uit
+        een 3D-model is af te leiden: maatvoering met toleranties, aanduiding
+        van zichtwerk, oppervlaktebehandeling, aantallen en eventuele
+        opmerkingen over kritische maten. Zonder deze tekening moeten wij
+        aannames doen, en dat willen we juist voorkomen bij het offreren."
+  - kop: Materiaalsoort en plaatdikte
+    alineas:
+      - Vermeld altijd welk materiaal het betreft en in welke dikte. Wij
+        verwerken RVS 304, RVS 316, aluminium, messing en staal, en deze
+        materialen gedragen zich verschillend bij lasersnijden en kanten. Een
+        plaatdikte die niet expliciet op de tekening of in de aanvraag staat,
+        leidt al snel tot een verkeerde inschatting van doorlooptijd en kosten.
+      - 'Geef bij RVS ook aan of het om 304 of 316 gaat, aangezien dit verschil
+        relevant is voor de toepassing en nabehandeling. Zie voor een nadere
+        toelichting ons artikel over <a
+        href="/kennisbank/rvs-304-of-316-welke-kies-je-voor-plaatwerk-en-laswerk/">RVS
+        304 of 316: welke kies je voor plaatwerk en laswerk?</a>'
+  - kop: Aantal stuks en gewenste afwerking
+    alineas:
+      - Het aantal stuks bepaalt mede de productiemethode en daarmee de prijs
+        per stuk. Geef dit duidelijk aan, ook als het om een prototype of kleine
+        serie gaat.
+      - "Vermeld daarnaast de gewenste afwerking. Gaat het om onbehandeld
+        plaatwerk, om ontbraamd werk, of is glasparelstralen gewenst? Bij RVS
+        dat gelast wordt, hoort passiveren standaard bij de nabehandeling: dit
+        herstelt de beschermende oxidelaag nadat stralen de aanloopkleuren en
+        verontreiniging heeft verwijderd. Vermeld dit op de tekening, zodat wij
+        deze stap kunnen meenemen in de offerte."
+  - kop: Kritische maten en zichtwerk
+    alineas:
+      - Niet elke maat op een tekening is even bepalend voor de functie van het
+        onderdeel. Geef daarom aan welke maten kritisch zijn, bijvoorbeeld omdat
+        ze een passing of aansluiting betreffen. Dit helpt bij de beoordeling
+        van haalbaarheid en bij de controle tijdens productie.
+      - Geef ook aan of het onderdeel zichtwerk betreft. Bij zichtwerk gelden
+        strengere eisen aan de oppervlaktekwaliteit en aan zaken als
+        lasnaadafwerking, en dat heeft invloed op zowel het proces als de prijs.
+      - Voor het kanten hanteren wij de toleranties volgens ISO 2768. Vermeld op
+        de tekening of een afwijkende nauwkeurigheid noodzakelijk is, dan
+        bespreken wij in overleg wat haalbaar is.
+faq:
+  - vraag: Is een 3D-bestand niet voldoende, moet het echt een PDF-tekening én
+      STEP-bestand zijn?
+    antwoord: Ja, wij vragen beide bestanden. Het STEP-bestand gebruiken wij voor de
+      geometrie bij het lasersnijden en kanten, de PDF-tekening bevat informatie
+      die niet in een 3D-model zit, zoals toleranties, afwerking en aantallen.
+      Met alleen een 3D-model ontbreekt die context, waardoor wij moeten
+      terugvragen voordat we kunnen offreren.
+  - vraag: Welke toleranties hanteren jullie bij gekant plaatwerk?
+    antwoord: Voor kantwerk gaan wij uit van de toleranties volgens ISO 2768. Als
+      een afwijkende nauwkeurigheid nodig is voor een specifieke toepassing,
+      geef dit dan aan op de tekening zodat wij kunnen beoordelen wat haalbaar
+      is.
+  - vraag: Wat als ik nog geen definitieve tekening heb, kan ik dan toch een
+      aanvraag doen?
+    antwoord: Een eerste inschatting is mogelijk op basis van een concepttekening,
+      maar voor een definitieve offerte hebben wij uiteindelijk zowel een
+      PDF-tekening als een STEP-bestand nodig. Hoe vollediger de aanvraag, hoe
+      sneller en nauwkeuriger wij kunnen reageren.
+  - vraag: Moet ik aangeven of een onderdeel zichtwerk is?
+    antwoord: Ja, dit is belangrijk om te vermelden. Bij zichtwerk gelden hogere
+      eisen aan oppervlaktekwaliteit en afwerking, wat gevolgen heeft voor het
+      proces en de prijsstelling. Geef dit duidelijk aan op de tekening of in de
+      begeleidende informatie.
+gepubliceerd: false
+seo:
+  title: "Tekening aanleveren plaatwerk: wat moet erop staan?"
+  description: Wat heeft een metaalbedrijf nodig om plaatwerk snel en juist te
+    offreren? Lees wat er op uw tekening en STEP-bestand moet staan. Vraag
+    direct een offerte aan.
